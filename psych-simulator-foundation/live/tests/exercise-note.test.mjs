@@ -15,11 +15,11 @@ import * as guide from '../interview-guide.mjs';
 import * as feedback from '../interview-feedback.mjs';
 import {requestPayload} from '../model.mjs';
 import {baseline,reasoning} from './helpers.mjs';
+import {appSource} from './app-source.mjs';
 
 // Keep the real controller/storage/guide implementation and stub only the model boundary.
 // This exercises optional result propagation before or after model integration, without API calls.
 const controllerSource=readFileSync(new URL('../controller.mjs',import.meta.url),'utf8').replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'');
-const appSource=readFileSync(new URL('../public/app.mjs',import.meta.url),'utf8').replace(/init\(\);\s*$/,'');
 const note='The playmate’s identity is not provided in this case.';
 const reply='I would like to try the toy-shop playdate. We haven’t carried out that plan yet.';
 function controllerWithAnswer(answer){
@@ -66,7 +66,7 @@ test('Absent, empty and non-string notes leave legacy controller turns and quote
 });
 
 class Node {
- constructor(tagName='div'){this.tagName=tagName;this.textContent='';this.children=[];this.value='';this.hidden=false;this.attributes=new Map();this.classList={toggle(){}};}
+ constructor(tagName='div'){this.tagName=tagName;this.textContent='';this.children=[];this.value='';this.hidden=false;this.attributes=new Map();this.classList={toggle(){},remove(){}};}
  append(...nodes){this.children.push(...nodes);}
  replaceChildren(...nodes){this.children=nodes;}
  setAttribute(key,value){this.attributes.set(key,value);}
@@ -79,7 +79,7 @@ function browser(){
  const nodes=new Map(),data=new Map(),get=id=>{if(!nodes.has(id))nodes.set(id,new Node());return nodes.get(id);};
  const storage={getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value)};
  const app=runInNewContext(appSource+'\n({saveHistory,readHistory,conversationText,reportText,savedTranscript,conversationExchange,draw,drawReport,setSession:value=>{session=value;status={providerReady:true};},setReport:value=>report=value})',{
-  document:{getElementById:get,createElement:tag=>new Node(tag),querySelectorAll:()=>[]},localStorage:storage,
+  document:{body:new Node('body'),getElementById:get,createElement:tag=>new Node(tag),querySelectorAll:()=>[]},localStorage:storage,
   console,Date,setTimeout,clearTimeout,crypto:{randomUUID:()=> 'note-request-001'}});
  return {app,get,storage};
 }

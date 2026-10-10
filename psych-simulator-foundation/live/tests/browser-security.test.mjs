@@ -2,8 +2,8 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
+import {appSource as source} from './app-source.mjs';
 
-const source=readFileSync(new URL('../public/app.mjs',import.meta.url),'utf8').replace(/init\(\);\s*$/,'');
 class Node {
   constructor(tagName='div'){this.tagName=tagName;this.children=[];this.value='';this.textContent='';this.hidden=false;this.classList={toggle(){}};}
   set innerHTML(value){throw new Error('HTML interpretation is forbidden');}

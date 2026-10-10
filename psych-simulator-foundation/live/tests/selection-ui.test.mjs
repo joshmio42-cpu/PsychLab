@@ -1,9 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
+import {appSource as source} from './app-source.mjs';
 
-const source=readFileSync(new URL('../public/app.mjs',import.meta.url),'utf8').replace(/init\(\);\s*$/,'');
 const catalog={providerReady:true,patients:[
   {id:'jordan',name:'Jordan',lifeStage:'Young adult',mode:'generated',defaultDays:28,interviewWith:'Patient',description:'Sketching and quiet conversations.',communicationPreview:'Reflective and measured.'},
   {id:'mika',name:'Mika',lifeStage:'Toddler',mode:'generated',defaultDays:7,interviewWith:'Caregiver',description:'Block towers and picture books.',communicationPreview:'Caregiver observations.'}
@@ -13,7 +12,7 @@ const catalog={providerReady:true,patients:[
   {id:'autism',name:'Autism spectrum disorder',description:'A developmental pattern.',classification:'Neurodevelopmental disorders',stages:['Toddler']}
 ]};
 class Node {
-  constructor(tagName='div'){this.tagName=tagName;this.value='';this.hidden=false;this.disabled=false;this.textContent='';this.children=[];this.attributes=new Map();this.classes=new Set();this.classList={toggle:(name,on)=>on?this.classes.add(name):this.classes.delete(name)};}
+  constructor(tagName='div'){this.tagName=tagName;this.value='';this.hidden=false;this.disabled=false;this.textContent='';this.children=[];this.attributes=new Map();this.classes=new Set();this.classList={toggle:(name,on)=>on?this.classes.add(name):this.classes.delete(name),add:name=>this.classes.add(name),remove:name=>this.classes.delete(name),contains:name=>this.classes.has(name)};}
   replaceChildren(...nodes){this.children=nodes;}
   append(...nodes){this.children.push(...nodes);}
   setAttribute(k,v){this.attributes.set(k,v);}
@@ -32,6 +31,8 @@ function harness(handler=()=>undefined){
   const nodes=new Map(),requests=[],timers=new Map(),downloads=[],radios=['chosen','random','none'].map(value=>Object.assign(new Node(),{value})),steps=Array.from({length:4},()=>new Node());
   const get=id=>{const generated=[...nodes.values()].flatMap(descendants).find(x=>x.id===id);if(generated)return generated;if(!nodes.has(id))nodes.set(id,new Node());return nodes.get(id);};get('days').value='28';get('seed').value='42';
   const storage=new Map();let timer=0;
+  const body=new Node('body'),safetyLinks=[new Node('button'),new Node('button')],scrolls=[];
+  body.classList.add('welcome-mode');
   const fetch=async(path,options)=>{
     const request={path,method:options.method,body:options.body?JSON.parse(options.body):undefined};requests.push(request);
     const custom=await handler(request);if(custom)return {ok:custom.status===undefined||custom.status<400,status:custom.status??200,json:async()=>custom.body};
@@ -39,14 +40,56 @@ function harness(handler=()=>undefined){
     return {ok:false,status:path==='/api/preparation'?404:401,json:async()=>({error:'No active case'})};
   };
   const app=runInNewContext(source+'\n({init,getScreen:()=>screen,getSession:()=>session,saveHistory,readHistory,selectionPayload,publicSelection,reportText})',{
-    document:{getElementById:get,createElement:tag=>new Node(tag),querySelectorAll:selector=>selector==='input[name="selectionMode"]'?radios:selector==='.preparation-steps li'?steps:selector.startsWith('#interviewGuide input')?[...descendants(get('guideChecklist')).filter(x=>['select','textarea','input'].includes(x.tagName)),...['guideHypothesis','guideAlternatives','guideNext'].map(get)]:[]},
+    document:{body,getElementById:get,createElement:tag=>new Node(tag),querySelectorAll:selector=>selector==='.safety-link'?safetyLinks:selector==='input[name="selectionMode"]'?radios:selector==='.preparation-steps li'?steps:selector.startsWith('#interviewGuide input')?[...descendants(get('guideChecklist')).filter(x=>['select','textarea','input'].includes(x.tagName)),...['guideHypothesis','guideAlternatives','guideNext'].map(get)]:[]},
+    window:{scrollTo:options=>scrolls.push(options)},
     fetch,localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,v)},crypto:{randomUUID:()=> 'request-1'},performance:{now:()=>1000},setTimeout:fn=>{const id=++timer;timers.set(id,fn);return id;},clearTimeout:id=>timers.delete(id),console,Date,Blob,URL:{createObjectURL:blob=>{downloads.push(blob);return 'blob:test';},revokeObjectURL(){}},FormData:class{constructor(form){this.entries=form.entries??[];}[Symbol.iterator](){return this.entries[Symbol.iterator]();}}
   });
-  return {app,get,requests,radios,steps,timers,storage,downloads};
+  return {app,get,requests,radios,steps,timers,storage,downloads,body,safetyLinks,scrolls};
 }
 const submit={preventDefault(){}};
 const flush=()=>new Promise(resolve=>setImmediate(resolve));
 function readySession(selection={mode:'random'}){return {brief:{name:'Jordan',lifeStage:'Young adult',speaker:'Jordan',referral:'Recent routines.',notice:'',mode:'generated',historyDays:28,hash:'abcdef123456abcdef',selection},turns:[],ended:false};}
+
+test('Fixture initialization makes one startup sequence even with welcome handlers after init',async()=>{
+  const h=harness();await flush();assert.equal(h.requests.length,0);
+  await h.app.init();
+  assert.deepEqual(h.requests.map(r=>r.path),['/api/status','/api/preparation','/api/session']);
+  assert.equal(h.get('error').textContent,'');
+  assert.equal(h.body.classList.contains('welcome-mode'),true);
+});
+
+test('Welcome entry and About preserve setup choices without making API requests',async()=>{
+  const h=harness();await h.app.init();const before=h.requests.length;
+  h.get('seed').value='91';h.get('enterSimulator').onclick();
+  assert.equal(h.body.classList.contains('welcome-mode'),false);assert.equal(h.get('welcome').hidden,true);
+  assert.equal(h.get('mode').focused,true);
+  h.get('aboutButton').onclick();
+  assert.equal(h.body.classList.contains('welcome-mode'),true);assert.equal(h.get('welcome').hidden,false);
+  assert.equal(h.get('enterSimulator').textContent,'Start an interview →');assert.equal(h.get('welcomeTitle').focused,true);
+  assert.equal(h.scrolls[0].top,0);
+  h.get('enterSimulator').onclick();assert.equal(h.get('seed').value,'91');assert.equal(h.requests.length,before);
+});
+
+test('Restored interviews bypass welcome and About returns to the same interview',async()=>{
+  const h=harness(r=>r.path==='/api/preparation'?{body:{preparation:{status:'ready'},session:readySession()}}:undefined);
+  await h.app.init();const current=h.app.getSession(),before=h.requests.length;
+  assert.equal(h.get('welcome').hidden,true);assert.equal(h.body.classList.contains('welcome-mode'),false);
+  h.get('question').value='What matters to you?';h.get('aboutButton').onclick();
+  assert.equal(h.get('enterSimulator').textContent,'Return to interview →');
+  h.get('enterSimulator').onclick();
+  assert.equal(h.app.getSession(),current);assert.equal(h.app.getScreen(),'interview');
+  assert.equal(h.get('question').value,'What matters to you?');assert.equal(h.get('question').focused,true);
+  assert.equal(h.requests.length,before);
+});
+
+test('All safety entry points open a dismissible dialog without API requests',()=>{
+  const h=harness();
+  for(const trigger of [h.get('safetyButton'),...h.safetyLinks]){
+    trigger.onclick();assert.equal(h.get('safetyDialog').open,true);
+    h.get('safetyClose').onclick();assert.equal(h.get('safetyDialog').open,false);
+  }
+  assert.equal(h.requests.length,0);
+});
 
 test('Prepare opens one stage-filtered disorder card without starting a server preparation',async()=>{
   const h=harness();await h.app.init();h.get('setupForm').onsubmit(submit);
