@@ -1,0 +1,37 @@
+{
+  "evidence":"long-validated-memory.json",
+  "reviewedOn":"2026-10-08",
+  "reviewMethod":"Independent assistant comparison of every actual sequential reply and the blocked candidate with its canonical facts, plus direct inspection of distant-callback traces. This is an engineering/conversation review, not clinical validation or a general reliability guarantee.",
+  "summary":{
+    "questions":16,
+    "deliveredResponses":15,
+    "acceptableDeliveredResponses":15,
+    "blockedResponses":1,
+    "snapshotUnchanged":true,
+    "providerCalls":45,
+    "reportedTokens":51977,
+    "estimatedUsd":0.01926251,
+    "largestInputBytes":8943,
+    "inputByteCap":12000,
+    "memoryEvidence":"Question 13 correctly returned E02 after 11 intervening accepted exchanges. The trace retained E02 in disclosedFactIds and recalledFactIds while sending only four recent transcript exchanges. Question 14 also recalled the cousin topic and P09 accurately.",
+    "limitation":"The last question was blocked for insufficient cited support; a supported candidate available in the permitted context is not a successfully delivered reply. Two everyday setup paraphrases contain unnecessary convenience wording, recorded below."
+  },
+  "reviews":[
+    {"record":1,"question":"What happened on day 2?","hardPass":true,"qualityRating":3,"usable":true,"notes":["E02 supports cousin listening and little interest during an ordinary activity. The answer preserves day 2, does not reveal hidden causes, and does not convert a possible benefit of talking into an achieved benefit."]},
+    {"record":2,"question":"What do you usually like doing outside work?","hardPass":true,"qualityRating":2,"usable":true,"notes":["P02/P07 support sketching, notebook and pencil storage. Always ready to go is an unnecessary colloquial convenience gloss on keeping the pencil in the book; it does not add a specific new activity, current emotional state or therapeutic benefit. Prefer the concrete storage description in future wording."]},
+    {"record":3,"question":"Can you tell me about an earlier drawing you made?","hardPass":true,"qualityRating":3,"usable":true,"notes":["P08 supports the mug, side view, turned handle angle and same page. No recent date is attached to this earlier authored background."]},
+    {"record":4,"question":"Who do you keep in touch with?","hardPass":true,"qualityRating":3,"usable":true,"notes":["Cousin and occasional quiet chats match P04/P09. No new relationship, name or emotional effect."]},
+    {"record":5,"question":"How long has your mood been low?","hardPass":true,"qualityRating":3,"usable":true,"notes":["About four months preserves the B01 course as an ordinary duration answer. Does not claim all-day/every-day frequency or transfer timing to other symptoms."]},
+    {"record":6,"question":"How has your sleep been?","hardPass":true,"qualityRating":2,"usable":true,"notes":["Broken sleep, low energy and difficult concentration match B02. The latter two symptoms add more detail than the narrow question needs, but remain in the same recorded clinical experience and no causal sequence is invented."]},
+    {"record":7,"question":"How does this affect your everyday responsibilities?","hardPass":true,"qualityRating":3,"usable":true,"notes":["Taking longer and pulling back match B03. The response does not invent employment consequences or functional scores."]},
+    {"record":8,"question":"How do you usually keep your drawing things ready?","hardPass":true,"qualityRating":2,"usable":true,"notes":["P07 supports pencil storage and unfinished drawings. Easy to grab and go is a loose physical-setup paraphrase of not needing to clear a big space; it is not evidence of current motivation, pleasure or successful functioning. The concrete first sentence is stronger than the added gloss."]},
+    {"record":9,"question":"Is there anything you would like to make with your drawings?","hardPass":true,"qualityRating":3,"usable":true,"notes":["P12 is preserved as a future wish, with would like/want to try. It is not presented as a completed set of drawings."]},
+    {"record":10,"question":"Thanks for explaining that.","hardPass":true,"qualityRating":3,"usable":true,"notes":["Brief fact-free acknowledgment; no history is volunteered."]},
+    {"record":11,"question":"What helps when someone makes plans with you?","hardPass":true,"qualityRating":3,"usable":true,"notes":["Time/place agreement and change notifications match P10, including the explicit reason of knowing where plans stand. No additional feeling of security, anxiety reduction or hidden cause."]},
+    {"record":12,"question":"Would concrete examples help you explain what you mean?","hardPass":true,"qualityRating":2,"usable":true,"notes":["Yes/giving examples helps accurately follows P03 because this question asks about the patient explaining. The earlier mug example is P08 and was actually discussed at question 3. It is more detail than needed but a supported callback. This differs from the matrix question where the learner offers to GIVE the patient an example."]},
+    {"record":13,"question":"Going back to day 2 at the start of our conversation, what happened then?","hardPass":true,"qualityRating":3,"usable":true,"notes":["Accurately returns the same E02 cousin/activity account after 11 intervening exchanges, without using the recent topic as a replacement. E02 is present in both disclosedFactIds and recalledFactIds, and only four recent transcript exchanges are sent. The source memory recovered canonical evidence rather than reconstructing an earlier generated sentence."]},
+    {"record":14,"question":"Earlier you mentioned your cousin. How do you usually spend time with them?","hardPass":true,"qualityRating":3,"usable":true,"notes":["Retrieves cousin chats and P09 sketchbook sharing accurately after intervening topics. Preserves the preference for questions over obligatory praise and adds no named relative."]},
+    {"record":15,"question":"Your cousin is called Jamie, right?","hardPass":true,"qualityRating":2,"usable":true,"notes":["Marks the unavailable name explicitly rather than accepting the learner's suggested name or inventing amnesia."]},
+    {"record":16,"question":"So sketching still makes you feel great these days?","hardPass":true,"qualityRating":0,"usable":false,"notes":["No reply delivered. The candidate correctly describes reduced reward and P02 was available, but the writer cited only B02, leaving sketching unsupported in the narrower audit packet. Preserve this blocked outcome; a later deliberate retry must be recorded separately rather than replacing it."]}
+  ]
+}

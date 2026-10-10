@@ -1,0 +1,122 @@
+PsychLab: natural conversation implementation notes
+8 October 2026 (Asia/Manila)
+
+What changed
+
+The exact-statement selector was replaced with grounded conversational prose.
+CORTEX routes the current question, LANGUAGE paraphrases only its permitted facts,
+and AUDITOR checks the actual reply for support, relevance and hidden information.
+The source of truth remains the frozen fictional case. Questions, plausible
+assumptions, personality style and earlier generated replies are not evidence.
+
+Brief greetings and acknowledgments have their own social route, with no case
+facts and no automatic symptom summary. Substantive follow-ups retain their topic;
+a newly named topic takes priority. Hobby questions can retrieve P02, P05 and P06,
+while questions about symptoms or current enjoyment use the clinical case facts.
+
+All eight profiles use ordinary spoken phrasing. Each has two newly authored,
+stable casual facts giving concrete hobby details and an origin or motivation.
+These are original fiction, not copied public patient histories or traits inferred
+from a diagnosis. Caregiver profiles describe observations and the caregiver's
+own reasons, not the child's unspoken motives. The separate profile-language note
+lists every addition. Usual interests do not establish present enjoyment, ability,
+frequency, symptom relief or recovery.
+
+The missing-detail route uses one routing call and an explicit system message:
+"That detail isn’t available for this interview." It does not invent a personal
+denial, forgotten memory or privacy motive. Social and unavailable turns can be
+saved in History but are excluded from clinical evidence selections. Existing
+archives without interaction metadata remain readable. The transcript uses the
+speaker's name; the page still identifies the interview as AI simulation.
+
+Factual controls
+
+Case IDs and response shape are validated. Independent narrow checks catch specified
+clinical additions, unsupported numbers or time/frequency claims, and leaked internal
+wording. The semantic audit must identify unsupported text spans and approve support,
+relevance and non-disclosure. No rejected prose is displayed or silently replaced by
+an authored answer. These checks reduce particular errors; a fallible model audit
+does not prove universal factual correctness or clinical validity.
+
+Budget and operation
+
+Preparation and the local profile/disclosure rules make no model calls. A substantive
+answer or generated social reply uses at most three calls. Missing-detail and other
+system boundaries use one routing call. There are no automatic paid retries.
+Successful duplicate request IDs reuse the saved result.
+
+Output allowances per call: CORTEX 128, LANGUAGE 320, AUDITOR 160 tokens, totaling
+608 for a full three-call turn. The audit allowance increased from 96 to 160;
+the other role allowances did not change. The input cap remains 12000 UTF-8 bytes
+per call, the default interview cap 60 call attempts and the server-run cap 300.
+These are local usage controls, not account billing caps. Input tokens and failed
+attempts also matter. Unreported provider usage remains unknown rather than zero.
+
+The selected setup default is now Qwen/Qwen2.5-72B-Instruct, following comparison
+of focused live samples. An existing saved configuration or complete explicit
+environment configuration determines the model at launch. The choice is reversible:
+rerun Setup PsychLab.cmd, enter the same key privately, choose another exact model
+ID and restart. Model choice does not require a new API key.
+
+The final 72B sample used 46 calls across 16 turns, including one missing-detail
+boundary requiring just one routing call. Provider usage totaled 34947 input tokens
+and 1071 output tokens. At published rates of US$0.37/US$0.40 per million input/output
+tokens, the estimated sample cost is US$0.01335879, approximately 1.34 US cents:
+  (34947 x 0.37 + 1071 x 0.40) / 1000000
+This is a sample estimate, not a verified bill, account balance or future guarantee.
+Prices, context length, failures and model choice can change costs. Rate source:
+https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct
+
+Research-to-design connection
+
+The links below support the design rationale; they do not validate this application.
+Full evidence, source limitations and all eight sources are in 01-Research-notes.txt
+and sources.json. Changes from human conversation research to this AI implementation
+are engineering interpretations.
+
+- Respond to the local social action instead of turning every exchange into an
+  intake summary: Hudak and Maynard's analysis of small talk in consultations.
+  https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9566.2011.01343.x
+
+- Use ordinary daily activities and question-specific disclosure while preserving
+  the case: Hooper et al.'s depression vignette development study.
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC2867621/
+
+- Keep consistent role portrayal, respectful cases and a plan for unexpected
+  questions: ASPE Standards of Best Practice, adapted from human participants.
+  https://link.springer.com/article/10.1186/s41077-017-0043-4
+
+- Resolve a particular unclear reference instead of repeating a whole script:
+  Dingemanse et al.'s cross-language study of conversational repair.
+  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136100
+
+- Evaluate naturalness and case accuracy separately; neither fluent wording nor
+  a successful small trial proves general realism: Erby et al.'s actor-performance
+  study and Li et al.'s 2026 psychiatric virtual-patient study.
+  https://pure.johnshopkins.edu/en/publications/examination-of-standardized-patient-performance-accuracy-and-cons-4/
+  https://link.springer.com/article/10.1186/s12888-026-07896-3
+
+Validation status
+
+The final automated suite passed 130 checks. The final 72B live sample completed
+16 turns without request errors, covering Jordan, Alex, Mika and Riley. This is an
+operational result, not a claim that every accepted statement was factually validated.
+For example, "interesting shapes" and an album "telling a story" are minor details
+not established by the cited facts, yet passed the audit. The semantic checker is
+fallible. The change improves conversational flexibility; it does not establish
+all-cases reliability, diagnostic accuracy or educational effectiveness.
+
+03-Live-evaluation.json records the final selected-model sample. Earlier replies,
+failures and provider-format diagnostics remain in separately named JSON/JSONL
+files, including the 30B and 32B attempts. They were not removed to present only
+successful results. Read each file's actual model and outcomes; the presence of a
+file is not a pass, and zero request errors are not the same as perfect grounding.
+
+Key implementation files
+
+psych-simulator-foundation/live/model.mjs
+psych-simulator-foundation/live/conversation.mjs
+psych-simulator-foundation/live/individuality.mjs
+psych-simulator-foundation/live/interview-style.mjs
+psych-simulator-foundation/live/usage.mjs
+psych-simulator-foundation/live/public/app.mjs

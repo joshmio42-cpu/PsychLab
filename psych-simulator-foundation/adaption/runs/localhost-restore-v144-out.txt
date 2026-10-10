@@ -1,0 +1,4 @@
+Loaded saved Featherless configuration.
+PsychLab local interview: http://127.0.0.1:8771/
+Featherless: configured (not yet verified)
+Case and transcript held in server memory; no public deployment.

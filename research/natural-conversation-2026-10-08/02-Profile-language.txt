@@ -1,0 +1,95 @@
+PsychLab: ordinary speech and authored small-talk facts
+8 October 2026
+
+Purpose
+
+The eight fictional profiles need enough ordinary personal detail to sustain
+brief casual follow-ups. Fluent wording alone cannot supply facts that the
+profile never recorded. These changes provide a small, stable base for grounded
+conversation without inventing a new biography during each answer.
+
+Rewritten existing material
+
+The existing goals, hobbies, communication preferences, relationships and
+openings were rewritten in ordinary spoken language. Their meanings, priority
+weights, life stages and caregiver roles were retained. For example, Jordan's
+"I like a little space to reflect before answering. Concrete examples help me
+explain what I mean" became "Give me a second to think. It’s easier if I can
+give you an example."
+
+Style instructions now favor showing those preferences through delivery instead
+of repeatedly explaining them. They discourage forced slang, obligatory
+hesitation, therapist-style reassurance and age or diagnosis stereotypes.
+Concrete examples must come from the recorded case rather than being invented
+to make the response sound convincing.
+
+New authored fiction
+
+Each profile now has two smallTalk entries, exported as personal facts P05 and
+P06. These are newly invented details for fictional patients. They are NOT
+observations from real people, case-study findings or diagnostic associations.
+They do not come from the public sources used to study conversation behavior.
+The details stay the same across seeds, diagnoses and interview difficulties.
+
+Mika
+P05: Usual choices include little block towers and animal picture books.
+P06: The caregiver follows Mika's lead and looks through a book together when
+     Mika brings one over; the caregiver's reason is shared activity.
+These describe observed choices and the caregiver's own purpose, not Mika's
+unspoken thoughts.
+
+Leo
+P05: Usual drawing subjects are houses; toy fruit is used in the pretend shop.
+P06: The caregiver uses the shop game to offer choices about what to display
+     and what the caregiver should pretend to buy.
+These preserve a caregiver account and do not assign an internal motive to Leo.
+
+Sam
+P05: Usual comic subjects are robots and animals wearing silly hats.
+P06: Making up stories grew from wanting the picture to continue into a story
+     whose next event Sam could choose.
+
+Riley
+P05: Usual music includes pop and indie, with quiet songs and faster songs
+     separated into playlists.
+P06: Playlist-making began with interest in how track order changes the feel
+     of the same songs.
+
+Jordan
+P05: Usual sketch subjects include mugs, plant pots and objects on the table;
+     the usual medium is pencil.
+P06: Sketching started with nearby objects because they needed no special
+     setup and provided available subjects.
+
+Avery
+P05: Usual book choices are mysteries and short stories.
+P06: Interest in mysteries began with trying to work out the ending; short
+     stories could be finished in a shorter sitting.
+
+Robin
+P05: Usual gardening includes herbs in pots and a few flowers.
+P06: Gardening began with a pot of herbs; noticing new growth prompted the
+     original interest in continuing.
+
+Alex
+P05: Usual music includes instrumental music and guitar-heavy albums, normally
+     played in track order.
+P06: Whole-album listening began with curiosity about how songs fit together.
+
+Boundaries for using these facts
+
+Usual hobbies and past reasons for taking them up do not establish current
+enjoyment, frequency, physical ability, symptom relief or treatment effects.
+Current pleasure and functioning must come from the selected clinical case.
+No artist names, book titles, real-person identities, exact places, ages,
+medications or health explanations were added. The renderer should disclose
+the particular detail relevant to the question, not recite all six personal
+facts at every opportunity. A detail still absent from the case remains
+unknown. The additions do not change the condition-specific case timeline.
+
+Implementation
+
+Source: psych-simulator-foundation/live/individuality.mjs
+Schema: smallTalk: [{label, response}, {label, response}]
+Facts: P05 and P06, with the existing goals/support routing domains.
+personalFacts retains support for older profile objects without smallTalk.

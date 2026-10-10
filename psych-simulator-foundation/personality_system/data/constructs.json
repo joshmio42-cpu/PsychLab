@@ -1,0 +1,162 @@
+{
+  "version": "identity-0.1.0",
+  "owner": "IDENTITY",
+  "score_policy": "Unmeasured constructs are null; no questionnaire items or diagnostic inference.",
+  "traits": {
+    "measurement_family": "BFI-2 structural catalog",
+    "source_ids": [
+      "P01"
+    ],
+    "domains": {
+      "extraversion": [
+        "sociability",
+        "assertiveness",
+        "energyLevel"
+      ],
+      "agreeableness": [
+        "compassion",
+        "respectfulness",
+        "trust"
+      ],
+      "conscientiousness": [
+        "organization",
+        "productiveness",
+        "responsibility"
+      ],
+      "negativeEmotionality": [
+        "anxiety",
+        "depression",
+        "emotionalVolatility"
+      ],
+      "openMindedness": [
+        "intellectualCuriosity",
+        "aestheticSensitivity",
+        "creativeImagination"
+      ]
+    },
+    "timescale": "relatively slow; no calibrated daily rate",
+    "extensions": {
+      "urgency": {
+        "source_ids": [
+          "P06"
+        ],
+        "status": "unmeasured"
+      },
+      "domainSpecificRisk": {
+        "source_ids": [
+          "P07"
+        ],
+        "status": "unmeasured"
+      },
+      "temperament": {
+        "source_ids": [
+          "P09",
+          "P33"
+        ],
+        "status": "unmeasured"
+      },
+      "noveltySeeking": {
+        "source_ids": [
+          "P06"
+        ],
+        "status": "candidate; not equivalent to openness"
+      },
+      "persistence": {
+        "source_ids": [
+          "P08"
+        ],
+        "status": "avoid duplicate conscientiousness bonus"
+      },
+      "socialSensitivity": {
+        "source_ids": [
+          "P11",
+          "P13"
+        ],
+        "status": "decompose by construct; not one validated scalar"
+      }
+    }
+  },
+  "schema": {
+    "timescale": "evidence-dependent; no universal duration",
+    "fields": {
+      "selfWorth": {
+        "source_ids": [
+          "P16"
+        ],
+        "scope": "self-evaluation"
+      },
+      "taskEfficacy": {
+        "source_ids": [
+          "P12",
+          "P14"
+        ],
+        "scope": "task-specific capability"
+      },
+      "worldControl": {
+        "source_ids": [
+          "P32"
+        ],
+        "scope": "domain-specific perceived control"
+      },
+      "relationships": {
+        "source_ids": [
+          "P11",
+          "P13",
+          "P15"
+        ],
+        "scope": "named actor; support expectation, observation count, event ledger"
+      }
+    },
+    "scale_policy": "A model support expectation is in [0,1]; it is not an attachment scale score."
+  },
+  "motive": {
+    "timescale": "activation changes by event; values persist in current demo",
+    "fields": {
+      "values": {
+        "source_ids": [
+          "P23",
+          "P24"
+        ],
+        "scope": "enduring priorities"
+      },
+      "needs": {
+        "source_ids": [
+          "P18",
+          "P34"
+        ],
+        "scope": "autonomy, competence, relatedness; satisfaction and frustration separate; unmeasured"
+      },
+      "activation": {
+        "source_ids": [
+          "P22",
+          "P26",
+          "P33"
+        ],
+        "scope": "current competing goals"
+      },
+      "regulation": {
+        "source_ids": [
+          "P19"
+        ],
+        "scope": "intrinsic/extrinsic forms; unmeasured"
+      }
+    },
+    "candidate_goals": [
+      "achievement",
+      "belonging",
+      "autonomy",
+      "competence",
+      "security",
+      "recognition",
+      "recovery"
+    ],
+    "candidate_note": "Listing a goal does not assign a calibrated intensity."
+  },
+  "overlap_rules": [
+    "Do not add grit and conscientiousness as independent persistence bonuses.",
+    "Do not equate negative emotionality, current tension, urgency and diagnosis.",
+    "Do not equate efficacy with self-esteem or trust with a particular support expectation.",
+    "Do not equate HEXACO with Big Five plus one score.",
+    "Do not equate trait energy level with current physiological energy."
+  ]
+}

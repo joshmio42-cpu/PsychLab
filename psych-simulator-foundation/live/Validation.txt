@@ -1,0 +1,85 @@
+LATEST VALIDATION — 2026-10-08, Asia/Manila
+
+Difficulty and individuality update:
+- 99/99 full-suite checks passed, followed by 23/23 focused checks after including
+  each person's goal in the ordinary opening. Existing case privacy and budgets
+  remain covered.
+- Verified all eight distinct goal/interest/communication/relationship profiles;
+  same-condition openings differ and priorities drive the existing local rules.
+- All three difficulty settings retain identical private histories; direct facts
+  remain reachable and general follow-ups progress without inventing trust scores.
+- Difficulty persists through preparation, session refresh, history and debrief.
+- Live checks caught unsupported free paraphrases despite semantic audit approval.
+  Generated profiles now use AI-selected complete recorded statements. A regression
+  check proves model embellishments cannot enter the returned reply.
+- Final live four-answer check: Beginner opening, Challenging opening and follow-up,
+  Alex personal goals/interests. All matched permitted recorded statements; 12 API
+  calls, 7,003 provider-reported tokens; zero preparation calls. These checks used
+  fictional data, and their isolated sessions were removed afterward.
+- Browser verified difficulty selection, changing person preview, case selection,
+  prepared interview and refresh. Preview: difficulty-individuality-preview.png.
+- Response wording is deliberately more constrained. Exact recorded wording guards
+  facts, while relevance, authored content and clinical validity still need review.
+
+Disorder selection and preparation:
+- Full live/personality/engineering-agent suite: 88/88 passed.
+- After adding the separate disorder-source namespace: 28/28 relevant case-data
+  and preparation checks passed, including the additional provenance check.
+- 65 DSM candidates, two ICD comparisons and No disorder are implemented.
+- Every compatible generated profile/disorder combination exercised with 1 and
+  90 recent days; authored premises also checked at 1/28/90 days.
+- Validated local preparation with zero provider calls; phases, ownership, expiry,
+  capacity, cancellation, stale-job protection, retry identity and refresh recovery.
+- Mystery metadata withheld before completion; prompt projection excludes labels,
+  direct diagnostic-label leaks reject, and completed debrief reveals the target.
+- Acute/resolved/cyclic windows, developmental earlier history, caregiver voice,
+  supported written responses and absent invented GAD-7 scores verified.
+- All named cases fit the actual economy envelope with four facts and recent
+  conversation; explicit early-day retrieval works within the bounded catalog.
+
+Browser: named one-card selector, arrows/keyboard, Random concealment, actual
+preparation progress, completed interview/debrief reveal, No disorder, toddler
+90-day caregiver session, refresh, narrow layout and no console warnings/errors.
+Mock browser checks made no paid calls. Screenshot: disorder-selection-preview.png.
+
+Live Featherless smoke test with saved configuration:
+- Jordan, selected depressive premise, 90 recent days.
+- Preparation used zero API calls.
+- One supported opening answer used 3 calls and 1,307 provider-reported tokens.
+- Isolated test session removed afterward. No real user/patient data used.
+
+Limits: live smoke test does not establish reliability across all presentations,
+clinical validity, differential accuracy or learning outcomes. The local authored
+cases and generic numerical simulation remain unvalidated. The UI list is a
+research-backed teaching catalogue, not the entire DSM or a diagnostic instrument.
+
+HISTORICAL VALIDATION — 2026-10-05, Asia/Manila
+
+Automated: 66 passed, 0 failed.
+- 20 new checks across history engine, controller, provider contract and HTTP API.
+- 9 existing interview-agent checks.
+- 37 existing deterministic foundation and mocked provider checks.
+
+New coverage: seeded replay and trace hashing; bounded state; observed versus hidden
+world facts; deep snapshot immutability; invalid seed/time inputs; public projections;
+successful request deduplication; invalid citations/routing; negative semantic audit;
+explicit retry after failure; ambiguity and out-of-scope boundaries; safety-pause
+state; concurrent requests; deletion cancellation; generated assessment rejection;
+authored scoring; session-end review gate; unchanged snapshot hash; session expiry
+and capacity; missing credentials; provider request/usage contract; truncated/invalid
+responses; host/origin checks; protected files; cookie ownership; full HTTP flow.
+
+Browser: exercised actual local UI on port 8771 with injected MOCK-NOT-LIVE provider.
+Prepared Jordan seed 42; asked an opening question; filled all reasoning fields;
+ended the interview; verified answer controls disabled and all ratings NR; loaded
+reviewer trace and checked for the hidden world record and interview audit.
+The actual provider-unconfigured application on port 8770 was opened separately.
+
+Not verified: real Featherless model/account, live output quality or leakage rate,
+clinical validity, learner outcomes, cost, production deployment, comprehensive
+accessibility or mobile browser coverage. Model auditing is fallible. The history
+engine is an authored experimental model; test success does not validate psychology.
+
+The initial HTTP Host-spoof test used fetch, which did not send the requested Host
+override. The test was corrected to use Node's native HTTP client; rejection passed.
+No test failure was bypassed by loosening the server's Host checks.

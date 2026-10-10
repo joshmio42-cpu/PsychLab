@@ -1,0 +1,183 @@
+{
+  "version": "population-0.1.0",
+  "seed": 42,
+  "count": 10,
+  "attempts": 11,
+  "rejected": 1,
+  "referenceId": "soto-john-2017-study3-internet-domains",
+  "evidence": {
+    "ruleId": "R-POP",
+    "ruleVersion": "identity-0.1.0",
+    "mechanismId": "M-POP",
+    "status": "EXPERIMENTAL",
+    "sourceIds": [
+      "P01",
+      "P04",
+      "P17"
+    ],
+    "inferenceGap": "Truncation shifts moments; no joint schemas/motives/facets or demographic norms."
+  },
+  "scope": "Unvalidated multivariate Gaussian approximation with whole-vector rejection; post-rejection moments differ from targets.",
+  "profiles": [
+    {
+      "id": "partial-42-1",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 2.2021294738967843,
+        "agreeableness": 2.9658112971147546,
+        "conscientiousness": 2.5855367699701457,
+        "negativeEmotionality": 3.3049657553527827,
+        "openMindedness": 2.469440903188988
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-2",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 3.6776115867963575,
+        "agreeableness": 3.3625104799391434,
+        "conscientiousness": 2.931294953528946,
+        "negativeEmotionality": 2.220964609283633,
+        "openMindedness": 3.9178756367284393
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-3",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 4.6764133753433885,
+        "agreeableness": 4.6742949130231795,
+        "conscientiousness": 4.520179477902101,
+        "negativeEmotionality": 2.249284310216585,
+        "openMindedness": 4.9756149583553935
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-4",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 3.50120857888817,
+        "agreeableness": 3.9760100297352152,
+        "conscientiousness": 2.9632568179500276,
+        "negativeEmotionality": 3.2095500208289267,
+        "openMindedness": 3.3985177893694813
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-5",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 2.8643154694547994,
+        "agreeableness": 3.4953752510345777,
+        "conscientiousness": 4.0589703374554125,
+        "negativeEmotionality": 3.3595274519104823,
+        "openMindedness": 3.642673663648181
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-6",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 3.0608583421018007,
+        "agreeableness": 3.3258693826806427,
+        "conscientiousness": 4.707930863226535,
+        "negativeEmotionality": 1.2617226743610475,
+        "openMindedness": 4.665386945593942
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-7",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 3.6160490656649316,
+        "agreeableness": 3.128024593737776,
+        "conscientiousness": 4.135890202610996,
+        "negativeEmotionality": 2.9003945638843236,
+        "openMindedness": 3.5742952456517196
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-8",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 3.7660998988233816,
+        "agreeableness": 4.075331723716522,
+        "conscientiousness": 4.013823978595349,
+        "negativeEmotionality": 3.54464973970463,
+        "openMindedness": 3.4425813080700087
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-9",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 2.413353678520264,
+        "agreeableness": 4.0162776318167825,
+        "conscientiousness": 2.95365040979221,
+        "negativeEmotionality": 4.443519683781763,
+        "openMindedness": 3.6271728490735167
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    },
+    {
+      "id": "partial-42-10",
+      "status": "EXPERIMENTAL partial trait profile",
+      "domains": {
+        "extraversion": 4.24753789028072,
+        "agreeableness": 4.533697907914094,
+        "conscientiousness": 3.5170045088571635,
+        "negativeEmotionality": 2.048421172988464,
+        "openMindedness": 3.990112083175267
+      },
+      "facets": null,
+      "schema": null,
+      "motive": null,
+      "referenceId": "soto-john-2017-study3-internet-domains",
+      "interpretation": "Synthetic domain scores; no clinical or demographic inference; not a full identity"
+    }
+  ]
+}

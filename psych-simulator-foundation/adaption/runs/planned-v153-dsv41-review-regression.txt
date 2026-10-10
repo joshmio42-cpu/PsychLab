@@ -1,0 +1,37 @@
+PSYCHLAB — INDEPENDENT REGRESSION REVIEW
+2026-10-09T11:28:39.836Z
+Evaluation: planned-v153-dsv41-regression-candidate.json
+Evaluation SHA-256: 5b0c96e10ce79910242b390a1093676a1d6df1c3fc3d7e1cae0b16f110fb83cd
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Prompt: interview-0.15.3
+Model: deepseek-ai/DeepSeek-V4.1-Flash
+
+16/16 semantic hard passes with all quality scores at least 2, no blocked questions, no unsupported factual assertions found in delivered replies, and no internal-provenance leakage. Four exact source fallbacks were verified and independently reviewed. The original regression set passes for this saved run; fresh generalization and the broader release comparison are not established by this result.
+
+Cases: 16; hard passes: 16; blocked: 0; unsupported delivered: 0.
+Quality: 43/48. Calls: 45; reported tokens: 59615; unreported calls: 0.
+Estimated Featherless usage: US$0.02063940; not verified billing.
+All 16 frozen snapshots reproduced and remained unchanged.
+Source fallback cases: 4. Exact source assembly, raw draft identity, final audit input and three-call ceiling verified for every repair.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+PASS generalize-mika-caregiver-style-not-child-feeling [3/3]: Direct caregiver context plus a separate unknown-cause note preserves both speaker and evidence boundaries.
+PASS generalize-mika-usual-demonstration-not-this-morning [3/3]: A concise, undated account of the usual demonstration answers the known part and leaves the proposed morning event unknown.
+PASS generalize-leo-window-sequence-callback [3/3]: The reply correctly resolves the window callback and gives the recorded sequence in two brief sentences.
+PASS generalize-leo-hoped-for-playdate-details [3/3]: Known playdate purpose and not-yet-carried-out status are supplied, while the attendee remains honestly unrecorded.
+PASS generalize-sam-sometimes-not-every-picture [3/3]: The ordinary delivered wording directly supplies sometimes frequency and the shared picture-making account. Its authored causal purpose is retained; no source fallback was used.
+PASS generalize-sam-unmade-comic-plot-callback [3/3]: The correct callback context accompanies an honest missing-ending boundary without inventing story content.
+PASS generalize-riley-thinking-time-not-personality-label [2/3]: The known communication detail remains separate from the unrecorded trait inference. The generic everyday-matters opening is less focused than the available communication preference, so quality is acceptable rather than strong.
+PASS generalize-riley-school-observer-and-quote-unknown [3/3]: Relevant course context accompanies two explicit unknown-detail boundaries. 'It's lasted' preserves the continuing pattern despite the earlier-tense opening.
+PASS generalize-jordan-sharing-and-response-preference [3/3]: Both parts are answered naturally with the authored sometimes frequency and preference preserved.
+PASS generalize-jordan-current-reward-and-unknown-trigger [2/3]: The usual drawing connection and reduction in current reward are both present, with the trigger separately unknown. The dashed clause keeps 'usually' and supplies the authored interest without explicitly identifying the unnamed diary activity as drawing. The longer symptom/course recap is less focused than ideal, so quality is acceptable rather than strong. No source fallback was used.
+PASS generalize-avery-bookmark-not-recovery-evidence [2/3]: The exact excerpts preserve the bookmark's purpose and the necessary ongoing-worry correction. Paragraph-separated source text is less conversational but meets the locked requirements.
+PASS generalize-avery-unnamed-mystery-callback [2/3]: The callback and unknown-title boundary are correct. Retelling the entire known mystery example is longer than needed for this title question.
+PASS generalize-robin-ambiguous-repeat-without-antecedent [3/3]: Appropriate local clarification for a genuinely missing antecedent; no provider call was needed.
+PASS generalize-robin-earlier-pot-not-finished-arrangement [3/3]: The active future plan and its not-yet-completed status directly correct the false premise.
+PASS generalize-alex-task-list-not-sibling-character-judgment [2/3]: The final exact sources give the direct organizing detail first and keep the sibling's opinion unknown. They avoid the causal 'since' that failed v152. The additional relationship paragraph and source-style delivery make this acceptable rather than strong.
+PASS generalize-alex-monitoring-sleep-not-normality [3/3]: The relevant present focus accompanies an honest limitation about sleep quality, preserving the earlier-versus-current distinction.
+
+The original 16 cases are regression evidence. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

@@ -1,0 +1,83 @@
+PsychLab Qwen3-Next regression review — original 16 generalization cases
+
+Regression: these original 16 cases have already informed fixes and cannot establish fresh held-out generalization.
+Model: Qwen/Qwen3-Next-80B-A3B-Instruct
+Evaluation SHA-256: db8795e2c8ac14c8c8b44e8f70445a29a89eb89e182a9e62769397e6e3a12e8b
+Canonical facts SHA-256: 232ac7bcdc1118cc3a856e522103da0600970b59ade457ad31230748ad1664d1
+Usage SHA-256: 679120fb76b0c94a7078bd8f3601f8f3d31c35c4e8eaa81463c785842791e7fc
+
+Regression gate fails: 8 of 16 pass. Three questions are blocked, two delivered answers introduce wrong referents or cross-story facts, and three further replies miss required known content or the requested multipart distinction.
+Quality: 18/48; mean 1.125.
+All 16 snapshots reproduced and unchanged. 29 calls, 36688 reported tokens, 0 unknown-usage calls; estimated USD 0.00533015, not a verified bill.
+
+PASS generalize-mika-caregiver-style-not-child-feeling — quality 2/3
+That detail isn’t available for this interview.
+Appropriate but generic unknown-cause boundary. A contextual explanation would be stronger; lack of one is not treated as fabrication.
+Identical wording has been rechecked against this run’s reproduced sources, retaining the prior boundary interpretation and score.
+
+FAIL generalize-mika-usual-demonstration-not-this-morning — quality 0/3
+No answer: The answer failed a factual check: Unsupported factual detail (inflated-frequency). No answer was added.
+The route first requested clarification and a local resolution supplied communication preference P03 rather than the earlier demonstration P11. The draft invents slow action, a spoken shelf instruction, an occurrence this morning, and an always frequency. P03 establishes none of those. Even full P11 describes a basket, not a shelf. The inflated-frequency guard correctly blocks the draft, but the question remains unanswered.
+
+PASS generalize-leo-window-sequence-callback — quality 3/3
+No, I added the window after Leo pointed to the spot and before they colored around it.
+
+FAIL generalize-leo-hoped-for-playdate-details — quality 0/3
+That detail isn’t available for this interview.
+Useful known context is mandatory in this matrix item: unlike the optional-context Riley/Alex questions, this case explicitly requires distinguishing the planned role opportunity and stating the hoped-for activity is not yet carried out. A wholly unavailable reply fails that requirement without hallucinating.
+
+PASS generalize-sam-sometimes-not-every-picture — quality 3/3
+We sometimes swap picture ideas, and we take turns choosing what happens next.
+
+FAIL generalize-sam-unmade-comic-plot-callback — quality 0/3
+In the last picture, another robot helps lift the hat up so it doesn’t cover the eyes.
+Unsupported: In the last picture, another robot helps lift the hat up so it doesn’t cover the eyes. — The active conversation refers to an unmade animal hat-shop comic (P12). This answer transfers the older robot-comic event (P08) to that different comic. P08 also says next picture, not that this is a final panel.
+This is a delivered factual contamination between two authored memories/plans, not merely an awkward paraphrase.
+
+PASS generalize-riley-thinking-time-not-personality-label — quality 2/3
+That detail isn’t available for this interview.
+The requested new information is whether the communication preference establishes a broad character trait. The same v12 app-boundary interpretation used for Mika's unknown cause and Alex's unknown current health finding applies. A contextual rejection of the inference would be more informative, but the generic boundary earns an acceptable 2 rather than a strong 3.
+Identical wording has been rechecked against this run’s reproduced sources, retaining the prior boundary interpretation and score.
+
+PASS generalize-riley-school-observer-and-quote-unknown — quality 2/3
+That detail isn’t available for this interview.
+Valid brief missing-detail boundary. It is an explicit system boundary rather than an in-character invented memory gap; no known requested answer is being suppressed.
+Identical wording has been rechecked against this run’s reproduced sources, retaining the prior boundary interpretation and score.
+
+FAIL generalize-jordan-sharing-and-response-preference — quality 0/3
+No answer: Question routing failed validation.
+CORTEX returned the same source ID twice: [P09, P09]. Route validation correctly rejected the duplicate-ID result before any writer call. The one-source fact contains both requested details, but no answer was delivered. No factual draft exists to assess.
+
+FAIL generalize-jordan-current-reward-and-unknown-trigger — quality 0/3
+I still usually sketch mugs and plant pots with a pencil kept in my notebook, but for four months—including before this diary—I’ve felt low and lost interest on most days, which is different from how I usually was before that.
+The known time course is supported. This fails usefulness and the required multipart distinction rather than being counted as a delivered invented cause. “Still usually” is unnecessarily suggestive of current continuity; the primary demonstrated failure is omission of the requested reward and unknown-trigger distinction.
+
+FAIL generalize-avery-bookmark-not-recovery-evidence — quality 0/3
+That detail isn’t available for this interview.
+This differs from a purely unauthored detail: the question’s recovery premise can be corrected using the explicitly recorded ongoing interference. The unavailable boundary suppresses the required known answer.
+
+PASS generalize-avery-unnamed-mystery-callback — quality 2/3
+That detail isn’t available for this interview.
+The question requests only an unauthored title, so the concise app boundary is adequate, though mentioning the earlier mystery would improve continuity.
+Identical wording has been rechecked against this run’s reproduced sources, retaining the prior boundary interpretation and score.
+
+FAIL generalize-robin-ambiguous-repeat-without-antecedent — quality 0/3
+I’d start with a pot of herbs again—seeing new growth is what kept me going.
+Unsupported: I’d start with a pot of herbs again — There is no antecedent for “it” and no recorded commitment or preference to repeat the hobby-start method. The answer invents both the referent and the future choice.
+The reason for earlier interest is canonically supported, but that does not authorize choosing it as an answer to a referent-free question or asserting a new future preference.
+
+FAIL generalize-robin-earlier-pot-not-finished-arrangement — quality 0/3
+No answer: The answer did not pass the support check. No answer was added. Try rephrasing your question.
+The writer reproduces the supported P12 clause: “That arrangement is an idea I haven’t set up yet.” The auditor rejects a span copied from the learner’s question (“That arrangement is already ready for visitors to look at?”), not from the candidate. It mistakes the premise being corrected for a patient assertion. The supported answer is therefore falsely blocked.
+
+PASS generalize-alex-task-list-not-sibling-character-judgment — quality 2/3
+That detail isn’t available for this interview.
+The same app-boundary interpretation applies to an unauthored opinion. Known organizing context would improve the reply, but the matrix says it can be described rather than requiring that additional context. This conservative answer receives 2.
+Identical wording has been rechecked against this run’s reproduced sources, retaining the prior boundary interpretation and score.
+
+PASS generalize-alex-monitoring-sleep-not-normality — quality 2/3
+That detail isn’t available for this interview.
+Appropriate conservative boundary for an unauthored current health finding. Explicitly distinguishing monitoring from a normal result would be more informative, so this receives 2 rather than 3.
+Identical wording has been rechecked against this run’s reproduced sources, retaining the prior boundary interpretation and score.
+
+One stochastic candidate run on a development regression set, independently reviewed by an assistant. It is not fresh generalization evidence, clinical validation, or a controlled model comparison against another runtime. Original runtime hashes and the entire usage ledger are preserved. No provider calls or runtime edits were made for this review.

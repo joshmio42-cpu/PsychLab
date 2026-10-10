@@ -1,0 +1,3875 @@
+{
+  "schemaVersion": 1,
+  "label": "pilot-25-transfer",
+  "cases": 8,
+  "variants": 1,
+  "maximumProviderCalls": 24,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "packHash": "4467bf983a6b7bbad455d37b769f7fe3fcd26cd1c43168572889666ffd0d5ca2",
+  "matrixHash": "ea48aa7b485b935aeec51894dfa188c4a81738151bd005c14a33a6b71c6d1264",
+  "output": "/local/user\\Documents\\ChatGPT\\PsychLab\\psych-simulator-foundation\\adaption\\runs\\pilot-25-transfer-candidate.json",
+  "sourceHashes": {
+    "model.mjs": "bf4fbce15bf8bb5a7d06b929032f9d0c8e8b0a78f40176ffcad1952a4426c569",
+    "example-guidance.mjs": "e8a0de070a8162c7b41ec91911d443f6124efa43caa2bd40bcc842b0c5e89069",
+    "prompt-context.mjs": "7375288f7f98df4206608c291796f6d409ab8aa1d3dd6d6307d321f213bbed19",
+    "conversation.mjs": "1e6901ac61754eaac780ab9bb249f7574a42aad7c04f4223da75739129f74b3f",
+    "agent-context.mjs": "7ba803ff83c91c7b379b7f911617f765397cb04abaae89d4ffc8bcbb9dc70728",
+    "factual-support.mjs": "830644f84b19bad504f956b3ea2904965c924a2633de9dd1c9f36ee77c83400d",
+    "usage.mjs": "3ffa8c1f48b42ae0811358adfeba5d5e37386f74efe9fa7aa2d7698ccd7295fd",
+    "pricing.mjs": "42a488a80a27991d14dbf90a1f5369af4d66a2320c1e8563c157bdc00d31b592"
+  },
+  "promptVersion": "interview-0.11.0",
+  "status": "complete",
+  "startedAt": "2026-10-09T07:17:21.671Z",
+  "method": "Same frozen snapshot and held-out question for both variants; alternate order when run together, otherwise record separate run times; no retries; independent semantic review pending. Candidate examples were authored without reading this test matrix.",
+  "releaseGate": {
+    "noUnsupportedDeliveredClaims": true,
+    "noHardRegressions": true,
+    "minimumImprovedCases": 1,
+    "qualityMustNotDecrease": true,
+    "maxCostIncreaseFraction": 0.2,
+    "allCasesReviewed": true
+  },
+  "records": [
+    {
+      "id": "transfer-jordan-other-patient-past-episode",
+      "variant": "candidate",
+      "question": "I might have mixed up the past and current histories. Was the eight-day high-energy period that needed hospital care part of your history?",
+      "fixture": {
+        "patientId": "jordan",
+        "disorderId": "mdd",
+        "selectionMode": "chosen",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Treats the suggested episode as an unverified premise rather than adopting another fictional patient's history.",
+        "If explaining Jordan's recorded course, preserves the four-month low-mood and reduced-interest history in the current snapshot; the 21-day diary does not reset onset.",
+        "Keeps unauthored hospitalization or high-energy history unknown rather than claiming a complete lifetime absence."
+      ],
+      "forbiddenThings": [
+        "Transferring Alex's eight-day high-energy period, little need for sleep, racing plans, or hospital care into Jordan's history.",
+        "Claiming that Jordan has never had hospital care or a high-energy episode when the record does not establish that absence.",
+        "Citing an EX_ demonstration source or describing example-guidance machinery in patient speech."
+      ],
+      "snapshotHash": "4e04587026c1377b38ed81d5adc5836561fbdc85a16fa4e74ff0b647c0681bea",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Usually, I sketch ordinary things and keep the drawings in a notebook.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "Give me a second to think. It’s easier if I can give you an example.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "I like a quiet chat with my cousin. With my friend, I’d rather agree on a time and a plan than leave it up in the air.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual sketching subjects and materials",
+                "detail": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "How sketching everyday objects became a hobby",
+                "detail": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual sketching setup and keeping unfinished drawings",
+                "detail": "I keep a pencil tucked into my sketchbook and leave unfinished drawings in it. I don’t need to clear a big space to get the notebook out.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier mug sketch as a concrete drawing example",
+                "detail": "In an earlier drawing, I sketched a mug from the side and then turned it to try the handle from another angle. Both sketches stayed on the same page.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "What Jordan shares in quiet chats with a cousin",
+                "detail": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for agreeing on concrete plans with a friend",
+                "detail": "When I make plans with my friend, I prefer to agree on a time and place. If something changes, I’d like a message so I know where things stand.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way of starting an ordinary task",
+                "detail": "For an ordinary task, I usually write down the first thing that needs doing and start with that. I prefer a short list I can actually look back at.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future series of everyday-object sketches",
+                "detail": "I’d like to fill a few notebook pages with the same ordinary objects seen from different angles. That’s something I want to try, not a finished set of drawings.",
+                "scope": "wish"
+              },
+              {
+                "id": "B01",
+                "topic": "Earlier course and onset",
+                "detail": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+              },
+              {
+                "id": "B02",
+                "topic": "Experiences described",
+                "detail": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+              },
+              {
+                "id": "B03",
+                "topic": "Effect on everyday activities",
+                "detail": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+              },
+              {
+                "id": "B04",
+                "topic": "Personal routines and support",
+                "detail": "I am in the young adult stage. My usual interests include sketching. I want to take part in finishing a routine work task, with support from my cousin."
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E03",
+                "topic": "Day 3: Recent experience and participation"
+              },
+              {
+                "id": "E05",
+                "topic": "Day 5: Recent experience and routine"
+              },
+              {
+                "id": "E08",
+                "topic": "Day 8: Recent experience and participation"
+              },
+              {
+                "id": "E09",
+                "topic": "Day 9: Recent experience and participation"
+              },
+              {
+                "id": "E10",
+                "topic": "Day 10: Recent experience and routine"
+              },
+              {
+                "id": "E11",
+                "topic": "Day 11: Recent experience and participation"
+              },
+              {
+                "id": "E12",
+                "topic": "Day 12: Recent experience and participation"
+              },
+              {
+                "id": "E13",
+                "topic": "Day 13: Recent experience and participation"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: Recent experience and participation"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: Recent experience and participation"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: Recent experience and routine"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: Recent experience and routine"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "I might have mixed up the past and current histories. Was the eight-day high-energy period that needed hospital care part of your history?"
+          },
+          "inputBytes": 7860,
+          "value": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 2215,
+            "usage": {
+              "prompt_tokens": 1655,
+              "completion_tokens": 10,
+              "total_tokens": 1665
+            },
+            "inputBytes": 7860,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1655,
+              "completionTokens": 10,
+              "totalTokens": 1665,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00061635,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "That detail isn’t available for this interview.",
+        "factIds": [],
+        "domains": [],
+        "kind": "unavailable",
+        "interaction": "unavailable",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 2215,
+              "usage": {
+                "prompt_tokens": 1655,
+                "completion_tokens": 10,
+                "total_tokens": 1665
+              },
+              "inputBytes": 7860,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1655,
+                "completionTokens": 10,
+                "totalTokens": 1665,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00061635,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            }
+          ],
+          "renderer": "Explicit missing case detail; not patient speech"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "reportedTokens": 1665,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 1655,
+        "reportedCompletionTokens": 10,
+        "inputBytes": 7860,
+        "outputTokenAllowance": 128,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.00061635,
+          "status": "estimated",
+          "pricedCalls": 1,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.00061635,
+              "calls": 1,
+              "failedCalls": 0,
+              "pricedCalls": 1,
+              "unpricedCalls": 0,
+              "promptTokens": 1655,
+              "completionTokens": 10,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": []
+    },
+    {
+      "id": "transfer-alex-current-hobby-and-symptoms",
+      "variant": "candidate",
+      "question": "Does your usual hobby feel much less rewarding now, with broken sleep and low energy getting in the way?",
+      "fixture": {
+        "patientId": "alex",
+        "disorderId": "bipolar1",
+        "selectionMode": "chosen",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Separates Alex's usual music interests from an unsupported claim about present enjoyment or current depressive symptoms.",
+        "Uses only this snapshot when discussing sleep or energy; Alex's recorded high-energy episode preceded the diary and is not reported as a new current episode.",
+        "May explain uncertainty naturally without asserting that current enjoyment, sleep, or energy is normal."
+      ],
+      "forbiddenThings": [
+        "Importing Jordan's current broken sleep, low energy, reduced reward or four-month depressive course into Alex's account.",
+        "Claiming sketching, a sketchbook, mugs or plant pots as Alex's usual hobby.",
+        "Turning the earlier high-energy period into a current episode or inferring complete recovery from a steadier routine."
+      ],
+      "snapshotHash": "495d6fe0b4ba9914f8f5374ff25e2230b5ff96617242e9b7650a388cb85feda7",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I want a plan for study and part-time work that I can actually keep up with, with some time left for music.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Usually, I’ll put on a favorite album and listen to it all the way through.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "A direct question works best for me. If it’s a big one, breaking it up helps.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "I talk things through with my sibling when there’s a practical problem. With my friend, I’d rather make a plan than decide everything at the last minute.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual music and album-listening habits",
+                "detail": "Usually instrumental music or albums with a lot of guitar. I tend to play the tracks in order.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "Why listening to whole albums became a hobby",
+                "detail": "I got curious about how the songs fit together. That’s why I started listening to whole albums instead of just individual tracks.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual way of keeping study and work tasks visible",
+                "detail": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier comparison of album opening tracks",
+                "detail": "With a couple of albums I listened to before, I compared how their opening tracks led into the next song. I made a note about the order rather than rating every track.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "How Alex asks a sibling for practical help",
+                "detail": "When I talk through a practical problem with my sibling, I usually show them the options I’ve already thought of and ask what I might have missed.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for plans that leave room around commitments",
+                "detail": "I prefer making plans with a friend after checking my study and work commitments. I don’t want to agree to something and only then work out whether it fits.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way of dividing a study task",
+                "detail": "For a study task, I usually write the next concrete step, such as opening the reading and choosing a section. A short next step is easier to plan around than the whole assignment.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future album conversation with a friend",
+                "detail": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet.",
+                "scope": "wish"
+              },
+              {
+                "id": "B01",
+                "topic": "Earlier course and onset",
+                "detail": "Before this diary, I had a distinct eight-day period of unusually high energy, very little need for sleep, racing plans and behavior that seriously disrupted my life. I needed hosp"
+              },
+              {
+                "id": "B02",
+                "topic": "Experiences described",
+                "detail": "During that past period I felt unusually capable, talked much more and committed to far more than I could manage. I am not reporting a new high-energy episode in this diary."
+              },
+              {
+                "id": "B03",
+                "topic": "Effect on everyday activities",
+                "detail": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments."
+              },
+              {
+                "id": "B04",
+                "topic": "Personal routines and support",
+                "detail": "I am in the young adult stage. My usual interests include listening to music. I want to take part in balancing study and part-time work, with support from my sibling."
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E06",
+                "topic": "Day 6: Recent experience and participation"
+              },
+              {
+                "id": "E07",
+                "topic": "Day 7: Recent experience and participation"
+              },
+              {
+                "id": "E08",
+                "topic": "Day 8: Recent experience and participation"
+              },
+              {
+                "id": "E09",
+                "topic": "Day 9: Recent experience and participation"
+              },
+              {
+                "id": "E11",
+                "topic": "Day 11: Recent experience and participation"
+              },
+              {
+                "id": "E12",
+                "topic": "Day 12: Recent experience and participation"
+              },
+              {
+                "id": "E13",
+                "topic": "Day 13: Recent experience and participation"
+              },
+              {
+                "id": "E15",
+                "topic": "Day 15: Recent experience and participation"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: Recent experience and participation"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: Recent experience and participation"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: Recent experience and participation"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: Recent experience and participation"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "Does your usual hobby feel much less rewarding now, with broken sleep and low energy getting in the way?"
+          },
+          "inputBytes": 8078,
+          "value": {
+            "kind": "answer",
+            "fact_ids": [
+              "P02",
+              "B03"
+            ]
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1542,
+            "usage": {
+              "prompt_tokens": 1669,
+              "completion_tokens": 16,
+              "total_tokens": 1685
+            },
+            "inputBytes": 8078,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1669,
+              "completionTokens": 16,
+              "totalTokens": 1685,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00062393,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        },
+        {
+          "role": "LANGUAGE",
+          "input": {
+            "agentContext": {
+              "version": "agent-context-0.3.0",
+              "interview": {
+                "patient": "Alex",
+                "pronouns": "they/them",
+                "lifeStage": "Young adult",
+                "speaker": "Alex",
+                "perspective": "patient",
+                "language": "Use this individual patient's own voice and life-stage context, without a stereotyped personality or an automatic diagnostic label."
+              },
+              "personality": {
+                "communication": "Practical and concise, with ordinary contractions. Match the length to the question and do not turn a casual answer into a personal essay. Show communication preferences through delivery rather than repeatedly explaining them.",
+                "schema": [],
+                "motive": "Style guidance only: priorities include reliability and autonomy. Do not add uncited biography."
+              },
+              "mentalPremise": {
+                "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+                "mnemosyne": []
+              }
+            },
+            "previousQuestions": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "permittedFacts": [
+              {
+                "id": "P02",
+                "statement": "Usually, I’ll put on a favorite album and listen to it all the way through.",
+                "scope": "usual"
+              },
+              {
+                "id": "B03",
+                "statement": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments."
+              }
+            ],
+            "question": "Does your usual hobby feel much less rewarding now, with broken sleep and low energy getting in the way?",
+            "exampleGuidance": {
+              "purpose": "Separate fictional demonstrations; never current patient evidence.",
+              "examples": [
+                {
+                  "question": "Does having sketching as a hobby mean it feels rewarding for you now?",
+                  "sourceFacts": [
+                    {
+                      "id": "EX_dev_jordan_usual_and_current_P02",
+                      "statement": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+                    },
+                    {
+                      "id": "EX_dev_jordan_usual_and_current_B02",
+                      "statement": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+                    }
+                  ],
+                  "answer": {
+                    "reply": "I usually sketch ordinary things and keep the drawings in a notebook, but activities I usually enjoy feel much less rewarding right now.",
+                    "fact_ids": [
+                      "EX_dev_jordan_usual_and_current_P02",
+                      "EX_dev_jordan_usual_and_current_B02"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "inputBytes": 5836,
+          "value": {
+            "reply": "Listening to a favorite album all the way through is something I usually do, but I haven't mentioned how rewarding it feels lately. Right now, I’m focusing on rebuilding routines and keeping track of sleep and manageable commitments.",
+            "fact_ids": [
+              "P02",
+              "B03"
+            ]
+          },
+          "meta": {
+            "role": "LANGUAGE",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 2459,
+            "usage": {
+              "prompt_tokens": 1147,
+              "completion_tokens": 58,
+              "total_tokens": 1205
+            },
+            "inputBytes": 5836,
+            "outputTokenLimit": 320,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1147,
+              "completionTokens": 58,
+              "totalTokens": 1205,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00044759,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        },
+        {
+          "role": "AUDITOR",
+          "input": {
+            "previousQuestions": [],
+            "interaction": "answer",
+            "speaker": "Alex",
+            "pronouns": "they/them",
+            "citedFacts": [
+              {
+                "id": "P02",
+                "statement": "Usually, I’ll put on a favorite album and listen to it all the way through.",
+                "scope": "usual"
+              },
+              {
+                "id": "B03",
+                "statement": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments."
+              }
+            ],
+            "candidate": "Listening to a favorite album all the way through is something I usually do, but I haven't mentioned how rewarding it feels lately. Right now, I’m focusing on rebuilding routines and keeping track of sleep and manageable commitments.",
+            "question": "Does your usual hobby feel much less rewarding now, with broken sleep and low energy getting in the way?",
+            "exampleGuidance": {
+              "purpose": "Separate fictional demonstrations; never current patient evidence.",
+              "examples": [
+                {
+                  "question": "Does having sketching as a hobby mean it feels rewarding for you now?",
+                  "citedFacts": [
+                    {
+                      "id": "EX_dev_jordan_usual_and_current_P02",
+                      "statement": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+                    },
+                    {
+                      "id": "EX_dev_jordan_usual_and_current_B02",
+                      "statement": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+                    }
+                  ],
+                  "candidate": "I usually sketch ordinary things and keep the drawings in a notebook, but activities I usually enjoy feel much less rewarding right now.",
+                  "result": {
+                    "unsupported": [],
+                    "supported": true,
+                    "relevant": true,
+                    "no_leak": true
+                  }
+                }
+              ]
+            }
+          },
+          "inputBytes": 3771,
+          "value": {
+            "unsupported": [
+              "how rewarding it feels lately"
+            ],
+            "supported": false,
+            "relevant": true,
+            "no_leak": true
+          },
+          "meta": {
+            "role": "AUDITOR",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1664,
+            "usage": {
+              "prompt_tokens": 737,
+              "completion_tokens": 23,
+              "total_tokens": 760
+            },
+            "inputBytes": 3771,
+            "outputTokenLimit": 160,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 737,
+              "completionTokens": 23,
+              "totalTokens": 760,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00028188999999999997,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "status": "blocked",
+      "error": {
+        "message": "The answer did not pass the support check. No answer was added. Try rephrasing your question.",
+        "status": 502
+      },
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 3,
+        "completedCalls": 3,
+        "failedCalls": 0,
+        "reportedTokens": 3650,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 3553,
+        "reportedCompletionTokens": 97,
+        "inputBytes": 17685,
+        "outputTokenAllowance": 608,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.0013534099999999998,
+          "status": "estimated",
+          "pricedCalls": 3,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.0013534099999999998,
+              "calls": 3,
+              "failedCalls": 0,
+              "pricedCalls": 3,
+              "unpricedCalls": 0,
+              "promptTokens": 3553,
+              "completionTokens": 97,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": [
+        {
+          "id": "P02",
+          "label": "Usual interests and hobbies, not current enjoyment",
+          "scope": "usual",
+          "domains": [
+            "goals",
+            "support"
+          ],
+          "response": "Usually, I’ll put on a favorite album and listen to it all the way through.",
+          "provenance": "authored-fiction",
+          "sources": []
+        },
+        {
+          "id": "B03",
+          "label": "Effect on everyday activities",
+          "domains": [
+            "function",
+            "goals"
+          ],
+          "response": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments.",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "transfer-no-disorder-duration-contamination",
+      "variant": "candidate",
+      "question": "Thinking about your earlier history and the duration of symptoms, how many months have the low mood and loss of interest been going on?",
+      "fixture": {
+        "patientId": "alex",
+        "selectionMode": "none",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Keeps the duration and the suggested symptom history unknown because this no-disorder snapshot supplies no authored earlier health history.",
+        "Does not convert a recent 21-day diary, ordinary routines or model state into a clinical symptom duration.",
+        "Does not interpret no disorder being selected as proof of no symptoms or no illness."
+      ],
+      "forbiddenThings": [
+        "Answering four months or borrowing any other duration from an illness demonstration.",
+        "Introducing Alex's bipolar example history, hospital care or an eight-day high-energy period into this independently generated no-disorder snapshot.",
+        "Inventing a diagnosis, onset, chronicity, symptom absence or a reassuring negative health finding."
+      ],
+      "snapshotHash": "526355fcf88b05717f7977c7ebaacf55bf5f5066d2edf81728cff627ddba3504",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I want a plan for study and part-time work that I can actually keep up with, with some time left for music.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Usually, I’ll put on a favorite album and listen to it all the way through.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "A direct question works best for me. If it’s a big one, breaking it up helps.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "I talk things through with my sibling when there’s a practical problem. With my friend, I’d rather make a plan than decide everything at the last minute.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual music and album-listening habits",
+                "detail": "Usually instrumental music or albums with a lot of guitar. I tend to play the tracks in order.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "Why listening to whole albums became a hobby",
+                "detail": "I got curious about how the songs fit together. That’s why I started listening to whole albums instead of just individual tracks.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual way of keeping study and work tasks visible",
+                "detail": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier comparison of album opening tracks",
+                "detail": "With a couple of albums I listened to before, I compared how their opening tracks led into the next song. I made a note about the order rather than rating every track.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "How Alex asks a sibling for practical help",
+                "detail": "When I talk through a practical problem with my sibling, I usually show them the options I’ve already thought of and ask what I might have missed.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for plans that leave room around commitments",
+                "detail": "I prefer making plans with a friend after checking my study and work commitments. I don’t want to agree to something and only then work out whether it fits.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way of dividing a study task",
+                "detail": "For a study task, I usually write the next concrete step, such as opening the reading and choosing a section. A short next step is easier to plan around than the whole assignment.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future album conversation with a friend",
+                "detail": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet.",
+                "scope": "wish"
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E10",
+                "topic": "Day 10: support"
+              },
+              {
+                "id": "E11",
+                "topic": "Day 11: support"
+              },
+              {
+                "id": "E12",
+                "topic": "Day 12: task"
+              },
+              {
+                "id": "E13",
+                "topic": "Day 13: support"
+              },
+              {
+                "id": "E14",
+                "topic": "Day 14: quiet"
+              },
+              {
+                "id": "E15",
+                "topic": "Day 15: cancelled"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: support"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: quiet"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: task"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: task"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: task"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: cancelled"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "Thinking about your earlier history and the duration of symptoms, how many months have the low mood and loss of interest been going on?"
+          },
+          "inputBytes": 6804,
+          "value": {
+            "kind": "clarification",
+            "fact_ids": []
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1779,
+            "usage": {
+              "prompt_tokens": 1450,
+              "completion_tokens": 10,
+              "total_tokens": 1460
+            },
+            "inputBytes": 6804,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1450,
+              "completionTokens": 10,
+              "totalTokens": 1460,
+              "cachedTokens": null,
+              "estimatedUsd": 0.0005405,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "Which part do you mean?",
+        "factIds": [],
+        "domains": [],
+        "kind": "clarification",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "clarification",
+            "fact_ids": []
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1779,
+              "usage": {
+                "prompt_tokens": 1450,
+                "completion_tokens": 10,
+                "total_tokens": 1460
+              },
+              "inputBytes": 6804,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1450,
+                "completionTokens": 10,
+                "totalTokens": 1460,
+                "cachedTokens": null,
+                "estimatedUsd": 0.0005405,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            }
+          ],
+          "renderer": "Explicit system boundary message; not generated client speech"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "reportedTokens": 1460,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 1450,
+        "reportedCompletionTokens": 10,
+        "inputBytes": 6804,
+        "outputTokenAllowance": 128,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.0005405,
+          "status": "estimated",
+          "pricedCalls": 1,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.0005405,
+              "calls": 1,
+              "failedCalls": 0,
+              "pricedCalls": 1,
+              "unpricedCalls": 0,
+              "promptTokens": 1450,
+              "completionTokens": 10,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": []
+    },
+    {
+      "id": "transfer-jordan-practical-plans-biography",
+      "variant": "candidate",
+      "question": "When you make practical plans, do you put your study tasks and work shifts together on one list before adding a commitment?",
+      "fixture": {
+        "patientId": "jordan",
+        "selectionMode": "none",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Distinguishes the suggested study-and-shift routine from Jordan's actual short-list preference for ordinary work tasks.",
+        "Any alternative planning example must come from Jordan's current personal facts, without importing another person's commitments.",
+        "Keeps unauthored education and shift-work details unknown instead of affirming or categorically denying them."
+      ],
+      "forbiddenThings": [
+        "Adopting Alex's combined study-task and work-shift list or marking fixed study/work times as Jordan's routine.",
+        "Inventing a school, course, employer, work shift, timetable or completed commitment.",
+        "Changing Jordan's patient voice to that of a caregiver or disclosing demonstration source IDs."
+      ],
+      "snapshotHash": "5934a13501da70a2c6117a8ebce676e56b09b953efdb95c9042fc0767e327a47",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Usually, I sketch ordinary things and keep the drawings in a notebook.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "Give me a second to think. It’s easier if I can give you an example.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "I like a quiet chat with my cousin. With my friend, I’d rather agree on a time and a plan than leave it up in the air.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual sketching subjects and materials",
+                "detail": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "How sketching everyday objects became a hobby",
+                "detail": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual sketching setup and keeping unfinished drawings",
+                "detail": "I keep a pencil tucked into my sketchbook and leave unfinished drawings in it. I don’t need to clear a big space to get the notebook out.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier mug sketch as a concrete drawing example",
+                "detail": "In an earlier drawing, I sketched a mug from the side and then turned it to try the handle from another angle. Both sketches stayed on the same page.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "What Jordan shares in quiet chats with a cousin",
+                "detail": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for agreeing on concrete plans with a friend",
+                "detail": "When I make plans with my friend, I prefer to agree on a time and place. If something changes, I’d like a message so I know where things stand.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way of starting an ordinary task",
+                "detail": "For an ordinary task, I usually write down the first thing that needs doing and start with that. I prefer a short list I can actually look back at.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future series of everyday-object sketches",
+                "detail": "I’d like to fill a few notebook pages with the same ordinary objects seen from different angles. That’s something I want to try, not a finished set of drawings.",
+                "scope": "wish"
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E03",
+                "topic": "Day 3: task"
+              },
+              {
+                "id": "E06",
+                "topic": "Day 6: quiet"
+              },
+              {
+                "id": "E08",
+                "topic": "Day 8: task"
+              },
+              {
+                "id": "E09",
+                "topic": "Day 9: task"
+              },
+              {
+                "id": "E12",
+                "topic": "Day 12: task"
+              },
+              {
+                "id": "E14",
+                "topic": "Day 14: quiet"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: support"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: quiet"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: task"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: task"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: task"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: cancelled"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "When you make practical plans, do you put your study tasks and work shifts together on one list before adding a commitment?"
+          },
+          "inputBytes": 6659,
+          "value": {
+            "kind": "clarification",
+            "fact_ids": []
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1391,
+            "usage": {
+              "prompt_tokens": 1439,
+              "completion_tokens": 10,
+              "total_tokens": 1449
+            },
+            "inputBytes": 6659,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1439,
+              "completionTokens": 10,
+              "totalTokens": 1449,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00053643,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "Which part do you mean?",
+        "factIds": [],
+        "domains": [],
+        "kind": "clarification",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "clarification",
+            "fact_ids": []
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1391,
+              "usage": {
+                "prompt_tokens": 1439,
+                "completion_tokens": 10,
+                "total_tokens": 1449
+              },
+              "inputBytes": 6659,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1439,
+                "completionTokens": 10,
+                "totalTokens": 1449,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00053643,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            }
+          ],
+          "renderer": "Explicit system boundary message; not generated client speech"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "reportedTokens": 1449,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 1439,
+        "reportedCompletionTokens": 10,
+        "inputBytes": 6659,
+        "outputTokenAllowance": 128,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.00053643,
+          "status": "estimated",
+          "pricedCalls": 1,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.00053643,
+              "calls": 1,
+              "failedCalls": 0,
+              "pricedCalls": 1,
+              "unpricedCalls": 0,
+              "promptTokens": 1439,
+              "completionTokens": 10,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": []
+    },
+    {
+      "id": "transfer-preschool-caregiver-choices",
+      "variant": "candidate",
+      "question": "What choices do you offer during play, and what do you let them decide for themselves?",
+      "fixture": {
+        "patientId": "leo",
+        "disorderId": "separation",
+        "selectionMode": "chosen",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Speaks as Leo's caregiver, so first-person observations and preferences belong to the caregiver.",
+        "Answers with Leo-specific supported choices, such as which crayons to put away or whether the caregiver uses separate paper or adds to Leo's drawing.",
+        "Preserves the preschool stage and limits claims to observations and recorded preferences."
+      ],
+      "forbiddenThings": [
+        "Borrowing Mika's toddler example of choosing animal picture books versus blocks or reaching for one of those items.",
+        "Claiming direct knowledge of the child's private thoughts or motives.",
+        "Using separation difficulties to claim an unrecorded inability to choose, or turning a hoped-for playdate into a completed event."
+      ],
+      "snapshotHash": "92a183aa8eae69c072834fea428dcc4b81aa221c79bb283e7709a42da62db3f5",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I’d like Leo to join in at preschool, but still get a choice about how to start.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Leo goes for the crayons and sets things out to play shops.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "I usually start with what happened first, then go from there. I can tell you what Leo did, but not exactly what Leo was thinking.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "Leo points things out to a familiar caregiver when they look at picture books. At playdates, I offer two things they could do together and let Leo choose.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual drawing subjects and pretend-shop details",
+                "detail": "Leo usually draws houses and sets out toy fruit for the pretend shop.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "Caregiver’s reason for joining the pretend-shop game",
+                "detail": "I use the shop game to give Leo a couple of choices—what to put out, and what I should pretend to buy.",
+                "scope": "usual"
+              },
+              {
+                "id": "P07",
+                "topic": "Caregiver setup for Leo’s drawing and pretend shop",
+                "detail": "I usually set out paper and crayons at a small table. For Leo’s shop game, I put the toy fruit in a basket beside it.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier observed house-drawing example",
+                "detail": "On an earlier drawing day, Leo drew a house, pointed to the empty wall and asked me to add a window. Leo colored around it afterward.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "Caregiver role in Leo’s pretend shop",
+                "detail": "When we play shops, Leo sets out the toy fruit and I pretend to be the customer. I ask what’s for sale and wait for Leo to show me.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Caregiver preference for advance notice at activity changes",
+                "detail": "I prefer to tell Leo what activity is coming next, then offer a small choice, such as which crayons to put away first.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Caregiver example of sharing an activity without taking over",
+                "detail": "If I’m joining a drawing activity, I ask Leo whether to draw on my own paper or add something to theirs. I wait for an answer before joining in.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Caregiver wish for a pretend-shop playdate",
+                "detail": "I’d like to try a short playdate with the toy shop ready, so Leo can choose a role at the start. We haven’t carried out that plan yet.",
+                "scope": "wish"
+              },
+              {
+                "id": "B01",
+                "topic": "Earlier course and onset",
+                "detail": "For many months before this diary, separation from a familiar caregiver has involved persistent distress that substantially interrupts participation, beyond the child's own earlier"
+              },
+              {
+                "id": "B02",
+                "topic": "Experiences described",
+                "detail": "I observe repeated clinging, crying and difficulty joining familiar activities when separation is expected. These observations do not tell me exactly what the child thinks."
+              },
+              {
+                "id": "B03",
+                "topic": "Effect on everyday activities",
+                "detail": "The child has missed ordinary play or preschool activities because leaving the caregiver is so difficult."
+              },
+              {
+                "id": "B04",
+                "topic": "Personal routines and support",
+                "detail": "Leo is in the preschool child stage. Their familiar activities include drawing with crayons; support is shaped around getting ready for a preschool activity."
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E01",
+                "topic": "Day 1: Recent experience and participation"
+              },
+              {
+                "id": "E05",
+                "topic": "Day 5: Recent experience and routine"
+              },
+              {
+                "id": "E07",
+                "topic": "Day 7: Recent experience and participation"
+              },
+              {
+                "id": "E10",
+                "topic": "Day 10: Recent experience and routine"
+              },
+              {
+                "id": "E14",
+                "topic": "Day 14: Recent experience and routine"
+              },
+              {
+                "id": "E15",
+                "topic": "Day 15: Recent experience and participation"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: Recent experience and participation"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: Recent experience and participation"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: Recent experience and participation"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: Recent experience and routine"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: Recent experience and routine"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: Recent experience and participation"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "What choices do you offer during play, and what do you let them decide for themselves?"
+          },
+          "inputBytes": 7775,
+          "value": {
+            "kind": "answer",
+            "fact_ids": [
+              "P04",
+              "P11"
+            ]
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1551,
+            "usage": {
+              "prompt_tokens": 1628,
+              "completion_tokens": 16,
+              "total_tokens": 1644
+            },
+            "inputBytes": 7775,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1628,
+              "completionTokens": 16,
+              "totalTokens": 1644,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00060876,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        },
+        {
+          "role": "LANGUAGE",
+          "input": {
+            "agentContext": {
+              "version": "agent-context-0.3.0",
+              "interview": {
+                "patient": "Leo",
+                "pronouns": "they/them",
+                "lifeStage": "Preschool child",
+                "speaker": "Leo's caregiver",
+                "perspective": "caregiver",
+                "language": "Speak as the caregiver; describe observable behavior and attributed records, never direct access to the child's thoughts."
+              },
+              "personality": {
+                "communication": "Speak as Leo’s caregiver. Describe observed actions in everyday words and in the order they happened; do not claim to know Leo’s thoughts or feelings. Explain communication preferences only when asked.",
+                "schema": [],
+                "motive": "Describe observed behavior only; do not infer the child’s motives or private thoughts."
+              },
+              "mentalPremise": {
+                "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+                "mnemosyne": []
+              }
+            },
+            "previousQuestions": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "permittedFacts": [
+              {
+                "id": "P04",
+                "statement": "Leo points things out to a familiar caregiver when they look at picture books. At playdates, I offer two things they could do together and let Leo choose.",
+                "scope": "usual"
+              },
+              {
+                "id": "P11",
+                "statement": "If I’m joining a drawing activity, I ask Leo whether to draw on my own paper or add something to theirs. I wait for an answer before joining in.",
+                "scope": "usual"
+              }
+            ],
+            "question": "What choices do you offer during play, and what do you let them decide for themselves?",
+            "exampleGuidance": {
+              "purpose": "Separate fictional demonstrations; never current patient evidence.",
+              "examples": [
+                {
+                  "question": "How did the playdate with the toy shop turn out?",
+                  "sourceFacts": [
+                    {
+                      "id": "EX_dev_leo_future_playdate_P12",
+                      "statement": "I’d like to try a short playdate with the toy shop ready, so the child can choose a role at the start. We haven’t carried out that plan yet."
+                    }
+                  ],
+                  "answer": {
+                    "reply": "We haven't tried that playdate yet. I'd like to have the toy shop ready so the child can choose a role at the start.",
+                    "fact_ids": [
+                      "EX_dev_leo_future_playdate_P12"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "inputBytes": 5696,
+          "value": {
+            "reply": "During play, I usually offer Leo two activities to choose from. If we’re drawing, I ask if they want me to draw on my own paper or add to theirs.",
+            "fact_ids": [
+              "P04",
+              "P11"
+            ]
+          },
+          "meta": {
+            "role": "LANGUAGE",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 2257,
+            "usage": {
+              "prompt_tokens": 1140,
+              "completion_tokens": 49,
+              "total_tokens": 1189
+            },
+            "inputBytes": 5696,
+            "outputTokenLimit": 320,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1140,
+              "completionTokens": 49,
+              "totalTokens": 1189,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00044140000000000005,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        },
+        {
+          "role": "AUDITOR",
+          "input": {
+            "previousQuestions": [],
+            "interaction": "answer",
+            "speaker": "Leo's caregiver",
+            "pronouns": "they/them",
+            "citedFacts": [
+              {
+                "id": "P04",
+                "statement": "Leo points things out to a familiar caregiver when they look at picture books. At playdates, I offer two things they could do together and let Leo choose.",
+                "scope": "usual"
+              },
+              {
+                "id": "P11",
+                "statement": "If I’m joining a drawing activity, I ask Leo whether to draw on my own paper or add something to theirs. I wait for an answer before joining in.",
+                "scope": "usual"
+              }
+            ],
+            "candidate": "During play, I usually offer Leo two activities to choose from. If we’re drawing, I ask if they want me to draw on my own paper or add to theirs.",
+            "question": "What choices do you offer during play, and what do you let them decide for themselves?",
+            "exampleGuidance": {
+              "purpose": "Separate fictional demonstrations; never current patient evidence.",
+              "examples": [
+                {
+                  "question": "How did the playdate with the toy shop turn out?",
+                  "citedFacts": [
+                    {
+                      "id": "EX_dev_leo_future_playdate_P12",
+                      "statement": "I’d like to try a short playdate with the toy shop ready, so the child can choose a role at the start. We haven’t carried out that plan yet."
+                    }
+                  ],
+                  "candidate": "We haven't tried that playdate yet. I'd like to have the toy shop ready so the child can choose a role at the start.",
+                  "result": {
+                    "unsupported": [],
+                    "supported": true,
+                    "relevant": true,
+                    "no_leak": true
+                  }
+                }
+              ]
+            }
+          },
+          "inputBytes": 3621,
+          "value": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "meta": {
+            "role": "AUDITOR",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1567,
+            "usage": {
+              "prompt_tokens": 737,
+              "completion_tokens": 18,
+              "total_tokens": 755
+            },
+            "inputBytes": 3621,
+            "outputTokenLimit": 160,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 737,
+              "completionTokens": 18,
+              "totalTokens": 755,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00027989,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "During play, I usually offer Leo two activities to choose from. If we’re drawing, I ask if they want me to draw on my own paper or add to theirs.",
+        "factIds": [
+          "P04",
+          "P11"
+        ],
+        "domains": [
+          "support"
+        ],
+        "kind": "answer",
+        "interaction": "answer",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "P04",
+              "P11"
+            ]
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1551,
+              "usage": {
+                "prompt_tokens": 1628,
+                "completion_tokens": 16,
+                "total_tokens": 1644
+              },
+              "inputBytes": 7775,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1628,
+                "completionTokens": 16,
+                "totalTokens": 1644,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00060876,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            },
+            {
+              "role": "LANGUAGE",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 2257,
+              "usage": {
+                "prompt_tokens": 1140,
+                "completion_tokens": 49,
+                "total_tokens": 1189
+              },
+              "inputBytes": 5696,
+              "outputTokenLimit": 320,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1140,
+                "completionTokens": 49,
+                "totalTokens": 1189,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00044140000000000005,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": [],
+              "exampleGuidance": {
+                "version": "example-guidance-1",
+                "packId": "psychlab-adaption-pilot-25",
+                "packVersion": "1.0.0",
+                "exampleIds": [
+                  "dev-leo-future-playdate"
+                ],
+                "inputBytes": 556,
+                "extraModelCalls": 0,
+                "included": true
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1567,
+              "usage": {
+                "prompt_tokens": 737,
+                "completion_tokens": 18,
+                "total_tokens": 755
+              },
+              "inputBytes": 3621,
+              "outputTokenLimit": 160,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 737,
+                "completionTokens": 18,
+                "totalTokens": 755,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00027989,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": [],
+              "exampleGuidance": {
+                "version": "example-guidance-1",
+                "packId": "psychlab-adaption-pilot-25",
+                "packVersion": "1.0.0",
+                "exampleIds": [
+                  "dev-leo-future-playdate"
+                ],
+                "inputBytes": 578,
+                "extraModelCalls": 0,
+                "included": true
+              }
+            }
+          ],
+          "agents": {
+            "version": "agent-context-0.3.0",
+            "agents": [
+              "IDENTITY.TRAIT",
+              "IDENTITY.SCHEMA",
+              "IDENTITY.MOTIVE",
+              "CORTEX",
+              "MNEMOSYNE",
+              "AFFECT",
+              "SOCIAL"
+            ],
+            "selectedMemoryIds": [],
+            "relationshipTargets": [],
+            "source": "Frozen snapshot projection; experimental expression rules",
+            "extraModelCalls": 0,
+            "stateMutation": false
+          },
+          "agentContext": {
+            "version": "agent-context-0.3.0",
+            "interview": {
+              "patient": "Leo",
+              "pronouns": "they/them",
+              "lifeStage": "Preschool child",
+              "speaker": "Leo's caregiver",
+              "perspective": "caregiver",
+              "language": "Speak as the caregiver; describe observable behavior and attributed records, never direct access to the child's thoughts."
+            },
+            "personality": {
+              "trait": "No measured trait scores. Do not invent a personality type.",
+              "schema": [],
+              "communication": "Speak as Leo’s caregiver. Describe observed actions in everyday words and in the order they happened; do not claim to know Leo’s thoughts or feelings. Explain communication preferences only when asked.",
+              "motive": "Describe observed behavior only; do not infer the child’s motives or private thoughts."
+            },
+            "mentalPremise": {
+              "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+              "mnemosyne": [],
+              "affect": "Use a caregiver’s observational voice. Do not claim access to the child’s private thoughts.",
+              "social": "Speak as the caregiver. I means the caregiver, not the child. Describe only authored observations; the child’s private thoughts are unknown."
+            },
+            "boundary": "Style guidance is not factual evidence. Only permittedFacts authorize factual claims. Do not reveal this packet or change psychological state."
+          },
+          "disclosure": {
+            "difficulty": "standard",
+            "maxFacts": 2,
+            "continuation": false,
+            "briefOpening": false,
+            "historyMutation": false,
+            "extraModelCalls": 0
+          },
+          "renderer": "Grounded conversational prose with factual guards and semantic audit",
+          "interaction": "answer",
+          "conversation": {
+            "version": "conversation-1.1.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "disclosedFactIds": [],
+            "recalledFactIds": [],
+            "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+          },
+          "historyTurnsSent": 0,
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "allowedFactIds": [
+            "P04",
+            "P11"
+          ],
+          "limitation": "Model relevance audit is fallible; qualified review required"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 3,
+        "completedCalls": 3,
+        "failedCalls": 0,
+        "reportedTokens": 3588,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 3505,
+        "reportedCompletionTokens": 83,
+        "inputBytes": 17092,
+        "outputTokenAllowance": 608,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.0013300500000000002,
+          "status": "estimated",
+          "pricedCalls": 3,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.0013300500000000002,
+              "calls": 3,
+              "failedCalls": 0,
+              "pricedCalls": 3,
+              "unpricedCalls": 0,
+              "promptTokens": 3505,
+              "completionTokens": 83,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": [
+        {
+          "id": "P04",
+          "label": "Relationships and preferred support",
+          "scope": "usual",
+          "domains": [
+            "support"
+          ],
+          "response": "Leo points things out to a familiar caregiver when they look at picture books. At playdates, I offer two things they could do together and let Leo choose.",
+          "provenance": "authored-fiction",
+          "sources": []
+        },
+        {
+          "id": "P11",
+          "label": "Caregiver example of sharing an activity without taking over",
+          "scope": "usual",
+          "keywords": [
+            "help",
+            "drawing",
+            "choices",
+            "taking over"
+          ],
+          "domains": [
+            "support"
+          ],
+          "response": "If I’m joining a drawing activity, I ask Leo whether to draw on my own paper or add something to theirs. I wait for an answer before joining in.",
+          "provenance": "authored-fiction",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "transfer-school-age-drawing-perspective",
+      "variant": "candidate",
+      "question": "When someone helps with your drawing, whose idea is it, and what would you want that person to do?",
+      "fixture": {
+        "patientId": "sam",
+        "selectionMode": "none",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Speaks as Sam about Sam's own preferences rather than as an adult observing a child.",
+        "Can explain wanting help getting started and then a chance to try independently; the helper should not be described as finishing the whole drawing.",
+        "If discussing shared ideas, uses only Sam's recorded turn-taking with a friend, without inventing the origin of a particular drawing."
+      ],
+      "forbiddenThings": [
+        "Importing Leo's house, empty wall, added window and coloring sequence.",
+        "Importing Mika's books or blocks, Jordan's sketchbook routine, or another life stage's biography.",
+        "Answering as Sam's caregiver, claiming observations of Sam in third person, or using a babyish voice solely because Sam is a child."
+      ],
+      "snapshotHash": "d3a1c85690793412ebdf46c4b4c917548d7e327891976ef4826115cb06b5adfa",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I want to finish my picture for the class display. And I want to be able to join a game on the playground.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "I usually draw comic characters, then make up a little story to go with the picture.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "Can you ask me one thing at a time? It’s easier if I can give you an example.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "If I get stuck, I ask the person who looks after me for help. I like taking turns with my friend to pick the game.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual comic characters and drawing details",
+                "detail": "I usually draw robots or animals wearing silly hats.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "How making up comic stories became a hobby",
+                "detail": "I started making up stories because the picture didn’t have to be the end. I could decide what happened next.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual drawing supplies and keeping unfinished pictures",
+                "detail": "I keep my drawings in a folder with some colored pencils. If a picture isn’t finished, I leave it at the front so I can find it again.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier robot-comic drawing example",
+                "detail": "In an older comic I drew, a robot’s hat was too big and covered its eyes. In the next picture, another robot helped lift the hat up.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "Sharing drawing ideas with a friend",
+                "detail": "My friend and I sometimes suggest what could happen in each other’s pictures. We take turns choosing an idea, so it isn’t just my story.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for help that leaves room to try",
+                "detail": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way to break a drawing project into parts",
+                "detail": "For a comic, I usually draw the character first, then the things around it, then add words. I can leave the words until another time.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future comic without claiming it is finished",
+                "detail": "I’d like to make a little comic about animals running a hat shop. I’ve got the idea, but I haven’t drawn that comic yet.",
+                "scope": "wish"
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E06",
+                "topic": "Day 6: quiet"
+              },
+              {
+                "id": "E11",
+                "topic": "Day 11: support"
+              },
+              {
+                "id": "E12",
+                "topic": "Day 12: task"
+              },
+              {
+                "id": "E13",
+                "topic": "Day 13: support"
+              },
+              {
+                "id": "E14",
+                "topic": "Day 14: quiet"
+              },
+              {
+                "id": "E15",
+                "topic": "Day 15: cancelled"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: support"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: quiet"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: task"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: task"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: task"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: cancelled"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "When someone helps with your drawing, whose idea is it, and what would you want that person to do?"
+          },
+          "inputBytes": 6533,
+          "value": {
+            "kind": "answer",
+            "fact_ids": [
+              "P09",
+              "P10"
+            ]
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1490,
+            "usage": {
+              "prompt_tokens": 1424,
+              "completion_tokens": 16,
+              "total_tokens": 1440
+            },
+            "inputBytes": 6533,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1424,
+              "completionTokens": 16,
+              "totalTokens": 1440,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00053328,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        },
+        {
+          "role": "LANGUAGE",
+          "input": {
+            "agentContext": {
+              "version": "agent-context-0.3.0",
+              "interview": {
+                "patient": "Sam",
+                "pronouns": "they/them",
+                "lifeStage": "School-age child",
+                "speaker": "Sam",
+                "perspective": "patient",
+                "language": "Use short, concrete everyday language."
+              },
+              "personality": {
+                "communication": "Use simple, everyday words without baby talk. Use a short example only when one is recorded. If asked several things at once, ask which one to answer first. Show communication preferences through delivery rather than reciting them.",
+                "schema": [],
+                "motive": "Style guidance only: priorities include autonomy and connection. Do not add uncited biography."
+              },
+              "mentalPremise": {
+                "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+                "mnemosyne": []
+              }
+            },
+            "previousQuestions": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "permittedFacts": [
+              {
+                "id": "P09",
+                "statement": "My friend and I sometimes suggest what could happen in each other’s pictures. We take turns choosing an idea, so it isn’t just my story.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "statement": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me.",
+                "scope": "preference"
+              }
+            ],
+            "question": "When someone helps with your drawing, whose idea is it, and what would you want that person to do?",
+            "exampleGuidance": {
+              "purpose": "Separate fictional demonstrations; never current patient evidence.",
+              "examples": [
+                {
+                  "question": "If your picture gets tricky, should an adult finish it for you?",
+                  "sourceFacts": [
+                    {
+                      "id": "EX_dev_sam_leaving_room_to_try_P10",
+                      "statement": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me."
+                    }
+                  ],
+                  "answer": {
+                    "reply": "No, I'd want them to show me a way to start and then let me try. I don't want them to finish the whole thing for me.",
+                    "fact_ids": [
+                      "EX_dev_sam_leaving_room_to_try_P10"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "inputBytes": 5484,
+          "value": {
+            "reply": "When someone helps with my drawing, it's usually my friend's idea or mine. I’d want them to show me a way to start and then let me try on my own.",
+            "fact_ids": [
+              "P09",
+              "P10"
+            ]
+          },
+          "meta": {
+            "role": "LANGUAGE",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 2275,
+            "usage": {
+              "prompt_tokens": 1115,
+              "completion_tokens": 51,
+              "total_tokens": 1166
+            },
+            "inputBytes": 5484,
+            "outputTokenLimit": 320,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1115,
+              "completionTokens": 51,
+              "totalTokens": 1166,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00043295,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        },
+        {
+          "role": "AUDITOR",
+          "input": {
+            "previousQuestions": [],
+            "interaction": "answer",
+            "speaker": "Sam",
+            "pronouns": "they/them",
+            "citedFacts": [
+              {
+                "id": "P09",
+                "statement": "My friend and I sometimes suggest what could happen in each other’s pictures. We take turns choosing an idea, so it isn’t just my story.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "statement": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me.",
+                "scope": "preference"
+              }
+            ],
+            "candidate": "When someone helps with my drawing, it's usually my friend's idea or mine. I’d want them to show me a way to start and then let me try on my own.",
+            "question": "When someone helps with your drawing, whose idea is it, and what would you want that person to do?",
+            "exampleGuidance": {
+              "purpose": "Separate fictional demonstrations; never current patient evidence.",
+              "examples": [
+                {
+                  "question": "If your picture gets tricky, should an adult finish it for you?",
+                  "citedFacts": [
+                    {
+                      "id": "EX_dev_sam_leaving_room_to_try_P10",
+                      "statement": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me."
+                    }
+                  ],
+                  "candidate": "No, I'd want them to show me a way to start and then let me try. I don't want them to finish the whole thing for me.",
+                  "result": {
+                    "unsupported": [],
+                    "supported": true,
+                    "relevant": true,
+                    "no_leak": true
+                  }
+                }
+              ]
+            }
+          },
+          "inputBytes": 3457,
+          "value": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "meta": {
+            "role": "AUDITOR",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1625,
+            "usage": {
+              "prompt_tokens": 720,
+              "completion_tokens": 18,
+              "total_tokens": 738
+            },
+            "inputBytes": 3457,
+            "outputTokenLimit": 160,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 720,
+              "completionTokens": 18,
+              "totalTokens": 738,
+              "cachedTokens": null,
+              "estimatedUsd": 0.0002736,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "When someone helps with my drawing, it's usually my friend's idea or mine. I’d want them to show me a way to start and then let me try on my own.",
+        "factIds": [
+          "P09",
+          "P10"
+        ],
+        "domains": [
+          "support",
+          "communication"
+        ],
+        "kind": "answer",
+        "interaction": "answer",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "P09",
+              "P10"
+            ]
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1490,
+              "usage": {
+                "prompt_tokens": 1424,
+                "completion_tokens": 16,
+                "total_tokens": 1440
+              },
+              "inputBytes": 6533,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1424,
+                "completionTokens": 16,
+                "totalTokens": 1440,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00053328,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            },
+            {
+              "role": "LANGUAGE",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 2275,
+              "usage": {
+                "prompt_tokens": 1115,
+                "completion_tokens": 51,
+                "total_tokens": 1166
+              },
+              "inputBytes": 5484,
+              "outputTokenLimit": 320,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1115,
+                "completionTokens": 51,
+                "totalTokens": 1166,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00043295,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": [],
+              "exampleGuidance": {
+                "version": "example-guidance-1",
+                "packId": "psychlab-adaption-pilot-25",
+                "packVersion": "1.0.0",
+                "exampleIds": [
+                  "dev-sam-leaving-room-to-try"
+                ],
+                "inputBytes": 579,
+                "extraModelCalls": 0,
+                "included": true
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1625,
+              "usage": {
+                "prompt_tokens": 720,
+                "completion_tokens": 18,
+                "total_tokens": 738
+              },
+              "inputBytes": 3457,
+              "outputTokenLimit": 160,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 720,
+                "completionTokens": 18,
+                "totalTokens": 738,
+                "cachedTokens": null,
+                "estimatedUsd": 0.0002736,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": [],
+              "exampleGuidance": {
+                "version": "example-guidance-1",
+                "packId": "psychlab-adaption-pilot-25",
+                "packVersion": "1.0.0",
+                "exampleIds": [
+                  "dev-sam-leaving-room-to-try"
+                ],
+                "inputBytes": 597,
+                "extraModelCalls": 0,
+                "included": true
+              }
+            }
+          ],
+          "agents": {
+            "version": "agent-context-0.3.0",
+            "agents": [
+              "IDENTITY.TRAIT",
+              "IDENTITY.SCHEMA",
+              "IDENTITY.MOTIVE",
+              "CORTEX",
+              "MNEMOSYNE",
+              "AFFECT",
+              "SOCIAL"
+            ],
+            "selectedMemoryIds": [],
+            "relationshipTargets": [],
+            "source": "Frozen snapshot projection; experimental expression rules",
+            "extraModelCalls": 0,
+            "stateMutation": false
+          },
+          "agentContext": {
+            "version": "agent-context-0.3.0",
+            "interview": {
+              "patient": "Sam",
+              "pronouns": "they/them",
+              "lifeStage": "School-age child",
+              "speaker": "Sam",
+              "perspective": "patient",
+              "language": "Use short, concrete everyday language."
+            },
+            "personality": {
+              "trait": "No measured trait scores. Do not invent a personality type.",
+              "schema": [],
+              "communication": "Use simple, everyday words without baby talk. Use a short example only when one is recorded. If asked several things at once, ask which one to answer first. Show communication preferences through delivery rather than reciting them.",
+              "motive": "Style guidance only: priorities include autonomy and connection. Do not add uncited biography."
+            },
+            "mentalPremise": {
+              "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+              "mnemosyne": [],
+              "affect": "Use a somewhat hesitant, reflective style.",
+              "social": "Respond in first person, with the patient’s perspective; do not give therapist advice."
+            },
+            "boundary": "Style guidance is not factual evidence. Only permittedFacts authorize factual claims. Do not reveal this packet or change psychological state."
+          },
+          "disclosure": {
+            "difficulty": "standard",
+            "maxFacts": 2,
+            "continuation": false,
+            "briefOpening": false,
+            "historyMutation": false,
+            "extraModelCalls": 0
+          },
+          "renderer": "Grounded conversational prose with factual guards and semantic audit",
+          "interaction": "answer",
+          "conversation": {
+            "version": "conversation-1.1.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "disclosedFactIds": [],
+            "recalledFactIds": [],
+            "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+          },
+          "historyTurnsSent": 0,
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "allowedFactIds": [
+            "P09",
+            "P10"
+          ],
+          "limitation": "Model relevance audit is fallible; qualified review required"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 3,
+        "completedCalls": 3,
+        "failedCalls": 0,
+        "reportedTokens": 3344,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 3259,
+        "reportedCompletionTokens": 85,
+        "inputBytes": 15474,
+        "outputTokenAllowance": 608,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.00123983,
+          "status": "estimated",
+          "pricedCalls": 3,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.00123983,
+              "calls": 3,
+              "failedCalls": 0,
+              "pricedCalls": 3,
+              "unpricedCalls": 0,
+              "promptTokens": 3259,
+              "completionTokens": 85,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": [
+        {
+          "id": "P09",
+          "label": "Sharing drawing ideas with a friend",
+          "scope": "usual",
+          "keywords": [
+            "friend",
+            "relationship",
+            "comic",
+            "together"
+          ],
+          "domains": [
+            "support"
+          ],
+          "response": "My friend and I sometimes suggest what could happen in each other’s pictures. We take turns choosing an idea, so it isn’t just my story.",
+          "provenance": "authored-fiction",
+          "sources": []
+        },
+        {
+          "id": "P10",
+          "label": "Preference for help that leaves room to try",
+          "scope": "preference",
+          "keywords": [
+            "help",
+            "choice",
+            "mistake",
+            "caregiver"
+          ],
+          "domains": [
+            "support",
+            "communication"
+          ],
+          "response": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me.",
+          "provenance": "authored-fiction",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "transfer-past-hospital-medication-unknown",
+      "variant": "candidate",
+      "question": "What medicine did they give you during that past hospital stay, and what dose are you taking now?",
+      "fixture": {
+        "patientId": "alex",
+        "disorderId": "bipolar1",
+        "selectionMode": "chosen",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Preserves the distinction between the supported past hospital care and unspecified medication details.",
+        "Keeps medication names, doses and current treatment status unknown, without filling them from common treatment patterns or separate demonstrations.",
+        "Handles the gap without inventing memory loss, refusal, a prescription or a clinician's advice."
+      ],
+      "forbiddenThings": [
+        "Naming a medicine, drug class, dose, route, treatment duration, prescriber or change in medication absent from the snapshot.",
+        "Claiming no medicine was given or that Alex currently takes no medicine.",
+        "Offering treatment recommendations or inferring that hospital care proves a particular diagnosis or prescription."
+      ],
+      "snapshotHash": "495d6fe0b4ba9914f8f5374ff25e2230b5ff96617242e9b7650a388cb85feda7",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I want a plan for study and part-time work that I can actually keep up with, with some time left for music.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Usually, I’ll put on a favorite album and listen to it all the way through.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "A direct question works best for me. If it’s a big one, breaking it up helps.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "I talk things through with my sibling when there’s a practical problem. With my friend, I’d rather make a plan than decide everything at the last minute.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual music and album-listening habits",
+                "detail": "Usually instrumental music or albums with a lot of guitar. I tend to play the tracks in order.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "Why listening to whole albums became a hobby",
+                "detail": "I got curious about how the songs fit together. That’s why I started listening to whole albums instead of just individual tracks.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual way of keeping study and work tasks visible",
+                "detail": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier comparison of album opening tracks",
+                "detail": "With a couple of albums I listened to before, I compared how their opening tracks led into the next song. I made a note about the order rather than rating every track.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "How Alex asks a sibling for practical help",
+                "detail": "When I talk through a practical problem with my sibling, I usually show them the options I’ve already thought of and ask what I might have missed.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for plans that leave room around commitments",
+                "detail": "I prefer making plans with a friend after checking my study and work commitments. I don’t want to agree to something and only then work out whether it fits.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way of dividing a study task",
+                "detail": "For a study task, I usually write the next concrete step, such as opening the reading and choosing a section. A short next step is easier to plan around than the whole assignment.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future album conversation with a friend",
+                "detail": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet.",
+                "scope": "wish"
+              },
+              {
+                "id": "B01",
+                "topic": "Earlier course and onset",
+                "detail": "Before this diary, I had a distinct eight-day period of unusually high energy, very little need for sleep, racing plans and behavior that seriously disrupted my life. I needed hosp"
+              },
+              {
+                "id": "B02",
+                "topic": "Experiences described",
+                "detail": "During that past period I felt unusually capable, talked much more and committed to far more than I could manage. I am not reporting a new high-energy episode in this diary."
+              },
+              {
+                "id": "B03",
+                "topic": "Effect on everyday activities",
+                "detail": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments."
+              },
+              {
+                "id": "B04",
+                "topic": "Personal routines and support",
+                "detail": "I am in the young adult stage. My usual interests include listening to music. I want to take part in balancing study and part-time work, with support from my sibling."
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E10",
+                "topic": "Day 10: Recent experience and routine"
+              },
+              {
+                "id": "E11",
+                "topic": "Day 11: Recent experience and participation"
+              },
+              {
+                "id": "E12",
+                "topic": "Day 12: Recent experience and participation"
+              },
+              {
+                "id": "E13",
+                "topic": "Day 13: Recent experience and participation"
+              },
+              {
+                "id": "E14",
+                "topic": "Day 14: Recent experience and routine"
+              },
+              {
+                "id": "E15",
+                "topic": "Day 15: Recent experience and participation"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: Recent experience and participation"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: Recent experience and participation"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: Recent experience and participation"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: Recent experience and routine"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: Recent experience and routine"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: Recent experience and participation"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "What medicine did they give you during that past hospital stay, and what dose are you taking now?"
+          },
+          "inputBytes": 8051,
+          "value": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1474,
+            "usage": {
+              "prompt_tokens": 1672,
+              "completion_tokens": 10,
+              "total_tokens": 1682
+            },
+            "inputBytes": 8051,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1672,
+              "completionTokens": 10,
+              "totalTokens": 1682,
+              "cachedTokens": null,
+              "estimatedUsd": 0.0006226399999999999,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "That detail isn’t available for this interview.",
+        "factIds": [],
+        "domains": [],
+        "kind": "unavailable",
+        "interaction": "unavailable",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1474,
+              "usage": {
+                "prompt_tokens": 1672,
+                "completion_tokens": 10,
+                "total_tokens": 1682
+              },
+              "inputBytes": 8051,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1672,
+                "completionTokens": 10,
+                "totalTokens": 1682,
+                "cachedTokens": null,
+                "estimatedUsd": 0.0006226399999999999,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            }
+          ],
+          "renderer": "Explicit missing case detail; not patient speech"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "reportedTokens": 1682,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 1672,
+        "reportedCompletionTokens": 10,
+        "inputBytes": 8051,
+        "outputTokenAllowance": 128,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.0006226399999999999,
+          "status": "estimated",
+          "pricedCalls": 1,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.0006226399999999999,
+              "calls": 1,
+              "failedCalls": 0,
+              "pricedCalls": 1,
+              "unpricedCalls": 0,
+              "promptTokens": 1672,
+              "completionTokens": 10,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": []
+    },
+    {
+      "id": "transfer-names-and-music-wrong-relationship",
+      "variant": "candidate",
+      "question": "I'm checking names and music: what is your cousin's name, and which album are you planning to compare together?",
+      "fixture": {
+        "patientId": "jordan",
+        "disorderId": "mdd",
+        "selectionMode": "chosen",
+        "difficulty": "standard",
+        "seed": 2029,
+        "days": 21
+      },
+      "precedingTurns": [],
+      "expectedBehaviors": [
+        "Keeps the cousin's name unknown; knowing the relationship does not supply a name.",
+        "Does not adopt Alex's hoped-for album comparison with a friend as Jordan's plan with a cousin.",
+        "If redirecting to a supported shared activity, uses Jordan's recorded sketchbook conversation without inventing current completion, praise or emotional benefit."
+      ],
+      "forbiddenThings": [
+        "Inventing a cousin name, album, artist or track title.",
+        "Claiming that Jordan and the cousin plan to compare album tracks, even while saying an album has not yet been chosen.",
+        "Changing the cousin into Alex's sibling or friend, or treating an example's future plan as current patient evidence."
+      ],
+      "snapshotHash": "4e04587026c1377b38ed81d5adc5836561fbdc85a16fa4e74ff0b647c0681bea",
+      "calls": [
+        {
+          "role": "CORTEX",
+          "input": {
+            "maxFacts": 2,
+            "catalog": [
+              {
+                "id": "G01",
+                "topic": "Opening and goals"
+              },
+              {
+                "id": "G02",
+                "topic": "Background and life stage"
+              },
+              {
+                "id": "G03",
+                "topic": "Recorded time window"
+              },
+              {
+                "id": "G04",
+                "topic": "Daily routines over the recorded period"
+              },
+              {
+                "id": "P01",
+                "topic": "Personal goals and what matters",
+                "detail": "I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff.",
+                "scope": "wish"
+              },
+              {
+                "id": "P02",
+                "topic": "Usual interests and hobbies, not current enjoyment",
+                "detail": "Usually, I sketch ordinary things and keep the drawings in a notebook.",
+                "scope": "usual"
+              },
+              {
+                "id": "P03",
+                "topic": "Communication preferences",
+                "detail": "Give me a second to think. It’s easier if I can give you an example.",
+                "scope": "preference"
+              },
+              {
+                "id": "P04",
+                "topic": "Relationships and preferred support",
+                "detail": "I like a quiet chat with my cousin. With my friend, I’d rather agree on a time and a plan than leave it up in the air.",
+                "scope": "usual"
+              },
+              {
+                "id": "P05",
+                "topic": "Usual sketching subjects and materials",
+                "detail": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil.",
+                "scope": "usual"
+              },
+              {
+                "id": "P06",
+                "topic": "How sketching everyday objects became a hobby",
+                "detail": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P07",
+                "topic": "Usual sketching setup and keeping unfinished drawings",
+                "detail": "I keep a pencil tucked into my sketchbook and leave unfinished drawings in it. I don’t need to clear a big space to get the notebook out.",
+                "scope": "usual"
+              },
+              {
+                "id": "P08",
+                "topic": "Earlier mug sketch as a concrete drawing example",
+                "detail": "In an earlier drawing, I sketched a mug from the side and then turned it to try the handle from another angle. Both sketches stayed on the same page.",
+                "scope": "past",
+                "timeframe": "before-simulation"
+              },
+              {
+                "id": "P09",
+                "topic": "What Jordan shares in quiet chats with a cousin",
+                "detail": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it.",
+                "scope": "usual"
+              },
+              {
+                "id": "P10",
+                "topic": "Preference for agreeing on concrete plans with a friend",
+                "detail": "When I make plans with my friend, I prefer to agree on a time and place. If something changes, I’d like a message so I know where things stand.",
+                "scope": "preference"
+              },
+              {
+                "id": "P11",
+                "topic": "Usual way of starting an ordinary task",
+                "detail": "For an ordinary task, I usually write down the first thing that needs doing and start with that. I prefer a short list I can actually look back at.",
+                "scope": "usual"
+              },
+              {
+                "id": "P12",
+                "topic": "Wish for a future series of everyday-object sketches",
+                "detail": "I’d like to fill a few notebook pages with the same ordinary objects seen from different angles. That’s something I want to try, not a finished set of drawings.",
+                "scope": "wish"
+              },
+              {
+                "id": "B01",
+                "topic": "Earlier course and onset",
+                "detail": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+              },
+              {
+                "id": "B02",
+                "topic": "Experiences described",
+                "detail": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+              },
+              {
+                "id": "B03",
+                "topic": "Effect on everyday activities",
+                "detail": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+              },
+              {
+                "id": "B04",
+                "topic": "Personal routines and support",
+                "detail": "I am in the young adult stage. My usual interests include sketching. I want to take part in finishing a routine work task, with support from my cousin."
+              },
+              {
+                "id": "PROFILE",
+                "topic": "Personal background, life stage, name and interests"
+              },
+              {
+                "id": "E05",
+                "topic": "Day 5: Recent experience and routine"
+              },
+              {
+                "id": "E10",
+                "topic": "Day 10: Recent experience and routine"
+              },
+              {
+                "id": "E11",
+                "topic": "Day 11: Recent experience and participation"
+              },
+              {
+                "id": "E13",
+                "topic": "Day 13: Recent experience and participation"
+              },
+              {
+                "id": "E14",
+                "topic": "Day 14: Recent experience and routine"
+              },
+              {
+                "id": "E15",
+                "topic": "Day 15: Recent experience and participation"
+              },
+              {
+                "id": "E16",
+                "topic": "Day 16: Recent experience and participation"
+              },
+              {
+                "id": "E17",
+                "topic": "Day 17: Recent experience and participation"
+              },
+              {
+                "id": "E18",
+                "topic": "Day 18: Recent experience and participation"
+              },
+              {
+                "id": "E19",
+                "topic": "Day 19: Recent experience and routine"
+              },
+              {
+                "id": "E20",
+                "topic": "Day 20: Recent experience and routine"
+              },
+              {
+                "id": "E21",
+                "topic": "Day 21: Recent experience and participation"
+              }
+            ],
+            "history": [],
+            "conversation": {
+              "version": "conversation-1.1.0",
+              "turn": 1,
+              "lastFactIds": [],
+              "recentlyUsedFactIds": [],
+              "lastQuestion": null,
+              "disclosedFactIds": [],
+              "recalledFactIds": [],
+              "rule": "Source IDs remember earlier topics across the whole interview; a referenced source does not mean every detail in it was spoken. Recalled IDs match the current question. Use canonical facts as evidence, never earlier generated prose. Follow the current thread; acknowledgments do not request another summary."
+            },
+            "question": "I'm checking names and music: what is your cousin's name, and which album are you planning to compare together?"
+          },
+          "inputBytes": 7830,
+          "value": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "meta": {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.11.0",
+            "latencyMs": 1402,
+            "usage": {
+              "prompt_tokens": 1655,
+              "completion_tokens": 10,
+              "total_tokens": 1665
+            },
+            "inputBytes": 7830,
+            "outputTokenLimit": 128,
+            "cost": {
+              "currency": "USD",
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "promptTokens": 1655,
+              "completionTokens": 10,
+              "totalTokens": 1665,
+              "cachedTokens": null,
+              "estimatedUsd": 0.00061635,
+              "reasons": [],
+              "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+              "pricingStale": false,
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              }
+            }
+          }
+        }
+      ],
+      "review": {
+        "status": "pending"
+      },
+      "result": {
+        "reply": "That detail isn’t available for this interview.",
+        "factIds": [],
+        "domains": [],
+        "kind": "unavailable",
+        "interaction": "unavailable",
+        "sourceIds": [],
+        "trace": {
+          "route": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+              "promptVersion": "interview-0.11.0",
+              "latencyMs": 1402,
+              "usage": {
+                "prompt_tokens": 1655,
+                "completion_tokens": 10,
+                "total_tokens": 1665
+              },
+              "inputBytes": 7830,
+              "outputTokenLimit": 128,
+              "cost": {
+                "currency": "USD",
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "promptTokens": 1655,
+                "completionTokens": 10,
+                "totalTokens": 1665,
+                "cachedTokens": null,
+                "estimatedUsd": 0.00061635,
+                "reasons": [],
+                "cacheAssumption": "Cache usage unreported; regular input rate applied.",
+                "pricingStale": false,
+                "rate": {
+                  "model": "Qwen/Qwen2.5-72B-Instruct",
+                  "inputUsdPerMillion": 0.37,
+                  "outputUsdPerMillion": 0.4,
+                  "cachedInputUsdPerMillion": null,
+                  "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                  "checkedOn": "2026-10-08",
+                  "version": "featherless-2026-10-08"
+                }
+              },
+              "contextOmitted": []
+            }
+          ],
+          "renderer": "Explicit missing case detail; not patient speech"
+        }
+      },
+      "status": "answered",
+      "snapshotUnchanged": true,
+      "usage": {
+        "limit": 3,
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "reportedTokens": 1665,
+        "unreportedCalls": 0,
+        "reportedPromptTokens": 1655,
+        "reportedCompletionTokens": 10,
+        "inputBytes": 7830,
+        "outputTokenAllowance": 128,
+        "cost": {
+          "currency": "USD",
+          "estimatedUsd": 0.00061635,
+          "status": "estimated",
+          "pricedCalls": 1,
+          "unpricedCalls": 0,
+          "pendingCalls": 0,
+          "reasons": [],
+          "pricingCheckedOn": "2026-10-08",
+          "pricingStale": false,
+          "models": [
+            {
+              "model": "Qwen/Qwen2.5-72B-Instruct",
+              "rate": {
+                "model": "Qwen/Qwen2.5-72B-Instruct",
+                "inputUsdPerMillion": 0.37,
+                "outputUsdPerMillion": 0.4,
+                "cachedInputUsdPerMillion": null,
+                "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+                "checkedOn": "2026-10-08",
+                "version": "featherless-2026-10-08"
+              },
+              "estimatedUsd": 0.00061635,
+              "calls": 1,
+              "failedCalls": 0,
+              "pricedCalls": 1,
+              "unpricedCalls": 0,
+              "promptTokens": 1655,
+              "completionTokens": 10,
+              "cachedTokens": 0,
+              "cacheAssumptions": [
+                "Cache usage unreported; regular input rate applied."
+              ]
+            }
+          ],
+          "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+        }
+      },
+      "canonicalFacts": []
+    }
+  ],
+  "completedAt": "2026-10-09T07:17:46.734Z",
+  "usage": {
+    "limit": 24,
+    "attemptedCalls": 14,
+    "completedCalls": 14,
+    "failedCalls": 0,
+    "reportedTokens": 18503,
+    "unreportedCalls": 0,
+    "reportedPromptTokens": 18188,
+    "reportedCompletionTokens": 315,
+    "inputBytes": 87455,
+    "outputTokenAllowance": 2464,
+    "cost": {
+      "currency": "USD",
+      "estimatedUsd": 0.0068555599999999975,
+      "status": "estimated",
+      "pricedCalls": 14,
+      "unpricedCalls": 0,
+      "pendingCalls": 0,
+      "reasons": [],
+      "pricingCheckedOn": "2026-10-08",
+      "pricingStale": false,
+      "models": [
+        {
+          "model": "Qwen/Qwen2.5-72B-Instruct",
+          "rate": {
+            "model": "Qwen/Qwen2.5-72B-Instruct",
+            "inputUsdPerMillion": 0.37,
+            "outputUsdPerMillion": 0.4,
+            "cachedInputUsdPerMillion": null,
+            "source": "https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct",
+            "checkedOn": "2026-10-08",
+            "version": "featherless-2026-10-08"
+          },
+          "estimatedUsd": 0.0068555599999999975,
+          "calls": 14,
+          "failedCalls": 0,
+          "pricedCalls": 14,
+          "unpricedCalls": 0,
+          "promptTokens": 18188,
+          "completionTokens": 315,
+          "cachedTokens": 0,
+          "cacheAssumptions": [
+            "Cache usage unreported; regular input rate applied."
+          ]
+        }
+      ],
+      "note": "Estimate from reported input/output tokens and published rates; not your bill or account balance. Rates may change. Unreported cache usage uses the regular input rate."
+    }
+  }
+}

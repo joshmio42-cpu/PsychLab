@@ -1,0 +1,23 @@
+{
+  "evidence":"long-memory-followup.json",
+  "priorEvidence":"long-validated-memory.json",
+  "reviewedOn":"2026-10-08",
+  "reviewMethod":"Independent assistant comparison of both new actual replies with their canonical permitted/cited facts and memory traces. This was a deliberate continuation after the prior blocked question; earlier evidence remains intact.",
+  "summary":{
+    "newQuestions":2,
+    "acceptableDeliveredResponses":2,
+    "blockedResponses":0,
+    "snapshotUnchanged":true,
+    "newProviderCalls":6,
+    "newReportedTokens":7514,
+    "newEstimatedUsd":0.00278414,
+    "cumulativeLongInterviewCalls":51,
+    "cumulativeLongInterviewTokens":59491,
+    "cumulativeLongInterviewEstimatedUsd":0.02204665,
+    "accountingNote":"The follow-up artifact's usage ledger is cumulative. Do not add its full totals to the initial long-interview totals or the initial 45 calls will be double-counted."
+  },
+  "reviews":[
+    {"record":1,"question":"At the start you described your cousin offering to listen. What did you do then?","hardPass":true,"qualityRating":2,"usable":true,"notes":["The question contains no day number yet CORTEX recovers E02 and the answer accurately says the patient talked while the cousin listened. The second sentence adds the supported P09 usual sketchbook-sharing detail. Sometimes keeps this separate from the specific day, so it is not falsely asserted to have happened in that earlier event. It is more than the callback needs but remains supported. Only four recent transcript exchanges are sent; the earlier source is recovered through the disclosed-source memory."]},
+    {"record":2,"question":"So sketching still makes you feel great these days?","hardPass":true,"qualityRating":3,"usable":true,"notes":["Not really, sketching doesn't feel as rewarding lately accurately corrects the leading current-pleasure assumption. Both B02 reduced reward and P02 identifying the usual hobby are now cited. This resolves the earlier missing-source rejection in this deliberate follow-up; it does not erase that original blocked attempt."]}
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-10",
+  "copiedFiles": 412,
+  "omittedDirectories": [
+    ".git (all histories)",
+    ".runtime",
+    "node_modules",
+    "tmp",
+    "work/github-preparation"
+  ],
+  "excludedFiles": [
+    {
+      "path": "cloudflare-access-configured.png",
+      "reason": "Private Cloudflare account screenshot"
+    },
+    {
+      "path": "cloudflare-route-configured.png",
+      "reason": "Private tunnel configuration screenshot"
+    },
+    {
+      "path": "cloudflare-tunnel-ready.png",
+      "reason": "Private tunnel/account screenshot"
+    },
+    {
+      "path": "Psych Simulator Foundation.zip",
+      "reason": "Historical archive, key material or diagnostic binary; sources retained separately"
+    },
+    {
+      "path": "psych-simulator-foundation/adaption/runs/authentication.json",
+      "reason": "Private account authentication status"
+    },
+    {
+      "path": "psych-simulator-foundation/Domain Connection Status.txt",
+      "reason": "Private deployment history"
+    },
+    {
+      "path": "psych-simulator-foundation/live/public-access.json",
+      "reason": "Private Access identity and deployment configuration"
+    },
+    {
+      "path": "psych-simulator-foundation/Private Rehearsal Link.txt",
+      "reason": "Personal deployment address"
+    },
+    {
+      "path": "work/foundation/site-deploy.tar.gz",
+      "reason": "Historical archive, key material or diagnostic binary; sources retained separately"
+    },
+    {
+      "path": "psych-simulator-foundation/prototype/.openai/hosting.json",
+      "reason": "Private hosting project binding; public copy must not target the original deployment"
+    }
+  ],
+  "sanitizedTextFiles": [
+    "Codex Handoff - Psychological Interview Simulator.txt",
+    "psych-simulator-foundation/adaption/runs/grounding-dsv4-generalization-candidate.json",
+    "psych-simulator-foundation/adaption/runs/grounding-qwen-next-generalization-candidate.json",
+    "psych-simulator-foundation/adaption/runs/grounding-v12-generalization-candidate.json",
+    "psych-simulator-foundation/adaption/runs/grounding-v13-automated-tests.txt",
+    "psych-simulator-foundation/adaption/runs/grounding-v13-final-automated-tests.txt",
+    "psych-simulator-foundation/adaption/runs/grounding-v13-generalization-candidate.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-approved-pack.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-baseline.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-candidate.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-compilation-report.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-review.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-review.schema-first.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25-review.schema-first.txt",
+    "psych-simulator-foundation/adaption/runs/pilot-25-review.txt",
+    "psych-simulator-foundation/adaption/runs/pilot-25-transfer-candidate.json",
+    "psych-simulator-foundation/adaption/runs/pilot-25.json",
+    "psych-simulator-foundation/adaption/runs/planned-v14-automated-tests.txt",
+    "psych-simulator-foundation/adaption/runs/planned-v14-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v141-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v141-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v142-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v142-targeted-tests.txt",
+    "psych-simulator-foundation/adaption/runs/planned-v143-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v144-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v145-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v146-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v147-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v148-dsv41-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v149-dsv4-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v150-dsv41-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v151-dsv41-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v152-dsv41-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/planned-v153-dsv41-regression-candidate.json",
+    "psych-simulator-foundation/adaption/runs/release-v153-dsv41-baseline.json",
+    "psych-simulator-foundation/adaption/runs/release-v153-dsv41-candidate.json",
+    "psych-simulator-foundation/adaption/runs/release-v153-dsv41-regression-candidate.json",
+    "psych-simulator-foundation/adaption/tests/client.test.mjs",
+    "psych-simulator-foundation/adaption/tests/fixtures/mock-workflow-fetch.mjs",
+    "psych-simulator-foundation/data/browser-validation.json",
+    "psych-simulator-foundation/live/Security review and checklist.txt",
+    "psych-simulator-foundation/live/tests/public-access.test.mjs",
+    "psych-simulator-foundation/README.txt",
+    "PsychLab - Project Map.txt",
+    "work/foundation/build.py",
+    "work/foundation/finalize.py",
+    "work/foundation/finish-handoff.py",
+    "work/foundation/package.py",
+    "work/foundation/refine.py"
+  ],
+  "note": "Fictional research content and scholarly attribution are preserved. Personal paths, deployment links and remote account identifiers were removed. Historical hashes/results describe their original research snapshots; this publication copy is not an activated model release.",
+  "publicationPrivacyAudit": {
+    "knownPrivateMarkerCategories": 14,
+    "knownPrivateMarkerValuesChecked": 18,
+    "additionalHostingIdentifierReplacements": 3,
+    "handbook": "Preserved byte-identical; 28 pages and all metadata/URI annotations have no known private identifier hits. Author metadata is generic. All 11 link annotations point to public references.",
+    "images": "No meaningful author/EXIF metadata found in the original images; pixel review is separate.",
+    "researchPolicy": "Scholarly names, sources, original research prose, fictional case labels and stable authored dataset IDs are retained.",
+    "finalIndependentScan": {
+      "filesScanned": 437,
+      "textFilesScanned": 392,
+      "pdfsScanned": 1,
+      "imagesMetadataScanned": 44,
+      "knownPrivateIdentifierOrCredentialBlocks": 0,
+      "signedURLPatternMatches": 7,
+      "signedURLDisposition": "Six matches are deterministic adversarial-test/mock fixtures or assertions, and one is the privacy scanner's explicit synthetic-fixture exception. None contains a plausible AWS signature or AWS access-key shape. Preserved to retain security test behavior.",
+      "handbookByteIdenticalToOriginal": true,
+      "freshRootGitVerified": true,
+      "rootGitMetadataFilesScanned": 2,
+      "rootGitVerification": "Only generic core configuration and an unborn main-branch HEAD exist. No stored identity, remotes, commits, objects, refs, index, or logs. Nested Git directories remain forbidden.",
+      "scope": "Includes hidden/untracked files and the verified fresh root Git metadata. PDF metadata/text/URI annotations and image metadata inspected; image pixel review is separate."
+    }
+  }
+}

@@ -1,0 +1,1420 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "evaluationFile": "planned-v145-dsv4-regression-candidate.json",
+  "sourceMatrixHash": "b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e",
+  "sourceHashes": {
+    "model.mjs": "e5d81c3083abc4a1314b8b5e3741e174eb61aea6bc8b23854bf89081d701dcd7",
+    "answer-plan.mjs": "25891463c809064f078b0544f744ca5aa7fe05213ac4c49f21dc7a3cd832c67b",
+    "interview-style.mjs": "e20c62acf56297fa26568b5d4d58de0c7f0fb133b3f69cc31c7a65f5d7a442a2",
+    "example-guidance.mjs": "e8a0de070a8162c7b41ec91911d443f6124efa43caa2bd40bcc842b0c5e89069",
+    "prompt-context.mjs": "bb6411f884a0178c1d4703efbefdef2d01a26d6dc852990ac5cd711373334b47",
+    "conversation.mjs": "1e6901ac61754eaac780ab9bb249f7574a42aad7c04f4223da75739129f74b3f",
+    "agent-context.mjs": "7ba803ff83c91c7b379b7f911617f765397cb04abaae89d4ffc8bcbb9dc70728",
+    "factual-support.mjs": "b8040179b37800edfae679b25a8fcd16418ba66eaaef6552d3845617f7e1db24",
+    "question-resolution.mjs": "201d8293f6f21c92725ccd7226e41aabd56997e936b3b6f23117563fed5b3201",
+    "usage.mjs": "70bfa73c36f6f67b3246573b2eb3df6e1aae04c765a17c61fc76074cc2f48311",
+    "pricing.mjs": "069e19d692082ee672b468042960c5748ec43650f893235fdbe1ef111880a841"
+  },
+  "sourceEvaluationHash": "cb3d1fcbdeaa927b71496aefcc52d12be1dbe24c1035f4557c9fd08d9ce7d0c6",
+  "promptVersion": "interview-0.14.5",
+  "reviewedAt": "2026-10-09T10:29:58.980Z",
+  "reviewer": "Independent assistant semantic review of saved responses against reproduced canonical fixtures; not provider self-audit",
+  "rubric": {
+    "fixture": "Build the exact named snapshot, including seed, days and selection mode. The two authored caregiver profiles remain caregiver interviews. Difficulty changes delivery, never the evidence available or its truth.",
+    "precedingTurns": "These are source-reviewed fixture conversations, not generated model outputs or desired answers. Each cited fact ID must resolve in the current fixture. Social turns carry no factual evidence. Score only the final question, while checking that the answer preserves the meaning of the fixture conversation.",
+    "review": "Review the actual delivered answer and its supporting canonical facts independently of the model's own auditor. Inspect every expected behavior and forbidden claim. A relevant answer can use any natural wording; no exact-match answer is supplied.",
+    "hardPass": "No unsupported factual assertions, reversed speaker roles, hidden mystery labels, fabricated causes or new details. All required known-versus-unknown and temporal distinctions must be preserved. A blocked ordinary question fails usefulness; absence of a delivered hallucination does not count as a full pass.",
+    "qualityRating": {
+      "0": "Unusable: factual failure, blocked ordinary question, unrelated answer, internal machinery in patient speech, or missing the question entirely.",
+      "1": "Weak: factually safe but needlessly vague, evasive, repetitive, or asks clarification despite a clear referent.",
+      "2": "Acceptable: directly addresses the question in ordinary language, supplies relevant known information and preserves uncertainty.",
+      "3": "Strong: concise, natural, specific to the fictional speaker and attentive to the conversation, including a useful correction of a false premise."
+    },
+    "unknownAnswers": "A clear but unauthored detail should receive a concise honest limitation, preferably alongside the nearest relevant known detail. Do not invent forgetting, refusal or an inability to communicate. A genuinely missing referent calls for a short clarification instead.",
+    "releaseGate": "Review all 16 cases. Every case must meet its expected behaviors, avoid all forbidden claims and score at least 2. Do not shrink the set, change criteria after seeing an answer, or call a partially run set verified.",
+    "costGate": "At most three provider calls per final question, no automatic retries, and the existing input/output caps. Keep actual usage and unknown usage explicit.",
+    "reviewBoundaryInterpretation": "An explicitly rendered app unavailable boundary can satisfy a purely unauthored requested detail without fabricating patient amnesia. It must not suppress a requested known answer. Clear unknown-detail questions are distinguished from a truly absent referent. Optional nearest-known context improves quality but is not mandatory when all newly requested content is unknown. This interpretation does not change matrix wording."
+  },
+  "evaluationRole": "Regression: these 16 questions have already informed fixes. This review does not establish fresh held-out generalization.",
+  "canonicalFactsHash": "00ead96736ed9c90d0b160077583cfecb72b8eceae26b1e7388e5f7622e7da6a",
+  "canonicalFactsHashDefinition": "SHA-256 of JSON.stringify(records.map(({id,canonicalFacts})=>({id,canonicalFacts}))) in saved evaluation order. Per-record canonicalFactsHash hashes the exact saved canonicalFacts array; reproducedSnapshotFactsHash hashes all facts in the reproduced fixture.",
+  "records": [
+    {
+      "id": "generalize-mika-caregiver-style-not-child-feeling",
+      "variant": "candidate",
+      "sourceRecordHash": "f56d56db3751056ab65cc0d4df2ac427fc483422de5b1b6e997ddd1fc34428c2",
+      "canonicalFactsHash": "2fb63c6ddf40372a809cc750f447f504935b9a6b66f1204d9a9c1b3152639058",
+      "reproducedSnapshotFactsHash": "46810406818d71aa5071fe515f644f4e2342138d507ba43f67afa27e603019f4",
+      "status": "answered",
+      "reply": "It’s easier for me to describe one thing I’ve noticed at a time, and I can’t really say what Mika is thinking.",
+      "exerciseNote": "Not recorded for this interview: “When you describe just one observation at a time, is that because Mika feels overwhelmed?”",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "53862b85678109717404b5e616af537a305cbc6e45f6b93859cffe43689fe42a",
+        "name": "Mika",
+        "lifeStage": "Toddler",
+        "speaker": "Mika's caregiver",
+        "perspective": "caregiver"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P03",
+          "response": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what Mika is thinking."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "5fa0666dad8a5c1005a0ccbd0a89d92ec09aad82adbdd8b4741c171d56ee41e9",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "The caregiver prefers describing one observation at a time and cannot say what Mika is thinking.",
+          "factIds": [
+            "P03"
+          ],
+          "evidence": [
+            {
+              "id": "P03",
+              "response": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what Mika is thinking."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Separates the caregiver's way of describing observations from Mika's private emotional state.",
+          "met": true,
+          "evidence": "The first-person preference remains the caregiver's; it is not attributed to Mika."
+        },
+        {
+          "behavior": "Addresses the proposed causal link without accepting it; the communication preference supplies no reason to conclude that Mika is overwhelmed.",
+          "met": true,
+          "evidence": "The reply does not accept the proposed cause. The separate Case note identifies the proposed overwhelmed link as unrecorded."
+        },
+        {
+          "behavior": "Remains in the caregiver's voice and may state that they cannot directly know what Mika is thinking.",
+          "met": true,
+          "evidence": "The speaker remains Mika's caregiver and explicitly says they cannot really say what Mika is thinking."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Confirming that Mika is overwhelmed, has processing difficulties, or needs one observation at a time.",
+          "occurred": false,
+          "evidence": "No overwhelmed/calm conclusion, processing problem, diagnosis, training history or invented motive is asserted."
+        },
+        {
+          "behavior": "Claiming Mika is definitely calm or never overwhelmed instead.",
+          "occurred": false,
+          "evidence": "No overwhelmed/calm conclusion, processing problem, diagnosis, training history or invented motive is asserted."
+        },
+        {
+          "behavior": "Explaining the caregiver's manner with a fabricated diagnosis, training history or motive.",
+          "occurred": false,
+          "evidence": "No overwhelmed/calm conclusion, processing problem, diagnosis, training history or invented motive is asserted."
+        }
+      ],
+      "notes": [
+        "Useful P03 context is delivered while the app separately marks the proposed causal link unrecorded. The caregiver's style is not converted into the child's emotion."
+      ]
+    },
+    {
+      "id": "generalize-mika-usual-demonstration-not-this-morning",
+      "variant": "candidate",
+      "sourceRecordHash": "033abdd9c80e75c9768eaec66576f9c85c4953f56933bf8bff2ca94396e7982e",
+      "canonicalFactsHash": "823322b92ad7392f696c0d8278d7eeebbe67878a21a9859bc3cc57a7c316bc01",
+      "reproducedSnapshotFactsHash": "a7ab4c4b60cc33e11e8991df5132316859fa707360cbea3c694e9a1ac42ff886",
+      "status": "answered",
+      "reply": "When it's time to put toys away, I usually show Mika what we're doing by putting a block in the basket myself, then holding out another one for them.",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "a6f7a090a81fe4f1a72063e13f031153c6a44aa70ec4f1483a4a39ebee866448",
+        "name": "Mika",
+        "lifeStage": "Toddler",
+        "speaker": "Mika's caregiver",
+        "perspective": "caregiver"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P11",
+          "response": "For putting toys away, I put a block in the basket myself, then hold out another. That is how I usually show Mika what we’re doing."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "9bcad9d1f8d0a7ba5bc24bb40d66204bb52f9950f3e28a8f47814ce06bf76c19",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "The caregiver usually places a block in the basket and holds out another to show Mika how tidying works.",
+          "factIds": [
+            "P11"
+          ],
+          "evidence": [
+            {
+              "id": "P11",
+              "response": "For putting toys away, I put a block in the basket myself, then hold out another. That is how I usually show Mika what we’re doing."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Resolves the demonstration to the earlier account of tidying, despite the intervening thanks.",
+          "met": true,
+          "evidence": "The callback resolves to P11 after the intervening thanks."
+        },
+        {
+          "behavior": "Explains that the cited account describes the caregiver's usual approach.",
+          "met": true,
+          "evidence": "The reply explicitly describes how the caregiver usually demonstrates tidying."
+        },
+        {
+          "behavior": "Leaves whether it happened this morning unspecified rather than converting the usual routine into a dated event.",
+          "met": true,
+          "evidence": "Neither a morning occurrence nor a definite absence this morning is claimed."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Claiming the demonstration happened this morning, today, every morning or on a particular diary day.",
+          "occurred": false,
+          "evidence": "No dated demonstration, definite nonoccurrence this morning, child response, speaker switch or needless clarification is added."
+        },
+        {
+          "behavior": "Claiming it definitely did not happen this morning; the record is silent about that timing.",
+          "occurred": false,
+          "evidence": "No dated demonstration, definite nonoccurrence this morning, child response, speaker switch or needless clarification is added."
+        },
+        {
+          "behavior": "Switching the speaker to Mika, inventing Mika's response to the demonstration, or asking what demonstration despite the clear context.",
+          "occurred": false,
+          "evidence": "No dated demonstration, definite nonoccurrence this morning, child response, speaker switch or needless clarification is added."
+        }
+      ],
+      "notes": [
+        "The answer preserves the usual scope and leaves morning timing unspecified."
+      ]
+    },
+    {
+      "id": "generalize-leo-window-sequence-callback",
+      "variant": "candidate",
+      "sourceRecordHash": "2b9fe2c621f7f934571eeeaae368465f6e8a3dc3d2bd3459e8b93ab3397500b3",
+      "canonicalFactsHash": "0a0b506c872a30d8e96633e531d3d86b1d99b2f15df7b204c46e8aca1de6ec27",
+      "reproducedSnapshotFactsHash": "0a8f2ee7f1d2a5367eb04455cf94481cf1c12e69307c3bb686aabed2cc144876",
+      "status": "answered",
+      "reply": "Leo colored around it afterward.",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "ac8ce25b0ef580d7176d0e005dc01b03749259beb03e1f613f64c28db61fc610",
+        "name": "Leo",
+        "lifeStage": "Preschool child",
+        "speaker": "Leo's caregiver",
+        "perspective": "caregiver"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P08",
+          "response": "On an earlier drawing day, Leo drew a house, pointed to the empty wall and asked me to add a window. Leo colored around it afterward."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "c82c37b1654f1bcc08e78fd634db2d504b8943e556314710c66bbb56dbe195fa",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Leo colored around the referenced window afterward.",
+          "factIds": [
+            "P08"
+          ],
+          "evidence": [
+            {
+              "id": "P08",
+              "response": "On an earlier drawing day, Leo drew a house, pointed to the empty wall and asked me to add a window. Leo colored around it afterward."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Resolves 'it' to the window and answers the sequence directly: the recorded coloring around the window came afterward.",
+          "met": true,
+          "evidence": "'Leo colored around it afterward' directly answers the sequence; 'it' remains the window established in preceding turns."
+        },
+        {
+          "behavior": "Preserves the account as one earlier drawing example, with Leo drawing the house and the caregiver adding the requested window.",
+          "met": true,
+          "evidence": "The concise continuation does not change the prior house-drawing example or who added the window."
+        },
+        {
+          "behavior": "Keeps the reply brief at challenging difficulty without withholding this clearly recorded order.",
+          "met": true,
+          "evidence": "The brief reply answers the known order at challenging difficulty without adding unrelated details."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Reversing the coloring and window sequence or claiming the caregiver drew the whole house.",
+          "occurred": false,
+          "evidence": "No reversed order, caregiver-drawn whole house, absolute claim about all prior coloring, color, date, owner, repeated routine or feeling is added."
+        },
+        {
+          "behavior": "Claiming Leo never colored anything before that point, which goes beyond the recorded coloring around this window.",
+          "occurred": false,
+          "evidence": "No reversed order, caregiver-drawn whole house, absolute claim about all prior coloring, color, date, owner, repeated routine or feeling is added."
+        },
+        {
+          "behavior": "Adding a color, house owner, drawing date, repeated drawing routine or inferred feeling.",
+          "occurred": false,
+          "evidence": "No reversed order, caregiver-drawn whole house, absolute claim about all prior coloring, color, date, owner, repeated routine or feeling is added."
+        }
+      ],
+      "notes": [
+        "A concise source-grounded callback answers only the requested order. The preceding turns retain the earlier drawing context; the answer need not restate it."
+      ]
+    },
+    {
+      "id": "generalize-leo-hoped-for-playdate-details",
+      "variant": "candidate",
+      "sourceRecordHash": "cc3c820c5bc7b6d00a2a842dd016e09b58bc1c254c0978802274a49e1c939c9e",
+      "canonicalFactsHash": "ea9a6387393b9b9fce9805ae522d77ced459f9030e72972afe79f1c69d0bc480",
+      "reproducedSnapshotFactsHash": "6efd1b68740ca6c0d2ed9fb87770a61918aed9a8fc5c3b11ffbe08521b2576cd",
+      "status": "answered",
+      "reply": "We haven't tried that playdate yet. I'd like to have the toy shop ready so Leo can choose a role at the start.",
+      "exerciseNote": "Not recorded for this interview: “and which playmate will come?”",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "a679b42450a1a6c61ff3ed10100ccf82b9407915c24d4f1b12d7ffbab9c3ec6c",
+        "name": "Leo",
+        "lifeStage": "Preschool child",
+        "speaker": "Leo's caregiver",
+        "perspective": "caregiver"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P12",
+          "response": "I’d like to try a short playdate with the toy shop ready, so Leo can choose a role at the start. We haven’t carried out that plan yet."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "8a35c82dad8ccde08fc0fd22c12090ead616d8acb4baadd4129d64d4146a6ad0",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "The caregiver hopes to prepare the toy shop for Leo to choose a role at the start; the hoped-for playdate has not been tried.",
+          "factIds": [
+            "P12"
+          ],
+          "evidence": [
+            {
+              "id": "P12",
+              "response": "I’d like to try a short playdate with the toy shop ready, so Leo can choose a role at the start. We haven’t carried out that plan yet."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Distinguishes the caregiver's planned opportunity for Leo to choose a role from a role that has already been selected.",
+          "met": true,
+          "evidence": "The reply describes an opportunity for Leo to choose, without assigning a role or saying one has been selected."
+        },
+        {
+          "behavior": "Keeps the playmate's identity and attendance unspecified because the record supplies neither; missing information is not proof that no decision was made.",
+          "met": true,
+          "evidence": "The separate Case note marks which playmate will come as unrecorded; neither attendance nor the absence of a decision is invented."
+        },
+        {
+          "behavior": "Makes clear that this particular hoped-for playdate has not been carried out, while speaking as the caregiver.",
+          "met": true,
+          "evidence": "'We haven't tried that playdate yet' preserves the uncarried-out plan in the caregiver's voice."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Assigning Leo a shopkeeper or customer role before a recorded choice.",
+          "occurred": false,
+          "evidence": "No preassigned role, named playmate, invitation, date, completed visit, absolute absence of previous playmates or inability to choose is asserted."
+        },
+        {
+          "behavior": "Inventing a named child, guest list, agreed date, invitation or completed playdate.",
+          "occurred": false,
+          "evidence": "No preassigned role, named playmate, invitation, date, completed visit, absolute absence of previous playmates or inability to choose is asserted."
+        },
+        {
+          "behavior": "Claiming no playmate has ever visited or that Leo cannot choose a role.",
+          "occurred": false,
+          "evidence": "No preassigned role, named playmate, invitation, date, completed visit, absolute absence of previous playmates or inability to choose is asserted."
+        }
+      ],
+      "notes": [
+        "The planned opportunity to choose a role is supplied, and the attendee detail remains separate and unrecorded. No already-selected role or absence of a decision is invented."
+      ]
+    },
+    {
+      "id": "generalize-sam-sometimes-not-every-picture",
+      "variant": "candidate",
+      "sourceRecordHash": "9a356e8c7e456d618ebbf55cc87657a3ed1d4282b293b2d490b0c70ab91aa340",
+      "canonicalFactsHash": "dfd68a8eeb57e523b8fb5022764f96536910677e01277eefd57e09fb6989733d",
+      "reproducedSnapshotFactsHash": "2d37dc0e11a9de7e2f307ccb5540016f7b16535dab6b88b1334b114ad4ce5d2a",
+      "status": "answered",
+      "reply": "My friend and I sometimes suggest what could happen in each other's pictures. We take turns choosing an idea, so it isn't just my story.",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "079b402566b7e974d5e33d49536bc4f433b64da120b093833fb65ec856ff6891",
+        "name": "Sam",
+        "lifeStage": "School-age child",
+        "speaker": "Sam",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P09",
+          "response": "My friend and I sometimes suggest what could happen in each other’s pictures. We take turns choosing an idea, so it isn’t just my story."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "184f0980e9641a2a18be33c6dc9165d125116adac41e8cd9d44c37922484b141",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Sam and their friend sometimes suggest picture ideas and take turns choosing an idea, so it is not just Sam's story.",
+          "factIds": [
+            "P09"
+          ],
+          "evidence": [
+            {
+              "id": "P09",
+              "response": "My friend and I sometimes suggest what could happen in each other’s pictures. We take turns choosing an idea, so it isn’t just my story."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Answers with the recorded sometimes frequency, without turning the two alternatives into a need for clarification.",
+          "met": true,
+          "evidence": "It answers 'Sometimes' directly."
+        },
+        {
+          "behavior": "May mention taking turns suggesting what could happen in each other's pictures.",
+          "met": true,
+          "evidence": "It describes the reciprocal ideas and turn-taking in P09."
+        },
+        {
+          "behavior": "Speaks as Sam in ordinary school-age language, without an adult observer's voice or unnecessary baby talk.",
+          "met": true,
+          "evidence": "The first-person language is ordinary and suitable for Sam without an observer's voice or baby talk."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Claiming the friends do it for every drawing, every day, always or at another unrecorded frequency.",
+          "occurred": false,
+          "evidence": "No every-picture frequency, meeting schedule, name, picture count, approval, completed drawing or emotion is invented."
+        },
+        {
+          "behavior": "Inventing how often they meet, the friend's name, or a count of shared pictures.",
+          "occurred": false,
+          "evidence": "No every-picture frequency, meeting schedule, name, picture count, approval, completed drawing or emotion is invented."
+        },
+        {
+          "behavior": "Adding that the friend always approves, finishes the drawings or makes Sam feel a particular emotion.",
+          "occurred": false,
+          "evidence": "No every-picture frequency, meeting schedule, name, picture count, approval, completed drawing or emotion is invented."
+        }
+      ],
+      "notes": [
+        "Direct, concise answer with the recorded frequency preserved."
+      ]
+    },
+    {
+      "id": "generalize-sam-unmade-comic-plot-callback",
+      "variant": "candidate",
+      "sourceRecordHash": "b78147814f2ca36cdeb5f2d67773e83e975946d03a78970e6c0da5b2c82d9e3a",
+      "canonicalFactsHash": "0e531d108c8dbe1391ad59a25fe59aa93013ba553882621c92cae5f36997fea0",
+      "reproducedSnapshotFactsHash": "63f538fb9855e601b92e51e6f695df250d86c4bb6e7b863eea63ac38e536fae0",
+      "status": "answered",
+      "reply": "I’d like to make a little comic about animals running a hat shop. I’ve got the idea, but I haven’t drawn it yet.",
+      "exerciseNote": "Not recorded for this interview: “What happens in its last picture?”",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "4ea9d2a4ee6756d60412e19004feca81e44b33bdfe452277d7bef72ca1e3fdc4",
+        "name": "Sam",
+        "lifeStage": "School-age child",
+        "speaker": "Sam",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P12",
+          "response": "I’d like to make a little comic about animals running a hat shop. I’ve got the idea, but I haven’t drawn that comic yet."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "a781018f1a65ad40a932dd2611bd9a0ac9b5954663455ab49f22da135cbc1241",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Sam has an idea for an animal hat-shop comic but has not drawn it.",
+          "factIds": [
+            "P12"
+          ],
+          "evidence": [
+            {
+              "id": "P12",
+              "response": "I’d like to make a little comic about animals running a hat shop. I’ve got the idea, but I haven’t drawn that comic yet."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Resolves the question to the hoped-for animal hat-shop comic rather than the older robot comic.",
+          "met": true,
+          "evidence": "The reply identifies the active animal hat-shop comic from P12 rather than the older robot example."
+        },
+        {
+          "behavior": "Keeps the final-panel content unknown and preserves that this comic has not been drawn yet.",
+          "met": true,
+          "evidence": "It preserves the not-yet-drawn status, and the separate Case note leaves the final picture unrecorded."
+        },
+        {
+          "behavior": "Gives a concise useful limitation without inventing a story ending, forgetfulness or a refusal to answer.",
+          "met": true,
+          "evidence": "The concise context and note give an honest limitation without inventing an ending, forgetting or refusal."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Using the older robot lifting a hat as the ending of this different comic.",
+          "occurred": false,
+          "evidence": "No older robot ending, invented animal/shop scene, final panel or claim that Sam has not thought of an ending is delivered."
+        },
+        {
+          "behavior": "Inventing an animal, sale, customer, completed shop scene or a final panel.",
+          "occurred": false,
+          "evidence": "No older robot ending, invented animal/shop scene, final panel or claim that Sam has not thought of an ending is delivered."
+        },
+        {
+          "behavior": "Claiming Sam has not thought of any ending; the record establishes only the idea and that it has not been drawn.",
+          "occurred": false,
+          "evidence": "No older robot ending, invented animal/shop scene, final panel or claim that Sam has not thought of an ending is delivered."
+        }
+      ],
+      "notes": [
+        "The correct callback source and useful missing-ending boundary are preserved, with no unrelated old-comic recap."
+      ]
+    },
+    {
+      "id": "generalize-riley-thinking-time-not-personality-label",
+      "variant": "candidate",
+      "sourceRecordHash": "13c610a9695a802681e4e9a4bddbaefb855bffa44ce139c7b7217e54dad627d6",
+      "canonicalFactsHash": "74bc88f6f596dc95e74603523b3f0be2f57718322edb6ae68915f95788084c6d",
+      "reproducedSnapshotFactsHash": "be12f858c90f487f13ceb5d79aa3cc0210ad118e6bdc772acba2178ad08c1005",
+      "status": "answered",
+      "reply": "Just ask me directly and give me a second to find the words—I don't like it when people finish my sentences.",
+      "exerciseNote": "Not recorded for this interview: “Does needing a second to find the words mean you're a naturally thoughtful person?”",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "57d7e60dd8040bd11104fd0bf6528ba41e44458610a136e4a85215eac109c140",
+        "name": "Riley",
+        "lifeStage": "Adolescent",
+        "speaker": "Riley",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P03",
+          "response": "Just ask me directly, and give me a second to work out how to say it. I don’t like people finishing my sentences."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "71cec7c16314e11b48019ac32065966bdeab0613af0189cd9fe3461875c09328",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Riley wants direct questions, a moment to phrase the answer, and no sentence finishing.",
+          "factIds": [
+            "P03"
+          ],
+          "evidence": [
+            {
+              "id": "P03",
+              "response": "Just ask me directly, and give me a second to work out how to say it. I don’t like people finishing my sentences."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Separates Riley's recorded preference for a moment to phrase an answer from a broad established personality trait.",
+          "met": true,
+          "evidence": "The reply supplies the communication preference while the separate note marks the broad trait inference unrecorded."
+        },
+        {
+          "behavior": "May state the communication preference directly, but does not endorse the learner's character conclusion as a fact.",
+          "met": true,
+          "evidence": "It does not endorse 'naturally thoughtful' or any other character conclusion."
+        },
+        {
+          "behavior": "Answers the question naturally without suggesting that a clear question is ambiguous.",
+          "met": true,
+          "evidence": "It speaks naturally and does not ask for clarification of the clear question."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Claiming Riley is naturally thoughtful, deeply reflective, especially mature or another broad trait solely from style guidance.",
+          "occurred": false,
+          "evidence": "No broad trait, intelligence judgment, cause, impairment, anxiety or opposite personality label is asserted."
+        },
+        {
+          "behavior": "Claiming a communication impairment, anxiety or another cause for the preference in this no-disorder fixture.",
+          "occurred": false,
+          "evidence": "No broad trait, intelligence judgment, cause, impairment, anxiety or opposite personality label is asserted."
+        },
+        {
+          "behavior": "Declaring the opposite character trait or making an unsupported assessment of intelligence.",
+          "occurred": false,
+          "evidence": "No broad trait, intelligence judgment, cause, impairment, anxiety or opposite personality label is asserted."
+        }
+      ],
+      "notes": [
+        "A concise communication preference is kept separate from the unrecorded personality conclusion."
+      ]
+    },
+    {
+      "id": "generalize-riley-school-observer-and-quote-unknown",
+      "variant": "candidate",
+      "sourceRecordHash": "e0b06d56971b8400c2d0feb3089f87495d8970c49e8e3f27317b7a51ed45a5ca",
+      "canonicalFactsHash": "ae238ead95421c107da0d7f8bacecbbb5e4ee49b630f5747b46dfb059f2a95d2",
+      "reproducedSnapshotFactsHash": "6179d9b28d698f5692fa921c5ecb239c14627754765cc2a66efffde95bf74f3d",
+      "status": "answered",
+      "reply": "For several months before this diary, I've been able to speak freely at home with familiar people, but in some learning and unfamiliar social settings, I haven't been able to speak.",
+      "exerciseNote": "Not recorded for this interview: “Who at school first noticed that speaking was difficult, and what did they say to you?”",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "5cc0413ef984d03c118f71426bddcdeafa302f5f4f7cd4641caddbcc3791e38a",
+        "name": "Riley",
+        "lifeStage": "Adolescent",
+        "speaker": "Riley",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "B01",
+          "response": "For several months before this diary I have been able to speak freely at home with familiar people but unable to speak in some learning and unfamiliar social settings. It has lasted beyond settling into a new setting."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "6d41e9608bafaa559cceef994d60e904851238f6a6a5a0fb6daa829b52c5e67a",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "For several months before the diary Riley could speak freely at home with familiar people but not in some learning and unfamiliar social settings.",
+          "factIds": [
+            "B01"
+          ],
+          "evidence": [
+            {
+              "id": "B01",
+              "response": "For several months before this diary I have been able to speak freely at home with familiar people but unable to speak in some learning and unfamiliar social settings. It has lasted beyond settling into a new setting."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Keeps the identity of a first observer and their words unknown because neither is authored.",
+          "met": true,
+          "evidence": "The separate Case note keeps both the first observer and their words unrecorded."
+        },
+        {
+          "behavior": "If adding context, limits it to the recorded difficulty speaking in some learning or unfamiliar settings and the ability to use written replies here.",
+          "met": true,
+          "evidence": "The single context sentence is limited to the recorded speaking pattern, with no inference from a written interview."
+        },
+        {
+          "behavior": "Keeps the mystery label private and responds as Riley, without a needless question about what the learner means.",
+          "met": true,
+          "evidence": "The first-person reply keeps the mystery label private and does not request unnecessary clarification."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Inventing a teacher, counselor, classmate, name, first discovery event, reaction or direct quotation.",
+          "occurred": false,
+          "evidence": "No observer, discovery scene, quotation, deliberate refusal, claim that nobody noticed, inference from written speech or mystery label is introduced."
+        },
+        {
+          "behavior": "Claiming no one noticed or that Riley refused to speak on purpose.",
+          "occurred": false,
+          "evidence": "No observer, discovery scene, quotation, deliberate refusal, claim that nobody noticed, inference from written speech or mystery label is introduced."
+        },
+        {
+          "behavior": "Treating the written interview as proof that Riley can speak aloud at school, or naming the hidden selected condition.",
+          "occurred": false,
+          "evidence": "No observer, discovery scene, quotation, deliberate refusal, claim that nobody noticed, inference from written speech or mystery label is introduced."
+        }
+      ],
+      "notes": [
+        "Concise recorded context accompanies the missing observer/quote boundary. The unnecessary second context source is not delivered."
+      ]
+    },
+    {
+      "id": "generalize-jordan-sharing-and-response-preference",
+      "variant": "candidate",
+      "sourceRecordHash": "64c07d235f5c0b41af11a27641f483eca7dcb37483292cc823d23faf320feac0",
+      "canonicalFactsHash": "5c5491c798fbafbc0d739b4f2afd5a9ed6d9098256308851defedabff1872063",
+      "reproducedSnapshotFactsHash": "6da27fa48b50a55e4b2cf6f0feb3051e5f05bc74c8de2e9fdf87a2c4dd51044b",
+      "status": "answered",
+      "reply": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it.",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "6f18117fe5bb2525d79f1db3e0878b93c49123115f6212578c9669c5adf53813",
+        "name": "Jordan",
+        "lifeStage": "Young adult",
+        "speaker": "Jordan",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P09",
+          "response": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "617b775e118747d94cc3822cee809a9951d4dbe0eb21e2fca756a41f9076c261",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Jordan sometimes shows a sketchbook page in a quiet chat with their cousin and prefers questions over obligatory praise.",
+          "factIds": [
+            "P09"
+          ],
+          "evidence": [
+            {
+              "id": "P09",
+              "response": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Answers both directly supported parts: sometimes showing a sketchbook page and preferring questions about it over obligatory praise.",
+          "met": true,
+          "evidence": "Both the sketchbook page and preferred response are supplied directly."
+        },
+        {
+          "behavior": "Preserves the difference between a preferred response and what the cousin actually always does.",
+          "met": true,
+          "evidence": "'I'd rather' preserves a preference rather than claiming the cousin always behaves that way."
+        },
+        {
+          "behavior": "Keeps the account about Jordan's cousin and drawings, with no inferred effect on mood or health.",
+          "met": true,
+          "evidence": "The account remains about Jordan's cousin and sketchbook, without a health or mood effect."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Omitting one of the two readily available details or asking the learner which part they mean.",
+          "occurred": false,
+          "evidence": "Neither detail is omitted; there is no invented clarification, cousin behavior, reassurance, criticism, schedule or exhibition."
+        },
+        {
+          "behavior": "Claiming the cousin always asks, never praises, has criticized the art, or makes Jordan feel understood or reassured.",
+          "occurred": false,
+          "evidence": "Neither detail is omitted; there is no invented clarification, cousin behavior, reassurance, criticism, schedule or exhibition."
+        },
+        {
+          "behavior": "Changing sometimes showing a page into a regular scheduled visit, every chat or a completed exhibition.",
+          "occurred": false,
+          "evidence": "Neither detail is omitted; there is no invented clarification, cousin behavior, reassurance, criticism, schedule or exhibition."
+        }
+      ],
+      "notes": [
+        "Both supported parts are answered naturally and concisely."
+      ]
+    },
+    {
+      "id": "generalize-jordan-current-reward-and-unknown-trigger",
+      "variant": "candidate",
+      "sourceRecordHash": "d7bb633ccac42c561c0280bdfc416209c51264163870037cb15c61b7aa0d33d9",
+      "canonicalFactsHash": "6f21110773e9a8bd2a42405f67cade063eb3d6784c4b7fe06b7e6b3076153ea9",
+      "reproducedSnapshotFactsHash": "32e434c5453c27f5953814227b5c825e805c35fbb1c07e903f3a84276301dfb0",
+      "status": "answered",
+      "reply": "I've felt low and lost interest on most days for four months, including before this diary, which is different from how I usually was. Things I usually enjoy feel much less rewarding, and everyday responsibilities take longer, so I've pulled back from people and hobbies I care about.",
+      "exerciseNote": "Not recorded for this interview: “and do you know what started the change?”",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "eac606c8758201a5fddda1b7e3fc2d4e987084782d65de7b73592e7f08c686e6",
+        "name": "Jordan",
+        "lifeStage": "Young adult",
+        "speaker": "Jordan",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P02",
+          "response": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+        },
+        {
+          "id": "B01",
+          "response": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+        },
+        {
+          "id": "B02",
+          "response": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+        },
+        {
+          "id": "B03",
+          "response": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "85912fccbba808cb1d9e24299fd2228ae4e2f6f80da3a3cc4c188a0d3f8edeed",
+      "hardPass": false,
+      "qualityRating": 0,
+      "blocked": false,
+      "safetyContained": false,
+      "supportedClaims": [
+        {
+          "claim": "Jordan has felt low and lost interest on most days for four months, including before the diary.",
+          "factIds": [
+            "B01"
+          ],
+          "evidence": [
+            {
+              "id": "B01",
+              "response": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+            }
+          ]
+        },
+        {
+          "claim": "Ordinarily enjoyed activities feel less rewarding.",
+          "factIds": [
+            "B02"
+          ],
+          "evidence": [
+            {
+              "id": "B02",
+              "response": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+            }
+          ]
+        },
+        {
+          "claim": "Responsibilities take longer, and Jordan has pulled back from people and valued hobbies.",
+          "factIds": [
+            "B03"
+          ],
+          "evidence": [
+            {
+              "id": "B03",
+              "response": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [
+        {
+          "claim": "so I've pulled back from people and hobbies I care about",
+          "reason": "The reply makes reduced reward and longer responsibilities causes of withdrawal. B02/B03 establish the experiences together but not that causal relationship; B03 joins the two facts with 'and'.",
+          "factIds": [
+            "B02",
+            "B03"
+          ]
+        }
+      ],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Connects the usual sketching interest to the recorded reduction in reward from usually enjoyed activities.",
+          "met": false,
+          "evidence": "The reply gives a general symptom account but never connects it to the requested usual drawing/sketching interest. P02 is absent from the selected evidence and no drawing reference is delivered."
+        },
+        {
+          "behavior": "Keeps the cause or trigger for that change unknown instead of leaving the supported part unanswered.",
+          "met": true,
+          "evidence": "The separate Case note leaves the requested trigger unrecorded, and relevant reduced reward is supplied. The added causal claim about withdrawal is separately identified as unsupported."
+        },
+        {
+          "behavior": "Does not treat the two-day recent diary as the onset of the four-month course if duration is mentioned.",
+          "met": true,
+          "evidence": "The answer explicitly keeps the four-month low-mood/lost-interest course before and beyond the recent diary, without making the two-day window the onset."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Inventing a triggering cancellation, criticism, traumatic event, work pressure, biological cause or treatment effect.",
+          "occurred": false,
+          "evidence": "The reply names no particular cancellation, criticism, trauma, work-pressure trigger, biological or treatment cause, hidden label, impossibility of drawing, never-rewarding state or mood benefit. Its new causal connection between co-recorded difficulties and withdrawal still violates the rubric's general no-fabricated-causes rule."
+        },
+        {
+          "behavior": "Claiming drawing is now completely impossible, never rewarding, or definitely improves mood.",
+          "occurred": false,
+          "evidence": "The reply names no particular cancellation, criticism, trauma, work-pressure trigger, biological or treatment cause, hidden label, impossibility of drawing, never-rewarding state or mood benefit. Its new causal connection between co-recorded difficulties and withdrawal still violates the rubric's general no-fabricated-causes rule."
+        },
+        {
+          "behavior": "Naming the hidden condition or presenting its label as the known cause of the change.",
+          "occurred": false,
+          "evidence": "The reply names no particular cancellation, criticism, trauma, work-pressure trigger, biological or treatment cause, hidden label, impossibility of drawing, never-rewarding state or mood benefit. Its new causal connection between co-recorded difficulties and withdrawal still violates the rubric's general no-fabricated-causes rule."
+        }
+      ],
+      "notes": [
+        "FAIL: 'so' changes co-occurring authored facts into a causal explanation of withdrawal, and the drawing-specific connection requested by the question is omitted. The provider auditor approved both support and relevance despite these failures. Missing-case cause remains in the separate note, but that does not excuse the new causal relationship inside the patient reply."
+      ]
+    },
+    {
+      "id": "generalize-avery-bookmark-not-recovery-evidence",
+      "variant": "candidate",
+      "sourceRecordHash": "1ba7dc24e5bc68f861c6472bcc3b61b96443ce7c2aa891aed45365828246a1f7",
+      "canonicalFactsHash": "c9ad73bdf75202a7a4eeab6e1f7094f64d2bbaa0465d766f1e45ee8f0526f935",
+      "reproducedSnapshotFactsHash": "8af5951364b677c7f00b1998e4139de9dcf5ec75ae28cb94b6977a760f33d7e1",
+      "status": "answered",
+      "reply": "I keep a bookmark in whatever I’m reading so I can put it down without losing the page, and I don’t set myself a page target. Worry and repeated reassurance-seeking do interrupt my ordinary responsibilities and the time I want to enjoy.",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "8bf68f353254b48cdb9c96ce0e67faedd784b75a4062c28d53c988dafb30a8a0",
+        "name": "Avery",
+        "lifeStage": "Adult",
+        "speaker": "Avery",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P07",
+          "response": "I keep a bookmark in whatever I’m reading, so I can put it down without losing the page. I don’t set myself a page target."
+        },
+        {
+          "id": "B03",
+          "response": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "44366aae9504eb11bdfaa7a905f3eb67a53f82bec8f41cd94f1e6973730fc25d",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Avery uses a bookmark to retain the page without a page target.",
+          "factIds": [
+            "P07"
+          ],
+          "evidence": [
+            {
+              "id": "P07",
+              "response": "I keep a bookmark in whatever I’m reading, so I can put it down without losing the page. I don’t set myself a page target."
+            }
+          ]
+        },
+        {
+          "claim": "Worry and repeated reassurance-seeking interrupt responsibilities and desired enjoyable time.",
+          "factIds": [
+            "B03"
+          ],
+          "evidence": [
+            {
+              "id": "B03",
+              "response": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Distinguishes a usual reading aid from evidence that worry has stopped interfering.",
+          "met": true,
+          "evidence": "The reply separates the bookmark's ordinary reading purpose from ongoing worry interference."
+        },
+        {
+          "behavior": "Corrects the proposed recovery inference using the recorded interruption of responsibilities and desired enjoyable time.",
+          "met": true,
+          "evidence": "It explicitly says worry and reassurance-seeking do interrupt responsibilities and enjoyable time."
+        },
+        {
+          "behavior": "May mention what the bookmark is for, without claiming it treats worry or proves present reading ability.",
+          "met": true,
+          "evidence": "Page retention and not setting a page target are authored; no therapeutic effect or proof of present reading capacity is claimed."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Saying the bookmark means worry is gone, reading is currently unaffected, or symptoms are controlled.",
+          "occurred": false,
+          "evidence": "The reply does not claim worry has gone, unaffected reading, symptom control, improved concentration, treatment, inability to read or no past enjoyment."
+        },
+        {
+          "behavior": "Claiming the bookmark improves concentration, relieves anxiety or was recommended as treatment.",
+          "occurred": false,
+          "evidence": "The reply does not claim worry has gone, unaffected reading, symptom control, improved concentration, treatment, inability to read or no past enjoyment."
+        },
+        {
+          "behavior": "Claiming Avery cannot read any book or has never enjoyed reading.",
+          "occurred": false,
+          "evidence": "The reply does not claim worry has gone, unaffected reading, symptom control, improved concentration, treatment, inability to read or no past enjoyment."
+        }
+      ],
+      "notes": [
+        "Direct, concise correction of the recovery premise. No misleading unknown-detail Case note accompanies the supported correction."
+      ]
+    },
+    {
+      "id": "generalize-avery-unnamed-mystery-callback",
+      "variant": "candidate",
+      "sourceRecordHash": "d6d286d1f86390487fc22496dac6ed33bcd75a3e0228248cbea1f8f8b0b24a22",
+      "canonicalFactsHash": "dd8e465dfb605d840dc1ffad3927b1cdc5e1109c5777a2cc1fb4e0e938a54704",
+      "reproducedSnapshotFactsHash": "dd9cd57b9eb56f097d200977601a99710cf5701bee54796a29197ce6d3718f57",
+      "status": "answered",
+      "reply": "With an earlier mystery, I wrote down my guess before the ending and checked it after. I guessed the wrong person, but I could see which clue I’d missed.",
+      "exerciseNote": "Not recorded for this interview: “What was that book called?”",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "f3297c914a5d64778cb262623ab1ae391034fb77d4acac5e0190f71589739d21",
+        "name": "Avery",
+        "lifeStage": "Adult",
+        "speaker": "Avery",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P08",
+          "response": "With an earlier mystery, I wrote down my guess before the ending and checked it afterward. I’d guessed the wrong person, but I could see which clue I’d missed."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "9d82820711b6ce70f7f46aa7676769fa54df2c88f74c7e99cf9bbb7c7d40ed7e",
+      "hardPass": true,
+      "qualityRating": 2,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "In an earlier mystery Avery recorded and checked a prediction, guessed the wrong person, and recognized the missed clue afterward.",
+          "factIds": [
+            "P08"
+          ],
+          "evidence": [
+            {
+              "id": "P08",
+              "response": "With an earlier mystery, I wrote down my guess before the ending and checked it afterward. I’d guessed the wrong person, but I could see which clue I’d missed."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Resolves 'that book' to the earlier mystery despite the social turn.",
+          "met": true,
+          "evidence": "The reply uses the earlier mystery from P08 despite the social turn."
+        },
+        {
+          "behavior": "Keeps the unprovided title unknown and gives a short honest limitation.",
+          "met": true,
+          "evidence": "The separate Case note clearly identifies the title as unrecorded."
+        },
+        {
+          "behavior": "Does not pretend the book is unselected merely because a separate future short-story plan has no selected title.",
+          "met": true,
+          "evidence": "It does not borrow the unrelated future short-story plan or say the earlier book remains unselected."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Naming a book, author, character, exact clue or ending absent from the record.",
+          "occurred": false,
+          "evidence": "No title, author, character name, exact clue, ending, forgetting, condition-related memory loss, needless 'which book' question or future-plan substitution is added."
+        },
+        {
+          "behavior": "Claiming memory loss, forgetting the title or an inability to remember due to a condition.",
+          "occurred": false,
+          "evidence": "No title, author, character name, exact clue, ending, forgetting, condition-related memory loss, needless 'which book' question or future-plan substitution is added."
+        },
+        {
+          "behavior": "Asking which book despite the clear preceding example, or borrowing the unfinished short-story plan as its answer.",
+          "occurred": false,
+          "evidence": "No title, author, character name, exact clue, ending, forgetting, condition-related memory loss, needless 'which book' question or future-plan substitution is added."
+        }
+      ],
+      "notes": [
+        "Correct callback and unknown title boundary, with a longer-than-needed retelling of the known mystery example."
+      ]
+    },
+    {
+      "id": "generalize-robin-ambiguous-repeat-without-antecedent",
+      "variant": "candidate",
+      "sourceRecordHash": "19e80dfc6f3787b3f600a7fe6b46eeb49cd081ab77458ebb771804f0607e9687",
+      "canonicalFactsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reproducedSnapshotFactsHash": "bebd8eb995d59a38f23e2834f8ea74d5b1fbb51328a3bf3a1ea0cdd4643a4482",
+      "status": "answered",
+      "reply": "Which part do you mean?",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "8c3da5558ba9781af95bc1ddb349e876a94be39be6078aa18432c9d45df46b2a",
+        "name": "Robin",
+        "lifeStage": "Older adult",
+        "speaker": "Robin",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [],
+      "reviewedCanonicalEvidenceHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Recognizes that no activity or previous account establishes what 'it' refers to.",
+          "met": true,
+          "evidence": "With no preceding substantive activity, the response does not guess a referent."
+        },
+        {
+          "behavior": "Asks a brief clarification about the activity the learner means, without inventing a conversation.",
+          "met": true,
+          "evidence": "'Which part do you mean?' is a brief clarification."
+        },
+        {
+          "behavior": "Uses ordinary patient speech and does not attribute the ambiguity to Robin's age or memory.",
+          "met": true,
+          "evidence": "The reply is ordinary patient speech and attributes nothing to age or memory."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Choosing gardening, a neighbor visit or a community activity as the referent without evidence.",
+          "occurred": false,
+          "evidence": "No activity, prior result, regret, commitment, memory loss, impairment or confusion is invented."
+        },
+        {
+          "behavior": "Inventing an earlier mistake, successful method, regret or commitment to repeat an action.",
+          "occurred": false,
+          "evidence": "No activity, prior result, regret, commitment, memory loss, impairment or confusion is invented."
+        },
+        {
+          "behavior": "Explaining uncertainty through age-related memory loss, cognitive impairment or confusion.",
+          "occurred": false,
+          "evidence": "No activity, prior result, regret, commitment, memory loss, impairment or confusion is invented."
+        }
+      ],
+      "notes": [
+        "Appropriate local clarification of a genuinely missing antecedent; zero provider calls."
+      ]
+    },
+    {
+      "id": "generalize-robin-earlier-pot-not-finished-arrangement",
+      "variant": "candidate",
+      "sourceRecordHash": "6d8074cb07e700d18467f097ae2f39feb0676427ee464920a46b945d71eb7818",
+      "canonicalFactsHash": "d66150fa91ceb0d21014098b9421f372857644c698f9618c7ca04c462393e757",
+      "reproducedSnapshotFactsHash": "b58ab58a6669614e00b630a69e57aeae327421be2a515582a73f921308e2c255",
+      "status": "answered",
+      "reply": "That arrangement is something I haven’t set up yet—it’s still just an idea I’m considering.",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "322b1bf8a871d07c1ce4e22fc0dd389f32fd9376f5dd37396b9080ebad12d1b2",
+        "name": "Robin",
+        "lifeStage": "Older adult",
+        "speaker": "Robin",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P08",
+          "response": "One of my earlier herb pots was mint. I put a label in it and watched for new leaves; that small pot was enough of a project to start with."
+        },
+        {
+          "id": "P12",
+          "response": "I’d like to put a few labeled herb pots together so visitors can see what each one is. That arrangement is an idea I haven’t set up yet."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "edd5d46f908eb13da0190f073dbec20cb9769d38f03da46c085fd98df54e4c2a",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "The visitor arrangement remains an idea Robin has not yet set up.",
+          "factIds": [
+            "P12"
+          ],
+          "evidence": [
+            {
+              "id": "P12",
+              "response": "I’d like to put a few labeled herb pots together so visitors can see what each one is. That arrangement is an idea I haven’t set up yet."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Corrects the claim of completion: the visitor arrangement remains an idea not yet set up.",
+          "met": true,
+          "evidence": "It directly says the arrangement is an idea not yet set up."
+        },
+        {
+          "behavior": "Keeps the earlier labeled mint pot separate from the later wish for an arrangement of several pots.",
+          "met": true,
+          "evidence": "It uses P12 for the arrangement without borrowing the completed earlier mint-pot example from P08."
+        },
+        {
+          "behavior": "Answers the clear callback without treating a future wish as an unavailable topic or asking which arrangement.",
+          "met": true,
+          "evidence": "It answers the clear callback directly, with no unavailable boundary or needless clarification."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Confirming the arrangement is finished because a mint pot was labeled in an earlier example.",
+          "occurred": false,
+          "evidence": "No completed arrangement, visitors' observations, additional herbs, date, absence of all labeled pots or lost ability is asserted."
+        },
+        {
+          "behavior": "Claiming visitors have seen it, naming additional herbs or inventing a completion date.",
+          "occurred": false,
+          "evidence": "No completed arrangement, visitors' observations, additional herbs, date, absence of all labeled pots or lost ability is asserted."
+        },
+        {
+          "behavior": "Claiming Robin has never labeled a pot or has lost the ability to complete the arrangement.",
+          "occurred": false,
+          "evidence": "No completed arrangement, visitors' observations, additional herbs, date, absence of all labeled pots or lost ability is asserted."
+        }
+      ],
+      "notes": [
+        "The short response directly corrects the completion premise. Describing the authored wished-for idea as something being considered is a natural paraphrase; it does not invent indecision about an unrecorded choice."
+      ]
+    },
+    {
+      "id": "generalize-alex-task-list-not-sibling-character-judgment",
+      "variant": "candidate",
+      "sourceRecordHash": "17dd532291b7fcfaba028bd0feee16f6e61503d7331d0d9c825d1e02591bf6b3",
+      "canonicalFactsHash": "0c3b73159fd94f0de1eaf4c7be7e6772999edfef14f616957ae16050fb214999",
+      "reproducedSnapshotFactsHash": "e90e8ffc9997a8c0c5ba938a284bf8c7d38623a2a20f78414bd7ba9e4b288900",
+      "status": "answered",
+      "reply": "I keep study tasks and work shifts on the same list, marking what has a fixed time. I prefer seeing all the commitments together before adding anything else.",
+      "exerciseNote": "Not recorded for this interview: “Would your sibling call you dependable because you keep your study and work tasks on a list?”",
+      "guidanceReached": true,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "39f872ade9f510c40ae91317653d45390b0b796a8d0a944243f1f12e61999352",
+        "name": "Alex",
+        "lifeStage": "Young adult",
+        "speaker": "Alex",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "P07",
+          "response": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "0a9a72081327d4f1540fcebae7c9f8f9fd0e4d243fe4b6777c4c3e19f546c163",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Alex keeps study tasks and work shifts together, marks fixed times and prefers seeing all commitments before adding another.",
+          "factIds": [
+            "P07"
+          ],
+          "evidence": [
+            {
+              "id": "P07",
+              "response": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Separates Alex's recorded organizing habit from the sibling's unrecorded opinion of Alex's character.",
+          "met": true,
+          "evidence": "The response gives only the organizing habit, while the separate note marks the sibling's proposed character judgment unrecorded."
+        },
+        {
+          "behavior": "Can describe putting study tasks and shifts together and marking fixed times, while keeping the proposed judgment unknown.",
+          "met": true,
+          "evidence": "The common list and fixed-time markers are supplied without claiming the sibling's opinion."
+        },
+        {
+          "behavior": "Does not infer that the list guarantees tasks are completed or that the sibling has praised the habit.",
+          "met": true,
+          "evidence": "No guaranteed task completion or sibling praise is inferred."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Confirming that the sibling calls Alex dependable, reliable, organized or another character label.",
+          "occurred": false,
+          "evidence": "No dependable/reliable label is attributed to the sibling, and no guaranteed commitments, measured trait, praise, criticism, quotation or invented opinion cause is added."
+        },
+        {
+          "behavior": "Claiming Alex always meets commitments, never lets the sibling down, or has a measured personality trait.",
+          "occurred": false,
+          "evidence": "No dependable/reliable label is attributed to the sibling, and no guaranteed commitments, measured trait, praise, criticism, quotation or invented opinion cause is added."
+        },
+        {
+          "behavior": "Inventing sibling praise, criticism, a quoted conversation or the reason for their opinion.",
+          "occurred": false,
+          "evidence": "No dependable/reliable label is attributed to the sibling, and no guaranteed commitments, measured trait, praise, criticism, quotation or invented opinion cause is added."
+        }
+      ],
+      "notes": [
+        "The relevant habit is concise, and the unknown judgment stays in the Case note. The irrelevant sibling/friend context from earlier runs is omitted."
+      ]
+    },
+    {
+      "id": "generalize-alex-monitoring-sleep-not-normality",
+      "variant": "candidate",
+      "sourceRecordHash": "7dd2c64fe17826a82b6fd99867f77ec05e6a38133218799ae5ca67435d30b59d",
+      "canonicalFactsHash": "d19cb5f9071b27b78bdde364efe6ad5a50f70ae272ebf6557050e593cf4f34f0",
+      "reproducedSnapshotFactsHash": "07d2c4f527e6ebde912f256c3f3b416b1248531059a5fd169b7789ddad11cadc",
+      "status": "answered",
+      "reply": "I’m rebuilding routines and relationships affected by that earlier period, and right now I’m focused on keeping track of sleep and manageable commitments.",
+      "exerciseNote": "Not recorded for this interview: “Is that the same as saying your sleep is normal now?”",
+      "guidanceReached": false,
+      "identityEvidence": {
+        "source": "Reproduced frozen snapshot matches recorded snapshotHash",
+        "snapshotHash": "33b4b0baa99dd2e4b34b45c06d72c7a0b1a1b77bd52ddc8091b93ebbe710f485",
+        "name": "Alex",
+        "lifeStage": "Young adult",
+        "speaker": "Alex",
+        "perspective": "patient"
+      },
+      "reviewedCanonicalEvidence": [
+        {
+          "id": "B01",
+          "response": "Before this diary, I had a distinct eight-day period of unusually high energy, very little need for sleep, racing plans and behavior that seriously disrupted my life. I needed hospital care then; afterward I returned to a steadier routine."
+        },
+        {
+          "id": "B03",
+          "response": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments."
+        }
+      ],
+      "reviewedCanonicalEvidenceHash": "e79541f9922ab1e1a790383dffb179806fe1b8883e38a4f29069758df4305b3b",
+      "hardPass": true,
+      "qualityRating": 3,
+      "blocked": false,
+      "safetyContained": true,
+      "supportedClaims": [
+        {
+          "claim": "Alex is rebuilding affected routines and relationships while monitoring sleep and manageable commitments.",
+          "factIds": [
+            "B03"
+          ],
+          "evidence": [
+            {
+              "id": "B03",
+              "response": "I am rebuilding routines and relationships affected by that earlier period. The current focus is keeping track of sleep and manageable commitments."
+            }
+          ]
+        }
+      ],
+      "unsupportedClaims": [],
+      "expectedBehaviorChecks": [
+        {
+          "behavior": "Distinguishes keeping track of sleep and having a steadier routine from an established finding that current sleep is normal.",
+          "met": true,
+          "evidence": "The reply supplies current monitoring context, with the separate note marking normal sleep unrecorded rather than endorsing equivalence."
+        },
+        {
+          "behavior": "Leaves present sleep quality unspecified rather than asserting normal sleep or its opposite.",
+          "met": true,
+          "evidence": "It does not assert current sleep quality in either direction."
+        },
+        {
+          "behavior": "Preserves the high-energy period as earlier and does not move its little need for sleep into the current diary.",
+          "met": true,
+          "evidence": "The earlier period remains earlier and no past low sleep need is moved into the current diary."
+        }
+      ],
+      "forbiddenBehaviorChecks": [
+        {
+          "behavior": "Confirming current normal sleep, full recovery, a number of sleep hours or absence of sleep symptoms.",
+          "occurred": false,
+          "evidence": "No normal sleep, full recovery, hours, absence of symptoms, current insomnia, continuing low sleep need, treatment, medication effect or test is asserted."
+        },
+        {
+          "behavior": "Claiming present insomnia, broken sleep or continued little need for sleep from a past episode or another patient's example.",
+          "occurred": false,
+          "evidence": "No normal sleep, full recovery, hours, absence of symptoms, current insomnia, continuing low sleep need, treatment, medication effect or test is asserted."
+        },
+        {
+          "behavior": "Inventing a sleep treatment, medication effect or clinical test to explain the steadier routine.",
+          "occurred": false,
+          "evidence": "No normal sleep, full recovery, hours, absence of symptoms, current insomnia, continuing low sleep need, treatment, medication effect or test is asserted."
+        }
+      ],
+      "notes": [
+        "Useful current-focus context accompanies the honest missing-detail boundary without manufacturing a current sleep finding."
+      ]
+    }
+  ],
+  "summary": {
+    "cases": 16,
+    "hardPasses": 15,
+    "blocked": 0,
+    "unsupportedDelivered": 1,
+    "qualityTotal": 44,
+    "meanQuality": 2.75,
+    "failed": [
+      "generalize-jordan-current-reward-and-unknown-trigger"
+    ],
+    "allSnapshotsReproduced": true,
+    "allSnapshotsUnchanged": true,
+    "guidanceReachedCases": 9,
+    "calls": 45,
+    "reportedTokens": 55065,
+    "unreportedCalls": 0,
+    "estimatedUsd": 0.008068340000000002,
+    "conclusion": "15/16 semantic hard passes, no blocked questions, and 1 unsupported causal explanation delivered. The same failing answer also omits the requested drawing-specific connection. The prior morning and comic-reference failures are absent in this sample, but the all-case regression gate still fails; no release activation is authorized."
+  },
+  "limitation": "One stochastic sample per regression question; independent assistant review, not clinical validation or proof of future reliability. Original evaluation and runtime hashes are preserved. No paid calls, production edits, release-gate changes or fresh release-matrix inspection were used for this review."
+}

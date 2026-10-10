@@ -1,0 +1,213 @@
+PSYCHLAB — PROJECT MAP AND EXAMINATION NOTES
+Examined 10 October 2026, Asia/Manila
+Workspace: /local/user\Documents\ChatGPT\PsychLab
+
+This map records the local files, code and saved evidence examined in this chat.
+It is an orientation to the existing project, not a new clinical literature review.
+Paths below are relative to the workspace unless otherwise indicated.
+
+WHAT PSYCHLAB DOES
+
+PsychLab is an experimental psychological interviewing practice application.
+A learner chooses a fictional person, prepares a history, interviews that person,
+records evidence and provisional reasoning, and receives an evidence-linked debrief.
+The central rule is that history is generated locally and frozen before the
+interview. Model-generated speech cannot create new case facts or change history.
+Personality, biography, goals, relationships and clinical presentation are separate.
+
+The project began with one scripted adult case and has grown into a live AI app.
+Old foundation documents describe the earlier milestone and are not reliable
+standalone accounts of current functionality.
+
+FOLDER MAP
+
+psych-simulator-foundation/live/
+  Current application: native Node HTTP server, plain JavaScript modules, HTML/CSS
+  frontend, fictional profiles, condition premises, interview guidance, dialogue
+  checks, debriefs, usage accounting, Windows launchers and automated tests.
+
+psych-simulator-foundation/personality_system/
+  Research-informed identity module: TRAIT, SCHEMA and MOTIVE; relationship-specific
+  learning; contextual goals and action selection; parameter provenance; source
+  registries; a separate partial Big Five population sampler; validation records.
+
+psych-simulator-foundation/adaption/
+  Offline example-improvement workflow and evaluation/release machinery. Contains
+  the 25-example pilot, 21 approved examples, provider outputs, semantic reviews,
+  candidate comparisons, regression matrices, and prepared release activation.
+
+psych-simulator-foundation/prototype/dist/
+  Earlier fixed-response browser rehearsal. It contains its own nested Git repo
+  and Sites configuration. It is also a current dependency: live/controller.mjs
+  imports the legacy GAD-7 scoring function from prototype/dist/core.mjs.
+  Do not assume this entire folder is disposable just because it is historical.
+
+psych-simulator-foundation/data/, engineering/, review/, design/
+  Original Alex case, rubric, source list, fixtures, handbook source sections,
+  patient/evaluator prompts, provider adapter, deterministic tests, clinician
+  review form, student walkthrough, demo script and architecture notes.
+
+research/
+  Four dated research/evaluation collections: disorder selection; interview
+  guidance; natural conversation; and interview quality, memory, debrief and cost.
+  Includes readable HTML reports, source registers, structured data, raw model
+  evaluations, review findings and screenshots. Earlier notes sometimes say a
+  feature is research-only even though later code has integrated it.
+
+work/
+  Development utilities: research builders, paid-model evaluation runners,
+  diagnostic and mock preview servers, review builders, and original handbook
+  generation/packaging scripts plus rendered page images. These are not all
+  ordinary application startup commands.
+
+Root-level ZIP, handoff, debrief and Cloudflare screenshots
+  Historical deliverables and setup evidence. The ZIP contains 28 original
+  foundation files; it does not contain the present live app or latest research.
+
+APPLICATION FLOW AND CODE OWNERSHIP
+
+1. live/public/index.html, app.mjs and style.css provide the interface.
+   Setup selects patient, 1–90 recent days, seed and difficulty, followed by a
+   chosen condition, Random mystery case, or No disorder.
+2. live/server.mjs provides HTTP endpoints; controller.mjs owns sessions,
+   preparation, turn submission, notes, assessment, completion and reviewer access.
+3. patients.mjs and individuality.mjs supply life-stage scenarios and stable
+   authored personal facts. disorders.mjs and live/data/ provide condition
+   premises, earlier course, current experiences and functional impacts.
+4. engine.mjs generates a seeded history and freezes the result with a SHA-256
+   fingerprint. Simulation modules represent physiology, memory, appraisal,
+   affect, social action, world consequences and identity learning. These are
+   local computations, not separate paid AI agents. The history window does not
+   age a person from birth. Random case selection is separate from the diary seed.
+5. model.mjs calls Featherless for CORTEX fact routing, LANGUAGE patient speech,
+   and AUDITOR support/relevance review. conversation.mjs, question-resolution.mjs,
+   factual-support.mjs, prompt-context.mjs, interview-style.mjs and agent-context.mjs
+   handle memory retrieval, callbacks, factual checks, prompt limits, disclosure
+   and a read-only personality projection. Source IDs refer to frozen evidence;
+   earlier generated replies do not become new evidence.
+6. interview-guide.mjs and interview-feedback.mjs support evidence-linked notes,
+   follow-up questions, provisional reasoning and local debrief feedback. This
+   work adds no model calls. The five competence ratings remain NR.
+7. The server holds active sessions in memory. Browser History stores disclosed
+   transcripts and saved learner work in localStorage, separately from hidden
+   case state and reviewer traces. Full reviewer access requires completion.
+
+answer-plan.mjs and evidence-render.mjs implement the optional staged path:
+partition the question, validate quoted sources, preserve known/unknown distinctions,
+then write from permitted evidence. Conservative exact-excerpt repair can replace
+an insufficient draft. It can reduce naturalness and is not a general factual proof.
+
+CONTENT AND RESOURCE COUNTS VERIFIED FROM LOCAL DATA
+
+Patient profiles: 8, spanning 7 life stages.
+  Mika — toddler; Leo — preschool; Sam — school age; Riley — adolescent;
+  Jordan and Alex — young adults; Avery — adult; Robin — older adult.
+  Toddler and preschool scenarios use caregiver perspectives. Some condition
+  premises also select an appropriate caregiver or supported-written perspective.
+  The project authors 12 stable personal facts per profile.
+
+Runtime catalogue: 68 entries.
+  65 DSM-5-TR-labelled candidates, 2 separately labelled ICD-11 comparisons,
+  and No disorder. These are authored educational formulations, not validated cases.
+  Stage-compatible totals INCLUDING No disorder: toddler 6, preschool 9,
+  school age 21, adolescent 43, young adult 60, adult 60, older adult 59.
+
+Interview aids: 67 condition guides; 334 condition-specific checkpoints;
+  17 broad prompts for standard/mystery interviews; 108 distinct URLs in the
+  condition-guide source lists. Guides include course, original questions,
+  alternative explanations, assessment references and interpretation cautions.
+
+Evidence collections:
+  Foundation: 11 sources, 18 fact blocks in the original Alex case,
+  5 rubric domains, 3 fixture packages, and a 71-item historical checklist
+  (52 Done / 15 Prepared / 4 Needs external action at that milestone).
+  Personality: 36 sources and 14 mechanism records, plus constructs, authored
+  coefficients, evidence mappings, a model contract and experimental diagnostics.
+  Disorder research: 56 registered references; runtime disorder registry: 59.
+  Source counts overlap between collections and must not be summed as unique papers.
+
+Useful reading order:
+  psych-simulator-foundation/live/README.txt
+  psych-simulator-foundation/adaption/DEVELOPMENT-STATUS-2026-10-09.txt
+  psych-simulator-foundation/personality_system/README.md
+  psych-simulator-foundation/personality_system/docs/model_contract.md
+  psych-simulator-foundation/personality_system/research/literature_review.md
+  research/interview-guidance-2026-10-08/01-Research-guide.html
+  research/mental-disorder-selection-2026-10-08/01-Research-report.html
+  research/interview-improvements-2026-10-08/Combined-evaluation-review.txt
+
+CURRENT DEVELOPMENT STATE
+
+Current source constants: interview-0.15.4; life-history-0.5.0.
+The latest saved development note describes v154 as work in progress. No completed
+v154 live evaluation artifact was found. Current automated checks are newer than
+the v153 saved 425-test result; those results must not be conflated.
+
+The approved 21-example pack is inactive. active-pack.json and active-release.json
+are absent. Start-PsychLab.ps1 launches server.mjs, not launch-psychlab.mjs.
+Answer planning is off by default and can be explicitly enabled in staging by
+PSYCHLAB_ANSWER_PLANNING=1. The normal server can also load an explicitly configured
+example pack; verified-release bootstrap protections apply to that separate entrypoint.
+
+Saved v153 evidence: the retained 16-case regression passed 16/16, but the larger
+36-case comparison failed the no-hard-regressions gate. Baseline passed 24/36;
+candidate passed 23/36. Candidate quality total was higher, but reciprocal small
+talk regressed. Transfer and reserved fresh release cases were not run for that
+failed revision. The retained 16 cases informed fixes and are not fresh evidence.
+
+The full intended release comparison consists of 36 baseline, 36 candidate,
+8 transfer, 16 retained regression and 16 reserved fresh cases, with matching
+runtime/model/pack/evidence hashes and independent reviews. Activation is unfinished.
+
+OPERATING DETAILS
+
+Requires Node 22+ according to the live README; this examination used Node 24.15.0.
+The app uses Node built-ins and plain browser modules, with no npm build workflow.
+From the live folder, node server.mjs defaults to port 8770.
+Open PsychLab.cmd / Start-PsychLab.ps1 defaults to 8771 and uses saved Windows
+DPAPI credentials outside the workspace. Setup PsychLab.cmd configures those.
+
+Default budgets: 60 attempted calls per interview, 300 per server process;
+12,000 input bytes per call; output caps 640/320/192 for router/writer/auditor.
+Ordinary supported turns use up to three calls. Some local/social/boundary paths
+use fewer. No automatic paid retries. Token-based costs are estimates, not invoices.
+Sessions expire after two hours idle; maximum 64 sessions and 80 turns per session.
+Browser History keeps up to 50 conversations and is specific to browser/origin.
+
+Domain Connection Status.txt records a Cloudflare tunnel to psychlab.example.com with
+email-code Access and origin-side signed JWT checks. This is historical setup
+evidence. During this examination neither local status endpoint on 8770 nor 8771
+was reachable. Public hosting, authenticated access and current credentials were
+not reverified, and no real provider calls were made.
+
+WORKSPACE AND EVIDENCE CAVEATS
+
+The root Git repository has no commits; project content is untracked there.
+The nested prototype repository has one existing commit and local modifications.
+Several work/foundation Python builders still reference the former absolute
+/local/user/Documents/Codex/2026-10-05/h location. They need path review before reuse.
+The historical handoff also references that old location.
+
+The source literature motivates the architecture but does not calibrate the
+simulation equations. The partial-trait sampler is separate from patient identity
+initialization. Clinical case approval, qualified rubric review and learner outcome
+validation remain unestablished in the examined records. The full licensed DSM
+manual is not bundled. Model audit approval alone does not establish factual fidelity.
+
+EXAMINATION VERIFICATION
+
+Ran from psych-simulator-foundation:
+  node --test live/tests/*.test.mjs personality_system/tests/*.test.mjs
+    engineering/agents.test.mjs adaption/tests/*.test.mjs
+Result: 451 tests passed, 0 failed, 0 skipped; approximately 35 seconds.
+These are software/local/mock-provider tests, not a fresh live-model or clinical test.
+The separate legacy engineering/test.mjs script was inspected but not rerun; it
+writes historical validation artifacts. Its saved 37 checks are not included above.
+
+Parsed all 118 JSON files under psych-simulator-foundation and research successfully.
+Inspected core code, documentation, data schemas, source registries, selected
+research and evaluation findings, ZIP inventory and a saved interface screenshot.
+Did not re-read every raw transcript, revalidate every external citation or perform
+a fresh browser walkthrough. No application code, settings or release state changed.
+
+Fresh test log: work/psychlab-examination-tests-2026-10-10.txt

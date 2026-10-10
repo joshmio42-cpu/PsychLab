@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "status": "independently-authored-release-holdout",
+    "authoringInputs": [
+      "live/engine.mjs",
+      "live/individuality.mjs",
+      "live/patients.mjs",
+      "live/disorders.mjs",
+      "live/interview-style.mjs",
+      "adaption/tests/generalization-matrix.test.mjs (schema only)"
+    ],
+    "excludedDuringAuthoring": [
+      "adaption/runs",
+      "source-examples.json",
+      "examples.jsonl",
+      "approved packs",
+      "prior evaluation question text"
+    ],
+    "reviewRule": "Evaluate meaning and responsiveness, never exact answer wording. Canonical fact assertions and snapshot hashes freeze source evidence; they are not target replies. The disjointness check reads older question strings only after drafting and prints no older questions."
+  },
+  "cases": [
+    {
+      "id": "release-v2-mika-observed-sequence",
+      "fixture": {
+        "patientId": "mika",
+        "selectionMode": "none",
+        "seed": 8101,
+        "days": 6,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "What did you see in that earlier session with the toy animals?",
+          "reply": "Mika put an animal beside a short tower of blocks. I put another nearby, and Mika moved it next to the first.",
+          "factIds": [
+            "P08"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "And when a book is brought over?",
+          "reply": "I sit beside Mika, name the animals they point to and let them turn the pages.",
+          "factIds": [
+            "P09"
+          ]
+        }
+      ],
+      "question": "Back to the blocks: who put the second animal down, and what did Mika do with it?",
+      "expectedBehaviors": [
+        "Identify the caregiver as placing the second animal nearby.",
+        "Describe Mika moving that animal beside the first animal; preserve the order and caregiver perspective."
+      ],
+      "forbiddenThings": [
+        "Say Mika placed both animals initially.",
+        "Invent dialogue, a motive, or a feeling for Mika."
+      ],
+      "tags": [
+        "known-answer",
+        "caregiver",
+        "multi-turn-callback",
+        "single-past-event",
+        "chronology"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P08",
+          "P09"
+        ],
+        "basis": "P08 directly supplies both actors and the sequence. The intervening P09 book topic must not replace the explicitly resumed block example.",
+        "snapshotHash": "5b0190804e94bf39aec32e8182c7e983bcd3c9ce1006de39767ae5e981f135c6"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P08",
+          "response": "At an earlier play session, Mika put a toy animal beside a short block tower. I put another animal nearby, and Mika moved it next to the first.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        },
+        {
+          "factId": "P09",
+          "response": "When Mika brings me an animal book, I sit beside them and name the animals they point to. I let Mika turn the pages.",
+          "scope": "usual",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-mika-private-feeling",
+      "fixture": {
+        "patientId": "mika",
+        "selectionMode": "none",
+        "seed": 8102,
+        "days": 9,
+        "difficulty": "challenging"
+      },
+      "precedingTurns": [],
+      "question": "Does Mika feel embarrassed when you show them how to put the blocks away?",
+      "expectedBehaviors": [
+        "Make clear that the caregiver cannot know whether Mika feels embarrassed.",
+        "If describing tidying, restrict it to showing a block going into the basket and holding out another."
+      ],
+      "forbiddenThings": [
+        "Confirm or deny embarrassment as known fact.",
+        "Invent a facial expression, protest, or explanation from Mika."
+      ],
+      "tags": [
+        "clear-unknown",
+        "caregiver",
+        "private-thought-boundary"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "G02",
+          "P11"
+        ],
+        "basis": "P11 records the caregiver's teaching actions, not Mika's emotional response. G02 explicitly limits this speaker to observed behavior.",
+        "snapshotHash": "c81441d37681ff5f20f40f115c711782770e934f34283bf0f127ba02ca39f762"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "G02",
+          "response": "I am Mika's caregiver. Mika is in the toddler stage. I can describe observed routines and play, including playing with blocks. I cannot directly report their private thoughts.",
+          "scope": null,
+          "timeframe": null
+        },
+        {
+          "factId": "P11",
+          "response": "For putting toys away, I put a block in the basket myself, then hold out another. That is how I usually show Mika what we’re doing.",
+          "scope": "usual",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-leo-drawing-order",
+      "fixture": {
+        "patientId": "leo",
+        "selectionMode": "none",
+        "seed": 8103,
+        "days": 12,
+        "difficulty": "beginner"
+      },
+      "precedingTurns": [],
+      "question": "In the house picture you helped with, did Leo color it before or after you added the window?",
+      "expectedBehaviors": [
+        "Answer that Leo colored around the window afterward.",
+        "Keep the account as an earlier observed drawing example."
+      ],
+      "forbiddenThings": [
+        "Reverse the order or say Leo added the window.",
+        "Turn this single example into what happens every drawing session."
+      ],
+      "tags": [
+        "known-answer",
+        "caregiver",
+        "chronology",
+        "single-past-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P08"
+        ],
+        "basis": "P08 says Leo asked the caregiver to add the window, then colored around it afterward. It records a single earlier event.",
+        "snapshotHash": "3f06cce8e3cdfe5a7eb78f62365ce2a8ea8e3497831d6c696c6ae814d06d262c"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P08",
+          "response": "On an earlier drawing day, Leo drew a house, pointed to the empty wall and asked me to add a window. Leo colored around it afterward.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        }
+      ]
+    },
+    {
+      "id": "release-v2-leo-plan-presupposition",
+      "fixture": {
+        "patientId": "leo",
+        "selectionMode": "none",
+        "seed": 8104,
+        "days": 15,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [],
+      "question": "How did Leo get on with the other child at that shop playdate you arranged?",
+      "expectedBehaviors": [
+        "Correct the premise by explaining that the planned shop playdate has not happened yet.",
+        "Keep any description of choosing a role in the future or planned tense."
+      ],
+      "forbiddenThings": [
+        "Report a completed playdate or interaction with another child.",
+        "Invent the child's identity or how Leo felt about them."
+      ],
+      "tags": [
+        "clear-unknown",
+        "presupposition",
+        "caregiver",
+        "wish-not-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P12"
+        ],
+        "basis": "P12 explicitly says the toy-shop playdate remains a plan. The question presupposes a result that cannot be supplied.",
+        "snapshotHash": "891d60a3c086ee405f3fa90551ff43653cfe21ae2899381da5e8dfb409287859"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P12",
+          "response": "I’d like to try a short playdate with the toy shop ready, so Leo can choose a role at the start. We haven’t carried out that plan yet.",
+          "scope": "wish",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-sam-unfinished-picture",
+      "fixture": {
+        "patientId": "sam",
+        "selectionMode": "none",
+        "seed": 8105,
+        "days": 18,
+        "difficulty": "challenging"
+      },
+      "precedingTurns": [],
+      "question": "Where do you put a picture when you still have some drawing left to do?",
+      "expectedBehaviors": [
+        "Say the unfinished picture goes at the front of the drawing folder.",
+        "Answer in simple everyday language as a usual routine."
+      ],
+      "forbiddenThings": [
+        "Claim a particular picture was finished today.",
+        "Invent a named folder, storage location, or adult who files it."
+      ],
+      "tags": [
+        "known-answer",
+        "usual-not-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P07"
+        ],
+        "basis": "P07 provides a concrete storage routine and its purpose without a date or a current completion claim.",
+        "snapshotHash": "fc805adadf19d478bb6c4f343b987c86b5d1374289df6f6e958b3c179465ee71"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P07",
+          "response": "I keep my drawings in a folder with some colored pencils. If a picture isn’t finished, I leave it at the front so I can find it again.",
+          "scope": "usual",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-sam-separate-comics",
+      "fixture": {
+        "patientId": "sam",
+        "selectionMode": "none",
+        "seed": 8106,
+        "days": 21,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "Tell me one thing from a comic you've already drawn.",
+          "reply": "In an older one, a robot's hat covered its eyes and another robot helped lift it.",
+          "factIds": [
+            "P08"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "What comic would you like to make another time?",
+          "reply": "Animals running a hat shop. It's an idea I haven't drawn yet.",
+          "factIds": [
+            "P12"
+          ]
+        }
+      ],
+      "question": "Was it the animal in the hat shop that helped lift the hat, or someone in the older comic?",
+      "expectedBehaviors": [
+        "Identify another robot in the older comic as the helper.",
+        "Keep the undrawn animal hat-shop idea separate from that completed earlier drawing."
+      ],
+      "forbiddenThings": [
+        "Merge the animal shop story with the older robot comic.",
+        "Claim the animal comic has been drawn or add a new character."
+      ],
+      "tags": [
+        "known-answer",
+        "multi-turn-callback",
+        "chronology",
+        "wish-not-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P08",
+          "P12"
+        ],
+        "basis": "The overlapping hat subject creates a genuine callback distinction: P08 is a past robot story, while P12 is a future animal-story idea.",
+        "snapshotHash": "2cfef69418fe1c7ddd9bb083b835e71161a0fb282d104109b2e7a2838f048056"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P08",
+          "response": "In an older comic I drew, a robot’s hat was too big and covered its eyes. In the next picture, another robot helped lift the hat up.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        },
+        {
+          "factId": "P12",
+          "response": "I’d like to make a little comic about animals running a hat shop. I’ve got the idea, but I haven’t drawn that comic yet.",
+          "scope": "wish",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-riley-track-name",
+      "fixture": {
+        "patientId": "riley",
+        "selectionMode": "none",
+        "seed": 8107,
+        "days": 24,
+        "difficulty": "beginner"
+      },
+      "precedingTurns": [],
+      "question": "What was the name of the faster song you moved to the beginning of that playlist?",
+      "expectedBehaviors": [
+        "State that the specific song title is not available or cannot be supplied.",
+        "If elaborating, retain only the known experiment of changing the opening order."
+      ],
+      "forbiddenThings": [
+        "Invent a song title or artist.",
+        "Treat the missing title as loss of all memory of the playlist experiment."
+      ],
+      "tags": [
+        "clear-unknown",
+        "unknown-title",
+        "single-past-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P08"
+        ],
+        "basis": "P08 records a quiet opening replaced with a faster song and keeping both versions, but names no track or artist.",
+        "snapshotHash": "f9e89c4a2b5cf6c7b56d149c9fc34de9b4ec09a88800f3dbb44ceb05208bb3d9"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P08",
+          "response": "For an earlier playlist, I tried a quiet song first, then moved a faster one to the start. I kept both versions while I compared the order.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        }
+      ]
+    },
+    {
+      "id": "release-v2-riley-project-help",
+      "fixture": {
+        "patientId": "riley",
+        "selectionMode": "none",
+        "seed": 8108,
+        "days": 27,
+        "difficulty": "challenging"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "What do you usually point out when you send a friend a song?",
+          "reply": "Something to listen for, such as a guitar part or how the chorus starts.",
+          "factIds": [
+            "P09"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "What matters when school-project roles are being decided?",
+          "reply": "I'd like to be asked which part I want, and for us to agree who is doing what.",
+          "factIds": [
+            "P10"
+          ]
+        }
+      ],
+      "question": "When you need an adult's help with that school decision, how do you start the conversation?",
+      "expectedBehaviors": [
+        "Describe explaining the options already being considered and asking the trusted adult to think them through.",
+        "Keep this as the usual approach to getting help, without claiming a specific recent discussion."
+      ],
+      "forbiddenThings": [
+        "Have the adult choose or assign the project role without Riley's input.",
+        "Answer solely about sharing music or repeat a communication-style statement instead of the practical answer."
+      ],
+      "tags": [
+        "known-answer",
+        "multi-turn-callback",
+        "usual-not-event",
+        "style-not-fact"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P09",
+          "P10",
+          "P11"
+        ],
+        "basis": "The latest school-decision context points to P11. P09 is an earlier music topic; P10 supplies autonomy preference without an actual assignment.",
+        "snapshotHash": "123e21180b58ff95cf803cbb8b58deb1a062f33fc3a1cb1b0667734b3a6acd1c"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P09",
+          "response": "My friend and I send each other a song and say which bit to listen for, like a guitar part or the way the chorus starts.",
+          "scope": "usual",
+          "timeframe": null
+        },
+        {
+          "factId": "P10",
+          "response": "With a school project, I’d rather someone ask which part I want to take before assigning me one. I still want us to agree on what each person is doing.",
+          "scope": "preference",
+          "timeframe": null
+        },
+        {
+          "factId": "P11",
+          "response": "When I ask a trusted adult about a school decision, I usually explain the options I’m considering and ask them to help me think through those.",
+          "scope": "usual",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-jordan-frequency",
+      "fixture": {
+        "patientId": "jordan",
+        "selectionMode": "none",
+        "seed": 8109,
+        "days": 30,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "What sort of things have you sketched before?",
+          "reply": "In an earlier drawing I tried a mug's handle from two angles on the same page.",
+          "factIds": [
+            "P08"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "Do your drawings ever come up with your cousin?",
+          "reply": "I sometimes show a sketchbook page during a quiet chat.",
+          "factIds": [
+            "P09"
+          ]
+        }
+      ],
+      "question": "So is showing a page something you do every time you talk to your cousin?",
+      "expectedBehaviors": [
+        "Preserve the weaker frequency: sometimes, without asserting every conversation.",
+        "Keep the answer about showing pages during quiet chats."
+      ],
+      "forbiddenThings": [
+        "Upgrade sometimes to always, every chat, or a fixed weekly routine.",
+        "Assert never or give an invented numerical frequency."
+      ],
+      "tags": [
+        "known-answer",
+        "multi-turn-callback",
+        "frequency",
+        "sometimes"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P08",
+          "P09"
+        ],
+        "basis": "P09 explicitly qualifies sharing as sometimes. Neither that usual relationship fact nor P08 establishes a regular schedule.",
+        "snapshotHash": "695bd18a5f8205fcb66d7c5a1d81966b040ba85e861c6a064d4cd58824935c12"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P08",
+          "response": "In an earlier drawing, I sketched a mug from the side and then turned it to try the handle from another angle. Both sketches stayed on the same page.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        },
+        {
+          "factId": "P09",
+          "response": "In a quiet chat with my cousin, I sometimes show a page from my sketchbook. I’d rather they ask about it than feel they have to praise it.",
+          "scope": "usual",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-jordan-earlier-onset",
+      "fixture": {
+        "patientId": "jordan",
+        "selectionMode": "specific",
+        "disorderId": "mdd",
+        "seed": 8110,
+        "days": 11,
+        "difficulty": "beginner"
+      },
+      "precedingTurns": [],
+      "question": "Was feeling low already going on before these eleven days, or did it only start during them?",
+      "expectedBehaviors": [
+        "Say the low mood predates the eleven-day diary.",
+        "Ground the duration in the authored four-month course, without giving an exact calendar date."
+      ],
+      "forbiddenThings": [
+        "Treat the recent diary length as symptom onset.",
+        "Invent an onset date, a cause, or a clinician's diagnosis."
+      ],
+      "tags": [
+        "known-answer",
+        "mental-premise",
+        "chronology",
+        "earlier-history"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "G03",
+          "B01"
+        ],
+        "basis": "The recent recording window and the earlier authored course answer different timing questions; four months of low mood precedes this eleven-day simulation.",
+        "snapshotHash": "60eb50de04c79bae2af170322dfaf4d88a26c167c9bdecc88ad727fd722c5b29"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "G03",
+          "response": "This account covers 11 recent simulated days within the young adult stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "scope": null,
+          "timeframe": null
+        },
+        {
+          "factId": "B01",
+          "response": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period.",
+          "scope": null,
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-avery-mystery-title",
+      "fixture": {
+        "patientId": "avery",
+        "selectionMode": "none",
+        "seed": 8111,
+        "days": 14,
+        "difficulty": "challenging"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "How do you keep your place when reading gets interrupted?",
+          "reply": "I use a bookmark, without setting a page target.",
+          "factIds": [
+            "P07"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "Have you tried guessing a mystery's ending?",
+          "reply": "For an earlier mystery, I wrote down a guess and checked it later. I'd guessed the wrong person.",
+          "factIds": [
+            "P08"
+          ]
+        }
+      ],
+      "question": "Which mystery was that—the one where you wrote your guess down?",
+      "expectedBehaviors": [
+        "Identify the referent as the earlier mystery example while admitting the title is unspecified.",
+        "Keep any elaboration limited to the recorded guess-and-check event."
+      ],
+      "forbiddenThings": [
+        "Invent a book title, author, suspect name, or actual clue.",
+        "Deny that the earlier reading example occurred."
+      ],
+      "tags": [
+        "clear-unknown",
+        "unknown-title",
+        "multi-turn-callback",
+        "single-past-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P07",
+          "P08"
+        ],
+        "basis": "P08 confirms the event but withholds the book's identity. Resolving the callback must not be mistaken for permission to create a title.",
+        "snapshotHash": "5b4093f7d754aeacc3f8775d6656a3bbb190c18bfcee0ef3851e9abbe9f64136"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P07",
+          "response": "I keep a bookmark in whatever I’m reading, so I can put it down without losing the page. I don’t set myself a page target.",
+          "scope": "usual",
+          "timeframe": null
+        },
+        {
+          "factId": "P08",
+          "response": "With an earlier mystery, I wrote down my guess before the ending and checked it afterward. I’d guessed the wrong person, but I could see which clue I’d missed.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        }
+      ]
+    },
+    {
+      "id": "release-v2-avery-pleasure-now",
+      "fixture": {
+        "patientId": "avery",
+        "selectionMode": "specific",
+        "disorderId": "mdd",
+        "seed": 8112,
+        "days": 17,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [],
+      "question": "Mysteries used to interest you; are your usual hobbies feeling as rewarding during this low spell?",
+      "expectedBehaviors": [
+        "Report that usual activities feel less rewarding during the current authored spell.",
+        "Keep the earlier interest in mysteries compatible with the present reduction in enjoyment."
+      ],
+      "forbiddenThings": [
+        "Infer unchanged present enjoyment from a usual hobby or its origin.",
+        "Claim all reading has stopped or add an unrecorded recent reading incident."
+      ],
+      "tags": [
+        "known-answer",
+        "mental-premise",
+        "current-vs-past",
+        "usual-not-current"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P05",
+          "P06",
+          "B02"
+        ],
+        "basis": "P05/P06 establish genre and origin; B02 records the current loss of reward. Usual interests remain background facts, not evidence that current enjoyment is intact.",
+        "snapshotHash": "3f0f85cca2dcb614378ffa851154f464478e1a54352d7e53d3e17f5806e65b64"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P05",
+          "response": "Usually mysteries and short stories. Those are the ones I tend to pick up.",
+          "scope": "usual",
+          "timeframe": null
+        },
+        {
+          "factId": "P06",
+          "response": "With mysteries, I got interested in trying to work out the ending before I reached it. Short stories were something I could finish in a shorter sitting.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        },
+        {
+          "factId": "B02",
+          "response": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding.",
+          "scope": null,
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-robin-mint-present",
+      "fixture": {
+        "patientId": "robin",
+        "selectionMode": "none",
+        "seed": 8113,
+        "days": 20,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "What was one of your early gardening projects?",
+          "reply": "A pot of mint. I labeled it and watched for new leaves.",
+          "factIds": [
+            "P08"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "How do you generally organize the garden things?",
+          "reply": "I label the herb pots and keep the small tools together.",
+          "factIds": [
+            "P07"
+          ]
+        }
+      ],
+      "question": "Is that original mint plant still alive in your garden today?",
+      "expectedBehaviors": [
+        "Be clear that the original plant's present condition is not known from the account.",
+        "Keep the known mint-pot example in the past."
+      ],
+      "forbiddenThings": [
+        "Assert the plant is alive, dead, replaced, or currently producing leaves.",
+        "Treat general gardening routines as proof of the original plant's survival."
+      ],
+      "tags": [
+        "clear-unknown",
+        "multi-turn-callback",
+        "current-vs-past",
+        "single-past-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P07",
+          "P08"
+        ],
+        "basis": "P08 records an earlier labeled mint pot; P07 records usual organization. Neither reports the current condition or continued existence of that particular plant.",
+        "snapshotHash": "f64cc433c6dbc9cd174c146f004218cc359891a955c153b856d41d703f709997"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P07",
+          "response": "I put labels in the herb pots and keep the small gardening tools together. I prefer being able to find the things I need without asking someone to fetch them.",
+          "scope": "usual",
+          "timeframe": null
+        },
+        {
+          "factId": "P08",
+          "response": "One of my earlier herb pots was mint. I put a label in it and watched for new leaves; that small pot was enough of a project to start with.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        }
+      ]
+    },
+    {
+      "id": "release-v2-robin-help-preference",
+      "fixture": {
+        "patientId": "robin",
+        "selectionMode": "none",
+        "seed": 8114,
+        "days": 23,
+        "difficulty": "beginner"
+      },
+      "precedingTurns": [],
+      "question": "If I offered to help with a task, what would you want me to ask before I started?",
+      "expectedBehaviors": [
+        "Ask which part would help or what Robin wants to do independently versus together.",
+        "Present this as a preference for having a say in help."
+      ],
+      "forbiddenThings": [
+        "Claim Robin cannot perform the task or has memory loss.",
+        "Invent a particular recent argument or say all help is unwelcome."
+      ],
+      "tags": [
+        "known-answer",
+        "support-preference",
+        "style-not-fact"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P10"
+        ],
+        "basis": "P10 directly describes asking before helping and negotiating shared versus independent parts. It establishes neither incapacity nor rejection of assistance.",
+        "snapshotHash": "347f4596bb619718797655927218ab122045e996d74888984499c78b00ce75b3"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P10",
+          "response": "If someone wants to help with a task, I prefer them to ask which part would help. I want a say in what I do myself and what we do together.",
+          "scope": "preference",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-alex-starting-study",
+      "fixture": {
+        "patientId": "alex",
+        "selectionMode": "none",
+        "seed": 8115,
+        "days": 26,
+        "difficulty": "challenging"
+      },
+      "precedingTurns": [],
+      "question": "When an assignment looks too big to plan, what sort of first step do you write down?",
+      "expectedBehaviors": [
+        "Give the recorded concrete example of opening the reading and choosing a section, or the closely equivalent small next step.",
+        "Describe a usual planning method without presenting it as a completed assignment."
+      ],
+      "forbiddenThings": [
+        "Invent an assignment subject, deadline, grade, or work shift.",
+        "Replace the practical answer with generic reassurance or a diagnosis."
+      ],
+      "tags": [
+        "known-answer",
+        "usual-not-event",
+        "concrete-example"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P11"
+        ],
+        "basis": "P11 authors an actual example of breaking down study work. The example is a planning routine, not a recent achievement or a named academic task.",
+        "snapshotHash": "ace4a660df07c9336f73b8ec1494cdacb59bb84d06d9013a1a83fd565fda8571"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P11",
+          "response": "For a study task, I usually write the next concrete step, such as opening the reading and choosing a section. A short next step is easier to plan around than the whole assignment.",
+          "scope": "usual",
+          "timeframe": null
+        }
+      ]
+    },
+    {
+      "id": "release-v2-alex-album-presupposition",
+      "fixture": {
+        "patientId": "alex",
+        "selectionMode": "none",
+        "seed": 8116,
+        "days": 29,
+        "difficulty": "standard"
+      },
+      "precedingTurns": [
+        {
+          "kind": "answer",
+          "question": "What did you compare when you listened to those earlier albums?",
+          "reply": "How the opening track led into the next song; I made a note about the order.",
+          "factIds": [
+            "P08"
+          ]
+        },
+        {
+          "kind": "answer",
+          "question": "Would you like to do something musical with a friend?",
+          "reply": "I'd like us to pick an album and compare which track holds it together. We haven't picked it yet.",
+          "factIds": [
+            "P12"
+          ]
+        }
+      ],
+      "question": "Which track did your friend pick as the one holding that album together?",
+      "expectedBehaviors": [
+        "Correct the assumption: the shared album has not been chosen and no friend's track choice is recorded.",
+        "Keep the earlier personal album comparisons separate from the proposed activity with a friend."
+      ],
+      "forbiddenThings": [
+        "Invent an album, track, friend opinion, or completed joint listening session.",
+        "Use the earlier comparison of opening tracks as evidence of the friend's selection."
+      ],
+      "tags": [
+        "clear-unknown",
+        "presupposition",
+        "multi-turn-callback",
+        "wish-not-event"
+      ],
+      "sourceReview": {
+        "relevantFactIds": [
+          "P08",
+          "P12"
+        ],
+        "basis": "P12 explicitly leaves the album unchosen and the shared activity in the future. P08 is a separate past individual comparison and supplies no friend's opinion.",
+        "snapshotHash": "9a0c80ae1336f3d239e7318934a58baeaa51e40b7e9056a52f3ea002da7e5d5d"
+      },
+      "evidenceAssertions": [
+        {
+          "factId": "P08",
+          "response": "With a couple of albums I listened to before, I compared how their opening tracks led into the next song. I made a note about the order rather than rating every track.",
+          "scope": "past",
+          "timeframe": "before-simulation"
+        },
+        {
+          "factId": "P12",
+          "response": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet.",
+          "scope": "wish",
+          "timeframe": null
+        }
+      ]
+    }
+  ]
+}

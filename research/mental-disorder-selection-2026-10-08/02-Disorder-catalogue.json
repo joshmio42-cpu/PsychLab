@@ -1,0 +1,1545 @@
+{
+  "project": "PsychLab",
+  "date": "2026-10-08",
+  "status": "Research only. Not imported by the application.",
+  "scope": "Curated candidate list, not an exhaustive DSM reproduction, diagnostic instrument or approved case bank.",
+  "edition_basis": "DSM-5-TR (2022), with public APA update index and September 2025 cumulative supplement checked; selected DSM-5 materials identified separately.",
+  "tier_legend": {
+    "A": "Proposed first authoring wave; review and case validation still required",
+    "B": "Expanded authoring wave; additional course/specifier research required",
+    "C": "Specialist case authoring or evidence/interface gaps; not a judgment about patients",
+    "D": "Separate ICD-11 comparison, not a DSM-5-TR selectable diagnosis"
+  },
+  "field_notes": {
+    "clinical_summary": "Brief sourced paraphrase, not complete criteria",
+    "history_requirement": "Selected factual anchors plus explicit verification gaps, not an automatic diagnostic rule",
+    "suggested_profile_stages": "Original scope recommendation for initial fictional cases, not all clinically possible ages",
+    "interview_focus": "Original educational authoring suggestion informed by cited sources",
+    "differential_or_limit": "Research distinction or original simulation constraint; never an exhaustive differential"
+  },
+  "counts": {
+    "total": 68,
+    "dsm_candidates": 65,
+    "icd_comparisons": 2,
+    "non_disorder_comparator": 1
+  },
+  "entries": [
+    {
+      "id": "adhd",
+      "name": "Attention-deficit/hyperactivity disorder (ADHD)",
+      "family": "Neurodevelopmental",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Persistent inattention and/or hyperactivity-impulsivity that interferes with functioning.",
+      "history_requirement": "At least six months; childhood symptoms before 12; evidence in multiple settings.",
+      "interview_focus": "Daily organization and school/work examples; caregiver or school collateral.",
+      "differential_or_limit": "Sleep, anxiety, depression and learning difficulties can resemble attention problems. Toddlers are not a default ADHD case.",
+      "source_ids": [
+        "S14"
+      ]
+    },
+    {
+      "id": "autism",
+      "name": "Autism spectrum disorder",
+      "family": "Neurodevelopmental",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Toddler",
+        "Preschool child",
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Developmental differences in social communication alongside restricted or repetitive patterns.",
+      "history_requirement": "Earlier developmental history is essential; recent events cannot create autism.",
+      "interview_focus": "Communication preferences, routines, sensory needs, strengths and support.",
+      "differential_or_limit": "Do not infer intellectual disability, lack of empathy or one universal speech style.",
+      "source_ids": [
+        "S15"
+      ]
+    },
+    {
+      "id": "learning",
+      "name": "Specific learning disorder",
+      "family": "Neurodevelopmental",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Persistent difficulties in reading, writing or mathematics.",
+      "history_requirement": "Difficulties despite targeted assistance for at least six months; educational history.",
+      "interview_focus": "Learning demands, support, school records and individual strengths.",
+      "differential_or_limit": "Language exposure, teaching opportunity and sensory conditions need consideration; not an IQ guess.",
+      "source_ids": [
+        "S40"
+      ]
+    },
+    {
+      "id": "language",
+      "name": "Language disorder",
+      "family": "Neurodevelopmental",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Preschool child",
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Developmental difficulties acquiring and using language.",
+      "history_requirement": "Developmental and language-assessment history; no synthetic diagnosis from a short transcript.",
+      "interview_focus": "Caregiver observations, comprehension and communication support.",
+      "differential_or_limit": "NIDCD's developmental language disorder terminology is related, not an automatic DSM equivalence; hearing and multilingual context matter.",
+      "source_ids": [
+        "S01",
+        "S39"
+      ]
+    },
+    {
+      "id": "idd",
+      "name": "Intellectual developmental disorder (intellectual disability)",
+      "family": "Neurodevelopmental",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Toddler",
+        "Preschool child",
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Intellectual and adaptive-functioning limitations beginning during development.",
+      "history_requirement": "Prior developmental assessment and everyday support needs, not fabricated test scores.",
+      "interview_focus": "Practical, social and communication supports; accessible interview.",
+      "differential_or_limit": "Do not equate limited speech with low intelligence or use the older adult profile to imply developmental disability.",
+      "source_ids": [
+        "S41",
+        "S56"
+      ]
+    },
+    {
+      "id": "tourette",
+      "name": "Tourette's disorder (Tourette syndrome)",
+      "family": "Neurodevelopmental",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A childhood-onset pattern involving motor and vocal tics.",
+      "history_requirement": "Tic history over a year and onset before adulthood; verify exact manual wording.",
+      "interview_focus": "Tic course, discomfort, functioning and co-occurring concerns.",
+      "differential_or_limit": "Text alone cannot display motor findings; swearing is not a required feature.",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "id": "mdd",
+      "name": "Major depressive disorder",
+      "family": "Depressive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "An impairing depressive episode involving low mood or reduced interest, with associated changes.",
+      "history_requirement": "A major depressive episode has a two-week duration anchor; evaluate the broader mood history.",
+      "interview_focus": "Sleep, interests, energy, functioning, onset and safety.",
+      "differential_or_limit": "Consider bipolar episodes, medical/substance effects and grief. A sadness slider is insufficient.",
+      "source_ids": [
+        "S06"
+      ]
+    },
+    {
+      "id": "pdd",
+      "name": "Persistent depressive disorder",
+      "family": "Depressive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A sustained depressive course rather than one brief low-mood episode.",
+      "history_requirement": "Adult history generally spans at least two years; child/adolescent rules require manual verification.",
+      "interview_focus": "Long-term baseline, periods of improvement and functioning.",
+      "differential_or_limit": "A 90-day log cannot establish a chronic course; distinguish superimposed episodes.",
+      "source_ids": [
+        "S06"
+      ]
+    },
+    {
+      "id": "dmdd",
+      "name": "Disruptive mood dysregulation disorder (DMDD)",
+      "family": "Depressive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Severe recurrent outbursts with persistent irritability between them.",
+      "history_requirement": "At least a year; onset before 10; first diagnosis not before 6 or after 18 in APA's rule.",
+      "interview_focus": "Caregiver/teacher observations across settings and baseline mood.",
+      "differential_or_limit": "Differentiate episodic mania and other explanations. Do not automatically combine with ODD; age-summary discrepancy documented.",
+      "source_ids": [
+        "S32",
+        "S33",
+        "S04",
+        "S47"
+      ]
+    },
+    {
+      "id": "pmdd",
+      "name": "Premenstrual dysphoric disorder",
+      "family": "Depressive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A recurring, impairing mood pattern related to the menstrual cycle.",
+      "history_requirement": "Document cycle relationship; exact prospective confirmation rules remain to be checked.",
+      "interview_focus": "Symptoms across cycles and intervals, functioning and relevant physiology.",
+      "differential_or_limit": "Stage and name alone cannot establish menstruation; distinguish exacerbation of another condition.",
+      "source_ids": [
+        "S06",
+        "S01"
+      ]
+    },
+    {
+      "id": "bipolar1",
+      "name": "Bipolar I disorder",
+      "family": "Bipolar and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A history of mania; depressive episodes may also occur.",
+      "history_requirement": "Mania usually at least seven days, or shorter when hospitalization is necessary; full episode review required.",
+      "interview_focus": "Episode changes in sleep need, energy, behavior and functioning.",
+      "differential_or_limit": "Not ordinary daily mood swings; consider substances, medical causes and psychosis chronology.",
+      "source_ids": [
+        "S07"
+      ]
+    },
+    {
+      "id": "bipolar2",
+      "name": "Bipolar II disorder",
+      "family": "Bipolar and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Hypomanic and major depressive episodes, without a manic episode.",
+      "history_requirement": "Author separate past episodes; confirm exact hypomania duration and exclusions against the manual.",
+      "interview_focus": "Recognizing less obvious elevated-energy periods alongside depression.",
+      "differential_or_limit": "Not simply a milder version of bipolar I; current depression alone does not distinguish it.",
+      "source_ids": [
+        "S07"
+      ]
+    },
+    {
+      "id": "cyclothymia",
+      "name": "Cyclothymic disorder",
+      "family": "Bipolar and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A chronic pattern of subthreshold elevated and depressive symptoms.",
+      "history_requirement": "Longitudinal course required; exact adult/youth duration rules await full-manual verification.",
+      "interview_focus": "Baseline fluctuation and distinction from full mood episodes.",
+      "differential_or_limit": "Do not produce alternating hourly moods and label them cyclothymia.",
+      "source_ids": [
+        "S07",
+        "S04"
+      ]
+    },
+    {
+      "id": "gad",
+      "name": "Generalized anxiety disorder",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Difficult-to-control worry across areas of life with interference.",
+      "history_requirement": "Most days over at least six months; age-specific symptom counts must be verified.",
+      "interview_focus": "Worry topics, control, bodily tension, sleep and functioning.",
+      "differential_or_limit": "Ordinary stress, other anxiety presentations, substances and medical conditions.",
+      "source_ids": [
+        "S09"
+      ]
+    },
+    {
+      "id": "panic",
+      "name": "Panic disorder",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Recurrent unexpected panic attacks with ongoing concern or behavior change.",
+      "history_requirement": "At least a month of subsequent worry or change; document recurrent attacks.",
+      "interview_focus": "Attack timing, unexpectedness, anticipatory fear and avoidance.",
+      "differential_or_limit": "An isolated attack is not panic disorder; medical explanations remain possible.",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "social_anxiety",
+      "name": "Social anxiety disorder",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Fear of scrutiny or negative evaluation that restricts participation.",
+      "history_requirement": "At least six months with meaningful interference.",
+      "interview_focus": "Situations avoided, feared evaluation, desired relationships and school/work impact.",
+      "differential_or_limit": "Differentiate ordinary shyness, communication differences and body-image concerns.",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "id": "specific_phobia",
+      "name": "Specific phobia",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Focused fear and avoidance around a particular object or situation.",
+      "history_requirement": "Persistent course required; exact criteria and duration need manual review.",
+      "interview_focus": "Authored feared situation, avoidance and practical interference.",
+      "differential_or_limit": "Do not pathologize developmentally ordinary fears or actual danger.",
+      "source_ids": [
+        "S01",
+        "S35"
+      ]
+    },
+    {
+      "id": "agoraphobia",
+      "name": "Agoraphobia",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Avoidance linked to difficulty escaping or obtaining help in feared situations.",
+      "history_requirement": "Document distinct situation types and persistent course; verify full criteria.",
+      "interview_focus": "Travel, queues, open/enclosed places, going out and available support.",
+      "differential_or_limit": "Not synonymous with staying home, and not dependent on having panic disorder.",
+      "source_ids": [
+        "S10",
+        "S01"
+      ]
+    },
+    {
+      "id": "separation",
+      "name": "Separation anxiety disorder",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Preschool child",
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Developmentally excessive separation fears that interfere with life.",
+      "history_requirement": "Age-specific duration and developmental expectations require verification.",
+      "interview_focus": "Separation circumstances, school attendance, family observations and impairment.",
+      "differential_or_limit": "Toddler separation distress can be ordinary development; do not infer a disorder from it.",
+      "source_ids": [
+        "S35",
+        "S01"
+      ]
+    },
+    {
+      "id": "selective_mutism",
+      "name": "Selective mutism",
+      "family": "Anxiety",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Preschool child",
+        "School-age child",
+        "Adolescent"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Anxiety-linked inability to speak in certain situations despite speaking elsewhere.",
+      "history_requirement": "Document the pattern across people/settings; verify duration and language exclusions.",
+      "interview_focus": "Caregiver/teacher accounts, communication access and low-pressure interaction.",
+      "differential_or_limit": "Not deliberate defiance; a fluent chatbot alone would misrepresent the presentation.",
+      "source_ids": [
+        "S34"
+      ]
+    },
+    {
+      "id": "ocd",
+      "name": "Obsessive-compulsive disorder (OCD)",
+      "family": "Obsessive-compulsive and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Intrusive unwanted thoughts and/or driven rituals that are time-consuming or impairing.",
+      "history_requirement": "Document recurring pattern and interference; do not invent a six-month threshold.",
+      "interview_focus": "Meaning of rituals, feared consequences, mental rituals and daily impact.",
+      "differential_or_limit": "Not mere neatness; unwanted intrusive thoughts are not the person's intentions.",
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "id": "bdd",
+      "name": "Body dysmorphic disorder",
+      "family": "Obsessive-compulsive and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Distressing appearance preoccupation with repeated checking or comparison.",
+      "history_requirement": "Persistent preoccupation, repetitive behavior and impairment must be authored.",
+      "interview_focus": "Time spent, avoidance and social impact.",
+      "differential_or_limit": "Differentiate eating-related weight/shape concerns; avoid appearance reassurance loops.",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "id": "hoarding",
+      "name": "Hoarding disorder",
+      "family": "Obsessive-compulsive and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Difficulty discarding possessions leading to compromised living space.",
+      "history_requirement": "Longstanding accumulation and functional impact; a week cannot create an established clutter history.",
+      "interview_focus": "Use of rooms, attachment to items and daily tasks.",
+      "differential_or_limit": "Differentiate ordinary collecting and cognitive or medical contributors.",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "id": "hair_pulling",
+      "name": "Trichotillomania (hair-pulling disorder)",
+      "family": "Obsessive-compulsive and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Recurrent hair pulling with consequences and difficulty stopping.",
+      "history_requirement": "Author the course, attempts to stop and impact; exact exclusions need checking.",
+      "interview_focus": "Patterns, awareness, distress and social effects.",
+      "differential_or_limit": "Do not make it a moral failure or equate it automatically with suicidal self-injury.",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "id": "skin_picking",
+      "name": "Excoriation (skin-picking) disorder",
+      "family": "Obsessive-compulsive and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Repeated skin picking causing lesions and unsuccessful efforts to stop.",
+      "history_requirement": "Pattern and impairment, with medical and other explanations considered.",
+      "interview_focus": "Triggers, awareness, impact and care already sought.",
+      "differential_or_limit": "Do not generate injury instructions or assume every skin problem is psychiatric.",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "id": "ptsd",
+      "name": "Posttraumatic stress disorder (PTSD)",
+      "family": "Trauma and stressor-related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Trauma-linked intrusion, avoidance, arousal and changes in mood/cognition.",
+      "history_requirement": "Symptoms longer than one month; qualifying exposure and onset chronology are separate facts.",
+      "interview_focus": "Current effects and functioning, with non-graphic trauma history.",
+      "differential_or_limit": "Not every stressful event meets the exposure requirement; preschool criteria differ.",
+      "source_ids": [
+        "S13",
+        "S37"
+      ]
+    },
+    {
+      "id": "acute_stress",
+      "name": "Acute stress disorder",
+      "family": "Trauma and stressor-related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "An impairing post-trauma reaction within the early time window.",
+      "history_requirement": "Three days to one month after trauma.",
+      "interview_focus": "Recent course, dissociation, distress and available support.",
+      "differential_or_limit": "Do not relabel all immediate reactions as PTSD or force later PTSD development.",
+      "source_ids": [
+        "S29"
+      ]
+    },
+    {
+      "id": "adjustment",
+      "name": "Adjustment disorders",
+      "family": "Trauma and stressor-related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Distress or impairment associated with an identifiable stressor.",
+      "history_requirement": "Begins within three months; ordinarily ends within six months after the stressor/consequences end.",
+      "interview_focus": "Stressor, coping, supports and changes in functioning.",
+      "differential_or_limit": "Differentiate ordinary adjustment and another disorder better explaining symptoms.",
+      "source_ids": [
+        "S29"
+      ]
+    },
+    {
+      "id": "grief",
+      "name": "Prolonged grief disorder",
+      "family": "Trauma and stressor-related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Persistent disabling grief beyond expected cultural context.",
+      "history_requirement": "Loss at least 12 months earlier in adults or six months in children/adolescents.",
+      "interview_focus": "Longing/preoccupation, daily functioning, meaning and cultural context.",
+      "differential_or_limit": "Grief alone is not illness; introduced as a DSM-5-TR diagnosis, not an original DSM-5 Section II label.",
+      "source_ids": [
+        "S17",
+        "S18"
+      ]
+    },
+    {
+      "id": "rad",
+      "name": "Reactive attachment disorder",
+      "family": "Trauma and stressor-related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Toddler",
+        "Preschool child"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "An early-childhood attachment-related presentation associated with severely insufficient care.",
+      "history_requirement": "Requires a specific developmental and caregiving history; exact age rules unresolved here.",
+      "interview_focus": "Caregiver collateral and observed comfort-seeking/response.",
+      "differential_or_limit": "Not a synonym for insecure attachment or a conclusion from one caregiver interaction.",
+      "source_ids": [
+        "S29",
+        "S01"
+      ]
+    },
+    {
+      "id": "dsed",
+      "name": "Disinhibited social engagement disorder",
+      "family": "Trauma and stressor-related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Toddler",
+        "Preschool child",
+        "School-age child"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "An attachment-related pattern of unusually indiscriminate social approach.",
+      "history_requirement": "Requires severe insufficient-care history and developmental criteria.",
+      "interview_focus": "Observed interactions with unfamiliar adults and caregiving chronology.",
+      "differential_or_limit": "Not simply being friendly; never invent neglect from personality traits.",
+      "source_ids": [
+        "S29",
+        "S01"
+      ]
+    },
+    {
+      "id": "dpdr",
+      "name": "Depersonalization/derealization disorder",
+      "family": "Dissociative",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Recurring or persistent detachment experiences with reality testing retained.",
+      "history_requirement": "Author course and exclusions; no universal synthetic day threshold.",
+      "interview_focus": "Detachment, insight, distress and functioning.",
+      "differential_or_limit": "Distinguish psychosis, substances and neurological explanations.",
+      "source_ids": [
+        "S21"
+      ]
+    },
+    {
+      "id": "dissociative_amnesia",
+      "name": "Dissociative amnesia",
+      "family": "Dissociative",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Autobiographical memory gaps beyond ordinary forgetting.",
+      "history_requirement": "Specific missing periods and preserved knowledge must be authored.",
+      "interview_focus": "Scope of memory difficulty and relevant medical history.",
+      "differential_or_limit": "Do not fill gaps with invented recovered memories or assumed abuse.",
+      "source_ids": [
+        "S21"
+      ]
+    },
+    {
+      "id": "did",
+      "name": "Dissociative identity disorder",
+      "family": "Dissociative",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Disruptions in identity and memory requiring careful differential assessment.",
+      "history_requirement": "Longitudinal evidence and explicit memory boundaries; not randomly changing personalities.",
+      "interview_focus": "Patient-described discontinuity, memory gaps and functioning.",
+      "differential_or_limit": "Do not conflate with schizophrenia or portray theatrical automatic switching.",
+      "source_ids": [
+        "S21"
+      ]
+    },
+    {
+      "id": "somatic",
+      "name": "Somatic symptom disorder",
+      "family": "Somatic symptom and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Distressing bodily symptoms accompanied by disproportionate symptom-related thoughts or behavior.",
+      "history_requirement": "Document persistent concern and impairment; verify precise duration wording.",
+      "interview_focus": "Symptoms, meaning, care history and effects on everyday life.",
+      "differential_or_limit": "Symptoms are real; medical illness can coexist. Normal tests alone are not a diagnosis.",
+      "source_ids": [
+        "S23"
+      ]
+    },
+    {
+      "id": "illness_anxiety",
+      "name": "Illness anxiety disorder",
+      "family": "Somatic symptom and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Preoccupation with serious illness when somatic symptoms are absent or limited.",
+      "history_requirement": "Longer-term pattern needed; exact threshold not verified here.",
+      "interview_focus": "Checking, reassurance seeking or medical avoidance and disruption.",
+      "differential_or_limit": "Do not dismiss new symptoms or assume avoidance means lack of concern.",
+      "source_ids": [
+        "S23"
+      ]
+    },
+    {
+      "id": "fnd",
+      "name": "Functional neurological symptom disorder (conversion disorder)",
+      "family": "Somatic symptom and related",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A DSM-5-TR diagnostic category with updated terminology.",
+      "history_requirement": "Neurological assessment evidence is needed before authoring a confirmed diagnosis.",
+      "interview_focus": "History and impact, with authored examination information supplied separately.",
+      "differential_or_limit": "This search verified terminology, not a complete criteria/evidence package. Chat cannot replace examination.",
+      "source_ids": [
+        "S48"
+      ],
+      "coverage": "Naming verified; disorder-specific clinical research incomplete"
+    },
+    {
+      "id": "anorexia",
+      "name": "Anorexia nervosa",
+      "family": "Feeding and eating",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Restrictive eating with low weight in context and weight/shape-related disturbance.",
+      "history_requirement": "Course, growth/weight context and medical assessment must be authored.",
+      "interview_focus": "Daily functioning, eating concerns and medical care history.",
+      "differential_or_limit": "No procedural weight-loss content; appearance alone cannot establish a diagnosis.",
+      "source_ids": [
+        "S16"
+      ]
+    },
+    {
+      "id": "bulimia",
+      "name": "Bulimia nervosa",
+      "family": "Feeding and eating",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Binge episodes accompanied by compensatory behavior.",
+      "history_requirement": "Document episode frequency and duration; verify full DSM thresholds.",
+      "interview_focus": "Loss of control, distress and daily impact without procedural details.",
+      "differential_or_limit": "Differentiate binge-eating disorder and anorexia presentations; medical complications matter.",
+      "source_ids": [
+        "S16"
+      ]
+    },
+    {
+      "id": "binge_eating",
+      "name": "Binge-eating disorder",
+      "family": "Feeding and eating",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Repeated distressing binge episodes without the regular compensatory pattern of bulimia.",
+      "history_requirement": "Verify frequency and duration against the manual before case approval.",
+      "interview_focus": "Loss of control, context, distress and impact.",
+      "differential_or_limit": "Body size alone is not the diagnosis; avoid moral judgments about eating.",
+      "source_ids": [
+        "S16"
+      ]
+    },
+    {
+      "id": "arfid",
+      "name": "Avoidant/restrictive food intake disorder (ARFID)",
+      "family": "Feeding and eating",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Toddler",
+        "Preschool child",
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Restricted intake associated with sensory concerns, low interest or feared consequences, with significant impact.",
+      "history_requirement": "Feeding/developmental history and consequences; psychosocial interference may qualify without low weight.",
+      "interview_focus": "Caregiver observations, accepted foods, participation and available assessment.",
+      "differential_or_limit": "Distinguish ordinary picky eating and medical causes; not driven by the anorexia-style weight/shape concern.",
+      "source_ids": [
+        "S16",
+        "S49"
+      ]
+    },
+    {
+      "id": "enuresis",
+      "name": "Enuresis",
+      "family": "Elimination",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Recurrent urinary wetting considered in developmental and medical context.",
+      "history_requirement": "Toileting development, frequency and persistence; exact DSM gates need checking.",
+      "interview_focus": "Caregiver history, sleep, functioning and non-shaming discussion.",
+      "differential_or_limit": "Do not assign this diagnosis to ordinary toddler accidents.",
+      "source_ids": [
+        "S51",
+        "S01"
+      ]
+    },
+    {
+      "id": "encopresis",
+      "name": "Encopresis",
+      "family": "Elimination",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Recurrent fecal soiling requiring developmental and bowel-history assessment.",
+      "history_requirement": "Document toileting history, constipation and course; verify full diagnostic gates.",
+      "interview_focus": "Caregiver observations, discomfort, school impact and medical review.",
+      "differential_or_limit": "Avoid blame; a mental-health interview cannot exclude bowel disease.",
+      "source_ids": [
+        "S50",
+        "S01"
+      ]
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia disorder",
+      "family": "Sleep-wake",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Difficulty initiating or maintaining sleep with daytime consequences despite opportunity to sleep.",
+      "history_requirement": "Common chronic anchor: at least three nights weekly for at least three months.",
+      "interview_focus": "Sleep schedule, opportunity, daytime effect and other sleep symptoms.",
+      "differential_or_limit": "A short sleep diary is not the total disorder duration; consider circadian and breathing problems.",
+      "source_ids": [
+        "S24",
+        "S25"
+      ]
+    },
+    {
+      "id": "odd",
+      "name": "Oppositional defiant disorder",
+      "family": "Disruptive, impulse-control and conduct",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "An impairing pattern of oppositional or irritable behavior requiring contextual assessment.",
+      "history_requirement": "Persistent, developmentally unusual pattern; verify duration/frequency and exclusion rules.",
+      "interview_focus": "Across-setting examples, antecedents, relationships and collateral.",
+      "differential_or_limit": "Do not confuse communication difficulty, fear or situational conflict with a disorder.",
+      "source_ids": [
+        "S22",
+        "S33"
+      ]
+    },
+    {
+      "id": "conduct",
+      "name": "Conduct disorder",
+      "family": "Disruptive, impulse-control and conduct",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "School-age child",
+        "Adolescent"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A persistent serious behavior pattern affecting others' rights or major norms.",
+      "history_requirement": "Longitudinal examples and differential assessment; exact gates require manual review.",
+      "interview_focus": "Context, consequences, developmental history and strengths.",
+      "differential_or_limit": "Avoid criminality stereotypes, invented offenses or using diagnosis to predict an individual's violence.",
+      "source_ids": [
+        "S22",
+        "S01"
+      ]
+    },
+    {
+      "id": "alcohol",
+      "name": "Alcohol use disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Impaired control over alcohol use with distress or harmful consequences.",
+      "history_requirement": "Symptoms assessed within a 12-month window; this does not require uninterrupted use for a year.",
+      "interview_focus": "Control, responsibilities, attempts to reduce and care history.",
+      "differential_or_limit": "Quantity alone does not establish the disorder; withdrawal can require medical care.",
+      "source_ids": [
+        "S26"
+      ]
+    },
+    {
+      "id": "cannabis",
+      "name": "Cannabis use disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A substance-specific pattern of impaired control and harmful consequences.",
+      "history_requirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+      "interview_focus": "Use pattern, concentration, functioning and attempts to reduce.",
+      "differential_or_limit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+      "source_ids": [
+        "S27",
+        "S01"
+      ]
+    },
+    {
+      "id": "opioid",
+      "name": "Opioid use disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A substance-specific pattern of impaired control and harmful consequences.",
+      "history_requirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+      "interview_focus": "Control, consequences, treatment history and access to support.",
+      "differential_or_limit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+      "source_ids": [
+        "S27",
+        "S01"
+      ]
+    },
+    {
+      "id": "stimulant",
+      "name": "Stimulant use disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A substance-specific pattern of impaired control and harmful consequences.",
+      "history_requirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+      "interview_focus": "Use pattern, sleep, mood/psychotic symptoms and functional change.",
+      "differential_or_limit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+      "source_ids": [
+        "S27",
+        "S01"
+      ]
+    },
+    {
+      "id": "sedative",
+      "name": "Sedative, hypnotic, or anxiolytic use disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A substance-specific pattern of impaired control and harmful consequences.",
+      "history_requirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+      "interview_focus": "Prescribed/non-prescribed context, loss of control and medical history.",
+      "differential_or_limit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+      "source_ids": [
+        "S27",
+        "S01"
+      ]
+    },
+    {
+      "id": "tobacco",
+      "name": "Tobacco use disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A substance-specific pattern of impaired control and harmful consequences.",
+      "history_requirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+      "interview_focus": "Dependence-related pattern, triggers, attempts to stop and functioning.",
+      "differential_or_limit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+      "source_ids": [
+        "S27",
+        "S01"
+      ]
+    },
+    {
+      "id": "gambling",
+      "name": "Gambling disorder",
+      "family": "Substance-related and addictive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "B",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Repeated gambling with impaired control and consequential harm.",
+      "history_requirement": "Past-year pattern, not a single bet or loss.",
+      "interview_focus": "Impact on time, relationships, finances and attempts to stop.",
+      "differential_or_limit": "Do not provide betting strategies or use financial loss alone as diagnosis.",
+      "source_ids": [
+        "S42"
+      ]
+    },
+    {
+      "id": "schizophrenia",
+      "name": "Schizophrenia",
+      "family": "Schizophrenia spectrum and psychotic",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Psychotic, negative and cognitive features with a characteristic course and impairment.",
+      "history_requirement": "Overall disturbance at least six months, with active-phase requirements and exceptions checked separately.",
+      "interview_focus": "Subjective experience, functioning, mood and medical/substance chronology.",
+      "differential_or_limit": "Not DID and not automatic violence; distinguish reported perceptions from objective world facts.",
+      "source_ids": [
+        "S08",
+        "S44"
+      ]
+    },
+    {
+      "id": "schizophreniform",
+      "name": "Schizophreniform disorder",
+      "family": "Schizophrenia spectrum and psychotic",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Schizophrenia-like presentation distinguished partly by shorter duration.",
+      "history_requirement": "At least one month and less than six months; follow-up can change the formulation.",
+      "interview_focus": "Onset, symptom course, functioning and competing explanations.",
+      "differential_or_limit": "Not a conclusion from one strange statement; longer-term outcome cannot be assumed.",
+      "source_ids": [
+        "S43"
+      ]
+    },
+    {
+      "id": "brief_psychotic",
+      "name": "Brief psychotic disorder",
+      "family": "Schizophrenia spectrum and psychotic",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A distinct brief psychotic diagnostic category.",
+      "history_requirement": "Exact duration, return-to-baseline and exclusion requirements need dedicated verification.",
+      "interview_focus": "Onset, course, recovery and medical/substance information.",
+      "differential_or_limit": "Name verified; do not instantiate until the full course is authored.",
+      "source_ids": [
+        "S01"
+      ],
+      "coverage": "Taxonomy verified; detailed criteria research incomplete"
+    },
+    {
+      "id": "delusional",
+      "name": "Delusional disorder",
+      "family": "Schizophrenia spectrum and psychotic",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A separate psychotic disorder requiring careful assessment of belief, context and functioning.",
+      "history_requirement": "Exact duration and exclusions require full-manual review.",
+      "interview_focus": "Belief-related experience, impact, cultural context and collateral.",
+      "differential_or_limit": "Do not classify unfamiliar cultural or religious beliefs as delusions.",
+      "source_ids": [
+        "S01",
+        "S04"
+      ],
+      "coverage": "Taxonomy and update verified; detailed criteria research incomplete"
+    },
+    {
+      "id": "schizoaffective",
+      "name": "Schizoaffective disorder",
+      "family": "Schizophrenia spectrum and psychotic",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A distinct diagnosis involving both psychotic and mood features across time.",
+      "history_requirement": "Must author relative timing of mood and psychosis; complete rules not verified in this search.",
+      "interview_focus": "Longitudinal episode map, not current symptoms alone.",
+      "differential_or_limit": "Not shorthand for any combination of depression and hallucinations.",
+      "source_ids": [
+        "S01",
+        "S44"
+      ],
+      "coverage": "Taxonomy verified; detailed criteria research incomplete"
+    },
+    {
+      "id": "delirium",
+      "name": "Delirium",
+      "family": "Neurocognitive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Acute fluctuating changes in attention and awareness with medical context.",
+      "history_requirement": "Hours-to-days change from baseline; fluctuations matter.",
+      "interview_focus": "Collateral baseline, medicines, acute illness and orientation.",
+      "differential_or_limit": "Requires a medical-assessment training scenario, not ordinary stable outpatient role-play.",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "id": "mild_ncd",
+      "name": "Mild neurocognitive disorder",
+      "family": "Neurocognitive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Acquired cognitive decline with everyday independence largely maintained.",
+      "history_requirement": "Evidence of decline from prior functioning; testing and etiology context needed.",
+      "interview_focus": "Compensatory strategies, daily tasks and informant comparison.",
+      "differential_or_limit": "Not ordinary ageing or automatically Alzheimer's disease; MCI and DSM labels are not a universal code crosswalk.",
+      "source_ids": [
+        "S53",
+        "S52"
+      ]
+    },
+    {
+      "id": "major_ncd",
+      "name": "Major neurocognitive disorder",
+      "family": "Neurocognitive",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Acquired cognitive decline that interferes with independent daily functioning.",
+      "history_requirement": "Author premorbid baseline, course, cause and assessment evidence.",
+      "interview_focus": "Patient plus informant, everyday abilities and support.",
+      "differential_or_limit": "Older age alone cannot assign dementia; avoid inventing cognitive-test results.",
+      "source_ids": [
+        "S52",
+        "S04"
+      ]
+    },
+    {
+      "id": "bpd",
+      "name": "Borderline personality disorder",
+      "family": "Personality",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A longstanding pattern involving emotion regulation, self-image and relationships.",
+      "history_requirement": "Longitudinal pattern, not a brief crisis. Youth cases need separate specialist review.",
+      "interview_focus": "Relational history, distress, goals and functioning.",
+      "differential_or_limit": "Avoid 'manipulative patient' scripts; differentiate episodic bipolar symptoms and trauma-related conditions.",
+      "source_ids": [
+        "S20"
+      ]
+    },
+    {
+      "id": "avoidant_pd",
+      "name": "Avoidant personality disorder",
+      "family": "Personality",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A longstanding pattern of social inhibition and rejection sensitivity with impairment.",
+      "history_requirement": "Pervasive pattern across contexts; not inferred from a recent anxious week.",
+      "interview_focus": "Relationships, self-perception and desired participation.",
+      "differential_or_limit": "Compare social anxiety and cultural context; ordinary introversion is not a disorder.",
+      "source_ids": [
+        "S19"
+      ]
+    },
+    {
+      "id": "ocpd",
+      "name": "Obsessive-compulsive personality disorder",
+      "family": "Personality",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A longstanding rigid pattern around order, perfection and control.",
+      "history_requirement": "Pervasive developmental history and impairment must be established.",
+      "interview_focus": "Flexibility, task completion, relationships and personal goals.",
+      "differential_or_limit": "Distinct from OCD; conscientiousness alone is not psychopathology.",
+      "source_ids": [
+        "S19"
+      ]
+    },
+    {
+      "id": "gender_dysphoria",
+      "name": "Gender dysphoria",
+      "family": "Gender dysphoria",
+      "classification": "DSM-5-TR",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "C",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Clinically significant distress or impairment related to gender incongruence.",
+      "history_requirement": "Age/puberty-specific criteria and persistence require appropriate review.",
+      "interview_focus": "Patient-defined distress, identity, support and functioning.",
+      "differential_or_limit": "Transgender or gender-diverse identity itself is not a disorder; no assumptions from pronouns.",
+      "source_ids": [
+        "S31"
+      ]
+    },
+    {
+      "id": "cptsd",
+      "name": "Complex PTSD — ICD-11 comparison",
+      "family": "ICD-11 comparison",
+      "classification": "ICD-11; not a separate DSM-5-TR diagnosis",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "D",
+      "suggested_profile_stages": [
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "ICD-11 PTSD with additional difficulties in emotion regulation, self-concept and relationships.",
+      "history_requirement": "Use a distinct ICD-11 framework; do not mix criteria sets.",
+      "interview_focus": "Trauma-related functioning and disturbances in self-organization.",
+      "differential_or_limit": "Not a separate DSM-5-TR diagnosis; prolonged trauma alone does not establish it.",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming disorder — ICD-11 comparison",
+      "family": "ICD-11 comparison",
+      "classification": "ICD-11; DSM-5-TR Internet Gaming Disorder is further-study",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "D",
+      "suggested_profile_stages": [
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "Impaired gaming control with priority over other activities and significant harm.",
+      "history_requirement": "Normally a 12-month pattern in WHO's overview; use the full ICD-11 requirements.",
+      "interview_focus": "Functioning and control, not screen time alone.",
+      "differential_or_limit": "DSM-5-TR Internet Gaming Disorder is a further-study condition, not an equivalent established DSM diagnosis.",
+      "source_ids": [
+        "S45",
+        "S46"
+      ]
+    },
+    {
+      "id": "no_disorder",
+      "name": "No disorder assigned / ordinary stress / diagnostic uncertainty",
+      "family": "Comparison case",
+      "classification": "Not a disorder; original training-design proposal",
+      "research_status": "Research candidate only; not implemented or clinically approved",
+      "authoring_tier": "A",
+      "suggested_profile_stages": [
+        "Toddler",
+        "Preschool child",
+        "School-age child",
+        "Adolescent",
+        "Young adult",
+        "Adult",
+        "Older adult"
+      ],
+      "stage_scope": "Proposed starting case scope, not an epidemiological or diagnostic age restriction",
+      "clinical_summary": "A comparator for ordinary variation, stress or insufficient evidence.",
+      "history_requirement": "Document only authored experiences; no diagnosis is forced.",
+      "interview_focus": "Open history taking, functioning, protective factors and unanswered questions.",
+      "differential_or_limit": "This is a proposed training option, not a DSM disorder.",
+      "source_ids": [
+        "S35"
+      ]
+    }
+  ]
+}

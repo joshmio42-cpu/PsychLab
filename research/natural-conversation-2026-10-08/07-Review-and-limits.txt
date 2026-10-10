@@ -1,0 +1,35 @@
+PsychLab natural conversation: independent implementation review
+Reviewed: 8 October 2026 (Asia/Manila)
+
+Evidence reviewed
+
+- Current live/model.mjs, live/conversation.mjs, and the interaction/evidence paths.
+- 03-Live-evaluation.json: Qwen/Qwen2.5-72B-Instruct, run completed 8 October 2026 at 19:36:33 Manila time.
+- Full live-app automated suite: 130 tests passed, zero failed; final run approximately 16 seconds. These are software and mocked-provider checks, not clinical validation.
+
+Observed result
+
+The final live sample completed all 16 requested exchanges across Jordan, Alex, Mika's caregiver, and Riley without a request error. It used 46 provider calls and 36,018 reported tokens. Preparation used no provider calls. Missing personal details used one routing call; checked conversational answers stayed within three calls.
+
+The replies are substantially more conversational than the former verbatim statement-selection design. Greetings, praise and thanks receive brief acknowledgments. The model answers casual questions about interests, handles short follow-ups, and changes from hobbies to mood when asked. In the sampled leading question, Jordan corrected the assumption that sketching still feels rewarding. The frequency follow-up retained "most days" and four months. Mika's caregiver stated the limit of their knowledge rather than claiming the child's thoughts. Riley's replies remained compatible with supported written communication. An unknown album title appeared as an explicit system boundary rather than invented patient forgetfulness.
+
+Remaining factual limitations
+
+Some embellishments still passed the semantic audit:
+
+- Jordan's reason for drawing mugs and plant pots added that they have "interesting shapes"; that preference was not recorded.
+- Alex's description of whole albums added that the songs "tell a story"; the recorded interest concerned how songs fit together.
+- Riley's playlist explanation added that comparing with a friend is "fun". Sharing/comparing music is recorded, but this extra evaluation was not independently established by the cited hobby-origin statement.
+- Jordan's mood answer added difficulty getting motivated. It is plausible alongside the recorded low mood, reduced interest and low energy, but plausibility alone is not independent support for that wording.
+
+These are observed source-fidelity limits, not hypothetical concerns. Successful requests and an approving model audit do not prove that every sentence is entailed by the frozen history. The 16-exchange sample does not meet an all-claims-perfectly-supported standard. It demonstrates improved conversation and the sampled corrections; it does not establish reliability for every patient, disorder, wording, or long interview. The 36-scenario evaluation matrix contains broader proposed coverage and must not be described as 36 live-passed scenarios.
+
+Implementation checks
+
+Fresh phrasing reaches the user rather than being replaced with stored paragraphs. Existing frozen facts and source IDs remain the evidence boundary. Prior generated patient prose is excluded from writer/auditor evidence; source references preserve the conversational thread. The model audit must return an empty unsupported-span array and all approval flags. Deterministic checks independently reject selected consequential inventions; these checks are deliberately narrow and do not constitute a general proof of entailment.
+
+Social acknowledgments and missing-detail boundaries persist in the transcript but cannot count as clinical checklist evidence or unlock the debrief. Legacy public archives remain readable. Caregiver topic repair cannot override an emergency pause or protected boundary. Provider tests verify nonzero sampling, no forced JSON response mode, disabled thinking for Qwen3 models, and no automatic retry or model fallback. Role token limits, session/process budgets, and the maximum three calls per checked answer remain in place.
+
+Interpretation
+
+This change supports a noticeably more natural fictional interview experience. It does not certify clinical validity, diagnostic accuracy, psychological realism, or perfect factual consistency. Research-informed conversation principles and authored fictional personal details are not a validated model of how everyone with a condition behaves. Review the underlying evidence when using a reply for diagnostic practice; retain uncertainty when the answer adds meaning that the history does not establish.

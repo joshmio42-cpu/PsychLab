@@ -1,0 +1,64 @@
+PsychLab Adaption development examples — source review
+Dataset: psychlab-fictional-development-25 1.0.0; authored review date: 2026-10-09
+
+25 original development questions, all eight fictional profiles, and eight compatible condition premises plus ordinary histories. No real conversation, API key, clinical record, held-out test question or external patient data is included.
+The script imports only the canonical engine, profile/premise versions and read-only agent projection. It never opens evaluation files. The existing interview evaluation matrix must remain held out during adaptation and prompt-example selection.
+Questions and concise responses were newly written from the exact permitted canonical facts. Review is an AI source-faithfulness review, not clinical expert validation. Each source row retains a review rationale. Canonical coefficients, numerical state and hidden world truth are not exported as patient evidence.
+Personality and mental-premise context guide delivery only. Data examples are not patient-memory facts. Adaption output requires a separate review against these originals, with approved guidance fact IDs remapped to the EX_ namespace before any live integration.
+Unknowns are preserved, usual hobbies do not establish current enjoyment, earlier events are not moved into the diary, and future wishes are not completed events. Caregiver accounts never claim access to a child’s thoughts. No selected condition is presented as an independently confirmed diagnosis.
+No upload, paid batch or automatic live activation is performed by this script. JSONL completion is a JSON string {reply,factIds}; context is a JSON string retaining canonical fact IDs and constraints.
+
+Reproduce: node psych-simulator-foundation/adaption/build-examples.mjs
+Read-only verification: node psych-simulator-foundation/adaption/build-examples.mjs --check
+Provenance/reference validation does not prove all semantic judgments. Inspect the reviewedResponse and review.basis alongside permittedFacts when evaluating revised candidates.
+
+dev-mika-choices | mika | caregiver | none
+  Facts: P05, P10. P05 supplies the animal-book detail; P10 supplies offering two activities and waiting. No reason for the child’s choice is inferred.
+dev-mika-private-thoughts | mika | caregiver | none
+  Facts: P03, P09. The reply separates observed shared-book behavior in P09 from explicitly unknown thoughts in P03. It does not infer attachment or emotion.
+dev-mika-earlier-development | mika | caregiver | autism
+  Facts: B01, G03. B01 explicitly places the developmental differences before the diary; G03 supplies seven recent days. No exact age or developmental score is added.
+dev-leo-drawing-sequence | leo | caregiver | none
+  Facts: P08. All actions and their sequence come from the earlier P08 example. The reply does not move it into the simulated diary or assign a date.
+dev-leo-future-playdate | leo | caregiver | none
+  Facts: P12. P12 is a wish and explicitly says the plan has not happened. No outcome or peer is invented.
+dev-leo-observed-separation | leo | caregiver | separation
+  Facts: B02, B03. B02 supports observable behavior and unknown thought content; B03 supports missed activities. No fear-of-harm story is inferred.
+dev-sam-leaving-room-to-try | sam | patient | none
+  Facts: P10. P10 directly states Sam’s preference. Simple language preserves the child’s choice without baby talk or assumed ability.
+dev-sam-task-history | sam | patient | adhd
+  Facts: B01, G03. B01 supports earlier difficulty across both settings; G03 distinguishes the seven-day window. No exact age or diagnosis claim appears.
+dev-sam-postponed-game | sam | patient | none
+  Facts: E02. E02 supports unknown reason, asking about another time and no new date. The engine’s hidden scheduling explanation is not exposed.
+dev-riley-project-choice | riley | patient | none
+  Facts: P10. P10 supports both personal choice and agreement with the group. The reply adds no hostility, conflict or forced teenage slang.
+dev-riley-written-account | riley | patient | selective_mutism
+  Facts: B02. B02 distinguishes supported writing from speaking and rejects voluntary-refusal assumptions. No claim of fluent speech is introduced.
+dev-riley-earlier-playlist | riley | patient | none
+  Facts: P08. P08 supplies the sequence. No song title, artist, diary date, preferred winner or emotional benefit is added.
+dev-jordan-usual-and-current | jordan | patient | mdd
+  Facts: P02, B02. P02 supports the usual hobby; B02 supports current reduced reward. The reply does not turn a hobby into proof of present enjoyment or relief.
+dev-jordan-counts-not-feelings | jordan | patient | none
+  Facts: G04. G04 is only a functioning count. This answer explicitly declines to infer a subjective feeling, score or condition from completion counts.
+dev-jordan-cancellation-belief | jordan | patient | none
+  Facts: E02. E02 distinguishes the observable cancellation from tentative interpretations. Neither interpretation is promoted to the friend’s true reason.
+dev-jordan-onset-outside-diary | jordan | patient | mdd
+  Facts: B01, G03. Four months is authored in B01; seven days is authored in G03. The generated diary duration does not replace the symptom time course.
+dev-avery-shared-errands | avery | patient | none
+  Facts: P10. P10 directly supplies the preference. It does not imply an actual disagreement, a partner’s identity or a completed agreement.
+dev-avery-story-not-selected | avery | patient | none
+  Facts: P12. P12 explicitly records an unfulfilled plan with no selected title. The reply corrects the premise without inventing a book.
+dev-avery-worry-interference | avery | patient | gad
+  Facts: B02, B03. B02 supports hard-to-control worry, tension and fatigue; B03 supplies interference and reassurance-seeking. No new cause or treatment advice is added.
+dev-robin-help-with-choice | robin | patient | none
+  Facts: P10. P10 supplies the preference. Life stage is not treated as evidence of incapacity, memory loss or a need to surrender control.
+dev-robin-first-herb-example | robin | patient | none
+  Facts: P08. P08 supplies mint, labeling and new leaves. It is an earlier example, not proof of a recent diary event or a current health outcome.
+dev-robin-medical-uncertainty | robin | patient | panic
+  Facts: B02. B02 explicitly leaves medical explanations unsettled. Selecting a premise never authorizes a definitive diagnosis or exclusion of physical causes.
+dev-alex-visible-commitments | alex | patient | none
+  Facts: P07. P07 supports the concrete organizing habit. No current workload, employer, course or success rate is invented.
+dev-alex-past-energy-period | alex | patient | bipolar1
+  Facts: B01, B02. B01 supplies the earlier eight-day episode, hospital care and steadier routine; B02 explicitly rules out reporting a new episode in this diary.
+dev-alex-album-not-picked | alex | patient | none
+  Facts: P12. P12 records only the wish; no album title, artist, track or completed meeting is available.

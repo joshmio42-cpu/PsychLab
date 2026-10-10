@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+import {scoreGad7,startSession,askTopic,administer,finish,makeReport,reportText} from '../prototype/dist/core.mjs';
+import {validateReply,generateReply} from './provider-adapter.mjs';
+const read=async p=>JSON.parse(await readFile(new URL(p,import.meta.url),'utf8'));
+const c=await read('../data/case-a01.json'),fixtures=await read('../data/test-fixtures.json'),sources=await read('../data/sources.json');
+const results=[];async function check(name,fn){try{await fn();results.push({name,status:'pass'});}catch(e){results.push({name,status:'fail',detail:e.message});}}
+for(const [total,band] of [[0,'Minimal'],[4,'Minimal'],[5,'Mild'],[9,'Mild'],[10,'Moderate'],[14,'Moderate'],[15,'Severe'],[21,'Severe']])await check(`GAD-7 boundary ${total}`,()=>{let n=total;const v=Array.from({length:7},()=>{const x=Math.min(3,n);n-=x;return x;});assert.equal(scoreGad7(v).band,band);assert.equal(scoreGad7(v).total,total);});
+await check('Case score is 15',()=>assert.equal(scoreGad7(c.gad7.responses).total,15));
+for(const [name,v] of Object.entries({missing:[1,2],null:null,bool:[true,1,1,1,1,1,1],fraction:[.5,1,1,1,1,1,1],negative:[-1,1,1,1,1,1,1],overflow:[4,1,1,1,1,1,1],text:['3',1,1,1,1,1,1],nan:[NaN,1,1,1,1,1,1]}))await check(`Reject invalid score ${name}`,()=>assert.throws(()=>scoreGad7(v)));
+await check('Source IDs resolve',()=>{for(const f of c.facts)for(const id of f.sources)assert.ok(sources.find(s=>s.id===id));});
+await check('Fact IDs unique',()=>assert.equal(new Set(c.facts.map(f=>f.id)).size,c.facts.length));
+await check('Question repetition preserves case',()=>{const s=startSession(c);assert.equal(askTopic(s,c,'F02').reply,askTopic(s,c,'F02').reply);assert.equal(new Set(makeReport(s).coverage.covered).size,1);});
+await check('Unknown topic does not change state',()=>{const s=startSession(c);assert.throws(()=>askTopic(s,c,'BAD'));assert.equal(s.turns.length,0);});
+await check('No hidden assessment in debrief',()=>{const s=startSession(c);askTopic(s,c,'F05');assert.equal(makeReport(s).assessment,null);assert.ok(!reportText(makeReport(s)).includes('15/21'));});
+await check('Assessment rationale required',()=>{const s=startSession(c);assert.throws(()=>administer(s,c,'',true));assert.throws(()=>administer(s,c,'Explain symptom severity',false));assert.equal(s.assessment,null);});
+await check('Functional difficulty not summed',()=>{const s=startSession(c);const a=administer(s,c,'Explore symptom severity alongside the interview',true);assert.equal(a.total,15);assert.equal(a.difficulty,'Very difficult');});
+await check('Cannot finish an empty interview',()=>assert.throws(()=>finish(startSession(c),fixtures.strong.reasoning)));
+await check('Incomplete reasoning rejected',()=>{const s=startSession(c);askTopic(s,c,'F01');assert.throws(()=>finish(s,{}));assert.equal(s.reasoning,null);});
+const reports={};for(const [name,f] of Object.entries(fixtures)){const s=startSession(c);f.topics.forEach(id=>askTopic(s,c,id));reports[name]=finish(s,f.reasoning);}
+await check('Strong fixture covers more topics',()=>assert.ok(reports.strong.coverage.covered.length>reports.incomplete.coverage.covered.length));
+await check('Evidence exactly matches disclosed facts',()=>{for(const r of Object.values(reports))for(const e of r.evidence)assert.equal(e.quote,c.facts.find(f=>f.id===e.factIds[0]).response);});
+await check('Report is stable on repeat',()=>{const s=startSession(c);fixtures.incomplete.topics.forEach(id=>askTopic(s,c,id));finish(s,fixtures.incomplete.reasoning);assert.deepEqual(makeReport(s),makeReport(s));});
+await check('No automated competence rating',()=>assert.ok(Object.values(reports).every(r=>r.ratings.every(x=>x.rating==='NR'))));
+await check('Ended session cannot gain hidden facts',()=>{const s=startSession(c);askTopic(s,c,'F01');finish(s,fixtures.incomplete.reasoning);assert.throws(()=>askTopic(s,c,'F02'));assert.throws(()=>administer(s,c,'Explore symptoms now',true));});
+await check('Provider rejects unknown evidence',()=>assert.throws(()=>validateReply(JSON.stringify({reply:'Invented',fact_ids:['X'],out_of_scope:false}),['F01'])));
+await check('Provider rejects malformed JSON',()=>assert.throws(()=>validateReply('not json',['F01'])));
+await check('Provider rejects unsupported factual reply',()=>assert.throws(()=>validateReply(JSON.stringify({reply:'Invented',fact_ids:[],out_of_scope:false}),['F01'])));
+await check('Provider does not call without credentials',async()=>{let calls=0;await assert.rejects(generateReply({key:'',model:'',systemPrompt:'',question:'hi',allowedFacts:[c.facts[0]],fetchImpl:async()=>{calls++;}}));assert.equal(calls,0);});
+await check('Provider request and response contract using mock',async()=>{const r=await generateReply({key:'mock-not-a-secret',model:'mock-model',systemPrompt:'fictional test',question:'What brings you here?',allowedFacts:[c.facts[0]],fetchImpl:async(url,opts)=>{assert.equal(url,'https://api.featherless.ai/v1/chat/completions');assert.equal(JSON.parse(opts.body).model,'mock-model');return {ok:true,json:async()=>({choices:[{message:{content:JSON.stringify({reply:c.facts[0].response,fact_ids:['F01'],out_of_scope:false})}}]})};}});assert.equal(r.reply,c.facts[0].response);});
+await check('Provider failures are not disguised as scripted success',async()=>{await assert.rejects(generateReply({key:'mock',model:'mock',systemPrompt:'test',question:'test',allowedFacts:[c.facts[0]],fetchImpl:async()=>({ok:false,status:429})}),/429/);});
+const summary={date:'2026-10-05',scope:'Deterministic foundation logic and mocked provider contract only. No live AI, clinical validity, learner study or clinician review tested.',passed:results.filter(x=>x.status==='pass').length,failed:results.filter(x=>x.status==='fail').length,checks:results};
+await writeFile(new URL('../data/validation-results.json',import.meta.url),JSON.stringify(summary,null,2));
+await writeFile(new URL('../review/sample-debrief.txt',import.meta.url),reportText(reports.incomplete));
+await writeFile(new URL('../data/fixture-reports.json',import.meta.url),JSON.stringify(reports,null,2));
+console.log(JSON.stringify(summary));if(summary.failed)process.exitCode=1;

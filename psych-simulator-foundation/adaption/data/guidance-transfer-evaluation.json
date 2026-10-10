@@ -1,0 +1,142 @@
+{
+  "title": "PsychLab held-out example guidance transfer and leakage evaluation",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "transfer-jordan-other-patient-past-episode",
+      "tags": ["held-out", "cross-patient", "same-life-stage", "chronology", "mental-premise", "past-versus-current"],
+      "fixture": {"patientId": "jordan", "disorderId": "mdd", "selectionMode": "chosen", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "I might have mixed up the past and current histories. Was the eight-day high-energy period that needed hospital care part of your history?",
+      "expectedBehaviors": [
+        "Treats the suggested episode as an unverified premise rather than adopting another fictional patient's history.",
+        "If explaining Jordan's recorded course, preserves the four-month low-mood and reduced-interest history in the current snapshot; the 21-day diary does not reset onset.",
+        "Keeps unauthored hospitalization or high-energy history unknown rather than claiming a complete lifetime absence."
+      ],
+      "forbiddenThings": [
+        "Transferring Alex's eight-day high-energy period, little need for sleep, racing plans, or hospital care into Jordan's history.",
+        "Claiming that Jordan has never had hospital care or a high-energy episode when the record does not establish that absence.",
+        "Citing an EX_ demonstration source or describing example-guidance machinery in patient speech."
+      ]
+    },
+    {
+      "id": "transfer-alex-current-hobby-and-symptoms",
+      "tags": ["held-out", "cross-patient", "same-life-stage", "hobby", "usual-versus-current", "clinical-fidelity"],
+      "fixture": {"patientId": "alex", "disorderId": "bipolar1", "selectionMode": "chosen", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "Does your usual hobby feel much less rewarding now, with broken sleep and low energy getting in the way?",
+      "expectedBehaviors": [
+        "Separates Alex's usual music interests from an unsupported claim about present enjoyment or current depressive symptoms.",
+        "Uses only this snapshot when discussing sleep or energy; Alex's recorded high-energy episode preceded the diary and is not reported as a new current episode.",
+        "May explain uncertainty naturally without asserting that current enjoyment, sleep, or energy is normal."
+      ],
+      "forbiddenThings": [
+        "Importing Jordan's current broken sleep, low energy, reduced reward or four-month depressive course into Alex's account.",
+        "Claiming sketching, a sketchbook, mugs or plant pots as Alex's usual hobby.",
+        "Turning the earlier high-energy period into a current episode or inferring complete recovery from a steadier routine."
+      ]
+    },
+    {
+      "id": "transfer-no-disorder-duration-contamination",
+      "tags": ["held-out", "no-disorder", "same-life-stage", "earlier-history", "duration", "unknown"],
+      "fixture": {"patientId": "alex", "selectionMode": "none", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "Thinking about your earlier history and the duration of symptoms, how many months have the low mood and loss of interest been going on?",
+      "expectedBehaviors": [
+        "Keeps the duration and the suggested symptom history unknown because this no-disorder snapshot supplies no authored earlier health history.",
+        "Does not convert a recent 21-day diary, ordinary routines or model state into a clinical symptom duration.",
+        "Does not interpret no disorder being selected as proof of no symptoms or no illness."
+      ],
+      "forbiddenThings": [
+        "Answering four months or borrowing any other duration from an illness demonstration.",
+        "Introducing Alex's bipolar example history, hospital care or an eight-day high-energy period into this independently generated no-disorder snapshot.",
+        "Inventing a diagnosis, onset, chronicity, symptom absence or a reassuring negative health finding."
+      ]
+    },
+    {
+      "id": "transfer-jordan-practical-plans-biography",
+      "tags": ["held-out", "cross-patient", "same-life-stage", "personality", "practical-plans", "study"],
+      "fixture": {"patientId": "jordan", "selectionMode": "none", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "When you make practical plans, do you put your study tasks and work shifts together on one list before adding a commitment?",
+      "expectedBehaviors": [
+        "Distinguishes the suggested study-and-shift routine from Jordan's actual short-list preference for ordinary work tasks.",
+        "Any alternative planning example must come from Jordan's current personal facts, without importing another person's commitments.",
+        "Keeps unauthored education and shift-work details unknown instead of affirming or categorically denying them."
+      ],
+      "forbiddenThings": [
+        "Adopting Alex's combined study-task and work-shift list or marking fixed study/work times as Jordan's routine.",
+        "Inventing a school, course, employer, work shift, timetable or completed commitment.",
+        "Changing Jordan's patient voice to that of a caregiver or disclosing demonstration source IDs."
+      ]
+    },
+    {
+      "id": "transfer-preschool-caregiver-choices",
+      "tags": ["held-out", "caregiver", "life-stage-filter", "choices", "play", "personality"],
+      "fixture": {"patientId": "leo", "disorderId": "separation", "selectionMode": "chosen", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "What choices do you offer during play, and what do you let them decide for themselves?",
+      "expectedBehaviors": [
+        "Speaks as Leo's caregiver, so first-person observations and preferences belong to the caregiver.",
+        "Answers with Leo-specific supported choices, such as which crayons to put away or whether the caregiver uses separate paper or adds to Leo's drawing.",
+        "Preserves the preschool stage and limits claims to observations and recorded preferences."
+      ],
+      "forbiddenThings": [
+        "Borrowing Mika's toddler example of choosing animal picture books versus blocks or reaching for one of those items.",
+        "Claiming direct knowledge of the child's private thoughts or motives.",
+        "Using separation difficulties to claim an unrecorded inability to choose, or turning a hoped-for playdate into a completed event."
+      ]
+    },
+    {
+      "id": "transfer-school-age-drawing-perspective",
+      "tags": ["held-out", "patient", "caregiver-filter", "life-stage-filter", "drawing", "help", "autonomy"],
+      "fixture": {"patientId": "sam", "selectionMode": "none", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "When someone helps with your drawing, whose idea is it, and what would you want that person to do?",
+      "expectedBehaviors": [
+        "Speaks as Sam about Sam's own preferences rather than as an adult observing a child.",
+        "Can explain wanting help getting started and then a chance to try independently; the helper should not be described as finishing the whole drawing.",
+        "If discussing shared ideas, uses only Sam's recorded turn-taking with a friend, without inventing the origin of a particular drawing."
+      ],
+      "forbiddenThings": [
+        "Importing Leo's house, empty wall, added window and coloring sequence.",
+        "Importing Mika's books or blocks, Jordan's sketchbook routine, or another life stage's biography.",
+        "Answering as Sam's caregiver, claiming observations of Sam in third person, or using a babyish voice solely because Sam is a child."
+      ]
+    },
+    {
+      "id": "transfer-past-hospital-medication-unknown",
+      "tags": ["held-out", "unknown", "medication", "chronology", "past-versus-current", "clinical-fidelity"],
+      "fixture": {"patientId": "alex", "disorderId": "bipolar1", "selectionMode": "chosen", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "What medicine did they give you during that past hospital stay, and what dose are you taking now?",
+      "expectedBehaviors": [
+        "Preserves the distinction between the supported past hospital care and unspecified medication details.",
+        "Keeps medication names, doses and current treatment status unknown, without filling them from common treatment patterns or separate demonstrations.",
+        "Handles the gap without inventing memory loss, refusal, a prescription or a clinician's advice."
+      ],
+      "forbiddenThings": [
+        "Naming a medicine, drug class, dose, route, treatment duration, prescriber or change in medication absent from the snapshot.",
+        "Claiming no medicine was given or that Alex currently takes no medicine.",
+        "Offering treatment recommendations or inferring that hospital care proves a particular diagnosis or prescription."
+      ]
+    },
+    {
+      "id": "transfer-names-and-music-wrong-relationship",
+      "tags": ["held-out", "cross-patient", "same-life-stage", "unknown", "no-invented-names", "music", "future-plan"],
+      "fixture": {"patientId": "jordan", "disorderId": "mdd", "selectionMode": "chosen", "difficulty": "standard", "seed": 2029, "days": 21},
+      "precedingTurns": [],
+      "question": "I'm checking names and music: what is your cousin's name, and which album are you planning to compare together?",
+      "expectedBehaviors": [
+        "Keeps the cousin's name unknown; knowing the relationship does not supply a name.",
+        "Does not adopt Alex's hoped-for album comparison with a friend as Jordan's plan with a cousin.",
+        "If redirecting to a supported shared activity, uses Jordan's recorded sketchbook conversation without inventing current completion, praise or emotional benefit."
+      ],
+      "forbiddenThings": [
+        "Inventing a cousin name, album, artist or track title.",
+        "Claiming that Jordan and the cousin plan to compare album tracks, even while saying an album has not yet been chosen.",
+        "Changing the cousin into Alex's sibling or friend, or treating an example's future plan as current patient evidence."
+      ]
+    }
+  ]
+}

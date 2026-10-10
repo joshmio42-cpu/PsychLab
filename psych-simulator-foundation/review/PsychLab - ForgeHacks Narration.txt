@@ -1,0 +1,61 @@
+PSYCHLAB — FORGEHACKS DEMO NARRATION
+Prepared 10 October 2026 | 479 words, excluding headings and timestamps
+Target recording: approximately 3:40–3:55; timed outline ends at 3:51.
+Read at roughly 135–145 words/minute, allowing brief visual pauses.
+Read only the paragraphs; the timestamps and labels are not spoken.
+Written for a solo presenter and the AI + Healthcare track.
+
+0:00–0:25 | The problem
+
+A patient’s story rarely arrives as a neat list of symptoms. A psychology student has to ask useful questions, follow up on uncertainty, and explain what the evidence supports.
+
+I built PsychLab to give students a place to practice that process with fictional patients, with the goal of helping them prepare for supervised clinical interviewing.
+
+0:25–0:48 | Choose an interview
+
+The prototype has eight fictional profiles across life stages, including caregiver interviews for younger children. I can choose a case, practice with no assigned disorder, or select a mystery case whose label stays hidden during the interview.
+
+Difficulty changes how much detail is offered at once, so follow-up questions matter.
+
+0:48–1:24 | Create and freeze a person’s history
+
+Before the conversation, PsychLab prepares the person’s background and recent experiences, then freezes that record. Their interests, relationships, and goals are authored separately from their clinical presentation.
+
+The simulation tracks expectations about specific relationships and which goals matter in each situation. Local rules connect daily events with memory, interpretations, and responses.
+
+The interview model can phrase an answer differently, but it cannot rewrite the underlying history. That gives each conversation a stable reference to check against.
+
+1:24–1:50 | Demonstrate the conversation
+
+Here, I’m interviewing Jordan. I ask about their usual interests, then whether sketching still feels rewarding. Jordan’s authored history separates the hobby from their recent loss of enjoyment.
+
+That gives me a meaningful follow-up: “When did that change?” I can then explore daily responsibilities and relationships, building an account across several questions.
+
+1:50–2:22 | Show the learning workflow
+
+The Interview companion helps me organize what I’ve learned. I link observations to actual answers, consider alternative explanations, and record what remains unknown.
+
+When I finish, the debrief highlights questions that uncovered new information, areas to explore further, and evidence links that need review. I can save the conversation and download the report for discussion with an instructor.
+
+The learner remains responsible for interpreting the evidence.
+
+2:22–2:57 | Explain the AI
+
+Behind the conversation, Featherless powers three AI roles. A router selects relevant facts, a writer turns permitted facts into patient speech, and an auditor checks the response for support and relevance. Additional code checks catch specific kinds of unsupported claims.
+
+Conversation memory tracks disclosed sources without treating earlier AI wording as new case evidence.
+
+Case preparation and debrief feedback run locally. The app also tracks model usage and estimated cost, making resource use visible.
+
+2:57–3:31 | Evidence and limits
+
+The research includes public resources from the American Psychiatric Association, NIMH, and WHO, alongside a personality literature registry with thirty-six sources. The interview guides contain three hundred thirty-four practice checkpoints.
+
+Four hundred fifty-one automated software tests passed. Live evaluations still reveal blocked answers and factual errors. The psychological simulation rules remain experimental. Clinical review and student studies are still needed to establish accuracy and educational benefit.
+
+3:31–3:51 | Close
+
+PsychLab’s goal is to help students practice asking better questions, recognize uncertainty, and connect their conclusions to what a person actually said.
+
+That is the contribution I want to make to healthcare training: more opportunities to practice thoughtful, evidence-based interviewing.
+

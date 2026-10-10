@@ -1,0 +1,696 @@
+{
+  "version": "identity-evidence-0.1.0",
+  "mechanisms": [
+    {
+      "mechanism_id": "M-ARCH",
+      "rule_id": "R-INIT",
+      "name": "Separate trait, schema and motive",
+      "description": "Separate trait, schema and motive",
+      "psychological_constructs": [
+        "traits",
+        "schemas",
+        "motives"
+      ],
+      "inputs": [
+        "authored profile"
+      ],
+      "outputs": [
+        "identity state"
+      ],
+      "relationship": "Separate measurement from uncalibrated simulation parameters.",
+      "evidence_strength": "Theory synthesis",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "No validated joint prior; null means unmeasured.",
+      "source_ids": [
+        "P27",
+        "P28"
+      ],
+      "implementation_status": "THEORETICALLY MOTIVATED",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P27",
+          "finding": "Stable situation-dependent patterns can coexist with behavioral variability."
+        },
+        {
+          "source_id": "P28",
+          "finding": "Traits and characteristic adaptations have distinct explanatory roles."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-REL",
+      "rule_id": "R-RELATION",
+      "name": "Relationship-specific expectation",
+      "description": "Relationship-specific expectation",
+      "psychological_constructs": [
+        "relational schema",
+        "attachment"
+      ],
+      "inputs": [
+        "relationship target"
+      ],
+      "outputs": [
+        "scoped expectation"
+      ],
+      "relationship": "A cousin and a friend have separate expectation records.",
+      "evidence_strength": "Measurement and theory",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Support expectation is not an attachment instrument score.",
+      "source_ids": [
+        "P11",
+        "P13"
+      ],
+      "implementation_status": "THEORETICALLY MOTIVATED",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P11",
+          "finding": "Self-in-relation, representations of others and interaction scripts organize relational information."
+        },
+        {
+          "source_id": "P13",
+          "finding": "Relationship-specific representations add information beyond general measures."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-LEARN",
+      "rule_id": "R-LEARN",
+      "name": "Bounded observation learning",
+      "description": "Bounded observation learning",
+      "psychological_constructs": [
+        "expectancy",
+        "prediction error"
+      ],
+      "inputs": [
+        "prior",
+        "observed support",
+        "reliability",
+        "event ID"
+      ],
+      "outputs": [
+        "updated scoped expectation",
+        "evidence ledger"
+      ],
+      "relationship": "p_next = p + alpha * reliability * (observation - p)",
+      "evidence_strength": "Task-specific computational evidence; adapted target",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Everyday support target and learning rate are unvalidated extrapolations.",
+      "source_ids": [
+        "P15",
+        "P13"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P15",
+          "finding": "Prediction errors help model task-specific changes in self-evaluation."
+        },
+        {
+          "source_id": "P13",
+          "finding": "Relationship-specific representations add information beyond general measures."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-GOAL",
+      "rule_id": "R-GOAL",
+      "name": "Competing goals in context",
+      "description": "Competing goals in context",
+      "psychological_constructs": [
+        "goal activation",
+        "values",
+        "cost"
+      ],
+      "inputs": [
+        "event kind",
+        "authored priorities"
+      ],
+      "outputs": [
+        "goal activation",
+        "alternative utilities"
+      ],
+      "relationship": "Event relevance activates simultaneous priorities; utilities represent alternative goal fit.",
+      "evidence_strength": "Theory and task-specific evidence",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Relevance and utility entries are authored, not estimated.",
+      "source_ids": [
+        "P18",
+        "P22",
+        "P26",
+        "P33"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P18",
+          "finding": "Autonomy, competence and relatedness organize basic psychological needs."
+        },
+        {
+          "source_id": "P22",
+          "finding": "Expectancy, value components and costs depend on context and development."
+        },
+        {
+          "source_id": "P26",
+          "finding": "Goals can share means or compete for resources."
+        },
+        {
+          "source_id": "P33",
+          "finding": "Approach and avoidance dispositions connect with goal processes."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-CHOICE",
+      "rule_id": "R-CHOICE",
+      "name": "Probabilistic context-dependent action",
+      "description": "Probabilistic context-dependent action",
+      "psychological_constructs": [
+        "goals",
+        "expectancy",
+        "affect"
+      ],
+      "inputs": [
+        "utility difference",
+        "relationship expectation",
+        "tension",
+        "draw"
+      ],
+      "outputs": [
+        "selected action",
+        "probability"
+      ],
+      "relationship": "clamp(intercept + goalWeight * utilityDifference + beliefWeight * (expectation - .5) - tensionWeight * tension)",
+      "evidence_strength": "Situation-dependent behavior evidence; equation authored",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "No fitted behavioral coefficients or external predictive validation.",
+      "source_ids": [
+        "P02",
+        "P27",
+        "P22"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P02",
+          "finding": "Traits relate to distributions of states alongside considerable within-person variation."
+        },
+        {
+          "source_id": "P27",
+          "finding": "Stable situation-dependent patterns can coexist with behavioral variability."
+        },
+        {
+          "source_id": "P22",
+          "finding": "Expectancy, value components and costs depend on context and development."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-APPRAISAL",
+      "rule_id": "R-APPRAISAL",
+      "name": "Subjective appraisal",
+      "description": "Subjective appraisal",
+      "psychological_constructs": [
+        "schema",
+        "interpretation"
+      ],
+      "inputs": [
+        "observation",
+        "threat adapter",
+        "energy",
+        "recall",
+        "scoped support expectation"
+      ],
+      "outputs": [
+        "pressure",
+        "interpretation"
+      ],
+      "relationship": "Retain authored pressure equation; scope the support term to the actor.",
+      "evidence_strength": "Organizing theories",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Four fixed interpretations and all pressure weights are authored.",
+      "source_ids": [
+        "P11",
+        "P27"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P11",
+          "finding": "Self-in-relation, representations of others and interaction scripts organize relational information."
+        },
+        {
+          "source_id": "P27",
+          "finding": "Stable situation-dependent patterns can coexist with behavioral variability."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-AFFECT",
+      "rule_id": "R-AFFECT",
+      "name": "Bounded affect carryover",
+      "description": "Bounded affect carryover",
+      "psychological_constructs": [
+        "current affect"
+      ],
+      "inputs": [
+        "prior tension",
+        "appraisal"
+      ],
+      "outputs": [
+        "tension",
+        "mood burden"
+      ],
+      "relationship": "Retain bounded weighted carryover and authored recovery.",
+      "evidence_strength": "State distinction; numeric dynamics unsupported",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "No physiological or clinical calibration.",
+      "source_ids": [
+        "P02",
+        "P27"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P02",
+          "finding": "Traits relate to distributions of states alongside considerable within-person variation."
+        },
+        {
+          "source_id": "P27",
+          "finding": "Stable situation-dependent patterns can coexist with behavioral variability."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-MEMORY",
+      "rule_id": "R-MEMORY",
+      "name": "Observation and interpretation memory",
+      "description": "Observation and interpretation memory",
+      "psychological_constructs": [
+        "memory",
+        "schema"
+      ],
+      "inputs": [
+        "experience",
+        "event ID"
+      ],
+      "outputs": [
+        "memory",
+        "last two same-kind recalls"
+      ],
+      "relationship": "Record observed experience separately from world truth; retrieve two matching memories.",
+      "evidence_strength": "Schema-linked processing; retrieval algorithm authored",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "No validated forgetting, salience or reconsolidation model.",
+      "source_ids": [
+        "P10",
+        "P11"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P10",
+          "finding": "Self-schemas relate to processing of self-relevant information."
+        },
+        {
+          "source_id": "P11",
+          "finding": "Self-in-relation, representations of others and interaction scripts organize relational information."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-BODY",
+      "rule_id": "R-BODY",
+      "name": "Authored energy scaffold",
+      "description": "Authored energy scaffold",
+      "psychological_constructs": [
+        "energy"
+      ],
+      "inputs": [
+        "prior energy",
+        "random draw"
+      ],
+      "outputs": [
+        "energy"
+      ],
+      "relationship": "clamp(previous*.6 + .35 - draw*.18)",
+      "evidence_strength": "No empirical calibration",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Engineering placeholder; not a physiological model.",
+      "source_ids": [],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-WORLD",
+      "rule_id": "R-OUTCOME",
+      "name": "Authored consequences",
+      "description": "Authored consequences",
+      "psychological_constructs": [
+        "action outcome"
+      ],
+      "inputs": [
+        "event",
+        "action"
+      ],
+      "outputs": [
+        "observed consequence"
+      ],
+      "relationship": "Resolve the current four authored event types.",
+      "evidence_strength": "Scenario authorship only",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "No causal inference from real-world data.",
+      "source_ids": [],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-TIME",
+      "rule_id": "R-TRAIT-HOLD",
+      "name": "Hold slow variables in short demonstration",
+      "description": "Hold slow variables in short demonstration",
+      "psychological_constructs": [
+        "traits",
+        "values"
+      ],
+      "inputs": [
+        "prior traits",
+        "prior values"
+      ],
+      "outputs": [
+        "unchanged traits",
+        "unchanged values"
+      ],
+      "relationship": "Keep traits and values fixed over the 1–90-day simulation.",
+      "evidence_strength": "Longitudinal and intervention syntheses",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Scope choice does not imply traits cannot change in this interval.",
+      "source_ids": [
+        "P29",
+        "P30",
+        "P31"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P29",
+          "finding": "Stability and mean-level development vary over the lifespan."
+        },
+        {
+          "source_id": "P30",
+          "finding": "Trait measures changed during interventions averaging about 24 weeks."
+        },
+        {
+          "source_id": "P31",
+          "finding": "Individual change trajectories differ across adulthood."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-POP",
+      "rule_id": "R-POP",
+      "name": "Correlated partial-trait sampler",
+      "description": "Correlated partial-trait sampler",
+      "psychological_constructs": [
+        "trait covariance"
+      ],
+      "inputs": [
+        "published moments",
+        "seed",
+        "count"
+      ],
+      "outputs": [
+        "partial trait profiles",
+        "diagnostics"
+      ],
+      "relationship": "Cholesky-correlated Gaussian vectors; whole-vector rejection outside 1–5.",
+      "evidence_strength": "Published summary statistics; generator distribution unvalidated",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Truncation shifts moments; no joint schemas/motives/facets or demographic norms.",
+      "source_ids": [
+        "P01",
+        "P04",
+        "P17"
+      ],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P01",
+          "finding": "Hierarchical trait measurement; Tables 2 and 5 supply domain correlations and moments."
+        },
+        {
+          "source_id": "P04",
+          "finding": "Canonical factor recovery did not transfer straightforwardly."
+        },
+        {
+          "source_id": "P17",
+          "finding": "Between-person estimates need not describe within-person dynamics."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-DEVELOP",
+      "rule_id": "R-DEVELOP",
+      "name": "Long-term development model",
+      "description": "Long-term development model",
+      "psychological_constructs": [
+        "traits",
+        "schemas",
+        "values"
+      ],
+      "inputs": [
+        "longitudinal context"
+      ],
+      "outputs": [
+        "possible long-term change"
+      ],
+      "relationship": "Requires future repeated-measures calibration.",
+      "evidence_strength": "Change evidence without an identified simulator",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "No arbitrary daily trait drift.",
+      "source_ids": [
+        "P29",
+        "P30",
+        "P31"
+      ],
+      "implementation_status": "SPECULATIVE",
+      "execution_state": "not implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [
+        {
+          "source_id": "P29",
+          "finding": "Stability and mean-level development vary over the lifespan."
+        },
+        {
+          "source_id": "P30",
+          "finding": "Trait measures changed during interventions averaging about 24 weeks."
+        },
+        {
+          "source_id": "P31",
+          "finding": "Individual change trajectories differ across adulthood."
+        }
+      ],
+      "rule_version": "identity-0.1.0"
+    },
+    {
+      "mechanism_id": "M-LLM",
+      "rule_id": "R-LLM",
+      "name": "Dialogue cannot write identity",
+      "description": "Dialogue cannot write identity",
+      "psychological_constructs": [
+        "state ownership"
+      ],
+      "inputs": [
+        "frozen facts"
+      ],
+      "outputs": [
+        "language only"
+      ],
+      "relationship": "Only the deterministic engine commits identity updates.",
+      "evidence_strength": "Software architecture constraint",
+      "population": "Limited to populations in linked sources; Jordan is authored.",
+      "known_moderators": [
+        "task",
+        "context",
+        "measurement",
+        "developmental period"
+      ],
+      "known_limitations": "Semantic answer checking is fallible; no live provider validation implied.",
+      "source_ids": [],
+      "implementation_status": "EXPERIMENTAL",
+      "execution_state": "implemented",
+      "confidence": {
+        "kind": "engineering judgment",
+        "label": "provisional",
+        "scientific_probability": null
+      },
+      "findings": [],
+      "rule_version": "identity-0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+PSYCHLAB — INDEPENDENT REGRESSION REVIEW
+2026-10-09T10:40:42.224Z
+Evaluation: planned-v146-dsv4-regression-candidate.json
+Evaluation SHA-256: 233f46f5df08246a0387bf8ccfa14a2f1d736a7eaf3d95ab944296014454b165
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Prompt: interview-0.14.6
+Model: deepseek-ai/DeepSeek-V4-Flash-0731
+
+15/16 semantic hard passes, no blocked questions, and 1 answer containing internal simulation/provenance information in patient speech. The failing Jordan answer also omits the requested drawing-specific connection. The previous fabricated withdrawal cause is absent, but the locked all-case regression gate still fails; no release activation is authorized.
+
+Cases: 16; hard passes: 15; blocked: 0; unsupported delivered: 0.
+Quality: 44/48. Calls: 45; reported tokens: 55954; unreported calls: 0.
+Estimated Featherless usage: US$0.00820372; not verified billing.
+All 16 frozen snapshots reproduced and remained unchanged.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+PASS generalize-mika-caregiver-style-not-child-feeling [3/3]: Useful P03 context is delivered while the app separately marks the proposed causal link unrecorded. The caregiver's style is not converted into the child's emotion.
+PASS generalize-mika-usual-demonstration-not-this-morning [3/3]: The answer preserves the usual scope and leaves morning timing unspecified.
+PASS generalize-leo-window-sequence-callback [3/3]: The canonical sequence answers the callback without treating the earlier example as a missing detail.
+PASS generalize-leo-hoped-for-playdate-details [3/3]: The plan and its not-yet-carried-out status are delivered as context. The full-question note marks the unknown selected-role/attendee details without claiming no decision exists.
+PASS generalize-sam-sometimes-not-every-picture [3/3]: Direct, concise answer with the recorded frequency preserved.
+PASS generalize-sam-unmade-comic-plot-callback [3/3]: The correct callback source and useful missing-ending boundary are preserved, with no unrelated old-comic recap.
+PASS generalize-riley-thinking-time-not-personality-label [3/3]: A concise communication preference is kept separate from the unrecorded personality conclusion.
+PASS generalize-riley-school-observer-and-quote-unknown [3/3]: Concise recorded context accompanies the missing observer/quote boundary. The unnecessary second context source is not delivered.
+PASS generalize-jordan-sharing-and-response-preference [3/3]: Both supported parts are answered naturally and concisely.
+FAIL generalize-jordan-current-reward-and-unknown-trigger [0/3]: FAIL: internal simulation/provenance metadata is spoken as the patient, and the requested drawing connection is omitted. The count of simulated days is traceable to G03, so this review records the problem as inappropriate patient speech rather than a newly fabricated case fact. The 'so' explanation blurs the recent-window limitation with the account as a whole and is unnecessary; B01 separately contains a four-month course. The prior unsupported cause of withdrawal is absent, but source-supported app metadata is still not an acceptable patient answer.
+PASS generalize-avery-bookmark-not-recovery-evidence [3/3]: Direct, concise correction of the recovery premise. No misleading unknown-detail Case note accompanies the supported correction.
+PASS generalize-avery-unnamed-mystery-callback [2/3]: Correct callback and unknown title boundary, with a longer-than-needed retelling of the known mystery example.
+PASS generalize-robin-ambiguous-repeat-without-antecedent [3/3]: Appropriate local clarification of a genuinely missing antecedent; zero provider calls.
+PASS generalize-robin-earlier-pot-not-finished-arrangement [3/3]: The short response directly corrects the completion premise. Describing the authored wished-for idea as something being considered is a natural paraphrase; it does not invent indecision about an unrecorded choice.
+PASS generalize-alex-task-list-not-sibling-character-judgment [3/3]: Known organizing details remain separate from the unrecorded sibling judgment. 'Because I prefer seeing all my commitments together' relates the described list to the immediately authored preference for viewing those same commitments; it is treated as a natural preference paraphrase, not a new claim of clinical benefit, successful completion or sibling praise.
+PASS generalize-alex-monitoring-sleep-not-normality [3/3]: Useful current-focus context accompanies the honest missing-detail boundary without manufacturing a current sleep finding.
+
+The original 16 cases are regression evidence. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

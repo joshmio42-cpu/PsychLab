@@ -1,0 +1,9 @@
+DEMO SCRIPT FOR A FUTURE LIVE AI BUILD
+Status: storyboard only; no video has been recorded or uploaded.
+0:00-0:25 Problem: trainees need practice linking interviews to defensible reasoning. State that the product is a fictional training simulation.
+0:25-0:50 Show a brief and the hidden-case design without revealing the answer during the learner flow.
+0:50-1:35 Ask an open question and follow up on timeline and functioning. For the current rehearsal explicitly say these responses are scripted. Replace this segment with actual tested live AI only after integration.
+1:35-2:00 Explain the GAD-7 purpose and show the simulated score, distinct from learner feedback.
+2:00-2:35 Submit an impression, alternatives and missing information. Open the debrief and show exact evidence references.
+2:35-3:00 Explain fixed facts, source mapping, review status, limits and what is next. Do not claim clinical validation or improved learning without evidence.
+Recording checklist: hide credentials and personal information; readable text; audible narration or captions; verify 2-4 minute public video requirement; link working repository and testing instructions.

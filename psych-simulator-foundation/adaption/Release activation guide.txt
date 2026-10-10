@@ -1,0 +1,24 @@
+REVIEWED RELEASE STARTUP
+
+The launch-psychlab.mjs entrypoint loads a reviewed model and examples pack only
+through active-release.json. It verifies the saved decision, recomputes every
+release gate, and matches the exact runtime, model, pack, evaluation, review and
+matrix bindings. A missing or invalid selection uses the saved Featherless model
+without optional examples or answer planning. The DPAPI credential is unchanged.
+
+The existing PSYCHLAB_EXAMPLE_GUIDANCE_PACK=off setting remains an explicit
+opt-out. It disables the activated model selection, optional examples and answer
+planning, and uses the saved model. The status endpoint reports release.status
+as "disabled". Removing that setting allows the stored selection to be verified
+again on the next launch; it does not delete the selection.
+
+For this normal startup entrypoint, a file path supplied through
+PSYCHLAB_EXAMPLE_GUIDANCE_PACK is ignored. An authenticated release manifest
+replaces path overrides: a copied or otherwise unverified pack cannot bypass
+the release checks. The status endpoint reports pathOverrideIgnored=true when
+such a setting is present. Explicit evaluation and staging tools retain their
+separate test configuration; this guide describes the reviewed-release launcher.
+
+The existing Start-PsychLab.ps1 must point to launch-psychlab.mjs for this startup
+selection to take effect. Activation and opt-out affect the next server launch.
+They do not stop, modify, or reload an interview already running in memory.

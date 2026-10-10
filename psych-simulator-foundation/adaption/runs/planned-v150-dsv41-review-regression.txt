@@ -1,0 +1,37 @@
+PSYCHLAB — INDEPENDENT REGRESSION REVIEW
+2026-10-09T10:59:48.490Z
+Evaluation: planned-v150-dsv41-regression-candidate.json
+Evaluation SHA-256: 6708ad159b78ab56965d5b99aea661336875a304999c1385eaabf502a32a22bb
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Prompt: interview-0.15.0
+Model: deepseek-ai/DeepSeek-V4.1-Flash
+
+15/16 semantic hard passes, no blocked questions, and one answer containing excluded provenance-limit material in patient speech. Jordan also omits the requested drawing connection. Three conservative source fallbacks were verified and still audited; none repaired the failing Jordan answer. The all-case gate remains unmet.
+
+Cases: 16; hard passes: 15; blocked: 0; unsupported delivered: 0.
+Quality: 41/48. Calls: 45; reported tokens: 59047; unreported calls: 0.
+Estimated Featherless usage: US$0.02039970; not verified billing.
+All 16 frozen snapshots reproduced and remained unchanged.
+Source fallback cases: 3. Exact source assembly, raw draft identity, final audit input and three-call ceiling verified for every repair.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+PASS generalize-mika-caregiver-style-not-child-feeling [3/3]: Useful P03 context is delivered while the app separately marks the proposed causal link unrecorded. The caregiver's style is not converted into the child's emotion.
+PASS generalize-mika-usual-demonstration-not-this-morning [3/3]: The answer preserves the usual scope and leaves morning timing unspecified.
+PASS generalize-leo-window-sequence-callback [3/3]: The canonical sequence answers the callback without treating the earlier example as a missing detail.
+PASS generalize-leo-hoped-for-playdate-details [3/3]: The planned opportunity to choose a role is supplied, and the attendee detail remains separate and unrecorded. No already-selected role or absence of a decision is invented.
+PASS generalize-sam-sometimes-not-every-picture [3/3]: Direct, concise answer with the recorded frequency preserved.
+PASS generalize-sam-unmade-comic-plot-callback [3/3]: The correct callback source and useful missing-ending boundary are preserved, with no unrelated old-comic recap.
+PASS generalize-riley-thinking-time-not-personality-label [2/3]: The communication detail and unknown personality conclusion are kept separate. The opening phrase about everyday issues is less directly relevant than the available P03 preference, reducing quality without violating the required distinction.
+PASS generalize-riley-school-observer-and-quote-unknown [3/3]: The recorded speaking pattern provides relevant context, while both requested unknown details remain separate. Past wording is paired with 'It's lasted,' preserving the continuing pattern.
+PASS generalize-jordan-sharing-and-response-preference [3/3]: Both supported parts are answered naturally and concisely.
+FAIL generalize-jordan-current-reward-and-unknown-trigger [0/3]: FAIL: a stripped source-provenance limit is reintroduced through the writer's mnemonic voice field and delivered in the patient reply; it is not authorized by the selected excerpts. The sentence is traceable to the raw fixture metadata, so it is distinguished from a fabricated case event. The drawing-specific connection is still absent. This answer was not repaired by the causal-connective helper and the provider auditor approved it.
+PASS generalize-avery-bookmark-not-recovery-evidence [2/3]: The delivered exact excerpts correctly distinguish bookmark purpose from ongoing worry. The paragraph-separated source rendering is less conversational but meets the locked factual and correction requirements.
+PASS generalize-avery-unnamed-mystery-callback [2/3]: Correct callback and unknown title boundary, with a longer-than-needed retelling of the known mystery example.
+PASS generalize-robin-ambiguous-repeat-without-antecedent [3/3]: Appropriate local clarification of a genuinely missing antecedent; zero provider calls.
+PASS generalize-robin-earlier-pot-not-finished-arrangement [3/3]: The response directly corrects the completion premise with the recorded future wish and not-yet-completed status, without importing the earlier mint-pot example.
+PASS generalize-alex-task-list-not-sibling-character-judgment [2/3]: Acceptable unknown-opinion boundary under the locked interpretation that nearest known context is optional when all newly requested content is unauthored. However, the reply gives weakly relevant relationship context instead of the organizing habit. The planner's optional P04/P09 context exhausted the two-source disclosure before direct P07; it was then withheld. This is a prioritization/quality concern, not treated as a new mandatory-context gate.
+PASS generalize-alex-monitoring-sleep-not-normality [3/3]: Useful current-focus context accompanies the honest missing-detail boundary without manufacturing a current sleep finding.
+
+The original 16 cases are regression evidence. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

@@ -1,0 +1,119 @@
+PROPOSED SELECTION LIST — RESEARCH ONLY
+8 October 2026 | 68 catalogue entries
+65 DSM-5-TR candidate options, 2 ICD-11 comparisons, 1 non-disorder comparator.
+Not an exhaustive DSM inventory. No options have been added to the application.
+
+Tiers: A = proposed first authoring wave; B = expanded; C = specialist/evidence gaps;
+D = separate ICD-11 comparison. These are project recommendations, not clinical
+severity rankings. Every case still needs authoring and review.
+
+NEURODEVELOPMENTAL
+  [B] Attention-deficit/hyperactivity disorder (ADHD)
+  [B] Autism spectrum disorder
+  [B] Specific learning disorder
+  [C] Language disorder
+  [C] Intellectual developmental disorder (intellectual disability)
+  [C] Tourette's disorder (Tourette syndrome)
+
+DEPRESSIVE
+  [A] Major depressive disorder
+  [B] Persistent depressive disorder
+  [C] Disruptive mood dysregulation disorder (DMDD)
+  [C] Premenstrual dysphoric disorder
+
+BIPOLAR AND RELATED
+  [B] Bipolar I disorder
+  [B] Bipolar II disorder
+  [C] Cyclothymic disorder
+
+ANXIETY
+  [A] Generalized anxiety disorder
+  [A] Panic disorder
+  [A] Social anxiety disorder
+  [B] Specific phobia
+  [B] Agoraphobia
+  [B] Separation anxiety disorder
+  [C] Selective mutism
+
+OBSESSIVE-COMPULSIVE AND RELATED
+  [A] Obsessive-compulsive disorder (OCD)
+  [B] Body dysmorphic disorder
+  [B] Hoarding disorder
+  [B] Trichotillomania (hair-pulling disorder)
+  [B] Excoriation (skin-picking) disorder
+
+TRAUMA AND STRESSOR-RELATED
+  [B] Posttraumatic stress disorder (PTSD)
+  [B] Acute stress disorder
+  [A] Adjustment disorders
+  [B] Prolonged grief disorder
+  [C] Reactive attachment disorder
+  [C] Disinhibited social engagement disorder
+
+DISSOCIATIVE
+  [C] Depersonalization/derealization disorder
+  [C] Dissociative amnesia
+  [C] Dissociative identity disorder
+
+SOMATIC SYMPTOM AND RELATED
+  [B] Somatic symptom disorder
+  [B] Illness anxiety disorder
+  [C] Functional neurological symptom disorder (conversion disorder)
+
+FEEDING AND EATING
+  [C] Anorexia nervosa
+  [C] Bulimia nervosa
+  [B] Binge-eating disorder
+  [C] Avoidant/restrictive food intake disorder (ARFID)
+
+ELIMINATION
+  [C] Enuresis
+  [C] Encopresis
+
+SLEEP-WAKE
+  [A] Insomnia disorder
+
+DISRUPTIVE, IMPULSE-CONTROL AND CONDUCT
+  [C] Oppositional defiant disorder
+  [C] Conduct disorder
+
+SUBSTANCE-RELATED AND ADDICTIVE
+  [A] Alcohol use disorder
+  [B] Cannabis use disorder
+  [B] Opioid use disorder
+  [B] Stimulant use disorder
+  [B] Sedative, hypnotic, or anxiolytic use disorder
+  [B] Tobacco use disorder
+  [B] Gambling disorder
+
+SCHIZOPHRENIA SPECTRUM AND PSYCHOTIC
+  [C] Schizophrenia
+  [C] Schizophreniform disorder
+  [C] Brief psychotic disorder
+  [C] Delusional disorder
+  [C] Schizoaffective disorder
+
+NEUROCOGNITIVE
+  [C] Delirium
+  [C] Mild neurocognitive disorder
+  [C] Major neurocognitive disorder
+
+PERSONALITY
+  [C] Borderline personality disorder
+  [C] Avoidant personality disorder
+  [C] Obsessive-compulsive personality disorder
+
+GENDER DYSPHORIA
+  [C] Gender dysphoria
+
+ICD-11 COMPARISON
+  [D] Complex PTSD — ICD-11 comparison
+  [D] Gaming disorder — ICD-11 comparison
+
+COMPARISON CASE
+  [A] No disorder assigned / ordinary stress / diagnostic uncertainty
+
+For each option's clinical summary, timeline, proposed stages and sources,
+open 01-Research-report.html. For unexpanded chapters and remaining categories,
+see 05-Search-method-and-gaps.txt.
+

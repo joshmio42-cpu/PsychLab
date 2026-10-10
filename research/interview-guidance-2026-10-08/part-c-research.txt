@@ -1,0 +1,172 @@
+INTERVIEW GUIDANCE RESEARCH — PART C
+Access/review date: 2026-10-08
+Scope: catalogue indices 46 through 66 inclusive. All 21 exact identifiers/names match the current app catalogue. Output part-c.json contains 103 original inquiry checkpoints, disorder-specific course notes, differentials, an assessment reference and limitations for each entry.
+
+Coverage:
+46. alcohol — Alcohol use disorder
+47. cannabis — Cannabis use disorder
+48. opioid — Opioid use disorder
+49. stimulant — Stimulant use disorder
+50. sedative — Sedative, hypnotic, or anxiolytic use disorder
+51. tobacco — Tobacco use disorder
+52. gambling — Gambling disorder
+53. schizophrenia — Schizophrenia
+54. schizophreniform — Schizophreniform disorder
+55. brief_psychotic — Brief psychotic disorder
+56. delusional — Delusional disorder
+57. schizoaffective — Schizoaffective disorder
+58. delirium — Delirium
+59. mild_ncd — Mild neurocognitive disorder
+60. major_ncd — Major neurocognitive disorder
+61. bpd — Borderline personality disorder
+62. avoidant_pd — Avoidant personality disorder
+63. ocpd — Obsessive-compulsive personality disorder
+64. gender_dysphoria — Gender dysphoria
+65. cptsd — Complex PTSD — ICD-11 comparison
+66. gaming — Gaming disorder — ICD-11 comparison
+
+What this research supports
+These are original educational interview prompts organized around relevant history, functioning, context and competing explanations. They are not reproduced DSM criteria, validated test items, diagnostic thresholds or a complete clinical interview. Asking or ticking a prompt does not establish that a criterion is present. A trainer should link any conclusion to actual recorded evidence and mark missing information as unknown.
+
+Public APA/NIH/CDC/WHO clinical summaries and published assessment guidance were searched and opened where available. No licensed complete DSM-5-TR manual or proprietary SCID item set was accessed. The DSM-5 table from SAMHSA is historical context. Public summaries omit details, specifiers and exceptions; the app must not claim full DSM coverage or clinical validation.
+
+Assessment choices
+AUDIT-C, TAPS, PGSI, SCID-5/SCID-5-PD, 4AT and ITQ are named as real assessment references, with links and interpretation limits. The proposed feature does not administer, reproduce, calculate or invent their scores. Cognitive cases recommend comprehensive assessment with examples of brief detection tools; gender dysphoria and ICD-11 gaming use an explicitly described clinical assessment rather than an invented diagnosis quiz. Assessment age, language, context, administration conditions and applicable licensing must be reviewed before any later instrument implementation.
+
+Key integration distinctions
+- Longer-term evidence must come from the authored premorbid/longitudinal history. Simulating extra days cannot create childhood onset, a past-year use-disorder window or a six-month course retrospectively.
+- For psychosis: brief psychotic disorder requires recovery within its brief course; schizophreniform is the intermediate course; schizophrenia requires its longer overall disturbance and active-phase review. Schizoaffective requires a mood–psychosis timeline, including psychosis outside a major mood episode and the majority-course mood requirement. Mood-linked psychosis alone does not meet that distinction.
+- Delirium is an urgent medical-assessment scenario; a quiet or fluctuating presentation must not be mistaken for a normal interview or simple dementia. 4AT guidance is setting-sensitive.
+- Substance use, physiological dependence, intoxication, withdrawal and use disorder are different constructs. Appropriate supervised opioid tolerance/withdrawal does not itself establish OUD. Benzodiazepine interruption, severe alcohol withdrawal and opioid overdose require medical urgency rather than a quiz result.
+- Personality cases require longstanding, cross-context evidence. An intense emotional episode or recent anxious week is insufficient; bipolar episodes and trauma-related conditions remain alternatives.
+- Gender diversity is not a disorder. Assess distress and functioning, development, social adversity and the person's own goals without using identity or pronouns as diagnostic evidence.
+- CPTSD and gaming entries retain their ICD-11 comparison status. CPTSD requires PTSD plus the additional self-organization pattern; repeated trauma by itself is insufficient. Gaming hours alone do not establish disorder.
+- A named assessment is not interchangeable with the original five prompts. Educational checklist completeness must not be reported as a probability, validated score or confirmation of diagnosis.
+
+Access log and sources
+alcohol: NIAAA — Alcohol use disorder: from risk to diagnosis to recovery
+https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-use-disorder-risk-diagnosis-recovery
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+audit: NIAAA — Screen and assess: use quick, effective methods
+https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/screen-and-assess-use-quick-effective-methods
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+taps: NIDA — Tobacco, Alcohol, Prescription Medication, and Other Substance Use Screening
+https://datashare.nida.nih.gov/instrument/tobacco-alcohol-prescription-medication-and-other-substance-use-screening
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+substances: APA — What is a substance use disorder?
+https://www.psychiatry.org/patients-families/addiction-substance-use-disorders/what-is-a-substance-use-disorder
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+cannabis: CDC — Understanding your risk for cannabis use disorder
+https://www.cdc.gov/cannabis/health-effects/cannabis-use-disorder.html
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+opioid: CDC — Opioid use disorder: diagnosis
+https://www.cdc.gov/overdose-prevention/hcp/clinical-care/opioid-use-disorder-diagnosis.html
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+opioidSafety: CDC — Save a life from prescription opioid overdose
+https://www.cdc.gov/rx-awareness/prevent/index.html
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+stimulant: CDC — Stimulants
+https://www.cdc.gov/overdose-prevention/about/stimulant-overdose.html
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+sedative: FDA — Benzodiazepine boxed warning, dependence and withdrawal
+https://www.fda.gov/drugs/drug-safety-and-availability/fda-requiring-boxed-warning-updated-improve-safe-use-benzodiazepine-drug-class
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+tobacco: CDC — Why quitting smoking is hard
+https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/quit-smoking-medications/why-quitting-smoking-is-hard/
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+gambling: APA — What is gambling disorder?
+https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+gamblingNice: NICE NG248 — Gambling-related harms: recommendations
+https://www.nice.org.uk/guidance/ng248/chapter/Recommendations
+Access: Official indexed recommendation/rationale excerpts inspected; direct page repeatedly returned 403. APA gambling page opened successfully.
+
+psychosis: APA — What is schizophrenia? Related psychotic conditions
+https://www.psychiatry.org/patients-families/schizophrenia/what-is-schizophrenia
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+psychosisNimh: NIMH — Understanding psychosis
+https://www.nimh.nih.gov/health/publications/understanding-psychosis
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+psychosisDsm: SAMHSA — DSM-IV to DSM-5 psychotic disorders comparison
+https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t20/
+Access: Official SAMHSA comparison table indexed text inspected; direct open returned bot challenge. APA public course descriptions opened successfully. Historical DSM-5 table, not the complete DSM-5-TR manual.
+
+schizoaffective: Malaspina et al. — Schizoaffective disorder in the DSM-5
+https://pubmed.ncbi.nlm.nih.gov/23707642/
+Access: PubMed indexed abstract of DSM-5 work-group paper inspected; direct open returned no usable body. APA course paragraph independently opened.
+
+scid: Columbia University, SCID developer laboratory — SCID-5
+https://www.columbiapsychiatry.org/research/research-labs/diagnostic-and-assessment-lab/structured-clinical-interview-dsm-disorders-11
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+delirium: NICE CG103 — Delirium: assessment and diagnosis recommendations
+https://www.nice.org.uk/guidance/cg103/chapter/Recommendations
+Access: Official indexed recommendations 1.3, 1.5 and 1.6 inspected; direct page repeatedly returned 403. Original 4AT developer website opened successfully.
+
+fourat: 4AT developers — Rapid clinical test for delirium detection
+https://www.the4at.com/
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+cognitive: NIA — Assessing cognitive impairment in older patients
+https://www.nia.nih.gov/health/health-care-professionals-information/assessing-cognitive-impairment-older-patients
+Access: Official indexed article paragraphs inspected; direct article open returned bot challenge. APA neurocognitive and dementia sources opened successfully.
+
+mild: APA — Mild neurocognitive disorder fact sheet
+https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Mild-Neurocognitive-Disorder.pdf
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+major: APA — Dementia and Alzheimer's disease
+https://www.psychiatry.org/patients-families/alzheimers/alzheimers
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+bpd: NIMH — Borderline personality disorder
+https://www.nimh.nih.gov/health/publications/borderline-personality-disorder
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+personality: APA — What are personality disorders?
+https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+gender: APA — What is gender dysphoria?
+https://www.psychiatry.org/patients-families/gender-dysphoria/what-is-gender-dysphoria
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+cptsd: VA National Center for PTSD — Complex PTSD: history and definitions
+https://www.ptsd.va.gov/professional/treat/essentials/complex_ptsd.asp
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+itq: VA National Center for PTSD — International Trauma Questionnaire
+https://www.ptsd.va.gov/professional/assessment/adult-sr/itq.asp
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+gaming: WHO — Addictive behaviours: gaming disorder
+https://www.who.int/news-room/questions-and-answers/item/addictive-behaviours-gaming-disorder
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+gamingDsm: APA — Internet gaming
+https://www.psychiatry.org/patients-families/internet-gaming
+Access: Official/developer webpage or fact-sheet PDF opened successfully; relevant sections inspected.
+
+Additional source attempts (not necessary to consume the JSON)
+NIDA prescription-drug misuse PDF returned a JavaScript bot check; indexed excerpt was inspected, but the clearer successfully opened FDA benzodiazepine warning and CDC stimulant page support the safety statements instead. No claim of reading the full NIDA PDF is made.
+NICE NG248 rationale/context excerpts supported PGSI as a gambling-harm assessment reference; thresholds were intentionally not imported.
+WHO's gaming public Q&A says normally at least 12 months; the implementation note defers exceptions to the full ICD-11 requirements instead of inventing shortened-period rules.
+
+Verification
+A local read/JSON parse confirmed 21 entries, 103 checkpoints, 4–6 checkpoints per entry, required fields present, and exact identifier/name alignment with catalogue indices 46–66. No app files were modified by this research subtask.
+
+Final cross-part review, 8 October 2026
+Cannabis, stimulant, sedative and tobacco prompts now explicitly inquire about the past 12 months for consistent longitudinal history. The NIDA TAPS reference was reopened and confirms its initial screening window is the previous 12 months, with follow-up questions covering three months. This supports the inquiry window only; it is not a claim that screening duration establishes DSM criteria, nor a rule excluding a shorter emerging problem. No TAPS responses or scores are implemented.

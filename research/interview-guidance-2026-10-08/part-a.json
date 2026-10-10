@@ -1,0 +1,1273 @@
+[
+  {
+    "id": "adhd",
+    "name": "Attention-deficit/hyperactivity disorder (ADHD)",
+    "course": "Look beyond the recent diary: persistent symptoms for six months, signs before age 12, and difficulties in more than one setting.",
+    "checklist": [
+      {
+        "id": "attention",
+        "label": "Attention during ordinary tasks",
+        "question": "Which tasks are difficult to finish, and what happens when you try?"
+      },
+      {
+        "id": "activity_impulse",
+        "label": "Activity and impulse control",
+        "question": "When is waiting or slowing down difficult?"
+      },
+      {
+        "id": "childhood_course",
+        "label": "Childhood pattern",
+        "question": "What do earlier school reports or caregivers recall before age 12?"
+      },
+      {
+        "id": "settings_impact",
+        "label": "Different settings and consequences",
+        "question": "How does this affect responsibilities at home and school or work?"
+      },
+      {
+        "id": "alternatives",
+        "label": "Sleep, health and learning context",
+        "question": "When did sleep, mood or learning difficulties appear compared with the attention problems?"
+      }
+    ],
+    "differentials": [
+      "Sleep disruption or medical effects",
+      "Anxiety or depression",
+      "Specific learning or language difficulties"
+    ],
+    "test": {
+      "name": "Structured developmental ADHD assessment",
+      "purpose": "Combine current examples, childhood records and reports across settings.",
+      "interpretation": "No single test establishes ADHD. Age-appropriate ratings assist a qualified assessment; checklist completion is not diagnosis.",
+      "url": "https://www.cdc.gov/adhd/diagnosis/index.html"
+    },
+    "cautions": "Use child/caregiver and school accounts together. Recent adult attention loss requires a broader medical and mood review.",
+    "sources": [
+      {
+        "title": "NIMH: Attention-deficit/hyperactivity disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know"
+      },
+      {
+        "title": "CDC: Diagnosing ADHD",
+        "url": "https://www.cdc.gov/adhd/diagnosis/index.html"
+      }
+    ]
+  },
+  {
+    "id": "autism",
+    "name": "Autism spectrum disorder",
+    "course": "Assess an early developmental pattern, including differences that become noticeable only as demands increase; recent simulated events do not establish onset.",
+    "checklist": [
+      {
+        "id": "communication",
+        "label": "Social communication across contexts",
+        "question": "Which parts of conversation or understanding people take extra effort?"
+      },
+      {
+        "id": "patterns",
+        "label": "Routines, interests and repetitive patterns",
+        "question": "What happens when a familiar routine changes?"
+      },
+      {
+        "id": "sensory",
+        "label": "Sensory experiences",
+        "question": "Which sounds, textures or environments are unusually difficult or helpful?"
+      },
+      {
+        "id": "development",
+        "label": "Early development and collateral",
+        "question": "What do caregivers or early records tell us about communication and play?"
+      },
+      {
+        "id": "support",
+        "label": "Strengths, functioning and support",
+        "question": "What works well for you, and what support makes daily life easier?"
+      }
+    ],
+    "differentials": [
+      "Language or hearing differences",
+      "ADHD or anxiety",
+      "Intellectual developmental disability, which can coexist"
+    ],
+    "test": {
+      "name": "Comprehensive developmental autism assessment",
+      "purpose": "Integrate observation, developmental history, communication and adaptive functioning.",
+      "interpretation": "Screening identifies a need for evaluation; neither a brief checklist nor fluent text establishes or excludes autism.",
+      "url": "https://www.cdc.gov/autism/diagnosis/index.html"
+    },
+    "cautions": "For toddlers use caregiver history and observed play; do not infer intelligence, empathy or support needs from speech style.",
+    "sources": [
+      {
+        "title": "NIMH: Autism spectrum disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder"
+      },
+      {
+        "title": "CDC: Screening for autism spectrum disorder",
+        "url": "https://www.cdc.gov/autism/diagnosis/index.html"
+      }
+    ]
+  },
+  {
+    "id": "learning",
+    "name": "Specific learning disorder",
+    "course": "School-age difficulties persist despite targeted help for at least six months; adult recognition still requires educational history.",
+    "checklist": [
+      {
+        "id": "domain",
+        "label": "Specific academic difficulty",
+        "question": "Which reading, writing or number tasks remain hard even with practice?"
+      },
+      {
+        "id": "help",
+        "label": "Response to targeted support",
+        "question": "What teaching or support has been tried, and what changed?"
+      },
+      {
+        "id": "course",
+        "label": "School history",
+        "question": "When were these difficulties first noticed?"
+      },
+      {
+        "id": "impact",
+        "label": "Practical impact",
+        "question": "How do these tasks affect school, work or everyday independence?"
+      },
+      {
+        "id": "access",
+        "label": "Learning opportunity and language",
+        "question": "What languages and teaching opportunities were available, and have hearing or vision been assessed?"
+      }
+    ],
+    "differentials": [
+      "Inadequate educational opportunity or unfamiliar instructional language",
+      "Hearing or vision impairment",
+      "Broader developmental disability or ADHD"
+    ],
+    "test": {
+      "name": "Comprehensive psychoeducational assessment",
+      "purpose": "Combine achievement assessment, school records and response to instruction.",
+      "interpretation": "Standardized results need developmental and educational interpretation; low grades alone are not a diagnosis.",
+      "url": "https://www.psychiatry.org/patients-families/specific-learning-disorder/what-is-specific-learning-disorder"
+    },
+    "cautions": "Do not equate learning disability with low intelligence. Interpret assessments in the person's language and educational context.",
+    "sources": [
+      {
+        "title": "APA: What are specific learning disorders?",
+        "url": "https://www.psychiatry.org/patients-families/specific-learning-disorder/what-is-specific-learning-disorder"
+      }
+    ]
+  },
+  {
+    "id": "language",
+    "name": "Language disorder",
+    "course": "Developmental language difficulties may persist into adulthood; evaluate the early history rather than treating a short conversation as a language test.",
+    "checklist": [
+      {
+        "id": "understanding",
+        "label": "Understanding language",
+        "question": "Which instructions or kinds of explanations are difficult to follow?"
+      },
+      {
+        "id": "expression",
+        "label": "Expressing ideas",
+        "question": "When is it hard to find words or tell someone what happened?"
+      },
+      {
+        "id": "early_history",
+        "label": "Early language development",
+        "question": "How did speech and understanding develop when you were younger?"
+      },
+      {
+        "id": "language_context",
+        "label": "All languages and hearing",
+        "question": "Which languages do you use, and are difficulties similar in each?"
+      },
+      {
+        "id": "participation",
+        "label": "Communication impact",
+        "question": "How does this affect learning, relationships or getting needs met?"
+      }
+    ],
+    "differentials": [
+      "Hearing impairment",
+      "Language exposure or multilingual assessment mismatch",
+      "Autism or broader developmental difficulties"
+    ],
+    "test": {
+      "name": "Speech-language pathology assessment",
+      "purpose": "Use observation, language sampling, informant accounts and suitable standardized measures.",
+      "interpretation": "Assessment describes language needs and informs diagnosis; a chatbot transcript is not a standardized language assessment.",
+      "url": "https://www.nidcd.nih.gov/health/developmental-language-disorder"
+    },
+    "cautions": "Multilingualism does not cause language disorder. NIDCD's DLD terminology is related to, but not automatically identical with, every DSM language-disorder presentation.",
+    "sources": [
+      {
+        "title": "NIDCD: Developmental language disorder",
+        "url": "https://www.nidcd.nih.gov/health/developmental-language-disorder"
+      }
+    ]
+  },
+  {
+    "id": "idd",
+    "name": "Intellectual developmental disorder (intellectual disability)",
+    "course": "Intellectual and adaptive limitations begin during development; acquired decline later in life requires a different evaluation.",
+    "checklist": [
+      {
+        "id": "learning_reasoning",
+        "label": "Learning and reasoning history",
+        "question": "What kinds of learning have needed repeated support since childhood?"
+      },
+      {
+        "id": "practical",
+        "label": "Practical daily skills",
+        "question": "Which daily activities can you do independently, and where is help useful?"
+      },
+      {
+        "id": "conceptual_social",
+        "label": "Communication and social understanding",
+        "question": "What helps with understanding information and navigating social situations?"
+      },
+      {
+        "id": "development",
+        "label": "Developmental records",
+        "question": "What earlier assessments or caregiver observations are available?"
+      },
+      {
+        "id": "context_strengths",
+        "label": "Strengths and access",
+        "question": "What skills and interests are strengths, and what barriers make tasks harder?"
+      }
+    ],
+    "differentials": [
+      "Specific learning or language disorder",
+      "Autism, including possible co-occurrence",
+      "Acquired neurocognitive decline"
+    ],
+    "test": {
+      "name": "Intellectual and adaptive-functioning assessment",
+      "purpose": "Pair culturally appropriate cognitive evaluation with everyday skills and informant history; adaptive tools may include Vineland scales.",
+      "interpretation": "A score alone is insufficient. Qualified interpretation of both functioning domains and developmental onset is required.",
+      "url": "https://www.psychiatry.org/patients-families/intellectual-disability/what-is-intellectual-disability"
+    },
+    "cautions": "Do not infer intellectual ability from limited speech. Very young children need developmental assessment; avoid invented IQ scores or support levels.",
+    "sources": [
+      {
+        "title": "APA: What is intellectual disability?",
+        "url": "https://www.psychiatry.org/patients-families/intellectual-disability/what-is-intellectual-disability"
+      }
+    ]
+  },
+  {
+    "id": "tourette",
+    "name": "Tourette's disorder (Tourette syndrome)",
+    "course": "Establish childhood onset before 18 and more than a year since tics began; motor and vocal tics may change or fluctuate.",
+    "checklist": [
+      {
+        "id": "motor_vocal",
+        "label": "Motor and vocal tic history",
+        "question": "What repeated movements or sounds have occurred, even if they are absent today?"
+      },
+      {
+        "id": "onset_course",
+        "label": "Age at onset and changing course",
+        "question": "When did the first tic appear, and how has the pattern changed?"
+      },
+      {
+        "id": "experience",
+        "label": "Experience around tics",
+        "question": "What do you notice before a tic or when trying to hold it back?"
+      },
+      {
+        "id": "impact",
+        "label": "Pain and participation",
+        "question": "Do tics affect comfort, school, work or interactions?"
+      },
+      {
+        "id": "other_causes",
+        "label": "Medical and medication context",
+        "question": "What medicines, illnesses or other movements need to be considered?"
+      }
+    ],
+    "differentials": [
+      "Persistent motor or vocal tic disorder",
+      "Provisional tic disorder",
+      "Functional tic-like symptoms or neurological/medication effects"
+    ],
+    "test": {
+      "name": "Clinical tic and developmental assessment",
+      "purpose": "Review tic types, chronology, observation and possible alternative causes.",
+      "interpretation": "A clinician interprets the pattern; text descriptions cannot substitute for examining movement symptoms.",
+      "url": "https://www.cdc.gov/tourette-syndrome/diagnosis/index.html"
+    },
+    "cautions": "Swearing is not required. Lack of impairment does not by itself exclude Tourette's; sudden new tic-like symptoms need appropriate assessment.",
+    "sources": [
+      {
+        "title": "CDC: Diagnosing tic disorders",
+        "url": "https://www.cdc.gov/tourette-syndrome/diagnosis/index.html"
+      }
+    ]
+  },
+  {
+    "id": "mdd",
+    "name": "Major depressive disorder",
+    "course": "Explore a depressive episode lasting at least two weeks alongside the lifetime mood history; diary length alone cannot establish an episode.",
+    "checklist": [
+      {
+        "id": "mood_interest",
+        "label": "Mood and loss of enjoyment",
+        "question": "How have your mood and enjoyment changed from your usual self?"
+      },
+      {
+        "id": "episode_course",
+        "label": "Episode continuity",
+        "question": "When did this change begin, and has it been present most days?"
+      },
+      {
+        "id": "associated",
+        "label": "Sleep, energy and thinking",
+        "question": "What has changed in sleep, appetite, energy or concentration?"
+      },
+      {
+        "id": "impact",
+        "label": "Daily functioning",
+        "question": "Which responsibilities or relationships have become difficult?"
+      },
+      {
+        "id": "safety",
+        "label": "Safety and hopelessness",
+        "question": "Have you had thoughts about dying or harming yourself, and do you feel safe now?"
+      },
+      {
+        "id": "mood_history",
+        "label": "Past elevation and other explanations",
+        "question": "Have there been separate periods of unusually high energy with little need for sleep, or health or substance changes?"
+      }
+    ],
+    "differentials": [
+      "Bipolar depression",
+      "Medical or substance effects",
+      "Grief or adjustment-related distress"
+    ],
+    "test": {
+      "name": "APA depression severity measure (adapted PHQ-9)",
+      "purpose": "Record recent adult depressive symptom burden alongside an interview.",
+      "interpretation": "This linked adaptation uses seven days. It supports severity assessment, not definitive diagnosis; use an appropriate adolescent version for youth.",
+      "url": "https://www.psychiatry.org/getmedia/a3986be5-94af-42e7-afce-19234c2f4998/APA-DSM5TR-SeverityMeasureForDepressionAdult.pdf"
+    },
+    "cautions": "Adolescents may describe irritability. Safety concerns require direct assessment regardless of any score.",
+    "sources": [
+      {
+        "title": "NIMH: Depression",
+        "url": "https://www.nimh.nih.gov/health/publications/depression"
+      },
+      {
+        "title": "APA: Adult depression severity measure, adapted PHQ-9",
+        "url": "https://www.psychiatry.org/getmedia/a3986be5-94af-42e7-afce-19234c2f4998/APA-DSM5TR-SeverityMeasureForDepressionAdult.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pdd",
+    "name": "Persistent depressive disorder",
+    "course": "Chronic depressed mood usually spans at least two years in adults, or one year in children/adolescents; investigate better intervals and superimposed episodes.",
+    "checklist": [
+      {
+        "id": "long_course",
+        "label": "Long-term mood baseline",
+        "question": "How long has feeling low been part of your usual life?"
+      },
+      {
+        "id": "better_intervals",
+        "label": "Periods of improvement",
+        "question": "What was the longest time you felt more like yourself?"
+      },
+      {
+        "id": "associated",
+        "label": "Energy and self-view",
+        "question": "Over those years, how have energy, confidence and hope changed?"
+      },
+      {
+        "id": "episodes",
+        "label": "More intense episodes",
+        "question": "Were there separate stretches when things became substantially worse or unusually energized?"
+      },
+      {
+        "id": "impact_safety",
+        "label": "Functioning and safety",
+        "question": "What has this cost you in daily life, and have you felt unsafe or wished not to be alive?"
+      }
+    ],
+    "differentials": [
+      "Recurrent major depressive episodes",
+      "Bipolar spectrum illness",
+      "Medical/substance effects or continuing adversity"
+    ],
+    "test": {
+      "name": "Longitudinal mood assessment",
+      "purpose": "Build a timeline using the person's history and available collateral.",
+      "interpretation": "A short symptom scale can describe current severity but cannot prove a chronic course or definitively diagnose PDD.",
+      "url": "https://www.psychiatry.org/patients-families/depression/what-is-depression"
+    },
+    "cautions": "Do not describe every chronic depression as mild. Review safety and the possibility of major episodes; a 28-day diary cannot supply years of evidence.",
+    "sources": [
+      {
+        "title": "APA: Depression and related conditions",
+        "url": "https://www.psychiatry.org/patients-families/depression/what-is-depression"
+      },
+      {
+        "title": "NIMH: Depression",
+        "url": "https://www.nimh.nih.gov/health/publications/depression"
+      }
+    ]
+  },
+  {
+    "id": "dmdd",
+    "name": "Disruptive mood dysregulation disorder (DMDD)",
+    "course": "Review at least a year of persistent irritability and frequent severe outbursts; APA specifies onset before 10 and first diagnosis between 6 and 18.",
+    "checklist": [
+      {
+        "id": "outbursts",
+        "label": "Outburst frequency and context",
+        "question": "Walk me through a recent outburst and what happened just before it."
+      },
+      {
+        "id": "between",
+        "label": "Mood between outbursts",
+        "question": "What is mood like on an ordinary day between these episodes?"
+      },
+      {
+        "id": "timeline",
+        "label": "Onset and longer well periods",
+        "question": "When did this start, and were there several months when it stopped?"
+      },
+      {
+        "id": "settings",
+        "label": "Home, school and peer settings",
+        "question": "What do caregivers, teachers and the child each notice?"
+      },
+      {
+        "id": "episodic",
+        "label": "Distinct high-energy episodes",
+        "question": "Has there been a separate period of unusually high energy and much less need for sleep?"
+      }
+    ],
+    "differentials": [
+      "Episodic bipolar mood disorder",
+      "Oppositional defiant disorder",
+      "ADHD, anxiety or developmental/contextual difficulties"
+    ],
+    "test": {
+      "name": "Affective Reactivity Index (ARI), age-appropriate form",
+      "purpose": "Describe irritability with youth and caregiver information.",
+      "interpretation": "ARI assesses irritability, not DMDD specifically. The linked parent adaptation is for ages 6–17 and a seven-day interval; it cannot prove the year-long course.",
+      "url": "https://www.psychiatry.org/getmedia/773055df-7885-4398-bda8-42e3a3b1b21e/APA-DSM5TR-Level2IrritabilityParentOfChildAge6To17.pdf"
+    },
+    "cautions": "Use both the child's account and collateral. APA's age rule is more precise than NIMH's simplified 6–10 wording; do not automatically add ODD when DMDD criteria are met.",
+    "sources": [
+      {
+        "title": "APA: Disruptive mood dysregulation disorder fact sheet",
+        "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Disruptive-Mood-Disregulation-Disorder.pdf"
+      },
+      {
+        "title": "NIMH: DMDD — the basics",
+        "url": "https://www.nimh.nih.gov/health/publications/disruptive-mood-dysregulation-disorder"
+      },
+      {
+        "title": "APA: Parent ARI irritability measure, ages 6–17",
+        "url": "https://www.psychiatry.org/getmedia/773055df-7885-4398-bda8-42e3a3b1b21e/APA-DSM5TR-Level2IrritabilityParentOfChildAge6To17.pdf"
+      }
+    ]
+  },
+  {
+    "id": "pmdd",
+    "name": "Premenstrual dysphoric disorder",
+    "course": "Establish repeated mood and functional changes before menstruation with improvement afterwards; use prospective daily records across at least two menstrual cycles to clarify the pattern.",
+    "checklist": [
+      {
+        "id": "cycle",
+        "label": "Relationship to menstruation",
+        "question": "Where in your cycle do these changes begin and ease?"
+      },
+      {
+        "id": "mood_pattern",
+        "label": "Specific emotional changes",
+        "question": "What changes in mood, tension or irritability stand out then?"
+      },
+      {
+        "id": "other_phases",
+        "label": "Symptoms outside that phase",
+        "question": "How do you feel during the rest of the cycle?"
+      },
+      {
+        "id": "impairment",
+        "label": "Recurring impact",
+        "question": "What becomes difficult at school, work or in relationships during those days?"
+      },
+      {
+        "id": "records_context",
+        "label": "Daily records and other causes",
+        "question": "What daily records, medicines or ongoing mood difficulties help explain the pattern?"
+      }
+    ],
+    "differentials": [
+      "Premenstrual worsening of another disorder",
+      "PMS without comparable impairment",
+      "Medication or other health effects"
+    ],
+    "test": {
+      "name": "Daily Record of Severity of Problems (DRSP)",
+      "purpose": "Prospectively track symptoms and impairment across menstrual phases.",
+      "interpretation": "The published measure supports clinical assessment; retrospective recall or a single daily score cannot establish PMDD. No DRSP scoring is implemented here.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16172836/"
+    },
+    "cautions": "Do not infer menstruation from name, gender or life-stage label. The DRSP validation cited used adults and DSM-IV-era definitions; current clinical interpretation remains necessary.",
+    "sources": [
+      {
+        "title": "APA: Depression and related conditions",
+        "url": "https://www.psychiatry.org/patients-families/depression/what-is-depression"
+      },
+      {
+        "title": "Endicott, Nee and Harrison: DRSP reliability and validity (2006; abstract)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16172836/"
+      },
+      {
+        "title": "Office on Women's Health: Premenstrual dysphoric disorder",
+        "url": "https://womenshealth.gov/menstrual-cycle/premenstrual-syndrome/premenstrual-dysphoric-disorder-pmdd"
+      },
+      {
+        "title": "NHS: PMDD, diagnosis and prospective symptom diary",
+        "url": "https://www.nhs.uk/conditions/pmdd-premenstrual-dysphoric-disorder/"
+      }
+    ]
+  },
+  {
+    "id": "bipolar1",
+    "name": "Bipolar I disorder",
+    "course": "A manic episode is central: typically at least seven days, or a shorter severe episode requiring hospitalization. Depression may occur but is not required.",
+    "checklist": [
+      {
+        "id": "baseline_change",
+        "label": "Distinct change from usual mood and energy",
+        "question": "Describe the clearest period when your energy and behavior were unlike your usual self."
+      },
+      {
+        "id": "sleep_activity",
+        "label": "Sleep need and activity",
+        "question": "How much sleep did you need, and what were you doing during that time?"
+      },
+      {
+        "id": "course",
+        "label": "Episode duration and recovery",
+        "question": "How long did that period last, and what happened afterwards?"
+      },
+      {
+        "id": "severity",
+        "label": "Consequences and loss of control",
+        "question": "Did it disrupt responsibilities, require hospital care or involve experiences others did not share?"
+      },
+      {
+        "id": "exclusions",
+        "label": "Substances, health and collateral",
+        "question": "What medicines or substances were involved, and what did people close to you observe?"
+      }
+    ],
+    "differentials": [
+      "Substance/medication-related activation",
+      "Medical causes such as thyroid illness",
+      "Psychotic disorders; compare mood and psychosis chronology"
+    ],
+    "test": {
+      "name": "Specialist longitudinal mood assessment",
+      "purpose": "Reconstruct mania, depression, baseline functioning and collateral accounts.",
+      "interpretation": "Symptom ratings support assessment but cannot independently establish bipolar I. Severe mania or psychosis needs urgent clinical assessment.",
+      "url": "https://www.nimh.nih.gov/health/publications/bipolar-disorder"
+    },
+    "cautions": "Ordinary mood changes are insufficient. Assess safety, self-care and impaired judgment directly; do not assume dangerousness from the label.",
+    "sources": [
+      {
+        "title": "NIMH: Bipolar disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/bipolar-disorder"
+      },
+      {
+        "title": "APA: What are bipolar disorders?",
+        "url": "https://www.psychiatry.org/patients-families/bipolar-disorders/what-are-bipolar-disorders"
+      }
+    ]
+  },
+  {
+    "id": "bipolar2",
+    "name": "Bipolar II disorder",
+    "course": "Establish both hypomanic and major depressive episodes, without a manic episode; the hypomanic duration anchor is four consecutive days.",
+    "checklist": [
+      {
+        "id": "depression",
+        "label": "Depressive episodes",
+        "question": "Which low periods most affected your daily life, and how long did they last?"
+      },
+      {
+        "id": "hypomania",
+        "label": "Distinct increased-energy periods",
+        "question": "Were there separate stretches of increased energy that others noticed?"
+      },
+      {
+        "id": "duration_sleep",
+        "label": "Sleep need and duration",
+        "question": "During those stretches, what happened to sleep, and how many days did the change continue?"
+      },
+      {
+        "id": "mania_history",
+        "label": "History of more severe elevation",
+        "question": "Has any energized period caused major disruption, hospital care or psychosis?"
+      },
+      {
+        "id": "timeline_context",
+        "label": "Baseline and possible causes",
+        "question": "How did you function between episodes, and were medicines or substances involved?"
+      }
+    ],
+    "differentials": [
+      "Major depressive disorder with missed hypomania",
+      "Bipolar I if mania has occurred",
+      "Substance effects or chronic attention difficulties"
+    ],
+    "test": {
+      "name": "Specialist episode-history assessment",
+      "purpose": "Review both depressive and elevated periods with corroborating history.",
+      "interpretation": "No brief depression or mania scale definitively distinguishes bipolar II. A history consistent with mania changes the formulation.",
+      "url": "https://www.psychiatry.org/patients-families/bipolar-disorders/what-are-bipolar-disorders"
+    },
+    "cautions": "Hypomania may be remembered as productive, so ask about observable change. Bipolar II can involve severe depression; review safety separately.",
+    "sources": [
+      {
+        "title": "APA: What are bipolar disorders?",
+        "url": "https://www.psychiatry.org/patients-families/bipolar-disorders/what-are-bipolar-disorders"
+      },
+      {
+        "title": "NIMH: Bipolar disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/bipolar-disorder"
+      }
+    ]
+  },
+  {
+    "id": "cyclothymia",
+    "name": "Cyclothymic disorder",
+    "course": "Review a fluctuating subthreshold mood pattern across two years in adults or one year in youth; brief diary changes are insufficient.",
+    "checklist": [
+      {
+        "id": "highs",
+        "label": "Recurring energized periods",
+        "question": "What do your more energized stretches look like?"
+      },
+      {
+        "id": "lows",
+        "label": "Recurring low periods",
+        "question": "How are your lower stretches different from your usual mood?"
+      },
+      {
+        "id": "continuity",
+        "label": "Timeline and gaps",
+        "question": "Across the longer history, how long have the better intervals lasted?"
+      },
+      {
+        "id": "full_episodes",
+        "label": "Possible full mood episodes",
+        "question": "Has any period been severe or sustained enough to cause major disruption or require treatment?"
+      },
+      {
+        "id": "impact_causes",
+        "label": "Consequences and other causes",
+        "question": "How has the pattern affected relationships or responsibilities, and what else could explain it?"
+      }
+    ],
+    "differentials": [
+      "Bipolar I or II with full episodes",
+      "Substance or medication effects",
+      "Stress-related mood changes"
+    ],
+    "test": {
+      "name": "Longitudinal mood timeline with clinical assessment",
+      "purpose": "Compare symptom periods, gaps, functional effects and full-episode history.",
+      "interpretation": "Mood journals assist assessment but are not a definitive diagnosis; a short observation window cannot establish cyclothymia.",
+      "url": "https://www.nhs.uk/mental-health/conditions/cyclothymia/"
+    },
+    "cautions": "Do not equate hourly emotional shifts with cyclothymia. Subthreshold symptoms can still impair life; assess safety and changes suggesting a full episode.",
+    "sources": [
+      {
+        "title": "NHS: Cyclothymia",
+        "url": "https://www.nhs.uk/mental-health/conditions/cyclothymia/"
+      },
+      {
+        "title": "APA: What are bipolar disorders?",
+        "url": "https://www.psychiatry.org/patients-families/bipolar-disorders/what-are-bipolar-disorders"
+      }
+    ]
+  },
+  {
+    "id": "gad",
+    "name": "Generalized anxiety disorder",
+    "course": "Explore difficult-to-control worry across several areas on most days for at least six months, with age-appropriate associated features and impairment.",
+    "checklist": [
+      {
+        "id": "domains",
+        "label": "Breadth of worry",
+        "question": "What subjects keep coming back in your worries?"
+      },
+      {
+        "id": "control",
+        "label": "Difficulty disengaging",
+        "question": "What happens when you try to put the worries aside?"
+      },
+      {
+        "id": "course",
+        "label": "Persistence",
+        "question": "When did this pattern start, and how often is it present?"
+      },
+      {
+        "id": "body_sleep",
+        "label": "Tension, sleep and concentration",
+        "question": "How does worry affect your body, sleep or concentration?"
+      },
+      {
+        "id": "impact_causes",
+        "label": "Consequences and alternatives",
+        "question": "What does worry stop you doing, and what health or substance changes overlap with it?"
+      }
+    ],
+    "differentials": [
+      "Ordinary stress or adjustment difficulty",
+      "Other anxiety disorders with narrower triggers",
+      "Medical or substance-related symptoms"
+    ],
+    "test": {
+      "name": "APA Generalized Anxiety Disorder Severity Measure—Adult",
+      "purpose": "Assess recent anxiety burden after symptoms have been identified.",
+      "interpretation": "A severity aid, not a definitive diagnostic test; it cannot establish six-month duration. Use an age-appropriate youth assessment for children.",
+      "url": "https://www.psychiatry.org/getmedia/b1a256c4-1304-4610-8aca-0cc70b46ff53/APA-DSM5TR-SeverityMeasureForGeneralizedAnxietyDisorderAdult.pdf"
+    },
+    "cautions": "Do not apply an adult symptom-count rule to children. Check whether worry concerns actual ongoing danger and obtain caregiver context when appropriate.",
+    "sources": [
+      {
+        "title": "NIMH: Generalized anxiety disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+      },
+      {
+        "title": "APA: Adult generalized anxiety severity measure",
+        "url": "https://www.psychiatry.org/getmedia/b1a256c4-1304-4610-8aca-0cc70b46ff53/APA-DSM5TR-SeverityMeasureForGeneralizedAnxietyDisorderAdult.pdf"
+      },
+      {
+        "title": "AACAP: Anxiety disorder frequently asked questions",
+        "url": "https://www.aacap.org/AACAP/aacap/Families_and_Youth/Resource_Centers/Anxiety_Disorder_Resource_Center/FAQ.aspx"
+      }
+    ]
+  },
+  {
+    "id": "panic",
+    "name": "Panic disorder",
+    "course": "Recurrent unexpected panic attacks must be distinguished from isolated attacks; examine at least a month of continuing concern or related behavior changes.",
+    "checklist": [
+      {
+        "id": "attack",
+        "label": "Description of an attack",
+        "question": "Tell me what happened during the most recent sudden surge of fear."
+      },
+      {
+        "id": "unexpected",
+        "label": "Unexpected versus cue-linked attacks",
+        "question": "Were attacks surprising, or did they occur around a particular fear?"
+      },
+      {
+        "id": "aftermath",
+        "label": "Worry and changed behavior",
+        "question": "Since the attacks, what have you worried about or stopped doing?"
+      },
+      {
+        "id": "course",
+        "label": "Recurrence and duration",
+        "question": "When did attacks begin, and how long have the changes afterwards continued?"
+      },
+      {
+        "id": "physical_context",
+        "label": "Health and substance review",
+        "question": "What medical assessment or medicine and substance changes are relevant?"
+      }
+    ],
+    "differentials": [
+      "Panic attacks within another disorder",
+      "Cardiac, respiratory or endocrine causes",
+      "Substance or medication effects"
+    ],
+    "test": {
+      "name": "APA Panic Disorder Severity Measure—Adult",
+      "purpose": "Describe recent attacks, fear and avoidance as part of assessment.",
+      "interpretation": "Measures symptom burden, not a definitive diagnosis. A raised score does not establish unexpected attacks or exclude medical causes.",
+      "url": "https://www.psychiatry.org/getmedia/6ab8ea4f-e810-4c0c-b41c-16838293506d/APA-DSM5TR-SeverityMeasureForPanicDisorderAdult.pdf"
+    },
+    "cautions": "New severe chest symptoms, fainting or breathing difficulty require medical assessment rather than an assumption of panic. Use appropriate youth evaluation for adolescents.",
+    "sources": [
+      {
+        "title": "NIMH: Panic disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms"
+      },
+      {
+        "title": "APA: Adult panic disorder severity measure",
+        "url": "https://www.psychiatry.org/getmedia/6ab8ea4f-e810-4c0c-b41c-16838293506d/APA-DSM5TR-SeverityMeasureForPanicDisorderAdult.pdf"
+      }
+    ]
+  },
+  {
+    "id": "social_anxiety",
+    "name": "Social anxiety disorder",
+    "course": "Assess persistent fear of negative evaluation with avoidance or marked distress and functional effects, generally across at least six months.",
+    "checklist": [
+      {
+        "id": "evaluation",
+        "label": "Feared social outcome",
+        "question": "What do you fear other people might notice or think?"
+      },
+      {
+        "id": "situations",
+        "label": "Situations and breadth",
+        "question": "Which social or performance situations are difficult, and which feel comfortable?"
+      },
+      {
+        "id": "avoidance",
+        "label": "Avoidance and endurance",
+        "question": "What do you do to get through or avoid those situations?"
+      },
+      {
+        "id": "course",
+        "label": "Persistence and development",
+        "question": "When did this pattern begin, including around peers when you were younger?"
+      },
+      {
+        "id": "impact",
+        "label": "Lost opportunities and context",
+        "question": "How has this affected friendships, learning or work, and are bullying or communication differences involved?"
+      }
+    ],
+    "differentials": [
+      "Ordinary shyness without impairment",
+      "Autism or communication differences",
+      "Body-image preoccupation or broader anxiety"
+    ],
+    "test": {
+      "name": "APA Social Anxiety Disorder Severity Measure—Adult",
+      "purpose": "Describe recent fear, avoidance and interference.",
+      "interpretation": "A severity assessment aid, not a definitive diagnosis. Use developmentally appropriate interviewing or a suitable youth form for children.",
+      "url": "https://www.psychiatry.org/getmedia/69c11866-906c-4262-bfe3-753ac4ad2780/APA-DSM5TR-SeverityMeasureForSocialAnxietyDisorderAdult.pdf"
+    },
+    "cautions": "Context and actual discrimination matter. Do not diagnose from quietness alone or assume childhood anxiety only around unfamiliar adults meets the pattern.",
+    "sources": [
+      {
+        "title": "NIMH: Social anxiety disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/social-anxiety-disorder-more-than-just-shyness"
+      },
+      {
+        "title": "APA: Adult social anxiety severity measure",
+        "url": "https://www.psychiatry.org/getmedia/69c11866-906c-4262-bfe3-753ac4ad2780/APA-DSM5TR-SeverityMeasureForSocialAnxietyDisorderAdult.pdf"
+      }
+    ]
+  },
+  {
+    "id": "specific_phobia",
+    "name": "Specific phobia",
+    "course": "Explore persistent fear tied to a particular object or situation, generally for six months or more, with distress or interference; distinguish ordinary developmental fear and actual danger.",
+    "checklist": [
+      {
+        "id": "trigger",
+        "label": "Specific feared trigger",
+        "question": "What particular object or situation brings the fear on?"
+      },
+      {
+        "id": "response",
+        "label": "Response when exposed",
+        "question": "What happens in your body and thoughts when it is nearby?"
+      },
+      {
+        "id": "avoidance",
+        "label": "Avoidance",
+        "question": "How have you arranged life to avoid it?"
+      },
+      {
+        "id": "persistence",
+        "label": "Persistence across time",
+        "question": "How long has this fear lasted, and has it changed?"
+      },
+      {
+        "id": "impact_context",
+        "label": "Impact and realistic threat",
+        "question": "What important activity is affected, and what risk is actually present?"
+      }
+    ],
+    "differentials": [
+      "Developmentally ordinary fears",
+      "Trauma reminders or obsessive fears",
+      "Agoraphobia or social-evaluation fears"
+    ],
+    "test": {
+      "name": "APA Specific Phobia Severity Measure—Adult",
+      "purpose": "Describe recent fear and avoidance for an identified trigger.",
+      "interpretation": "Severity assessment, not definitive diagnosis; it does not establish the full diagnostic course. Use appropriate child assessment for younger patients.",
+      "url": "https://www.psychiatry.org/getmedia/b281daed-b8a9-4d45-8d6f-6315ce8f784b/APA-DSM5TR-SeverityMeasureForSpecificPhobiaAdult.pdf"
+    },
+    "cautions": "Do not provoke exposure during a diagnostic chat. Avoid classifying reasonable caution in dangerous settings as illness.",
+    "sources": [
+      {
+        "title": "NHS: Phobias",
+        "url": "https://www.nhs.uk/mental-health/conditions/phobias/"
+      },
+      {
+        "title": "AACAP: Anxiety disorder frequently asked questions",
+        "url": "https://www.aacap.org/AACAP/aacap/Families_and_Youth/Resource_Centers/Anxiety_Disorder_Resource_Center/FAQ.aspx"
+      },
+      {
+        "title": "APA: Adult specific phobia severity measure",
+        "url": "https://www.psychiatry.org/getmedia/b281daed-b8a9-4d45-8d6f-6315ce8f784b/APA-DSM5TR-SeverityMeasureForSpecificPhobiaAdult.pdf"
+      },
+      {
+        "title": "SAMHSA (2016): DSM-IV to DSM-5 specific-phobia comparison, Table 3.11 (official search extract)",
+        "url": "https://www.samhsa.gov/data/sites/default/files/NSDUH-DSM5ImpactAdultMI-2016.pdf"
+      }
+    ]
+  },
+  {
+    "id": "agoraphobia",
+    "name": "Agoraphobia",
+    "course": "Explore fear across distinct types of situation where escape or help feels difficult; the usual persistence anchor is six months or longer.",
+    "checklist": [
+      {
+        "id": "escape",
+        "label": "Feared difficulty escaping or getting help",
+        "question": "What do you fear would happen if you felt unwell away from safety?"
+      },
+      {
+        "id": "situations",
+        "label": "Breadth of situations",
+        "question": "Which kinds of places are difficult, and how do they differ?"
+      },
+      {
+        "id": "companion",
+        "label": "Avoidance and reliance on companions",
+        "question": "What changes when someone accompanies you?"
+      },
+      {
+        "id": "course",
+        "label": "Persistent course",
+        "question": "When did this begin, and how regularly does it affect outings?"
+      },
+      {
+        "id": "impact_context",
+        "label": "Independence and other explanations",
+        "question": "How does this affect daily needs, and are mobility, health or practical barriers involved?"
+      }
+    ],
+    "differentials": [
+      "Panic disorder, which may coexist",
+      "Specific phobia or social anxiety",
+      "Physical limitations or realistic environmental barriers"
+    ],
+    "test": {
+      "name": "APA Agoraphobia Severity Measure—Adult",
+      "purpose": "Track recent avoidance, anxiety and dependence on support in feared settings.",
+      "interpretation": "A severity aid, not definitive diagnosis; interview the type and breadth of fears and check other explanations.",
+      "url": "https://www.psychiatry.org/getmedia/3345c156-1aac-4e29-ac61-1c6541cb39be/APA-DSM5TR-SeverityMeasureForAgoraphobiaAdult.pdf"
+    },
+    "cautions": "Staying at home alone is not diagnostic. A history of panic disorder is not required; assess the reason for avoidance.",
+    "sources": [
+      {
+        "title": "APA: What are anxiety disorders?",
+        "url": "https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders"
+      },
+      {
+        "title": "NHS: Agoraphobia diagnosis",
+        "url": "https://www.nhs.uk/mental-health/conditions/agoraphobia/diagnosis/"
+      },
+      {
+        "title": "APA: Adult agoraphobia severity measure",
+        "url": "https://www.psychiatry.org/getmedia/3345c156-1aac-4e29-ac61-1c6541cb39be/APA-DSM5TR-SeverityMeasureForAgoraphobiaAdult.pdf"
+      }
+    ]
+  },
+  {
+    "id": "separation",
+    "name": "Separation anxiety disorder",
+    "course": "Compare separation distress with developmental expectations; public APA guidance gives at least four weeks in youth and typically six months in adults.",
+    "checklist": [
+      {
+        "id": "attachment",
+        "label": "Focus of separation fear",
+        "question": "Who is difficult to be apart from, and what do you fear might happen?"
+      },
+      {
+        "id": "contexts",
+        "label": "Anticipated and actual separation",
+        "question": "What happens before a separation and once you are apart?"
+      },
+      {
+        "id": "body_sleep",
+        "label": "Physical distress and sleeping apart",
+        "question": "How does separation affect sleep or physical comfort?"
+      },
+      {
+        "id": "course",
+        "label": "Course and developmental context",
+        "question": "How long has this continued, and what recent changes or losses are relevant?"
+      },
+      {
+        "id": "impact",
+        "label": "Interference and collateral",
+        "question": "What does this prevent you doing, and what do caregivers or school staff observe?"
+      }
+    ],
+    "differentials": [
+      "Ordinary developmental separation distress",
+      "Adjustment to loss or threat",
+      "Agoraphobia or broader anxiety"
+    ],
+    "test": {
+      "name": "Structured separation-anxiety assessment; age-appropriate severity aid",
+      "purpose": "Review attachment context, development and functioning. APA provides an adult severity measure.",
+      "interpretation": "The linked adult measure is a severity aid, not a definitive diagnosis and not a preschool test; young children need caregiver-informed assessment.",
+      "url": "https://www.psychiatry.org/getmedia/538a62c3-2e1e-4bc3-bafd-7a02efad4937/APA-DSM5TR-SeverityMeasureForSeparationAnxietyDisorderAdult.pdf"
+    },
+    "cautions": "Do not pathologize typical toddler distress or assume school refusal has only one explanation.",
+    "sources": [
+      {
+        "title": "APA: What are anxiety disorders?",
+        "url": "https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders"
+      },
+      {
+        "title": "AACAP: Anxiety disorder frequently asked questions",
+        "url": "https://www.aacap.org/AACAP/aacap/Families_and_Youth/Resource_Centers/Anxiety_Disorder_Resource_Center/FAQ.aspx"
+      },
+      {
+        "title": "NIMH: Children and mental health — assessment",
+        "url": "https://www.nimh.nih.gov/health/publications/children-and-mental-health"
+      },
+      {
+        "title": "APA: Adult separation anxiety severity measure",
+        "url": "https://www.psychiatry.org/getmedia/538a62c3-2e1e-4bc3-bafd-7a02efad4937/APA-DSM5TR-SeverityMeasureForSeparationAnxietyDisorderAdult.pdf"
+      }
+    ]
+  },
+  {
+    "id": "selective_mutism",
+    "name": "Selective mutism",
+    "course": "Establish at least a month of a setting-dependent speaking difficulty beyond the initial school adjustment month, despite speech in other settings.",
+    "checklist": [
+      {
+        "id": "settings",
+        "label": "Where speech is available",
+        "question": "Where and with whom is speaking comfortable, and where does it become difficult?"
+      },
+      {
+        "id": "course",
+        "label": "Onset and persistence",
+        "question": "When was the difference first noticed, and has it persisted beyond settling into school?"
+      },
+      {
+        "id": "communication",
+        "label": "Other ways of communicating",
+        "question": "Would pointing, writing or another way of responding feel easier here?"
+      },
+      {
+        "id": "language_hearing",
+        "label": "Language and hearing context",
+        "question": "How is communication in each familiar language, and what hearing or language assessment exists?"
+      },
+      {
+        "id": "impact",
+        "label": "Participation and corroboration",
+        "question": "How does this affect learning or friendships, and what do caregivers and teachers notice?"
+      }
+    ],
+    "differentials": [
+      "Unfamiliar language or hearing/language difficulties",
+      "Social anxiety, which may coexist",
+      "Other developmental or psychiatric explanations"
+    ],
+    "test": {
+      "name": "Interdisciplinary speech-language and mental-health assessment",
+      "purpose": "Compare communication across settings with caregiver, teacher and direct observations.",
+      "interpretation": "Screening guides further assessment; a text conversation cannot definitively establish selective mutism or measure spoken performance.",
+      "url": "https://www.asha.org/practice-portal/clinical-topics/selective-mutism/"
+    },
+    "cautions": "Do not pressure speech or treat silence as deliberate defiance. Permit nonverbal responses and distinguish language proficiency from anxiety.",
+    "sources": [
+      {
+        "title": "ASHA Practice Portal: Selective mutism",
+        "url": "https://www.asha.org/practice-portal/clinical-topics/selective-mutism/"
+      },
+      {
+        "title": "NHS: Selective mutism",
+        "url": "https://www.nhs.uk/mental-health/conditions/selective-mutism/"
+      }
+    ]
+  },
+  {
+    "id": "ocd",
+    "name": "Obsessive-compulsive disorder (OCD)",
+    "course": "Investigate recurring unwanted intrusions and/or driven rituals that consume time or cause distress/impairment; there is no universal six-month requirement.",
+    "checklist": [
+      {
+        "id": "intrusions",
+        "label": "Unwanted intrusive experiences",
+        "question": "Are there thoughts or images that arrive against your wishes and keep troubling you?"
+      },
+      {
+        "id": "rituals",
+        "label": "Overt and mental rituals",
+        "question": "What do you feel driven to do or repeat in your mind afterwards?"
+      },
+      {
+        "id": "function",
+        "label": "Purpose and temporary relief",
+        "question": "What do you hope the ritual will prevent, and how long does relief last?"
+      },
+      {
+        "id": "burden",
+        "label": "Time, avoidance and interference",
+        "question": "How much of your day does this take, and what gets pushed aside?"
+      },
+      {
+        "id": "meaning",
+        "label": "Insight and context",
+        "question": "How do you understand these experiences, and how are they different from your usual preferences?"
+      }
+    ],
+    "differentials": [
+      "Generalized worry",
+      "Tics or repetitive developmental behaviors",
+      "OCPD or another focused preoccupation"
+    ],
+    "test": {
+      "name": "APA repetitive thoughts/behaviors measure (adapted FOCI severity scale)",
+      "purpose": "Describe adult obsessive-compulsive symptom burden.",
+      "interpretation": "A severity aid, not a definitive OCD diagnosis. Youth need an appropriate version and caregiver context; no questionnaire is reproduced here.",
+      "url": "https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf"
+    },
+    "cautions": "Unwanted harm thoughts are not the same as intent. Assess safety by direct inquiry without treating obsession content as proof of dangerousness.",
+    "sources": [
+      {
+        "title": "NIMH: Obsessive-compulsive disorder",
+        "url": "https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over"
+      },
+      {
+        "title": "APA: Adult repetitive thoughts/behaviors measure, adapted FOCI severity scale",
+        "url": "https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf"
+      }
+    ]
+  },
+  {
+    "id": "bdd",
+    "name": "Body dysmorphic disorder",
+    "course": "Explore persistent appearance preoccupation, repetitive responses and impairment; do not infer the disorder from an appearance concern alone.",
+    "checklist": [
+      {
+        "id": "concern",
+        "label": "Meaning of appearance concerns",
+        "question": "What concerns about your appearance occupy your attention?"
+      },
+      {
+        "id": "preoccupation",
+        "label": "Time and control",
+        "question": "How much time do these concerns take, and can you shift attention away?"
+      },
+      {
+        "id": "responses",
+        "label": "Checking, comparison or concealment",
+        "question": "What do you find yourself doing in response to the concern?"
+      },
+      {
+        "id": "impact",
+        "label": "Avoidance and distress",
+        "question": "What have you missed or avoided because of it?"
+      },
+      {
+        "id": "distinction_safety",
+        "label": "Eating concerns, insight and safety",
+        "question": "How does this connect with eating or weight concerns, and has the distress affected your safety?"
+      }
+    ],
+    "differentials": [
+      "Eating disorder with weight/shape concerns",
+      "Social anxiety or ordinary dissatisfaction",
+      "Other obsessive-compulsive or psychotic presentations"
+    ],
+    "test": {
+      "name": "Body Dysmorphic Disorder Questionnaire (BDDQ)",
+      "purpose": "Identify a possible BDD presentation that merits a clinical interview.",
+      "interpretation": "A screening tool, not a definitive diagnosis. Confirm with appropriate interview; BDD-YBOCS is a separate severity tool, not a screening substitute.",
+      "url": "https://bdd.iocdf.org/professionals/assessment-tools-for-bdd/"
+    },
+    "cautions": "Avoid repeatedly reassuring or judging appearance. Check suicide/self-harm concerns and whether eating pathology better explains the concern.",
+    "sources": [
+      {
+        "title": "IOCDF / Katharine Phillips: Clinical assessment of BDD",
+        "url": "https://bdd.iocdf.org/professionals/clinical-assessment-of-bdd/"
+      },
+      {
+        "title": "IOCDF: Assessment tools for BDD",
+        "url": "https://bdd.iocdf.org/professionals/assessment-tools-for-bdd/"
+      }
+    ]
+  },
+  {
+    "id": "hoarding",
+    "name": "Hoarding disorder",
+    "course": "Assess persistent difficulty discarding and accumulation over time; the state of a room on one day may reflect others having cleared it.",
+    "checklist": [
+      {
+        "id": "discarding",
+        "label": "Difficulty parting with possessions",
+        "question": "What happens when you consider letting an item go?"
+      },
+      {
+        "id": "meaning",
+        "label": "Perceived need to keep items",
+        "question": "What would losing or discarding it mean to you?"
+      },
+      {
+        "id": "space",
+        "label": "Use of living areas",
+        "question": "How are rooms used now, and what activities are difficult there?"
+      },
+      {
+        "id": "course_acquisition",
+        "label": "Accumulation and outside help",
+        "question": "How did the situation develop, and has anyone else cleared or managed things?"
+      },
+      {
+        "id": "impact_safety",
+        "label": "Functioning and household safety",
+        "question": "How does this affect relationships, daily tasks or moving safely through the home?"
+      }
+    ],
+    "differentials": [
+      "Organized collecting without impairment",
+      "Cognitive or neurological illness",
+      "Other disorders causing accumulation or self-neglect"
+    ],
+    "test": {
+      "name": "Hoarding Rating Scale–Interview (HRS-I)",
+      "purpose": "Assess clutter, discarding, acquisition, distress and functional burden.",
+      "interpretation": "A structured assessment aid; scores suggest severity or concern, not a definitive diagnosis without context and differential assessment.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914137/"
+    },
+    "cautions": "Assess fire and access hazards sensitively. Do not infer hoarding from poverty, clutter alone or a photograph, or treat forced clearing as an assessment.",
+    "sources": [
+      {
+        "title": "APA: What is hoarding disorder?",
+        "url": "https://www.psychiatry.org/patients-families/hoarding-disorder/what-is-hoarding-disorder"
+      },
+      {
+        "title": "Tolin et al.: Development and validation of the Hoarding Rating Scale–Interview",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2914137/"
+      },
+      {
+        "title": "IOCDF: Clinical assessment of hoarding",
+        "url": "https://hoarding.iocdf.org/professionals/clinical-assessment/"
+      }
+    ]
+  }
+]

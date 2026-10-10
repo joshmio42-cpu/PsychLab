@@ -1,0 +1,155 @@
+PSYCHLAB — RECORDING GUIDE AND CLAIM CHECKS
+Prepared 10 October 2026
+Companion: PsychLab - ForgeHacks Narration.txt
+
+PURPOSE
+Show a learner moving from questions to evidence and reflection. Demonstrate the
+working flow before explaining the architecture. This is a script and shot plan;
+no new live interview, video recording, provider call or publication was performed
+while preparing it. The main interview sequence below still needs a real run.
+
+SCREEN CUES (NOT SPOKEN)
+
+0:00–0:25 | The problem
+Show PsychLab’s opening screen, then move toward the interview setup. Optional on-screen text: Practice the interview. Explain the reasoning.
+
+0:25–0:48 | Choose an interview
+Show the eight-patient selector and difficulty options. Briefly show Chosen / Random mystery / No disorder. For the main recording, select Jordan, 28 days, seed 42, Standard, Major depressive disorder. Showing Random as an option does not mean the Jordan example is a random case.
+
+0:48–1:24 | Create and freeze a person’s history
+Show preparation and the frozen reference. Add a simple overlay: Profile + authored presentation + simulated experiences → Frozen history. Optional second overlay: Relationships · Goals · Memory. This is an explanatory graphic, not an existing app screen. Do not reveal hidden reviewer data before the interview finishes.
+
+1:24–1:50 | Demonstrate the conversation
+Show actual recorded Jordan responses. Suggested questions: What do you do for fun usually? / Does sketching still feel rewarding? / When did you notice that change? / How has this affected your everyday responsibilities? Record and verify these first; this is a proposed sequence, not a live run completed for this script. Preserve the real answers, and match narration to the captured conversation.
+
+1:50–2:22 | Show the learning workflow
+Show Interview companion. Link a checkpoint to an actual factual turn and explain the observation. Show provisional reasoning, alternatives and missing information. Then show the completed debrief, saved History and download buttons. Complete the required reasoning fields before filming the debrief; do not suggest a diagnosis was automatically graded.
+
+2:22–2:57 | Explain the AI
+Show the conversation with an overlay: Question → Select facts → Write reply → Audit and checks → Display. Then show the usage/cost panel. If using the privileged trace, show it only after completion. Diagram describes the implemented architecture; it is not evidence that audits never fail.
+
+2:57–3:31 | Evidence and limits
+Show source-register excerpts or research reports, followed by the saved 451-pass test summary. On-screen label: Software tests; not clinical validation. Finish with: Next: clinician review + student studies. Do not imply any institution endorses PsychLab.
+
+3:31–3:51 | Close
+Return to the debrief or opening screen. End card: PsychLab | Simulate. Freeze. Interview. Add verified repository/demo links only when ready.
+
+RECORDING APPROACH
+
+1. Prepare and capture the real interview before recording the voiceover. Use
+   Jordan, 28 days, seed 42, Standard, with the chosen MDD teaching case for the
+   narrated example. This ensures the described hobby and reduced-enjoyment facts
+   belong to the selected record. Do not imply the chosen case is a mystery case.
+2. The suggested questions are prompts for a recording, not guaranteed outputs.
+   Model wording varies. Match the narration to what the actual replies establish.
+   Do not insert invented patient speech or substitute mock replies for live output.
+3. Use a few readable excerpts from one complete session. If a request fails,
+   preserve its context and avoid implying that every live request always succeeds.
+   Keep the spoken limitations. The video is a demonstration, not an accuracy study.
+4. Zoom into relevant text. Use setup footage briefly, then spend most screen time
+   on the interview, evidence note and final debrief. Keep the source excerpt used
+   to justify a conclusion visible long enough to read. Avoid scrolling long logs.
+5. It is reasonable to edit waiting time for a short video; label shortened waits
+   and do not imply real-time response speed. Record a continuous session first
+   so edits preserve the conversation order and context.
+6. Do a timed read. The narration is 479 words. At 135 words/minute it takes
+   about 213 seconds before visual pauses. Aim for 3:40–3:55 total.
+   NIMH can be spoken letter by letter; WHO can be expanded to World Health
+   Organization if preferred. Small pronunciation differences alter the word count.
+7. Use on-screen labels such as Experimental educational prototype and Software
+   tests, not clinical validation. Show research publishers as references, without
+   endorsement language or institutional badges that imply partnership.
+8. Keep credentials, account information and personal access configuration off-screen.
+   Finish with actual repository and demo links only when they are verified.
+
+CLAIMS RECHECKED FOR THIS SCRIPT
+
+Application and structure:
+- live/public/index.html: setup, chosen/mystery/none modes, Interview companion,
+  learner reasoning, History, debrief and privileged reviewer trace.
+- live/patients.mjs: eight fictional profiles across life stages.
+- live/individuality.mjs: goals, interests, communication and relationship facts
+  authored separately from the selected condition and seed.
+- live/interview-style.mjs: three difficulty levels alter disclosure quantity.
+- live/engine.mjs: seeded simulation, case facts and frozen history; current
+  engine version life-history-0.5.0.
+- personality_system/models/identity.mjs: scoped relationship expectations and
+  contextual goal activation. Its equations are authored experimental assumptions.
+- live/model.mjs: Featherless CORTEX/LANGUAGE/AUDITOR roles, current prompt version
+  interview-0.15.4, default answer planning off.
+- live/conversation.mjs: memory retains source IDs; prior generated prose is not
+  admitted as new patient evidence. A referenced source is not proof every clause
+  was spoken.
+- live/factual-support.mjs: additional bounded factual checks; no perfect factual
+  guarantee is claimed.
+- live/interview-guide.mjs and interview-feedback.mjs: evidence-linked learner
+  notes, unanswered checkpoints and reference checks; no clinical grading.
+- live/usage.mjs and pricing.mjs: reported usage and estimated costs.
+
+Research and numerical claims:
+- live/data/interview-guidance.json: 67 condition guides, 334 checkpoints.
+- live/data/interview-standard.json: 17 broad checkpoints; not included in 334.
+- live/data/disorder-sources.json: includes public resources from the American
+  Psychiatric Association, NIMH and WHO. The full licensed DSM manual is not bundled.
+- personality_system/evidence/sources.json: 36 source records, with access and
+  evidence limitations. This is a registry, not 36 full-text validations of PsychLab.
+- ../../work/psychlab-examination-tests-2026-10-10.txt: 451 automated tests passed,
+  no failures or skips, in the earlier examination on 10 October. These are local
+  software/mock-provider checks, not 451 successful live clinical conversations.
+- adaption/DEVELOPMENT-STATUS-2026-10-09.txt and saved evaluation reviews: observed
+  blocked responses, unsupported claims and regressions; no blanket reliability
+  claim is made. Clinical review and educational outcome studies remain pending.
+
+Jordan example:
+- Fresh local simulation for Jordan / seed 42 / 28 days / chosen mdd was inspected.
+- P02: usual sketching and a notebook.
+- B01: a four-month course of low mood and lost interest on most days.
+- B02: usual activities feel much less rewarding, alongside other authored details.
+- B03: everyday responsibilities take longer and withdrawal from people/hobbies.
+- research/interview-improvements-2026-10-08/final-validation.json contains earlier
+  real model examples for usual hobbies and a correction of a leading enjoyment
+  question. Those were older runtime samples, not verification of the proposed
+  current recording sequence. The script does not quote them as a fresh live run.
+
+DELIBERATE SCOPE CHOICES
+
+The old review/demo-script.txt describes the scripted foundation and includes a
+GAD-7 segment. This new narration uses the current generated-patient flow, where
+no GAD-7 result is invented. It also avoids claims of automated diagnostic accuracy,
+validated personality scores, lifetime development, measured learning benefit,
+clinical approval, institutional endorsement or guaranteed hallucination prevention.
+
+The Adaption pilot and answer-planning revisions are development work. The approved
+21-example pack and verified-release activation remain inactive by default; no
+active-pack.json or active-release.json was found. They are excluded from the
+main demonstration claim. If asked, describe the pilot as an offline evaluation
+whose candidate did not meet all release gates, with results preserved for review.
+
+OPTIONAL JUDGE QUESTIONS (NOT PART OF THE TIMED SCRIPT)
+
+What makes this distinct from ordinary patient roleplay?
+The patient has a server-held, frozen reference history; language generation is
+restricted to selected evidence; and the learner links reasoning back to disclosed
+answers. The design supports inspection, while remaining vulnerable to model errors.
+
+Does the personality system recreate human psychology?
+No. It separates constructs and implements small, explicit experimental rules for
+relationships and goals. Traits are not fully measured, and the dynamics are not
+empirically calibrated. The separate population sampler is not used to claim
+validated patient personalities.
+
+Does the app grade whether a diagnosis is correct?
+It compares selected labels with authored teaching premises and checks evidence
+references, missing areas and note structure. It does not establish clinical
+correctness or provide validated competence scores.
+
+What would you improve next?
+Review a focused set of cases with a qualified clinician or educator, observe
+students using the complete workflow, and resolve the documented reliability
+failures before making broader educational claims.
+
+What did AI do in the project?
+Featherless models supply the live dialogue roles. Local code owns simulation,
+state, checks and debrief logic. Coding-assistant support and any offline data
+work should be disclosed separately in the submission according to actual use.
+

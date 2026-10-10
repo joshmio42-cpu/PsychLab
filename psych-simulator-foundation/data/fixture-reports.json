@@ -1,0 +1,413 @@
+{
+  "strong": {
+    "title": "Formative rehearsal debrief",
+    "mode": "Scripted review prototype; not a live AI evaluation",
+    "caseId": "CASE-A01",
+    "caseVersion": "0.1.0",
+    "rubricVersion": "0.1.0",
+    "sourceVersion": "2026-10-05",
+    "coverage": {
+      "covered": [
+        "presenting",
+        "timeline",
+        "worry",
+        "control",
+        "associated",
+        "function",
+        "context",
+        "medical",
+        "medication",
+        "substances",
+        "alternatives",
+        "safety",
+        "support",
+        "goals",
+        "history"
+      ],
+      "missing": [],
+      "total": 15,
+      "meaning": "Topics opened, not a competence score."
+    },
+    "evidence": [
+      {
+        "turnId": "T1",
+        "question": "What would you like help with today?",
+        "quote": "I keep worrying, and it is getting hard to sleep. I would like to understand what is happening.",
+        "factIds": [
+          "F01"
+        ]
+      },
+      {
+        "turnId": "T2",
+        "question": "When did this start, and how often does it happen?",
+        "quote": "It started about nine months ago. For most of that time I have worried on most days, even when nothing particular has gone wrong.",
+        "factIds": [
+          "F02"
+        ]
+      },
+      {
+        "turnId": "T3",
+        "question": "What kinds of things do you find yourself worrying about?",
+        "quote": "Making mistakes at work, paying my bills, my mother's health, and ordinary things like being late. When one worry settles, another tends to take its place.",
+        "factIds": [
+          "F03"
+        ]
+      },
+      {
+        "turnId": "T4",
+        "question": "What happens when you try to put the worries aside?",
+        "quote": "I try to focus on something else, but the worries keep returning. Knowing I have already checked something does not always help me stop thinking about it.",
+        "factIds": [
+          "F04"
+        ]
+      },
+      {
+        "turnId": "T5",
+        "question": "How has your sleep been?",
+        "quote": "On most nights it takes me an hour or more to fall asleep because I am thinking through everything. I sleep around five or six hours and feel tired the next day.",
+        "factIds": [
+          "F05"
+        ]
+      },
+      {
+        "turnId": "T6",
+        "question": "Have you noticed changes in your body, concentration, or patience?",
+        "quote": "My shoulders feel tense, I lose my place while reading, and I have been more irritable. I find it hard to relax and feel restless on many days.",
+        "factIds": [
+          "F06"
+        ]
+      },
+      {
+        "turnId": "T7",
+        "question": "How is this affecting work, home, and things you enjoy?",
+        "quote": "I recheck routine emails and have missed two deadlines this month. I have turned down some plans because I am exhausted, but I still enjoy sketching and seeing my cousin when I manage it.",
+        "factIds": [
+          "F07"
+        ]
+      },
+      {
+        "turnId": "T8",
+        "question": "What was happening around the time this began?",
+        "quote": "I moved into a new work role eleven months ago. The first weeks were busy, but the workload settled. The worry continued and spread to things outside work. There has not been a recent bereavement or major crisis.",
+        "factIds": [
+          "F08"
+        ]
+      },
+      {
+        "turnId": "T9",
+        "question": "What medical conditions or recent health checks should we consider?",
+        "quote": "I do not know of any diagnosed medical condition. I have not had a recent physical check or thyroid testing. I cannot tell you whether a medical issue might be contributing.",
+        "factIds": [
+          "F09"
+        ]
+      },
+      {
+        "turnId": "T10",
+        "question": "What medicines, supplements, or recent medication changes have there been?",
+        "quote": "I take no regular prescribed medicine or supplements, and there have been no recent medication changes. I have not tried psychiatric medication.",
+        "factIds": [
+          "F10"
+        ]
+      },
+      {
+        "turnId": "T11",
+        "question": "Could you describe caffeine, alcohol, nicotine, or other substance use?",
+        "quote": "I usually have one coffee in the morning and have done that for years. I drink one alcoholic drink some weekends. I do not use nicotine, energy drinks, cannabis, or stimulants.",
+        "factIds": [
+          "F11"
+        ]
+      },
+      {
+        "turnId": "T12",
+        "question": "Have there been sustained changes in mood, enjoyment, energy, or need for sleep?",
+        "quote": "I feel frustrated and tired, but I still enjoy some things. I have not had a stretch of unusually high energy or feeling unusually powerful while needing very little sleep. I want more sleep, not less.",
+        "factIds": [
+          "F12"
+        ]
+      },
+      {
+        "turnId": "T13",
+        "question": "Does anxiety arrive in sudden intense episodes, or mainly around being judged?",
+        "quote": "It is more a continuing worry than sudden attacks. It happens when I am alone too, not only when I am speaking or being watched by other people.",
+        "factIds": [
+          "F13"
+        ]
+      },
+      {
+        "turnId": "T14",
+        "question": "Are there unwanted intrusive experiences, rituals, or reminders of trauma involved?",
+        "quote": "I reread emails because I worry about mistakes, but I do not follow a fixed ritual or believe it prevents an unrelated catastrophe. I have not been having flashbacks or nightmares about a traumatic event.",
+        "factIds": [
+          "F14"
+        ]
+      },
+      {
+        "turnId": "T15",
+        "question": "Have you had thoughts about harming yourself or others, and do you feel safe at home?",
+        "quote": "I have not had thoughts of ending my life, harming myself, or harming someone else. I have not harmed myself in the past. I feel safe at home. If things changed, my cousin is someone I could contact.",
+        "factIds": [
+          "F15"
+        ]
+      },
+      {
+        "turnId": "T16",
+        "question": "Who supports you, and what helps you cope?",
+        "quote": "My cousin listens without rushing me. Sketching and short walks sometimes help. I am proud that I keep trying even though the worry is tiring.",
+        "factIds": [
+          "F16"
+        ]
+      },
+      {
+        "turnId": "T17",
+        "question": "What would you hope to get from help, and is there anything you want me to understand?",
+        "quote": "I would like to sleep better and spend less time checking my work. I prefer clear explanations. Please ask rather than assume what my family expects of me.",
+        "factIds": [
+          "F17"
+        ]
+      },
+      {
+        "turnId": "T18",
+        "question": "Have you experienced this before or received psychological support?",
+        "quote": "I worried before exams when I was younger, but this has lasted much longer and affects more parts of my life. I have not had therapy or a previous mental-health diagnosis. I do not know my extended family's mental-health history.",
+        "factIds": [
+          "F18"
+        ]
+      }
+    ],
+    "assessment": null,
+    "reasoning": {
+      "hypothesis": "Possible generalized anxiety disorder, pending comprehensive review.",
+      "support": "Nine months of difficult-to-control worry across several areas with tension, poor sleep and work impairment.",
+      "alternatives": "Consider stressor-related anxiety and medical or substance contributions; self-report is incomplete.",
+      "missing": "No physical assessment or corroboration; further focused differential assessment is needed.",
+      "next": "Discuss findings with the supervisor and client, clarify medical history and arrange appropriate further assessment."
+    },
+    "ratings": [
+      {
+        "name": "Interview coverage",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Communication",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Reasoning",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Assessment use",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Next steps and uncertainty",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      }
+    ],
+    "reviewStatus": "Not reviewed",
+    "sources": [
+      "S1",
+      "S2",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "incomplete": {
+    "title": "Formative rehearsal debrief",
+    "mode": "Scripted review prototype; not a live AI evaluation",
+    "caseId": "CASE-A01",
+    "caseVersion": "0.1.0",
+    "rubricVersion": "0.1.0",
+    "sourceVersion": "2026-10-05",
+    "coverage": {
+      "covered": [
+        "presenting",
+        "associated",
+        "function"
+      ],
+      "missing": [
+        "timeline",
+        "worry",
+        "control",
+        "context",
+        "medical",
+        "medication",
+        "substances",
+        "alternatives",
+        "safety",
+        "support",
+        "goals",
+        "history"
+      ],
+      "total": 15,
+      "meaning": "Topics opened, not a competence score."
+    },
+    "evidence": [
+      {
+        "turnId": "T1",
+        "question": "What would you like help with today?",
+        "quote": "I keep worrying, and it is getting hard to sleep. I would like to understand what is happening.",
+        "factIds": [
+          "F01"
+        ]
+      },
+      {
+        "turnId": "T2",
+        "question": "How has your sleep been?",
+        "quote": "On most nights it takes me an hour or more to fall asleep because I am thinking through everything. I sleep around five or six hours and feel tired the next day.",
+        "factIds": [
+          "F05"
+        ]
+      },
+      {
+        "turnId": "T3",
+        "question": "How is this affecting work, home, and things you enjoy?",
+        "quote": "I recheck routine emails and have missed two deadlines this month. I have turned down some plans because I am exhausted, but I still enjoy sketching and seeing my cousin when I manage it.",
+        "factIds": [
+          "F07"
+        ]
+      }
+    ],
+    "assessment": null,
+    "reasoning": {
+      "hypothesis": "Anxiety is possible.",
+      "support": "Sleep and work are affected.",
+      "alternatives": "Not explored.",
+      "missing": "Duration and possible other explanations.",
+      "next": "Ask more about the timeline."
+    },
+    "ratings": [
+      {
+        "name": "Interview coverage",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Communication",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Reasoning",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Assessment use",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Next steps and uncertainty",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      }
+    ],
+    "reviewStatus": "Not reviewed",
+    "sources": [
+      "S1",
+      "S2",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  },
+  "leading": {
+    "title": "Formative rehearsal debrief",
+    "mode": "Scripted review prototype; not a live AI evaluation",
+    "caseId": "CASE-A01",
+    "caseVersion": "0.1.0",
+    "rubricVersion": "0.1.0",
+    "sourceVersion": "2026-10-05",
+    "coverage": {
+      "covered": [
+        "presenting",
+        "control"
+      ],
+      "missing": [
+        "timeline",
+        "worry",
+        "associated",
+        "function",
+        "context",
+        "medical",
+        "medication",
+        "substances",
+        "alternatives",
+        "safety",
+        "support",
+        "goals",
+        "history"
+      ],
+      "total": 15,
+      "meaning": "Topics opened, not a competence score."
+    },
+    "evidence": [
+      {
+        "turnId": "T1",
+        "question": "What would you like help with today?",
+        "quote": "I keep worrying, and it is getting hard to sleep. I would like to understand what is happening.",
+        "factIds": [
+          "F01"
+        ]
+      },
+      {
+        "turnId": "T2",
+        "question": "What happens when you try to put the worries aside?",
+        "quote": "I try to focus on something else, but the worries keep returning. Knowing I have already checked something does not always help me stop thinking about it.",
+        "factIds": [
+          "F04"
+        ]
+      }
+    ],
+    "assessment": null,
+    "reasoning": {
+      "hypothesis": "Definitely GAD.",
+      "support": "The client worries.",
+      "alternatives": "None.",
+      "missing": "None.",
+      "next": "No further assessment needed."
+    },
+    "ratings": [
+      {
+        "name": "Interview coverage",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Communication",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Reasoning",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Assessment use",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      },
+      {
+        "name": "Next steps and uncertainty",
+        "rating": "NR",
+        "reason": "Qualified review pending; no automated clinical rating."
+      }
+    ],
+    "reviewStatus": "Not reviewed",
+    "sources": [
+      "S1",
+      "S2",
+      "S3",
+      "S6",
+      "S7"
+    ]
+  }
+}

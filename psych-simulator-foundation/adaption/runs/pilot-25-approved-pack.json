@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "id": "psychlab-adaption-pilot-25",
+  "version": "1.0.0",
+  "status": "approved",
+  "review": {
+    "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+    "reviewedAt": "2026-10-09T07:12:44.784Z",
+    "sourceRunId": "dataset-publication-redacted-remote-id-2-1791529161618"
+  },
+  "examples": [
+    {
+      "id": "dev-jordan-counts-not-feelings",
+      "tags": [
+        "young-adult",
+        "uncertainty",
+        "no-inferred-feelings",
+        "task-counts",
+        "tasks",
+        "completed"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_jordan_counts_not_feelings_G04",
+          "statement": "Over this recorded period I had 2 tasks involving finishing a routine work task: I completed 1 that day and paused 1."
+        }
+      ],
+      "question": "Can the number of tasks you completed tell me exactly how anxious you felt?",
+      "reply": "I can tell you I completed one routine work task and paused another during that period, but those counts alone don't exactly show how anxious I felt. I can't say for sure based on just that.",
+      "factIds": [
+        "EX_dev_jordan_counts_not_feelings_G04"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-robin-medical-uncertainty",
+      "tags": [
+        "older-adult",
+        "uncertainty",
+        "mental-premise",
+        "medical-explanation",
+        "heart",
+        "breathlessness"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Older adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_robin_medical_uncertainty_B02",
+          "statement": "An episode can come on suddenly without an obvious threat, with a pounding heart, breathlessness and fear that something terrible is happening. Medical explanations have not been settled in this account."
+        }
+      ],
+      "question": "Do you know for certain what medically explains the pounding heart and breathlessness?",
+      "reply": "No, I don't know for certain. The medical explanations haven't been settled, though the episodes can come on suddenly with a pounding heart, breathlessness, and fear that something terrible is happening.",
+      "factIds": [
+        "EX_dev_robin_medical_uncertainty_B02"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-jordan-onset-outside-diary",
+      "tags": [
+        "young-adult",
+        "chronology",
+        "earlier-history",
+        "duration"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_jordan_onset_outside_diary_B01",
+          "statement": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+        },
+        {
+          "id": "EX_dev_jordan_onset_outside_diary_G03",
+          "statement": "This account covers 7 recent simulated days within the young adult stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began."
+        }
+      ],
+      "question": "If this record has seven days, does that put the start of feeling low seven days ago?",
+      "reply": "No, this record only covers seven recent days, but I've actually felt low and lost interest on most days for four months, including time before this diary. This recent window doesn't establish when all the difficulties began.",
+      "factIds": [
+        "EX_dev_jordan_onset_outside_diary_B01",
+        "EX_dev_jordan_onset_outside_diary_G03"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-jordan-usual-and-current",
+      "tags": [
+        "young-adult",
+        "usual-versus-current",
+        "mental-premise",
+        "hobby"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_jordan_usual_and_current_P02",
+          "statement": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+        },
+        {
+          "id": "EX_dev_jordan_usual_and_current_B02",
+          "statement": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+        }
+      ],
+      "question": "Does having sketching as a hobby mean it feels rewarding for you now?",
+      "reply": "I usually sketch ordinary things and keep the drawings in a notebook, but activities I usually enjoy feel much less rewarding right now.",
+      "factIds": [
+        "EX_dev_jordan_usual_and_current_P02",
+        "EX_dev_jordan_usual_and_current_B02"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-sam-postponed-game",
+      "tags": [
+        "school-age",
+        "uncertainty",
+        "mental-premise",
+        "cancelled-plan"
+      ],
+      "perspective": "patient",
+      "lifeStage": "School-age child",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_sam_postponed_game_E02",
+          "statement": "On simulated day 2, For me, a playground game with a friend was postponed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. I felt relatively at ease after that."
+        }
+      ],
+      "question": "On day two, why was the playground game moved, and was another day agreed?",
+      "reply": "On day two, the playground game was postponed, but no reason was explained to me. I asked about another time, but we did not agree on a new date that day.",
+      "factIds": [
+        "EX_dev_sam_postponed_game_E02"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-avery-story-not-selected",
+      "tags": [
+        "adult",
+        "future-plan",
+        "no-invented-names",
+        "reading"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_avery_story_not_selected_P12",
+          "statement": "I’d like to choose a short story with a friend and talk about what each of us noticed. We haven’t chosen the story for that yet."
+        }
+      ],
+      "question": "Which short story did you and your friend choose for your discussion?",
+      "reply": "We haven't chosen one yet. I'd like to pick a short story with a friend and talk about what each of us noticed.",
+      "factIds": [
+        "EX_dev_avery_story_not_selected_P12"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-riley-written-account",
+      "tags": [
+        "adolescent",
+        "communication",
+        "mental-premise",
+        "written-account",
+        "type",
+        "aloud"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Adolescent",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_riley_written_account_B02",
+          "statement": "When speech gets stuck, I cannot simply make it happen. In this text interview I can communicate through short written replies; that does not mean I can speak aloud in the same situation."
+        }
+      ],
+      "question": "Since you can type an answer here, could you just say it aloud in that setting?",
+      "reply": "Not really. I can give short written replies here, but that doesn't mean I can speak aloud in the same situation. When my speech gets stuck, I can't just make it happen.",
+      "factIds": [
+        "EX_dev_riley_written_account_B02"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-jordan-cancellation-belief",
+      "tags": [
+        "young-adult",
+        "mental-premise",
+        "uncertainty",
+        "cancelled-plan"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_jordan_cancellation_belief_E02",
+          "statement": "On simulated day 2, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. I felt relatively at ease after that."
+        }
+      ],
+      "question": "That cancelled catch-up on day two—what did you know, and what were you only wondering?",
+      "reply": "I knew my friend cancelled without explaining why, but I didn't know the actual reason. I wondered if they were busy or if they didn't want to meet up, and I asked to find another time, though we didn't agree on one that day.",
+      "factIds": [
+        "EX_dev_jordan_cancellation_belief_E02"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-riley-project-choice",
+      "tags": [
+        "adolescent",
+        "autonomy",
+        "school",
+        "personality"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Adolescent",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_riley_project_choice_P10",
+          "statement": "With a school project, I’d rather someone ask which part I want to take before assigning me one. I still want us to agree on what each person is doing."
+        }
+      ],
+      "question": "Before the group hands out project roles, what would you want them to do?",
+      "reply": "I'd prefer it if someone asked which part I want to take before assigning me one. I still want us to agree on what each person is doing.",
+      "factIds": [
+        "EX_dev_riley_project_choice_P10"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-sam-leaving-room-to-try",
+      "tags": [
+        "school-age",
+        "autonomy",
+        "help",
+        "drawing"
+      ],
+      "perspective": "patient",
+      "lifeStage": "School-age child",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_sam_leaving_room_to_try_P10",
+          "statement": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me."
+        }
+      ],
+      "question": "If your picture gets tricky, should an adult finish it for you?",
+      "reply": "No, I'd want them to show me a way to start and then let me try. I don't want them to finish the whole thing for me.",
+      "factIds": [
+        "EX_dev_sam_leaving_room_to_try_P10"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-riley-earlier-playlist",
+      "tags": [
+        "adolescent",
+        "past-example",
+        "music",
+        "no-invented-names"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Adolescent",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_riley_earlier_playlist_P08",
+          "statement": "For an earlier playlist, I tried a quiet song first, then moved a faster one to the start. I kept both versions while I compared the order."
+        }
+      ],
+      "question": "Tell me about that earlier playlist where you changed the first song.",
+      "reply": "For an earlier playlist, I tried starting with a quiet song before moving a faster one to the front. I kept both versions so I could compare how the order felt.",
+      "factIds": [
+        "EX_dev_riley_earlier_playlist_P08"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-alex-album-not-picked",
+      "tags": [
+        "young-adult",
+        "future-plan",
+        "no-invented-names",
+        "music"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_alex_album_not_picked_P12",
+          "statement": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet."
+        }
+      ],
+      "question": "What is the title of the album you picked to compare with your friend?",
+      "reply": "I haven't picked the album yet; that's something I'd like to do with a friend in the future.",
+      "factIds": [
+        "EX_dev_alex_album_not_picked_P12"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-mika-private-thoughts",
+      "tags": [
+        "caregiver",
+        "uncertainty",
+        "private-thoughts",
+        "books"
+      ],
+      "perspective": "caregiver",
+      "lifeStage": "Toddler",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_mika_private_thoughts_P03",
+          "statement": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what the child is thinking."
+        },
+        {
+          "id": "EX_dev_mika_private_thoughts_P09",
+          "statement": "When the child brings me an animal book, I sit beside them and name the animals they point to. I let the child turn the pages."
+        }
+      ],
+      "question": "When the child turns those book pages, what are they thinking about you?",
+      "reply": "I can't really say what the child is thinking. When the child brings me an animal book, I sit beside them, name the animals they point to, and let them turn the pages.",
+      "factIds": [
+        "EX_dev_mika_private_thoughts_P03",
+        "EX_dev_mika_private_thoughts_P09"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-avery-shared-errands",
+      "tags": [
+        "adult",
+        "personality",
+        "practical-plans",
+        "household"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_avery_shared_errands_P10",
+          "statement": "For shared household jobs, I prefer to agree who is doing what and when. I don’t want us both assuming the other person will handle the same errand."
+        }
+      ],
+      "question": "What agreement would make shared household errands clearer for you?",
+      "reply": "I prefer having clear agreements about who handles each household task and when, so we aren't both assuming the other person will take care of it.",
+      "factIds": [
+        "EX_dev_avery_shared_errands_P10"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-sam-task-history",
+      "tags": [
+        "school-age",
+        "chronology",
+        "earlier-history",
+        "tasks"
+      ],
+      "perspective": "patient",
+      "lifeStage": "School-age child",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_sam_task_history_B01",
+          "statement": "Since my early school years, keeping track of tasks has been difficult at home and in learning settings. This pattern has continued for years, including the months before this diary."
+        },
+        {
+          "id": "EX_dev_sam_task_history_G03",
+          "statement": "This account covers 7 recent simulated days within the school-age child stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began."
+        }
+      ],
+      "question": "Did keeping track of tasks only get difficult during this week?",
+      "reply": "No, it hasn't just been this week. I've had trouble keeping track of tasks since my early school years, at home and in learning settings. It's been hard for years, including the months before this diary.",
+      "factIds": [
+        "EX_dev_sam_task_history_B01",
+        "EX_dev_sam_task_history_G03"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-alex-visible-commitments",
+      "tags": [
+        "young-adult",
+        "personality",
+        "study",
+        "practical-plans"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_alex_visible_commitments_P07",
+          "statement": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else."
+        }
+      ],
+      "question": "How do you lay out study tasks and work shifts before adding another commitment?",
+      "reply": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+      "factIds": [
+        "EX_dev_alex_visible_commitments_P07"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-robin-help-with-choice",
+      "tags": [
+        "older-adult",
+        "autonomy",
+        "help",
+        "no-age-stereotypes"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Older adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_robin_help_with_choice_P10",
+          "statement": "If someone wants to help with a task, I prefer them to ask which part would help. I want a say in what I do myself and what we do together."
+        }
+      ],
+      "question": "If someone wants to help, would you prefer that they take over the whole task?",
+      "reply": "I'd prefer they ask which part would help rather than taking over. I want a say in what I do myself and what we do together.",
+      "factIds": [
+        "EX_dev_robin_help_with_choice_P10"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-alex-past-energy-period",
+      "tags": [
+        "young-adult",
+        "chronology",
+        "mental-premise",
+        "past-versus-current",
+        "energy",
+        "earlier"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Young adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_alex_past_energy_period_B01",
+          "statement": "Before this diary, I had a distinct eight-day period of unusually high energy, very little need for sleep, racing plans and behavior that seriously disrupted my life. I needed hospital care then; afterward I returned to a steadier routine."
+        },
+        {
+          "id": "EX_dev_alex_past_energy_period_B02",
+          "statement": "During that past period I felt unusually capable, talked much more and committed to far more than I could manage. I am not reporting a new high-energy episode in this diary."
+        }
+      ],
+      "question": "Was the high-energy period happening during these recent days, or was it earlier?",
+      "reply": "It was earlier, before this diary started. I'm not reporting a new high-energy episode in these recent days; I've returned to a steadier routine since then.",
+      "factIds": [
+        "EX_dev_alex_past_energy_period_B01",
+        "EX_dev_alex_past_energy_period_B02"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-avery-worry-interference",
+      "tags": [
+        "adult",
+        "mental-premise",
+        "worry",
+        "function"
+      ],
+      "perspective": "patient",
+      "lifeStage": "Adult",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_avery_worry_interference_B02",
+          "statement": "The worry is hard to stop even when I want to. I feel tense, get tired and have trouble settling to sleep."
+        },
+        {
+          "id": "EX_dev_avery_worry_interference_B03",
+          "statement": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy."
+        }
+      ],
+      "question": "What makes the worry hard to leave behind when you want to get on with things?",
+      "reply": "It's hard to stop the worry even when I want to. I end up feeling tense and tired, and the worry and seeking reassurance repeatedly interrupt my ordinary responsibilities and the time I want to enjoy.",
+      "factIds": [
+        "EX_dev_avery_worry_interference_B02",
+        "EX_dev_avery_worry_interference_B03"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-mika-earlier-development",
+      "tags": [
+        "caregiver",
+        "chronology",
+        "earlier-history",
+        "development"
+      ],
+      "perspective": "caregiver",
+      "lifeStage": "Toddler",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_mika_earlier_development_B01",
+          "statement": "Since early development, we have noticed differences in how the child joins shared attention, communicates preferences and handles changes or sensory input. This history began before the recent diary."
+        },
+        {
+          "id": "EX_dev_mika_earlier_development_G03",
+          "statement": "This account covers 7 recent simulated days within the toddler stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began."
+        }
+      ],
+      "question": "Are these seven days the whole history of the differences you noticed?",
+      "reply": "No, these seven days aren't the whole history. We've noticed differences in how they join shared attention, communicate preferences, and handle changes or sensory input since early development, before this recent diary began.",
+      "factIds": [
+        "EX_dev_mika_earlier_development_B01",
+        "EX_dev_mika_earlier_development_G03"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    },
+    {
+      "id": "dev-leo-future-playdate",
+      "tags": [
+        "caregiver",
+        "future-plan",
+        "false-premise",
+        "play"
+      ],
+      "perspective": "caregiver",
+      "lifeStage": "Preschool child",
+      "sourceFacts": [
+        {
+          "id": "EX_dev_leo_future_playdate_P12",
+          "statement": "I’d like to try a short playdate with the toy shop ready, so the child can choose a role at the start. We haven’t carried out that plan yet."
+        }
+      ],
+      "question": "How did the playdate with the toy shop turn out?",
+      "reply": "We haven't tried that playdate yet. I'd like to have the toy shop ready so the child can choose a role at the start.",
+      "factIds": [
+        "EX_dev_leo_future_playdate_P12"
+      ],
+      "audit": {
+        "unsupported": [],
+        "supported": true,
+        "relevant": true,
+        "no_leak": true
+      },
+      "review": {
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "status": "approved"
+      }
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "accessed": "2026-10-08",
+  "method": "Targeted narrative research using authoritative primary institutional/publisher material, supplemented by two MSD clinical reference pages. Not a systematic review.",
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "APA",
+      "title": "DSM-5 table of contents",
+      "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Contents.pdf",
+      "publication": "2013",
+      "access": "Opened official PDF",
+      "used_for": "Category and name inventory only; not DSM-5-TR criteria.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S02",
+      "publisher": "APA",
+      "title": "DSM-5-TR fact sheets",
+      "url": "https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/dsm-5-tr-fact-sheets",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "Publisher's public summaries and linked changes.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S03",
+      "publisher": "APA",
+      "title": "Updates to DSM-5-TR criteria and text",
+      "url": "https://www.psychiatry.org/psychiatrists/practice/dsm/updates-to-dsm/updates-to-dsm-5-tr-criteria-text",
+      "publication": "Latest supplement listed: September 2025",
+      "access": "Opened page",
+      "used_for": "Version control; no later approved supplement found on this page during this search.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S04",
+      "publisher": "APA",
+      "title": "DSM-5-TR September 2025 update, including earlier supplements",
+      "url": "https://www.psychiatry.org/getmedia/b68a5776-f88c-45c7-9535-fd219d7aa5cb/APA-DSM5TR-Update-September-2025.pdf",
+      "publication": "2025",
+      "access": "Opened official PDF; selected passages inspected",
+      "used_for": "Cumulative changes, including neurocognitive, eating-disorder and DMDD material; not the complete manual.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S05",
+      "publisher": "WHO",
+      "title": "ICD-11 clinical descriptions and diagnostic requirements (CDDR)",
+      "url": "https://www.who.int/publications/i/item/9789240077263/",
+      "publication": "2024-03-08",
+      "access": "Official publication-page search excerpt",
+      "used_for": "Classification cross-check and manual availability; full 852-page manual not reviewed.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S06",
+      "publisher": "NIMH",
+      "title": "Depression",
+      "url": "https://www.nimh.nih.gov/health/publications/depression",
+      "publication": "Revised 2024",
+      "access": "Opened page",
+      "used_for": "Symptoms, two-week major depressive episode anchor, persistent course and age differences.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S07",
+      "publisher": "NIMH",
+      "title": "Bipolar disorder",
+      "url": "https://www.nimh.nih.gov/health/publications/bipolar-disorder",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page",
+      "used_for": "Mania, hypomania, longitudinal course and differential considerations.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S08",
+      "publisher": "NIMH",
+      "title": "Schizophrenia",
+      "url": "https://www.nimh.nih.gov/health/publications/schizophrenia",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page",
+      "used_for": "Psychotic, negative and cognitive features; functioning.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S09",
+      "publisher": "NIMH",
+      "title": "Generalized anxiety disorder: What you need to know",
+      "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page and duration passage",
+      "used_for": "Persistent difficult-to-control worry and six-month history.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S10",
+      "publisher": "NIMH",
+      "title": "Panic disorder: What you need to know",
+      "url": "https://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page",
+      "used_for": "Unexpected attacks plus subsequent worry/behavior change; isolated attacks are not the disorder.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S11",
+      "publisher": "NIMH",
+      "title": "Social anxiety disorder: What you need to know",
+      "url": "https://www.nimh.nih.gov/health/publications/social-anxiety-disorder-more-than-just-shyness",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page",
+      "used_for": "Scrutiny, avoidance, impairment and six-month history.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S12",
+      "publisher": "NIMH",
+      "title": "Obsessive-compulsive disorder",
+      "url": "https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page",
+      "used_for": "Obsessions/compulsions and interference, distinct from ordinary habits.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S13",
+      "publisher": "NIMH",
+      "title": "Post-traumatic stress disorder",
+      "url": "https://www.nimh.nih.gov/health/publications/post-traumatic-stress-disorder-ptsd",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page and duration passage",
+      "used_for": "Trauma-linked symptom domains, duration and childhood differences.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S14",
+      "publisher": "NIMH",
+      "title": "Attention-deficit/hyperactivity disorder: What you need to know",
+      "url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+      "publication": "Revised 2024",
+      "access": "Opened page and childhood-onset passage",
+      "used_for": "Developmental onset, persistence, settings and functional impact.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S15",
+      "publisher": "NIMH",
+      "title": "Autism spectrum disorder",
+      "url": "https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page and developmental passage",
+      "used_for": "Developmental history, social communication, repetitive patterns, strengths and collateral.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S16",
+      "publisher": "NIMH",
+      "title": "Eating disorders: What you need to know",
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page and symptom passages",
+      "used_for": "Anorexia, bulimia, binge eating, ARFID and medical context.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S17",
+      "publisher": "APA",
+      "title": "Prolonged grief disorder",
+      "url": "https://www.psychiatry.org/patients-families/prolonged-grief-disorder",
+      "publication": "Undated",
+      "access": "Official page search excerpt",
+      "used_for": "Adult versus child/adolescent time since loss and cultural context.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S18",
+      "publisher": "APA",
+      "title": "Prolonged grief disorder DSM-5-TR fact sheet",
+      "url": "https://www.psychiatry.org/getmedia/2a667a19-80ac-4aaf-8751-9ed240619757/APA-DSM5TR-ProlongedGriefDisorder.pdf",
+      "publication": "2022",
+      "access": "Official PDF search excerpt",
+      "used_for": "Addition to DSM-5-TR Section II.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S19",
+      "publisher": "APA",
+      "title": "What are personality disorders?",
+      "url": "https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "Longstanding inflexible patterns; categorical names. Public age summary is not a complete youth diagnostic rule.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S20",
+      "publisher": "NIMH",
+      "title": "Borderline personality disorder",
+      "url": "https://www.nimh.nih.gov/health/publications/borderline-personality-disorder",
+      "publication": "Undated in reviewed extract",
+      "access": "Opened page",
+      "used_for": "Emotion regulation, relationships, self-image and longitudinal assessment.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S21",
+      "publisher": "APA",
+      "title": "What are dissociative disorders?",
+      "url": "https://www.psychiatry.org/patients-families/dissociative-disorders/what-are-dissociative-disorders",
+      "publication": "Physician review: October 2024",
+      "access": "Opened linked page",
+      "used_for": "Dissociation, amnesia and identity disruption; not a license to invent trauma.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S22",
+      "publisher": "APA",
+      "title": "Disruptive, impulse-control and conduct disorders",
+      "url": "https://www.psychiatry.org/patients-families/disruptive-impulse-control-and-conduct-disorders/disruptive-impulse-control-and-conduct-disorders",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "Child behavior and contextual assessment; overview rather than full criteria.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S23",
+      "publisher": "APA",
+      "title": "Somatic symptom disorder",
+      "url": "https://www.psychiatry.org/patients-families/somatic-symptom-disorder",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "Symptoms and health anxiety; medical illness can coexist; avoid invalidating distress.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S24",
+      "publisher": "APA",
+      "title": "What are sleep disorders?",
+      "url": "https://www.psychiatry.org/patients-families/sleep-disorders/what-are-sleep-disorders",
+      "publication": "Undated",
+      "access": "Official page search excerpt",
+      "used_for": "Insomnia duration/frequency and differential sleep conditions.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S25",
+      "publisher": "NHLBI",
+      "title": "Insomnia: Diagnosis",
+      "url": "https://www.nhlbi.nih.gov/health/insomnia/diagnosis",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Three-night/three-month chronic insomnia anchor; diary versus history distinction.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S26",
+      "publisher": "NIAAA",
+      "title": "Alcohol use disorder: From risk to diagnosis to recovery",
+      "url": "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-use-disorder-risk-diagnosis-recovery",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Past-year diagnostic window, impairment and withdrawal medical risk.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S27",
+      "publisher": "APA",
+      "title": "What is a substance use disorder?",
+      "url": "https://www.psychiatry.org/patients-families/addiction-substance-use-disorders/what-is-a-substance-use-disorder",
+      "publication": "Undated",
+      "access": "Official page search excerpt",
+      "used_for": "Impaired control, consequences, substance-specific disorders and co-occurrence.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S28",
+      "publisher": "NICE",
+      "title": "Delirium: recommendations (CG103)",
+      "url": "https://www.nice.org.uk/guidance/cg103/chapter/Recommendations",
+      "publication": "2010; assessment recommendations amended 2023",
+      "access": "Official guideline search excerpt",
+      "used_for": "Acute fluctuations, baseline comparison and medical assessment.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S29",
+      "publisher": "APA",
+      "title": "What is PTSD? Related conditions",
+      "url": "https://www.psychiatry.org/patients-families/ptsd/what-is-ptsd",
+      "publication": "Undated",
+      "access": "Official page search excerpt",
+      "used_for": "Acute stress, adjustment, attachment-related presentations and timelines.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S30",
+      "publisher": "CDC",
+      "title": "Diagnosing tic disorders",
+      "url": "https://cdc.gov/tourette-syndrome/diagnosis/index.html",
+      "publication": "2026-03-24",
+      "access": "Official page search excerpt",
+      "used_for": "Tic type, duration, childhood onset and exclusions.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S31",
+      "publisher": "APA",
+      "title": "Gender dysphoria",
+      "url": "https://www.psychiatry.org/patients-families/gender-dysphoria/what-is-gender-dysphoria",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Distress/impairment is distinct from transgender identity.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S32",
+      "publisher": "NIMH",
+      "title": "Disruptive mood dysregulation disorder: The basics",
+      "url": "https://www.nimh.nih.gov/health/publications/disruptive-mood-dysregulation-disorder",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Persistent irritability, outbursts and 12-month history. Age wording conflicts with APA's fuller rule; see research report.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S33",
+      "publisher": "APA",
+      "title": "DSM-5 disruptive mood dysregulation disorder fact sheet",
+      "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Disruptive-Mood-Disregulation-Disorder.pdf",
+      "publication": "2013",
+      "access": "Opened official PDF",
+      "used_for": "Onset before 10; first diagnosis ages 6–18; longstanding cross-setting presentation.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S34",
+      "publisher": "NHS",
+      "title": "Selective mutism",
+      "url": "https://www.nhs.uk/mental-health/conditions/selective-mutism/",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Anxiety-linked inability to speak in particular situations, not deliberate refusal.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S35",
+      "publisher": "AACAP",
+      "title": "Anxiety and children",
+      "url": "https://aacap.org/AACAP/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/The-Anxious-Child-047.aspx",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Developmentally ordinary fears versus interfering anxiety.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S36",
+      "publisher": "VA National Center for PTSD",
+      "title": "Complex PTSD: History and definitions",
+      "url": "https://www.ptsd.va.gov/professional/treat/essentials/complex_ptsd.asp",
+      "publication": "Updated September 2026",
+      "access": "Official page search excerpt",
+      "used_for": "ICD-11 versus DSM distinction; no separate DSM-5-TR CPTSD option.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S37",
+      "publisher": "VA National Center for PTSD",
+      "title": "PTSD and DSM-5",
+      "url": "https://www.ptsd.va.gov/professional/treat/essentials/dsm5_ptsd.asp",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Qualifying trauma and preschool formulation; full criteria require appropriate manual review.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S38",
+      "publisher": "APA",
+      "title": "Obsessive-compulsive and related disorders",
+      "url": "https://www.psychiatry.org/patients-families/obsessive-compulsive-disorder/what-is-obsessive-compulsive-disorder",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "BDD, hoarding, hair pulling and skin picking; overview includes olfactory reference terminology.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S39",
+      "publisher": "NIDCD",
+      "title": "Developmental language disorder",
+      "url": "https://www.nidcd.nih.gov/health/developmental-language-disorder",
+      "publication": "Undated in reviewed extract",
+      "access": "Official page search excerpt",
+      "used_for": "Language development and assessment; related terminology is not an automatic DSM code crosswalk.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S40",
+      "publisher": "APA",
+      "title": "What are specific learning disorders?",
+      "url": "https://www.psychiatry.org/patients-families/specific-learning-disorder/what-is-specific-learning-disorder",
+      "publication": "Undated",
+      "access": "Official page search excerpt",
+      "used_for": "Academic domains, persistence despite help and educational assessment.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S41",
+      "publisher": "APA",
+      "title": "What is intellectual disability?",
+      "url": "https://www.psychiatry.org/patients-families/intellectual-disability/what-is-intellectual-disability",
+      "publication": "Undated",
+      "access": "Official page search excerpt",
+      "used_for": "Intellectual and adaptive functioning; developmental onset; distinguishes AAIDD discussions.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S42",
+      "publisher": "APA",
+      "title": "What is gambling disorder?",
+      "url": "https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder",
+      "publication": "May 2024",
+      "access": "Official page search excerpt",
+      "used_for": "Control, consequences and past-year assessment.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S43",
+      "publisher": "MSD Manual Professional",
+      "title": "Schizophreniform disorder",
+      "url": "https://www.msdmanuals.com/professional/psychiatric-disorders/schizophrenia-and-related-disorders/schizophreniform-disorder?ruleredirectid=741",
+      "publication": "July 2025",
+      "access": "Publisher search excerpt; secondary clinical reference",
+      "used_for": "One to under six months; longitudinal differentiation.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S44",
+      "publisher": "MSD Manual Professional",
+      "title": "Schizophrenia",
+      "url": "https://www.msdmanuals.com/professional/psychiatric-disorders/schizophrenia-and-related-disorders/schizophrenia",
+      "publication": "Undated in reviewed extract",
+      "access": "Publisher search excerpt; secondary clinical reference",
+      "used_for": "Six-month overall course; active symptom period and exclusions.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S45",
+      "publisher": "APA",
+      "title": "Internet gaming",
+      "url": "https://www.psychiatry.org/patients-families/internet-gaming",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "DSM further-study status; distinguish from ICD-11 gaming disorder.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S46",
+      "publisher": "WHO",
+      "title": "Addictive behaviours: Gaming disorder",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/addictive-behaviours-gaming-disorder",
+      "publication": "2020-10-22",
+      "access": "Opened page",
+      "used_for": "ICD-11 condition, impairment, normally 12-month course.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S47",
+      "publisher": "APA",
+      "title": "DSM-5-TR and diagnoses for children",
+      "url": "https://www.psychiatry.org/getmedia/178f173b-f4a1-433b-aef3-7b2fb513436b/APA-DSM5TR-DiagnosesforChildren.pdf",
+      "publication": "2022",
+      "access": "Opened official PDF",
+      "used_for": "Developmentally appropriate diagnostic interpretation. Explicit DSM-5-TR DMDD diagnostic age range 6–18.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S48",
+      "publisher": "APA",
+      "title": "Functional neurological symptom disorder fact sheet",
+      "url": "https://www.psychiatry.org/getmedia/c57b724e-7fc7-4082-bbbf-28b458709b51/APA-DSM5TR-FunctionalNeurologicalSymptomDisorder.pdf",
+      "publication": "2022",
+      "access": "Opened official PDF",
+      "used_for": "Terminology update only; does not support a complete simulation rule set.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S49",
+      "publisher": "APA",
+      "title": "Avoidant restrictive food intake disorder fact sheet",
+      "url": "https://www.psychiatry.org/getmedia/8bcf8b72-f3cc-403c-9cfb-5c89e086d5db/APA-DSM5TR-AvoidantRestrictiveFoodIntakeDisorder.pdf",
+      "publication": "2022",
+      "access": "Opened official PDF",
+      "used_for": "Psychosocial interference can be sufficient within criterion A; low weight is not universally required.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S50",
+      "publisher": "AACAP",
+      "title": "Encopresis: Problems with soiling and bowel control",
+      "url": "https://aacap.org/AACAP/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Problems-With-Soiling-and-Bowel-Control-048.aspx",
+      "publication": "October 2023",
+      "access": "Official page search excerpt",
+      "used_for": "Bowel control, developmental context, constipation and avoiding shame; full criteria still needed.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S51",
+      "publisher": "AACAP",
+      "title": "Bedwetting",
+      "url": "https://www.aacap.org/aacap/families_and_youth/Facts_for_Families/FFF-Guide/Bedwetting-018.aspx",
+      "publication": "October 2023",
+      "access": "Official page search excerpt",
+      "used_for": "Common childhood bedwetting is not automatically psychopathology.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S52",
+      "publisher": "APA",
+      "title": "Dementia and Alzheimer's disease",
+      "url": "https://www.psychiatry.org/patients-families/alzheimers/alzheimers",
+      "publication": "Contains 2026 information",
+      "access": "Official page search excerpt",
+      "used_for": "Acquired cognitive decline and independence; dementia is not inevitable ageing.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S53",
+      "publisher": "APA",
+      "title": "Mild neurocognitive disorder fact sheet",
+      "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Mild-Neurocognitive-Disorder.pdf",
+      "publication": "2013",
+      "access": "Official PDF search excerpt",
+      "used_for": "Decline with independence maintained using support/strategies.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S54",
+      "publisher": "APA",
+      "title": "DSM-5-TR frequently asked questions",
+      "url": "https://www.psychiatry.org/psychiatrists/practice/dsm/frequently-asked-questions",
+      "publication": "Undated",
+      "access": "Opened page",
+      "used_for": "Relationship with ICD and attention to cultural context.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S55",
+      "publisher": "APA",
+      "title": "DSM-5-TR organization",
+      "url": "https://www.psychiatry.org/getmedia/0191c8c8-4151-4bde-9cba-263db78a2734/APA-DSM5TR-TheOrganizationofDSM.pdf",
+      "publication": "2022",
+      "access": "Official PDF search excerpt",
+      "used_for": "Chapter grouping, distinct from disorders or specifiers.",
+      "accessed": "2026-10-08"
+    },
+    {
+      "id": "S56",
+      "publisher": "APA",
+      "title": "Intellectual developmental disorder text update",
+      "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/IDD-Text-Update.pdf",
+      "publication": "2021",
+      "access": "Official PDF search excerpt",
+      "used_for": "Updated label ordering and developmental-onset wording.",
+      "accessed": "2026-10-08"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+      "result": "403; full DSM-5-TR manual not accessed"
+    },
+    {
+      "url": "https://www.ninds.nih.gov/health-information/disorders/functional-neurologic-disorder",
+      "result": "403; not used as evidence"
+    },
+    {
+      "url": "https://www.nia.nih.gov/health/alzheimers-and-dementia/what-dementia-symptoms-types-and-diagnosis",
+      "result": "Bot verification page; not used as evidence"
+    }
+  ]
+}

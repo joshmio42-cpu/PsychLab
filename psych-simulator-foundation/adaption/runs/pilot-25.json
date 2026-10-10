@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "label": "pilot-25",
+  "createdAt": "2026-10-09T06:58:37.143Z",
+  "dataHash": "2c464cb7c4f5d0ecc92f991c483f1b3136eddf1b70a933dd7c0adf09b712c864",
+  "rowCount": 25,
+  "idempotencyKey": "publication-redacted-remote-id-1",
+  "stage": "downloaded",
+  "datasetId": "publication-redacted-remote-id-2",
+  "remote": {
+    "status": "succeeded",
+    "rowCount": 25,
+    "progress": {
+      "percent": 100,
+      "processed_rows": 25,
+      "total_rows": 25
+    },
+    "checkedAt": "2026-10-09T07:08:34.344Z",
+    "errorCode": null
+  },
+  "quote": {
+    "credits": 1,
+    "minutes": 11,
+    "estimateOnly": true,
+    "configHash": "6182d93ba007acd21c15740a58867c65912aa942d53734cae984d5eb98828398",
+    "checkedAt": "2026-10-09T06:59:04.685Z"
+  },
+  "runAttemptedAt": "2026-10-09T06:59:17.928Z",
+  "approvedQuoteCeiling": 1,
+  "runId": "dataset-publication-redacted-remote-id-2-1791529161618",
+  "launchQuote": {
+    "credits": 1,
+    "minutes": 11
+  },
+  "download": {
+    "file": "pilot-25-output.jsonl",
+    "sha256": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998",
+    "bytes": 122290,
+    "partial": false,
+    "downloadedAt": "2026-10-09T07:08:34.763Z"
+  }
+}

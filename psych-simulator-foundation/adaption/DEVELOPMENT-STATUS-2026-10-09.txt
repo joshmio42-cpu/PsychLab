@@ -1,0 +1,64 @@
+PSYCHLAB ADAPTION INTEGRATION - DEVELOPMENT STATUS
+Updated: 2026-10-09T11:38:42.875Z
+
+STATUS: IN PROGRESS; NOT RELEASED
+The approved 21-example pack remains unchanged and inactive. Neither active-pack.json nor active-release.json exists. No new Adaption generation batch was launched. Start-PsychLab.ps1 still launches server.mjs; the prepared verified-release bootstrap is not enabled. Staging evaluations do not modify saved credentials or active localhost interviews.
+
+Completed v150 independent semantic review: 15/16 pass, quality 41/48, no blocked questions. Jordan's answer reintroduced excluded source-provenance text through the writer's memory-style context and omitted the requested drawing connection; the provider auditor approved it. The review classifies this as one internal-information leak, rather than a fabricated case event (unsupportedDelivered is therefore 0, not evidence of an all-case pass). All 16 frozen snapshots reproduced unchanged. The exact evaluation hash matches its review.
+
+v149 was deliberately aborted after a review found that source-sentence normalization discarded meaningful quotation and numeric punctuation. Its unchanged partial artifact contains 14/16 records: 13 delivered, one routing failure. The artifact still says "running" because the process was stopped; planned-v149-abort-note.txt records the interruption. It is incomplete evidence, not a passing trial. That normalization bug was fixed before v150.
+
+v150 verified three conservative source-excerpt repairs: exact permitted excerpts replaced unverified causal wording before the same guards and semantic audit, without extra calls. This did not repair Jordan's failure. Legitimate paraphrases may also be replaced, and less natural wording remains a tradeoff; the repair is not general factual proof.
+
+Changes introduced in interview-0.15.1: the planned writer gets memory facts only through selected evidence. Direct answer sources precede optional missing-detail context. A conservative lexical helper can add a unique usual-interest source beside a recorded current-enjoyment claim; both remain required after disclosure. Lexical overlap does not establish semantic relevance or guarantee that the writer uses every selected source.
+
+v151 automated logs verify 411/411 complete-suite checks and 54/54 focused checks. Its live regression finished at 2026-10-09T11:14:29.241Z with 16/16 delivered. That independent review confirms 15/16 semantic passes, quality 41/48, no unsupported factual assertions or provenance leakage found in delivered replies. Jordan still omitted the required drawing connection despite its exact source reaching the writer. Three source-excerpt fallbacks were reviewed; all snapshots remained unchanged. The saved review matches the exact evaluation hash. The all-case gate failed. Automated checks use mocks and are not live accuracy or clinical-validity evidence.
+
+v152 added the same exact-excerpt fallback when a valid draft omits a required direct-plan source citation; optional context is not mandatory. Its completed live regression delivered 16/16. The latest independent review verifies 15/16 semantic passes, quality 41/48, one unsupported causal claim and no provenance leakage. Alex's reply added "since" to connect a recorded behavior to a recorded preference without an authored causal link; the provider auditor approved it, and the detector did not trigger. Jordan now passes: the required drawing connection appeared in the AI draft without source rendering, although the reply remained less focused than ideal. Three other source fallbacks were reviewed, all snapshots remained unchanged, and the review matches the exact evaluation hash. The all-case gate remains unmet.
+
+Tested revision interview-0.15.3: source rendering detects generic explanatory links including since/as, result/lead, cause/prompt, make/help and enable/allow; exact complete authored sentences retain their existing license. This adds no provider call. Temporal since/as and ordinary action wording can trigger unnecessary excerpt rendering, so naturalness and brevity remain tradeoffs. Citation presence and lexical markers do not prove content coverage, factual support or relevance; the ordinary guards and semantic audit remain required.
+
+v153 saved automated results: 425/425 passed. The renderer's 26 focused tests also passed; independent static review reported no blocking issue. Its completed live regression passed 16/16 under the unchanged independent rubric, quality 43/48, with zero unsupported delivered claims or provenance leaks found. Four source fallbacks were checked against the exact excerpts. This is known regression evidence, not fresh generalization. The evaluation and review were copied byte-for-byte to the release-v153-dsv41 regression filenames with a provenance note; copied artifacts do not add calls or cost.
+
+The wider v153 main comparison FAILED its no-hard-regressions gate. Baseline passed 24/36 (quality 57/108); candidate passed 23/36 (quality 60/108). Both had two blocked questions and zero unsupported delivered factual claims found. The candidate regressed on reciprocal-smalltalk-question by asking for one part at a time instead of answering known music interests. Seven cases improved in rated quality, but they do not cancel that hard regression. Candidate cost was 1.0280239521 times baseline, within the 1.2 cap. See runs/release-v153-dsv41-main-precheck.json for pinned evidence hashes and exact lists. This is a main-only precheck, not a full release decision. Transfer and reserved fresh cases were not run for this failed revision.
+
+Current work is v154: a minimal-source planning rule that explicitly respects the existing disclosure allowance, plus restoring the existing narrow substantive-wellbeing distinction in planned mode. Atomic required-source projection, difficulty, factual guards, temperature, pack and usage limits remain unchanged. No v154 result is claimed yet.
+
+DEVELOPMENT USAGE
+Through v153 regression and the completed main comparison, plus partial v149: 926 persisted attempted Featherless calls, 1220931 reported tokens and a known estimate of $0.32090916 across 21 unique run artifacts (20 complete and one partial). v153 regression contributes 45 calls, 59615 tokens and $0.02063940. Main baseline contributes 84 calls, 118801 tokens and $0.04008000; main candidate contributes 82 calls, 122317 tokens and $0.04120320. Copied regression artifacts are excluded from the sum. These are saved usage totals, not inferred from delivery counts.
+
+One persisted call in planned-v141-regression has unreported/unpriced usage. v149 may also have incurred an interrupted in-flight call after its last saved record; its amount and count are not captured by the partial artifact. These are incomplete known estimates, not the account bill or a spending cap. They exclude the original pilot, other unlisted work and separate Adaption billing. Missing cache usage uses the regular input rate.
+
+The development sets listed below have 16 cases; the separate main comparison above has 36 per variant. "Delivered" is not a semantic pass. Missing independent reviews are explicit; failed and incomplete artifacts remain unchanged in runs/.
+
+grounding-v12-generalization: 13 delivered; 10 semantic passes; $0.01500341.
+grounding-v13-generalization: 11 delivered; 11 semantic passes; $0.01648666.
+grounding-dsv4-generalization: 16 delivered; 13 semantic passes; $0.00575932.
+grounding-qwen-next-generalization: 13 delivered; 8 semantic passes; $0.00533015.
+planned-v14-regression: 9 delivered; 6 semantic passes; $0.01274744.
+planned-v141-regression: 9 delivered; independent review unavailable; $0.01777114 plus one unreported call.
+planned-v141-dsv4-regression: 13 delivered; 11 semantic passes; $0.00787948.
+planned-v142-dsv4-regression: 15 delivered; independent review unavailable; $0.00850094.
+planned-v143-dsv4-regression: 15 delivered; 14 semantic passes; $0.00850808.
+planned-v144-dsv4-regression: 16 delivered; 14 semantic passes; $0.00864430.
+planned-v145-dsv4-regression: 16 delivered; 15 semantic passes; $0.00806834.
+planned-v146-dsv4-regression: 16 delivered; 15 semantic passes; $0.00820372.
+planned-v147-dsv4-regression: 16 delivered; 14 semantic passes; $0.00805098.
+planned-v148-dsv41-regression: 16 delivered; 15 semantic passes; $0.01951440.
+planned-v149-dsv4-regression: INCOMPLETE, 13 delivered of 14 saved; no complete verdict; $0.00699510 plus possible unsaved in-flight usage.
+planned-v150-dsv41-regression: 16 delivered; 15 semantic passes; $0.02039970.
+planned-v151-dsv41-regression: 16 delivered; 15 semantic passes; $0.02054070.
+planned-v152-dsv41-regression: 16 delivered; 15 semantic passes; $0.02058270.
+planned-v153-dsv41-regression: 16 delivered; 16 semantic passes; $0.02063940.
+
+Earlier failures include blocked ordinary questions, wrong callbacks/chronology, invented decisions and causes, omitted known corrections, and provenance information in patient speech. Complete delivery and low cost have not removed those failure modes. The retained 16-case matrix has informed fixes and is regression evidence, not an unseen test.
+
+RELEASE WORK STILL REQUIRED
+- Preserve the passing retained regression behavior in the next runtime revision and pin a matching review.
+- Complete matched 36 baseline + 36 candidate + 8 transfer + 16 retained regression + 16 reserved fresh release cases (112 total). The fresh matrix has not been inspected for tuning.
+- Preserve every locked gate: no unsupported delivered claims, no hard regressions, at least one improvement, no average-quality loss, no more than 20% cost growth, intact frozen histories, real example use, and matching model/source/pack/evidence hashes.
+- Only after a passing decision, select the validated release manifest for normal startup and verify its behavior. A prepared bootstrap/activation utility exists but has not been activated.
+
+Staging model rate reference checked 2026-10-09: https://featherless.ai/models/deepseek-ai/DeepSeek-V4.1-Flash ($0.30 input, $0.03 reported cached input, $1.20 output per million tokens). Thinking toggle documentation: https://featherless.ai/docs/chat-template-kwargs . Model trial did not establish superiority or change the saved model.
+
+See README.txt for evidence requirements and Release activation guide.txt for the prepared activation workflow.

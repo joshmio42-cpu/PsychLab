@@ -1,0 +1,17 @@
+INTERVIEW COMPANION
+
+The companion appears below the interview conversation after preparation.
+
+Checklist: open a checkpoint, record your observation, link an answered turn and explain the evidence. Unasked and unclear information stays unknown.
+Interview questions: Use question fills the input. It does not send the question. Edit before asking.
+Diagnosis test: choose a provisional impression, consider alternatives and record a next step. Check my reasoning highlights gaps and unlinked assertions; it does not determine clinical correctness or calculate a diagnosis score. Assessment references explain the purpose and limits of relevant tools.
+
+Chosen cases use condition-specific guidance. Random cases use a target-independent broad guide until the final case reveal. No disorder uses a standard functioning and wellbeing review. Guides cover all 67 named catalogue options (59 are available for young adults).
+
+Save interview notes or Check my reasoning to preserve your work through refresh. Once an answer exists, saved notes accompany the conversation in browser History and downloads. Finishing saves notes into the debrief. A server restart clears an active in-memory session; saved browser conversations remain.
+
+The final comparison uses the saved provisional dropdown label and the authored teaching premise. It is not an automated evaluation of the separate free-text final reflection. The reference tools are linked, not administered or scored by this feature. No complete licensed DSM text is reproduced.
+
+No additional AI calls are used for these aids. The existing conversation answer budget remains unchanged.
+
+Source pack: ../../research/interview-guidance-2026-10-08/01-Research-guide.html

@@ -1,0 +1,23 @@
+# Retained evaluations and release checks use byte-level hashes. Preserve their
+# original bytes across platforms, including source files referenced by hashes.
+* -text
+
+# New packaging files have consistent LF endings; Windows launchers use CRLF.
+/scripts/** text eol=lf
+/.github/** text eol=lf
+/*.md text eol=lf
+/*.json text eol=lf
+/.env.example text eol=lf
+/.node-version text eol=lf
+/.gitignore text eol=lf
+/.gitattributes text eol=lf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Keep binary resources intact and avoid textual merges.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.zip binary

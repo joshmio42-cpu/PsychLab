@@ -1,0 +1,79 @@
+PSYCHLAB — DISORDER SELECTION AND PREPARATION
+2026-10-08
+
+HOW TO USE
+Choose a patient, recent simulated days and seed. Prepare frozen history now opens
+a centered selection card. Use its arrows, arrow keys or mouse wheel to move
+between the cases available for that life stage. Choose a named case, Random,
+or No disorder, then prepare the interview.
+
+The catalogue includes 65 DSM-5-TR research candidates and two separately labelled
+ICD-11 comparisons (complex PTSD and gaming disorder). No disorder is a separate
+ordinary-life option. Stage filtering reflects the authored scenarios; it is not
+a statement that every omitted age/condition combination is clinically impossible.
+Some broad life stages cannot verify exact diagnostic age gates. No numerical age
+or diagnosis is invented to fill that gap.
+
+WHAT PREPARATION DOES
+The server prepares the profile, earlier course, current experiences, daily events,
+personality context and remembered interpretations. These are frozen before the
+interview. A longer recent window gives more recorded days, not a different age.
+Earlier histories establish an authored longer course independently of the diary.
+Short presentations occupy only their relevant recent interval; resolved brief
+episodes remain in earlier-history facts. Premenstrual examples have fictional
+cycle windows rather than symptoms on every day. The diary is not a medical model.
+
+The loading screen reports actual server phases and completed days. Preparation
+is local and uses zero Featherless calls. It can finish quickly. Cancel removes
+the job; stale work cannot overwrite a newer preparation. Refresh reconnects to
+the owned job, and network failures offer a status check before another creation.
+
+HOW THE AGENTS USE IT
+The condition is represented by unlabeled fictional experiences and functional
+impacts, not by asking the model to impersonate a diagnosis. CORTEX considers
+authored interpretations; MNEMOSYNE stores them alongside ordinary stage-specific
+events. The personality projection keeps relationships, goals and uncertainty.
+The response model receives selected facts and a compact expression context.
+These narrative premises do not imply calibrated disease effects on numerical
+tension, energy or personality traits. A label never defines a personality type.
+
+Toddler and preschool interviews use a caregiver. Selective-mutism patient cases
+use supported written responses. Developmental/communication cases keep their
+individual voice and explicitly authored support, without invented test scores.
+
+MYSTERY CASES
+Random selects one compatible case on the server and keeps that choice for the
+preparation and interview. Its label, description and sources are withheld from
+public session/progress responses and from the model's evidence packet. Its
+public frozen reference is opaque, not the private reproducible snapshot hash.
+The case answer is revealed only after an answered interview and completed learner
+reasoning. Saved conversation history contains disclosed speech, not hidden data.
+The chosen label is withheld from model prompts; generated replies also undergo
+the existing evidence audit and a direct selected-label check. Semantic model
+auditing is fallible, so this is not a secure or validated examination system.
+
+A seed reproduces the local diary for the same patient, case and number of days.
+Random case selection is separate: preparing Random again may choose another case
+even with the same seed. AI wording is not seed-reproducible.
+
+COST AND LIMITS
+Supported replies keep the existing three-call route/render/audit flow. Earlier
+facts plus at most 12 locally retrieved daily topics keep long diaries compact;
+explicit day questions receive priority. Existing prompt/output caps and session/
+process call budgets still apply. No automatic paid retry or extra preparation
+model call was added. Provider billing remains controlled by the user's account.
+
+CONTENT AND PROVENANCE
+The saved research is in ../../research/mental-disorder-selection-2026-10-08.
+The private runtime catalogue is live/data/disorder-catalogue.json; original
+fictional premises are in live/disorders.mjs. Reviewer output contains the case
+source IDs and explicit limitations. The catalogue draws on public APA DSM-5-TR,
+NIMH, WHO, CDC and other referenced summaries, not a reproduced DSM manual.
+
+All 67 named options have distinct authored course, experiences, impact and diary
+observations. They are teaching formulations, not complete criteria sets or
+clinically approved cases. Missing medical/developmental/substance exclusions stay
+unknown. Selecting a label is author intent, not proof of a diagnosis. No disorder
+means no assigned formulation, not a declaration of lifelong mental health.
+
+The original foundation documents and ZIP are historical snapshots.

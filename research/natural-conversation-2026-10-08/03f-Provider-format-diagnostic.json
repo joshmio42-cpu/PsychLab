@@ -1,0 +1,931 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "startedAt": "2026-10-08T11:33:01.780Z",
+  "scenarios": [
+    {
+      "patientId": "jordan",
+      "disorderId": "mdd",
+      "exchanges": [
+        {
+          "question": "Hey Jordan!",
+          "error": "502: Model response was incomplete or invalid."
+        },
+        {
+          "question": "What do you usually do for fun?",
+          "error": "502: Model did not return valid JSON."
+        },
+        {
+          "id": "T1",
+          "requestId": "f2c83a04-2b4c-4be1-8b55-a27bad6b8b2f",
+          "question": "What kind of things do you draw?",
+          "reply": "I usually draw ordinary stuff like mugs, plant pots, or whatever's on the table. I keep the sketches in a notebook.",
+          "kind": "answer",
+          "interaction": "answer"
+        },
+        {
+          "id": "T2",
+          "requestId": "6e1e82a8-dde3-4ac0-9355-451b3754cefc",
+          "question": "Why those things?",
+          "reply": "I guess I just go with what's right there in front of me, like mugs and plant pots. It’s easy and doesn’t require much setup.",
+          "kind": "answer",
+          "interaction": "answer"
+        },
+        {
+          "id": "T3",
+          "requestId": "fd6f181e-b30c-444b-af2b-4495aa9454b5",
+          "question": "That sounds cool.",
+          "reply": "Thanks.",
+          "kind": "answer",
+          "interaction": "social"
+        },
+        {
+          "id": "T4",
+          "requestId": "7f061ff2-8aa7-4351-8677-887ce1cf5df0",
+          "question": "Thanks for sharing.",
+          "reply": "You're welcome.",
+          "kind": "answer",
+          "interaction": "social"
+        },
+        {
+          "id": "T5",
+          "requestId": "f661dcb1-a83f-4ef5-aa63-48b1990c8dc8",
+          "question": "So sketching still makes you feel great these days?",
+          "reply": "Not really, sketching doesn't feel as rewarding lately. My energy's low and it's hard to concentrate.",
+          "kind": "answer",
+          "interaction": "answer"
+        },
+        {
+          "id": "T6",
+          "requestId": "63c9fda8-61b5-4ec3-a66d-b6558977e0a5",
+          "question": "What has your mood been like?",
+          "reply": "My mood's been pretty low for a while now, and I've lost interest in a lot of things. It's been tough to get motivated and enjoy stuff that I used to love.",
+          "kind": "answer",
+          "interaction": "answer"
+        },
+        {
+          "id": "T7",
+          "requestId": "ddf1cf39-fa8f-42e8-a7cc-64256e7f3ecc",
+          "question": "So every day?",
+          "reply": "Not every day, but most days for the past four months. It's been pretty consistent.",
+          "kind": "answer",
+          "interaction": "answer"
+        }
+      ],
+      "preparationCalls": 0,
+      "usage": {
+        "limit": 60,
+        "attemptedCalls": 23,
+        "completedCalls": 21,
+        "failedCalls": 2,
+        "reportedTokens": 16133,
+        "unreportedCalls": 2,
+        "inputBytes": 84308,
+        "outputTokenAllowance": 4512
+      },
+      "facts": [
+        {
+          "id": "G01",
+          "response": "I would like to talk about feeling low and losing interest in things. I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff."
+        },
+        {
+          "id": "G02",
+          "response": "My name is Jordan. I am in the young adult stage. My usual routines include finishing a routine work task, and my interests include sketching."
+        },
+        {
+          "id": "G03",
+          "response": "This account covers 28 recent simulated days within the young adult stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began."
+        },
+        {
+          "id": "G04",
+          "response": "Over this recorded period I had 7 tasks involving finishing a routine work task: I completed 3 that day and paused 4."
+        },
+        {
+          "id": "P01",
+          "response": "I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff."
+        },
+        {
+          "id": "P02",
+          "response": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+        },
+        {
+          "id": "P03",
+          "response": "Give me a second to think. It’s easier if I can give you an example."
+        },
+        {
+          "id": "P04",
+          "response": "I like a quiet chat with my cousin. With my friend, I’d rather agree on a time and a plan than leave it up in the air."
+        },
+        {
+          "id": "P05",
+          "response": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil."
+        },
+        {
+          "id": "P06",
+          "response": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw."
+        },
+        {
+          "id": "B01",
+          "response": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+        },
+        {
+          "id": "B02",
+          "response": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+        },
+        {
+          "id": "B03",
+          "response": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+        },
+        {
+          "id": "B04",
+          "response": "I am in the young adult stage. My usual interests include sketching. I want to take part in finishing a routine work task, with support from my cousin."
+        },
+        {
+          "id": "E01",
+          "response": "On simulated day 1, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I took some time to rest. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E02",
+          "response": "On simulated day 2, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I talked with my cousin and they listened. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E03",
+          "response": "On simulated day 3, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I did not reply to the cancellation that day. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E04",
+          "response": "On simulated day 4, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I did not reply to the cancellation that day. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E05",
+          "response": "On simulated day 5, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I talked with my cousin and they listened. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E06",
+          "response": "On simulated day 6, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I talked with my cousin and they listened. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E07",
+          "response": "On simulated day 7, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I postponed the task until the next day. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E08",
+          "response": "On simulated day 8, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I finished the routine work task. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E09",
+          "response": "On simulated day 9, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E10",
+          "response": "On simulated day 10, There was a quiet evening with no scheduled commitments. My interpretation at the time was: I have some time free; I could rest or choose one of my usual activities. I spent some time sketching. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E11",
+          "response": "On simulated day 11, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I finished the routine work task. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E12",
+          "response": "On simulated day 12, There was a quiet evening with no scheduled commitments. My interpretation at the time was: I have some time free; I could rest or choose one of my usual activities. I spent some time sketching. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E13",
+          "response": "On simulated day 13, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I postponed the task until the next day. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E14",
+          "response": "On simulated day 14, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I took some time to rest. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E15",
+          "response": "On simulated day 15, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I postponed the task until the next day. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E16",
+          "response": "On simulated day 16, There was a quiet evening with no scheduled commitments. My interpretation at the time was: I have some time free; I could rest or choose one of my usual activities. I spent some time sketching. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E17",
+          "response": "On simulated day 17, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E18",
+          "response": "On simulated day 18, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I took some time to rest. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E19",
+          "response": "On simulated day 19, There was a quiet evening with no scheduled commitments. My interpretation at the time was: I have some time free; I could rest or choose one of my usual activities. I took some time to rest. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E20",
+          "response": "On simulated day 20, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E21",
+          "response": "On simulated day 21, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I finished the routine work task. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E22",
+          "response": "On simulated day 22, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I did not reply to the cancellation that day. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E23",
+          "response": "On simulated day 23, A routine work task needed finishing. My interpretation at the time was: I want to do a reliable job, and the deadline feels demanding. I postponed the task until the next day. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E24",
+          "response": "On simulated day 24, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E25",
+          "response": "On simulated day 25, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I talked with my cousin and they listened. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E26",
+          "response": "On simulated day 26, There was a quiet evening with no scheduled commitments. My interpretation at the time was: I have some time free; I could rest or choose one of my usual activities. I took some time to rest. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E27",
+          "response": "On simulated day 27, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. After broken sleep, I struggled to concentrate on a routine task. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E28",
+          "response": "On simulated day 28, A cousin offered time to listen. My interpretation at the time was: Talking might help, though I am not sure how much I want to say. I took some time to rest. I set aside time for something I normally enjoy but felt little interest once I began. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        }
+      ],
+      "traces": [
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "P05",
+              "P02"
+            ]
+          },
+          "allowedFactIds": [
+            "P05",
+            "P02"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5370,
+              "usage": {
+                "prompt_tokens": 1194,
+                "completion_tokens": 16,
+                "total_tokens": 1210
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3127,
+              "usage": {
+                "prompt_tokens": 610,
+                "completion_tokens": 47,
+                "total_tokens": 657
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2154,
+              "usage": {
+                "prompt_tokens": 437,
+                "completion_tokens": 18,
+                "total_tokens": 455
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "P06",
+              "P05"
+            ]
+          },
+          "allowedFactIds": [
+            "P06",
+            "P05"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5595,
+              "usage": {
+                "prompt_tokens": 1249,
+                "completion_tokens": 16,
+                "total_tokens": 1265
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3264,
+              "usage": {
+                "prompt_tokens": 647,
+                "completion_tokens": 52,
+                "total_tokens": 699
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2243,
+              "usage": {
+                "prompt_tokens": 458,
+                "completion_tokens": 18,
+                "total_tokens": 476
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "social",
+            "fact_ids": []
+          },
+          "allowedFactIds": [],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5772,
+              "usage": {
+                "prompt_tokens": 1294,
+                "completion_tokens": 9,
+                "total_tokens": 1303
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 842,
+              "usage": {
+                "prompt_tokens": 170,
+                "completion_tokens": 15,
+                "total_tokens": 185
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 1866,
+              "usage": {
+                "prompt_tokens": 368,
+                "completion_tokens": 18,
+                "total_tokens": 386
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "social",
+            "fact_ids": []
+          },
+          "allowedFactIds": [],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5781,
+              "usage": {
+                "prompt_tokens": 1301,
+                "completion_tokens": 9,
+                "total_tokens": 1310
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 844,
+              "usage": {
+                "prompt_tokens": 170,
+                "completion_tokens": 17,
+                "total_tokens": 187
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 1898,
+              "usage": {
+                "prompt_tokens": 375,
+                "completion_tokens": 18,
+                "total_tokens": 393
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "B02",
+              "P02"
+            ]
+          },
+          "allowedFactIds": [
+            "B02",
+            "P02"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5940,
+              "usage": {
+                "prompt_tokens": 1325,
+                "completion_tokens": 16,
+                "total_tokens": 1341
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3359,
+              "usage": {
+                "prompt_tokens": 662,
+                "completion_tokens": 39,
+                "total_tokens": 701
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2211,
+              "usage": {
+                "prompt_tokens": 441,
+                "completion_tokens": 18,
+                "total_tokens": 459
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "B01",
+              "B02"
+            ]
+          },
+          "allowedFactIds": [
+            "B01",
+            "B02"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5951,
+              "usage": {
+                "prompt_tokens": 1327,
+                "completion_tokens": 16,
+                "total_tokens": 1343
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3483,
+              "usage": {
+                "prompt_tokens": 687,
+                "completion_tokens": 58,
+                "total_tokens": 745
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2461,
+              "usage": {
+                "prompt_tokens": 497,
+                "completion_tokens": 18,
+                "total_tokens": 515
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "B01"
+            ],
+            "rule": "Resolve a brief clinical frequency/course follow-up against the recorded course."
+          },
+          "allowedFactIds": [
+            "B01"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5967,
+              "usage": {
+                "prompt_tokens": 1337,
+                "completion_tokens": 16,
+                "total_tokens": 1353
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3301,
+              "usage": {
+                "prompt_tokens": 655,
+                "completion_tokens": 35,
+                "total_tokens": 690
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2213,
+              "usage": {
+                "prompt_tokens": 442,
+                "completion_tokens": 18,
+                "total_tokens": 460
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patientId": "alex",
+      "disorderId": "gad",
+      "exchanges": [
+        {
+          "id": "T1",
+          "requestId": "b97689d8-e0d7-4c4d-98ae-f08ebc358ca9",
+          "question": "What music are you usually into?",
+          "reply": "I usually go for instrumental music or albums with lots of guitar, and I like to play the tracks in order.",
+          "kind": "answer",
+          "interaction": "answer"
+        },
+        {
+          "id": "T2",
+          "requestId": "588e6e1b-bfff-42f3-be45-3f152eaefe6a",
+          "question": "What’s your favorite album called?",
+          "reply": "That detail isn’t available for this interview.",
+          "kind": "unavailable",
+          "interaction": "unavailable"
+        },
+        {
+          "id": "T3",
+          "requestId": "f0ee8e59-ab1e-4f52-9d13-9ae8116eb158",
+          "question": "What do you like about listening to a whole album?",
+          "reply": "I like how the songs flow together and tell a story. It’s cool to hear how the artist puts everything in order.",
+          "kind": "answer",
+          "interaction": "answer"
+        }
+      ],
+      "preparationCalls": 0,
+      "usage": {
+        "limit": 60,
+        "attemptedCalls": 7,
+        "completedCalls": 7,
+        "failedCalls": 0,
+        "reportedTokens": 5927,
+        "unreportedCalls": 0,
+        "inputBytes": 27407,
+        "outputTokenAllowance": 1344
+      },
+      "facts": [
+        {
+          "id": "G01",
+          "response": "I would like to talk about worries that move from one thing to another and are hard to stop. I want a plan for study and part-time work that I can actually keep up with, with some time left for music."
+        },
+        {
+          "id": "G02",
+          "response": "My name is Alex. I am in the young adult stage. My usual routines include balancing study and part-time work, and my interests include listening to music."
+        },
+        {
+          "id": "G03",
+          "response": "This account covers 28 recent simulated days within the young adult stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began."
+        },
+        {
+          "id": "G04",
+          "response": "Over this recorded period I had 7 tasks involving balancing study and part-time work: I completed 4 that day and paused 3."
+        },
+        {
+          "id": "P01",
+          "response": "I want a plan for study and part-time work that I can actually keep up with, with some time left for music."
+        },
+        {
+          "id": "P02",
+          "response": "Usually, I’ll put on a favorite album and listen to it all the way through."
+        },
+        {
+          "id": "P03",
+          "response": "A direct question works best for me. If it’s a big one, breaking it up helps."
+        },
+        {
+          "id": "P04",
+          "response": "I talk things through with my sibling when there’s a practical problem. With my friend, I’d rather make a plan than decide everything at the last minute."
+        },
+        {
+          "id": "P05",
+          "response": "Usually instrumental music or albums with a lot of guitar. I tend to play the tracks in order."
+        },
+        {
+          "id": "P06",
+          "response": "I got curious about how the songs fit together. That’s why I started listening to whole albums instead of just individual tracks."
+        },
+        {
+          "id": "B01",
+          "response": "For more than eight months before the interview I have worried on most days about several parts of life, including responsibilities, people close to me and everyday mistakes."
+        },
+        {
+          "id": "B02",
+          "response": "The worry is hard to stop even when I want to. I feel tense, get tired and have trouble settling to sleep."
+        },
+        {
+          "id": "B03",
+          "response": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy."
+        },
+        {
+          "id": "B04",
+          "response": "I am in the young adult stage. My usual interests include listening to music. I want to take part in balancing study and part-time work, with support from my sibling."
+        },
+        {
+          "id": "E01",
+          "response": "On simulated day 1, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I took a quiet break. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E02",
+          "response": "On simulated day 2, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I accepted support by talking with a sibling, and felt listened to. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E03",
+          "response": "On simulated day 3, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I did not follow up about the changed plan that day. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E04",
+          "response": "On simulated day 4, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I did not follow up about the changed plan that day. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E05",
+          "response": "On simulated day 5, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I accepted support by talking with a sibling, and felt listened to. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E06",
+          "response": "On simulated day 6, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I took a quiet break. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E07",
+          "response": "On simulated day 7, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I paused the task and left it unfinished that day. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E08",
+          "response": "On simulated day 8, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I completed the task involving balancing study and part-time work. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E09",
+          "response": "On simulated day 9, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E10",
+          "response": "On simulated day 10, I had some free time without a new commitment. My interpretation at the time was: I could choose one of my usual activities or take a rest. I spent some time listening to music. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E11",
+          "response": "On simulated day 11, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I completed the task involving balancing study and part-time work. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E12",
+          "response": "On simulated day 12, I had some free time without a new commitment. My interpretation at the time was: I could choose one of my usual activities or take a rest. I spent some time listening to music. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E13",
+          "response": "On simulated day 13, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I completed the task involving balancing study and part-time work. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E14",
+          "response": "On simulated day 14, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I took a quiet break. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E15",
+          "response": "On simulated day 15, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I paused the task and left it unfinished that day. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E16",
+          "response": "On simulated day 16, I had some free time without a new commitment. My interpretation at the time was: I could choose one of my usual activities or take a rest. I spent some time listening to music. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E17",
+          "response": "On simulated day 17, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E18",
+          "response": "On simulated day 18, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I took a quiet break. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E19",
+          "response": "On simulated day 19, I had some free time without a new commitment. My interpretation at the time was: I could choose one of my usual activities or take a rest. I took a quiet break. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E20",
+          "response": "On simulated day 20, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E21",
+          "response": "On simulated day 21, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I completed the task involving balancing study and part-time work. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E22",
+          "response": "On simulated day 22, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I did not follow up about the changed plan that day. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E23",
+          "response": "On simulated day 23, I had a task involving balancing study and part-time work. My interpretation at the time was: I wanted to complete the task, although it felt demanding. I paused the task and left it unfinished that day. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E24",
+          "response": "On simulated day 24, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E25",
+          "response": "On simulated day 25, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I accepted support by talking with a sibling, and felt listened to. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E26",
+          "response": "On simulated day 26, I had some free time without a new commitment. My interpretation at the time was: I could choose one of my usual activities or take a rest. I took a quiet break. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E27",
+          "response": "On simulated day 27, For me, a plan to meet a friend changed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. At bedtime I kept going over several things that might go wrong the next day. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        },
+        {
+          "id": "E28",
+          "response": "On simulated day 28, I had an opportunity for talking with a sibling. My interpretation at the time was: I thought accepting some support might help. I took a quiet break. I moved from one worry about a routine task to another worry about someone close to me. This is my account of the experience; its cause is not established by this moment alone. The experience affected how I took part in that moment."
+        }
+      ],
+      "traces": [
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "P05"
+            ]
+          },
+          "allowedFactIds": [
+            "P05"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5430,
+              "usage": {
+                "prompt_tokens": 1194,
+                "completion_tokens": 12,
+                "total_tokens": 1206
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3000,
+              "usage": {
+                "prompt_tokens": 581,
+                "completion_tokens": 39,
+                "total_tokens": 620
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2049,
+              "usage": {
+                "prompt_tokens": 408,
+                "completion_tokens": 18,
+                "total_tokens": 426
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "unavailable",
+            "fact_ids": []
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5658,
+              "usage": {
+                "prompt_tokens": 1242,
+                "completion_tokens": 10,
+                "total_tokens": 1252
+              }
+            }
+          ]
+        },
+        {
+          "route": {
+            "kind": "answer",
+            "fact_ids": [
+              "P06",
+              "P05"
+            ]
+          },
+          "allowedFactIds": [
+            "P06",
+            "P05"
+          ],
+          "audit": {
+            "unsupported": [],
+            "supported": true,
+            "relevant": true,
+            "no_leak": true
+          },
+          "calls": [
+            {
+              "role": "CORTEX",
+              "inputBytes": 5774,
+              "usage": {
+                "prompt_tokens": 1268,
+                "completion_tokens": 16,
+                "total_tokens": 1284
+              }
+            },
+            {
+              "role": "LANGUAGE",
+              "inputBytes": 3308,
+              "usage": {
+                "prompt_tokens": 646,
+                "completion_tokens": 41,
+                "total_tokens": 687
+              }
+            },
+            {
+              "role": "AUDITOR",
+              "inputBytes": 2188,
+              "usage": {
+                "prompt_tokens": 434,
+                "completion_tokens": 18,
+                "total_tokens": 452
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patientId": "mika",
+      "disorderId": "autism",
+      "exchanges": [
+        {
+          "id": "T1",
+          "requestId": "dad868a9-ae49-4ca6-a5c9-a458481e0c4f",
+          "question": "What does Mika like playing with?",
+          "reply": "Mika likes playing with blocks and looking at picture books, especially ones with animals.",
+          "kind": "answer",
+          "interaction": "answer"
+        }
+      ],
+      "preparationCalls": 0,
+      "usage": {
+        "limit": 60,
+        "attemptedCalls": 3,
+        "completedCalls": 3,
+        "failedCalls": 0,
+        "reportedTokens": 2321,
+        "unreportedCalls": 0,
+        "inputBytes": 10715,
+        "outputTokenAllowance": 608
+      }
+    }
+  ]
+}

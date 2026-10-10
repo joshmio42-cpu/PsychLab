@@ -1,0 +1,508 @@
+{
+  "date": "2026-10-05",
+  "counts": {
+    "Done": 52,
+    "Prepared": 15,
+    "Needs external action": 4
+  },
+  "meaning": "Done means the named foundation artifact or stated deterministic behavior exists, not clinical validation. Prepared means design or partial implementation exists with remaining work. Needs external action requires a human, account access, recording or later publication.",
+  "items": [
+    {
+      "id": "1.1",
+      "group": "Purpose and scope",
+      "task": "Choose first audience",
+      "status": "Done",
+      "evidence": "Adult psychology trainees; Project brief."
+    },
+    {
+      "id": "1.2",
+      "group": "Purpose and scope",
+      "task": "Define main learning objective",
+      "status": "Done",
+      "evidence": "Evidence gathering and justified provisional reasoning; Project brief."
+    },
+    {
+      "id": "1.3",
+      "group": "Purpose and scope",
+      "task": "Write one-sentence problem description",
+      "status": "Done",
+      "evidence": "Repeatable practice linking conversation to reasoning and feedback; Project brief."
+    },
+    {
+      "id": "1.4",
+      "group": "Purpose and scope",
+      "task": "Define educational simulation and formative feedback",
+      "status": "Done",
+      "evidence": "Brief, visible prototype notice and report labels."
+    },
+    {
+      "id": "1.5",
+      "group": "Purpose and scope",
+      "task": "Set boundaries for fictional clients and claims",
+      "status": "Done",
+      "evidence": "Brief, simulation contract, README and interface."
+    },
+    {
+      "id": "1.6",
+      "group": "Purpose and scope",
+      "task": "Confirm healthcare prompt fit",
+      "status": "Done",
+      "evidence": "Healthcare interaction training rationale; event source S9."
+    },
+    {
+      "id": "2.1",
+      "group": "Reference foundation",
+      "task": "Select authoritative references",
+      "status": "Done",
+      "evidence": "11-entry source register including clinical, instrument and event sources."
+    },
+    {
+      "id": "2.2",
+      "group": "Reference foundation",
+      "task": "Distinguish the two APA organizations",
+      "status": "Done",
+      "evidence": "Evidence section and S3/S4."
+    },
+    {
+      "id": "2.3",
+      "group": "Reference foundation",
+      "task": "Record title publisher version date and use",
+      "status": "Done",
+      "evidence": "data/sources.json; linked appendix."
+    },
+    {
+      "id": "2.4",
+      "group": "Reference foundation",
+      "task": "Verify reproduction permissions",
+      "status": "Done",
+      "evidence": "GAD-7 permission S5/S6; NHS-hosted form S11; no full DSM text copied."
+    },
+    {
+      "id": "2.5",
+      "group": "Reference foundation",
+      "task": "Map references to case and rubric",
+      "status": "Done",
+      "evidence": "Fact-level and rubric-level source IDs in JSON."
+    },
+    {
+      "id": "2.6",
+      "group": "Reference foundation",
+      "task": "Identify qualified reviewer",
+      "status": "Prepared",
+      "evidence": "User can arrange reviewer; name and qualifications not yet supplied."
+    },
+    {
+      "id": "2.7",
+      "group": "Reference foundation",
+      "task": "Label content without expert review",
+      "status": "Done",
+      "evidence": "Case, rubric, handbook and prototype are marked review pending."
+    },
+    {
+      "id": "3.1",
+      "group": "Fictional cases",
+      "task": "Start with one adult case",
+      "status": "Done",
+      "evidence": "CASE-A01, 18 authored fact blocks; expansion concepts only."
+    },
+    {
+      "id": "3.2",
+      "group": "Fictional cases",
+      "task": "Define background strengths and communication independently",
+      "status": "Done",
+      "evidence": "Alex case guide, F16 and F17."
+    },
+    {
+      "id": "3.3",
+      "group": "Fictional cases",
+      "task": "Specify symptoms duration severity and function",
+      "status": "Done",
+      "evidence": "F02-F07; authored two-week questionnaire values."
+    },
+    {
+      "id": "3.4",
+      "group": "Fictional cases",
+      "task": "Document relevant histories",
+      "status": "Done",
+      "evidence": "F08-F15 and F18; medical unknowns explicitly preserved."
+    },
+    {
+      "id": "3.5",
+      "group": "Fictional cases",
+      "task": "Include alternatives and distinguishing evidence",
+      "status": "Done",
+      "evidence": "Case guide alternatives and focused interview domains."
+    },
+    {
+      "id": "3.6",
+      "group": "Fictional cases",
+      "task": "Define absent unknown and out-of-scope facts",
+      "status": "Done",
+      "evidence": "Unknown list, explicit fictional negatives, simulation contract."
+    },
+    {
+      "id": "3.7",
+      "group": "Fictional cases",
+      "task": "Write learner referral note",
+      "status": "Done",
+      "evidence": "case.referral and visible interview brief."
+    },
+    {
+      "id": "3.8",
+      "group": "Fictional cases",
+      "task": "Write hidden case guide and learning points",
+      "status": "Done",
+      "evidence": "Handbook and data/case-a01.json."
+    },
+    {
+      "id": "3.9",
+      "group": "Fictional cases",
+      "task": "Review stereotypes and cultural assumptions",
+      "status": "Prepared",
+      "evidence": "Initial authoring check performed; independent qualified review pending."
+    },
+    {
+      "id": "4.1",
+      "group": "Simulation behavior",
+      "task": "Separate fixed facts from flexible wording",
+      "status": "Done",
+      "evidence": "Simulation contract and patient prompt."
+    },
+    {
+      "id": "4.2",
+      "group": "Simulation behavior",
+      "task": "Define disclosure rules",
+      "status": "Done",
+      "evidence": "Opening volunteered in live design; authored topic answers in rehearsal."
+    },
+    {
+      "id": "4.3",
+      "group": "Simulation behavior",
+      "task": "Allow reasonable question variants",
+      "status": "Prepared",
+      "evidence": "Live prompt specifies this; free-text model testing not run."
+    },
+    {
+      "id": "4.4",
+      "group": "Simulation behavior",
+      "task": "Define believable emotional expression",
+      "status": "Done",
+      "evidence": "Case affect and simulation contract; not validated with a model."
+    },
+    {
+      "id": "4.5",
+      "group": "Simulation behavior",
+      "task": "Prevent invented facts contradictions and diagnosis leakage",
+      "status": "Prepared",
+      "evidence": "Scripted values fixed and tested; live semantic protection remains unverified."
+    },
+    {
+      "id": "4.6",
+      "group": "Simulation behavior",
+      "task": "Define leading repeated and adversarial responses",
+      "status": "Done",
+      "evidence": "Prompt rules and adversarial test list; live behavior pending."
+    },
+    {
+      "id": "4.7",
+      "group": "Simulation behavior",
+      "task": "Handle topics outside the authored case",
+      "status": "Done",
+      "evidence": "Unknown topic rejection tested; live prompt requires explicit flag."
+    },
+    {
+      "id": "4.8",
+      "group": "Simulation behavior",
+      "task": "Separate patient from tutor",
+      "status": "Done",
+      "evidence": "Architecture, separate prompt files and separate report logic."
+    },
+    {
+      "id": "5.1",
+      "group": "Assessments",
+      "task": "Choose one relevant instrument",
+      "status": "Done",
+      "evidence": "GAD-7 for adult fictional anxiety presentation."
+    },
+    {
+      "id": "5.2",
+      "group": "Assessments",
+      "task": "Verify permissions population administration and scoring",
+      "status": "Done",
+      "evidence": "S5-S7 and S11; synthetic-response limitation documented."
+    },
+    {
+      "id": "5.3",
+      "group": "Assessments",
+      "task": "Preserve required standard wording",
+      "status": "Done",
+      "evidence": "Seven English items and instruction cross-checked with S11."
+    },
+    {
+      "id": "5.4",
+      "group": "Assessments",
+      "task": "Author case-consistent responses",
+      "status": "Prepared",
+      "evidence": "Seven values authored; qualified item-by-item clinical review pending."
+    },
+    {
+      "id": "5.5",
+      "group": "Assessments",
+      "task": "Calculate scores by explicit rules",
+      "status": "Done",
+      "evidence": "Deterministic 0-21 scoring; boundaries and invalid inputs tested."
+    },
+    {
+      "id": "5.6",
+      "group": "Assessments",
+      "task": "Explain result and limitations",
+      "status": "Done",
+      "evidence": "Assessment panel, specification and debrief."
+    },
+    {
+      "id": "5.7",
+      "group": "Assessments",
+      "task": "Require learner rationale",
+      "status": "Done",
+      "evidence": "Rationale and explanation control; invalid submissions rejected."
+    },
+    {
+      "id": "6.1",
+      "group": "Evaluation rubric",
+      "task": "Define five evaluation domains",
+      "status": "Done",
+      "evidence": "rubric.json; coverage communication reasoning assessment next steps."
+    },
+    {
+      "id": "6.2",
+      "group": "Evaluation rubric",
+      "task": "Describe observable rating anchors",
+      "status": "Done",
+      "evidence": "0-3 anchors plus NR; clinician review form."
+    },
+    {
+      "id": "6.3",
+      "group": "Evaluation rubric",
+      "task": "Require transcript-cited feedback",
+      "status": "Done",
+      "evidence": "Evaluator specification and exact evidence export in rehearsal."
+    },
+    {
+      "id": "6.4",
+      "group": "Evaluation rubric",
+      "task": "Distinguish missed questions from conclusions",
+      "status": "Done",
+      "evidence": "Rubric and example debrief."
+    },
+    {
+      "id": "6.5",
+      "group": "Evaluation rubric",
+      "task": "Judge only from evidence obtained",
+      "status": "Done",
+      "evidence": "Disclosed-fact ledger; no hidden assessment test passes."
+    },
+    {
+      "id": "6.6",
+      "group": "Evaluation rubric",
+      "task": "Credit alternatives and uncertainty",
+      "status": "Done",
+      "evidence": "Reasoning anchors and structured submission fields."
+    },
+    {
+      "id": "6.7",
+      "group": "Evaluation rubric",
+      "task": "Avoid rewarding guessing or question count",
+      "status": "Done",
+      "evidence": "Coverage is descriptive; no automatic competence score."
+    },
+    {
+      "id": "6.8",
+      "group": "Evaluation rubric",
+      "task": "Include strengths improvements and follow-ups",
+      "status": "Prepared",
+      "evidence": "Example debrief and evaluator contract prepared; personalized AI feedback pending."
+    },
+    {
+      "id": "6.9",
+      "group": "Evaluation rubric",
+      "task": "Mark ratings formative and unvalidated",
+      "status": "Done",
+      "evidence": "Report, guide and prompt labels."
+    },
+    {
+      "id": "6.10",
+      "group": "Evaluation rubric",
+      "task": "Prepare example report",
+      "status": "Done",
+      "evidence": "review/sample-debrief.txt and handbook example."
+    },
+    {
+      "id": "7.1",
+      "group": "Validation",
+      "task": "Walk through with a psychology student",
+      "status": "Needs external action",
+      "evidence": "Protocol ready; no real learner session conducted."
+    },
+    {
+      "id": "7.2",
+      "group": "Validation",
+      "task": "Ask clinician or educator to review",
+      "status": "Needs external action",
+      "evidence": "Reviewer pack ready; user will arrange review. No message sent."
+    },
+    {
+      "id": "7.3",
+      "group": "Validation",
+      "task": "Test strong incomplete and leading interviews",
+      "status": "Prepared",
+      "evidence": "Three fixture packages executed for logic; actual free-text and clinical scoring pending."
+    },
+    {
+      "id": "7.4",
+      "group": "Validation",
+      "task": "Check feedback distinguishes sessions appropriately",
+      "status": "Prepared",
+      "evidence": "Coverage differs as expected; clinical rating discrimination requires human/live model review."
+    },
+    {
+      "id": "7.5",
+      "group": "Validation",
+      "task": "Test consistency leakage stereotypes and fabrication",
+      "status": "Prepared",
+      "evidence": "Deterministic checks done; live adversarial matrix ready, not run."
+    },
+    {
+      "id": "7.6",
+      "group": "Validation",
+      "task": "Repeat evaluation to test stability",
+      "status": "Prepared",
+      "evidence": "Deterministic reports stable; repeated generative ratings not tested."
+    },
+    {
+      "id": "7.7",
+      "group": "Validation",
+      "task": "Establish release criteria and limitations",
+      "status": "Done",
+      "evidence": "Clinical, pilot and live-model gates in handbook."
+    },
+    {
+      "id": "8.1",
+      "group": "Technical foundation",
+      "task": "Define complete session flow",
+      "status": "Done",
+      "evidence": "Guided interview to assessment reasoning and report works locally."
+    },
+    {
+      "id": "8.2",
+      "group": "Technical foundation",
+      "task": "Choose builder and model provider",
+      "status": "Done",
+      "evidence": "Custom web app; Featherless candidate provider; exact model pending benchmark."
+    },
+    {
+      "id": "8.3",
+      "group": "Technical foundation",
+      "task": "Separate case and rubric from transcript",
+      "status": "Done",
+      "evidence": "Data and state separated. Server-only protection required for live release."
+    },
+    {
+      "id": "8.4",
+      "group": "Technical foundation",
+      "task": "Separate evaluator from patient role",
+      "status": "Done",
+      "evidence": "Independent prompt specifications and deterministic report component."
+    },
+    {
+      "id": "8.5",
+      "group": "Technical foundation",
+      "task": "Store versions with sessions",
+      "status": "Prepared",
+      "evidence": "Case/rubric/source versions in report; live model version and persistence pending."
+    },
+    {
+      "id": "8.6",
+      "group": "Technical foundation",
+      "task": "Keep API keys on server",
+      "status": "Prepared",
+      "evidence": "Server-only adapter; no key present or exposed. Live server integration pending."
+    },
+    {
+      "id": "8.7",
+      "group": "Technical foundation",
+      "task": "Define retention deletion and access",
+      "status": "Done",
+      "evidence": "Memory-only rehearsal; reset/reload clears; private review hosting planned."
+    },
+    {
+      "id": "8.8",
+      "group": "Technical foundation",
+      "task": "Use fictional data",
+      "status": "Done",
+      "evidence": "All case and fixture material authored; no patient records."
+    },
+    {
+      "id": "8.9",
+      "group": "Technical foundation",
+      "task": "Confirm credits expiry publishing and costs",
+      "status": "Needs external action",
+      "evidence": "Public offers researched earlier; account-specific redemption and cost benchmark pending."
+    },
+    {
+      "id": "8.10",
+      "group": "Technical foundation",
+      "task": "Handle failed or interrupted sessions",
+      "status": "Prepared",
+      "evidence": "Load and input failures handled; live adapter rejects errors; recovery/idempotency design pending implementation."
+    },
+    {
+      "id": "9.1",
+      "group": "Hackathon deliverable",
+      "task": "Prioritize one reliable case",
+      "status": "Done",
+      "evidence": "One authored case and guided loop; no speculative extra cases."
+    },
+    {
+      "id": "9.2",
+      "group": "Hackathon deliverable",
+      "task": "Keep first version text-based",
+      "status": "Done",
+      "evidence": "Text-only accessible browser interface."
+    },
+    {
+      "id": "9.3",
+      "group": "Hackathon deliverable",
+      "task": "Prepare working demo repository and README",
+      "status": "Prepared",
+      "evidence": "Guided review demo, local source and README ready. Live AI and GitHub publication pending."
+    },
+    {
+      "id": "9.4",
+      "group": "Hackathon deliverable",
+      "task": "Record required public demo video",
+      "status": "Needs external action",
+      "evidence": "Three-minute storyboard prepared; no recording or upload yet."
+    },
+    {
+      "id": "9.5",
+      "group": "Hackathon deliverable",
+      "task": "Explain references AI evaluation and limitations",
+      "status": "Done",
+      "evidence": "Handbook, prompts, source register and README."
+    },
+    {
+      "id": "9.6",
+      "group": "Hackathon deliverable",
+      "task": "Credit sources tools and reviewers accurately",
+      "status": "Done",
+      "evidence": "Source IDs and tool roles credited; no reviewer approval claimed."
+    },
+    {
+      "id": "9.7",
+      "group": "Hackathon deliverable",
+      "task": "Reserve time and credits for final testing",
+      "status": "Prepared",
+      "evidence": "Manila delivery plan and credit reserve policy drafted; account balance unconfirmed."
+    }
+  ]
+}

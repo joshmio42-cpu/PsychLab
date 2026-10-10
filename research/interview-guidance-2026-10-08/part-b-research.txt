@@ -1,0 +1,201 @@
+PART B — INTERVIEW GUIDANCE RESEARCH
+Research date: 8 October 2026
+Scope: Catalogue indices 23–45 inclusive, hair_pulling through conduct.
+Coverage: 23 exact catalogue IDs; 115 original interview checkpoints (five per option).
+
+PURPOSE AND METHOD
+This file supports an educational fictional interview simulator. The companion part-b.json contains original inquiry prompts, relevant time-course distinctions, plausible alternatives to explore, and references to genuine assessment approaches. The checkpoints are neither exhaustive diagnostic criteria nor a validated scale. Supported / Not supported / Unclear / Not asked labels document evidence and gaps; they must not be converted into a clinical diagnosis or a score threshold.
+
+Existing project references were used as a starting map. Current public APA, AACAP, NIH, VA, NHS, NICE and original assessment-study sources were actively checked. Public summaries and open primary-study abstracts were used; the full copyrighted DSM-5-TR text was not obtained or audited. No DSM criteria, full copyrighted questionnaire, proprietary scoring rule or purported validated diagnostic algorithm is reproduced here. Sources marked "indexed excerpt" were inspected in the official source's search excerpt; their live pages were blocked or challenged. This is a limitation, not a claim of full-page access.
+
+The questions are original educational prompts. Mentioning a named assessment does not mean the simulator administers that assessment. Real use requires the appropriate authorized version, population, language, administration and clinician interpretation. The reference instrument and its educational description must remain separate from the simulator's own checklist.
+
+IMPORTANT EVIDENCE AND IMPLEMENTATION LIMITS
+- PTSD symptoms persisting beyond one month must be distinguished from acute stress disorder's 3-day to 1-month period. PCL-5 supports adult symptom screening/monitoring and provisional assessment; it does not replace a clinician interview such as CAPS-5. Use a developmentally appropriate assessment for youth.
+- The VA reports limited validation of updated DSM-5 acute-stress instruments. ASDI-5 is a trained-clinician assessment reference, not an automatic test.
+- Adjustment timing is anchored to a stressor: onset within three months; continuation beyond six months after the stressor and its consequences cease calls for reconsideration.
+- Prolonged grief timing differs by age: at least 12 months after the death for adults and six months for children/adolescents, with cultural context and impairment essential. Timing alone never establishes a disorder.
+- Reactive attachment disorder concerns early childhood and is not interchangeable with attachment style. Disinhibited social engagement disorder is not simply friendliness. Neither can be inferred from a child's dialogue or presumed neglect. Specialist developmental assessment and verified caregiver/placement information are needed.
+- Dissociative experiences require medical, neurological, substance, cultural and sleep-related alternatives to be considered. Do not suggest hidden trauma or treat generated recollections as recovered memories.
+- Somatic symptom disorder does not require medically unexplained symptoms. Persistent symptomatic course is typically longer than six months. Illness anxiety generally involves at least six months of health preoccupation, although the feared condition can change.
+- Functional neurological disorder requires clinically identified positive signs and an appropriate neurological assessment; a stressful event or normal scan alone does not establish it. Text chat cannot perform the relevant examination.
+- Eating disorder assessment includes developmental growth and medical stability at all body sizes. Bulimia and binge-eating disorder frequency/course summaries use an average of at least weekly over three months. Medical assessment cannot be replaced by a screen, appearance or weight alone.
+- ARFID may meet the functional-interference component without low body weight. PARDI's cited initial study involved ages 10–22; later or other versions must be selected and checked for the intended age. The cited pilot does not by itself validate use with toddlers.
+- Bedwetting and soiling must be interpreted against toileting development and medical causes such as constipation, not punished. The educational entries deliberately do not invent exact DSM age/frequency algorithms from general public guidance.
+- Chronic insomnia requires sufficient sleep opportunity, daytime consequences and a course of at least three nights a week for at least three months. The adult ISI's recent reporting window does not independently verify the chronic course; pediatric assessment requires age-appropriate methods.
+- ODD's pattern is assessed over at least six months. Conduct assessment covers the previous 12 months with recent behaviour in the previous six months. Neither is established by ordinary age-related disagreement, a single incident, dangerousness assumptions or a checklist sum.
+- The SDQ is broad age-appropriate screening that can gather parent, teacher and youth perspectives; it does not diagnose ODD or conduct disorder.
+- The MGH Hairpulling Scale citation is adult development research. The Skin Picking Scale citation is the original 2001 SPS, not the revised SPS-R. No numerical cutoffs are imported.
+- Medical urgency, immediate safety, developmental limitations and caregiver handling are specific to the relevant entries. Generated cases remain fictional and require expert review before education claims.
+
+COVERED CATALOGUE OPTIONS
+23. hair_pulling: Trichotillomania (hair-pulling disorder)
+24. skin_picking: Excoriation (skin-picking) disorder
+25. ptsd: Posttraumatic stress disorder (PTSD)
+26. acute_stress: Acute stress disorder
+27. adjustment: Adjustment disorders
+28. grief: Prolonged grief disorder
+29. rad: Reactive attachment disorder
+30. dsed: Disinhibited social engagement disorder
+31. dpdr: Depersonalization/derealization disorder
+32. dissociative_amnesia: Dissociative amnesia
+33. did: Dissociative identity disorder
+34. somatic: Somatic symptom disorder
+35. illness_anxiety: Illness anxiety disorder
+36. fnd: Functional neurological symptom disorder (conversion disorder)
+37. anorexia: Anorexia nervosa
+38. bulimia: Bulimia nervosa
+39. binge_eating: Binge-eating disorder
+40. arfid: Avoidant/restrictive food intake disorder (ARFID)
+41. enuresis: Enuresis
+42. encopresis: Encopresis
+43. insomnia: Insomnia disorder
+44. odd: Oppositional defiant disorder
+45. conduct: Conduct disorder
+
+SOURCE REGISTER
+Access date for all: 8 October 2026.
+
+1. APA: Obsessive-compulsive and related disorders
+https://www.psychiatry.org/patients-families/obsessive-compulsive-disorder/what-is-obsessive-compulsive-disorder
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+2. Keuthen et al. (1995): MGH Hairpulling Scale development
+https://pubmed.ncbi.nlm.nih.gov/8657844/
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+3. Keuthen et al. (2001): Skin Picking Scale development
+https://pubmed.ncbi.nlm.nih.gov/11438115/
+Access: Original PubMed abstract verified through indexed primary-source excerpt; direct open returned no useful body.
+
+4. VA National Center for PTSD: PCL-5
+https://www.ptsd.va.gov/professional/assessment/adult-sr/ptsd-checklist.asp
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+5. APA: PTSD and related conditions
+https://www.psychiatry.org/patients-families/ptsd/what-is-ptsd
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+6. VA National Center for PTSD: Acute stress disorder
+https://www.ptsd.va.gov/professional/treat/essentials/acute_stress_disorder.asp
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+7. APA: Prolonged grief disorder
+https://www.psychiatry.org/patients-families/prolonged-grief-disorder
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+8. AACAP: Attachment disorders
+https://www.aacap.org/aacap/families_and_youth/facts_for_families/fff-guide/Attachment-Disorders-085.aspx
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+9. NICE NG26: Children's attachment, assessment recommendations
+https://www.nice.org.uk/guidance/NG26/chapter/recommendations
+Access: Official NICE indexed recommendation excerpts verified; direct page access returned an error/403.
+
+10. APA: Dissociative disorders
+https://www.psychiatry.org/patients-families/dissociative-disorders/what-are-dissociative-disorders
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+11. NHS: Dissociative disorders
+https://www.nhs.uk/mental-health/conditions/dissociative-disorders/
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+12. APA: Somatic symptom disorder
+https://www.psychiatry.org/patients-families/somatic-symptom-disorder/what-is-somatic-symptom-disorder
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+13. APA: Somatic symptom and illness anxiety expert questions
+https://www.psychiatry.org/patients-families/somatic-symptom-disorder
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+14. NHS: Health anxiety
+https://www.nhs.uk/mental-health/conditions/health-anxiety/
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+15. King's College Hospital NHS: Functional neurological disorder
+https://www.kch.nhs.uk/services/services-a-to-z/functional-neurological-disorder-fnd/
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+16. APA: Eating disorders
+https://www.psychiatry.org/patients-families/eating-disorders/what-are-eating-disorders
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+17. NIMH: Eating disorders, what you need to know
+https://www.nimh.nih.gov/health/publications/eating-disorders
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+18. NICE NG69: Eating disorders, identification and assessment
+https://www.nice.org.uk/guidance/ng69/chapter/Recommendations
+Access: Official NICE indexed recommendation excerpts verified; direct page access returned an error/403.
+
+19. Bryant-Waugh et al. (2019): PARDI development
+https://pubmed.ncbi.nlm.nih.gov/30312485/
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+20. APA DSM-5-TR: ARFID clarification
+https://www.psychiatry.org/getmedia/8bcf8b72-f3cc-403c-9cfb-5c89e086d5db/APA-DSM5TR-AvoidantRestrictiveFoodIntakeDisorder.pdf
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+21. AACAP: Bedwetting
+https://www.aacap.org/aacap/families_and_youth/Facts_for_Families/FFF-Guide/Bedwetting-018.aspx
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+22. NIDDK: Diagnosing bladder control problems in children
+https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems-bedwetting-children/diagnosis
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+23. AACAP: Encopresis and bowel control
+https://aacap.org/AACAP/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Problems-With-Soiling-and-Bowel-Control-048.aspx
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+24. NIDDK: Diagnosing constipation in children
+https://www.niddk.nih.gov/health-information/digestive-diseases/constipation-children/diagnosis
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+25. NHLBI: Insomnia diagnosis
+https://www.nhlbi.nih.gov/health/insomnia/diagnosis
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+26. VA MIRECC: Insomnia Severity Index screening
+https://www.mirecc.va.gov/visn19/treatmentworksforvets/insomnia/check-for-symptoms.asp
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+27. AACAP: Oppositional defiant disorder
+https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Children-With-Oppositional-Defiant-Disorder-072.aspx
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+28. AACAP: Conduct disorder
+https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Conduct-Disorder-033.aspx
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+29. NICE CG158: Conduct disorders, initial and comprehensive assessment
+https://www.nice.org.uk/guidance/cg158/chapter/recommendations
+Access: Official NICE indexed recommendation excerpts verified; direct page access returned an error/403.
+
+30. Youthinmind: Strengths and Difficulties Questionnaire
+https://www.sdqinfo.org/a0.html
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+31. SAMHSA (2016): DSM-5 somatic symptom comparison
+https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t31/
+Access: Official NIH Bookshelf / SAMHSA indexed table text verified; direct page opened an anti-bot challenge.
+
+32. SAMHSA (2016): DSM-5 illness anxiety comparison
+https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t32/
+Access: Official NIH Bookshelf / SAMHSA indexed table text verified; direct page opened an anti-bot challenge.
+
+33. SAMHSA (2016): DSM-5 conduct disorder comparison
+https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t37/
+Access: Official NIH Bookshelf / SAMHSA indexed table text verified; direct page opened an anti-bot challenge.
+
+34. AACAP: ODD guide for families (2009)
+https://www.aacap.org/App_Themes/AACAP/docs/resource_centers/odd/odd_resource_center_odd_guide.pdf
+Access: AACAP PDF opened and relevant duration paragraph inspected. Historical 2009 family guide; not represented as a current full DSM manual.
+
+35. Mayo Clinic: Bulimia diagnosis and treatment
+https://www.mayoclinic.org/diseases-conditions/bulimia/diagnosis-treatment/drc-20353621
+Access: Primary institutional page, public PDF or original publication abstract opened and inspected.
+
+QUALITY CHECK
+The 23 IDs and names match the assigned catalogue slice exactly. Each entry has five unique stable inquiry IDs, a course summary, differential prompts, one named or structured assessment reference with non-diagnostic interpretation, cautions and source links. No copyrighted assessment items or score tables are supplied.
+

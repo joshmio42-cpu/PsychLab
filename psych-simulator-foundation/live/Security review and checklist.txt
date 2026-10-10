@@ -1,0 +1,178 @@
+PSYCHLAB SECURITY REVIEW AND CHECKLIST
+10 October 2026 | Local implementation and mock-provider verification
+
+STRUCTURE AND TRUST BOUNDARIES
+
+live/ is the current application: a native Node HTTP server, an in-memory
+controller, a plain browser UI, and server-side Featherless calls. The server
+binds to loopback. Public access uses a Cloudflare tunnel plus origin-side
+verification of Cloudflare Access signatures, issuer, audience, expiry and an
+email allowlist. The Windows launcher reads DPAPI-encrypted credentials outside
+the project. personality_system/ provides local simulation modules; adaption/
+is an offline model/example evaluation workflow. prototype/dist/ is an older
+rehearsal and contains its own Git repository; it is not the live app deployment.
+
+This is a single-process application with no SQL database, password registration,
+inbound file uploads, webhooks, or general administrator dashboard. Loopback and
+the Windows account that runs the process remain trusted. Client input and even
+an approved public user must not bypass another user's session or reviewer role.
+
+REQUESTED CHECKLIST
+
+1. Enable RLS -- Not applicable to the current in-memory data store. Public
+   sessions now bind to the verified Access issuer/subject, with ownership checked
+   on every session API before reads, updates, replacement or deletion. If a
+   database is added, implement deny-by-default row policies tied to that identity;
+   this work does not claim database RLS has been enabled.
+
+2. Tighten CORS -- Exact local/public Host and Origin checks, same-origin Fetch
+   Metadata checks on APIs, and no cross-origin allow headers. Mutations require
+   Origin plus X-PsychLab. Public assertions cannot downgrade to a local Host.
+   Cross-Origin-Resource-Policy, CSP and frame restrictions are set by the server.
+
+3. Parameterized SQL -- Not applicable: there is no SQL execution. Future database
+   access must use bound query parameters and an allowlist for dynamic identifiers.
+
+4. Verify email addresses -- Signed Cloudflare Access application tokens must
+   contain an allowlisted email and stable subject. Forged, expired, wrong-issuer,
+   wrong-audience and explicitly unverified identities fail. Identity verification
+   is delegated to the configured Cloudflare identity provider/email-code flow;
+   there is no local signup flow or new mail sender. Current live Cloudflare policy
+   and email delivery were not reconfigured or end-to-end verified in this review.
+
+5. Keep tokens out of local storage -- Authentication is an opaque HttpOnly,
+   SameSite=Strict session cookie, also Secure on the public origin. No credentials
+   are returned in JSON or archived. Browser history intentionally retains
+   disclosed fictional transcripts and learner notes; nested archive fields are
+   now explicitly projected. Delete History/clear browser data to remove those
+   copies. User-entered sensitive text would still be part of the transcript.
+
+6. Hide .env files from Git -- Root, live and nested prototype Git ignore rules cover .env files,
+   credential/key files, private Access configuration, diagnostic dumps and local
+   runtime binaries. Sanitized .env.example and public-access.example.json remain
+   versionable. Ignore rules do not erase earlier commits or leaked secrets; the
+   root repository currently has no commits or tracked files. Existing nested
+   prototype history was not rewritten.
+
+7. Validate form inputs -- Browser validation is backed by server limits and
+   route-specific field allowlists. Reject invalid types, unknown/nested privilege
+   fields, invalid turn counters, non-JSON bodies, encodings and bodies over 32 KiB.
+   Controller checks retain case compatibility, lengths, evidence ownership and
+   optimistic concurrency. Questions have a 1,500-character limit.
+
+8. Protect admin routes -- /api/review requires both a completed owned session
+   and explicit public reviewer permission from adminEmails. Omitted adminEmails
+   grants no public reviewer permission. Reviewer controls also require current
+   server permission. Ordinary users can still obtain their own completed debrief.
+   A reviewer cannot inspect someone else's session. No /admin route is exposed.
+
+9. Disable production debugging -- The normal Windows launcher uses the pinned
+   runtime, sets production mode, removes inherited Node inspector/debug options,
+   removes insecure TLS verification overrides, and starts with --disable-sigusr1.
+   API failures return controlled messages,
+   never stacks. Direct manual Node startup remains a developer responsibility;
+   use Open PsychLab.cmd/Start-PsychLab.ps1 for the hardened production path.
+
+10. Server-side API secrets -- Featherless credentials remain in the server
+    environment/DPAPI, never in browser assets. Provider and Access-key requests
+    use fixed HTTPS endpoints, timeouts and redirect rejection. Static serving is
+    restricted to index.html, app.mjs and style.css; private files are not served.
+
+11. Security review integration -- The named GitHub path
+    https://github.com/openai/codex-code-security-review returned 404 during this
+    review. The available official Codex Security plugin was used instead for a
+    bounded Standard scan of live/, alongside independent source review and tests.
+    This is not a claim that the named repository/action was installed. See the
+    scan report for its explicit partial coverage and external deployment gaps.
+
+12. Rate limit requests -- Token buckets enforce 1,200 ingress requests/minute
+    across the process, 300 requests/minute per verified identity (or trusted local
+    user), 12 session creations/minute, 30 turns/minute and 10 reviewer requests/
+    minute. Initial burst capacity equals the per-minute limit. Rejections return
+    429 and Retry-After. Cookie rotation and forwarded-IP headers do not change
+    the owner bucket. Limiter storage is bounded and expires idle entries. Existing
+    provider-call budgets, session limits and one-answer-at-a-time remain active.
+    Buckets reset on restart; multiple instances require a shared limiter, and
+    network floods require upstream Cloudflare protections.
+
+13. Validate file uploads -- No upload endpoint exists. Multipart submissions
+    cannot enter JSON routes, unknown upload paths return 404, and body sizes are
+    limited. A future upload feature needs authentication, size/type/signature
+    validation, generated filenames, isolated storage and malware screening.
+
+14. Keep sensitive data from logs -- HTTP handlers do not log cookies, headers,
+    request bodies, provider payloads or raw exceptions. Production launcher
+    suppresses inherited Node debug logging. Regression tests check generic error
+    responses. This work did not delete historical offline diagnostic/evaluation
+    records or change Cloudflare/provider logging and retention settings.
+
+15. Hash passwords securely -- Not applicable: PsychLab stores no login passwords;
+    Access owns authentication. The DPAPI-encrypted API key is a retrievable service
+    credential, not a password hash. If local passwords are introduced, use a
+    maintained Argon2id implementation with per-password salts and suitable costs.
+
+16. Verify webhook signatures -- Not applicable: no webhook handler exists.
+    Unknown webhook paths return 404. Future handlers must authenticate signatures
+    over the original raw bytes and enforce timestamp/replay checks before effects.
+
+17. Server-side permissions -- Verified identity ownership is enforced before
+    session operations; client roles/owner fields are rejected. Account switching
+    clears only the stale browser cookie, without deleting another user's session.
+    Public reviewer permission is explicit and checked on every review request.
+
+18. Block cross-site scripting -- Dynamic content uses textContent, external
+    links accept only credential-free HTTPS URLs, and CSP denies inline scripts,
+    plugins, framing and unauthorized connections. Tests cover hostile transcript
+    text, unsafe links, stored unexpected fields and permission-gated reviewer UI.
+
+19. Update dependencies -- The live app has no npm dependencies to upgrade.
+    Updated PsychLab's project-local Node from the globally available 24.15.0 to
+    pinned 24.21.0 without altering global PATH or replacing global Node. The
+    installer checks official SHA-256 and a valid OpenJS Authenticode signature;
+    startup rechecks the pinned checksum. The ignored binary can be recreated with
+    Install-PsychLabRuntime.ps1. Revisit runtime-lock.json for future patches.
+
+USE AND DEPLOYMENT
+
+The local code and runtime are updated. Running servers were not restarted, and
+remote Cloudflare settings or published Sites artifacts were not changed. Restart
+with Open PsychLab.cmd to load these protections. On another Windows workstation,
+run Install-PsychLabRuntime.ps1 first. Existing credentials and private Access
+configuration were preserved. To enable a public reviewer, add the intended
+already-approved email to adminEmails in private public-access.json and restart;
+the example shows the schema. No existing public user was silently made an admin.
+
+Existing in-memory sessions expire after two idle hours or a server restart.
+Reviewer traces stay in memory and are excluded from browser history. This is
+still a fictional training prototype, not a system for real patient records.
+
+VERIFICATION
+
+Targeted HTTP/auth tests cover invalid JWTs and signing keys, wrong-account reads,
+mutations and replacements, account-switch recovery, role checks, cookie flags,
+CORS/CSRF, body bounds, rate limits, private-file denial and error redaction.
+Browser tests cover unsafe links, text rendering, archive projections, form
+validation and reviewer permission. Windows checks cover the pinned download,
+signature/checksum, installer idempotence and production launch configuration.
+
+Final complete suite on project Node 24.21.0: 471 passed, 0 failed, 0 skipped.
+The complete local/mock test run is saved at:
+  ../../work/psychlab-security-tests-2026-10-10.txt
+No paid provider call, real email login, public deployment or external penetration
+test was performed. Source review and passing tests do not establish absence of
+all vulnerabilities or validate clinical behavior.
+
+The sealed Codex Security Standard scan completed with 0 reportable findings
+across its 5 reviewed surfaces and explicitly PARTIAL coverage. Source changed
+during remediation and the final security boundaries were re-read; its original
+snapshot ID is not a final deployment digest. Scan ID:
+  5a7a3d5e-160d-4ffa-a9e9-ea62a7afad90
+Report on this workstation:
+  /local/user\.codex\state\plugins\codex-security\scans\psych-simulator-foundation\unversioned_20261010T074335Z_zyh23sxh\report.md
+
+PRIMARY REFERENCES
+
+Node release: https://nodejs.org/en/blog/release/v24.21.0
+Node official checksums: https://nodejs.org/dist/v24.21.0/SHASUMS256.txt
+Node security advisory: https://nodejs.org/en/blog/vulnerability/july-2026-security-releases
+Cloudflare identity claims: https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/application-token/

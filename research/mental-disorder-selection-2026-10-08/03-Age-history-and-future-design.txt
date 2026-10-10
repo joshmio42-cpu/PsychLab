@@ -1,0 +1,185 @@
+AGE, HISTORY AND FUTURE DESIGN — RESEARCH RECOMMENDATIONS ONLY
+
+1. THREE DIFFERENT KINDS OF TIME
+Keep these separate:
+- Life stage: the developmental context shown on the patient profile.
+- Clinical background: onset, persistence, prior episodes, development, stressors,
+  treatment and functional change before the recent simulation.
+- Recent simulated days: a bounded sample of daily experiences leading up to the
+  interview. The current app supports 1–90 days and then freezes the record.
+
+Original design conclusion: adding more recent days must not manufacture the
+earlier history needed to support a chosen condition. Diagnostic timing includes
+symptom frequency, continuity, impairment and exclusions, not merely elapsed time.
+A 12-month assessment window does not necessarily require symptoms to persist
+continuously for all 12 months (for example substance-use assessment).
+
+Selected source anchors (not full criteria):
+- MDD: a major depressive episode uses a two-week anchor [S06].
+- GAD and social anxiety: six-month history anchors [S09, S11].
+- Panic disorder: recurrent unexpected attacks plus at least a month of related
+  concern or change [S10].
+- PTSD: longer than a month; acute stress disorder: three days to one month
+  [S13, S29]. The trauma date and symptom-onset date are distinct.
+- ADHD: six-month persistence, childhood onset and multiple settings [S14].
+- Adult persistent depression requires a much longer history than 90 days [S06].
+- Schizophrenia's overall course spans at least six months; schizophreniform
+  disorder has a shorter bounded course [S43, S44].
+- Chronic insomnia has a three-month/frequency anchor [S24, S25].
+- Prolonged grief requires sufficient time since loss, with different adult and
+  youth anchors [S17]. Cultural meaning remains relevant.
+
+Do not convert calendar months into fixed 30-day blocks in a diagnostic validator.
+Author calendar dates or explicit elapsed calendar periods, including events before
+the recent log. No automatic diagnosis is justified by these few anchors.
+
+Example design, not an actual case or new app behavior:
+Riley / Adolescent / social anxiety / 28 simulated days.
+The authored baseline could document a longer-established fear pattern, affected
+settings and functional impact. The recent log then records selected school and
+peer experiences. Choosing seven days would shorten the log, not erase onset.
+Changing the seed could vary permitted recent events, but must not randomly erase
+required history or add incompatible episodes.
+
+2. LIFE STAGES AND INTERVIEW FORMAT
+These are proposed starting scopes for fictional scenarios, not diagnostic rules.
+
+Toddler:
+Use caregiver observations and developmental information. Possible specialist
+research directions include autism-related developmental assessment and ARFID
+with appropriate feeding assessment [S15, S49]. Ordinary separation distress,
+tantrums and toileting development must not become automatic disorders [S35, S51].
+Do not simulate an adult-style autobiographical interview through the toddler.
+
+Preschool child:
+Use caregiver and preschool observations, with the child's communication where
+appropriate. Developmental, feeding and selective-mutism scenarios need distinct
+formats [S15, S34]. Silence should not be replaced by a fluent AI monologue.
+
+School-age child:
+School, home and peer context can support attention, learning, anxiety and other
+carefully authored scenarios. Include caregiver/teacher collateral when required.
+Language access and learning support must not be mistaken for disobedience [S14,
+S39, S40]. Avoid assigning a psychiatric label to one classroom conflict.
+
+Adolescent:
+Include school, peers, growing autonomy and family context. Depression may be
+expressed differently from adult stereotypes [S06]. Do not make every teenager
+impulsive, traumatized or substance-using. Research age-sensitive conditions
+individually before making them selectable.
+
+Young adult and Adult:
+Use varied work, study, relationship and independent-living contexts. The proposed
+first authoring set starts here to reduce the number of developmental variants
+needed at once. This is a scope choice, not an assertion that disorders occur only
+in adults.
+
+Older adult:
+Preserve the person's autonomy and meaningful roles. Compare cognition and
+functioning with their own earlier baseline. Depression, delirium and acquired
+cognitive decline require different histories; older age alone is not dementia
+[S28, S52, S53]. Caregiver collateral should supplement, not erase, the patient's
+voice when they can participate.
+
+Important age-boundary issue:
+Life-stage labels overlap clinical cutoffs. For example, "Adolescent" alone does
+not determine whether a specific youth rule applies. Preserve the user's preference
+for phase labels, but require case-author verification of any applicable age gate.
+Do not quietly generate a random birthday to satisfy a condition.
+
+DMDD example:
+APA's DSM-5-TR child fact sheet explicitly gives the diagnostic range 6–18; its
+DMDD sheet also identifies onset before 10 [S47, S33]. The NIMH public summary
+says diagnosis between 6 and 10 [S32]. Use the publisher's more precise distinction
+for future authoring; do not treat onset and age at diagnosis as the same field.
+Exact boundaries must be checked in the licensed manual before coding.
+
+Personality-disorder example:
+Adult-first case authoring is proposed. It is not a claim that diagnosis under
+18 is categorically impossible: NIMH discusses selected younger BPD diagnoses
+with a sustained severe pattern [S20]. Broad public wording [S19] is insufficient
+for an absolute age block. Any youth variant needs its own reviewed evidence.
+
+3. WHAT DISORDER SELECTION SHOULD MEAN LATER
+A condition choice selects a reviewed fictional case formulation. It must not
+equate a diagnosis with the patient's identity, all personality traits, motives,
+dangerousness or every sentence they say.
+
+Proposed future sequence, following the user's requested interaction:
+Patient / life stage / recent days / seed
+-> press Prepare frozen history
+-> choose a condition family and a specific reviewed case
+-> inspect a short case preview and interview format
+-> confirm the selection
+-> generate consistent recent events and freeze the final case
+-> conduct the interview.
+
+This flow is only documented here. The current button and routes are unchanged.
+The actual freeze should occur AFTER the condition/case choice; otherwise the
+existing history could conflict with a subsequently selected presentation.
+
+Selection details worth deciding before implementation:
+- A guided learning mode may reveal the chosen condition.
+- A blind assessment needs an instructor-selected or concealed case label;
+  choosing one's own visible diagnosis cannot be called fully blind.
+- One primary condition initially; curated co-occurring conditions later.
+  Arbitrary multi-select combinations are not necessarily clinically coherent.
+- Include ordinary stress / no disorder assigned / uncertainty cases.
+- Show all researched families, while distinguishing reviewed case availability
+  from catalogue names awaiting clinical authoring. A name alone is not a case.
+- A case can be referred for evaluation without pretending it has a confirmed
+  diagnosis. Specify what the fictional patient knows versus reviewer information.
+
+4. MINIMUM CASE EVIDENCE PACKAGE
+Original design recommendation, not a DSM checklist:
+a) Case ID, source edition, evidence IDs and revision date.
+b) Life stage and explicitly verified developmental/age constraints.
+c) Relevant baseline strengths, goals, relationships and communication needs.
+d) Earlier history, onset and episode timeline.
+e) Authored symptoms actually present, their frequency/context and functional impact.
+f) Required diagnostic exclusions/differentials: confirmed, unknown or not assessed.
+g) Medical and substance information when relevant; never invent negative findings.
+h) Treatment and assessment history only when deliberately authored.
+i) Present patient account, caregiver account and observed findings kept separate.
+j) Known uncertain details and a disclosure plan.
+k) Reviewer rationale, source-specific criteria verification and approval status.
+l) Scenario-specific safety needs; no blanket assignment of suicidality or violence.
+m) Recent events that fit the baseline, with an immutable case/version identity.
+
+5. AGENT AND COST IMPLICATIONS FOR A LATER PHASE
+Read-only code inspection: the current engine generates four broad everyday event
+types, retains a frozen history and has no clinical diagnostic classifier. Numerical
+tension/energy fields are experimental readouts. A selected disorder cannot be
+implemented accurately merely by raising those values or changing the prompt to
+"act depressed" or "act schizophrenic".
+
+Suggested separation of responsibilities:
+- Case authoring establishes longitudinal facts and reviewed constraints.
+- Personality stays individually authored; diagnosis does not replace identity.
+- Daily simulation varies only permitted situations/outcomes within that history.
+- Memory retrieves selected facts and distinguishes perception from external events.
+- Language renders the correct speaker and appropriate communication style.
+- A support check rejects unsupported claims and contradictions.
+- Review compares the transcript with authored evidence, without claiming that
+  an LLM's approval is a clinical validation.
+
+The catalogue and compatibility checks can run locally. Retrieve only the chosen
+case's short approved facts; do not send this whole research pack to Featherless.
+Keep current call/token budgets and avoid new per-day model requests. No price
+estimate is asserted: provider billing and case prompt size still need measurement.
+There were no Featherless calls during this research.
+
+6. FUTURE VALIDATION
+Before a case is labeled ready:
+- Check the exact applicable DSM edition, revisions, criteria, exclusions and rights.
+- Have an appropriately qualified reviewer assess the individual case and age variant.
+- Check date arithmetic and consistency when switching days, seed, profile or condition.
+- Keep episode boundaries and collateral accounts consistent across questions.
+- Check caregiver voice, uncertainty and unknown medical history.
+- Test misleading questions without allowing invented symptoms or past events.
+- Review for stereotypes, cultural misinterpretation and false causal stories.
+- Confirm text-only limitations for motor findings, mutism, cognition and medical exams.
+- Verify no extra AI calls are triggered by browsing the selection screen.
+- Ensure no diagnosis, scale score or competence rating is claimed merely because
+  the model produced a fluent answer.
+

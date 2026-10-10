@@ -1,0 +1,103 @@
+PSYCHLAB + ADAPTION — IMPLEMENTATION AND PILOT RESULTS
+9 October 2026, Asia/Manila
+
+The Adaption connection and complete improvement workflow are built and tested.
+Your saved key authenticated successfully. One 25-example adaptation batch
+finished. We reviewed every result and compiled 21 approved examples.
+
+THE NEW EXAMPLES ARE NOT ACTIVE IN LIVE INTERVIEWS.
+The pilot did not meet the agreed quality/cost verification gates. Keeping the
+current setup is the outcome of the comparison, not an unfinished API setup.
+No active-pack.json was created. Featherless remains the live answer provider.
+
+WHAT WAS COMPLETED
+1. Secure connection: loads your Windows-encrypted Adaption credential outside
+   the project. Authentication verified with a read-only official API request.
+2. Fictional development data: 25 newly authored examples from all eight patient
+   profiles, including personality/mental-premise context and canonical facts.
+   Existing evaluation questions were held out from dataset preparation.
+3. Provider run: source uploaded, 25 rows verified, quote obtained before launch,
+   one adaptation job started, completion verified and output downloaded.
+4. Cost controls: quote was 1 Adaption credit and 11 minutes. One 25-row run;
+   no expansion, web grounding, recurring job, or automatic retries. Credits
+   are not dollars; final Adaption billing is not reported by these endpoints.
+5. Independent source review: 21 approved, four rejected. Two changed pronouns,
+   one made a preferred approach into an asserted routine, and one returned
+   invalid JSON. Exact provider output is preserved, including rejected rows.
+6. Runtime connection: reviewed examples can guide the existing writer/auditor,
+   with current personality and mental-premise context retained. At most two
+   examples / 1,600 bytes, removed before patient facts when space is tight.
+   No additional model calls. Example facts cannot be current patient citations.
+7. Before/after testing: actual Featherless responses tested on the same 36
+   frozen cases; an additional eight cases checked for inappropriate transfer
+   of example facts, life-stage/perspective errors and unsupported details.
+8. Activation decision: gates evaluated against exact saved evidence and
+   independent reviews. Gate failed; the candidate remains inactive as planned.
+
+RESULTS
+                                Baseline    Candidate
+Main cases reviewed                 36           36
+Passed                              30           31
+Blocked answers                      3            4
+Delivered unsupported claims*        3            1
+Quality score (maximum 108)          87           88
+* Count is affected cases, not the number of individual statements.
+
+Three cases improved: distinguishing usual hobbies from current enjoyment,
+clarifying a question about drawing, and describing a specific recorded event.
+The candidate still described the patient as "usually pretty thoughtful" and
+broadened one relationship-planning preference into enjoying plans generally.
+Those claims were not supported by the permitted facts.
+
+Two candidate failures were incomplete provider responses during routing,
+before examples were supplied. They do not demonstrate that examples caused
+the failures, but they remain operational failures with unreported token usage.
+
+Additional transfer cases: 4/8 passed; one blocked, two gave unhelpful generic
+clarifications to clear questions, and one introduced an unsupported frequency
+claim. No direct copying of another patient's biography was observed. Only
+three of these cases reached example guidance, so this is limited evidence.
+
+These are single stochastic samples with independent assistant review, not
+clinical expert validation or statistical proof of improvement. Both baseline
+and candidate failures remain in the evidence; no passing-only rerun was used.
+
+COST AND CONSUMPTION
+Adaption: one completed batch, quoted at 1 credit. Final charge not verified.
+Featherless: 182 attempted calls, 196,964 reported tokens across all tests.
+Known-priced usage estimate: US$0.07299062 (about 7.3 US cents), plus two calls
+whose usage was not returned. This is not a complete bill or account balance.
+The live-cost increase gate could not be verified with missing usage; failure
+of that gate is not evidence that the candidate was expensive.
+No further provider jobs were started after the comparison.
+
+VERIFICATION
+265 distinct automated tests passed: 212 existing/live integration checks and
+53 Adaption data, connector, workflow, review and release-gate checks.
+All 80 evaluated frozen snapshots remained unchanged.
+The compiled pack passes the loader. Its hash matches both candidate runs.
+The runtime used example guidance in 23 main-evaluation writer/auditor calls.
+The local website returned HTTP 200 on port 8771 during verification.
+
+EVIDENCE IN THIS FOLDER
+README.txt — usage, cost controls, activation and rollback instructions.
+official-API-notes.txt — official references and verified API details.
+data/source-examples.json / examples.jsonl / manifest.json — source dataset.
+runs/authentication.json — successful authentication, no key.
+runs/pilot-25.json — exact dataset/run IDs, quote, completion and output hash.
+runs/pilot-25-output.jsonl — untouched Adaption output.
+runs/pilot-25-review.json / .txt — every semantic decision and its rationale.
+runs/pilot-25-approved-pack.json — 21 approved examples, currently inactive.
+runs/pilot-25-compilation-report.json — name/ID transformations and rejections.
+runs/pilot-25-baseline.json / pilot-25-candidate.json — all 72 main outcomes.
+runs/pilot-25-transfer-candidate.json — all eight additional outcomes.
+runs/review-baseline.json / review-candidate.json / review-transfer.json —
+  independent evidence and exact source/record hashes.
+runs/pilot-25-decision.json — verified activation decision: false.
+runs/automated-tests.txt / adaption-tests-final.txt — test evidence.
+
+NEXT IMPROVEMENT TARGET
+Stronger separation of communication style from factual self-description,
+plus clearer handling of known questions with missing information. The pilot
+pack is available for further development without another Adaption run. A
+future change needs a new, preserved comparison before live activation.

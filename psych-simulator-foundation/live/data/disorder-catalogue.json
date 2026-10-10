@@ -1,0 +1,1245 @@
+[
+  {
+    "id": "adhd",
+    "name": "Attention-deficit/hyperactivity disorder (ADHD)",
+    "description": "Persistent inattention and/or hyperactivity-impulsivity that interferes with functioning.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S14"
+    ],
+    "historyRequirement": "At least six months; childhood symptoms before 12; evidence in multiple settings.",
+    "reviewLimit": "Sleep, anxiety, depression and learning difficulties can resemble attention problems. Toddlers are not a default ADHD case.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "autism",
+    "name": "Autism spectrum disorder",
+    "description": "Developmental differences in social communication alongside restricted or repetitive patterns.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Toddler",
+      "Preschool child",
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S15"
+    ],
+    "historyRequirement": "Earlier developmental history is essential; recent events cannot create autism.",
+    "reviewLimit": "Do not infer intellectual disability, lack of empathy or one universal speech style.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "learning",
+    "name": "Specific learning disorder",
+    "description": "Persistent difficulties in reading, writing or mathematics.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S40"
+    ],
+    "historyRequirement": "Difficulties despite targeted assistance for at least six months; educational history.",
+    "reviewLimit": "Language exposure, teaching opportunity and sensory conditions need consideration; not an IQ guess.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "language",
+    "name": "Language disorder",
+    "description": "Developmental difficulties acquiring and using language.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Preschool child",
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S01",
+      "S39"
+    ],
+    "historyRequirement": "Developmental and language-assessment history; no synthetic diagnosis from a short transcript.",
+    "reviewLimit": "NIDCD's developmental language disorder terminology is related, not an automatic DSM equivalence; hearing and multilingual context matter.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "idd",
+    "name": "Intellectual developmental disorder (intellectual disability)",
+    "description": "Intellectual and adaptive-functioning limitations beginning during development.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Toddler",
+      "Preschool child",
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S41",
+      "S56"
+    ],
+    "historyRequirement": "Prior developmental assessment and everyday support needs, not fabricated test scores.",
+    "reviewLimit": "Do not equate limited speech with low intelligence or use the older adult profile to imply developmental disability.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "tourette",
+    "name": "Tourette's disorder (Tourette syndrome)",
+    "description": "A childhood-onset pattern involving motor and vocal tics.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S30"
+    ],
+    "historyRequirement": "Tic history over a year and onset before adulthood; verify exact manual wording.",
+    "reviewLimit": "Text alone cannot display motor findings; swearing is not a required feature.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "mdd",
+    "name": "Major depressive disorder",
+    "description": "An impairing depressive episode involving low mood or reduced interest, with associated changes.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S06"
+    ],
+    "historyRequirement": "A major depressive episode has a two-week duration anchor; evaluate the broader mood history.",
+    "reviewLimit": "Consider bipolar episodes, medical/substance effects and grief. A sadness slider is insufficient.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "pdd",
+    "name": "Persistent depressive disorder",
+    "description": "A sustained depressive course rather than one brief low-mood episode.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S06"
+    ],
+    "historyRequirement": "Adult history generally spans at least two years; child/adolescent rules require manual verification.",
+    "reviewLimit": "A 90-day log cannot establish a chronic course; distinguish superimposed episodes.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "dmdd",
+    "name": "Disruptive mood dysregulation disorder (DMDD)",
+    "description": "Severe recurrent outbursts with persistent irritability between them.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent"
+    ],
+    "sourceIds": [
+      "S32",
+      "S33",
+      "S04",
+      "S47"
+    ],
+    "historyRequirement": "At least a year; onset before 10; first diagnosis not before 6 or after 18 in APA's rule.",
+    "reviewLimit": "Differentiate episodic mania and other explanations. Do not automatically combine with ODD; age-summary discrepancy documented.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "pmdd",
+    "name": "Premenstrual dysphoric disorder",
+    "description": "A recurring, impairing mood pattern related to the menstrual cycle.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult"
+    ],
+    "sourceIds": [
+      "S06",
+      "S01"
+    ],
+    "historyRequirement": "Document cycle relationship; exact prospective confirmation rules remain to be checked.",
+    "reviewLimit": "Stage and name alone cannot establish menstruation; distinguish exacerbation of another condition.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "bipolar1",
+    "name": "Bipolar I disorder",
+    "description": "A history of mania; depressive episodes may also occur.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S07"
+    ],
+    "historyRequirement": "Mania usually at least seven days, or shorter when hospitalization is necessary; full episode review required.",
+    "reviewLimit": "Not ordinary daily mood swings; consider substances, medical causes and psychosis chronology.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "bipolar2",
+    "name": "Bipolar II disorder",
+    "description": "Hypomanic and major depressive episodes, without a manic episode.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S07"
+    ],
+    "historyRequirement": "Author separate past episodes; confirm exact hypomania duration and exclusions against the manual.",
+    "reviewLimit": "Not simply a milder version of bipolar I; current depression alone does not distinguish it.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "cyclothymia",
+    "name": "Cyclothymic disorder",
+    "description": "A chronic pattern of subthreshold elevated and depressive symptoms.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S07",
+      "S04"
+    ],
+    "historyRequirement": "Longitudinal course required; exact adult/youth duration rules await full-manual verification.",
+    "reviewLimit": "Do not produce alternating hourly moods and label them cyclothymia.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "gad",
+    "name": "Generalized anxiety disorder",
+    "description": "Difficult-to-control worry across areas of life with interference.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S09"
+    ],
+    "historyRequirement": "Most days over at least six months; age-specific symptom counts must be verified.",
+    "reviewLimit": "Ordinary stress, other anxiety presentations, substances and medical conditions.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "panic",
+    "name": "Panic disorder",
+    "description": "Recurrent unexpected panic attacks with ongoing concern or behavior change.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S10"
+    ],
+    "historyRequirement": "At least a month of subsequent worry or change; document recurrent attacks.",
+    "reviewLimit": "An isolated attack is not panic disorder; medical explanations remain possible.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "social_anxiety",
+    "name": "Social anxiety disorder",
+    "description": "Fear of scrutiny or negative evaluation that restricts participation.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S11"
+    ],
+    "historyRequirement": "At least six months with meaningful interference.",
+    "reviewLimit": "Differentiate ordinary shyness, communication differences and body-image concerns.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "specific_phobia",
+    "name": "Specific phobia",
+    "description": "Focused fear and avoidance around a particular object or situation.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S01",
+      "S35"
+    ],
+    "historyRequirement": "Persistent course required; exact criteria and duration need manual review.",
+    "reviewLimit": "Do not pathologize developmentally ordinary fears or actual danger.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "agoraphobia",
+    "name": "Agoraphobia",
+    "description": "Avoidance linked to difficulty escaping or obtaining help in feared situations.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S10",
+      "S01"
+    ],
+    "historyRequirement": "Document distinct situation types and persistent course; verify full criteria.",
+    "reviewLimit": "Not synonymous with staying home, and not dependent on having panic disorder.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "separation",
+    "name": "Separation anxiety disorder",
+    "description": "Developmentally excessive separation fears that interfere with life.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Preschool child",
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S35",
+      "S01"
+    ],
+    "historyRequirement": "Age-specific duration and developmental expectations require verification.",
+    "reviewLimit": "Toddler separation distress can be ordinary development; do not infer a disorder from it.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "selective_mutism",
+    "name": "Selective mutism",
+    "description": "Anxiety-linked inability to speak in certain situations despite speaking elsewhere.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Preschool child",
+      "School-age child",
+      "Adolescent"
+    ],
+    "sourceIds": [
+      "S34"
+    ],
+    "historyRequirement": "Document the pattern across people/settings; verify duration and language exclusions.",
+    "reviewLimit": "Not deliberate defiance; a fluent chatbot alone would misrepresent the presentation.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "ocd",
+    "name": "Obsessive-compulsive disorder (OCD)",
+    "description": "Intrusive unwanted thoughts and/or driven rituals that are time-consuming or impairing.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S12"
+    ],
+    "historyRequirement": "Document recurring pattern and interference; do not invent a six-month threshold.",
+    "reviewLimit": "Not mere neatness; unwanted intrusive thoughts are not the person's intentions.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "bdd",
+    "name": "Body dysmorphic disorder",
+    "description": "Distressing appearance preoccupation with repeated checking or comparison.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S38"
+    ],
+    "historyRequirement": "Persistent preoccupation, repetitive behavior and impairment must be authored.",
+    "reviewLimit": "Differentiate eating-related weight/shape concerns; avoid appearance reassurance loops.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "hoarding",
+    "name": "Hoarding disorder",
+    "description": "Difficulty discarding possessions leading to compromised living space.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S38"
+    ],
+    "historyRequirement": "Longstanding accumulation and functional impact; a week cannot create an established clutter history.",
+    "reviewLimit": "Differentiate ordinary collecting and cognitive or medical contributors.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "hair_pulling",
+    "name": "Trichotillomania (hair-pulling disorder)",
+    "description": "Recurrent hair pulling with consequences and difficulty stopping.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S38"
+    ],
+    "historyRequirement": "Author the course, attempts to stop and impact; exact exclusions need checking.",
+    "reviewLimit": "Do not make it a moral failure or equate it automatically with suicidal self-injury.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "skin_picking",
+    "name": "Excoriation (skin-picking) disorder",
+    "description": "Repeated skin picking causing lesions and unsuccessful efforts to stop.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S38"
+    ],
+    "historyRequirement": "Pattern and impairment, with medical and other explanations considered.",
+    "reviewLimit": "Do not generate injury instructions or assume every skin problem is psychiatric.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "ptsd",
+    "name": "Posttraumatic stress disorder (PTSD)",
+    "description": "Trauma-linked intrusion, avoidance, arousal and changes in mood/cognition.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S13",
+      "S37"
+    ],
+    "historyRequirement": "Symptoms longer than one month; qualifying exposure and onset chronology are separate facts.",
+    "reviewLimit": "Not every stressful event meets the exposure requirement; preschool criteria differ.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "acute_stress",
+    "name": "Acute stress disorder",
+    "description": "An impairing post-trauma reaction within the early time window.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S29"
+    ],
+    "historyRequirement": "Three days to one month after trauma.",
+    "reviewLimit": "Do not relabel all immediate reactions as PTSD or force later PTSD development.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "adjustment",
+    "name": "Adjustment disorders",
+    "description": "Distress or impairment associated with an identifiable stressor.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S29"
+    ],
+    "historyRequirement": "Begins within three months; ordinarily ends within six months after the stressor/consequences end.",
+    "reviewLimit": "Differentiate ordinary adjustment and another disorder better explaining symptoms.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "grief",
+    "name": "Prolonged grief disorder",
+    "description": "Persistent disabling grief beyond expected cultural context.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S17",
+      "S18"
+    ],
+    "historyRequirement": "Loss at least 12 months earlier in adults or six months in children/adolescents.",
+    "reviewLimit": "Grief alone is not illness; introduced as a DSM-5-TR diagnosis, not an original DSM-5 Section II label.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "rad",
+    "name": "Reactive attachment disorder",
+    "description": "An early-childhood attachment-related presentation associated with severely insufficient care.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Toddler",
+      "Preschool child"
+    ],
+    "sourceIds": [
+      "S29",
+      "S01"
+    ],
+    "historyRequirement": "Requires a specific developmental and caregiving history; exact age rules unresolved here.",
+    "reviewLimit": "Not a synonym for insecure attachment or a conclusion from one caregiver interaction.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "dsed",
+    "name": "Disinhibited social engagement disorder",
+    "description": "An attachment-related pattern of unusually indiscriminate social approach.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Toddler",
+      "Preschool child",
+      "School-age child"
+    ],
+    "sourceIds": [
+      "S29",
+      "S01"
+    ],
+    "historyRequirement": "Requires severe insufficient-care history and developmental criteria.",
+    "reviewLimit": "Not simply being friendly; never invent neglect from personality traits.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "dpdr",
+    "name": "Depersonalization/derealization disorder",
+    "description": "Recurring or persistent detachment experiences with reality testing retained.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S21"
+    ],
+    "historyRequirement": "Author course and exclusions; no universal synthetic day threshold.",
+    "reviewLimit": "Distinguish psychosis, substances and neurological explanations.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "dissociative_amnesia",
+    "name": "Dissociative amnesia",
+    "description": "Autobiographical memory gaps beyond ordinary forgetting.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S21"
+    ],
+    "historyRequirement": "Specific missing periods and preserved knowledge must be authored.",
+    "reviewLimit": "Do not fill gaps with invented recovered memories or assumed abuse.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "did",
+    "name": "Dissociative identity disorder",
+    "description": "Disruptions in identity and memory requiring careful differential assessment.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S21"
+    ],
+    "historyRequirement": "Longitudinal evidence and explicit memory boundaries; not randomly changing personalities.",
+    "reviewLimit": "Do not conflate with schizophrenia or portray theatrical automatic switching.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "somatic",
+    "name": "Somatic symptom disorder",
+    "description": "Distressing bodily symptoms accompanied by disproportionate symptom-related thoughts or behavior.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S23"
+    ],
+    "historyRequirement": "Document persistent concern and impairment; verify precise duration wording.",
+    "reviewLimit": "Symptoms are real; medical illness can coexist. Normal tests alone are not a diagnosis.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "illness_anxiety",
+    "name": "Illness anxiety disorder",
+    "description": "Preoccupation with serious illness when somatic symptoms are absent or limited.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S23"
+    ],
+    "historyRequirement": "Longer-term pattern needed; exact threshold not verified here.",
+    "reviewLimit": "Do not dismiss new symptoms or assume avoidance means lack of concern.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "fnd",
+    "name": "Functional neurological symptom disorder (conversion disorder)",
+    "description": "Involuntary neurological symptoms, such as weakness or movement difficulties, that require a positive clinical assessment.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S48",
+      "S59"
+    ],
+    "historyRequirement": "Neurological assessment evidence is needed before authoring a confirmed diagnosis.",
+    "reviewLimit": "This search verified terminology, not a complete criteria/evidence package. Chat cannot replace examination.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "anorexia",
+    "name": "Anorexia nervosa",
+    "description": "Restrictive eating with low weight in context and weight/shape-related disturbance.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S16"
+    ],
+    "historyRequirement": "Course, growth/weight context and medical assessment must be authored.",
+    "reviewLimit": "No procedural weight-loss content; appearance alone cannot establish a diagnosis.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "bulimia",
+    "name": "Bulimia nervosa",
+    "description": "Binge episodes accompanied by compensatory behavior.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S16"
+    ],
+    "historyRequirement": "Document episode frequency and duration; verify full DSM thresholds.",
+    "reviewLimit": "Differentiate binge-eating disorder and anorexia presentations; medical complications matter.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "binge_eating",
+    "name": "Binge-eating disorder",
+    "description": "Repeated distressing binge episodes without the regular compensatory pattern of bulimia.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S16"
+    ],
+    "historyRequirement": "Verify frequency and duration against the manual before case approval.",
+    "reviewLimit": "Body size alone is not the diagnosis; avoid moral judgments about eating.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "arfid",
+    "name": "Avoidant/restrictive food intake disorder (ARFID)",
+    "description": "Restricted intake associated with sensory concerns, low interest or feared consequences, with significant impact.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Toddler",
+      "Preschool child",
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S16",
+      "S49"
+    ],
+    "historyRequirement": "Feeding/developmental history and consequences; psychosocial interference may qualify without low weight.",
+    "reviewLimit": "Distinguish ordinary picky eating and medical causes; not driven by the anorexia-style weight/shape concern.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "enuresis",
+    "name": "Enuresis",
+    "description": "Recurrent urinary wetting considered in developmental and medical context.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent"
+    ],
+    "sourceIds": [
+      "S51",
+      "S01"
+    ],
+    "historyRequirement": "Toileting development, frequency and persistence; exact DSM gates need checking.",
+    "reviewLimit": "Do not assign this diagnosis to ordinary toddler accidents.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "encopresis",
+    "name": "Encopresis",
+    "description": "Recurrent fecal soiling requiring developmental and bowel-history assessment.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent"
+    ],
+    "sourceIds": [
+      "S50",
+      "S01"
+    ],
+    "historyRequirement": "Document toileting history, constipation and course; verify full diagnostic gates.",
+    "reviewLimit": "Avoid blame; a mental-health interview cannot exclude bowel disease.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia disorder",
+    "description": "Difficulty initiating or maintaining sleep with daytime consequences despite opportunity to sleep.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S24",
+      "S25"
+    ],
+    "historyRequirement": "Common chronic anchor: at least three nights weekly for at least three months.",
+    "reviewLimit": "A short sleep diary is not the total disorder duration; consider circadian and breathing problems.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "odd",
+    "name": "Oppositional defiant disorder",
+    "description": "An impairing pattern of oppositional or irritable behavior requiring contextual assessment.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent"
+    ],
+    "sourceIds": [
+      "S22",
+      "S33"
+    ],
+    "historyRequirement": "Persistent, developmentally unusual pattern; verify duration/frequency and exclusion rules.",
+    "reviewLimit": "Do not confuse communication difficulty, fear or situational conflict with a disorder.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "conduct",
+    "name": "Conduct disorder",
+    "description": "A persistent serious behavior pattern affecting others' rights or major norms.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "School-age child",
+      "Adolescent"
+    ],
+    "sourceIds": [
+      "S22",
+      "S01"
+    ],
+    "historyRequirement": "Longitudinal examples and differential assessment; exact gates require manual review.",
+    "reviewLimit": "Avoid criminality stereotypes, invented offenses or using diagnosis to predict an individual's violence.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "alcohol",
+    "name": "Alcohol use disorder",
+    "description": "Impaired control over alcohol use with distress or harmful consequences.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S26"
+    ],
+    "historyRequirement": "Symptoms assessed within a 12-month window; this does not require uninterrupted use for a year.",
+    "reviewLimit": "Quantity alone does not establish the disorder; withdrawal can require medical care.",
+    "authoringTier": "A"
+  },
+  {
+    "id": "cannabis",
+    "name": "Cannabis use disorder",
+    "description": "A substance-specific pattern of impaired control and harmful consequences.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S27",
+      "S01"
+    ],
+    "historyRequirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+    "reviewLimit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "opioid",
+    "name": "Opioid use disorder",
+    "description": "A substance-specific pattern of impaired control and harmful consequences.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S27",
+      "S01"
+    ],
+    "historyRequirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+    "reviewLimit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "stimulant",
+    "name": "Stimulant use disorder",
+    "description": "A substance-specific pattern of impaired control and harmful consequences.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S27",
+      "S01"
+    ],
+    "historyRequirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+    "reviewLimit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "sedative",
+    "name": "Sedative, hypnotic, or anxiolytic use disorder",
+    "description": "A substance-specific pattern of impaired control and harmful consequences.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S27",
+      "S01"
+    ],
+    "historyRequirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+    "reviewLimit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "tobacco",
+    "name": "Tobacco use disorder",
+    "description": "A substance-specific pattern of impaired control and harmful consequences.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S27",
+      "S01"
+    ],
+    "historyRequirement": "Substance-specific criteria and chronology need verification; distinguish use, intoxication and withdrawal.",
+    "reviewLimit": "Exposure or medically supervised physiological dependence alone is not enough; avoid invented doses or detox advice.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "gambling",
+    "name": "Gambling disorder",
+    "description": "Repeated gambling with impaired control and consequential harm.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S42"
+    ],
+    "historyRequirement": "Past-year pattern, not a single bet or loss.",
+    "reviewLimit": "Do not provide betting strategies or use financial loss alone as diagnosis.",
+    "authoringTier": "B"
+  },
+  {
+    "id": "schizophrenia",
+    "name": "Schizophrenia",
+    "description": "Psychotic, negative and cognitive features with a characteristic course and impairment.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S08",
+      "S44"
+    ],
+    "historyRequirement": "Overall disturbance at least six months, with active-phase requirements and exceptions checked separately.",
+    "reviewLimit": "Not DID and not automatic violence; distinguish reported perceptions from objective world facts.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "schizophreniform",
+    "name": "Schizophreniform disorder",
+    "description": "Schizophrenia-like presentation distinguished partly by shorter duration.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S43"
+    ],
+    "historyRequirement": "At least one month and less than six months; follow-up can change the formulation.",
+    "reviewLimit": "Not a conclusion from one strange statement; longer-term outcome cannot be assumed.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "brief_psychotic",
+    "name": "Brief psychotic disorder",
+    "description": "A short episode of unusual perceptions, beliefs or disorganization, followed by return to earlier functioning.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S01",
+      "S57"
+    ],
+    "historyRequirement": "Exact duration, return-to-baseline and exclusion requirements need dedicated verification.",
+    "reviewLimit": "Name verified; do not instantiate until the full course is authored.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "delusional",
+    "name": "Delusional disorder",
+    "description": "A separate psychotic disorder requiring careful assessment of belief, context and functioning.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S01",
+      "S04"
+    ],
+    "historyRequirement": "Exact duration and exclusions require full-manual review.",
+    "reviewLimit": "Do not classify unfamiliar cultural or religious beliefs as delusions.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "schizoaffective",
+    "name": "Schizoaffective disorder",
+    "description": "A course combining psychotic experiences with substantial mood episodes, including psychosis outside mood episodes.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S01",
+      "S44"
+    ],
+    "historyRequirement": "Must author relative timing of mood and psychosis; complete rules not verified in this search.",
+    "reviewLimit": "Not shorthand for any combination of depression and hallucinations.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "delirium",
+    "name": "Delirium",
+    "description": "Acute fluctuating changes in attention and awareness with medical context.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S28"
+    ],
+    "historyRequirement": "Hours-to-days change from baseline; fluctuations matter.",
+    "reviewLimit": "Requires a medical-assessment training scenario, not ordinary stable outpatient role-play.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "mild_ncd",
+    "name": "Mild neurocognitive disorder",
+    "description": "Acquired cognitive decline with everyday independence largely maintained.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S53",
+      "S52"
+    ],
+    "historyRequirement": "Evidence of decline from prior functioning; testing and etiology context needed.",
+    "reviewLimit": "Not ordinary ageing or automatically Alzheimer's disease; MCI and DSM labels are not a universal code crosswalk.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "major_ncd",
+    "name": "Major neurocognitive disorder",
+    "description": "Acquired cognitive decline that interferes with independent daily functioning.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S52",
+      "S04"
+    ],
+    "historyRequirement": "Author premorbid baseline, course, cause and assessment evidence.",
+    "reviewLimit": "Older age alone cannot assign dementia; avoid inventing cognitive-test results.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "bpd",
+    "name": "Borderline personality disorder",
+    "description": "A longstanding pattern involving emotion regulation, self-image and relationships.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S20"
+    ],
+    "historyRequirement": "Longitudinal pattern, not a brief crisis. Youth cases need separate specialist review.",
+    "reviewLimit": "Avoid 'manipulative patient' scripts; differentiate episodic bipolar symptoms and trauma-related conditions.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "avoidant_pd",
+    "name": "Avoidant personality disorder",
+    "description": "A longstanding pattern of social inhibition and rejection sensitivity with impairment.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S19"
+    ],
+    "historyRequirement": "Pervasive pattern across contexts; not inferred from a recent anxious week.",
+    "reviewLimit": "Compare social anxiety and cultural context; ordinary introversion is not a disorder.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "ocpd",
+    "name": "Obsessive-compulsive personality disorder",
+    "description": "A longstanding rigid pattern around order, perfection and control.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S19"
+    ],
+    "historyRequirement": "Pervasive developmental history and impairment must be established.",
+    "reviewLimit": "Distinct from OCD; conscientiousness alone is not psychopathology.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "gender_dysphoria",
+    "name": "Gender dysphoria",
+    "description": "Clinically significant distress or impairment related to gender incongruence.",
+    "classification": "DSM-5-TR",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S31"
+    ],
+    "historyRequirement": "Age/puberty-specific criteria and persistence require appropriate review.",
+    "reviewLimit": "Transgender or gender-diverse identity itself is not a disorder; no assumptions from pronouns.",
+    "authoringTier": "C"
+  },
+  {
+    "id": "cptsd",
+    "name": "Complex PTSD — ICD-11 comparison",
+    "description": "ICD-11 PTSD with additional difficulties in emotion regulation, self-concept and relationships.",
+    "classification": "ICD-11; not a separate DSM-5-TR diagnosis",
+    "stages": [
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S36"
+    ],
+    "historyRequirement": "Use a distinct ICD-11 framework; do not mix criteria sets.",
+    "reviewLimit": "Not a separate DSM-5-TR diagnosis; prolonged trauma alone does not establish it.",
+    "authoringTier": "D"
+  },
+  {
+    "id": "gaming",
+    "name": "Gaming disorder — ICD-11 comparison",
+    "description": "Impaired gaming control with priority over other activities and significant harm.",
+    "classification": "ICD-11; DSM-5-TR Internet Gaming Disorder is further-study",
+    "stages": [
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S45",
+      "S46"
+    ],
+    "historyRequirement": "Normally a 12-month pattern in WHO's overview; use the full ICD-11 requirements.",
+    "reviewLimit": "DSM-5-TR Internet Gaming Disorder is a further-study condition, not an equivalent established DSM diagnosis.",
+    "authoringTier": "D"
+  },
+  {
+    "id": "none",
+    "name": "No disorder assigned",
+    "description": "A comparator for ordinary variation, stress or insufficient evidence.",
+    "classification": "Not a disorder; original training-design proposal",
+    "stages": [
+      "Toddler",
+      "Preschool child",
+      "School-age child",
+      "Adolescent",
+      "Young adult",
+      "Adult",
+      "Older adult"
+    ],
+    "sourceIds": [
+      "S35"
+    ],
+    "historyRequirement": "Document only authored experiences; no diagnosis is forced.",
+    "reviewLimit": "This is a proposed training option, not a DSM disorder.",
+    "authoringTier": "A"
+  }
+]

@@ -1,0 +1,24 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {once} from 'node:events';
+import http from 'node:http';
+import {createApp} from '../server.mjs';
+import {mockProvider,reasoning} from './helpers.mjs';
+test('HTTP flow isolates case files, requires ownership and origin, and supports full mocked interview',async t=>{
+  const {server}=await createApp({provider:mockProvider(),controllerOptions:{sessionCallLimit:3}});server.listen(0,'127.0.0.1');await once(server,'listening');t.after(()=>{server.closeAllConnections();server.close();});
+  const base=`http://127.0.0.1:${server.address().port}`;
+  let cookie='';const call=(path,method='GET',body,extra={})=>fetch(base+path,{method,headers:{Origin:base,'Content-Type':'application/json','X-PsychLab':'1',Cookie:cookie,...extra},...(body?{body:JSON.stringify(body)}:{})});
+  for(const path of ['/data.json','/engine.mjs','/.env.local','/../data/case-a01.json','/prototype/dist/data.json','/personality_system/evidence/sources.json','/personality_system/data/authored_parameters.json'])assert.equal((await call(path)).status,404);
+  assert.equal((await call('/api/session')).status,401);
+  assert.equal((await call('/api/session','POST',{},{Origin:'https://example.com'})).status,403);
+  const hostileStatus=await new Promise((resolve,reject)=>{const req=http.get(base+'/api/status',{headers:{Host:'evil.example'}},res=>{res.resume();resolve(res.statusCode);});req.on('error',reject);});
+  assert.equal(hostileStatus,403);
+  const created=await call('/api/session','POST',{mode:'generated',seed:42});assert.equal(created.status,201);assert.match(created.headers.get('set-cookie'),/HttpOnly; SameSite=Strict/);cookie=created.headers.get('set-cookie').split(';')[0];
+  const state=await created.json();assert.equal(state.brief.name,'Jordan');assert.ok(!('facts' in state.brief));assert.equal((await call('/api/review')).status,403);
+  const request={question:'What brings you here?',requestId:'http-request-001',expectedTurn:0};assert.equal((await call('/api/turn','POST',request)).status,200);assert.equal((await call('/api/turn','POST',request)).status,200);assert.equal((await (await call('/api/session')).json()).turns.length,1);
+  assert.equal((await (await call('/api/session')).json()).usage.session.attemptedCalls,3);
+  assert.equal((await call('/api/turn','POST',{...request,requestId:'http-request-002',expectedTurn:1})).status,429);
+  assert.match(await (await call('/')).text(),/id="usageStatus"/);
+  const finished=await call('/api/finish','POST',{reasoning});assert.equal(finished.status,200);assert.equal((await finished.json()).evidence.length,1);assert.equal((await call('/api/review')).status,200);
+  assert.equal((await call('/api/session','DELETE')).status,200);assert.equal((await call('/api/session')).status,401);
+});

@@ -1,0 +1,141 @@
+PSYCHLAB — AGENT CONNECTION AND ECONOMY MODE
+Updated 2026-10-09
+
+Personality and mental-premise responsibilities feed Featherless through a compact
+read-only context packet. The selected disorder contributes authored experiences
+and course; the mind context preserves subjective interpretation and selected
+memories. These are simulation responsibilities, not a new scientifically validated
+construct or an inference that the real user has a diagnosis.
+
+IDENTITY.TRAIT: explicitly unmeasured; no invented trait scores or personality type.
+IDENTITY.SCHEMA: the relationship relevant to selected memories is projected into
+tentative expression guidance. Experimental thresholds .35 and .65 select
+cautious/uncertain/receptive phrasing; these are not clinical or fitted cutpoints.
+IDENTITY.MOTIVE: the two strongest authored priorities guide expression, not new
+biographical claims. Numeric weights stay private.
+MNEMOSYNE: only memories selected as permitted facts are included.
+CORTEX: preserve selected subjective interpretations and uncertainty.
+AFFECT: remains in the frozen simulation and trace; numerical affect is not a new
+       symptom fact or permission to improvise a feeling in the reply.
+SOCIAL: express the client's perspective rather than therapist advice.
+
+Only permitted facts authorize factual statements. LANGUAGE now produces brief
+conversational paraphrases instead of selecting complete recorded statements.
+The separate auditor checks the actual reply against cited facts. Style cannot
+justify invented events,
+relationship motives, diagnoses, scores or internal agent labels. The provider
+never receives the entire state, hidden world causes or research registry. The
+engine controls psychological state; interviews remain frozen. Generation
+reliability and these expression mappings still require evaluation.
+
+Recent conversation is used to understand references and topic continuity; earlier
+generated replies never become case evidence. Social greetings, thanks and brief
+acknowledgments carry no case facts and are excluded from clinical checklist
+evidence. A question about symptoms receives the relevant symptom facts, even if
+the preceding exchange was about a hobby. Usual interests do not prove current
+enjoyment, ability, improvement or symptom relief.
+
+When a requested detail is missing, the router returns an explicit system boundary:
+"That detail isn’t available for this interview." This is not spoken by the
+patient and does not invent refusal, forgetfulness or a denial. It uses one call.
+New saved transcripts retain interaction metadata; old transcripts remain readable.
+
+COST CONTROLS
+History generation and context projection: zero API calls.
+Normal supported answer or social reply: three calls total, regardless of agent count.
+On the default path, an unavailable-detail/out-of-scope/clarification/safety boundary
+uses one routing call and no generated client answer. Some clear local boundaries
+use no provider call. Staging answer plans can also use three calls to deliver
+recorded context alongside a separate missing-detail Case note. A rejected turn
+can stop before all three calls.
+Maximum output per call: CORTEX 640, LANGUAGE 320, AUDITOR 192 tokens.
+Total three-call output allowance: 1,152 tokens. The routing allowance accommodates
+quoted answer plans; the audit allowance accommodates support checks and citations.
+These are ceilings, not measured usage. Input tokens are additional; an output
+allowance is not a measured charge or a promise of dollar savings.
+Input: at most 12000 UTF-8 bytes of serialized messages per call. This is a byte
+limit, not an exact token count. Oversized prompts reject before a network call.
+Routing transcript: last four complete exchanges, within 2400 UTF-8 bytes. A separate
+bounded topic context uses recent fact IDs and the last substantive question.
+LANGUAGE receives previous questions and permitted facts, not earlier model replies
+as evidence. Older context is omitted, which may require explicit follow-ups.
+Case facts remain available via routing. Questions are limited to 1500 characters.
+No automatic paid retries; duplicate successful request IDs reuse the saved result.
+
+MEASURED SAMPLE, NOT A BILLING GUARANTEE
+The 2026-10-08 Qwen/Qwen2.5-72B-Instruct sample completed 16 turns with 46 calls: 15
+three-call turns and one one-call missing-detail boundary. It reported 34947 input
+tokens and 1071 output tokens. At US$0.37 per million input tokens and US$0.40 per
+million output tokens, the calculation is:
+  (34947 x 0.37 + 1071 x 0.40) / 1000000 = US$0.01335879
+That is approximately US$0.01336, or 1.34 US cents for this sample. Longer prompts,
+more turns, failures, another model or changed rates change the amount. This is an
+estimate from reported tokens, not a verified charge or account balance.
+Published rate source checked 2026-10-08:
+https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct
+
+DEFAULT BUDGETS
+60 API call attempts per interview (up to 20 fully checked answers).
+300 API call attempts across all sessions in one running server process.
+Failures/timeouts consume a reservation; missing usage is labeled unknown, never
+treated as verified zero. Provider-reported token counts are shown.
+At least three remaining calls are required to begin another turn. Concurrent
+sessions reserve each call synchronously so the shared cap cannot be exceeded.
+Clear resets only the session cap. Restart resets all counters. These are local
+guardrails, not persistent monthly or account dollar caps. Other apps using the
+same API key are outside this budget. Check provider billing separately.
+
+Override before server startup, if deliberately needed:
+  $env:PSYCHLAB_SESSION_CALL_LIMIT = "60"
+  $env:PSYCHLAB_PROCESS_CALL_LIMIT = "300"
+Values must be positive integers. Counters are visible in the interview sidebar
+and returned in session/debrief data. Failed turns refresh the usage display.
+
+TESTING
+  node --test live/tests/*.test.mjs personality_system/tests/*.test.mjs engineering/agents.test.mjs
+The 2026-10-08 automated suite passed 130 checks; provider unit tests use mocks.
+That day's 16-turn 72B live run had zero request errors. Minor unsupported flourishes
+still passed the semantic audit, so this is not proof that all answers were
+factually validated. Current focused live samples and earlier failures are saved
+in ../../research/natural-conversation-2026-10-08/. The checks do not establish
+reliable behavior across every patient/case or educational/clinical validity.
+Earlier credential verification does not mean a restarted process retains its
+key. The private PowerShell launcher must remain open for its configuration to live.
+The selected setup default is now Qwen/Qwen2.5-72B-Instruct. Existing saved
+configuration or a complete explicit environment configuration controls launch.
+The choice is reversible: rerun Setup PsychLab.cmd with the same private key and
+another exact model ID, then restart the server. Switching a model does not require
+creating or rotating the key. The three-call maximum and 60/300 default call caps
+are unchanged.
+
+Provider contract reference checked 2026-10-08:
+https://featherless.ai/docs/completions
+The API exposes max_tokens and returns prompt/completion/total usage when supplied.
+Versioned public model rates are used for estimates; no account credit balance is inferred.
+
+STAGING ANSWER PLANS
+The answerPlanning experiment is disabled by default. Use -Planned with the
+Adaption comparison launcher to evaluate it. For an isolated staging server only,
+set PSYCHLAB_ANSWER_PLANNING=1 before startup; unset it for the default path.
+The flag does not activate examples or rewrite the saved key/model configuration.
+It remains an experiment until the complete release comparison passes.
+
+CORTEX proposes exact question parts with quoted evidence. Local checks validate
+the quotations and derive source IDs and routing from the plan. LANGUAGE receives
+only the supported requests or permitted recorded context. Unrecorded requested
+details are shown separately as a Case note rather than invented patient
+forgetfulness, refusal, indecision or denial. History and exports preserve that
+note as app information, outside the patient quote and checklist evidence.
+Known details deferred by difficulty stay distinct from unrecorded information.
+Source matching cannot establish semantic entailment; the reply still needs its
+separate audit and independent evaluation. No fourth call or automatic retry is
+introduced. The current 640/320/192 caps above apply to the implementation.
+
+Release CLI: use a label starting release- and -Planned for every evaluation.
+The 36 baseline and 36 candidate cases are accompanied by 8 transfer cases,
+16 old grounding regression cases (-Generalization, label ending -regression),
+and 16 fresh release cases (-ReleaseGeneralization, label ending -generalization).
+Each run needs its own hash-pinned independent review. The comparison command
+checks both 16-case sets separately and retains the existing factual, usefulness,
+example-use and cost gates. See ../adaption/README.txt for complete commands.
+This guide does not declare the staging experiment or candidate pack activated.

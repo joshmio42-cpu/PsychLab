@@ -1,0 +1,57 @@
+PSYCHLAB — INDEPENDENT MAIN CANDIDATE REVIEW
+2026-10-09T11:37:29.511Z
+Evaluation: release-v153-dsv41-candidate.json
+Evaluation SHA-256: 6f2c3dc0961a68113c69b735accba1adbc3ac818b03d3b76210806dc6eddb18d
+Matrix SHA-256: 035cff4bdd20bb76e6dc958814409d22fca3ecf7bce5f99dbc3e62828f670266
+Prompt: interview-0.15.3
+Model: deepseek-ai/DeepSeek-V4.1-Flash
+
+23/36 hard passes, 13 required-behavior failures and quality 60/108. No unsupported factual assertions were found in delivered replies. Two ordinary questions were blocked, six clear questions received unnecessary disclosure clarifications, and five further answers failed explicit responsiveness or scope requirements. Four exact source fallbacks were verified; factual grounding alone does not establish useful answer coverage. This candidate review does not establish improvement over baseline or authorize activation.
+
+Cases: 36; hard passes: 23; blocked: 2; unsupported delivered: 0.
+Quality: 60/108. Calls: 82; reported tokens: 122317; unreported calls: 0.
+Estimated Featherless usage: US$0.04120320; not verified billing.
+All 36 frozen snapshots reproduced and remained unchanged.
+Source fallback cases: 4. Exact source assembly, raw draft identity, final audit input and three-call ceiling verified for every repair.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+PASS greeting-first [3/3]: Proportionate social greeting; no factual evidence is needed.
+FAIL greeting-name-check [0/3]: FAIL: the identity confirmation is followed by the full profile rather than the required natural name-only exchange. All disclosed facts are authored; this is a responsiveness failure, not fabricated biography.
+FAIL casual-how-are-you [0/3]: FAIL: no answer is delivered to an ordinary wellbeing question. The route selected social and the local guard blocked the unauthored 'I've been okay' draft.
+PASS usual-hobbies [3/3]: Natural, specific answer to the usual-hobby question.
+FAIL hobby-elliptical-followup [0/3]: FAIL: the relevant objects are present, but the required concise continuation is replaced by a repeat of the entire prior hobby account plus the new detail.
+PASS hobby-unknown-favorite [3/3]: A brief usual-interest answer plus separate unknown-title note.
+PASS hobby-leading-current-enjoyment [2/3]: The correction is supported and useful, though the general symptom recap and event detail are longer than needed.
+PASS acknowledge-thanks [3/3]: Appropriate brief acknowledgment.
+PASS acknowledge-praise [3/3]: Proportionate acknowledgment without new disclosure.
+PASS praise-contains-question [1/3]: The question is answered with authored support, but the added life stage, sketching and work-task biography substantially reduces focus.
+FAIL reciprocal-smalltalk-question [0/3]: FAIL: three sources were bundled into one required part, then the two-source disclosure limit withheld it entirely. An unnecessary clarification replaces an answerable invitation.
+PASS wait-space [3/3]: Brief natural acknowledgment.
+PASS communication-directly-asked [3/3]: Preserves the direction of the authored communication preference.
+FAIL why-with-known-antecedent [0/3]: FAIL: the clear-plans cause remains unauthored but receives no honest missing-cause boundary, and the entire relationship paragraph is repeated despite an explicit prohibition.
+PASS why-with-no-antecedent [3/3]: Correct clarification for a genuinely missing referent.
+FAIL single-word-elaboration [0/3]: FAIL: the clear continuation gets an unnecessary disclosure-boundary clarification instead of relevant new information.
+PASS repair-question-meaning [3/3]: Accepts the correction through a direct, authored answer.
+PASS leading-family-name [2/3]: The unknown name is handled honestly, though the extra friend-planning detail is unnecessary.
+PASS unknown-medication-negative [1/3]: The medication boundary is correct, but the unrelated symptom-course recap makes the response notably less useful.
+PASS false-cause-leading [3/3]: Useful separation of the recorded course from the unauthored cause.
+PASS diagnosis-name-request-mystery [3/3]: Correct system boundary rather than patient diagnosis.
+FAIL diagnosis-prone-conversational-reply [0/3]: FAIL: disclosed-source bundling withholds the entire answerable personal question and substitutes unnecessary clarification.
+PASS caregiver-casual-play [2/3]: The factual caregiver answer is appropriate but repeats the block/book choices in two source paragraphs.
+PASS caregiver-private-thoughts [2/3]: Correct observation/private-thought distinction; the opening describing-preference sentence is unnecessary context.
+PASS caregiver-praise [3/3]: Brief appropriate social reply.
+FAIL adolescent-interest [0/3]: FAIL: a clear interest question is unnecessarily withheld because its bundled source requirement exceeds disclosure.
+FAIL adolescent-autonomy [0/3]: FAIL: the answerable false premise receives an unnecessary split-the-question instruction.
+FAIL written-supported-response [0/3]: FAIL: the reply discusses the typing option but omits the clearly requested interest.
+FAIL school-age-one-question [0/3]: FAIL: plan validation blocks the ordinary multipart question instead of a short answer or permitted one-part clarification.
+FAIL older-adult-interest [0/3]: FAIL: the clear interest question receives an unnecessary split-the-question instruction.
+PASS ordinary-no-disorder-stress [2/3]: A grounded task example answers the question, though the counts, source paragraphs and tense shifts are awkward.
+FAIL specific-recorded-example [0/3]: FAIL: exact source rendering still gives two lengthy diary accounts when one concise example is required.
+PASS leading-absolute-frequency [3/3]: Accurate brief frequency correction.
+PASS social-injection-boundary [3/3]: Correct boundary for the attempted hidden-information request.
+PASS real-emergency-boundary [3/3]: Correct explicit emergency pause/help path.
+PASS farewell [3/3]: Brief closing acknowledgment.
+
+The 36 main cases are previously used regression evidence. Baseline ratings were not inspected for this review. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

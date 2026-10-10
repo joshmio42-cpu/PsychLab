@@ -1,0 +1,102 @@
+PsychLab: richer authored patient backgrounds
+Authoring date: 2026-10-08
+Data version: authored-backgrounds-1.0.0
+
+Purpose
+
+Give casual questions and requests for examples concrete, consistent answers.
+The eight existing people each retain P01-P06 and gain six records, P07-P12:
+48 new records overall, 12 personal facts per person. Existing names, life
+stages, interests, relationships, and core communication preferences remain.
+
+These are original fictional details. They are not transcribed patient cases,
+clinical findings, validated developmental norms, or statements supported by a
+psychology source. Their provenance is recorded as authored-fiction and their
+clinical source lists remain empty. Research on conversation informs the goal
+of having relevant examples; it does not provide or validate these biographies.
+
+Record structure and temporal meaning
+
+P07: a usual everyday routine or activity setup.
+P08: a concrete earlier experience, before the simulated diary window.
+P09: a usual shared activity or way of seeking support in an existing relationship.
+P10: a preference about choice, plans, responsibilities, or support.
+P11: a usual practical approach, without a guarantee that it works now.
+P12: an unfulfilled future wish, explicitly distinct from an event that happened.
+
+Every fact has a stable ID, readable topic label, domain, statement, provenance,
+and scope (usual, past, preference, or wish). New records also have retrieval
+keywords. Past records have timeframe: before-simulation. P05-P06 preserve their
+meaning: caregiver play approaches are usual actions; the other hobby-origin
+accounts are past experiences.
+
+Authored examples
+
+Mika, toddler: caregiver arrangement of books and blocks; an earlier observed
+game placing toy animals beside a block tower; pointing to animal-book pictures;
+offering two activities; showing how toys go into a basket; a hoped-for play visit.
+All observations and intentions are spoken by the caregiver. No child thoughts
+or motives are supplied.
+
+Leo, preschool child: crayons and a pretend shop; an earlier house drawing where
+Leo asked for a window; caregiver as pretend customer; advance notice and choices;
+asking before joining a drawing; a hoped-for shop playdate. These remain caregiver
+observations and choices, not accounts of Leo's private experience.
+
+Sam, school-age child: a drawing folder; a previous robot-with-an-oversized-hat
+comic; taking turns with a friend on picture ideas; wanting help without having
+the whole picture finished for them; drawing a comic in parts; a future animal
+hat-shop comic. The comic's fictional events are not events that happened to Sam.
+
+Riley, adolescent: sorting song suggestions; comparing different playlist
+openings; sharing a guitar passage or chorus with a friend; choosing a role in
+a school project; talking through school options with a trusted adult; an idea
+for an alternating-choice playlist. No platform, artist, romance, or family
+conflict is inferred from adolescence or from a disorder selection.
+
+Jordan, young adult: pencil and sketchbook setup; earlier mug sketches from two
+angles; showing a sketchbook page to a cousin; agreeing a time and place with a
+friend; a short task list; wanting to draw everyday objects from several angles.
+The reason for preferring clear plans is still unknown. The cousin has no name.
+
+Avery, adult: using a bookmark; a past incorrect guess at a mystery ending;
+asking a sibling about a specific errand; agreeing shared jobs; grouping errands;
+a future short-story conversation. These usual approaches do not establish
+current energy, concentration, successful task completion, or symptom absence.
+
+Robin, older adult: labeled herb pots and gardening tools; an earlier mint pot;
+talking with a neighbor about plants; choosing which part of a task to accept help
+with; checking community materials with a friend; an idea for grouped herb pots.
+No retirement, grandchildren, frailty, or cognitive change is assumed.
+
+Alex, young adult: study and work commitments on a shared list; earlier comparison
+of album opening tracks; talking through options with a sibling; checking plans
+against commitments; small study steps; a future album conversation with a friend.
+No album titles, artists, or exact favorite are supplied.
+
+Constraints
+
+These background records do not mutate with seed, diary length, difficulty,
+or assigned disorder. A newly chosen diagnosis must not rewrite who the person
+is. Simulation changes remain in separate diary/case facts.
+
+A usual interest or activity does not establish current pleasure or ability.
+A usual practical method does not prove that it succeeds during symptoms.
+An earlier background example must not be dated inside the recent diary.
+A wish must not be treated as a completed activity or an arranged appointment.
+No medication, exact age number, measured personality score, diagnostic status,
+medical negative, new named relative, or hidden cause was added.
+
+Validation
+
+Added live/tests/authored-backgrounds.test.mjs. The new suite checks stable IDs
+and temporal scopes, all compatible disorder selections for all eight people,
+different seeds and diary lengths, deep immutability and clone isolation,
+stage/caregiver constraints, preserved intentional unknowns, a selected P08 fact
+through the generation pipeline, and legacy profiles without expanded fields.
+
+The focused run with this suite plus individuality-difficulty.test.mjs and
+patients.test.mjs passed all 19 tests. Selected-fact renderer checks use a mock
+provider to inspect facts, calls and prompt size; they are not live-language
+quality evidence. Live generation and full regression results are recorded by
+the parent implementation/evaluation work.

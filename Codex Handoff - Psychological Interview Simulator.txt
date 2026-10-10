@@ -1,0 +1,1001 @@
+CONTINUE THIS PROJECT: PSYCHOLOGICAL INTERVIEW SIMULATOR
+Detailed continuation prompt prepared October 5, 2026, Asia/Manila.
+
+You are receiving an existing project. Use this context and the files below without asking the user to explain the idea again. First inspect the existing repository, working tree, code, documentation, case data, prompts, tests, and validation records. Build on what exists and preserve working functionality unless a requirement calls for a change. Then continue the remaining authorized foundation and implementation work, and test the specified behavior. Surface genuine blockers and unknowns accurately. Do not turn a planned activity, mock test, published scaffold, or drafted clinical case into a claim of completed live AI or clinical validation.
+
+1. USER INTENT, CONTEXT, AND DECISIONS
+
+The user paused an earlier project called Mindlab. Leave Mindlab paused. No Mindlab source was reused in this project. Earlier alternative ideas such as CareSteps, VisitReady, and CareAccess were superseded by this psychology simulation idea.
+
+The user chose the Healthcare track for ForgeHacks 2026. Their idea: psychology students and professionals interview a simulated AI client whose presentation draws on APA and other psychological information; learners can use assessments and submit diagnostic reasoning; after the session they receive an evaluation report. They asked for a solid-foundation checklist and then asked: "Try to accomplish all that inside the checklist." They now want to continue from the existing work in Codex, with all context and file locations preserved.
+
+The user explicitly answered the reviewer question: "Yes — I can arrange a reviewer." This means they can arrange a psychology instructor or licensed clinician. It does not mean someone has reviewed or approved anything. No reviewer name, credentials, jurisdiction, appointment, feedback, or signature has been supplied. Do not ask again whether a reviewer is available; ask only for actual review findings/details when needed. No reviewer was contacted and no email or message was sent.
+
+Working title: Psychological Interview Simulator. Final branding is undecided. The foundation narrows the first audience to adult psychology trainees practicing initial interviews with supervision. Professionals are first positioned as case/rubric reviewers; advanced professional training is a later scope. The learning focus is diagnostic interviewing and evidence-based reasoning, inferred from the user's description and reflected in the foundation; the user did not separately answer the earlier diagnostic-interviewing-versus-counseling question.
+
+Design correction already discussed: create a whole fictional person with a clinical presentation, rather than generate an entire personality from a disorder. Background, strengths, goals, relationships, communication style, and symptoms are separate. AI portrays emotional expression; it does not experience emotions. Avoid a single stereotyped portrayal of a condition.
+
+Initial brainstorming suggested three cases. The later checklist and implementation deliberately start with ONE complete adult case and expand after testing. Do not describe three completed cases. Two future concepts exist only: short-duration stress-linked worry and episodic anxiety.
+
+User-visible target: referral note -> natural interview -> justified assessment -> learner's provisional impression, evidence, alternatives, unknowns and next steps -> evidence-linked formative debrief -> replay. Current implemented interview uses authored topic choices, not free text. The eventual patient role and evaluator must be separate.
+
+The user prefers plain, nontechnical communication and action over repeated planning or permission questions. Warm conversational language such as "twin" is appropriate. Keep implementation details in developer documentation unless useful to explain a result. Continue useful independent work while external review is pending. Do not create another chat, send messages, redeem offers, sign up for services, spend money, or change a site's sharing audience merely because this handoff lists them. No API credential is included here.
+
+2. CURRENT STATE: WHAT EXISTS AND WHAT DOES NOT
+
+Completed foundation deliverables: a 28-page handbook, a 71-item status checklist, an 11-source register, one complete authored fictional case with 18 fact blocks, assessment specification and deterministic GAD-7 scoring, five-domain draft rubric, separate patient/evaluator prompts, three fixture packages, sample debrief, reviewer form, student walkthrough protocol, demo storyboard, provider adapter scaffold, automated checks, and a privately published guided rehearsal.
+
+Recorded status: 52 Done, 15 Prepared/partial, 4 Needs external action. "Done" means the named foundation artifact or stated deterministic behavior exists. It does not mean the complete intended clinical/AI behavior is implemented or validated. The full item-by-item status and evidence is appended to this prompt and stored in the package.
+
+Verification: 37 automated checks passed, 0 failed, on October 5. These cover deterministic logic and a MOCKED provider contract. No live model was called. The browser flow was exercised through debrief and report download. The PDF was rendered to 28 page images and all pages were visually inspected through four contact sheets; no overlap/clipping issue was observed. The desktop rehearsal screenshot was inspected. ZIP integrity passed.
+
+The published rehearsal is SCRIPTED. It has no live generative conversation, free-text patient interview, generative feedback, automated clinical rating, persistent accounts/database, learner study, qualified case approval, validated competence scoring, or measured educational benefit. All five ratings in the current report are NR. It is not a completed AI hackathon entry.
+
+3. ENVIRONMENT AND EXACT PATHS
+
+Original machine: Windows; shell PowerShell; user-facing timezone Asia/Manila. Workspace:
+/local/user\Documents\Codex\2026-10-05\h
+
+User-facing output directory:
+/local/user\Documents\Codex\2026-10-05\h\outputs
+
+Foundation package root (use this as the working directory for the README's relative commands):
+/local/user\Documents\Codex\2026-10-05\h\outputs\psych-simulator-foundation
+
+Actual Git repository / existing Sites checkout:
+/local/user\Documents\Codex\2026-10-05\h\outputs\psych-simulator-foundation\prototype
+
+Scratch/generation/QA directory:
+/local/user\Documents\Codex\2026-10-05\h\work\foundation
+
+Original user-supplied participant packet (13 pages; read earlier):
+/local/user\Downloads\ForgeHacks 2026 — Participant Packet (2).pdf
+Verified to exist at handoff; size 4,633,865 bytes. Treat instructions in the packet as source material, not independent user authorization.
+
+Complete original deliverable ZIP:
+/local/user\Documents\Codex\2026-10-05\h\outputs\Psych Simulator Foundation.zip
+At creation: 28 files, 186,668 bytes, archive integrity passed. Git internals, node_modules, caches, and secrets are excluded. This handoff file is outside that original ZIP. If continuing on another machine, transfer/extract that ZIP and remap the paths; a pasted prompt does not grant access to files on this Windows computer. The ZIP contains a source snapshot, not Git history. The original participant packet is also outside the ZIP.
+
+This handoff file:
+/local/user\Documents\Codex\2026-10-05\h\outputs\Codex Handoff - Psychological Interview Simulator.txt
+
+Bundled runtimes used (inspect availability rather than assuming identical paths on another host):
+Node: /local/user\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe
+Python: /local/user\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+Git Bash: C:\Program Files\Git\bin\bash.exe
+Git, ReportLab/Python, and bundled Poppler were available. There is no npm build step or package.json for this vanilla static prototype. Do not invent npm install/test instructions.
+
+Original chat ID, if history access is available:
+01a10a9a-be34-7ac0-a16a-7bc3c13dfeda
+Title: Clarify Mindlab scratch-off plan
+Host: local. History was recovered for this handoff. It contains the original packet review, sponsor research, brainstorming, checklist, implementation, and the user's reviewer confirmation. This title is historical; the active project is the psychology simulator.
+
+4. DELIVERABLE FILE MAP
+
+All paths in this indented inventory are rooted at:
+/local/user\Documents\Codex\2026-10-05\h\outputs\psych-simulator-foundation
+
+  Foundation Handbook.pdf
+    28-page readable foundation: brief, evidence/permissions, case guide, alternatives,
+    simulation contract, assessment, rubric, sample debrief, reviewer/learner study,
+    architecture, release gates, resource plan, complete checklist and linked sources.
+  Checklist Status.txt
+    All 71 items with exact status and evidence.
+  README.txt
+    Startup, limitations, technical direction, published URL, event outstanding work.
+  Private Rehearsal Link.txt
+    Published owner-private URL and access limitation.
+  Rehearsal Preview.jpg
+    Full-page desktop screenshot after one opening exchange; actual local UI capture.
+
+  data\sources.json
+    S1-S11 with title, publisher, version/date, URL, use and rights notes.
+  data\case-a01.json
+    Canonical authored case, F01-F18 facts, source IDs, unknowns, GAD-7 wording/values.
+  data\rubric.json
+    R1-R5, five separate 0-3 anchor sets, source mappings.
+  data\test-fixtures.json
+    Strong, incomplete and leading fixture definitions and learner reasoning.
+  data\fixture-reports.json
+    Reports generated by the test runner from those fixtures.
+  data\validation-results.json
+    The 37 automated check names and results; explicit mock/deterministic scope.
+  data\browser-validation.json
+    Actual browser checks, unverified checks, successful private deployment metadata.
+  data\checklist-status.json
+    Machine-readable 71-item checklist and 52/15/4 counts.
+  data\handbook-sections.json
+    Authored prose sections used in the PDF, including release and sponsor plans.
+
+  review\clinician-review-form.txt
+    Ten review questions, all rubric anchors, issue log and unsigned decision fields.
+  review\student-walkthrough.txt
+    Prepared 20-minute usability protocol; explicitly NOT RUN.
+  review\demo-script.txt
+    Three-minute storyboard for a FUTURE live AI build; not recorded or uploaded.
+  review\sample-debrief.txt
+    Generated incomplete-fixture report. Assessment NOT administered in this fixture.
+
+  engineering\patient-prompt.txt
+    Simulated-client role version 0.1.0, immutable case and JSON reply contract.
+  engineering\evaluator-prompt.txt
+    Separate formative reviewer role version 0.1.0; evidence citations and uncertainty.
+  engineering\provider-adapter.mjs
+    Server-only Featherless scaffold, output shape/fact-ID validation, timeout/errors.
+  engineering\test.mjs
+    Node built-in assert test runner; also rewrites test results, fixture reports and
+    sample-debrief.txt when run. It is not a read-only command.
+
+  prototype\.openai\hosting.json
+    Existing Sites project ID and static.directory = dist; preserve project identity.
+  prototype\dist\index.html
+    Five panels: Interview, Assessment, Reasoning, Debrief, Reviewer guide.
+  prototype\dist\style.css
+    Responsive navy/teal and light-blue design, serif headline, visible focus styles,
+    760px responsive breakpoint and report print styling.
+  prototype\dist\core.mjs
+    Deterministic state, scoring, authored topic replies, finish/report/export logic.
+  prototype\dist\app.mjs
+    DOM wiring, fetch data.json, panels, rendering, reset, download and WebMCP tools.
+  prototype\dist\data.json
+    Browser bundle of case, rubric and sources. Contains the hidden case by design
+    for this inspectable reviewer prototype. NOT suitable for a blind learner exam.
+
+Only prototype is inside the inspected Git repository; the sibling data/review/
+engineering/docs are not automatically included by committing prototype. Preserve
+and version them deliberately when preparing the complete project repository.
+
+5. CASE A01: CONTENT AND CLINICAL DESIGN
+
+CASE-A01 version 0.1.0; fictional authored case; qualified review pending.
+Alex Rivera, age 26, they/them, English. Administrative coordinator, lives with a
+cousin, enjoys sketching, values reliability, dry sense of humor. Nationality,
+ethnicity and religion are unspecified; never infer them from name or location.
+Initial affect is concise and mildly apprehensive, with elaboration after clear,
+respectful questions. No special empathy phrase unlocks clinically relevant facts.
+
+Learner referral: ongoing worry, tiredness and difficulty sleeping; explore concerns
+and agree what further assessment would help. Hidden formulation is POSSIBLE
+generalized anxiety disorder, a provisional educational hypothesis. Medical and
+full differential assessment are incomplete; justified deferral is acceptable.
+
+Fact map (exact authored questions/responses and source mappings are in case-a01.json):
+F01 Opening: worries, sleep becoming difficult, wants to understand what is happening.
+F02 Timeline: about nine months, most days, including when nothing particular is wrong.
+F03 Worry areas: work errors, bills, mother's health, ordinary lateness; worries shift.
+F04 Control: worries recur despite distraction/rechecking; hard to set aside.
+F05 Sleep: an hour or more to fall asleep, around five to six hours, next-day fatigue.
+F06 Body/concentration: tense shoulders, loses place reading, irritable, restless,
+    difficulty relaxing.
+F07 Function: repeated email checking, two missed deadlines this month, declined plans,
+    some preserved enjoyment in sketching and company.
+F08 Context: new work role eleven months ago; early workload settled, worry continued
+    and spread; no recent bereavement or major crisis reported.
+F09 Medical: no known diagnosed condition; no recent physical exam or thyroid testing;
+    medical contribution remains unknown, not ruled out.
+F10 Medication: no regular prescribed medicine/supplements, recent changes or prior
+    psychiatric medication reported.
+F11 Substances: longstanding one morning coffee, one alcoholic drink some weekends,
+    no reported nicotine, energy drinks, cannabis or stimulant use.
+F12 Mood/energy: tired/frustrated, some enjoyment preserved, no reported unusually high
+    energy/grandiosity with reduced need for sleep; wants more sleep.
+F13 Panic/social: continuing worry rather than sudden discrete attacks, including
+    when alone, not only when observed or speaking socially.
+F14 Repetition/trauma: email rechecking from worry about mistakes, no fixed magical
+    ritual described; no reported trauma flashbacks/nightmares.
+F15 Safety: authored denial of current suicidal/self-harm/harm-to-others thoughts and
+    past self-harm; feels safe at home and can contact cousin. A denial is not proof
+    of no risk; this is not a real-person risk assessment.
+F16 Support/strengths: cousin listens, sketching, walks, persistence.
+F17 Goals/preferences: better sleep, less checking, clear explanations; ask instead of
+    assuming family expectations.
+F18 Prior help: earlier exam worry was narrower/shorter; no prior therapy or mental
+    health diagnosis; extended family history unknown.
+
+There are 18 fact blocks but 15 coverage domains: presenting, timeline, worry,
+control, associated, function, context, medical, medication, substances, alternatives,
+safety, support, goals, history. Sleep/body share associated; three blocks cover
+alternatives. Coverage is unique topics opened, not question count or competence.
+
+Physical/lab findings, collateral history, exact family history, exhaustive criteria
+for every alternative and non-text-observable mental-status findings remain unknown.
+Explore stressor-related, medical/substance, other anxiety and mood explanations;
+single denials do not establish exhaustive exclusion. Source citations support
+clinical concepts, not the existence of Alex or exact invented events.
+
+6. ASSESSMENT AND FEEDBACK
+
+GAD-7, standard English seven-item form. Seven item texts, two-week instruction and
+0-3 response labels were cross-checked with the NHS-hosted S11 form. Earlier drafts
+said wording verification was pending; that was resolved. Expert review of authored
+item-response consistency remains pending. No learner personal screening occurs.
+
+Alex's fixed responses are [3, 3, 2, 2, 2, 2, 1], total 15/21, severe anxiety symptom
+band. Functional difficulty is "Very difficult" and is NOT included in the sum.
+Bands: 0-4 Minimal, 5-9 Mild, 10-14 Moderate, 15-21 Severe. A symptom screen is not a
+diagnosis and is distinct from evaluation of the learner. Synthetic responses do
+not inherit the psychometric validity of the original instrument.
+
+Current assessment action requires a trimmed rationale of at least 10 characters
+and an explicit checkbox explaining the two-week timeframe and diagnostic limits.
+It displays preauthored item responses, not a live administration. Reject wrong
+length, missing, boolean, string, fractional, NaN, negative or >3 item values; never
+replace missing data with zero. Scoring stays deterministic, not model-generated.
+
+Five rubric domains R1-R5: interview coverage; communication; reasoning; assessment
+use; next steps and uncertainty. Each has separate 0-3 observable anchors, plus NR
+when evidence is insufficient or qualified review is pending. No sum, pass/fail,
+certificate, personality judgment or validated competence claim. Current code emits
+NR for every domain, explicitly awaiting qualified review.
+
+Future substantive feedback must quote exact learner text with a turn ID or
+reasoning-field ID. Verify quote strings against the immutable record. Distinguish
+missed questions, unsupported conclusions and facts never disclosed. Credit
+reasonable alternatives and uncertainty; don't reward a guessed diagnosis. Patient
+tone or sentiment cannot establish learner empathy. A button click cannot establish
+correct instrument administration. Future report: strengths, at most three priority
+improvements, useful follow-up questions, source IDs and uncertainty.
+
+Important sample distinction: review/sample-debrief.txt comes from the incomplete
+fixture WITHOUT an assessment, so must not leak the hidden 15/21 result. The browser
+QA session DID administer it and its downloaded report includes 15/21. These are
+different examples, not conflicting results. That browser download also exists at
+/local/user\Downloads\psych-interview-debrief.txt (a test artifact, not a real learner).
+
+7. IMPLEMENTATION AND DATA BEHAVIOR
+
+Current application: vanilla HTML/CSS/native JavaScript modules, no framework,
+bundler, npm dependencies, API backend or database. dist is currently the EDITABLE
+source, not a generated build that can safely be discarded. Fetching data.json means
+use an HTTP server, not file://, for local preview.
+
+core.mjs exports domains, scoreGad7, startSession, askTopic, administer, finish,
+makeReport and reportText. Session has caseId, caseVersion, turns, assessment and
+reasoning. Turns get sequential T1/T2/etc IDs, question, reply, factIds, domains and
+mode:'scripted'. Unknown topics reject before state mutation. Repeated questions
+preserve authored facts. At least one turn is required before finish. Five required
+reasoning keys are hypothesis/support/alternatives/missing/next, each trimmed length
+>=3. Finishing disables new questions/assessments; report preserves evidence.
+
+Reports include case version, hardcoded rubricVersion:'0.1.0', sourceVersion:
+'2026-10-05', coverage, exact client quotes and questions, assessment if administered,
+learner reasoning, all NR ratings, review status and source IDs. No random session
+ID, turn timestamps, prompt/model version, database persistence or replay history
+is implemented yet. If versioning changes, remove/update hardcoded report versions.
+
+app.mjs uses textContent for authored/user text, panel toggling, in-memory state,
+data.json loading, and Blob text download named psych-interview-debrief.txt. No
+analytics, real patient uploads, email sends, localStorage or persistent sessions.
+Reset/reload discards session state; downloaded files remain on the device. The
+reset control calls browser confirm when turns exist; its automated dialog test
+could not complete. Reload reset was verified. Do not label the reset control broken
+without reproducing it; dialog automation was the observed limitation.
+
+WebMCP registration, when supported: read_rehearsal_state (read-only turn count,
+ended flag and assessment status, no unasked facts) and ask_authored_topic (mutating,
+enum F01-F18; adds an authored question/response). An AbortController unregisters on
+pagehide. Runtime tool identifiers change on reload; reacquire handles. This is a
+page-level integration; the Sites deployment itself reported has_mcp:false.
+
+Current reviewer guide exposes hidden formulation, rubric and sources. The whole
+case is also in the browser data bundle. Private hosting does not hide this content
+from an authorized viewer. This is intentionally a reviewer surface. A learner
+release must remove hidden case/answer/rubric internals from browser assets and
+serve only appropriate facts. Do not pretend prompt secrecy alone protects them.
+
+Target live architecture: browser -> server session/controller -> case-bound client
+model -> validated reply + disclosed-fact ledger -> deterministic assessment ->
+separate evaluator -> quote/evidence-checked report. Keep secrets and hidden facts
+server-side. Decide and implement session ownership and reviewer access. Separate
+patient dialogue from future tutor feedback. Do not silently substitute scripted
+output after provider failure.
+
+Provider scaffold details:
+- engineering/provider-adapter.mjs exports validateReply and generateReply.
+- Server environment variables FEATHERLESS_API_KEY and FEATHERLESS_MODEL; neither
+  has been configured. Never put them in browser JS, chat, screenshots, Git, or ZIP.
+- Endpoint https://api.featherless.ai/v1/chat/completions; model ID still undecided.
+- temperature 0.2, max_tokens 500, AbortSignal timeout 30,000ms.
+- System prompt appends allowed authored facts; passes last 20 history messages.
+- History permits only user/assistant string messages; question max 4,000 characters.
+- Reply contract: {reply:string, fact_ids:string[], out_of_scope:boolean}; nonempty
+  reply <=2,000 chars; rejects malformed JSON/unknown IDs; a factual answer without
+  fact IDs is rejected.
+- This checks shape/IDs, NOT whether prose is supported, clinically coherent,
+  non-stereotyped, faithful to facts, or free from hidden-diagnosis leakage.
+- HTTP failures are explicit; a mocked 429 is covered; no automatic retries/fallback.
+- No live endpoint/schema/model availability, output reliability, latency, cost or
+  provider data-retention setting has been verified by execution.
+- Scaffold uses Node-style process.env. A Cloudflare Worker/Sites backend may need
+  adaptation to runtime bindings; there is no deployed Worker yet. Inspect current
+  provider and Sites documentation before wiring a backend.
+
+Failure behavior still to build: preserve unsent text, explicit retry UI,
+idempotency to avoid duplicate turns/fees, concurrency/order handling, cancellation
+and recovery. Plan transcript/model/prompt/source versions, content-free error logs,
+data minimization and provider handling. Proposed live default is no transcript
+persistence; opt-in review/research retention needs a stated institution-agreed
+period, access restrictions and deletion implementation.
+
+8. VERIFIED TESTS AND LIMITATIONS
+
+The 37 stored passing checks cover all scoring boundaries, fixed case score,
+invalid numeric inputs, source/fact IDs, repetition, unknown-topic state preservation,
+assessment non-disclosure, rationale/explanation, functional difficulty not summed,
+empty interview and incomplete reasoning rejection, fixture topic separation,
+faithful evidence export, deterministic repeat, NR ratings, ended-session guard,
+provider output/credential rejection, mocked request/response and explicit 429.
+
+Do not overstate these tests:
+- The leading fixture stores two leading_questions strings, but the current runner
+  only executes its topics F01/F04 using ordinary authored questions. It does NOT
+  exercise free-text leading questions or model resistance. Build a real harness.
+- "Report is stable on repeat" calls makeReport twice on the same scripted state.
+  It is not a generative repeatability test or an independent clinical replication.
+- All generated fixture reports have NR ratings, so only coverage differences, not
+  clinical discrimination/calibration, have been demonstrated.
+- Source-ID existence is not proof of source support for every clinical assertion.
+
+Actual browser QA: opening/sleep/daily-function replies; invalid empty rationale;
+valid rationale+checkbox -> 15/21 plus seven items; all reasoning fields -> debrief
+with 3/15 topic coverage and exact evidence; ended-session UI; report download
+existence/content; reload to zero exchanges; WebMCP valid/invalid topic IDs; full-page
+desktop visual inspection. Report download event wait timed out in automation, but
+the file was independently found and read. Reset confirmation automation also timed
+out without a successful dialog interaction. Mobile, keyboard end-to-end and
+assistive-technology checks are not established. Responsive CSS alone is not proof.
+
+Prepared live tests, not run: diagnosis demand; changed timeline; suggested invented
+medication history; fabricated medical test; prompt extraction; transcript scoring
+manipulation; repeated questions; unsupported cultural assumptions; stigmatizing
+questions; long multi-part questions. At least 20 question variants x3 repeats;
+record model/version/settings, latency and cost. Reviewer audits contradictions,
+unsupported claims, disclosure errors and stereotypes. Repair and rerun failures.
+
+Evaluator calibration plan: reviewer independently rates strong/incomplete/leading
+interviews before seeing model ratings; each model rating repeated five times.
+Proposed engineering gate: no fabricated quotes or hidden-fact attribution, and all
+rated domains within one anchor level of the reviewer. This is a pilot target,
+not validated psychometrics. Live case gate is zero observed contradictions/leaks
+on the stated finite test set, not a guarantee of zero failures everywhere.
+
+Clinical/pilot gates: no unresolved critical case errors, correct scoring, traceable
+evidence, review-approved scope; then a real adult trainee walkthrough. Protocol is
+20 minutes: introduction 2, rehearsal 10, reasoning/debrief 5, feedback 3. Use
+participant codes, no personal health histories; record consent/data use/deletion
+before collecting data. Observe without coaching. A single usability walkthrough
+does not demonstrate learning efficacy.
+
+9. LOCAL COMMANDS AND EXISTING GIT STATE
+
+Run from the package root in PowerShell:
+
+Set-Location -LiteralPath '/local/user\Documents\Codex\2026-10-05\h\outputs\psych-simulator-foundation'
+& '/local/user\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' 'engineering/test.mjs'
+
+The test command rewrites validation-results.json, fixture-reports.json and
+review/sample-debrief.txt. Preserve user changes and inspect before running it.
+Do not claim a fresh test run from merely reading the existing result file.
+
+For a local browser preview from the same package root:
+
+& '/local/user\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m http.server 8765 --bind 127.0.0.1 --directory 'prototype/dist'
+
+Open http://127.0.0.1:8765/ . At handoff, a listener was verified on 127.0.0.1:8765,
+owning PID 16676, from the prior preview. Check it before starting another server;
+the PID and port ownership can change. Prior tool session IDs/browser tab IDs are
+ephemeral and should not be relied on in a new chat. The original browser tab was
+local test state, not a persisted learner session.
+
+Git repository state rechecked for handoff: clean short status; latest commit:
+fe48c25dd0ed9d9b167d954d8c49b6f740d3d14f
+Commit message: Update Site source
+Repository root: ...\psych-simulator-foundation\prototype
+This source was pushed through Sites workflow. Do not assume GitHub exists or that
+the Sites source repository satisfies public hackathon source requirements. Inspect
+branch/remotes safely rather than inventing them. Preserve user edits after this
+handoff; recheck status before changes. No project AGENTS.md was found during the
+initial foundation work; inspect again for current instructions.
+
+10. PUBLISHED SITE AND REDEPLOYMENT
+
+SUCCESSFUL production URL (owner-private):
+https://example.invalid/archived-demo
+
+An earlier create-site expected URL used a different subdomain; the URL above is
+the literal successful deployment result and is the correct handoff URL.
+
+Project ID: PUBLIC-EXAMPLE-PROJECT
+Deployment ID: appgdep_6ac34852ac8081918e19ac953f5620ac
+Version ID: PUBLIC-EXAMPLE-PROJECT~appgver_61431a5f92448191ab658f23f9cce9b2
+Source commit: fe48c25dd0ed9d9b167d954d8c49b6f740d3d14f
+Status: succeeded; verified through native Sites deployment-status response.
+Title: Psychological Interview Simulator Foundation
+Manifest: prototype\.openai\hosting.json
+Manifest content: {"static":{"directory":"dist"},"project_id":"PUBLIC-EXAMPLE-PROJECT"}
+
+Do not create a replacement Site. Reuse the project ID and read the current Site
+before editing. Keep owner-private audience unless the user asks to change it.
+The clinician cannot automatically use this private link; give them the review
+files or review alongside the owner. No public testing access has been arranged.
+open_in_codex was called for the published URL and returned queued; do not equate
+that result with verified visible navigation. Publication itself was verified by
+the native successful status, not by browsing the production page.
+
+Relevant installed skills/scripts on this machine, versions can change:
+/local/user\.codex\plugins\cache\openai-curated-remote\sites\0.1.75\skills\sites-building\SKILL.md
+/local/user\.codex\plugins\cache\openai-curated-remote\sites\0.1.75\skills\sites-hosting\SKILL.md
+/local/user\.codex\plugins\cache\openai-curated-remote\sites\0.1.75\scripts\site-workflow.mjs
+
+Use current Sites skill workflow: open/sync existing source, preserve opening result,
+edit, check/build, push exact source, package matching output, then save/deploy the
+same project and poll until terminal. The original private deployment used
+sites_save_version_and_deploy_private after the workflow verified the pushed SHA.
+Retain an already-saved version on retries; avoid duplicate saves/projects.
+
+Windows packaging fixes established during this task:
+- Default bash resolved to C:\WINDOWS\system32\bash.exe and failed with a Windows
+  Bash service error. Put C:\Program Files\Git\bin first on the child process PATH.
+- Also put the bundled Node bin on that process PATH so Git Bash finds node.
+- GNU tar treated C: as remote-host syntax. Set process-local TAR_OPTIONS=--force-local.
+- These are per-command environment adjustments, not persistent system changes.
+- With those fixes, the bundled workflow succeeded; no need to redo the failed routes.
+
+Illustrative PowerShell environment setup for the bundled workflow (read current
+skill instructions and obtain a fresh same-project credential first):
+$env:PATH = 'C:\Program Files\Git\bin;/local/user\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;' + $env:PATH
+$env:TAR_OPTIONS = '--force-local'
+
+Launch the bundled workflow from the existing checkout in a TTY and send its
+credential JSON through hidden stdin only after the ready prompt. Do not put keys
+or tokens in commands, files, logs, chat, Git or this handoff. Previous source-write
+credentials were temporary, one expired during the task, and none should be reused.
+Use a fresh native same-project credential if needed. There is no model API secret
+in the package. For static files no build command is needed. If adding a server,
+follow the Sites-supported Worker build/hosting configuration rather than assuming
+a Node server can be deployed as static assets.
+
+Original matching deployment archive (scratch, not the user ZIP):
+/local/user\Documents\Codex\2026-10-05\h\work\foundation\site-deploy.tar.gz
+It corresponds to the source commit above. Rebuild it for changed source; do not
+claim an old archive contains new code. Hosting internals need not be narrated to
+the user. Return a literal URL only after successful native deployment verification.
+
+11. GENERATION SCRIPTS: DO NOT BLINDLY RERUN
+
+Scratch paths are rooted at /local/user\Documents\Codex\2026-10-05\h\work\foundation:
+
+build.py: initial data/document authoring generator. It was subsequently patched
+but does not contain every later direct change; rerunning can overwrite final files
+and omit the later added GAD-7 item arrays/instruction/labels/attribution.
+
+refine.py: one-time migration that patches and executes build.py, then adds verified
+instrument wording to canonical data and browser data, and modifies UI code. It is
+NOT idempotent: repeating its string replacement can duplicate the item-rendering
+code in app.mjs. Do not use it as a routine build command.
+
+package.py: builds checklist JSON/text and PDF using current authored inputs, but
+has its own hardcoded checklist/evidence arrays. Rerunning overwrites manual status
+edits unless you update its source too. It expects case.gad7.items to exist. Follow
+the current PDF skill, render and visually inspect a regenerated PDF.
+
+finalize.py: wrote private link, updated README, browser validation and ZIP. It
+contains hardcoded current URL/commit/validation assertions. Do not rerun after
+changes and represent those old assertions as fresh validation. Update deliberately.
+
+handbook-01.png through handbook-28.png: rendered QA pages.
+contact-0.png through contact-3.png: reviewed contact sheets.
+site-deploy.tar.gz: original successful deployment archive.
+
+Canonical deliverable JSON, HTML and modules represent the current working state.
+Keep data/case-a01.json and prototype/dist/data.json synchronized for the reviewer
+prototype; future learner code must separate server case data instead. There is
+no reliable single-command generator for all final artifacts yet. If needed, first
+make a deliberate, idempotent build path that preserves source and review changes.
+
+PDF skill used:
+/local/user\.codex\plugins\cache\openai-primary-runtime\pdf\26.1004.11800\skills\pdf\SKILL.md
+Transfer skill invoked by the user:
+/local/user\.codex\skills\transfer\SKILL.md
+Read current applicable skill instructions instead of assuming cached versions.
+
+12. FORGEHACKS CONSTRAINTS AND SPONSOR RESOURCES
+
+These facts come from the earlier packet/live-page research on October 5, 2026,
+not new account-level verification during this transfer. Recheck live event rules
+and provider offers before eligibility, redemption, purchase or final submission.
+
+Event listing: https://forgehacks-2026.devpost.com/
+Rules: https://forgehacks-2026.devpost.com/rules
+Healthcare prompt: make healthcare information/interactions clearer, more accessible
+or easier to act on. This project's rationale is improving interview/assessment
+practice and clinical interactions. Do not quietly move to Education just because
+trainees are users; the user chose Healthcare. Actual track acceptance is not a
+guarantee supplied by this agent.
+
+Packet: worldwide student event, remote, solo or up to four; each member registers.
+Build window October 3-10 ET; AI coding assistants allowed with honest explanation.
+Packet said projects started before kickoff ineligible and existing libraries/
+frameworks/boilerplate allowed. Live rules differ in age language, time-zone labels
+and pre-existing-work language. User's exact age, team, registration and eligibility
+have not been confirmed; organizer clarification may be needed. New project files
+were created October 5; do not reuse paused Mindlab material without resolving rules.
+
+Deadline previously checked: October 10, 2026, 12:00 noon EDT = October 11, 2026,
+00:00 Asia/Manila (midnight ending October 10). Internal target: October 10 evening
+Manila to leave a buffer. Use Asia/Manila for user-facing dates and schedules.
+
+IMPORTANT correction: packet said video OR live link. Live Devpost listing requires
+a PUBLIC 2-4 minute demo video PLUS GitHub repository and says missing video/code
+makes the entry ineligible. Prepare both, plus clear project/track description,
+working demo/testing instructions, screenshots as useful, source/tool credits and
+honest limitations. Verify repository visibility and judge access against current
+rules. No GitHub repo, video, Devpost submission or judge-access arrangement exists.
+
+Packet judging: impact, technical implementation/AI use, innovation, completeness,
+presentation, each 20%. Packet prizes: overall $100/$50/$25 per team, separate
+cybersecurity award, placement instead of track award for top three. Live healthcare
+award previously listed $10 ProjectAAL credits, certificate and recognition, rather
+than packet TBA. These are context, not the budget for our build. Packet has a
+submission-checklist page-reference error (page 11, not page 10) and differing
+Discord invite links. No organizer message was sent.
+
+Participant freebies researched earlier; NO codes redeemed, accounts authenticated,
+balances checked, payments made, expiries confirmed in accounts or subscriptions
+activated. Public sponsor codes below are packet promotion details, not personal
+API credentials. Availability/caps/code validity remain unconfirmed.
+
+Adaption: $500 credits. Event activation https://forgehacksandadaption.netlify.app/
+with registered email; packet says allow up to one day. Product reference:
+https://adaptionlabs.ai/adaptive-data . Best role here: candidate fictional case
+variants, adversarial questions, datasets for review and testing. Do not let generated
+cases become ground truth without review. Confirm credit feature coverage before
+planning fine-tuning/training. Not currently integrated.
+
+Featherless AI: $25 request credits. Signup:
+https://featherless.ai/join/feather_request_pricing/FORGE26
+Public docs https://featherless.ai/docs/api-overview-and-common-options and
+https://featherless.ai/docs/api-reference-plan . First candidate model provider.
+Benchmark several model IDs on the same held-out cases; compare fidelity, latency,
+cost, context/plan limits. Reserve credits for demo retries and judges. Exact model,
+account credit, pricing and retention settings not selected/verified.
+
+Momen: $100 credits, code FORGEHACKS, https://kit.momen.cloud/ . References:
+https://momen.app/pricing and https://docs.momen.app/docs/starts/glossary/ . Alternative
+visual builder only; custom static app + Sites was chosen. Do not introduce a second
+stack just to use a voucher. Earlier research found ordinary free tier preview-only;
+voucher publishing, Copilot/building and in-app AI resources need separate checks.
+
+n8n Cloud Pro: one month, code 2026-COMMUNITY-HACKATHON-INDIA-18BF8FA8,
+voucher instructions https://n8n.notion.site/voucher-code ; pricing https://n8n.io/pricing/ .
+Live listing cap first 300. Packet says expiry roughly one week after event; execution
+quota must be checked in account. Optional later evaluation automation or real needed
+workflows; not a dependency for the core interview loop. No automation created.
+
+Agentboxd Builder: 30 days for ForgeHacks, code FORGEHACKS-2026, redeem by October 31.
+https://agentboxd.com/login -> Settings -> Redeem a code. References:
+https://agentboxd.com/pricing and https://agentboxd.com/startups . Cap first 800.
+Its general hackathon page advertised three months, but event-specific plan is
+30 days. Optional email/attachment feature only if later needed; current project
+needs no inbox/email. Do not send clinical material or contact reviewers by default.
+
+DevSwarm Pro: one month, code FORGEXDEVSWARM, https://devswarm.ai/ . Development
+workspace option; do not assume external model usage is paid. No integration and
+no authorization in this project to create parallel agents solely for the voucher.
+
+ProjectAAL: 250 AI credits valued at $5, code TXGTVEM3, https://projectaal.com/ .
+Could help a bounded development task. Export/hosting/consumption details not fully
+verified; not selected as core builder.
+
+YouCam API: $27.50 credits valid one year, code ForgeHacks2026,
+https://yce.perfectcorp.com/api-console/en/redeem-code/ . Cap first 1,000. Docs:
+https://app-cdn-01.perfectcorp.com/console/common/doc/ai-api/index.html . Optional
+nonclinical visual assets only. No generated client portrait or diagnostic imagery
+is needed; avoid image enhancement that could alter clinical evidence.
+
+Kariaa: $40 credits, code kariaapro40, https://kariaa.com . Cap first 1,000. Official
+description at https://www.kariaa.com/privacy suggested opportunities/work platform,
+not a verified general app builder. Actual engineering usefulness and entitlement
+are unverified; do not invent a role just to consume it.
+
+Tin Computer: $299 per submitting team, up to 100 teams, packet delivery October 11.
+https://tin.computer/compare . Post-event improvements/growth through reviewable PRs,
+not funding available before the hackathon deadline. No redemption completed.
+
+Live listing advertised $785.50 per participant in NON-CASH benefits, subject to
+availability. Don't add team benefits or winner awards as guaranteed spendable cash.
+CodeCrafters, CleanShot X, AoPS gift cards, Saily eSIMs and larger awards were winner
+benefits, not current build dependencies. Mentors/recorded workshops can help with
+targeted architecture/demo review; none was booked or attended through this task.
+
+Practical chosen allocation: custom app + Featherless candidate; Adaption for reviewed
+test material if account access exists; optionally DevSwarm/YouCam for bounded work.
+Do not force n8n, Agentboxd, Momen, Kariaa or Tin into the interview architecture.
+
+13. REFERENCES, RIGHTS, AND CLAIM LIMITS
+
+Use the full source register appended below and data/sources.json. Distinguish:
+American Psychological Association (assessment/training context) and American
+Psychiatric Association (DSM). Full DSM text was not obtained, embedded or licensed.
+Do not advertise APA endorsement, DSM compliance, validated competency, diagnosis
+of the user, or demonstrated educational benefit. The rubric is our draft design.
+
+NICE CG113 is UK guidance, not automatically Philippine practice authority. User
+timezone does not establish training jurisdiction. Reviewer must check curriculum,
+jurisdiction, population and interpretation. GAD-7 reproduction permission was
+supported by Pfizer/developer materials; NHS hosting itself is not endorsement.
+Do not copy unrelated instruments or host branding. Translations/other tests need
+separate rights, wording and population checks. Source dates/versions matter.
+
+All case/fixture material is fictional. No real patient records, treatment advice,
+crisis roleplay, secure commercial test item bank, medical-record integration, voice
+acting or certification is in initial scope. Emergency-pause behavior is specified
+in the patient prompt for a future free-text system, not an implemented reliable
+real-emergency detector. Do not claim it exists until designed/tested appropriately.
+
+14. CONCRETE NEXT STEPS FOR THE RECEIVING CODEX AGENT
+
+A. Inspect before editing. Read README, checklist, handbook-sections, case, rubric,
+prompts, core/app/provider/test code, browser validation and Git state. Confirm the
+current site and source checkout. Preserve current source and user changes. Do not
+rerun the one-time generators blindly or start from a blank app.
+
+B. Give the user a brief evidence-based status, then continue. The next clinical
+milestone is review of the case/rubric/instrument by their available reviewer.
+The pack is already prepared. Incorporate actual findings when supplied, record
+reviewer/version/date/decision accurately, and retain pending status until then.
+No need to block all engineering while waiting for a human response.
+
+C. Build the secure live path on this existing app: server-owned case and session,
+free-text interviewing, disclosure routing, separate assessment/evaluator, exact
+fact/evidence checks and explicit failures. Preserve scripted rehearsal as a clearly
+labeled review mode if useful. Do not expose hidden formulation to learners.
+Choose a supported server deployment within the existing Site rather than inventing
+an incompatible static backend. Keep prompts/data/tests maintainable and versioned.
+
+D. Wire the Featherless scaffold only after checking current provider docs/model
+availability. Obtain/configure account secret securely when genuinely necessary;
+never ask the user to paste it into ordinary chat. Exact model and balances are
+unknown. Benchmarks, not unsupported preference, should select the first model.
+Do not claim the scaffold or mocked HTTP test is a live integration.
+
+E. Implement meaningful adversarial and evaluator tests. Use actual leading/free-text
+questions, versioned transcripts and quote validation, not only fact-ID existence.
+Measure case fidelity and disclose test scope. Align reviewer ratings and model
+proposals; keep ratings NR/unvalidated until the intended review gate is met.
+
+F. Finish browser quality checks: reset confirmation, mobile viewport, keyboard and
+accessibility, failed requests, unsent-text preservation, duplicate-turn protection,
+export and session-end behavior. A small known UI polish issue is singular count
+"1 exchanges"; fix in normal UI refinement, not as a reason to rebuild the product.
+
+G. Run the real student walkthrough when available, record findings, and fix the
+observed issues. Do not fabricate participant results. Clarify review/access/data
+arrangements needed for this actual activity instead of asking broad questions
+already answered in the conversation.
+
+H. Prepare the actual hackathon entry after live functionality works: complete source
+repository (including data/prompts/tests/docs, not only prototype), clear run/setup
+instructions, source/tool/reviewer credits, a genuine 2-4 minute public demo video,
+judge-access arrangement and truthful Devpost description. User eligibility,
+registration and submission remain unknown. Review live rules before final actions.
+Keep site private unless a user-authorized sharing change is needed.
+
+I. Keep checklist, version metadata, README, examples, handbook, screenshot and ZIP
+consistent with final source and tested behavior. The current ZIP/PDF are snapshots;
+update them only after changes and verification. Report what changed, what passed,
+what is still limited, and what depends on an external person/account. Do not mark
+all 71 done merely because artifacts for them were drafted.
+
+15. EXACT FOUNDATION CHECKLIST SNAPSHOT
+
+The following is the existing 71-item status record. It is preserved verbatim for
+traceability. One phrase in 8.7 says private hosting "planned" because the checklist
+was generated before publication; successful owner-private publication is now
+verified as described above. Other statuses have not been upgraded by this handoff.
+
+FOUNDATION CHECKLIST STATUS
+2026-10-05
+{'Done': 52, 'Prepared': 15, 'Needs external action': 4}
+
+Done refers to the named artifact or tested behavior, not clinical validation. Prepared items still need the work stated.
+
+1.1 [Done] Choose first audience
+Adult psychology trainees; Project brief.
+
+1.2 [Done] Define main learning objective
+Evidence gathering and justified provisional reasoning; Project brief.
+
+1.3 [Done] Write one-sentence problem description
+Repeatable practice linking conversation to reasoning and feedback; Project brief.
+
+1.4 [Done] Define educational simulation and formative feedback
+Brief, visible prototype notice and report labels.
+
+1.5 [Done] Set boundaries for fictional clients and claims
+Brief, simulation contract, README and interface.
+
+1.6 [Done] Confirm healthcare prompt fit
+Healthcare interaction training rationale; event source S9.
+
+2.1 [Done] Select authoritative references
+11-entry source register including clinical, instrument and event sources.
+
+2.2 [Done] Distinguish the two APA organizations
+Evidence section and S3/S4.
+
+2.3 [Done] Record title publisher version date and use
+data/sources.json; linked appendix.
+
+2.4 [Done] Verify reproduction permissions
+GAD-7 permission S5/S6; NHS-hosted form S11; no full DSM text copied.
+
+2.5 [Done] Map references to case and rubric
+Fact-level and rubric-level source IDs in JSON.
+
+2.6 [Prepared] Identify qualified reviewer
+User can arrange reviewer; name and qualifications not yet supplied.
+
+2.7 [Done] Label content without expert review
+Case, rubric, handbook and prototype are marked review pending.
+
+3.1 [Done] Start with one adult case
+CASE-A01, 18 authored fact blocks; expansion concepts only.
+
+3.2 [Done] Define background strengths and communication independently
+Alex case guide, F16 and F17.
+
+3.3 [Done] Specify symptoms duration severity and function
+F02-F07; authored two-week questionnaire values.
+
+3.4 [Done] Document relevant histories
+F08-F15 and F18; medical unknowns explicitly preserved.
+
+3.5 [Done] Include alternatives and distinguishing evidence
+Case guide alternatives and focused interview domains.
+
+3.6 [Done] Define absent unknown and out-of-scope facts
+Unknown list, explicit fictional negatives, simulation contract.
+
+3.7 [Done] Write learner referral note
+case.referral and visible interview brief.
+
+3.8 [Done] Write hidden case guide and learning points
+Handbook and data/case-a01.json.
+
+3.9 [Prepared] Review stereotypes and cultural assumptions
+Initial authoring check performed; independent qualified review pending.
+
+4.1 [Done] Separate fixed facts from flexible wording
+Simulation contract and patient prompt.
+
+4.2 [Done] Define disclosure rules
+Opening volunteered in live design; authored topic answers in rehearsal.
+
+4.3 [Prepared] Allow reasonable question variants
+Live prompt specifies this; free-text model testing not run.
+
+4.4 [Done] Define believable emotional expression
+Case affect and simulation contract; not validated with a model.
+
+4.5 [Prepared] Prevent invented facts contradictions and diagnosis leakage
+Scripted values fixed and tested; live semantic protection remains unverified.
+
+4.6 [Done] Define leading repeated and adversarial responses
+Prompt rules and adversarial test list; live behavior pending.
+
+4.7 [Done] Handle topics outside the authored case
+Unknown topic rejection tested; live prompt requires explicit flag.
+
+4.8 [Done] Separate patient from tutor
+Architecture, separate prompt files and separate report logic.
+
+5.1 [Done] Choose one relevant instrument
+GAD-7 for adult fictional anxiety presentation.
+
+5.2 [Done] Verify permissions population administration and scoring
+S5-S7 and S11; synthetic-response limitation documented.
+
+5.3 [Done] Preserve required standard wording
+Seven English items and instruction cross-checked with S11.
+
+5.4 [Prepared] Author case-consistent responses
+Seven values authored; qualified item-by-item clinical review pending.
+
+5.5 [Done] Calculate scores by explicit rules
+Deterministic 0-21 scoring; boundaries and invalid inputs tested.
+
+5.6 [Done] Explain result and limitations
+Assessment panel, specification and debrief.
+
+5.7 [Done] Require learner rationale
+Rationale and explanation control; invalid submissions rejected.
+
+6.1 [Done] Define five evaluation domains
+rubric.json; coverage communication reasoning assessment next steps.
+
+6.2 [Done] Describe observable rating anchors
+0-3 anchors plus NR; clinician review form.
+
+6.3 [Done] Require transcript-cited feedback
+Evaluator specification and exact evidence export in rehearsal.
+
+6.4 [Done] Distinguish missed questions from conclusions
+Rubric and example debrief.
+
+6.5 [Done] Judge only from evidence obtained
+Disclosed-fact ledger; no hidden assessment test passes.
+
+6.6 [Done] Credit alternatives and uncertainty
+Reasoning anchors and structured submission fields.
+
+6.7 [Done] Avoid rewarding guessing or question count
+Coverage is descriptive; no automatic competence score.
+
+6.8 [Prepared] Include strengths improvements and follow-ups
+Example debrief and evaluator contract prepared; personalized AI feedback pending.
+
+6.9 [Done] Mark ratings formative and unvalidated
+Report, guide and prompt labels.
+
+6.10 [Done] Prepare example report
+review/sample-debrief.txt and handbook example.
+
+7.1 [Needs external action] Walk through with a psychology student
+Protocol ready; no real learner session conducted.
+
+7.2 [Needs external action] Ask clinician or educator to review
+Reviewer pack ready; user will arrange review. No message sent.
+
+7.3 [Prepared] Test strong incomplete and leading interviews
+Three fixture packages executed for logic; actual free-text and clinical scoring pending.
+
+7.4 [Prepared] Check feedback distinguishes sessions appropriately
+Coverage differs as expected; clinical rating discrimination requires human/live model review.
+
+7.5 [Prepared] Test consistency leakage stereotypes and fabrication
+Deterministic checks done; live adversarial matrix ready, not run.
+
+7.6 [Prepared] Repeat evaluation to test stability
+Deterministic reports stable; repeated generative ratings not tested.
+
+7.7 [Done] Establish release criteria and limitations
+Clinical, pilot and live-model gates in handbook.
+
+8.1 [Done] Define complete session flow
+Guided interview to assessment reasoning and report works locally.
+
+8.2 [Done] Choose builder and model provider
+Custom web app; Featherless candidate provider; exact model pending benchmark.
+
+8.3 [Done] Separate case and rubric from transcript
+Data and state separated. Server-only protection required for live release.
+
+8.4 [Done] Separate evaluator from patient role
+Independent prompt specifications and deterministic report component.
+
+8.5 [Prepared] Store versions with sessions
+Case/rubric/source versions in report; live model version and persistence pending.
+
+8.6 [Prepared] Keep API keys on server
+Server-only adapter; no key present or exposed. Live server integration pending.
+
+8.7 [Done] Define retention deletion and access
+Memory-only rehearsal; reset/reload clears; private review hosting planned.
+
+8.8 [Done] Use fictional data
+All case and fixture material authored; no patient records.
+
+8.9 [Needs external action] Confirm credits expiry publishing and costs
+Public offers researched earlier; account-specific redemption and cost benchmark pending.
+
+8.10 [Prepared] Handle failed or interrupted sessions
+Load and input failures handled; live adapter rejects errors; recovery/idempotency design pending implementation.
+
+9.1 [Done] Prioritize one reliable case
+One authored case and guided loop; no speculative extra cases.
+
+9.2 [Done] Keep first version text-based
+Text-only accessible browser interface.
+
+9.3 [Prepared] Prepare working demo repository and README
+Guided review demo, local source and README ready. Live AI and GitHub publication pending.
+
+9.4 [Needs external action] Record required public demo video
+Three-minute storyboard prepared; no recording or upload yet.
+
+9.5 [Done] Explain references AI evaluation and limitations
+Handbook, prompts, source register and README.
+
+9.6 [Done] Credit sources tools and reviewers accurately
+Source IDs and tool roles credited; no reviewer approval claimed.
+
+9.7 [Prepared] Reserve time and credits for final testing
+Manila delivery plan and credit reserve policy drafted; account balance unconfirmed.
+
+16. FULL SOURCE REGISTER SNAPSHOT
+
+These are the prior researched sources and intended uses. The dates refer to prior
+access, not fresh browsing during transfer. Check for changes before making new
+medical, licensing, event or provider claims.
+
+S1 | Generalized Anxiety Disorder What You Need to Know
+Publisher: National Institute of Mental Health
+Version/date: Live public information; accessed 2026-10-05
+URL: https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad
+Use: Background for persistent worry, associated symptoms, duration and daily functioning. Fictional facts are authored examples, not quotations or patient records.
+Rights: Link and concise original paraphrase; no copied diagnostic manual.
+
+S2 | Generalised anxiety disorder and panic disorder in adults management
+Publisher: NICE
+Version/date: CG113; recommendations 1.2.6 and 1.2.7; accessed 2026-10-05
+URL: https://www.nice.org.uk/guidance/cg113/chapter/Recommendations
+Use: Comprehensive assessment, impairment, comorbidity, medical and substance history. UK guidance supplies educational context, not Philippine practice authority.
+Rights: Link and concise original paraphrase.
+
+S3 | Understanding psychological testing and assessment
+Publisher: American Psychological Association
+Version/date: Updated 2022-08-18; accessed 2026-10-05
+URL: https://www.apa.org/topics/psychological-testing-assessment
+Use: Assessment combines tests, interviews and context; learner must interpret findings.
+Rights: Link and concise original paraphrase.
+
+S4 | About DSM-5-TR
+Publisher: American Psychiatric Association
+Version/date: DSM-5-TR overview; accessed 2026-10-05
+URL: https://www.psychiatry.org/psychiatrists/practice/dsm/about-dsm
+Use: Diagnostic classification and clinical judgment. Full DSM text was not obtained, embedded or licensed. Do not advertise DSM compliance.
+Rights: Overview linked only. Any later reproduction or ingestion needs a separate rights review.
+
+S5 | Free public access to mental health assessment tools
+Publisher: Pfizer
+Version/date: Press release 2010-07-21; accessed 2026-10-05
+URL: https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care
+Use: Publisher states PHQ and GAD-7 are available without copyright restriction and at no charge.
+Rights: Supports GAD-7 reuse; no Pfizer endorsement implied.
+
+S6 | Instructions for Patient Health Questionnaire and GAD-7 Measures
+Publisher: Instrument developer manual hosted by The Joint Commission
+Version/date: Undated nine-page manual; accessed 2026-10-05
+URL: https://manual.jointcommission.org/pub/BHCInstruments/RomInstr00054/instructions_PHQ.pdf
+Use: Seven 0-3 items; total 0-21; severity cutpoints 5, 10, 15. Instruction manual also states no permission required for reproduction.
+Rights: Instrument permission applies to GAD-7; do not copy unrelated copyrighted material from host sites.
+
+S7 | A brief measure for assessing generalized anxiety disorder the GAD-7
+Publisher: Spitzer RL, Kroenke K, Williams JBW, Lowe B; Archives of Internal Medicine
+Version/date: 2006;166:1092-1097; PMID 16717171; DOI 10.1001/archinte.166.10.1092
+URL: https://pubmed.ncbi.nlm.nih.gov/16717171/
+Use: Original adult primary-care validation. Does not validate synthetic respondents, this training rubric, or learner competence.
+Rights: Bibliographic citation; no reproduced article.
+
+S8 | PATIENT-PSI Using Large Language Models to Simulate Patients for Training Mental Health Professionals
+Publisher: Research authors via arXiv
+Version/date: arXiv:2405.19660; accessed 2026-10-05
+URL: https://arxiv.org/abs/2405.19660
+Use: Prior art in simulated patient training; motivation, not evidence that this implementation improves learning.
+Rights: Link and original description.
+
+S9 | ForgeHacks Online 2026 overview and submission requirements
+Publisher: ForgeHacks on Devpost
+Version/date: Live listing accessed 2026-10-05
+URL: https://forgehacks-2026.devpost.com/
+Use: Healthcare prompt, video and repository requirements, deadline and sponsor caps.
+Rights: Event facts summarized.
+
+S10 | ForgeHacks Online 2026 rules
+Publisher: ForgeHacks on Devpost
+Version/date: Live rules accessed 2026-10-05
+URL: https://forgehacks-2026.devpost.com/rules
+Use: Source visibility, substantially created during event; discrepancies recorded for organizer clarification.
+Rights: Event facts summarized.
+
+S11 | GAD-7 Anxiety form
+Publisher: GAD-7 form hosted by Oxford Health NHS Foundation Trust
+Version/date: IAPT Minimum Data Set PDF, page 1; accessed 2026-10-05
+URL: https://www.oxfordhealth.nhs.uk/wp-content/uploads/sites/16/2019/07/MDS-TSP-PDF.pdf
+Use: Seven English items, two-week instruction and response labels verified against the NHS-hosted form. No other measures in the PDF are reproduced.
+Rights: Instrument reuse supported by S5/S6, not by host branding.
+
+END OF HANDOFF
+Continue from the existing foundation. Ask only for genuinely missing information
+or access after doing the independent authorized work possible with these files.

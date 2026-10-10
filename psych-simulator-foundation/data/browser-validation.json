@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-05",
+  "environment": "Codex in-app browser, local rehearsal build",
+  "checks_passed": [
+    "Opening, sleep and daily-function topics produced the authored replies.",
+    "Empty assessment rationale was rejected.",
+    "Assessment rationale and explanation acknowledgement produced GAD-7 15/21 and the seven item responses.",
+    "Completed reasoning produced the debrief with 3/15 topic coverage, exact conversation evidence and NR ratings.",
+    "Session-end state disabled further interview and assessment actions.",
+    "Report download exists and its content matches the tested session.",
+    "Reload cleared the session to zero exchanges.",
+    "WebMCP accepted an authored fact ID and rejected an invalid ID.",
+    "Full-page desktop screenshot inspected; no clipped content or overlapping panels observed."
+  ],
+  "not_verified": [
+    "Reset confirmation dialog could not be completed by browser automation; reload reset was verified.",
+    "Mobile viewport and assistive-technology testing not performed.",
+    "No live AI provider calls, generative clinical scoring or human usability study performed."
+  ],
+  "deployment": {
+    "status": "succeeded",
+    "url": "https://example.invalid/archived-demo",
+    "audience": "owner-private",
+    "commit": "fe48c25dd0ed9d9b167d954d8c49b6f740d3d14f"
+  }
+}

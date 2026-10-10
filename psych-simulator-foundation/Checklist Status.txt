@@ -1,0 +1,218 @@
+FOUNDATION CHECKLIST STATUS
+2026-10-05
+{'Done': 52, 'Prepared': 15, 'Needs external action': 4}
+
+Done refers to the named artifact or tested behavior, not clinical validation. Prepared items still need the work stated.
+
+1.1 [Done] Choose first audience
+Adult psychology trainees; Project brief.
+
+1.2 [Done] Define main learning objective
+Evidence gathering and justified provisional reasoning; Project brief.
+
+1.3 [Done] Write one-sentence problem description
+Repeatable practice linking conversation to reasoning and feedback; Project brief.
+
+1.4 [Done] Define educational simulation and formative feedback
+Brief, visible prototype notice and report labels.
+
+1.5 [Done] Set boundaries for fictional clients and claims
+Brief, simulation contract, README and interface.
+
+1.6 [Done] Confirm healthcare prompt fit
+Healthcare interaction training rationale; event source S9.
+
+2.1 [Done] Select authoritative references
+11-entry source register including clinical, instrument and event sources.
+
+2.2 [Done] Distinguish the two APA organizations
+Evidence section and S3/S4.
+
+2.3 [Done] Record title publisher version date and use
+data/sources.json; linked appendix.
+
+2.4 [Done] Verify reproduction permissions
+GAD-7 permission S5/S6; NHS-hosted form S11; no full DSM text copied.
+
+2.5 [Done] Map references to case and rubric
+Fact-level and rubric-level source IDs in JSON.
+
+2.6 [Prepared] Identify qualified reviewer
+User can arrange reviewer; name and qualifications not yet supplied.
+
+2.7 [Done] Label content without expert review
+Case, rubric, handbook and prototype are marked review pending.
+
+3.1 [Done] Start with one adult case
+CASE-A01, 18 authored fact blocks; expansion concepts only.
+
+3.2 [Done] Define background strengths and communication independently
+Alex case guide, F16 and F17.
+
+3.3 [Done] Specify symptoms duration severity and function
+F02-F07; authored two-week questionnaire values.
+
+3.4 [Done] Document relevant histories
+F08-F15 and F18; medical unknowns explicitly preserved.
+
+3.5 [Done] Include alternatives and distinguishing evidence
+Case guide alternatives and focused interview domains.
+
+3.6 [Done] Define absent unknown and out-of-scope facts
+Unknown list, explicit fictional negatives, simulation contract.
+
+3.7 [Done] Write learner referral note
+case.referral and visible interview brief.
+
+3.8 [Done] Write hidden case guide and learning points
+Handbook and data/case-a01.json.
+
+3.9 [Prepared] Review stereotypes and cultural assumptions
+Initial authoring check performed; independent qualified review pending.
+
+4.1 [Done] Separate fixed facts from flexible wording
+Simulation contract and patient prompt.
+
+4.2 [Done] Define disclosure rules
+Opening volunteered in live design; authored topic answers in rehearsal.
+
+4.3 [Prepared] Allow reasonable question variants
+Live prompt specifies this; free-text model testing not run.
+
+4.4 [Done] Define believable emotional expression
+Case affect and simulation contract; not validated with a model.
+
+4.5 [Prepared] Prevent invented facts contradictions and diagnosis leakage
+Scripted values fixed and tested; live semantic protection remains unverified.
+
+4.6 [Done] Define leading repeated and adversarial responses
+Prompt rules and adversarial test list; live behavior pending.
+
+4.7 [Done] Handle topics outside the authored case
+Unknown topic rejection tested; live prompt requires explicit flag.
+
+4.8 [Done] Separate patient from tutor
+Architecture, separate prompt files and separate report logic.
+
+5.1 [Done] Choose one relevant instrument
+GAD-7 for adult fictional anxiety presentation.
+
+5.2 [Done] Verify permissions population administration and scoring
+S5-S7 and S11; synthetic-response limitation documented.
+
+5.3 [Done] Preserve required standard wording
+Seven English items and instruction cross-checked with S11.
+
+5.4 [Prepared] Author case-consistent responses
+Seven values authored; qualified item-by-item clinical review pending.
+
+5.5 [Done] Calculate scores by explicit rules
+Deterministic 0-21 scoring; boundaries and invalid inputs tested.
+
+5.6 [Done] Explain result and limitations
+Assessment panel, specification and debrief.
+
+5.7 [Done] Require learner rationale
+Rationale and explanation control; invalid submissions rejected.
+
+6.1 [Done] Define five evaluation domains
+rubric.json; coverage communication reasoning assessment next steps.
+
+6.2 [Done] Describe observable rating anchors
+0-3 anchors plus NR; clinician review form.
+
+6.3 [Done] Require transcript-cited feedback
+Evaluator specification and exact evidence export in rehearsal.
+
+6.4 [Done] Distinguish missed questions from conclusions
+Rubric and example debrief.
+
+6.5 [Done] Judge only from evidence obtained
+Disclosed-fact ledger; no hidden assessment test passes.
+
+6.6 [Done] Credit alternatives and uncertainty
+Reasoning anchors and structured submission fields.
+
+6.7 [Done] Avoid rewarding guessing or question count
+Coverage is descriptive; no automatic competence score.
+
+6.8 [Prepared] Include strengths improvements and follow-ups
+Example debrief and evaluator contract prepared; personalized AI feedback pending.
+
+6.9 [Done] Mark ratings formative and unvalidated
+Report, guide and prompt labels.
+
+6.10 [Done] Prepare example report
+review/sample-debrief.txt and handbook example.
+
+7.1 [Needs external action] Walk through with a psychology student
+Protocol ready; no real learner session conducted.
+
+7.2 [Needs external action] Ask clinician or educator to review
+Reviewer pack ready; user will arrange review. No message sent.
+
+7.3 [Prepared] Test strong incomplete and leading interviews
+Three fixture packages executed for logic; actual free-text and clinical scoring pending.
+
+7.4 [Prepared] Check feedback distinguishes sessions appropriately
+Coverage differs as expected; clinical rating discrimination requires human/live model review.
+
+7.5 [Prepared] Test consistency leakage stereotypes and fabrication
+Deterministic checks done; live adversarial matrix ready, not run.
+
+7.6 [Prepared] Repeat evaluation to test stability
+Deterministic reports stable; repeated generative ratings not tested.
+
+7.7 [Done] Establish release criteria and limitations
+Clinical, pilot and live-model gates in handbook.
+
+8.1 [Done] Define complete session flow
+Guided interview to assessment reasoning and report works locally.
+
+8.2 [Done] Choose builder and model provider
+Custom web app; Featherless candidate provider; exact model pending benchmark.
+
+8.3 [Done] Separate case and rubric from transcript
+Data and state separated. Server-only protection required for live release.
+
+8.4 [Done] Separate evaluator from patient role
+Independent prompt specifications and deterministic report component.
+
+8.5 [Prepared] Store versions with sessions
+Case/rubric/source versions in report; live model version and persistence pending.
+
+8.6 [Prepared] Keep API keys on server
+Server-only adapter; no key present or exposed. Live server integration pending.
+
+8.7 [Done] Define retention deletion and access
+Memory-only rehearsal; reset/reload clears; private review hosting planned.
+
+8.8 [Done] Use fictional data
+All case and fixture material authored; no patient records.
+
+8.9 [Needs external action] Confirm credits expiry publishing and costs
+Public offers researched earlier; account-specific redemption and cost benchmark pending.
+
+8.10 [Prepared] Handle failed or interrupted sessions
+Load and input failures handled; live adapter rejects errors; recovery/idempotency design pending implementation.
+
+9.1 [Done] Prioritize one reliable case
+One authored case and guided loop; no speculative extra cases.
+
+9.2 [Done] Keep first version text-based
+Text-only accessible browser interface.
+
+9.3 [Prepared] Prepare working demo repository and README
+Guided review demo, local source and README ready. Live AI and GitHub publication pending.
+
+9.4 [Needs external action] Record required public demo video
+Three-minute storyboard prepared; no recording or upload yet.
+
+9.5 [Done] Explain references AI evaluation and limitations
+Handbook, prompts, source register and README.
+
+9.6 [Done] Credit sources tools and reviewers accurately
+Source IDs and tool roles credited; no reviewer approval claimed.
+
+9.7 [Prepared] Reserve time and credits for final testing
+Manila delivery plan and credit reserve policy drafted; account balance unconfirmed.

@@ -1,0 +1,112 @@
+{
+  "version": "identity-0.1.0",
+  "status": "EXPERIMENTAL",
+  "provenance": "All parameters here are authored engineering choices, not empirical estimates.",
+  "initial": {
+    "threatSensitivity": 0.55,
+    "supportExpectation": 0.5,
+    "values": {
+      "connection": 0.7,
+      "reliability": 0.7,
+      "autonomy": 0.6,
+      "recovery": 0.5
+    }
+  },
+  "learning": {
+    "rate": 0.08,
+    "defaultReliability": 1,
+    "maxSingleUpdate": 0.08
+  },
+  "choice": {
+    "intercept": 0.5,
+    "goalWeight": 0.3,
+    "beliefWeight": 0.2,
+    "tensionWeight": 0.25
+  },
+  "context": {
+    "task": {
+      "relationship": null,
+      "alternatives": [
+        "work",
+        "pause"
+      ],
+      "relevance": {
+        "reliability": 1,
+        "recovery": 0.7
+      },
+      "fit": {
+        "work": {
+          "reliability": 1,
+          "recovery": 0
+        },
+        "pause": {
+          "reliability": 0,
+          "recovery": 1
+        }
+      }
+    },
+    "support": {
+      "relationship": "cousin",
+      "alternatives": [
+        "seek_support",
+        "rest"
+      ],
+      "relevance": {
+        "connection": 1,
+        "recovery": 0.8
+      },
+      "fit": {
+        "seek_support": {
+          "connection": 1,
+          "recovery": 0.4
+        },
+        "rest": {
+          "connection": 0,
+          "recovery": 1
+        }
+      }
+    },
+    "cancelled": {
+      "relationship": "friend",
+      "alternatives": [
+        "reschedule",
+        "withdraw"
+      ],
+      "relevance": {
+        "connection": 1,
+        "recovery": 0.5
+      },
+      "fit": {
+        "reschedule": {
+          "connection": 1,
+          "recovery": 0
+        },
+        "withdraw": {
+          "connection": 0,
+          "recovery": 1
+        }
+      }
+    },
+    "quiet": {
+      "relationship": null,
+      "alternatives": [
+        "sketch",
+        "rest"
+      ],
+      "relevance": {
+        "autonomy": 1,
+        "recovery": 1
+      },
+      "fit": {
+        "sketch": {
+          "autonomy": 1,
+          "recovery": 0.3
+        },
+        "rest": {
+          "autonomy": 0.3,
+          "recovery": 1
+        }
+      }
+    }
+  }
+}

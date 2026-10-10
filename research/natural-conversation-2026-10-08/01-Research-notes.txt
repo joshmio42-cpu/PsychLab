@@ -1,0 +1,117 @@
+PsychLab: making simulated patient conversation responsive and natural
+Research date: 8 October 2026 (Asia/Manila)
+
+Scope
+Public primary studies, publicly accessible case material, and official simulated-patient standards were examined to guide the conversational layer. This is a focused implementation review, not a systematic review or evidence that PsychLab is clinically validated. No real patient record or identifiable case is imported. The supplied examples below are original fictional examples, not copied study transcripts.
+
+Main design conclusion
+A patient needs to respond to what the interviewer is doing now: greeting, asking about an interest, following up, making a joke, correcting a misunderstanding, or exploring a concern. The frozen case should constrain what is true; it should not require the patient to recite an entire canned paragraph whenever one keyword matches. Natural language may vary while symptoms, history, relationships, events, uncertainty and speaker identity remain stable.
+
+1. Let small talk be a real exchange, without automatically turning it into a symptom report.
+Evidence: Hudak and Maynard (2011) analyze recorded surgeon-patient consultations. They distinguish an offered topic from a topic both speakers actually develop. Their Example 4 shows a possible shared-acquaintance topic receiving limited uptake and turning back toward a medical concern. Not every greeting or joke is the same social action, and not every offered topic develops.
+Implementation inference: answer a greeting briefly; answer a hobby question with the recorded hobby; follow the topic if the next turn pursues it. Do not append symptoms, the entire opening complaint, or a declaration of communication preferences to every casual answer. A question back may fit a casual exchange, but should not be compulsory.
+Limit: older surgical patients and particular recorded consultations do not define how every person or diagnosis talks. The paper's group comparisons must not become demographic portrayal rules.
+Source S01: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9566.2011.01343.x
+
+2. Ground descriptions in the person's ordinary activities rather than diagnostic vocabulary.
+Evidence: Hooper et al. (2008) developed 32 virtual depression vignettes using patient interviews, physician focus groups, recorded encounters and expert review. Table 2 connects symptoms with recognizable routines, such as changed participation in walks or difficulty following a work conversation. A displayed dialogue answers an opening concern first and provides timing when the physician asks a follow-up.
+Implementation inference: express an authorized fact in everyday words, preserving its duration, frequency and qualifications. When an actual event exists, use that event as an example. Do not invent a colorful episode merely to sound authentic; naturalness must not change the case. Usual hobbies must not be recast as evidence of current enjoyment or recovery.
+Limit: these were scripted actor vignettes, not free-generating LLMs. Believability findings do not validate our model or its diagnostic accuracy.
+Source S02: https://pmc.ncbi.nlm.nih.gov/articles/PMC2867621/
+
+3. Keep factual fidelity and conversational expression separate.
+Evidence: ASPE's Standards of Best Practice (Lewis et al., 2017) describe variation in standardization according to educational context. They call for authentic, respectful cases; strategies for unexpected questions; and accurate, consistent role portrayal with rehearsal and feedback.
+Implementation inference: maintain a bounded source-of-truth case and an independently authored communication style. Permit a paraphrase to fit the immediate turn. Guard the paraphrase against invented history, diagnoses and speaker changes. Unanticipated questions need an in-character response, clarification or honest boundary rather than a generic catalogue paragraph. Interests and warmth are individual attributes, not consequences automatically assigned to a disorder.
+Limit: these are standards for human simulated participants; applying them to an AI pipeline is an engineering adaptation. Expertise and user testing are still needed.
+Source S03: https://link.springer.com/article/10.1186/s41077-017-0043-4
+
+4. Repair the specific misunderstanding instead of restarting the interview.
+Evidence: Dingemanse et al. (2015) examine communication repair across 12 languages. Speakers tend to choose the most specific available clarification, reducing joint effort. Repair can identify a particular unclear word or propose an interpretation for confirmation.
+Implementation inference: resolve follow-ups such as 'why?', 'what do you mean?', or 'and then?' against the recent exchange. If two plausible referents remain, ask a short specific question, such as 'Do you mean the drawing or the plans with my friend?' For 'I meant your hobby,' acknowledge the correction and answer the hobby question; do not repeat the previous symptom paragraph. A misunderstanding is not a symptom to add to the case.
+Limit: conversational repair findings support a design principle, not a fixed frequency for artificial disfluency.
+Source S04: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136100
+
+5. Do not equate authenticity with random pauses, fillers or forced slang.
+Evidence: Stivers et al. (2009) study turn timing in natural conversation across ten languages. Timing is sensitive to the action being performed; delays are patterned rather than meaningless decoration.
+Implementation inference: use contractions and compact turns when appropriate, but no random 'um', ellipses or roleplay stage directions. A patient who prefers reflection may use a brief qualifying phrase when genuinely uncertain; they should not announce 'I need time to reflect' on every turn. Artificial waiting is not needed to emulate spoken turn timing in a text interface.
+Limit: the study concerns spoken interaction. It does not establish ideal text-chat latency, universal personality categories, or diagnosis-specific speaking styles.
+Source S05: https://www.pnas.org/doi/10.1073/pnas.0903616106
+
+6. Responsiveness is local fit, not blanket agreement or automatic disclosure.
+Evidence: Garbarski, Schaeffer and Dykema (2016) analyze question-answer sequences in a longitudinal survey. Their account separates interviewer responsiveness from respondent engagement, and notes that affiliative behavior can either support or conflict with standardized information gathering.
+Implementation inference: acknowledge the actual previous statement and keep track of what has already been said. Do not reward a leading question by changing the patient's answer, or interpret friendliness as permission to invent extra symptoms. A reassuring interviewer can receive a simple acknowledgment. The patient can correct a false premise, express uncertainty, or stay brief. Rapport is not itself a diagnosis or proof of truthful disclosure.
+Limit: survey interviews are not psychiatric interviews. The transfer to simulated clinical dialogue is explicitly a design inference.
+Source S06: https://journals.sagepub.com/doi/10.1177/0081175016637890
+Public author manuscript: https://pmc.ncbi.nlm.nih.gov/articles/PMC5110268/
+
+7. Test realism and factual consistency as separate properties.
+Evidence: Erby, Roter and Biesecker (2011) analyze 177 genetic counseling sessions with six standardized patients, evaluating case accuracy, communication style, affect and perceived realism separately. High realism ratings did not eliminate differences between performers.
+Implementation inference: a polished answer can still be wrong, and a perfectly preserved fact can still sound canned. Regression tests should examine both: factual support and topic responsiveness. Include successive casual follow-ups, an incorrect premise, repeated questions, a caregiver case, random/mystery selection, and a transition from hobby talk to symptoms.
+Limit: this concerns human actors in genetic counseling, not a benchmark for psychiatry or language models. Do not import its accuracy percentages as a target or claimed result for PsychLab.
+Source S07: https://pure.johnshopkins.edu/en/publications/examination-of-standardized-patient-performance-accuracy-and-cons-4/
+
+8. Contemporary psychiatric virtual-patient research supports expert-reviewed language, while exposing realism gaps.
+Evidence: Li et al. (2026) describe three psychiatric cases developed with psychiatrist-written scripts and expert refinement, including replacement of technical language with natural dialogue. They evaluated responses against reference answers and ran a small trial with 20 completers. Their discussion still identifies comparatively weak authenticity/interactivity and limited cases, sample size and nonverbal assessment.
+Implementation inference: keep a reference case and dialogue checks while improving response generation; use actual multi-turn samples for review. More fluid wording alone is insufficient. Avoid claims that successful unit tests or source-informed prompts demonstrate educational effectiveness.
+Limit: a different model, setting and three-case system cannot validate PsychLab's many cases. Our text-only interface does not reproduce gaze, vocal tone or clinical examination.
+Source S08: https://link.springer.com/article/10.1186/s12888-026-07896-3
+
+Original example dialogues for design review
+These are illustrative targets, not exact output promises. Patient-specific facts must exist in the selected case. Examples use the recorded Jordan hobby of sketching ordinary things in a notebook where stated.
+
+A. Greeting
+Interviewer: 'Hey Jordan.'
+Robotic: 'I like a little space to reflect before answering. Concrete examples help me explain what I mean.'
+Responsive: 'Hey.'
+Reason: respond to the greeting itself. No new case facts or automatic complaint disclosure.
+
+B. Interest, then specific follow-up
+Interviewer: 'What do you usually do for fun?'
+Responsive: 'I sketch, usually. Just ordinary things in a notebook.'
+Interviewer: 'Oh nice, what do you draw?'
+Responsive: 'Mostly everyday things. Nothing too elaborate.'
+Review condition: only the sketching/ordinary-things/notebook content is supported; avoid inventing a subject, teacher, trip, named artist, or new motive.
+
+C. Repair
+Interviewer: 'No, I meant what you do for fun, not why you came in.'
+Robotic: repeat the intake complaint.
+Responsive: 'Oh, got it. I usually sketch things in a notebook.'
+Reason: recognize the correction and answer it without defensive explanation.
+
+D. Concrete detail unavailable
+Interviewer: 'What exact date did that start?'
+Robotic: invent a date or say 'My frozen history does not include this information.'
+Responsive: 'I can't give you an exact date.'
+Review condition: add a supported approximate duration only if the case contains one. Missing information must not become an invented denial or a new personal fact.
+
+E. One question at a time
+Interviewer: 'How are sleep, food, work and family?'
+Responsive when the recorded profile favors one question at a time: 'Can we start with one of those?'
+Reason: enact the preference rather than recite a personality description. Do not use this to evade an otherwise clear single question.
+
+F. Acknowledgment
+Interviewer: 'Take your time.'
+Responsive: 'Thanks.'
+Reason: enough for this conversational action; do not append a symptom checklist.
+
+G. Correct a false premise
+Interviewer: 'So you said you never speak to your cousin?'
+Responsive if the recorded case says otherwise: 'No, that's not what I meant. I do like having a quiet chat with my cousin.'
+Reason: the patient's facts must not drift to agree with the interviewer.
+
+Implementation review checklist (engineering proposals, not clinical measures)
+- Casual greetings, thanks and closings can be brief and need no symptom facts.
+- Hobbies and relationship questions retrieve personal facts before unrelated clinical facts.
+- Follow-ups retain the current subject and referents; ambiguity triggers a focused clarification.
+- Paraphrases preserve negation, degree, timing, current versus usual state, and caregiver perspective.
+- The response audit checks the actual output text, not only the IDs of facts the generator claims to use.
+- A generated metaphor, cause, diagnosis, medication, name, number or event is a factual claim requiring support.
+- Leading statements and 'be more human' instructions do not authorize history changes or hidden-case disclosure.
+- Repetition is assessed over multiple turns; do not repeatedly prefix a communication-style statement.
+- Automated checks are supplemented by live multi-turn inspection and later review by people with relevant expertise and lived experience.
+- No source implies that any particular diagnosis produces a fixed manner of speaking.
+
+Research method and access notes
+Searches combined terms for conversation analysis, small talk in medical interactions, communication repair, standardized-patient authenticity and psychiatric virtual patients. Primary full texts or primary author/institutional records were preferred. The papers above were inspected through publisher pages, PMC, search-indexed primary text and, for S04/S08, the public Europe PMC full-text endpoint. Several PMC loads intermittently returned a browser-check screen; publisher alternatives were used. S06's publisher page exposes the abstract; its publicly indexed author manuscript supplied the sequence-analysis detail. No paywall was bypassed. Direct excerpts are not reproduced; the case evidence is paraphrased. Foundational older studies were retained because they directly study interaction, and a 2026 primary study adds current model-specific limitations.
+
+Source metadata and retrieval details: sources.json in this folder.

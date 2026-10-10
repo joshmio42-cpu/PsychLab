@@ -1,0 +1,28 @@
+PsychLab interview aids — common framework
+Research date: 8 October 2026
+
+This pack uses public clinical guidance and original educational prompts. The full licensed DSM-5-TR manual was not accessed. It does not reproduce complete diagnostic criteria or copyrighted questionnaire items. A selected simulation premise is an authored teaching target, not clinical ground truth.
+
+Sources checked:
+APA DSM-5-TR Online Assessment Measures — page opened; adult and child forms, informant forms, severity and cross-cutting measures, and interpretation guidance reviewed.
+https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures
+Supports tools as adjuncts and age/respondent-specific selection. Original app prompts are not an implementation of those measures.
+
+NHS Mental health assessments — page opened.
+https://www.nhs.uk/mental-health/social-care-and-your-rights/mental-health-assessments/
+Supports a needs-focused conversation across psychological, physical and social circumstances.
+
+NIMH Children and Mental Health: Is This Just a Stage? — page opened, revised 2024.
+https://www.nimh.nih.gov/health/publications/children-and-mental-health
+Supports development, functioning, caregiver history, school information and child assessment where appropriate. Life-stage labels alone cannot establish the exact age eligibility of a standardized tool.
+
+NICE NG225 — search-indexed recommendation checked; direct page fetch failed twice.
+https://www.nice.org.uk/guidance/ng225/chapter/recommendations
+Supports not using risk scales to predict suicide or self-harm recurrence. No risk score or low/medium/high risk prediction is included in PsychLab.
+
+Design synthesis (original, not a validated instrument):
+1. Record what was asked and link the learner's interpretation to an actual interview turn. Distinguish supported, not supported, unclear and not asked; unknown must not become a negative finding.
+2. Offer open questions, course/impairment prompts and alternative explanations. Do not automatically send a question or make a model call.
+3. Review completeness, unlinked assertions and missing reasoning. Do not convert a number of ticks into diagnosis probability, severity, competence or safety clearance.
+4. Mystery cases receive the identical broad template regardless of their hidden premise. The eventual teaching-case comparison happens only after the interview ends. No-disorder cases use broad inquiry and allow uncertainty or a different provisional impression, without treating everyday distress as a disorder.
+5. External tests are named references with purpose and limits; their administration and numeric scoring are outside this implementation unless the existing authored GAD-7 case explicitly contains responses. Generated patient stories may leave evidence unavailable.

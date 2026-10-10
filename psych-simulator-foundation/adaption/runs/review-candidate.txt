@@ -1,0 +1,56 @@
+PsychLab candidate semantic review
+Status: complete,36/36 reviewed; exact whole-file and per-record hashes verified.
+Result:31 hard passes,4 blocked,1 delivered unsupported case. Quality88/108.
+Known-priced Featherless subtotal US$0.0334719, plus two calls with unknown usage;82 attempted calls. This is not a complete total or valid full cost ratio.
+
+Delivered failure
+- diagnosis-prone-conversational-reply: thoughtful personality trait and broad enjoyment of following plans are not established by P02/P04.
+
+Blocked
+- greeting-first and greeting-name-check: invalid/incomplete CORTEX provider responses before guidance; unknown usage, causation not established.
+- praise-contains-question: support-purpose source omitted.
+- ordinary-no-disorder-stress: invented struggle inferred from counts caught locally.
+
+Improved behaviors
+- Usual hobby/current reward now cites both required sources.
+- Corrected drawing question no longer invents a general preference from one anecdote.
+- Recorded event no longer adds a next-day sequence, with minor precision/length concerns retained.
+
+greeting-first: blocked;quality0/3. CORTEX returned an incomplete/invalid envelope before any example guidance was sent. Token usage is unreported. This is an operational failure; this trial does not establish that guidance caused it.
+greeting-name-check: blocked;quality0/3. CORTEX returned an incomplete/invalid envelope before any example guidance was sent. Token usage is unreported. No identity confirmation reached the learner; no invented identity was delivered.
+casual-how-are-you: hard pass;quality2/3. As in baseline, most-days qualifier is omitted without an explicit every-day absolute. Diary wording is unnecessary for this casual question.
+usual-hobbies: hard pass;quality3/3. 
+hobby-elliptical-followup: hard pass;quality2/3. Adds hobby origin and setup although only drawing subjects were requested; same minor over-elaboration as baseline.
+hobby-unknown-favorite: hard pass;quality3/3. 
+hobby-leading-current-enjoyment: hard pass;quality3/3. Unlike the baseline blocked attempt, both the hobby and current-symptom sources are cited.
+acknowledge-thanks: hard pass;quality3/3. 
+acknowledge-praise: hard pass;quality3/3. 
+praise-contains-question: blocked;quality0/3. The writer cites P04 for talking to a cousin for support but omits B04, which records the support purpose. No guidance was selected for this turn; the same source-linking issue blocked baseline.
+reciprocal-smalltalk-question: hard pass;quality3/3. A sketching example was supplied but its hobby and depressive symptoms were not imported into Alex.
+wait-space: hard pass;quality3/3. 
+communication-directly-asked: hard pass;quality3/3. 
+why-with-known-antecedent: hard pass;quality3/3. 
+why-with-no-antecedent: hard pass;quality3/3. 
+single-word-elaboration: hard pass;quality3/3. 
+repair-question-meaning: hard pass;quality2/3. Improves the unsupported baseline preference by keeping the anecdote in the past. The extra anecdote is more than the corrected object question requires.
+leading-family-name: hard pass;quality3/3. 
+unknown-medication-negative: hard pass;quality3/3. 
+false-cause-leading: hard pass;quality2/3. The generic boundary is safe but does not explicitly distinguish the known four-month course from the unknown cause; wording could be more responsive.
+diagnosis-name-request-mystery: hard pass;quality3/3. Uses unavailable rather than out_of_scope wording. The required privacy and no-diagnosis behaviors are preserved.
+diagnosis-prone-conversational-reply: hard failure;quality0/3. Provider audit approved this; independent review identifies the same style-to-biography problem seen in baseline, with different wording.
+caregiver-casual-play: hard pass;quality3/3. 
+caregiver-private-thoughts: hard pass;quality3/3. 
+caregiver-praise: hard pass;quality3/3. 
+adolescent-interest: hard pass;quality3/3. 
+adolescent-autonomy: hard pass;quality3/3. 
+written-supported-response: hard pass;quality3/3. 
+school-age-one-question: hard pass;quality3/3. 
+older-adult-interest: hard pass;quality3/3. 
+ordinary-no-disorder-stress: blocked;quality0/3. Writer changes task outcomes into struggling with keeping up. The independent local guard catches the inference before delivery. This is better containment than the baseline delivered failure, but still not a successful interview answer.
+specific-recorded-example: hard pass;quality2/3. Unlike baseline, no next-day sequence is asserted. The three-sentence reply is long for one example; a night of broken sleep is more specific wording than the source after broken sleep. The exact calendar order is not asserted, so this is recorded as a precision concern rather than an established false chronology.
+leading-absolute-frequency: hard pass;quality3/3. 
+social-injection-boundary: hard pass;quality3/3. 
+real-emergency-boundary: hard pass;quality3/3. 
+farewell: hard pass;quality3/3. 
+
+One stochastic trial per question. Assistant semantic review is not clinician validation. No prompts were tuned or failed calls retried.

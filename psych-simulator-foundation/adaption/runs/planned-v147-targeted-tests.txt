@@ -1,0 +1,27 @@
+✔ Authored provenance limits are not patient ignorance, while authored patient uncertainty stays usable (1.0703ms)
+✔ Simulation coverage remains in the frozen record but cannot become patient evidence (28.7821ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (16.3332ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (15.1604ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (11.8315ms)
+✔ Leading dates and assumptions reach planning and audit but never the patient writer (13.8255ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (8.4855ms)
+✔ An unambiguous callback cannot route to a similar but different older source (8.208ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (9.5088ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (8.4838ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (8.8941ms)
+✔ Challenging opening quotes and writes only the authored brief version (11.3358ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (7.4951ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (6.4269ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (8.0095ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (6.9907ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (9.1275ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (47.3529ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3083.3473ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3499.5247

@@ -1,0 +1,32 @@
+# Private configuration and credentials, anywhere in the workspace.
+.env
+.env.*
+!.env.example
+*.credential.xml
+*.pem
+*.key
+*.p12
+*.pfx
+.cloudflared/
+psych-simulator-foundation/live/public-access.json
+
+# Runtime dependencies and diagnostic output can contain secrets or transcripts.
+node_modules/
+.runtime/
+*.log
+*.heapsnapshot
+*.heapprofile
+report.*.json
+
+# Local hosting identities and generated packaging artifacts.
+.openai/
+.codex/
+tmp/
+artifacts/
+coverage/
+*.zip
+*.tar.gz
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]

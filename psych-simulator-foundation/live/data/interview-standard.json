@@ -1,0 +1,38 @@
+{
+  "id": "general",
+  "name": "Broad interview guide",
+  "course": "Establish the usual baseline, first onset, persistence, episodes and changes across settings. The diary length is not the duration of a disorder. Ask about earlier history and leave unavailable information unknown.",
+  "checklist": [
+    {"id":"goals","label":"Main concerns and the person's goals","question":"What would you most like me to understand, and what would you like help with?"},
+    {"id":"course","label":"Onset, duration and change from usual functioning","question":"When did this begin, and how have things changed since then?"},
+    {"id":"function","label":"Effects on daily life and relationships","question":"How has this affected your usual activities, responsibilities and relationships?"},
+    {"id":"mood","label":"Low mood, loss of interest and irritability","question":"How has your mood been, and how much enjoyment have you had in your usual interests?"},
+    {"id":"energy","label":"Distinct changes in energy, sleep need and activity","question":"Have there been periods when your energy or need for sleep was very different from usual?"},
+    {"id":"anxiety","label":"Worry, fears, panic and avoidance","question":"What worries or fears have been taking up your attention, and what do you avoid because of them?"},
+    {"id":"repetition","label":"Unwanted thoughts, repetitive acts or urges","question":"Are there thoughts or repeated actions that feel hard to put aside?"},
+    {"id":"stress","label":"Stressors, loss, trauma-related changes and detachment","question":"Have any difficult experiences or losses affected how you feel or function? We can stay with what feels manageable to discuss."},
+    {"id":"perception","label":"Unusual perceptions, beliefs or disorganization","question":"Have you noticed experiences or changes in your thinking that are hard to explain to other people?"},
+    {"id":"cognition","label":"Attention, memory, orientation and sudden confusion","question":"Have you or others noticed changes in concentration, memory or knowing where you are? How quickly did they start?"},
+    {"id":"body","label":"Sleep, eating and physical symptoms","question":"What changes have you noticed in sleep, eating or physical wellbeing?"},
+    {"id":"substances","label":"Medicines, substances and behaviors that are hard to control","question":"What medicines or substances do you use, and are any habits becoming hard to control or causing difficulties?"},
+    {"id":"development","label":"Developmental history, learning and age-appropriate expectations","question":"What was learning, communication and everyday life like earlier on, and what support has helped?"},
+    {"id":"context","label":"Culture, identity, circumstances and alternative explanations","question":"How do you understand these experiences, and what circumstances or physical health changes might help explain them?"},
+    {"id":"safety","label":"Current safety, self-harm, harm to others and safeguarding","question":"Have you felt unsafe, had thoughts of harming yourself or someone else, or needed protection from someone?"},
+    {"id":"strengths","label":"Strengths, supports and protective relationships","question":"What helps you cope, and who can you turn to for support?"},
+    {"id":"collateral","label":"Previous care, records and other perspectives","question":"What support or assessments have you had before, and who else could help clarify the history with your permission?"}
+  ],
+  "differentials": ["Expected developmental or situational variation without sustained impairment", "Medical, sleep, medication or substance-related explanations", "More than one mental health condition, with overlapping symptoms", "Insufficient information: defer a conclusion and seek focused history"],
+  "test": {
+    "name": "Broad clinical interview; consider an age-appropriate cross-cutting symptom measure",
+    "purpose": "Organize further inquiry rather than assume a particular disorder. Consider a targeted measure only after identifying a concern.",
+    "interpretation": "APA lists adult, parent/guardian 6–17 and self-report 11–17 cross-cutting forms. They are adjuncts, not diagnoses. Toddler/preschool interviews need developmental and caregiver assessment instead. Confirm exact age, language, respondent and tool permissions before administering any measure. No questionnaire responses or scores are inferred from this simulation.",
+    "url": "https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures"
+  },
+  "cautions": "An omitted symptom is unknown, not absent. Assess distress, functioning and context without forcing a diagnosis. Sudden confusion, acute medical instability or immediate safety concerns call for urgent professional assessment rather than a checklist score. The text interview cannot establish physical examination or observed mental-state findings.",
+  "sources": [
+    {"title":"APA — DSM-5-TR assessment measures and interpretation limits","url":"https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures"},
+    {"title":"NHS — Mental health assessments","url":"https://www.nhs.uk/mental-health/social-care-and-your-rights/mental-health-assessments/"},
+    {"title":"NIMH — Children and mental health: evaluation","url":"https://www.nimh.nih.gov/health/publications/children-and-mental-health"},
+    {"title":"NICE NG225 — Self-harm assessment; limits of prediction scales","url":"https://www.nice.org.uk/guidance/ng225/chapter/recommendations"}
+  ]
+}

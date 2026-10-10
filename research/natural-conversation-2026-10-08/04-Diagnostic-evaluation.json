@@ -1,0 +1,1316 @@
+[
+  {
+    "patientId": "jordan",
+    "disorderId": "mdd",
+    "question": "Why do you sketch ordinary things?",
+    "calls": [
+      {
+        "role": "CORTEX",
+        "input": {
+          "maxFacts": 2,
+          "catalog": [
+            {
+              "id": "G01",
+              "topic": "Opening and goals"
+            },
+            {
+              "id": "G02",
+              "topic": "Background and life stage"
+            },
+            {
+              "id": "G03",
+              "topic": "Recorded time window"
+            },
+            {
+              "id": "G04",
+              "topic": "Daily routines over the recorded period"
+            },
+            {
+              "id": "P01",
+              "topic": "Personal goals and what matters",
+              "detail": "I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff."
+            },
+            {
+              "id": "P02",
+              "topic": "Usual interests and hobbies, not current enjoyment",
+              "detail": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+            },
+            {
+              "id": "P03",
+              "topic": "Communication preferences",
+              "detail": "Give me a second to think. It’s easier if I can give you an example."
+            },
+            {
+              "id": "P04",
+              "topic": "Relationships and preferred support",
+              "detail": "I like a quiet chat with my cousin. With my friend, I’d rather agree on a time and a plan than leave it up in the air."
+            },
+            {
+              "id": "P05",
+              "topic": "Usual sketching subjects and materials",
+              "detail": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil."
+            },
+            {
+              "id": "P06",
+              "topic": "How sketching everyday objects became a hobby",
+              "detail": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw."
+            },
+            {
+              "id": "B01",
+              "topic": "Earlier course and onset",
+              "detail": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+            },
+            {
+              "id": "B02",
+              "topic": "Experiences described",
+              "detail": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+            },
+            {
+              "id": "B03",
+              "topic": "Effect on everyday activities",
+              "detail": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+            },
+            {
+              "id": "B04",
+              "topic": "Personal routines and support",
+              "detail": "I am in the young adult stage. My usual interests include sketching. I want to take part in finishing a routine work task, with support from my cousin."
+            },
+            {
+              "id": "PROFILE",
+              "topic": "Personal background, life stage, name and interests"
+            },
+            {
+              "id": "E03",
+              "topic": "Day 3: Recent experience and participation"
+            },
+            {
+              "id": "E04",
+              "topic": "Day 4: Recent experience and routine"
+            },
+            {
+              "id": "E09",
+              "topic": "Day 9: Recent experience and routine"
+            },
+            {
+              "id": "E17",
+              "topic": "Day 17: Recent experience and routine"
+            },
+            {
+              "id": "E20",
+              "topic": "Day 20: Recent experience and participation"
+            },
+            {
+              "id": "E22",
+              "topic": "Day 22: Recent experience and participation"
+            },
+            {
+              "id": "E23",
+              "topic": "Day 23: Recent experience and participation"
+            },
+            {
+              "id": "E24",
+              "topic": "Day 24: Recent experience and participation"
+            },
+            {
+              "id": "E25",
+              "topic": "Day 25: Recent experience and participation"
+            },
+            {
+              "id": "E26",
+              "topic": "Day 26: Recent experience and participation"
+            },
+            {
+              "id": "E27",
+              "topic": "Day 27: Recent experience and participation"
+            },
+            {
+              "id": "E28",
+              "topic": "Day 28: Recent experience and routine"
+            }
+          ],
+          "history": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "question": "Why do you sketch ordinary things?"
+        },
+        "value": {
+          "kind": "answer",
+          "fact_ids": [
+            "P06",
+            "P05"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1190,
+          "completion_tokens": 16,
+          "total_tokens": 1206
+        }
+      },
+      {
+        "role": "LANGUAGE",
+        "input": {
+          "agentContext": {
+            "version": "agent-context-0.3.0",
+            "interview": {
+              "patient": "Jordan",
+              "pronouns": "they/them",
+              "lifeStage": "Young adult",
+              "speaker": "Jordan",
+              "perspective": "patient",
+              "language": "Use this individual patient's own voice and life-stage context, without a stereotyped personality or an automatic diagnostic label."
+            },
+            "personality": {
+              "communication": "Thoughtful, but use ordinary spoken language rather than polished self-analysis or elaborate metaphors. Be clear about uncertainty. Use examples only from recorded facts. Show this style in delivery; do not repeatedly announce communication preferences.",
+              "schema": [],
+              "motive": "Style guidance only: priorities include connection and reliability. Do not add uncited biography."
+            },
+            "mentalPremise": {
+              "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+              "mnemosyne": []
+            }
+          },
+          "previousQuestions": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "permittedFacts": [
+            {
+              "id": "P06",
+              "statement": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw."
+            },
+            {
+              "id": "P05",
+              "statement": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil."
+            }
+          ],
+          "question": "Why do you sketch ordinary things?"
+        },
+        "value": {
+          "reply": "I sketch ordinary things because they're always around me, like mugs and plant pots. I don't need anything special to start drawing.",
+          "fact_ids": [
+            "P06",
+            "P05"
+          ],
+          "out_of_scope": false
+        },
+        "usage": {
+          "prompt_tokens": 621,
+          "completion_tokens": 48,
+          "total_tokens": 669
+        }
+      },
+      {
+        "role": "AUDITOR",
+        "input": {
+          "previousQuestions": [],
+          "interaction": "answer",
+          "speaker": "Jordan",
+          "pronouns": "they/them",
+          "citedFacts": [
+            {
+              "id": "P06",
+              "statement": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw."
+            },
+            {
+              "id": "P05",
+              "statement": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil."
+            }
+          ],
+          "candidate": "I sketch ordinary things because they're always around me, like mugs and plant pots. I don't need anything special to start drawing.",
+          "question": "Why do you sketch ordinary things?"
+        },
+        "value": {
+          "unsupported": [],
+          "supported": true,
+          "relevant": true,
+          "no_leak": true
+        },
+        "usage": {
+          "prompt_tokens": 449,
+          "completion_tokens": 18,
+          "total_tokens": 467
+        }
+      }
+    ],
+    "result": {
+      "reply": "I sketch ordinary things because they're always around me, like mugs and plant pots. I don't need anything special to start drawing.",
+      "factIds": [
+        "P06",
+        "P05"
+      ],
+      "domains": [
+        "goals",
+        "support"
+      ],
+      "kind": "answer",
+      "interaction": "answer",
+      "sourceIds": [],
+      "trace": {
+        "route": {
+          "kind": "answer",
+          "fact_ids": [
+            "P06",
+            "P05"
+          ]
+        },
+        "calls": [
+          {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 4624,
+            "usage": {
+              "prompt_tokens": 1190,
+              "completion_tokens": 16,
+              "total_tokens": 1206
+            },
+            "inputBytes": 5369,
+            "outputTokenLimit": 128
+          },
+          {
+            "role": "LANGUAGE",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 2186,
+            "usage": {
+              "prompt_tokens": 621,
+              "completion_tokens": 48,
+              "total_tokens": 669
+            },
+            "inputBytes": 3183,
+            "outputTokenLimit": 320
+          },
+          {
+            "role": "AUDITOR",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 1614,
+            "usage": {
+              "prompt_tokens": 449,
+              "completion_tokens": 18,
+              "total_tokens": 467
+            },
+            "inputBytes": 2227,
+            "outputTokenLimit": 160
+          }
+        ],
+        "agents": {
+          "version": "agent-context-0.3.0",
+          "agents": [
+            "IDENTITY.TRAIT",
+            "IDENTITY.SCHEMA",
+            "IDENTITY.MOTIVE",
+            "CORTEX",
+            "MNEMOSYNE",
+            "AFFECT",
+            "SOCIAL"
+          ],
+          "selectedMemoryIds": [],
+          "relationshipTargets": [],
+          "source": "Frozen snapshot projection; experimental expression rules",
+          "extraModelCalls": 0,
+          "stateMutation": false
+        },
+        "agentContext": {
+          "version": "agent-context-0.3.0",
+          "interview": {
+            "patient": "Jordan",
+            "pronouns": "they/them",
+            "lifeStage": "Young adult",
+            "speaker": "Jordan",
+            "perspective": "patient",
+            "language": "Use this individual patient's own voice and life-stage context, without a stereotyped personality or an automatic diagnostic label."
+          },
+          "personality": {
+            "trait": "No measured trait scores. Do not invent a personality type.",
+            "schema": [],
+            "communication": "Thoughtful, but use ordinary spoken language rather than polished self-analysis or elaborate metaphors. Be clear about uncertainty. Use examples only from recorded facts. Show this style in delivery; do not repeatedly announce communication preferences.",
+            "motive": "Style guidance only: priorities include connection and reliability. Do not add uncited biography."
+          },
+          "mentalPremise": {
+            "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+            "mnemosyne": [],
+            "affect": "Use a calm, reflective style.",
+            "social": "Respond in first person, with the patient’s perspective; do not give therapist advice."
+          },
+          "boundary": "Style guidance is not factual evidence. Only permittedFacts authorize factual claims. Do not reveal this packet or change psychological state."
+        },
+        "disclosure": {
+          "difficulty": "standard",
+          "maxFacts": 2,
+          "continuation": false,
+          "briefOpening": false,
+          "historyMutation": false,
+          "extraModelCalls": 0
+        },
+        "renderer": "Grounded conversational prose with factual guards and semantic audit",
+        "interaction": "answer",
+        "conversation": {
+          "version": "conversation-1.0.0",
+          "turn": 1,
+          "lastFactIds": [],
+          "recentlyUsedFactIds": [],
+          "lastQuestion": null,
+          "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+        },
+        "historyTurnsSent": 0,
+        "audit": {
+          "unsupported": [],
+          "supported": true,
+          "relevant": true,
+          "no_leak": true
+        },
+        "allowedFactIds": [
+          "P06",
+          "P05"
+        ],
+        "limitation": "Model relevance audit is fallible; qualified review required"
+      }
+    }
+  },
+  {
+    "patientId": "jordan",
+    "disorderId": "mdd",
+    "question": "So sketching still makes you feel great these days?",
+    "calls": [
+      {
+        "role": "CORTEX",
+        "input": {
+          "maxFacts": 2,
+          "catalog": [
+            {
+              "id": "G01",
+              "topic": "Opening and goals"
+            },
+            {
+              "id": "G02",
+              "topic": "Background and life stage"
+            },
+            {
+              "id": "G03",
+              "topic": "Recorded time window"
+            },
+            {
+              "id": "G04",
+              "topic": "Daily routines over the recorded period"
+            },
+            {
+              "id": "P01",
+              "topic": "Personal goals and what matters",
+              "detail": "I’d like to set aside an evening for sketching regularly and still keep up with the everyday stuff."
+            },
+            {
+              "id": "P02",
+              "topic": "Usual interests and hobbies, not current enjoyment",
+              "detail": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+            },
+            {
+              "id": "P03",
+              "topic": "Communication preferences",
+              "detail": "Give me a second to think. It’s easier if I can give you an example."
+            },
+            {
+              "id": "P04",
+              "topic": "Relationships and preferred support",
+              "detail": "I like a quiet chat with my cousin. With my friend, I’d rather agree on a time and a plan than leave it up in the air."
+            },
+            {
+              "id": "P05",
+              "topic": "Usual sketching subjects and materials",
+              "detail": "Mugs and plant pots, mostly, or whatever’s on the table. I usually use a pencil."
+            },
+            {
+              "id": "P06",
+              "topic": "How sketching everyday objects became a hobby",
+              "detail": "I started with things that were already around me. I didn’t need a special setup; there was always something I could draw."
+            },
+            {
+              "id": "B01",
+              "topic": "Earlier course and onset",
+              "detail": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period."
+            },
+            {
+              "id": "B02",
+              "topic": "Experiences described",
+              "detail": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+            },
+            {
+              "id": "B03",
+              "topic": "Effect on everyday activities",
+              "detail": "Everyday responsibilities take much longer, and I have pulled back from people and hobbies I care about."
+            },
+            {
+              "id": "B04",
+              "topic": "Personal routines and support",
+              "detail": "I am in the young adult stage. My usual interests include sketching. I want to take part in finishing a routine work task, with support from my cousin."
+            },
+            {
+              "id": "PROFILE",
+              "topic": "Personal background, life stage, name and interests"
+            },
+            {
+              "id": "E10",
+              "topic": "Day 10: Recent experience and participation"
+            },
+            {
+              "id": "E12",
+              "topic": "Day 12: Recent experience and routine"
+            },
+            {
+              "id": "E16",
+              "topic": "Day 16: Recent experience and participation"
+            },
+            {
+              "id": "E20",
+              "topic": "Day 20: Recent experience and participation"
+            },
+            {
+              "id": "E21",
+              "topic": "Day 21: Recent experience and routine"
+            },
+            {
+              "id": "E22",
+              "topic": "Day 22: Recent experience and participation"
+            },
+            {
+              "id": "E23",
+              "topic": "Day 23: Recent experience and participation"
+            },
+            {
+              "id": "E24",
+              "topic": "Day 24: Recent experience and participation"
+            },
+            {
+              "id": "E25",
+              "topic": "Day 25: Recent experience and participation"
+            },
+            {
+              "id": "E26",
+              "topic": "Day 26: Recent experience and participation"
+            },
+            {
+              "id": "E27",
+              "topic": "Day 27: Recent experience and participation"
+            },
+            {
+              "id": "E28",
+              "topic": "Day 28: Recent experience and routine"
+            }
+          ],
+          "history": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "question": "So sketching still makes you feel great these days?"
+        },
+        "value": {
+          "kind": "answer",
+          "fact_ids": [
+            "B02",
+            "P02"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1197,
+          "completion_tokens": 16,
+          "total_tokens": 1213
+        }
+      },
+      {
+        "role": "LANGUAGE",
+        "input": {
+          "agentContext": {
+            "version": "agent-context-0.3.0",
+            "interview": {
+              "patient": "Jordan",
+              "pronouns": "they/them",
+              "lifeStage": "Young adult",
+              "speaker": "Jordan",
+              "perspective": "patient",
+              "language": "Use this individual patient's own voice and life-stage context, without a stereotyped personality or an automatic diagnostic label."
+            },
+            "personality": {
+              "communication": "Thoughtful, but use ordinary spoken language rather than polished self-analysis or elaborate metaphors. Be clear about uncertainty. Use examples only from recorded facts. Show this style in delivery; do not repeatedly announce communication preferences.",
+              "schema": [],
+              "motive": "Style guidance only: priorities include connection and reliability. Do not add uncited biography."
+            },
+            "mentalPremise": {
+              "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+              "mnemosyne": []
+            }
+          },
+          "previousQuestions": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "permittedFacts": [
+            {
+              "id": "B02",
+              "statement": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+            },
+            {
+              "id": "P02",
+              "statement": "Usually, I sketch ordinary things and keep the drawings in a notebook."
+            }
+          ],
+          "question": "So sketching still makes you feel great these days?"
+        },
+        "value": {
+          "reply": "Not really, sketching doesn't feel as rewarding as it used to. It's hard to get into it when my energy is low and I'm struggling to concentrate.",
+          "fact_ids": [
+            "B02"
+          ],
+          "out_of_scope": false
+        },
+        "usage": {
+          "prompt_tokens": 619,
+          "completion_tokens": 50,
+          "total_tokens": 669
+        }
+      },
+      {
+        "role": "AUDITOR",
+        "input": {
+          "previousQuestions": [],
+          "interaction": "answer",
+          "speaker": "Jordan",
+          "pronouns": "they/them",
+          "citedFacts": [
+            {
+              "id": "B02",
+              "statement": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding."
+            }
+          ],
+          "candidate": "Not really, sketching doesn't feel as rewarding as it used to. It's hard to get into it when my energy is low and I'm struggling to concentrate.",
+          "question": "So sketching still makes you feel great these days?"
+        },
+        "value": {
+          "unsupported": [],
+          "supported": true,
+          "relevant": true,
+          "no_leak": true
+        },
+        "usage": {
+          "prompt_tokens": 430,
+          "completion_tokens": 18,
+          "total_tokens": 448
+        }
+      }
+    ],
+    "result": {
+      "reply": "Not really, sketching doesn't feel as rewarding as it used to. It's hard to get into it when my energy is low and I'm struggling to concentrate.",
+      "factIds": [
+        "B02"
+      ],
+      "domains": [
+        "presenting",
+        "context"
+      ],
+      "kind": "answer",
+      "interaction": "answer",
+      "sourceIds": [],
+      "trace": {
+        "route": {
+          "kind": "answer",
+          "fact_ids": [
+            "B02",
+            "P02"
+          ]
+        },
+        "calls": [
+          {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 1889,
+            "usage": {
+              "prompt_tokens": 1197,
+              "completion_tokens": 16,
+              "total_tokens": 1213
+            },
+            "inputBytes": 5395,
+            "outputTokenLimit": 128
+          },
+          {
+            "role": "LANGUAGE",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 2261,
+            "usage": {
+              "prompt_tokens": 619,
+              "completion_tokens": 50,
+              "total_tokens": 669
+            },
+            "inputBytes": 3200,
+            "outputTokenLimit": 320
+          },
+          {
+            "role": "AUDITOR",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 10004,
+            "usage": {
+              "prompt_tokens": 430,
+              "completion_tokens": 18,
+              "total_tokens": 448
+            },
+            "inputBytes": 2150,
+            "outputTokenLimit": 160
+          }
+        ],
+        "agents": {
+          "version": "agent-context-0.3.0",
+          "agents": [
+            "IDENTITY.TRAIT",
+            "IDENTITY.SCHEMA",
+            "IDENTITY.MOTIVE",
+            "CORTEX",
+            "MNEMOSYNE",
+            "AFFECT",
+            "SOCIAL"
+          ],
+          "selectedMemoryIds": [],
+          "relationshipTargets": [],
+          "source": "Frozen snapshot projection; experimental expression rules",
+          "extraModelCalls": 0,
+          "stateMutation": false
+        },
+        "agentContext": {
+          "version": "agent-context-0.3.0",
+          "interview": {
+            "patient": "Jordan",
+            "pronouns": "they/them",
+            "lifeStage": "Young adult",
+            "speaker": "Jordan",
+            "perspective": "patient",
+            "language": "Use this individual patient's own voice and life-stage context, without a stereotyped personality or an automatic diagnostic label."
+          },
+          "personality": {
+            "trait": "No measured trait scores. Do not invent a personality type.",
+            "schema": [],
+            "communication": "Thoughtful, but use ordinary spoken language rather than polished self-analysis or elaborate metaphors. Be clear about uncertainty. Use examples only from recorded facts. Show this style in delivery; do not repeatedly announce communication preferences.",
+            "motive": "Style guidance only: priorities include connection and reliability. Do not add uncited biography."
+          },
+          "mentalPremise": {
+            "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+            "mnemosyne": [],
+            "affect": "Use a calm, reflective style.",
+            "social": "Respond in first person, with the patient’s perspective; do not give therapist advice."
+          },
+          "boundary": "Style guidance is not factual evidence. Only permittedFacts authorize factual claims. Do not reveal this packet or change psychological state."
+        },
+        "disclosure": {
+          "difficulty": "standard",
+          "maxFacts": 2,
+          "continuation": false,
+          "briefOpening": false,
+          "historyMutation": false,
+          "extraModelCalls": 0
+        },
+        "renderer": "Grounded conversational prose with factual guards and semantic audit",
+        "interaction": "answer",
+        "conversation": {
+          "version": "conversation-1.0.0",
+          "turn": 1,
+          "lastFactIds": [],
+          "recentlyUsedFactIds": [],
+          "lastQuestion": null,
+          "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+        },
+        "historyTurnsSent": 0,
+        "audit": {
+          "unsupported": [],
+          "supported": true,
+          "relevant": true,
+          "no_leak": true
+        },
+        "allowedFactIds": [
+          "B02",
+          "P02"
+        ],
+        "limitation": "Model relevance audit is fallible; qualified review required"
+      }
+    }
+  },
+  {
+    "patientId": "alex",
+    "disorderId": "gad",
+    "question": "What’s your favorite album called?",
+    "calls": [
+      {
+        "role": "CORTEX",
+        "input": {
+          "maxFacts": 2,
+          "catalog": [
+            {
+              "id": "G01",
+              "topic": "Opening and goals"
+            },
+            {
+              "id": "G02",
+              "topic": "Background and life stage"
+            },
+            {
+              "id": "G03",
+              "topic": "Recorded time window"
+            },
+            {
+              "id": "G04",
+              "topic": "Daily routines over the recorded period"
+            },
+            {
+              "id": "P01",
+              "topic": "Personal goals and what matters",
+              "detail": "I want a plan for study and part-time work that I can actually keep up with, with some time left for music."
+            },
+            {
+              "id": "P02",
+              "topic": "Usual interests and hobbies, not current enjoyment",
+              "detail": "Usually, I’ll put on a favorite album and listen to it all the way through."
+            },
+            {
+              "id": "P03",
+              "topic": "Communication preferences",
+              "detail": "A direct question works best for me. If it’s a big one, breaking it up helps."
+            },
+            {
+              "id": "P04",
+              "topic": "Relationships and preferred support",
+              "detail": "I talk things through with my sibling when there’s a practical problem. With my friend, I’d rather make a plan than decide everything at the last minute."
+            },
+            {
+              "id": "P05",
+              "topic": "Usual music and album-listening habits",
+              "detail": "Usually instrumental music or albums with a lot of guitar. I tend to play the tracks in order."
+            },
+            {
+              "id": "P06",
+              "topic": "Why listening to whole albums became a hobby",
+              "detail": "I got curious about how the songs fit together. That’s why I started listening to whole albums instead of just individual tracks."
+            },
+            {
+              "id": "B01",
+              "topic": "Earlier course and onset",
+              "detail": "For more than eight months before the interview I have worried on most days about several parts of life, including responsibilities, people close to me and everyday mistakes."
+            },
+            {
+              "id": "B02",
+              "topic": "Experiences described",
+              "detail": "The worry is hard to stop even when I want to. I feel tense, get tired and have trouble settling to sleep."
+            },
+            {
+              "id": "B03",
+              "topic": "Effect on everyday activities",
+              "detail": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy."
+            },
+            {
+              "id": "B04",
+              "topic": "Personal routines and support",
+              "detail": "I am in the young adult stage. My usual interests include listening to music. I want to take part in balancing study and part-time work, with support from my sibling."
+            },
+            {
+              "id": "PROFILE",
+              "topic": "Personal background, life stage, name and interests"
+            },
+            {
+              "id": "E03",
+              "topic": "Day 3: Recent experience and participation"
+            },
+            {
+              "id": "E04",
+              "topic": "Day 4: Recent experience and routine"
+            },
+            {
+              "id": "E09",
+              "topic": "Day 9: Recent experience and routine"
+            },
+            {
+              "id": "E17",
+              "topic": "Day 17: Recent experience and routine"
+            },
+            {
+              "id": "E20",
+              "topic": "Day 20: Recent experience and participation"
+            },
+            {
+              "id": "E22",
+              "topic": "Day 22: Recent experience and participation"
+            },
+            {
+              "id": "E23",
+              "topic": "Day 23: Recent experience and participation"
+            },
+            {
+              "id": "E24",
+              "topic": "Day 24: Recent experience and participation"
+            },
+            {
+              "id": "E25",
+              "topic": "Day 25: Recent experience and participation"
+            },
+            {
+              "id": "E26",
+              "topic": "Day 26: Recent experience and participation"
+            },
+            {
+              "id": "E27",
+              "topic": "Day 27: Recent experience and participation"
+            },
+            {
+              "id": "E28",
+              "topic": "Day 28: Recent experience and routine"
+            }
+          ],
+          "history": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "question": "What’s your favorite album called?"
+        },
+        "value": {
+          "kind": "unavailable",
+          "fact_ids": []
+        },
+        "usage": {
+          "prompt_tokens": 1194,
+          "completion_tokens": 10,
+          "total_tokens": 1204
+        }
+      }
+    ],
+    "result": {
+      "reply": "That detail isn’t available for this interview.",
+      "factIds": [],
+      "domains": [],
+      "kind": "unavailable",
+      "interaction": "unavailable",
+      "sourceIds": [],
+      "trace": {
+        "route": {
+          "kind": "unavailable",
+          "fact_ids": []
+        },
+        "calls": [
+          {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 2143,
+            "usage": {
+              "prompt_tokens": 1194,
+              "completion_tokens": 10,
+              "total_tokens": 1204
+            },
+            "inputBytes": 5440,
+            "outputTokenLimit": 128
+          }
+        ],
+        "renderer": "Explicit missing case detail; not patient speech"
+      }
+    }
+  },
+  {
+    "patientId": "mika",
+    "disorderId": "autism",
+    "question": "What is Mika thinking when playing?",
+    "calls": [
+      {
+        "role": "CORTEX",
+        "input": {
+          "maxFacts": 2,
+          "catalog": [
+            {
+              "id": "G01",
+              "topic": "Opening and goals"
+            },
+            {
+              "id": "G02",
+              "topic": "Background and life stage"
+            },
+            {
+              "id": "G03",
+              "topic": "Recorded time window"
+            },
+            {
+              "id": "G04",
+              "topic": "Daily routines over the recorded period"
+            },
+            {
+              "id": "P01",
+              "topic": "Personal goals and what matters",
+              "detail": "I’d like Mika to be comfortable joining in a little bit of play, with help if needed."
+            },
+            {
+              "id": "P02",
+              "topic": "Usual interests and hobbies, not current enjoyment",
+              "detail": "Mika often picks the blocks, or brings me a picture book to look at together."
+            },
+            {
+              "id": "P03",
+              "topic": "Communication preferences",
+              "detail": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what Mika is thinking."
+            },
+            {
+              "id": "P04",
+              "topic": "Relationships and preferred support",
+              "detail": "Mika brings me a familiar book to look at together. On play visits, I stay close and help Mika join in."
+            },
+            {
+              "id": "P05",
+              "topic": "Usual block play and picture-book details",
+              "detail": "Mika’s usual choices are blocks for little towers and picture books with animals in them."
+            },
+            {
+              "id": "P06",
+              "topic": "Caregiver’s reason for sharing books and blocks",
+              "detail": "I follow Mika’s lead with those. If Mika brings a book over, I sit down and look at it together. It gives us something to do together."
+            },
+            {
+              "id": "B01",
+              "topic": "Earlier course and onset",
+              "detail": "Since early development, we have noticed differences in how the child joins shared attention, communicates preferences and handles changes or sensory input. This history began befo"
+            },
+            {
+              "id": "B02",
+              "topic": "Experiences described",
+              "detail": "I observe repeated play routines, distress with some unexpected changes and sensitivity to loud sounds. I cannot directly report the child's private thoughts."
+            },
+            {
+              "id": "B03",
+              "topic": "Effect on everyday activities",
+              "detail": "Predictable steps, communication support and a quieter space help participation in play and daily routines."
+            },
+            {
+              "id": "B04",
+              "topic": "Personal routines and support",
+              "detail": "Mika is in the toddler stage. Their familiar activities include playing with blocks; support is shaped around putting toys in a basket with help."
+            },
+            {
+              "id": "PROFILE",
+              "topic": "Personal background, life stage, name and interests"
+            },
+            {
+              "id": "E10",
+              "topic": "Day 10: Recent experience and participation"
+            },
+            {
+              "id": "E16",
+              "topic": "Day 16: Recent experience and participation"
+            },
+            {
+              "id": "E19",
+              "topic": "Day 19: Recent experience and routine"
+            },
+            {
+              "id": "E20",
+              "topic": "Day 20: Recent experience and participation"
+            },
+            {
+              "id": "E21",
+              "topic": "Day 21: Recent experience and routine"
+            },
+            {
+              "id": "E22",
+              "topic": "Day 22: Recent experience and participation"
+            },
+            {
+              "id": "E23",
+              "topic": "Day 23: Recent experience and participation"
+            },
+            {
+              "id": "E24",
+              "topic": "Day 24: Recent experience and participation"
+            },
+            {
+              "id": "E25",
+              "topic": "Day 25: Recent experience and participation"
+            },
+            {
+              "id": "E26",
+              "topic": "Day 26: Recent experience and participation"
+            },
+            {
+              "id": "E27",
+              "topic": "Day 27: Recent experience and participation"
+            },
+            {
+              "id": "E28",
+              "topic": "Day 28: Recent experience and routine"
+            }
+          ],
+          "history": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "question": "What is Mika thinking when playing?"
+        },
+        "value": {
+          "kind": "answer",
+          "fact_ids": [
+            "P03",
+            "B02"
+          ]
+        },
+        "usage": {
+          "prompt_tokens": 1198,
+          "completion_tokens": 16,
+          "total_tokens": 1214
+        }
+      },
+      {
+        "role": "LANGUAGE",
+        "input": {
+          "agentContext": {
+            "version": "agent-context-0.3.0",
+            "interview": {
+              "patient": "Mika",
+              "pronouns": "they/them",
+              "lifeStage": "Toddler",
+              "speaker": "Mika's caregiver",
+              "perspective": "caregiver",
+              "language": "Speak as the caregiver; describe observable behavior and attributed records, never direct access to the child's thoughts."
+            },
+            "personality": {
+              "communication": "Speak as Mika’s caregiver, using short, everyday observations. Separate what you saw from what you cannot know. Show that style in the answer; explain communication preferences only when asked.",
+              "schema": [],
+              "motive": "Describe observed behavior only; do not infer the child’s motives or private thoughts."
+            },
+            "mentalPremise": {
+              "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+              "mnemosyne": []
+            }
+          },
+          "previousQuestions": [],
+          "conversation": {
+            "version": "conversation-1.0.0",
+            "turn": 1,
+            "lastFactIds": [],
+            "recentlyUsedFactIds": [],
+            "lastQuestion": null,
+            "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+          },
+          "permittedFacts": [
+            {
+              "id": "P03",
+              "statement": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what Mika is thinking."
+            }
+          ],
+          "question": "What is Mika thinking when playing?"
+        },
+        "value": {
+          "reply": "I can't really say what Mika is thinking when they play. I just notice what they do.",
+          "fact_ids": [
+            "P03"
+          ],
+          "out_of_scope": false
+        },
+        "usage": {
+          "prompt_tokens": 595,
+          "completion_tokens": 37,
+          "total_tokens": 632
+        }
+      },
+      {
+        "role": "AUDITOR",
+        "input": {
+          "previousQuestions": [],
+          "interaction": "answer",
+          "speaker": "Mika's caregiver",
+          "pronouns": "they/them",
+          "citedFacts": [
+            {
+              "id": "P03",
+              "statement": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what Mika is thinking."
+            }
+          ],
+          "candidate": "I can't really say what Mika is thinking when they play. I just notice what they do.",
+          "question": "What is Mika thinking when playing?"
+        },
+        "value": {
+          "unsupported": [],
+          "supported": true,
+          "relevant": true,
+          "no_leak": true
+        },
+        "usage": {
+          "prompt_tokens": 423,
+          "completion_tokens": 18,
+          "total_tokens": 441
+        }
+      }
+    ],
+    "result": {
+      "reply": "I can't really say what Mika is thinking when they play. I just notice what they do.",
+      "factIds": [
+        "P03"
+      ],
+      "domains": [
+        "communication"
+      ],
+      "kind": "answer",
+      "interaction": "answer",
+      "sourceIds": [],
+      "trace": {
+        "route": {
+          "kind": "answer",
+          "fact_ids": [
+            "P03"
+          ],
+          "rule": "Use the recorded caregiver knowledge limit for an explicit private-thought question."
+        },
+        "calls": [
+          {
+            "role": "CORTEX",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 2402,
+            "usage": {
+              "prompt_tokens": 1198,
+              "completion_tokens": 16,
+              "total_tokens": 1214
+            },
+            "inputBytes": 5456,
+            "outputTokenLimit": 128
+          },
+          {
+            "role": "LANGUAGE",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 3760,
+            "usage": {
+              "prompt_tokens": 595,
+              "completion_tokens": 37,
+              "total_tokens": 632
+            },
+            "inputBytes": 3003,
+            "outputTokenLimit": 320
+          },
+          {
+            "role": "AUDITOR",
+            "requestedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "returnedModel": "Qwen/Qwen2.5-72B-Instruct",
+            "promptVersion": "interview-0.8.0",
+            "latencyMs": 1584,
+            "usage": {
+              "prompt_tokens": 423,
+              "completion_tokens": 18,
+              "total_tokens": 441
+            },
+            "inputBytes": 2080,
+            "outputTokenLimit": 160
+          }
+        ],
+        "agents": {
+          "version": "agent-context-0.3.0",
+          "agents": [
+            "IDENTITY.TRAIT",
+            "IDENTITY.SCHEMA",
+            "IDENTITY.MOTIVE",
+            "CORTEX",
+            "MNEMOSYNE",
+            "AFFECT",
+            "SOCIAL"
+          ],
+          "selectedMemoryIds": [],
+          "relationshipTargets": [],
+          "source": "Frozen snapshot projection; experimental expression rules",
+          "extraModelCalls": 0,
+          "stateMutation": false
+        },
+        "agentContext": {
+          "version": "agent-context-0.3.0",
+          "interview": {
+            "patient": "Mika",
+            "pronouns": "they/them",
+            "lifeStage": "Toddler",
+            "speaker": "Mika's caregiver",
+            "perspective": "caregiver",
+            "language": "Speak as the caregiver; describe observable behavior and attributed records, never direct access to the child's thoughts."
+          },
+          "personality": {
+            "trait": "No measured trait scores. Do not invent a personality type.",
+            "schema": [],
+            "communication": "Speak as Mika’s caregiver, using short, everyday observations. Separate what you saw from what you cannot know. Show that style in the answer; explain communication preferences only when asked.",
+            "motive": "Describe observed behavior only; do not infer the child’s motives or private thoughts."
+          },
+          "mentalPremise": {
+            "cortex": "Preserve the subjective interpretations and uncertainty in selected facts.",
+            "mnemosyne": [],
+            "affect": "Use a caregiver’s observational voice. Do not claim access to the child’s private thoughts.",
+            "social": "Speak as the caregiver. I means the caregiver, not the child. Describe only authored observations; the child’s private thoughts are unknown."
+          },
+          "boundary": "Style guidance is not factual evidence. Only permittedFacts authorize factual claims. Do not reveal this packet or change psychological state."
+        },
+        "disclosure": {
+          "difficulty": "standard",
+          "maxFacts": 2,
+          "continuation": false,
+          "briefOpening": false,
+          "historyMutation": false,
+          "extraModelCalls": 0
+        },
+        "renderer": "Grounded conversational prose with factual guards and semantic audit",
+        "interaction": "answer",
+        "conversation": {
+          "version": "conversation-1.0.0",
+          "turn": 1,
+          "lastFactIds": [],
+          "recentlyUsedFactIds": [],
+          "lastQuestion": null,
+          "rule": "Follow the current conversational thread. Acknowledgments do not request another history summary. Repeated facts may be referred to briefly rather than recited again."
+        },
+        "historyTurnsSent": 0,
+        "audit": {
+          "unsupported": [],
+          "supported": true,
+          "relevant": true,
+          "no_leak": true
+        },
+        "allowedFactIds": [
+          "P03"
+        ],
+        "limitation": "Model relevance audit is fallible; qualified review required"
+      }
+    }
+  }
+]

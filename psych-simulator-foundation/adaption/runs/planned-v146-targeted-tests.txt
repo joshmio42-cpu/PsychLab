@@ -1,0 +1,31 @@
+✔ Missing credentials do not make a network call (1.8852ms)
+✔ Provider contract uses fixed endpoint, server key and usage metadata (2.9463ms)
+✔ Truncation, malformed JSON and HTTP failure reject without fallback (0.7853ms)
+✔ Provider uses nonzero samplers, prompt JSON and explicit supported reasoning controls (1.3895ms)
+✔ Malformed output, HTTP failures and transport failures never trigger automatic retry or model fallback (0.8103ms)
+✔ Authored provenance limits are not patient ignorance, while authored patient uncertainty stays usable (1.2217ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (44.2739ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (9.656ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (10.8371ms)
+✔ Leading dates and assumptions reach planning and audit but never the patient writer (10.9729ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (10.8152ms)
+✔ An unambiguous callback cannot route to a similar but different older source (10.4988ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (8.8845ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (9.1043ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (11.3212ms)
+✔ Challenging opening quotes and writes only the authored brief version (15.1003ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (11.1679ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (10.1023ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (13.8592ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (12.7119ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (14.5027ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (65.0693ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3992.8765ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4566.4398

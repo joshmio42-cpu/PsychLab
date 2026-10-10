@@ -1,0 +1,41 @@
+Formative rehearsal debrief
+Scripted review prototype; not a live AI evaluation
+Case CASE-A01 v0.1.0 | rubric 0.1.0 | sources 2026-10-05
+
+TOPICS OPENED 3/15
+Topics opened, not a competence score.
+Opened: presenting, associated, function
+Still unexplored: timeline, worry, control, context, medical, medication, substances, alternatives, safety, support, goals, history
+
+ASSESSMENT
+Not administered. No result is disclosed.
+
+LEARNER REASONING
+hypothesis: Anxiety is possible.
+support: Sleep and work are affected.
+alternatives: Not explored.
+missing: Duration and possible other explanations.
+next: Ask more about the timeline.
+
+EVIDENCE
+T1 | F01
+Question: What would you like help with today?
+Client: I keep worrying, and it is getting hard to sleep. I would like to understand what is happening.
+
+T2 | F05
+Question: How has your sleep been?
+Client: On most nights it takes me an hour or more to fall asleep because I am thinking through everything. I sleep around five or six hours and feel tired the next day.
+
+T3 | F07
+Question: How is this affecting work, home, and things you enjoy?
+Client: I recheck routine emails and have missed two deadlines this month. I have turned down some plans because I am exhausted, but I still enjoy sketching and seeing my cousin when I manage it.
+
+RATINGS
+Interview coverage: NR - Qualified review pending; no automated clinical rating.
+Communication: NR - Qualified review pending; no automated clinical rating.
+Reasoning: NR - Qualified review pending; no automated clinical rating.
+Assessment use: NR - Qualified review pending; no automated clinical rating.
+Next steps and uncertainty: NR - Qualified review pending; no automated clinical rating.
+
+NEXT REVIEW
+Use the rubric to examine your question quality, evidence and alternatives with a supervisor. Coverage is descriptive. Hidden-case facts are not evidence you elicited. This report is not a certification.

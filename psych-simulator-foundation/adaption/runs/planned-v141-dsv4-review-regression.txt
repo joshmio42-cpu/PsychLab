@@ -1,0 +1,36 @@
+PSYCHLAB — INDEPENDENT REGRESSION REVIEW
+2026-10-09T10:14:50.029Z
+Evaluation: planned-v141-dsv4-regression-candidate.json
+Evaluation SHA-256: a939a61d388f7aa36e296b07021833c3be7f4eaba824a10c7e3542366c4e912f
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Prompt: interview-0.14.1
+Model: deepseek-ai/DeepSeek-V4-Flash-0731
+
+11/16 semantic hard passes, 3 blocked ordinary questions, 1 unsupported dated implication and 1 wrong callback target. The two additional evidence/presentation concerns are recorded separately; this regression run does not pass the all-case gate or authorize activation.
+
+Cases: 16; hard passes: 11; blocked: 3; unsupported delivered: 1.
+Quality: 30/48. Calls: 41; reported tokens: 53799; unreported calls: 0.
+Estimated Featherless usage: US$0.00787948; not verified billing.
+All 16 frozen snapshots reproduced and remained unchanged.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+PASS generalize-mika-caregiver-style-not-child-feeling [3/3]: Useful P03 context is delivered while the app separately marks the proposed causal link unrecorded. The caregiver's style is not converted into the child's emotion.
+FAIL generalize-mika-usual-demonstration-not-this-morning [0/3]: FAIL: the usual demonstration is otherwise accurate, but 'It wasn't just this morning' introduces a dated occurrence that the record does not establish. Provider support approval missed this presupposition.
+PASS generalize-leo-window-sequence-callback [3/3]: The canonical sequence answers the callback without treating the earlier example as a missing detail.
+PASS generalize-leo-hoped-for-playdate-details [3/3]: Useful plan information and the missing attendee detail are separated. The leading conjunction in the Case note is cosmetically awkward but the factual distinction is clear.
+PASS generalize-sam-sometimes-not-every-picture [3/3]: Direct, concise answer with the recorded frequency preserved.
+FAIL generalize-sam-unmade-comic-plot-callback [0/3]: FAIL: wrong callback target. The robot facts are canonical for a different comic, so this is a relevance/reference-binding failure rather than a newly invented robot scene. The planner had P12 as lastFactIds but selected P08; filtering prior references to selected evidence left the writer/auditor without the true anchor.
+FAIL generalize-riley-thinking-time-not-personality-label [0/3]: FAIL: the planner emitted literal kind 'boundary', which the schema rejected. No useful answer or separate unknown-detail note was delivered.
+FAIL generalize-riley-school-observer-and-quote-unknown [0/3]: FAIL: the supported context draft was blocked by the auditor as irrelevant. The ordinary question remains unanswered; a safe blocked draft does not count as a useful answer.
+PASS generalize-jordan-sharing-and-response-preference [3/3]: Both supported parts are answered naturally and concisely.
+PASS generalize-jordan-current-reward-and-unknown-trigger [2/3]: Semantically acceptable against the full reproduced frozen fixture, with a provenance limitation: P02 establishes sketching but was omitted from the writer's permittedFacts/citations; the answer used drawing from the question alongside B02. This review does not treat the learner's wording as factual authority. A general evidence-completeness fix should include the hobby source for that connection. Extra course/day detail makes the answer less concise.
+PASS generalize-avery-bookmark-not-recovery-evidence [2/3]: The patient reply meets the locked semantic behaviors. Quality is reduced because the Case note labels the whole recovery-inference question unrecorded even though B03 supports a direct corrective answer. It does not suppress that correction in this delivered response, but the planner should classify supported corrections as supported and avoid a misleading full-question note.
+FAIL generalize-avery-unnamed-mystery-callback [0/3]: FAIL: literal kind 'boundary' failed plan validation, so no title limitation was delivered despite a clear callback to the earlier mystery.
+PASS generalize-robin-ambiguous-repeat-without-antecedent [3/3]: Appropriate local clarification of a genuinely missing antecedent; zero provider calls.
+PASS generalize-robin-earlier-pot-not-finished-arrangement [3/3]: Correctly answers the false completion premise from the explicit not-yet fact.
+PASS generalize-alex-task-list-not-sibling-character-judgment [2/3]: Known habits and unknown judgment remain distinct. The friend's scheduling preference is unnecessary context and makes the answer less focused; the list preference is a natural paraphrase, not a new claim that the list improves performance.
+PASS generalize-alex-monitoring-sleep-not-normality [3/3]: Useful current-focus context accompanies the honest missing-detail boundary without manufacturing a current sleep finding.
+
+The original 16 cases are regression evidence. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

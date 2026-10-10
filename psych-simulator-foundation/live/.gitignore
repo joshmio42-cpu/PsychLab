@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+*.log
+*.credential.xml
+public-access.json
+.runtime/
+node_modules/
+*.heapsnapshot
+*.heapprofile
+report.*.json

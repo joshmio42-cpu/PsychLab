@@ -1,0 +1,229 @@
+PSYCHLAB INTERVIEW GUIDANCE — PART A
+Research access date: 2026-10-08
+Coverage: catalogue indices 0–22 inclusive: adhd, autism, learning, language, idd, tourette, mdd, pdd, dmdd, pmdd, bipolar1, bipolar2, cyclothymia, gad, panic, social_anxiety, specific_phobia, agoraphobia, separation, selective_mutism, ocd, bdd, hoarding.
+
+PURPOSE AND METHOD
+Read the current live/data/disorder-catalogue.json and existing source register, then independently searched and opened authoritative public sources. The accompanying JSON contains 23 disorder-specific educational guides, with 116 original inquiry checkpoints, course anchors, differential prompts, one relevant assessment approach/reference, and age/safety cautions. It includes child-only options as well as the conditions available to young adults.
+
+These are original teaching questions, not copied DSM criteria, a validated checklist, an administered screening instrument, or a diagnostic scoring system. Checkpoint status records what the learner explored and what evidence was elicited. It must not turn a completed checklist into a diagnosis, nor infer symptom absence from an unanswered question. Learners should retain uncertainty, alternative explanations, functioning and temporal evidence.
+
+SOURCE SCOPE AND LIMITS
+Full licensed DSM-5-TR was not accessed. APA patient summaries, an original DSM-5 publisher fact sheet, federal health guidance, original assessment research and publisher/author-hosted instrument guidance support this teaching layer. Public summaries omit exclusions, specifiers and detailed rules. Timelines are inquiry anchors, not a complete implementation of diagnostic criteria. Sources are dated by their own publication where known; access today does not turn an older paper into current validation. The app's age-stage labels do not supply the exact chronological age needed to administer age-restricted scales.
+
+ASSESSMENT INTERPRETATION
+For developmental presentations, use appropriate specialist observation, developmental records and caregiver/teacher collateral. A fluent text exchange cannot establish motor tics, intellectual ability, autism, language performance or selective mutism. Infant/toddler cases especially need proxy/observational evidence and cannot be treated as adult self-reports.
+
+Where there is a suitable instrument, the JSON links to an external source and describes its purpose; it does not reproduce the form or compute its score. APA depression (adapted PHQ-9) and several severity forms use a seven-day interval, which must not be substituted for the disorder's duration. The linked parent ARI is an age 6–17 adaptation; its window differs from the original six-month ARI, and it measures irritability rather than a DMDD diagnosis. APA's instrument pages specify reproduction rights, including limits on modification/electronic reuse. No permission has been assumed for embedding their items.
+
+The BDDQ screens; an interview follows a positive result. BDD-YBOCS describes severity in diagnosed BDD and must not be substituted as a diagnostic screen. The HRS-I study describes an assessment of hoarding severity/impact, not a universal diagnostic shortcut. DRSP evidence reviewed was the 2006 original-study abstract; it concerned adult DSM-IV-era assessment. The current PMDD guide requires prospective cycle evidence but intentionally does not claim a complete DSM-5-TR diagnostic algorithm.
+
+NOTABLE RECONCILIATIONS
+* DMDD: NIMH's public brochure uses a simplified diagnosis-age range of 6–10. APA's publisher fact sheet distinguishes onset before 10 from first diagnosis ages 6–18; that more precise distinction is used. APA also explains why DMDD and ODD should not automatically both be assigned.
+* PDD and cyclothymia need a long adult or youth history. Adjustable simulated days cannot manufacture the required developmental or longitudinal evidence.
+* Mania versus hypomania requires a distinct episode, changed functioning and severity context. A current depression presentation alone cannot distinguish bipolar II.
+* Tourette's does not require swearing. Functional impact is explored for needs, but absence of impairment alone does not exclude the diagnosis.
+* Selective mutism: ASHA supports setting comparison, duration beyond initial school adjustment, language/hearing evaluation and an interdisciplinary approach. Nonverbal communication should be available rather than forced speech.
+* Specific-phobia six-month timing was corroborated in SAMHSA's official indexed Table 3.11. Direct PDF access returned 403 and the NCBI mirror displayed a browser challenge; this is an extract-level timing reference, not a claim to have read the full report.
+* Questions about suicidality, severe manic disruption, medical causes of panic, and household hazards describe assessment needs, not risk prediction from a disorder label. Screening scores never override an immediate concern.
+* Differential lists are concise educational comparisons to investigate, not exhaustive lists or ruled-out diagnoses.
+
+ACCESS REGISTER
+Unless explicitly noted below, each listed page/PDF was opened and relevant body text or assessment instructions inspected in this research session. Catalogue entries cite their supporting subset.
+NIMH: Attention-deficit/hyperactivity disorder
+https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know
+Access: Opened public page/PDF.
+
+CDC: Diagnosing ADHD
+https://www.cdc.gov/adhd/diagnosis/index.html
+Access: Opened public page/PDF.
+
+NIMH: Autism spectrum disorder
+https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder
+Access: Opened public page/PDF.
+
+CDC: Screening for autism spectrum disorder
+https://www.cdc.gov/autism/diagnosis/index.html
+Access: Opened public page/PDF.
+
+APA: What are specific learning disorders?
+https://www.psychiatry.org/patients-families/specific-learning-disorder/what-is-specific-learning-disorder
+Access: Opened public page/PDF.
+
+NIDCD: Developmental language disorder
+https://www.nidcd.nih.gov/health/developmental-language-disorder
+Access: Opened public page/PDF.
+
+APA: What is intellectual disability?
+https://www.psychiatry.org/patients-families/intellectual-disability/what-is-intellectual-disability
+Access: Opened public page/PDF.
+
+CDC: Diagnosing tic disorders
+https://www.cdc.gov/tourette-syndrome/diagnosis/index.html
+Access: Opened public page/PDF.
+
+NIMH: Depression
+https://www.nimh.nih.gov/health/publications/depression
+Access: Opened public page/PDF.
+
+APA: Depression and related conditions
+https://www.psychiatry.org/patients-families/depression/what-is-depression
+Access: Opened public page/PDF.
+
+APA: Disruptive mood dysregulation disorder fact sheet
+https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Disruptive-Mood-Disregulation-Disorder.pdf
+Access: Opened public page/PDF.
+
+NIMH: DMDD — the basics
+https://www.nimh.nih.gov/health/publications/disruptive-mood-dysregulation-disorder
+Access: Opened public page/PDF.
+
+Endicott, Nee and Harrison: DRSP reliability and validity (2006; abstract)
+https://pubmed.ncbi.nlm.nih.gov/16172836/
+Access: Original-study abstract retrieved in indexed PubMed result; direct open returned only a stub.
+
+NIMH: Bipolar disorder
+https://www.nimh.nih.gov/health/publications/bipolar-disorder
+Access: Opened public page/PDF.
+
+APA: What are bipolar disorders?
+https://www.psychiatry.org/patients-families/bipolar-disorders/what-are-bipolar-disorders
+Access: Opened public page/PDF.
+
+NHS: Cyclothymia
+https://www.nhs.uk/mental-health/conditions/cyclothymia/
+Access: Opened public page/PDF.
+
+NIMH: Generalized anxiety disorder
+https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad
+Access: Opened public page/PDF.
+
+NIMH: Panic disorder
+https://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms
+Access: Opened public page/PDF.
+
+NIMH: Social anxiety disorder
+https://www.nimh.nih.gov/health/publications/social-anxiety-disorder-more-than-just-shyness
+Access: Opened public page/PDF.
+
+APA: What are anxiety disorders?
+https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders
+Access: Opened public page/PDF.
+
+NHS: Phobias
+https://www.nhs.uk/mental-health/conditions/phobias/
+Access: Opened public page/PDF.
+
+NHS: Agoraphobia diagnosis
+https://www.nhs.uk/mental-health/conditions/agoraphobia/diagnosis/
+Access: Opened public page/PDF.
+
+AACAP: Anxiety disorder frequently asked questions
+https://www.aacap.org/AACAP/aacap/Families_and_Youth/Resource_Centers/Anxiety_Disorder_Resource_Center/FAQ.aspx
+Access: Opened public page/PDF.
+
+NIMH: Children and mental health — assessment
+https://www.nimh.nih.gov/health/publications/children-and-mental-health
+Access: Opened public page/PDF.
+
+ASHA Practice Portal: Selective mutism
+https://www.asha.org/practice-portal/clinical-topics/selective-mutism/
+Access: Opened public page/PDF.
+
+NHS: Selective mutism
+https://www.nhs.uk/mental-health/conditions/selective-mutism/
+Access: Opened public page/PDF.
+
+NIMH: Obsessive-compulsive disorder
+https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over
+Access: Opened public page/PDF.
+
+IOCDF / Katharine Phillips: Clinical assessment of BDD
+https://bdd.iocdf.org/professionals/clinical-assessment-of-bdd/
+Access: Opened public page/PDF.
+
+IOCDF: Assessment tools for BDD
+https://bdd.iocdf.org/professionals/assessment-tools-for-bdd/
+Access: Opened public page/PDF.
+
+APA: What is hoarding disorder?
+https://www.psychiatry.org/patients-families/hoarding-disorder/what-is-hoarding-disorder
+Access: Opened public page/PDF.
+
+Tolin et al.: Development and validation of the Hoarding Rating Scale–Interview
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2914137/
+Access: Opened public page/PDF.
+
+IOCDF: Clinical assessment of hoarding
+https://hoarding.iocdf.org/professionals/clinical-assessment/
+Access: Opened public page/PDF.
+
+APA: DSM-5-TR online assessment measures
+https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures
+Access: Opened public page/PDF.
+
+APA: Adult depression severity measure, adapted PHQ-9
+https://www.psychiatry.org/getmedia/a3986be5-94af-42e7-afce-19234c2f4998/APA-DSM5TR-SeverityMeasureForDepressionAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Parent ARI irritability measure, ages 6–17
+https://www.psychiatry.org/getmedia/773055df-7885-4398-bda8-42e3a3b1b21e/APA-DSM5TR-Level2IrritabilityParentOfChildAge6To17.pdf
+Access: Opened public page/PDF.
+
+APA: Adult specific phobia severity measure
+https://www.psychiatry.org/getmedia/b281daed-b8a9-4d45-8d6f-6315ce8f784b/APA-DSM5TR-SeverityMeasureForSpecificPhobiaAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Adult social anxiety severity measure
+https://www.psychiatry.org/getmedia/69c11866-906c-4262-bfe3-753ac4ad2780/APA-DSM5TR-SeverityMeasureForSocialAnxietyDisorderAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Adult panic disorder severity measure
+https://www.psychiatry.org/getmedia/6ab8ea4f-e810-4c0c-b41c-16838293506d/APA-DSM5TR-SeverityMeasureForPanicDisorderAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Adult agoraphobia severity measure
+https://www.psychiatry.org/getmedia/3345c156-1aac-4e29-ac61-1c6541cb39be/APA-DSM5TR-SeverityMeasureForAgoraphobiaAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Adult generalized anxiety severity measure
+https://www.psychiatry.org/getmedia/b1a256c4-1304-4610-8aca-0cc70b46ff53/APA-DSM5TR-SeverityMeasureForGeneralizedAnxietyDisorderAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Adult separation anxiety severity measure
+https://www.psychiatry.org/getmedia/538a62c3-2e1e-4bc3-bafd-7a02efad4937/APA-DSM5TR-SeverityMeasureForSeparationAnxietyDisorderAdult.pdf
+Access: Opened public page/PDF.
+
+APA: Adult repetitive thoughts/behaviors measure, adapted FOCI severity scale
+https://www.psychiatry.org/getmedia/a451f9f0-40b7-4262-8ef2-e7be2ea004f2/APA-DSM5TR-Level2RepetitiveThoughtsAndBehaviorsAdult.pdf
+Access: Opened public page/PDF.
+
+Office on Women's Health: Premenstrual dysphoric disorder
+https://womenshealth.gov/menstrual-cycle/premenstrual-syndrome/premenstrual-dysphoric-disorder-pmdd
+Access: Opened public page/PDF.
+
+SAMHSA (2016): DSM-IV to DSM-5 specific-phobia comparison, Table 3.11 (official search extract)
+https://www.samhsa.gov/data/sites/default/files/NSDUH-DSM5ImpactAdultMI-2016.pdf
+Access: Official indexed table text reviewed; direct PDF 403; NCBI mirror browser challenge.
+
+OTHER ATTEMPTED SOURCES
+NICE bipolar recommendations:
+https://www.nice.org.uk/guidance/cg185/chapter/Recommendations
+Search results reviewed, direct open returned internal error twice. Not used as an essential evidence source.
+NICE OCD/BDD recommendations:
+https://www.nice.org.uk/guidance/cg31/chapter/Recommendations
+Direct open returned internal error; not relied on.
+ACOG PMS FAQ:
+https://www.acog.org/womens-health/faqs/Premenstrual-Syndrome
+Search excerpt retrieved; direct open returned internal error. Office on Women's Health and APA were used instead.
+NHS phobia diagnosis URL:
+https://www.nhs.uk/mental-health/conditions/phobias/diagnosis/
+Failed; the working NHS phobias overview was opened and used.
+
+VALIDATION
+Compared JSON IDs and names to current catalogue indices 0–22: all 23 match. Each entry has 4–6 unique checkpoint IDs (five per entry, six for MDD), 2–4 differentials, nonempty course/test/cautions and source links. No app files are modified by this research part.
+
+FINAL CROSS-PART REVIEW, 8 OCTOBER 2026
+PMDD now explicitly asks for prospective daily records across at least two menstrual cycles. The current NHS PMDD page was opened and the diagnosis/diary section inspected; it recommends a symptom diary for at least two menstrual cycles. This clarifies the observation process, not a rule that two diary cycles alone establish a diagnosis.
+NHS: PMDD, diagnosis and prospective symptom diary
+https://www.nhs.uk/conditions/pmdd-premenstrual-dysphoric-disorder/
+Access: Full public NHS page opened 8 October 2026; page last reviewed 20 August 2026.

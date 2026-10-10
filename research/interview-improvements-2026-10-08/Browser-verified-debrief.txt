@@ -1,0 +1,146 @@
+Experimental AI interview debrief
+Jordan | life-history-0.5.0
+Frozen snapshot: b2754caa743eea3c51f6420badacc3499741c0501e76821ccdbf4f3655b8c277
+Difficulty: Standard
+Model: Qwen/Qwen2.5-72B-Instruct
+
+SESSION COST (USD)
+US$0.0011 estimated
+Estimated from 3 priced requests.
+Qwen/Qwen2.5-72B-Instruct: 3006 input / 54 output tokens
+Rates per million: input US$0.37; output US$0.4
+Checked 2026-10-08. https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct
+An estimate, not an account bill. Unreported cache usage uses the regular input rate. Rates may change.
+
+YOUR INTERVIEW REVIEW
+Feedback uses the patient’s disclosed account.
+
+QUESTIONS THAT OPENED NEW AREAS
+T1 · How long has your mood been low?
+Response: My mood has been low for four months now.
+Sources: B01 — Earlier course and onset
+Related checkpoints: Mood and loss of enjoyment; Episode continuity
+
+WHAT REMAINS UNKNOWN
+Mood and loss of enjoyment: Related source material surfaced, but you have not recorded what this checkpoint establishes. Review the exact reply and its unanswered parts.
+Follow-up: How have your mood and enjoyment changed from your usual self?
+Ask this follow-up and compare the answer with the original account.
+
+Episode continuity: Related source material surfaced, but you have not recorded what this checkpoint establishes. Review the exact reply and its unanswered parts.
+Follow-up: When did this change begin, and has it been present most days?
+Ask this follow-up and compare the answer with the original account.
+
+Sleep, energy and thinking: No source linked to this checkpoint was obtained in the interview.
+Follow-up: What has changed in sleep, appetite, energy or concentration?
+Ask this follow-up and compare the answer with the original account.
+
+Daily functioning: No source linked to this checkpoint was obtained in the interview.
+Follow-up: Which responsibilities or relationships have become difficult?
+Ask this follow-up and compare the answer with the original account.
+
+Safety and hopelessness: No authored source is mapped to this checkpoint. It remains unknown in this exercise.
+Follow-up: Have you had thoughts about dying or harming yourself, and do you feel safe now?
+Document the limit and seek an appropriate additional account, record or supervised assessment. Do not turn unavailable information into a negative finding.
+
+Past elevation and other explanations: No authored source is mapped to this checkpoint. It remains unknown in this exercise.
+Follow-up: Have there been separate periods of unusually high energy with little need for sleep, or health or substance changes?
+Document the limit and seek an appropriate additional account, record or supervised assessment. Do not turn unavailable information into a negative finding.
+
+Main concerns and the person's goals: No source linked to this checkpoint was obtained in the interview.
+Follow-up: What would you most like me to understand, and what would you like help with?
+Ask this follow-up and compare the answer with the original account.
+
+Effects on daily life and relationships: No source linked to this checkpoint was obtained in the interview.
+Follow-up: How has this affected your usual activities, responsibilities and relationships?
+Ask this follow-up and compare the answer with the original account.
+
+Culture, identity, circumstances and alternative explanations: No source linked to this checkpoint was obtained in the interview.
+Follow-up: How do you understand these experiences, and what circumstances or physical health changes might help explain them?
+Ask this follow-up and compare the answer with the original account.
+
+Current safety, self-harm, harm to others and safeguarding: No authored source is mapped to this checkpoint. It remains unknown in this exercise.
+Follow-up: Have you felt unsafe, had thoughts of harming yourself or someone else, or needed protection from someone?
+Document the limit and seek an appropriate additional account, record or supervised assessment. Do not turn unavailable information into a negative finding.
+
+Strengths, supports and protective relationships: No source linked to this checkpoint was obtained in the interview.
+Follow-up: What helps you cope, and who can you turn to for support?
+Ask this follow-up and compare the answer with the original account.
+
+EVIDENCE GAPS
+No checklist link issues found. Interpretation has not been graded.
+
+YOUR CONCLUSION
+Defer a conclusion. This brief verification only established the reported duration of low mood.
+Traceable factual turns: T1
+11 checkpoints remain without mapped interview material or are marked unclear. Consider how each affects your impression.
+The wording and clinical validity of your conclusion have not been graded. Valid turn references are traceable evidence, not confirmation of the conclusion.
+
+HOW TO READ THIS FEEDBACK
+Source mappings are authored teaching links, not a diagnostic scoring rule. A compound checkpoint can contain unanswered parts even when source material is linked.
+Only new source IDs are counted in the question highlights. Repeated questions may still clarify meaning; greetings and unavailable details receive no case-evidence credit.
+The exact reply can disclose less than its source paragraph. AI grounding checks can miss errors; review quotations and seek qualified feedback.
+No diagnostic correctness, competence rating, severity score or safety clearance is inferred. Missing information is unknown, not absent.
+
+
+CASE REVEAL
+Major depressive disorder
+An impairing depressive episode involving low mood or reduced interest, with associated changes.
+DSM-5-TR
+Original fictional formulation informed by public research summaries; not a clinically approved case, diagnosis engine or complete DSM criteria set.
+Research history anchor: A major depressive episode has a two-week duration anchor; evaluate the broader mood history.
+Research limitation: Consider bipolar episodes, medical/substance effects and grief. A sadness slider is insufficient.
+Life-stage eligibility is this authored case scope, not an assertion about all clinically possible ages. No numerical age, birthday or age-gate verification is inferred from a broad stage.
+Earlier authored course stays separate from the recent 1–90 day diary. The seed changes diary selection/order, not diagnostic criteria, personality identity or past-history truth.
+Medical, substance, developmental and other exclusions remain unknown except where explicitly authored. A selected label is a case-author intent, not a conclusion proven by interview text.
+
+LEARNER REASONING
+hypothesis: Defer a conclusion. This brief verification only established the reported duration of low mood.
+support: T1: Jordan said their mood has been low for four months. This reply does not establish frequency, associated symptoms or the full episode.
+alternatives: Other explanations remain unexplored; the selected teaching case does not replace interviewing.
+missing: Current safety, daily impact, sleep, interest, prior episodes and alternative explanations remain unknown.
+next: Ask about the pattern across those four months and gather the missing history before drawing a conclusion.
+
+DISCLOSED EVIDENCE
+T1 [answer]
+Question: How long has your mood been low?
+Response: My mood has been low for four months now.
+
+ASSESSMENT
+Not administered; no score disclosed.
+
+RATINGS
+Interview coverage: NR
+Communication: NR
+Reasoning: NR
+Assessment use: NR
+Next steps: NR
+
+LIMITATIONS
+No automated competence rating.
+Generated life dynamics are unvalidated modeling assumptions.
+AI support checks can miss errors.
+Evidence includes only disclosed conversation.
+
+
+INTERVIEW NOTES · Major depressive disorder
+Mood and loss of enjoyment: unasked
+Episode continuity: unasked
+Sleep, energy and thinking: unasked
+Daily functioning: unasked
+Safety and hopelessness: unasked
+Past elevation and other explanations: unasked
+Main concerns and the person's goals: unasked
+Effects on daily life and relationships: unasked
+Culture, identity, circumstances and alternative explanations: unasked
+Current safety, self-harm, harm to others and safeguarding: unasked
+Strengths, supports and protective relationships: unasked
+Provisional impression: Defer — more information needed
+Alternatives: Not recorded
+Next step: Not recorded
+Further inquiry or evidence is needed.
+11 checkpoints have not been explored.
+Explain at least one alternative or why ordinary variation fits better.
+Describe the next question, collateral record or assessment you need.
+You deferred a conclusion. Compare the teaching premise with what was actually established.
+Teaching case: Major depressive disorder
+This checks the structure of your notes, not their clinical correctness. Linked statements can still be misinterpreted. It gives no diagnosis, probability, severity score or safety clearance.

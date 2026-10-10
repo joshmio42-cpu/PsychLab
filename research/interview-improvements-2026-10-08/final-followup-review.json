@@ -1,0 +1,27 @@
+{
+  "evidence":"final-followup.json",
+  "comparedWith":"final-validation-review.json",
+  "reviewedOn":"2026-10-08",
+  "reviewMethod":"Independent assistant review of actual replies/candidates and the exact permitted and cited canonical facts. Provider audit results are not accepted as proof. No automatic retries.",
+  "summary":{
+    "casesReviewed":7,
+    "acceptableDeliveredResponses":5,
+    "blockedResponses":2,
+    "deliveredUnsupportedClaimCases":0,
+    "snapshotMutations":0,
+    "providerCalls":17,
+    "reportedTokens":17806,
+    "estimatedUsd":0.00659881,
+    "remainingUsabilityFailures":["praise-contains-question","ordinary-no-disorder-stress"],
+    "expectationCorrectionNeeded":"communication-directly-asked originally requires saying yes to the learner giving an example, but canonical P03 only establishes the patient's preference for GIVING examples. The new correction is more faithful than that old expected yes. Amend the expectation openly; do not rewrite the biography solely to produce yes."
+  },
+  "reviews":[
+    {"id":"casual-how-are-you","hardPass":true,"qualityRating":3,"usable":true,"notes":["B01 alone supports four months of low mood/lost interest and change from the previous baseline. No sleep/energy frequency is imported and no false social wellbeing state is invented."]},
+    {"id":"praise-contains-question","hardPass":true,"qualityRating":0,"usable":false,"notes":["Still blocked. Both B04 and P04 are permitted, but LANGUAGE cites only P04 for usually talking to the cousin when support is needed. AUDITOR rejects the purpose clause in the narrower packet. The extra supporting source being available is not equivalent to a delivered properly grounded reply."]},
+    {"id":"communication-directly-asked","hardPass":true,"qualityRating":3,"usable":true,"expectationConflict":true,"notes":["Actually, it's easier for me if I can give you an example instead accurately preserves P03's direction and directly responds to the learner's offer. No anecdote is appended. It contradicts the matrix's old yes requirement, but that requirement was inconsistent with canonical evidence; the fidelity-preserving correction is appropriate."]},
+    {"id":"why-with-no-antecedent","hardPass":true,"qualityRating":3,"usable":true,"notes":["With no prior referent, asks Which part do you mean? instead of pretending a specific fact is missing."]},
+    {"id":"caregiver-praise","hardPass":true,"qualityRating":3,"usable":true,"notes":["Thank you. is an appropriate fact-free caregiver acknowledgment. The bounded local check avoids the earlier false audit rejection and reduces this turn to two calls."]},
+    {"id":"ordinary-no-disorder-stress","hardPass":true,"qualityRating":0,"usable":false,"notes":["Still no delivered answer. Candidate adds I've been having some trouble to G04 counts; the new independent guard correctly rejects that inference. The safety improvement is verified, but a blocked response is not a successful ordinary conversation."]},
+    {"id":"specific-recorded-example","hardPass":true,"qualityRating":3,"usable":true,"notes":["One E22 event is described with the exact relative day, same-day nonresponse, broken sleep and concentration difficulty. No invented next day, cancellation cause, relative calendar date or merged second event."]}
+  ]
+}

@@ -1,0 +1,7 @@
+INCOMPLETE STAGING TRIAL - DO NOT USE AS RELEASE EVIDENCE
+Interrupted deliberately after independent code review found that the evidence-render normalization discarded meaningful quotation and number punctuation. The partial JSON bytes are retained unchanged.
+SHA-256: 682f9813099348ce4c8fb906167e78091e515e7f6a0834d424969a68d8d5713e
+Saved records: 14 of 16. Persisted reported calls: 37. Reported known estimated cost: $0.006995100000000001.
+An in-flight call may have been interrupted after the last saved record; any such usage is not reported by this partial file. Do not present the persisted subtotal as a complete bill.
+No user localhost process was stopped. Only the exact staging evaluate.mjs process with the v149 label was terminated.
+A new label is required after the fix. Retain the observed blocked question and all successful answers; do not cherry-pick them into a release.

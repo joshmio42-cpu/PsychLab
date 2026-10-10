@@ -1,0 +1,101 @@
+[
+  {
+    "id": "S1",
+    "title": "Generalized Anxiety Disorder What You Need to Know",
+    "publisher": "National Institute of Mental Health",
+    "version": "Live public information; accessed 2026-10-05",
+    "url": "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad",
+    "use": "Background for persistent worry, associated symptoms, duration and daily functioning. Fictional facts are authored examples, not quotations or patient records.",
+    "rights": "Link and concise original paraphrase; no copied diagnostic manual."
+  },
+  {
+    "id": "S2",
+    "title": "Generalised anxiety disorder and panic disorder in adults management",
+    "publisher": "NICE",
+    "version": "CG113; recommendations 1.2.6 and 1.2.7; accessed 2026-10-05",
+    "url": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+    "use": "Comprehensive assessment, impairment, comorbidity, medical and substance history. UK guidance supplies educational context, not Philippine practice authority.",
+    "rights": "Link and concise original paraphrase."
+  },
+  {
+    "id": "S3",
+    "title": "Understanding psychological testing and assessment",
+    "publisher": "American Psychological Association",
+    "version": "Updated 2022-08-18; accessed 2026-10-05",
+    "url": "https://www.apa.org/topics/psychological-testing-assessment",
+    "use": "Assessment combines tests, interviews and context; learner must interpret findings.",
+    "rights": "Link and concise original paraphrase."
+  },
+  {
+    "id": "S4",
+    "title": "About DSM-5-TR",
+    "publisher": "American Psychiatric Association",
+    "version": "DSM-5-TR overview; accessed 2026-10-05",
+    "url": "https://www.psychiatry.org/psychiatrists/practice/dsm/about-dsm",
+    "use": "Diagnostic classification and clinical judgment. Full DSM text was not obtained, embedded or licensed. Do not advertise DSM compliance.",
+    "rights": "Overview linked only. Any later reproduction or ingestion needs a separate rights review."
+  },
+  {
+    "id": "S5",
+    "title": "Free public access to mental health assessment tools",
+    "publisher": "Pfizer",
+    "version": "Press release 2010-07-21; accessed 2026-10-05",
+    "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+    "use": "Publisher states PHQ and GAD-7 are available without copyright restriction and at no charge.",
+    "rights": "Supports GAD-7 reuse; no Pfizer endorsement implied."
+  },
+  {
+    "id": "S6",
+    "title": "Instructions for Patient Health Questionnaire and GAD-7 Measures",
+    "publisher": "Instrument developer manual hosted by The Joint Commission",
+    "version": "Undated nine-page manual; accessed 2026-10-05",
+    "url": "https://manual.jointcommission.org/pub/BHCInstruments/RomInstr00054/instructions_PHQ.pdf",
+    "use": "Seven 0-3 items; total 0-21; severity cutpoints 5, 10, 15. Instruction manual also states no permission required for reproduction.",
+    "rights": "Instrument permission applies to GAD-7; do not copy unrelated copyrighted material from host sites."
+  },
+  {
+    "id": "S7",
+    "title": "A brief measure for assessing generalized anxiety disorder the GAD-7",
+    "publisher": "Spitzer RL, Kroenke K, Williams JBW, Lowe B; Archives of Internal Medicine",
+    "version": "2006;166:1092-1097; PMID 16717171; DOI 10.1001/archinte.166.10.1092",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16717171/",
+    "use": "Original adult primary-care validation. Does not validate synthetic respondents, this training rubric, or learner competence.",
+    "rights": "Bibliographic citation; no reproduced article."
+  },
+  {
+    "id": "S8",
+    "title": "PATIENT-PSI Using Large Language Models to Simulate Patients for Training Mental Health Professionals",
+    "publisher": "Research authors via arXiv",
+    "version": "arXiv:2405.19660; accessed 2026-10-05",
+    "url": "https://arxiv.org/abs/2405.19660",
+    "use": "Prior art in simulated patient training; motivation, not evidence that this implementation improves learning.",
+    "rights": "Link and original description."
+  },
+  {
+    "id": "S9",
+    "title": "ForgeHacks Online 2026 overview and submission requirements",
+    "publisher": "ForgeHacks on Devpost",
+    "version": "Live listing accessed 2026-10-05",
+    "url": "https://forgehacks-2026.devpost.com/",
+    "use": "Healthcare prompt, video and repository requirements, deadline and sponsor caps.",
+    "rights": "Event facts summarized."
+  },
+  {
+    "id": "S10",
+    "title": "ForgeHacks Online 2026 rules",
+    "publisher": "ForgeHacks on Devpost",
+    "version": "Live rules accessed 2026-10-05",
+    "url": "https://forgehacks-2026.devpost.com/rules",
+    "use": "Source visibility, substantially created during event; discrepancies recorded for organizer clarification.",
+    "rights": "Event facts summarized."
+  },
+  {
+    "id": "S11",
+    "title": "GAD-7 Anxiety form",
+    "publisher": "GAD-7 form hosted by Oxford Health NHS Foundation Trust",
+    "version": "IAPT Minimum Data Set PDF, page 1; accessed 2026-10-05",
+    "url": "https://www.oxfordhealth.nhs.uk/wp-content/uploads/sites/16/2019/07/MDS-TSP-PDF.pdf",
+    "use": "Seven English items, two-week instruction and response labels verified against the NHS-hosted form. No other measures in the PDF are reproduced.",
+    "rights": "Instrument reuse supported by S5/S6, not by host branding."
+  }
+]

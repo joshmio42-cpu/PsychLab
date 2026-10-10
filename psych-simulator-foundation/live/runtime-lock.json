@@ -1,0 +1,9 @@
+{
+  "version": "24.21.0",
+  "release": "https://nodejs.org/en/blog/release/v24.21.0",
+  "checksums": "https://nodejs.org/dist/v24.21.0/SHASUMS256.txt",
+  "windows": {
+    "x64": "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32",
+    "arm64": "dff59da18b6ffe1bf1ca99e1d2af4906080c481740619f5b5098c0fca28bd9b7"
+  }
+}

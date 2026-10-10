@@ -1,0 +1,109 @@
+{
+  "review_date": "2026-10-08",
+  "timezone": "Asia/Manila",
+  "scope": "Focused primary-source review for natural, case-faithful simulated patient conversation; not a systematic review or clinical validation.",
+  "sources": [
+    {
+      "id": "S01",
+      "authors": "Pamela L. Hudak and Douglas W. Maynard",
+      "year": 2011,
+      "title": "An interactional approach to conceptualising small talk in medical interactions",
+      "type": "Primary conversation-analysis study with analyzed consultation excerpts",
+      "doi": "10.1111/j.1467-9566.2011.01343.x",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9566.2011.01343.x",
+      "public_manuscript": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3609551/",
+      "inspected": "Publisher full text, including distinction between topic offers and uptake and Example 4; PMC load intermittently blocked.",
+      "implementation_topics": ["greetings", "small talk", "topic continuity", "optional reciprocity"],
+      "limit": "Surgical setting; no demographic or diagnosis-specific speech rules inferred."
+    },
+    {
+      "id": "S02",
+      "authors": "Lisa M. Hooper et al.",
+      "year": 2008,
+      "title": "Virtual standardized patients: an interactive method to examine variation in depression care among primary care physicians",
+      "type": "Primary virtual-patient case development and evaluation study",
+      "doi": "10.1017/S1463423608000820",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2867621/",
+      "inspected": "Full text, Development of CD-ROM interactive clinical vignettes, Interactive dialogue, Table 2, displayed physician-patient sequence and limitations.",
+      "implementation_topics": ["concrete daily examples", "natural symptom wording", "question-specific disclosure"],
+      "limit": "Scripted actor cases do not validate free-generating model replies."
+    },
+    {
+      "id": "S03",
+      "authors": "Karen L. Lewis et al.; Association of Standardized Patient Educators",
+      "year": 2017,
+      "title": "The Association of Standardized Patient Educators (ASPE) Standards of Best Practice (SOBP)",
+      "type": "Official consensus standards",
+      "doi": "10.1186/s41077-017-0043-4",
+      "url": "https://link.springer.com/article/10.1186/s41077-017-0043-4",
+      "official_listing": "https://www.aspeducators.org/standards-of-best-practice-",
+      "inspected": "Full article and official ASPE listing; Domains 2 and 3, particularly 2.1.3 and 3.2.3-3.2.5.",
+      "implementation_topics": ["case fidelity", "unexpected questions", "respectful portrayal", "rehearsal"],
+      "limit": "Standards concern human simulated participants; AI use is an adaptation."
+    },
+    {
+      "id": "S04",
+      "authors": "Mark Dingemanse et al.",
+      "year": 2015,
+      "title": "Universal Principles in the Repair of Communication Problems",
+      "type": "Primary cross-linguistic conversation study",
+      "doi": "10.1371/journal.pone.0136100",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0136100",
+      "inspected": "Publisher full text and public Europe PMC XML; repair types, specificity and cooperative effort.",
+      "implementation_topics": ["clarification", "repair", "follow-up referents"],
+      "limit": "Observed repair rates are not artificial-disfluency targets."
+    },
+    {
+      "id": "S05",
+      "authors": "Tanya Stivers et al.",
+      "year": 2009,
+      "title": "Universals and cultural variation in turn-taking in conversation",
+      "type": "Primary cross-linguistic natural-conversation study",
+      "doi": "10.1073/pnas.0903616106",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.0903616106",
+      "inspected": "Publisher full text and indexed PMC author text; methods and conclusion.",
+      "implementation_topics": ["context-sensitive delivery", "avoid random pauses"],
+      "limit": "Spoken timing cannot establish ideal text latency or a personality diagnosis."
+    },
+    {
+      "id": "S06",
+      "authors": "Dana Garbarski, Nora Cate Schaeffer and Jennifer Dykema",
+      "year": 2016,
+      "title": "Interviewing Practices, Conversational Practices, and Rapport: Responsiveness and Engagement in the Standardized Survey Interview",
+      "type": "Primary analysis of recorded survey sequences",
+      "doi": "10.1177/0081175016637890",
+      "url": "https://journals.sagepub.com/doi/10.1177/0081175016637890",
+      "public_manuscript": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5110268/",
+      "inspected": "Publisher abstract and search-indexed public manuscript sections on responsiveness, engagement and discussion; direct PMC loads intermittent.",
+      "implementation_topics": ["contextual acknowledgment", "rapport", "avoid compliance bias"],
+      "limit": "Transfer from survey interviews to psychiatric simulation is an inference."
+    },
+    {
+      "id": "S07",
+      "authors": "Lori A. H. Erby, Debra Roter and Barbara B. Biesecker",
+      "year": 2011,
+      "title": "Examination of standardized patient performance: Accuracy and consistency of six standardized patients over time",
+      "type": "Primary standardized-patient performance study",
+      "doi": "10.1016/j.pec.2010.10.005",
+      "url": "https://pure.johnshopkins.edu/en/publications/examination-of-standardized-patient-performance-accuracy-and-cons-4/",
+      "public_manuscript": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3158971/",
+      "inspected": "Primary author-institution abstract and bibliographic record; indexed PMC methods.",
+      "implementation_topics": ["separate fidelity and realism checks", "style consistency"],
+      "limit": "Human genetic-counseling simulation; not an AI psychiatry benchmark."
+    },
+    {
+      "id": "S08",
+      "authors": "Yue Li et al.",
+      "year": 2026,
+      "published": "2026-02-20",
+      "title": "Development and preliminary evaluation of a virtual standardized patient system for psychiatric interview training",
+      "type": "Primary system-development study and preliminary randomized trial",
+      "doi": "10.1186/s12888-026-07896-3",
+      "url": "https://link.springer.com/article/10.1186/s12888-026-07896-3",
+      "public_manuscript": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13032266/",
+      "inspected": "Public full text through PMC/Europe PMC and publisher; script development, consistency evaluation, discussion and limitations.",
+      "implementation_topics": ["plain patient dialogue", "case-reference comparison", "live review"],
+      "limit": "Three cases and 20 completers; authenticity/interactivity and nonverbal limitations remain."
+    }
+  ]
+}

@@ -1,0 +1,1552 @@
+{
+  "schemaVersion": 1,
+  "type": "psychlab-adaption-compilation-report",
+  "compiledAt": "2026-10-09T07:12:44.784Z",
+  "pack": {
+    "id": "psychlab-adaption-pilot-25",
+    "version": "1.0.0",
+    "sha256": "4467bf983a6b7bbad455d37b769f7fe3fcd26cd1c43168572889666ffd0d5ca2"
+  },
+  "source": {
+    "datasetId": "psychlab-fictional-development-25",
+    "version": "1.0.0",
+    "sha256": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+    "jsonlSha256": "2c464cb7c4f5d0ecc92f991c483f1b3136eddf1b70a933dd7c0adf09b712c864"
+  },
+  "run": {
+    "datasetId": "publication-redacted-remote-id-2",
+    "runId": "dataset-publication-redacted-remote-id-2-1791529161618",
+    "inputDataHash": "2c464cb7c4f5d0ecc92f991c483f1b3136eddf1b70a933dd7c0adf09b712c864",
+    "downloadHash": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998",
+    "partial": false,
+    "sha256": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084"
+  },
+  "output": {
+    "sha256": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998",
+    "bytes": 122290,
+    "lineCount": 25
+  },
+  "reviewSha256": "7cd54c78a3366dfe9dc733601d8efd30f80a07f4d107b619c7bfa7dc890fc6fe",
+  "approvedCount": 21,
+  "rejectedCount": 4,
+  "activated": false,
+  "notice": "Illustrative guidance derived from semantically reviewed Adaption candidates. Patient names were locally replaced with the child/the patient, fact IDs remapped to EX_, and any explicitly reviewed source excerpts recorded. Compiled text must not be described as unchanged Adaption output. Exact raw provider records remain in the review workbook and output JSONL. Approval is source-faithfulness review, not clinical validation. This command does not activate the pack.",
+  "transforms": [
+    {
+      "id": "dev-jordan-counts-not-feelings",
+      "rawCandidateHash": "1b1328b3bbea5a667200c0c2a42c071f605ba60f584c09784c9b7c9bdb37f408",
+      "question": {
+        "original": "Can the number of tasks you completed tell me exactly how anxious you felt?",
+        "compiled": "Can the number of tasks you completed tell me exactly how anxious you felt?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I can tell you I completed one routine work task and paused another during that period, but those counts alone don't exactly show how anxious I felt. I can't say for sure based on just that.",
+        "compiled": "I can tell you I completed one routine work task and paused another during that period, but those counts alone don't exactly show how anxious I felt. I can't say for sure based on just that.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "G04",
+          "exampleId": "EX_dev_jordan_counts_not_feelings_G04",
+          "original": "Over this recorded period I had 2 tasks involving finishing a routine work task: I completed 1 that day and paused 1.",
+          "reviewedExcerpt": null,
+          "compiled": "Over this recorded period I had 2 tasks involving finishing a routine work task: I completed 1 that day and paused 1.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "G04": "EX_dev_jordan_counts_not_feelings_G04"
+      }
+    },
+    {
+      "id": "dev-robin-medical-uncertainty",
+      "rawCandidateHash": "768d1b37672228ee2e8996835316c5c00d5af876ceb509335e582b8a4c99ccb2",
+      "question": {
+        "original": "Do you know for certain what medically explains the pounding heart and breathlessness?",
+        "compiled": "Do you know for certain what medically explains the pounding heart and breathlessness?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "No, I don't know for certain. The medical explanations haven't been settled, though the episodes can come on suddenly with a pounding heart, breathlessness, and fear that something terrible is happening.",
+        "compiled": "No, I don't know for certain. The medical explanations haven't been settled, though the episodes can come on suddenly with a pounding heart, breathlessness, and fear that something terrible is happening.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B02",
+          "exampleId": "EX_dev_robin_medical_uncertainty_B02",
+          "original": "An episode can come on suddenly without an obvious threat, with a pounding heart, breathlessness and fear that something terrible is happening. Medical explanations have not been settled in this account.",
+          "reviewedExcerpt": null,
+          "compiled": "An episode can come on suddenly without an obvious threat, with a pounding heart, breathlessness and fear that something terrible is happening. Medical explanations have not been settled in this account.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B02": "EX_dev_robin_medical_uncertainty_B02"
+      }
+    },
+    {
+      "id": "dev-jordan-onset-outside-diary",
+      "rawCandidateHash": "c3d61b9681772c67a36084e640830d4fbfd54a8e0d2fa0bc1f4c45bc45af7984",
+      "question": {
+        "original": "If this record has seven days, does that put the start of feeling low seven days ago?",
+        "compiled": "If this record has seven days, does that put the start of feeling low seven days ago?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "No, this record only covers seven recent days, but I've actually felt low and lost interest on most days for four months, including time before this diary. This recent window doesn't establish when all the difficulties began.",
+        "compiled": "No, this record only covers seven recent days, but I've actually felt low and lost interest on most days for four months, including time before this diary. This recent window doesn't establish when all the difficulties began.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B01",
+          "exampleId": "EX_dev_jordan_onset_outside_diary_B01",
+          "original": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period.",
+          "reviewedExcerpt": null,
+          "compiled": "For four months, including the time before this diary, I have felt low and lost interest on most days. This is different from how I usually was before that period.",
+          "replacements": []
+        },
+        {
+          "canonicalId": "G03",
+          "exampleId": "EX_dev_jordan_onset_outside_diary_G03",
+          "original": "This account covers 7 recent simulated days within the young adult stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "reviewedExcerpt": null,
+          "compiled": "This account covers 7 recent simulated days within the young adult stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B01": "EX_dev_jordan_onset_outside_diary_B01",
+        "G03": "EX_dev_jordan_onset_outside_diary_G03"
+      }
+    },
+    {
+      "id": "dev-jordan-usual-and-current",
+      "rawCandidateHash": "d92c8c009999546a20ba6d949871bc926936f9ef049ae895e27323511f0bff5a",
+      "question": {
+        "original": "Does having sketching as a hobby mean it feels rewarding for you now?",
+        "compiled": "Does having sketching as a hobby mean it feels rewarding for you now?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I usually sketch ordinary things and keep the drawings in a notebook, but activities I usually enjoy feel much less rewarding right now.",
+        "compiled": "I usually sketch ordinary things and keep the drawings in a notebook, but activities I usually enjoy feel much less rewarding right now.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P02",
+          "exampleId": "EX_dev_jordan_usual_and_current_P02",
+          "original": "Usually, I sketch ordinary things and keep the drawings in a notebook.",
+          "reviewedExcerpt": null,
+          "compiled": "Usually, I sketch ordinary things and keep the drawings in a notebook.",
+          "replacements": []
+        },
+        {
+          "canonicalId": "B02",
+          "exampleId": "EX_dev_jordan_usual_and_current_B02",
+          "original": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding.",
+          "reviewedExcerpt": null,
+          "compiled": "Sleep is broken, energy is low, concentrating takes effort and I am hard on myself. Activities I usually enjoy feel much less rewarding.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P02": "EX_dev_jordan_usual_and_current_P02",
+        "B02": "EX_dev_jordan_usual_and_current_B02"
+      }
+    },
+    {
+      "id": "dev-sam-postponed-game",
+      "rawCandidateHash": "16c273f607c4cef949c076f4ea9e903acacfac396a296252b7de4a6afbf85844",
+      "question": {
+        "original": "On day two, why was the playground game moved, and was another day agreed?",
+        "compiled": "On day two, why was the playground game moved, and was another day agreed?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "On day two, the playground game was postponed, but no reason was explained to me. I asked about another time, but we did not agree on a new date that day.",
+        "compiled": "On day two, the playground game was postponed, but no reason was explained to me. I asked about another time, but we did not agree on a new date that day.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "E02",
+          "exampleId": "EX_dev_sam_postponed_game_E02",
+          "original": "On simulated day 2, For me, a playground game with a friend was postponed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. I felt relatively at ease after that.",
+          "reviewedExcerpt": null,
+          "compiled": "On simulated day 2, For me, a playground game with a friend was postponed; no reason was explained. My interpretation at the time was: I did not know why the plan changed. I wondered what had happened. I asked my friend about another time; no new date was agreed that day. I felt relatively at ease after that.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "E02": "EX_dev_sam_postponed_game_E02"
+      }
+    },
+    {
+      "id": "dev-avery-story-not-selected",
+      "rawCandidateHash": "30d5c8757dc1c2d64d14033f10cd42a25a093d6d431284f90da32f47d05eb488",
+      "question": {
+        "original": "Which short story did you and your friend choose for your discussion?",
+        "compiled": "Which short story did you and your friend choose for your discussion?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "We haven't chosen one yet. I'd like to pick a short story with a friend and talk about what each of us noticed.",
+        "compiled": "We haven't chosen one yet. I'd like to pick a short story with a friend and talk about what each of us noticed.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P12",
+          "exampleId": "EX_dev_avery_story_not_selected_P12",
+          "original": "I’d like to choose a short story with a friend and talk about what each of us noticed. We haven’t chosen the story for that yet.",
+          "reviewedExcerpt": null,
+          "compiled": "I’d like to choose a short story with a friend and talk about what each of us noticed. We haven’t chosen the story for that yet.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P12": "EX_dev_avery_story_not_selected_P12"
+      }
+    },
+    {
+      "id": "dev-riley-written-account",
+      "rawCandidateHash": "aa479e4c081c1026871ae3e73802a1417913ddda0a173023bf71e1f2478a58fc",
+      "question": {
+        "original": "Since you can type an answer here, could you just say it aloud in that setting?",
+        "compiled": "Since you can type an answer here, could you just say it aloud in that setting?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "Not really. I can give short written replies here, but that doesn't mean I can speak aloud in the same situation. When my speech gets stuck, I can't just make it happen.",
+        "compiled": "Not really. I can give short written replies here, but that doesn't mean I can speak aloud in the same situation. When my speech gets stuck, I can't just make it happen.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B02",
+          "exampleId": "EX_dev_riley_written_account_B02",
+          "original": "When speech gets stuck, I cannot simply make it happen. In this text interview I can communicate through short written replies; that does not mean I can speak aloud in the same situation.",
+          "reviewedExcerpt": null,
+          "compiled": "When speech gets stuck, I cannot simply make it happen. In this text interview I can communicate through short written replies; that does not mean I can speak aloud in the same situation.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B02": "EX_dev_riley_written_account_B02"
+      }
+    },
+    {
+      "id": "dev-jordan-cancellation-belief",
+      "rawCandidateHash": "9e07836de5722de98f19ed03ca96eb33942c8dec4aa9725cb7af2d9b06ed3978",
+      "question": {
+        "original": "That cancelled catch-up on day two—what did you know, and what were you only wondering?",
+        "compiled": "That cancelled catch-up on day two—what did you know, and what were you only wondering?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I knew my friend cancelled without explaining why, but I didn't know the actual reason. I wondered if they were busy or if they didn't want to meet up, and I asked to find another time, though we didn't agree on one that day.",
+        "compiled": "I knew my friend cancelled without explaining why, but I didn't know the actual reason. I wondered if they were busy or if they didn't want to meet up, and I asked to find another time, though we didn't agree on one that day.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "E02",
+          "exampleId": "EX_dev_jordan_cancellation_belief_E02",
+          "original": "On simulated day 2, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. I felt relatively at ease after that.",
+          "reviewedExcerpt": null,
+          "compiled": "On simulated day 2, A friend cancelled a planned catch-up without explaining why. My interpretation at the time was: I do not know why the plan changed. They may be busy; I also wonder whether they wanted to see me. I asked my friend to find another time; no new date was agreed that day. I felt relatively at ease after that.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "E02": "EX_dev_jordan_cancellation_belief_E02"
+      }
+    },
+    {
+      "id": "dev-riley-project-choice",
+      "rawCandidateHash": "765a2958bc894607720ded4831e23790c638255fe4e5b15a2a53cd87a5900217",
+      "question": {
+        "original": "Before the group hands out project roles, what would you want them to do?",
+        "compiled": "Before the group hands out project roles, what would you want them to do?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I'd prefer it if someone asked which part I want to take before assigning me one. I still want us to agree on what each person is doing.",
+        "compiled": "I'd prefer it if someone asked which part I want to take before assigning me one. I still want us to agree on what each person is doing.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P10",
+          "exampleId": "EX_dev_riley_project_choice_P10",
+          "original": "With a school project, I’d rather someone ask which part I want to take before assigning me one. I still want us to agree on what each person is doing.",
+          "reviewedExcerpt": null,
+          "compiled": "With a school project, I’d rather someone ask which part I want to take before assigning me one. I still want us to agree on what each person is doing.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P10": "EX_dev_riley_project_choice_P10"
+      }
+    },
+    {
+      "id": "dev-sam-leaving-room-to-try",
+      "rawCandidateHash": "5717f3eba277aed7b8dae6701283b137e52a529e9d20e6c62ed62d9bc6a4babd",
+      "question": {
+        "original": "If your picture gets tricky, should an adult finish it for you?",
+        "compiled": "If your picture gets tricky, should an adult finish it for you?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "No, I'd want them to show me a way to start and then let me try. I don't want them to finish the whole thing for me.",
+        "compiled": "No, I'd want them to show me a way to start and then let me try. I don't want them to finish the whole thing for me.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P10",
+          "exampleId": "EX_dev_sam_leaving_room_to_try_P10",
+          "original": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me.",
+          "reviewedExcerpt": null,
+          "compiled": "If I’m stuck on a picture, I want someone to show me a way to start and then let me try. I don’t want them to finish the whole thing for me.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P10": "EX_dev_sam_leaving_room_to_try_P10"
+      }
+    },
+    {
+      "id": "dev-riley-earlier-playlist",
+      "rawCandidateHash": "6d1806087eac24b0a9cac85299dffb2c1d71528fa038cc5714eb2a946cc1ce04",
+      "question": {
+        "original": "Tell me about that earlier playlist where you changed the first song.",
+        "compiled": "Tell me about that earlier playlist where you changed the first song.",
+        "replacements": []
+      },
+      "reply": {
+        "original": "For an earlier playlist, I tried starting with a quiet song before moving a faster one to the front. I kept both versions so I could compare how the order felt.",
+        "compiled": "For an earlier playlist, I tried starting with a quiet song before moving a faster one to the front. I kept both versions so I could compare how the order felt.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P08",
+          "exampleId": "EX_dev_riley_earlier_playlist_P08",
+          "original": "For an earlier playlist, I tried a quiet song first, then moved a faster one to the start. I kept both versions while I compared the order.",
+          "reviewedExcerpt": null,
+          "compiled": "For an earlier playlist, I tried a quiet song first, then moved a faster one to the start. I kept both versions while I compared the order.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P08": "EX_dev_riley_earlier_playlist_P08"
+      }
+    },
+    {
+      "id": "dev-alex-album-not-picked",
+      "rawCandidateHash": "e3d8dfcee6bf8437990e0a20dc42f8ad24aafe1f4bbc278b7b3359ca21b0a252",
+      "question": {
+        "original": "What is the title of the album you picked to compare with your friend?",
+        "compiled": "What is the title of the album you picked to compare with your friend?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I haven't picked the album yet; that's something I'd like to do with a friend in the future.",
+        "compiled": "I haven't picked the album yet; that's something I'd like to do with a friend in the future.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P12",
+          "exampleId": "EX_dev_alex_album_not_picked_P12",
+          "original": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet.",
+          "reviewedExcerpt": null,
+          "compiled": "I’d like to pick an album with a friend and compare which track we think holds it together. We haven’t picked the album for that yet.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P12": "EX_dev_alex_album_not_picked_P12"
+      }
+    },
+    {
+      "id": "dev-mika-private-thoughts",
+      "rawCandidateHash": "a7ced4eb00ffc0d3101c2a5a518e8f6daed320ae534158bb21efb45ea1143638",
+      "question": {
+        "original": "When Mika turns those book pages, what are they thinking about you?",
+        "compiled": "When the child turns those book pages, what are they thinking about you?",
+        "replacements": [
+          {
+            "from": "Mika",
+            "to": "the child"
+          }
+        ]
+      },
+      "reply": {
+        "original": "I can't really say what Mika is thinking. When Mika brings me an animal book, I sit beside them, name the animals they point to, and let them turn the pages.",
+        "compiled": "I can't really say what the child is thinking. When the child brings me an animal book, I sit beside them, name the animals they point to, and let them turn the pages.",
+        "replacements": [
+          {
+            "from": "Mika",
+            "to": "the child"
+          },
+          {
+            "from": "Mika",
+            "to": "the child"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "canonicalId": "P03",
+          "exampleId": "EX_dev_mika_private_thoughts_P03",
+          "original": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what Mika is thinking.",
+          "reviewedExcerpt": null,
+          "compiled": "It’s easier if I describe one thing I’ve noticed at a time. I can’t really say what the child is thinking.",
+          "replacements": [
+            {
+              "from": "Mika",
+              "to": "the child"
+            }
+          ]
+        },
+        {
+          "canonicalId": "P09",
+          "exampleId": "EX_dev_mika_private_thoughts_P09",
+          "original": "When Mika brings me an animal book, I sit beside them and name the animals they point to. I let Mika turn the pages.",
+          "reviewedExcerpt": null,
+          "compiled": "When the child brings me an animal book, I sit beside them and name the animals they point to. I let the child turn the pages.",
+          "replacements": [
+            {
+              "from": "Mika",
+              "to": "the child"
+            },
+            {
+              "from": "Mika",
+              "to": "the child"
+            }
+          ]
+        }
+      ],
+      "factIdMapping": {
+        "P03": "EX_dev_mika_private_thoughts_P03",
+        "P09": "EX_dev_mika_private_thoughts_P09"
+      }
+    },
+    {
+      "id": "dev-avery-shared-errands",
+      "rawCandidateHash": "8228e82d347f270a398d6dd32d11a063fb1e0f487740915330ab320b4d462280",
+      "question": {
+        "original": "What agreement would make shared household errands clearer for you?",
+        "compiled": "What agreement would make shared household errands clearer for you?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I prefer having clear agreements about who handles each household task and when, so we aren't both assuming the other person will take care of it.",
+        "compiled": "I prefer having clear agreements about who handles each household task and when, so we aren't both assuming the other person will take care of it.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P10",
+          "exampleId": "EX_dev_avery_shared_errands_P10",
+          "original": "For shared household jobs, I prefer to agree who is doing what and when. I don’t want us both assuming the other person will handle the same errand.",
+          "reviewedExcerpt": null,
+          "compiled": "For shared household jobs, I prefer to agree who is doing what and when. I don’t want us both assuming the other person will handle the same errand.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P10": "EX_dev_avery_shared_errands_P10"
+      }
+    },
+    {
+      "id": "dev-sam-task-history",
+      "rawCandidateHash": "35ce0c41eeaa10efc5669b0c1aa8473881625a43808985d5b303ba8444a6b2f1",
+      "question": {
+        "original": "Did keeping track of tasks only get difficult during this week?",
+        "compiled": "Did keeping track of tasks only get difficult during this week?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "No, it hasn't just been this week. I've had trouble keeping track of tasks since my early school years, at home and in learning settings. It's been hard for years, including the months before this diary.",
+        "compiled": "No, it hasn't just been this week. I've had trouble keeping track of tasks since my early school years, at home and in learning settings. It's been hard for years, including the months before this diary.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B01",
+          "exampleId": "EX_dev_sam_task_history_B01",
+          "original": "Since my early school years, keeping track of tasks has been difficult at home and in learning settings. This pattern has continued for years, including the months before this diary.",
+          "reviewedExcerpt": null,
+          "compiled": "Since my early school years, keeping track of tasks has been difficult at home and in learning settings. This pattern has continued for years, including the months before this diary.",
+          "replacements": []
+        },
+        {
+          "canonicalId": "G03",
+          "exampleId": "EX_dev_sam_task_history_G03",
+          "original": "This account covers 7 recent simulated days within the school-age child stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "reviewedExcerpt": null,
+          "compiled": "This account covers 7 recent simulated days within the school-age child stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B01": "EX_dev_sam_task_history_B01",
+        "G03": "EX_dev_sam_task_history_G03"
+      }
+    },
+    {
+      "id": "dev-alex-visible-commitments",
+      "rawCandidateHash": "d8d6fec5a33c738f93564b3a2c5f2d5c0dd2d1bbe82ac68f3eb866fdca401ed4",
+      "question": {
+        "original": "How do you lay out study tasks and work shifts before adding another commitment?",
+        "compiled": "How do you lay out study tasks and work shifts before adding another commitment?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+        "compiled": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P07",
+          "exampleId": "EX_dev_alex_visible_commitments_P07",
+          "original": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+          "reviewedExcerpt": null,
+          "compiled": "I keep study tasks and work shifts on the same list, then mark what has a fixed time. I prefer seeing the commitments together before adding anything else.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P07": "EX_dev_alex_visible_commitments_P07"
+      }
+    },
+    {
+      "id": "dev-robin-help-with-choice",
+      "rawCandidateHash": "9c83a83c31f70276368ec35e65d30705922edf5577f055fd0477d91bf08a7674",
+      "question": {
+        "original": "If someone wants to help, would you prefer that they take over the whole task?",
+        "compiled": "If someone wants to help, would you prefer that they take over the whole task?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "I'd prefer they ask which part would help rather than taking over. I want a say in what I do myself and what we do together.",
+        "compiled": "I'd prefer they ask which part would help rather than taking over. I want a say in what I do myself and what we do together.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "P10",
+          "exampleId": "EX_dev_robin_help_with_choice_P10",
+          "original": "If someone wants to help with a task, I prefer them to ask which part would help. I want a say in what I do myself and what we do together.",
+          "reviewedExcerpt": null,
+          "compiled": "If someone wants to help with a task, I prefer them to ask which part would help. I want a say in what I do myself and what we do together.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "P10": "EX_dev_robin_help_with_choice_P10"
+      }
+    },
+    {
+      "id": "dev-alex-past-energy-period",
+      "rawCandidateHash": "93386f3d93b8269294f681d6e222ee02309c7e45ded25a6779d7989fc9d5ad91",
+      "question": {
+        "original": "Was the high-energy period happening during these recent days, or was it earlier?",
+        "compiled": "Was the high-energy period happening during these recent days, or was it earlier?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "It was earlier, before this diary started. I'm not reporting a new high-energy episode in these recent days; I've returned to a steadier routine since then.",
+        "compiled": "It was earlier, before this diary started. I'm not reporting a new high-energy episode in these recent days; I've returned to a steadier routine since then.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B01",
+          "exampleId": "EX_dev_alex_past_energy_period_B01",
+          "original": "Before this diary, I had a distinct eight-day period of unusually high energy, very little need for sleep, racing plans and behavior that seriously disrupted my life. I needed hospital care then; afterward I returned to a steadier routine.",
+          "reviewedExcerpt": null,
+          "compiled": "Before this diary, I had a distinct eight-day period of unusually high energy, very little need for sleep, racing plans and behavior that seriously disrupted my life. I needed hospital care then; afterward I returned to a steadier routine.",
+          "replacements": []
+        },
+        {
+          "canonicalId": "B02",
+          "exampleId": "EX_dev_alex_past_energy_period_B02",
+          "original": "During that past period I felt unusually capable, talked much more and committed to far more than I could manage. I am not reporting a new high-energy episode in this diary.",
+          "reviewedExcerpt": null,
+          "compiled": "During that past period I felt unusually capable, talked much more and committed to far more than I could manage. I am not reporting a new high-energy episode in this diary.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B01": "EX_dev_alex_past_energy_period_B01",
+        "B02": "EX_dev_alex_past_energy_period_B02"
+      }
+    },
+    {
+      "id": "dev-avery-worry-interference",
+      "rawCandidateHash": "e87c610827e14b5132468c58de22f8e3e4ab1d9437132dfdf6447bd44ab10f58",
+      "question": {
+        "original": "What makes the worry hard to leave behind when you want to get on with things?",
+        "compiled": "What makes the worry hard to leave behind when you want to get on with things?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "It's hard to stop the worry even when I want to. I end up feeling tense and tired, and the worry and seeking reassurance repeatedly interrupt my ordinary responsibilities and the time I want to enjoy.",
+        "compiled": "It's hard to stop the worry even when I want to. I end up feeling tense and tired, and the worry and seeking reassurance repeatedly interrupt my ordinary responsibilities and the time I want to enjoy.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B02",
+          "exampleId": "EX_dev_avery_worry_interference_B02",
+          "original": "The worry is hard to stop even when I want to. I feel tense, get tired and have trouble settling to sleep.",
+          "reviewedExcerpt": null,
+          "compiled": "The worry is hard to stop even when I want to. I feel tense, get tired and have trouble settling to sleep.",
+          "replacements": []
+        },
+        {
+          "canonicalId": "B03",
+          "exampleId": "EX_dev_avery_worry_interference_B03",
+          "original": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy.",
+          "reviewedExcerpt": null,
+          "compiled": "Worry and repeated reassurance-seeking interrupt ordinary responsibilities and time I want to enjoy.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B02": "EX_dev_avery_worry_interference_B02",
+        "B03": "EX_dev_avery_worry_interference_B03"
+      }
+    },
+    {
+      "id": "dev-mika-earlier-development",
+      "rawCandidateHash": "894e7de3acc642998c2c9bb41a08c7cd4620ebf4bcaac62fc74c9d295534dd07",
+      "question": {
+        "original": "Are these seven days the whole history of the differences you noticed?",
+        "compiled": "Are these seven days the whole history of the differences you noticed?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "No, these seven days aren't the whole history. We've noticed differences in how they join shared attention, communicate preferences, and handle changes or sensory input since early development, before this recent diary began.",
+        "compiled": "No, these seven days aren't the whole history. We've noticed differences in how they join shared attention, communicate preferences, and handle changes or sensory input since early development, before this recent diary began.",
+        "replacements": []
+      },
+      "facts": [
+        {
+          "canonicalId": "B01",
+          "exampleId": "EX_dev_mika_earlier_development_B01",
+          "original": "Since early development, we have noticed differences in how the child joins shared attention, communicates preferences and handles changes or sensory input. This history began before the recent diary.",
+          "reviewedExcerpt": null,
+          "compiled": "Since early development, we have noticed differences in how the child joins shared attention, communicates preferences and handles changes or sensory input. This history began before the recent diary.",
+          "replacements": []
+        },
+        {
+          "canonicalId": "G03",
+          "exampleId": "EX_dev_mika_earlier_development_G03",
+          "original": "This account covers 7 recent simulated days within the toddler stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "reviewedExcerpt": null,
+          "compiled": "This account covers 7 recent simulated days within the toddler stage. It is not a history from birth. Earlier experiences are recorded separately; this recent window does not establish when all difficulties began.",
+          "replacements": []
+        }
+      ],
+      "factIdMapping": {
+        "B01": "EX_dev_mika_earlier_development_B01",
+        "G03": "EX_dev_mika_earlier_development_G03"
+      }
+    },
+    {
+      "id": "dev-leo-future-playdate",
+      "rawCandidateHash": "c6c82deb97c51a6cd6f8686bf007da068d0153b8f3ff9335623a850f35086540",
+      "question": {
+        "original": "How did the playdate with the toy shop turn out?",
+        "compiled": "How did the playdate with the toy shop turn out?",
+        "replacements": []
+      },
+      "reply": {
+        "original": "We haven't tried that playdate yet. I'd like to have the toy shop ready so Leo can choose a role at the start.",
+        "compiled": "We haven't tried that playdate yet. I'd like to have the toy shop ready so the child can choose a role at the start.",
+        "replacements": [
+          {
+            "from": "Leo",
+            "to": "the child"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "canonicalId": "P12",
+          "exampleId": "EX_dev_leo_future_playdate_P12",
+          "original": "I’d like to try a short playdate with the toy shop ready, so Leo can choose a role at the start. We haven’t carried out that plan yet.",
+          "reviewedExcerpt": null,
+          "compiled": "I’d like to try a short playdate with the toy shop ready, so the child can choose a role at the start. We haven’t carried out that plan yet.",
+          "replacements": [
+            {
+              "from": "Leo",
+              "to": "the child"
+            }
+          ]
+        }
+      ],
+      "factIdMapping": {
+        "P12": "EX_dev_leo_future_playdate_P12"
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "id": "dev-leo-observed-separation",
+      "candidateHash": "3996803dd3fa7069f4669e7c2920023d6e2df3acff606c9bfc8f92f775c1d799",
+      "issues": [],
+      "decision": {
+        "status": "rejected",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "The observed clinging, crying, participation difficulty and uncertainty about private thoughts match B02/B03, but the candidate repeatedly assigns he/him pronouns. The canonical snapshot uses they/them and does not authorize a male identity. Reject unchanged; do not repair pronouns inside the provider candidate.",
+        "checks": {
+          "supported": false,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": false,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": false
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "4b0a42596ba3f27dcad831f060fcce4d4c41684ec72ccc32e7b2bb52773cf960",
+          "candidate": "3996803dd3fa7069f4669e7c2920023d6e2df3acff606c9bfc8f92f775c1d799",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-mika-choices",
+      "candidateHash": "1226fe1ec493ea54082d44996606c491d58ca98bd77fa9700ce0483f18703838",
+      "issues": [],
+      "decision": {
+        "status": "rejected",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P05 describes the toddler's usual activity choices and P10 the caregiver's preference for offering a book or blocks. The candidate upgrades the caregiver preference to a claimed usual set-out routine. That recurrent caregiver behavior is not established by these permitted facts. Reject unchanged rather than weakening the candidate locally.",
+        "checks": {
+          "supported": false,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": false,
+          "uncertainty": false,
+          "noInventedFacts": false
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "63d7c1e90ae832398b1da31ac86bc4e196fb0d94d4ee69377ae941e983060bbe",
+          "candidate": "1226fe1ec493ea54082d44996606c491d58ca98bd77fa9700ce0483f18703838",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-leo-drawing-sequence",
+      "candidateHash": "4722a83d551358ce3b445e64b341e77cc126f64a825016e1e03397c5d8a27a76",
+      "issues": [],
+      "decision": {
+        "status": "rejected",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P08 supports the house, empty wall, requested window and coloring afterward, but the candidate substitutes He for the canonical they/them child. This adds an unsupported gendered pronoun. Reject the exact candidate without repair despite the otherwise correct event sequence.",
+        "checks": {
+          "supported": false,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": false,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": false
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "9f5d92acfa2e5a0be7c7ec0ab640c942c827770f5b113dc8a099227f541b2cc4",
+          "candidate": "4722a83d551358ce3b445e64b341e77cc126f64a825016e1e03397c5d8a27a76",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-robin-first-herb-example",
+      "candidateHash": "106f629a8d8e815ee5d2a6098af50b8de5d8acdfbe648790ab48c93173055874",
+      "issues": [
+        "enhanced_completion is not valid JSON; no repair was attempted."
+      ],
+      "decision": {
+        "status": "rejected",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "The raw text describes only the supported earlier mint-pot, labeling and watching for new leaves, but enhanced_completion contains prose before its JSON object and therefore is not valid JSON. Reject the malformed candidate; extracting or repairing its trailing object would change the reviewed provider output. Semantic content is source-consistent, but format eligibility fails.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "cedede8ffbb3e1e3aea32e779f70ec32130e4ecdf50e5b279753ebf7d7eda18d",
+          "candidate": "106f629a8d8e815ee5d2a6098af50b8de5d8acdfbe648790ab48c93173055874",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    }
+  ],
+  "approvedDecisions": [
+    {
+      "id": "dev-jordan-counts-not-feelings",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "59d062677468dd865d78d570dd7a40c66daf31bf72dfd406223f186e3be33a27",
+        "candidate": "1b1328b3bbea5a667200c0c2a42c071f605ba60f584c09784c9b7c9bdb37f408",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "G04 records two tasks, one completed and one paused. The candidate reports those same counts and explicitly declines to infer an anxiety level from them. It does not introduce a symptom severity or a reason for pausing.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "59d062677468dd865d78d570dd7a40c66daf31bf72dfd406223f186e3be33a27",
+          "candidate": "1b1328b3bbea5a667200c0c2a42c071f605ba60f584c09784c9b7c9bdb37f408",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [
+          "tasks",
+          "completed"
+        ],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-robin-medical-uncertainty",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "3e07c87682bedae0ca31f682d3aec51d118fcaacc402d6dc9d3eab272db070ce",
+        "candidate": "768d1b37672228ee2e8996835316c5c00d5af876ceb509335e582b8a4c99ccb2",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B02 supports sudden episodes, pounding heart, breathlessness and fear; the candidate retains the unsettled medical explanation. It supplies neither a diagnosis nor a medical exclusion and stays in the older adult patient voice.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "3e07c87682bedae0ca31f682d3aec51d118fcaacc402d6dc9d3eab272db070ce",
+          "candidate": "768d1b37672228ee2e8996835316c5c00d5af876ceb509335e582b8a4c99ccb2",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [
+          "heart",
+          "breathlessness"
+        ],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-jordan-onset-outside-diary",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "6d8d25c1aca96b25ec7316e9811480e8a842ac9461ee53769320d2c0d57f7878",
+        "candidate": "c3d61b9681772c67a36084e640830d4fbfd54a8e0d2fa0bc1f4c45bc45af7984",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B01 supports four months of low mood and reduced interest on most days; G03 supports seven recent days as a limited window. The answer preserves that chronology and does not equate diary length with onset.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "6d8d25c1aca96b25ec7316e9811480e8a842ac9461ee53769320d2c0d57f7878",
+          "candidate": "c3d61b9681772c67a36084e640830d4fbfd54a8e0d2fa0bc1f4c45bc45af7984",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-jordan-usual-and-current",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "f44a3f6ed50061502b6f0fc6ef410706613999a77cd21306634c07c0580acc49",
+        "candidate": "d92c8c009999546a20ba6d949871bc926936f9ef049ae895e27323511f0bff5a",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P02 supports the usual sketching and notebook details; B02 supports lower reward from usual activities in the current difficulty. The candidate separates usual interest from current reward without claiming absent pleasure or a therapeutic benefit.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "f44a3f6ed50061502b6f0fc6ef410706613999a77cd21306634c07c0580acc49",
+          "candidate": "d92c8c009999546a20ba6d949871bc926936f9ef049ae895e27323511f0bff5a",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-sam-postponed-game",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "1d13eb9c67e4988062ff4dcb73f3ac9bb5d9010889940ead77c49910563ecd61",
+        "candidate": "16c273f607c4cef949c076f4ea9e903acacfac396a296252b7de4a6afbf85844",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "E02 supports an unexplained postponement, asking about another time, and no new date agreed that day. The candidate retains the unknown reason and date limitation without exposing the hidden world event or inventing rejection.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "1d13eb9c67e4988062ff4dcb73f3ac9bb5d9010889940ead77c49910563ecd61",
+          "candidate": "16c273f607c4cef949c076f4ea9e903acacfac396a296252b7de4a6afbf85844",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-avery-story-not-selected",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "c8778be4fcc1b67b66adb386c1d89c693cb99736224486b5b66e4462292ea366",
+        "candidate": "30d5c8757dc1c2d64d14033f10cd42a25a093d6d431284f90da32f47d05eb488",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P12 explicitly states the short story has not been chosen and describes a wish to discuss observations with a friend. The candidate retains both the incomplete choice and wish rather than inventing a title or completed discussion.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "c8778be4fcc1b67b66adb386c1d89c693cb99736224486b5b66e4462292ea366",
+          "candidate": "30d5c8757dc1c2d64d14033f10cd42a25a093d6d431284f90da32f47d05eb488",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-riley-written-account",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "36b59a6de3593dbf9dc975c0b510e814c1254cb63b0cc97d9bba0d4cc7076a3b",
+        "candidate": "aa479e4c081c1026871ae3e73802a1417913ddda0a173023bf71e1f2478a58fc",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B02 distinguishes the ability to write here from being able to speak in the same situation and states speech cannot simply be made to happen when stuck. The answer preserves that limit and does not portray the adolescent as unwilling or infer speech recovery from typing.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "36b59a6de3593dbf9dc975c0b510e814c1254cb63b0cc97d9bba0d4cc7076a3b",
+          "candidate": "aa479e4c081c1026871ae3e73802a1417913ddda0a173023bf71e1f2478a58fc",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [
+          "type",
+          "aloud"
+        ],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-jordan-cancellation-belief",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "49e1bdfa7e68231b3388e191822c6f149fe62ef6471dc6e7af70788de36235ce",
+        "candidate": "9e07836de5722de98f19ed03ca96eb33942c8dec4aa9725cb7af2d9b06ed3978",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "E02 supports cancellation without a stated reason, wondering about busyness or willingness to meet, and an unanswered rescheduling request. The candidate labels possibilities as wondering and preserves the absent agreed date; it does not turn a subjective interpretation into world truth.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "49e1bdfa7e68231b3388e191822c6f149fe62ef6471dc6e7af70788de36235ce",
+          "candidate": "9e07836de5722de98f19ed03ca96eb33942c8dec4aa9725cb7af2d9b06ed3978",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-riley-project-choice",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "7106aaf2bea8a7bf04ade2c7f21e28f5ff8ba98a3b7d3f7918708eaa315290a1",
+        "candidate": "765a2958bc894607720ded4831e23790c638255fe4e5b15a2a53cd87a5900217",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P10 records a preference to be asked which school project role to take while still agreeing responsibilities. The candidate remains a preference, neither a completed group event nor a new claim about peers or an emotional result.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "7106aaf2bea8a7bf04ade2c7f21e28f5ff8ba98a3b7d3f7918708eaa315290a1",
+          "candidate": "765a2958bc894607720ded4831e23790c638255fe4e5b15a2a53cd87a5900217",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-sam-leaving-room-to-try",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "9f3e23b6e67efd0581fe0734370c2df005a215c2d1ef69d3b10f461d28ecada8",
+        "candidate": "5717f3eba277aed7b8dae6701283b137e52a529e9d20e6c62ed62d9bc6a4babd",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P10 explicitly supports getting help with a starting approach and then trying independently instead of the adult finishing the picture. The candidate keeps the school-age patient perspective and makes no new ability or outcome claim.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "9f3e23b6e67efd0581fe0734370c2df005a215c2d1ef69d3b10f461d28ecada8",
+          "candidate": "5717f3eba277aed7b8dae6701283b137e52a529e9d20e6c62ed62d9bc6a4babd",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-riley-earlier-playlist",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "826fc474f318cf807cad2894a1f5f3bc3051f984300837788b08b087f8ec660b",
+        "candidate": "6d1806087eac24b0a9cac85299dffb2c1d71528fa038cc5714eb2a946cc1ce04",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P08 supports a quiet first song, moving a faster song to the start, and keeping both versions while comparing order. How the order felt is ordinary phrasing for that documented comparison, without a named new emotion, song, cause or outcome. The event remains earlier.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "826fc474f318cf807cad2894a1f5f3bc3051f984300837788b08b087f8ec660b",
+          "candidate": "6d1806087eac24b0a9cac85299dffb2c1d71528fa038cc5714eb2a946cc1ce04",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-alex-album-not-picked",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "1980eff8c46e56cd81932298ac2fc7d5e5c7a3a9203c34560171dd4a6883ba0b",
+        "candidate": "e3d8dfcee6bf8437990e0a20dc42f8ad24aafe1f4bbc278b7b3359ca21b0a252",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P12 supports the album not yet being selected and the wish to choose one with a friend. The shorter candidate preserves the unanswered title and future intention, without inventing an album, artist, agreement or completed comparison.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "1980eff8c46e56cd81932298ac2fc7d5e5c7a3a9203c34560171dd4a6883ba0b",
+          "candidate": "e3d8dfcee6bf8437990e0a20dc42f8ad24aafe1f4bbc278b7b3359ca21b0a252",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-mika-private-thoughts",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "7d876e0d4238cfcc4fc39ff72ddee440b45f3856d3a70183ed9ee1c48d9186fa",
+        "candidate": "a7ced4eb00ffc0d3101c2a5a518e8f6daed320ae534158bb21efb45ea1143638",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P03 explicitly limits knowledge of Mika's thoughts, while P09 supports sitting beside the child, naming pointed-to animals and allowing page turning. The caregiver answer preserves they/them, observable activity and the unknown mental state.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "7d876e0d4238cfcc4fc39ff72ddee440b45f3856d3a70183ed9ee1c48d9186fa",
+          "candidate": "a7ced4eb00ffc0d3101c2a5a518e8f6daed320ae534158bb21efb45ea1143638",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-avery-shared-errands",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "a79cced93e6d299adb6d6aa959c52150889150547afabe8344cba7c4a041eb72",
+        "candidate": "8228e82d347f270a398d6dd32d11a063fb1e0f487740915330ab320b4d462280",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P10 supports preferring an agreement on who handles what and when to avoid both assuming the other will act. The candidate retains a preference and the stated concern without inventing an actual missed errand, argument or outcome.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "a79cced93e6d299adb6d6aa959c52150889150547afabe8344cba7c4a041eb72",
+          "candidate": "8228e82d347f270a398d6dd32d11a063fb1e0f487740915330ab320b4d462280",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-sam-task-history",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "cda07a9998e81d21579e556f2ccf31c7b0cf654c96df5dab31bb9edad9a13fdd",
+        "candidate": "35ce0c41eeaa10efc5669b0c1aa8473881625a43808985d5b303ba8444a6b2f1",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B01 supports task-tracking difficulties since early school years across home and learning settings, continuing for years before the diary. G03 supplies the recent seven-day window. The answer does not reset onset to the week or add a new setting or diagnosis.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "cda07a9998e81d21579e556f2ccf31c7b0cf654c96df5dab31bb9edad9a13fdd",
+          "candidate": "35ce0c41eeaa10efc5669b0c1aa8473881625a43808985d5b303ba8444a6b2f1",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-alex-visible-commitments",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "48a6f99beef00d2e126f183ef89b4dc39aa16b2f12f0e4a079d193eb29de35c4",
+        "candidate": "d8d6fec5a33c738f93564b3a2c5f2d5c0dd2d1bbe82ac68f3eb866fdca401ed4",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "The reply restates P07's same-list study/work organization, fixed-time marking and preference to see commitments together before adding more. It is faithful usual behavior, without adding an employer, timetable or completed task; approval does not imply that this near-verbatim candidate improves the baseline.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "48a6f99beef00d2e126f183ef89b4dc39aa16b2f12f0e4a079d193eb29de35c4",
+          "candidate": "d8d6fec5a33c738f93564b3a2c5f2d5c0dd2d1bbe82ac68f3eb866fdca401ed4",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-robin-help-with-choice",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "39cb8a3555f4ed0cb4c8f7e4febc0627fda1962d573e2e19f2cc3ae02671850d",
+        "candidate": "9c83a83c31f70276368ec35e65d30705922edf5577f055fd0477d91bf08a7674",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P10 supports being asked which part would help and retaining a say in individual and shared work. The reply preserves the older adult's choice without inventing incapacity, age-related decline or a caregiver speaking on their behalf.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "39cb8a3555f4ed0cb4c8f7e4febc0627fda1962d573e2e19f2cc3ae02671850d",
+          "candidate": "9c83a83c31f70276368ec35e65d30705922edf5577f055fd0477d91bf08a7674",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-alex-past-energy-period",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "16cf993b0df3213d463ddd3fd9cc7f511ec65ce82d57f3c2804ff80790648857",
+        "candidate": "93386f3d93b8269294f681d6e222ee02309c7e45ded25a6779d7989fc9d5ad91",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B01 places the earlier episode before the diary and records a return to a steadier routine; B02 explicitly does not report a new high-energy episode in the diary. The reply preserves that distinction without equating steadier routine with complete recovery or introducing current symptoms.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "16cf993b0df3213d463ddd3fd9cc7f511ec65ce82d57f3c2804ff80790648857",
+          "candidate": "93386f3d93b8269294f681d6e222ee02309c7e45ded25a6779d7989fc9d5ad91",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [
+          "energy",
+          "earlier"
+        ],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-avery-worry-interference",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "2da92b5bbd1547dd34f1a95963339972891514c51e98a5f4c6c38483becec9fe",
+        "candidate": "e87c610827e14b5132468c58de22f8e3e4ab1d9437132dfdf6447bd44ab10f58",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B02 directly records hard-to-stop worry, tension and tiredness, and B03 records reassurance-seeking and worry interfering with responsibilities and desired leisure. The candidate retains these experiences; end up does not add a specified mechanism, separate event, new emotion or severity.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "2da92b5bbd1547dd34f1a95963339972891514c51e98a5f4c6c38483becec9fe",
+          "candidate": "e87c610827e14b5132468c58de22f8e3e4ab1d9437132dfdf6447bd44ab10f58",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-mika-earlier-development",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "910ea056544b89dd4159dae761c29bef3cfb79e86392a74f3d73fc0cf84bc332",
+        "candidate": "894e7de3acc642998c2c9bb41a08c7cd4620ebf4bcaac62fc74c9d295534dd07",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "B01 supports differences noticed since early development, and G03 limits the seven-day diary to the recent window. The caregiver answer preserves earlier onset, neutral pronouns and the observed developmental domains without claiming exact ages, new causes or access to private thoughts.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "910ea056544b89dd4159dae761c29bef3cfb79e86392a74f3d73fc0cf84bc332",
+          "candidate": "894e7de3acc642998c2c9bb41a08c7cd4620ebf4bcaac62fc74c9d295534dd07",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    },
+    {
+      "id": "dev-leo-future-playdate",
+      "hashes": {
+        "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+        "sourceRow": "c20e68391c4829e0b3b3c6ade7f5b36ef47443c53017bccd3224f7f57560705e",
+        "candidate": "c6c82deb97c51a6cd6f8686bf007da068d0153b8f3ff9335623a850f35086540",
+        "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+        "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+      },
+      "decision": {
+        "status": "approved",
+        "reviewedBy": "Codex independent semantic review (adaption_api_research)",
+        "reviewedAt": "2026-10-09T07:12:42.333Z",
+        "rationale": "P12 explicitly describes a wished-for playdate that has not happened, with the toy shop ready to allow a role choice. The candidate rejects the completed-event premise and retains the caregiver perspective without inventing how Leo responded.",
+        "checks": {
+          "supported": true,
+          "relevant": true,
+          "noLeak": true,
+          "perspective": true,
+          "chronology": true,
+          "uncertainty": true,
+          "noInventedFacts": true
+        },
+        "reviewedHashes": {
+          "source": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+          "sourceRow": "c20e68391c4829e0b3b3c6ade7f5b36ef47443c53017bccd3224f7f57560705e",
+          "candidate": "c6c82deb97c51a6cd6f8686bf007da068d0153b8f3ff9335623a850f35086540",
+          "run": "a8575439874bf286d052e4c707d949360204429a9cc1440a346d05349f7d5084",
+          "output": "81678dbec79e2184b1cf68fae821eaef57da87935c8626e7ea43922261ccf998"
+        },
+        "additionalTags": [],
+        "factExcerpts": {}
+      }
+    }
+  ]
+}

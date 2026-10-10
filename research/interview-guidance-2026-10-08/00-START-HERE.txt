@@ -1,0 +1,34 @@
+PsychLab — interview checklist, questions and diagnostic reasoning
+Research and implementation: 8 October 2026
+
+Open 01-Research-guide.html for the readable, linked research guide.
+Coverage: every one of the 59 young-adult options, all 67 named options across life stages, and a broad standard guide for mystery/no-disorder interviews.
+There are 334 condition-specific checkpoints and 17 broad interview prompts. Each condition includes course/history guidance, original questions, alternative explanations, an assessment reference with interpretation limits, and source links. The condition entries reference 108 distinct URLs; the broad guide has additional shared sources.
+
+Source files:
+part-a.json and part-a-research.txt — developmental, mood, anxiety and initial obsessive-compulsive spectrum options.
+part-b.json and part-b-research.txt — body-focused repetitive behavior, trauma, dissociation, somatic, eating, elimination, sleep and disruptive behavior options.
+part-c.json and part-c-research.txt — substances, gambling, psychosis, cognition, personality, gender dysphoria and ICD-11 comparisons.
+standard-guidance.json and standard-research.txt — the broad interview and common clinical reasoning framework.
+
+Research limits:
+The full licensed DSM-5-TR manual was not accessed. Public publisher summaries, official clinical guidance and original assessment-source material were reviewed; access failures and abstract/index-only evidence are identified in the research notes. This is a targeted public-source synthesis, not an exhaustive systematic review. Questions are original educational adaptations, not complete DSM criteria or copied questionnaires. Assessment links do not imply permission to embed the instruments. Tool selection still requires checking exact age, language, respondent and training/permission requirements.
+
+In the application:
+Prepare an interview, then find Interview companion under the conversation.
+1. Checklist — distinguish Supported, Not supported, Unclear and Not asked; choose an answered transcript turn and record why it matters.
+2. Interview questions — copy a prompt into the question box and edit before sending.
+3. Diagnosis test — record a provisional impression, alternatives and a next step. Check my reasoning identifies missing inquiry, uncertainty and entries without evidence links. It checks the structure of notes, not the clinical truth of a conclusion.
+
+Chosen cases have a focused guide. Mystery cases always receive the same broad guide for the same life stage, regardless of the hidden target. No-disorder cases use broad inquiry without assuming that ordinary distress proves a disorder. After finishing, the saved provisional label is compared with the authored teaching case; matching a label does not validate a diagnosis. The separate final reflection can express a more nuanced conclusion.
+
+Save interview notes or Check my reasoning saves notes in the active server session. They survive a page refresh and accompany the browser's saved conversation once it contains an answer. Notes are included in conversation downloads and the final debrief. Server restarts end active sessions; browser History keeps previously saved conversations. An unsaved edit remains marked Unsaved notes. Finishing saves notes first.
+
+Cost and boundaries:
+Guide loading, checklist work, saving and reasoning checks use zero Featherless calls. Sending an interview question retains the existing answer budget. Guides and private learner notes are not sent to the patient-response model. Existing frozen history, safety boundaries and case concealment remain in place. No new standardized test scores, diagnosis probabilities or competence ratings are generated.
+
+Verification:
+107 automated tests passed across the live app suites. After the final research wording updates, 40 focused guide/UI/history tests passed again. These check catalogue completeness, all compatible case/profile guides, mystery content invariance across 59 targets, evidence validation, ownership/origin controls, persistence, save races, exports, case comparison and unchanged model consumption/history.
+An isolated local mock-provider browser flow checked prompt copying, a response-linked note, saving, reasoning gaps, refresh and completed debrief. Mock replies were not presented as live Featherless validation.
+
+The research and software have not undergone independent clinical validation.

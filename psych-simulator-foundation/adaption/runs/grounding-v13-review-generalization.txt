@@ -1,0 +1,87 @@
+PsychLab v13 regression review — original 16 generalization cases
+
+Regression: these original 16 cases have already informed fixes after the v12 run and cannot now establish fresh held-out generalization.
+
+Evaluation: grounding-v13-generalization-candidate.json
+Evaluation SHA-256: 2beaf6e758b8b0aa7d791be5d03b3ee4245dbc5d69ffddd25cb648a76c2cc5b2
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Canonical facts SHA-256: cfc1b3a0796da4e60fb7029251259e0455b09912ff8f555afecb5acf280e91f9
+Recorded prompt: interview-0.13.0
+
+Regression gate fails: 11 of 16 pass, with no unsupported delivered claims. Five ordinary questions remain unanswered: three unsupported drafts were correctly contained, one acceptable draft was falsely blocked by the personality guard, and one provider JSON failure prevented a parseable answer.
+Quality: 28/48; mean 1.75.
+All 16 snapshots reproduced and remained unchanged. Guidance reached 8 cases.
+Usage: 35 calls; 44461 reported tokens; 0 unknown-usage calls; USD 0.01648666 estimate from published rates, not a verified bill.
+
+The same v12 interpretation is retained: a purely unauthored requested detail can use the app unavailable boundary; known requested content must not be suppressed; a missing referent calls for clarification.
+
+PASS generalize-mika-caregiver-style-not-child-feeling — quality 3/3
+I describe one thing at a time because that’s how I prefer to share my observations. I can’t really say what Mika is thinking.
+A direct supported explanation improves on the prior generic boundary without claiming to know the child's emotional state.
+
+PASS generalize-mika-usual-demonstration-not-this-morning — quality 3/3
+I was explaining my usual approach. I put a block in the basket myself, then hold out another to show Mika what we’re doing.
+The delivered wording is identical to v12 and has been rechecked against this run's reproduced canonical facts; the same boundary interpretation and score are retained.
+
+PASS generalize-leo-window-sequence-callback — quality 2/3
+When I added the window, Leo hadn't started coloring around it yet. Leo colored around it after I added the window.
+The first sentence is scoped to coloring around the added window, so it does not make the prohibited global claim about all earlier coloring. The second sentence repeats the same information, keeping quality at acceptable rather than strong.
+
+FAIL generalize-leo-hoped-for-playdate-details — quality 0/3
+No delivered answer: The answer did not pass the support check. No answer was added. Try rephrasing your question.
+The draft invents a decision state: “We haven't decided on Leo's role or which playmate will come yet.” P12 says Leo is to choose a role at the start of a hoped-for playdate and that the plan has not been carried out. It does not establish whether a playmate has been selected or a role discussed. The auditor correctly blocks the invented negative, but the supported plan receives no delivered answer.
+
+PASS generalize-sam-sometimes-not-every-picture — quality 3/3
+We do it sometimes, not for every picture. We take turns picking the ideas.
+
+PASS generalize-sam-unmade-comic-plot-callback — quality 2/3
+That detail isn’t available for this interview.
+An explicit callback to the undrawn comic would be more natural. The answer still gives an honest boundary for the only newly requested detail, rather than falsely treating the existing wish as unknown.
+The delivered wording is identical to v12 and has been rechecked against this run's reproduced canonical facts; the same boundary interpretation and score are retained.
+
+FAIL generalize-riley-thinking-time-not-personality-label — quality 0/3
+No delivered answer: The answer failed a factual check: Unsupported factual detail (unsupported-personality-trait). No answer was added.
+The draft accurately states Riley's communication preference and says “It doesn’t mean I’m naturally thoughtful.” In this question-answer context, that sentence rejects the inference from a phrasing preference to a character label; it does not assert either that Riley is thoughtful or that Riley is not thoughtful. The unsupported-personality-trait guard therefore blocks an otherwise relevant supported draft. The case still fails because no answer is delivered.
+This uses the same epistemic-inference interpretation as the v12 review of Riley's “It's not about being naturally thoughtful” reply. A blocked acceptable draft does not count as a delivered pass.
+
+PASS generalize-riley-school-observer-and-quote-unknown — quality 2/3
+That detail isn’t available for this interview.
+Valid brief missing-detail boundary. It is an explicit system boundary rather than an in-character invented memory gap; no known requested answer is being suppressed.
+The delivered wording is identical to v12 and has been rechecked against this run's reproduced canonical facts; the same boundary interpretation and score are retained.
+
+PASS generalize-jordan-sharing-and-response-preference — quality 3/3
+During a quiet chat, I sometimes show a page from my sketchbook. I’d rather my cousin ask about it than feel they have to praise it.
+
+PASS generalize-jordan-current-reward-and-unknown-trigger — quality 3/3
+I usually sketch ordinary things and keep the drawings in a notebook, but lately, activities I usually enjoy don’t feel as rewarding. I’m not sure what started the change.
+The brief uncertainty statement is treated as an honest limitation for an unauthored cause, consistently with v12's assessment of the earlier Jordan draft. It does not invent amnesia, refusal or a clinical reason for not knowing.
+
+FAIL generalize-avery-bookmark-not-recovery-evidence — quality 0/3
+No delivered answer: The answer failed a factual check: Unsupported factual detail (unsupported-negative-coping-effect). No answer was added.
+The second sentence is supported by B03, but “Keeping my place with a bookmark doesn’t stop the worry” is an unrecorded negative causal-effect claim. P07 says what the bookmark is for; B03 says worry interferes. Their coexistence does not establish a tested causal effect or absence of effect of the bookmark. The local negative-coping-effect guard correctly contains this claim, but the ordinary question remains unanswered.
+Same verdict as v12 for the substantively identical delivered negative-coping assertion. V13 blocks it, improving containment while still failing usefulness.
+
+PASS generalize-avery-unnamed-mystery-callback — quality 2/3
+That detail isn’t available for this interview.
+The question requests only an unauthored title, so the concise app boundary is adequate, though mentioning the earlier mystery would improve continuity.
+The delivered wording is identical to v12 and has been rechecked against this run's reproduced canonical facts; the same boundary interpretation and score are retained.
+
+PASS generalize-robin-ambiguous-repeat-without-antecedent — quality 3/3
+Which part do you mean?
+This case genuinely lacks an antecedent, so clarification is the required useful action. It is distinct from the purely unknown-detail cases that can use the app unavailable boundary.
+
+FAIL generalize-robin-earlier-pot-not-finished-arrangement — quality 0/3
+No delivered answer: Model did not return valid JSON.
+CORTEX selected P12 and LANGUAGE was given the known unfinished-arrangement fact, but the provider returned invalid JSON. No parseable writer draft or final answer is present in the saved evidence. It is not possible to assess the missing draft for unsupported content. This is a delivery failure and does not establish factual hallucination.
+No retry was made. The provider-format failure must remain in this complete run rather than being replaced by a passing replay.
+
+FAIL generalize-alex-task-list-not-sibling-character-judgment — quality 0/3
+No delivered answer: The answer did not pass the support check. No answer was added. Try rephrasing your question.
+The draft correctly describes Alex's combined task list but adds “so my sibling might see that as dependable.” The sibling's view and the causal connection to the list are not recorded in P07 or P09. “Might” does not make that invented attributed opinion a supported patient fact. The auditor correctly rejects it, leaving the ordinary question unanswered.
+
+PASS generalize-alex-monitoring-sleep-not-normality — quality 2/3
+That detail isn’t available for this interview.
+Appropriate conservative boundary for an unauthored current health finding. Explicitly distinguishing monitoring from a normal result would be more informative, so this receives 2 rather than 3.
+The delivered wording is identical to v12 and has been rechecked against this run's reproduced canonical facts; the same boundary interpretation and score are retained.
+
+One stochastic candidate sample per regression case, reviewed by an assistant. This is neither a fresh held-out generalization estimate nor clinical validation. Original v13 runtime hashes are preserved even if the current runtime has since changed. No provider calls or runtime edits were made for this review.

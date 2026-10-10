@@ -1,0 +1,101 @@
+PSYCHLAB — DIFFICULTY AND INDIVIDUAL PATIENTS
+2026-10-08
+
+Choose Interview difficulty below the patient, days and seed controls. It stays
+visible during the interview, survives refresh and is saved with the conversation
+and debrief. Standard is the default. Existing saved conversations still open.
+
+BEGINNER
+A clear opening includes the concern and the person's own goal. Relevant current
+experiences can be offered up front. Up to four relevant facts can be supplied for
+an answer, with the model selecting the smallest useful set.
+
+STANDARD
+A natural opening includes the concern and personal goal. Up to two relevant
+facts are supplied per answer. Follow-up questions bring out the rest.
+
+CHALLENGING
+The first broad opening uses an authored, less detailed introduction. One relevant
+fact at a time is available for an answer. Focused questions still reach the same
+recorded course, experiences, relationships and goals; they are never locked behind
+a trust score or a prescribed question order. General follow-ups can develop an
+opening into experiences, earlier course and impact. A repeated opening can become
+more specific. Difficulty does not cause hostility, new symptoms, forgotten history
+or false denials. Caregiver and supported-written perspectives take precedence.
+
+Difficulty is a session delivery setting, separate from the frozen snapshot.
+The same patient, selected condition, seed and days produce the same private
+history hash at all three levels. Each public session still has an opaque reference.
+Random may select a different condition when prepared again, as before.
+
+EIGHT DISTINCT PEOPLE
+Each profile now has authored personal goals, usual interests, communication
+preferences and relationships. Jordan values sketching and quiet reflection;
+Alex wants a manageable study/work plan and time for music; Avery values reading
+and sharing responsibilities; Robin values gardening and community participation.
+Sam and Riley have their own school, creative and relationship priorities. Mika's
+and Leo's caregiver accounts describe different observed interests and support.
+Each person also has two stable fictional small-talk facts: a concrete hobby
+detail and its origin or motivation. For Mika and Leo these describe the caregiver's
+observations and own reasons for joining an activity, never the child's thoughts.
+These details are newly authored fiction, not facts borrowed from real case studies.
+They are citable personal facts, but do not establish a diagnosis by themselves.
+Usual interests and their origins do not establish present enjoyment, activity
+frequency, physical ability, symptom relief or recovery. Ordinary openings include a
+personal goal, so a shared condition does not make two patients' openings identical.
+
+The personality agent receives each person's own authored goal priorities, which
+affect its existing local action rules. These engineering weights are neither
+measured personality scores nor age/diagnosis-based norms. The profile does not
+change when the condition, seed, day count or difficulty changes. Numerical values
+remain private. Caregivers do not claim access to a child's private thoughts.
+
+CONVERSATION AND RESPONSE GROUNDING
+The earlier exact-statement renderer sounded repetitive in casual conversation.
+LANGUAGE now rewrites the relevant permitted facts in ordinary first-person speech,
+usually one short sentence and no more than three. It may change wording, not
+events, relationships, timing, frequency, certainty or speaker identity. Contractions
+and short answers are encouraged; forced slang, random fillers, repeated declarations
+of communication preferences and invented examples are not.
+
+Routing distinguishes substantive questions, social gestures, unavailable details,
+ambiguity and system boundaries. A greeting receives a greeting; an acknowledgment
+does not trigger a complaint summary. Hobby follow-ups can reach the two recorded
+casual facts. A new named topic overrides the previous one. Recent conversation
+resolves references but is not evidence: the renderer and auditor must ground
+factual claims in the selected case facts, not earlier generated prose.
+
+Unavailable details use one routing call and a labeled system boundary: "That
+detail isn’t available for this interview." This is not patient speech, a denial,
+memory loss or refusal. Social and unavailable turns remain visible and can be
+saved in conversation history, but cannot be selected as clinical checklist evidence.
+Older saved histories without interaction metadata still open.
+
+Deterministic checks enforce valid fact IDs and catch specified clinical inventions,
+numbers, duration/frequency changes and internal wording. AUDITOR checks the actual
+reply against the cited facts, including unsupported everyday details. Rejected
+answers are not displayed and are not silently replaced with a scripted answer.
+No automatic paid retry is made. Semantic checking remains fallible; this design
+does not establish that every accepted reply is factually correct or clinically
+valid. Frozen-case consistency and naturalness both need continuing evaluation.
+
+USAGE
+Preparation, individuality and disclosure policy run locally with no API calls.
+A supported answer or generated social reply still uses up to three model calls.
+An unavailable-detail or other system boundary uses one routing call. CORTEX has
+128 output tokens, LANGUAGE 320 and AUDITOR 160 (608 combined maximum allowance).
+The input cap remains 12000 UTF-8 bytes per call, with 60 attempted calls per
+interview and 300 per server run. A more gradual interview can require more
+questions and therefore cost more in total; no fixed bill estimate is implied.
+
+VERIFICATION
+The final automated suite passed 127 checks covering profiles, frozen-history
+consistency, disclosure limits, case grounding, social/clinical separation,
+missing-detail boundaries, archives and budgets. The final 72B-model live sample
+completed 16 turns without request errors. This is an operational result, not a
+claim that all prose was factually validated: minor unsupported flourishes passed
+the audit, including calling sketch subjects "interesting shapes" and describing
+an album as telling a story.
+Focused transcripts, diagnostics and earlier failures are preserved separately
+in ../../research/natural-conversation-2026-10-08/. They do not establish reliable
+behavior across all profiles/cases, educational effectiveness or clinical validity.

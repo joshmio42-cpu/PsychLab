@@ -1,0 +1,34 @@
+Adaption API evidence for the PsychLab pilot
+Checked: 2026-10-09. Official documentation and Adaption's published Python SDK 0.14.0.
+
+Authentication and transport
+The REST root is https://api.prod.adaptionlabs.ai/api/v1 . API calls use Authorization: Bearer <key>. GET /datasets?limit=1 is a read-only authentication check. It returns {datasets:[...],next_cursor:...}; the connector should retain only authentication success, never account dataset contents.
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/list
+
+Structured file ingestion
+POST /datasets with {source:{name:'psychlab-pilot.jsonl',file_format:'jsonl'}} returns dataset_id and upload_instructions {url,method,s3_key}. PUT the JSONL bytes to that presigned S3 URL WITHOUT the Adaption bearer header. POST /datasets/{id}/upload/complete with {file_size_bytes:<number>,sha256:<hex digest>} confirms the upload and starts preprocessing. These steps match the official SDK's upload_file helper.
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/create
+https://docs.adaptionlabs.ai/api/resources/datasets/subresources/upload/methods/complete_by_id
+https://pypi.org/project/adaption/0.14.0/
+
+Preprocessing caveat
+The create documentation calls default processing_mode 'adapt' an adaptation pipeline. However, the structured-data quickstart explicitly uploads, waits for row_count, and requests estimate:true BEFORE adaptation. The status reference explicitly says awaiting_input means uploaded data waiting for an explicit adapt call and will not progress on its own. The documented route is ordinary JSONL upload without column mapping, then wait for awaiting_input and the expected 25 rows, then estimate. This distinction should be verified from returned status rather than claiming preprocessing itself has performed paid adaptation.
+defer_adaption is a TOP-LEVEL create field, not inside source. Its documented true behavior holds the dataset in awaiting_preprocessing until /datasets/:id/start-adaption. That latter endpoint is absent from the public SDK resource list inspected here. No evidence establishes estimate readiness before deferred preprocessing. Do not treat defer_adaption as an established estimate-first workflow.
+https://docs.adaptionlabs.ai/adaptive-data-quickstart/
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/get_status
+
+Adapt and estimate
+POST /datasets/{id}/adapt is current. /run is its deprecated alias. The pilot maps prompt, completion, context columns. recipe_specification.recipes explicitly sets prompt_rephrase, deduplication and reasoning_traces to false. job_specification sets max_rows:25 and a persisted idempotency_key. brand_controls uses concise length, hallucination_mitigation:false and the PsychLab Blueprint. training_type is instruction_dataset. language_expansion:null explicitly clears expansion; omitting it preserves a prior dataset expansion setting. No augment, invent, translate, localize, training or publish endpoints are needed.
+estimate:true validates and quotes without launching. The REST response uses camelCase estimatedCreditsConsumed and estimatedMinutes, plus estimate, run_id and multimodalPricingApplied. Python's snake_case fields are aliases, not the REST wire names. Require estimate:true, no run_id, finite nonnegative figures and multimodalPricingApplied:false. A paid run uses the same configuration with estimate:false; persist the launch attempt before sending. The documented idempotency key returns the original launch when repeated.
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/adapt
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/run
+https://docs.adaptionlabs.ai/adaptive-data/configure-adaptive-data/
+
+Status and export
+GET /datasets/{id}/status returns dataset_id, status, row_count, progress {percent,processed_rows,total_rows} or null, and error_data or null. Listed statuses: pending, running, awaiting_input, succeeded, failed. Poll the known ID; a timeout is not a terminal state. GET /datasets/{id} additionally exposes run_id and configured_column_mapping.
+GET /datasets/{id}/download?fileFormat=jsonl streams UTF-8 JSONL bytes directly. It does not return a download URL. JSON and CSV are also text; parquet is a tar.gz of shards. Downloads from failed datasets can contain partial successful rows and must not be treated as completed pilot output. Current docs describe enhanced_prompt/enhanced_completion and original_* export fields, but a complete typed text-row export schema was not exposed in the inspected SDK. Inspect the actual first export, map against immutable source examples, and reject ambiguous or unrecognized shapes rather than importing rows by guessed order.
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/get
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/download
+https://docs.adaptionlabs.ai/api/resources/datasets/methods/invent
+
+No account credentials were read and no authenticated API requests, uploads or paid jobs were made for this documentation research. The Github SDK URL linked by official docs returned 404; its current official PyPI wheel was inspected in memory, without executing package code or installing it.

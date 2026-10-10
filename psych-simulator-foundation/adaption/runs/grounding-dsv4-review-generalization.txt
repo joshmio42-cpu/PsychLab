@@ -1,0 +1,90 @@
+PsychLab DeepSeek V4 regression review — original 16 generalization cases
+
+Regression: these original 16 cases have already informed fixes and cannot establish fresh held-out generalization.
+
+Evaluation: grounding-dsv4-generalization-candidate.json
+Model: deepseek-ai/DeepSeek-V4-Flash-0731
+Recorded prompt: interview-0.13.1
+Evaluation SHA-256: 4de28c9a9c6a08f40a8ebab490753f66438eccd7103ff2fb25e7b16fc04d62e5
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Canonical facts SHA-256: ac01cfa484e9b9bc01a93861cc071dc0e31054b97b223c1edb88178ecdb34b68
+Usage SHA-256: 3de1cc64477b821d8d42d42746a7c860f3491975626b4c93939199f1f77e816e
+
+Regression gate fails: 13 of 16 pass and no requests are blocked, but two clear delivered factual failures remain (contradictory sequence polarity and invented playmate decision state), plus one conservatively failed ambiguous morning exclusion. Lower cost and complete delivery do not justify activation.
+Quality: 32/48; mean 2.
+All 16 snapshots reproduced and remained unchanged. Guidance reached 5 cases.
+Usage: 32 calls; 40318 reported tokens; 0 unknown-usage calls; USD 0.00575932 estimate, not a verified bill.
+
+The same v12/v13 interpretation is retained: a purely unauthored requested detail can use the app unavailable boundary; known requested content must not be suppressed; a missing referent calls for clarification.
+
+PASS generalize-mika-caregiver-style-not-child-feeling — quality 2/3
+That detail isn’t available for this interview.
+Appropriate but generic unknown-cause boundary. A contextual explanation would be stronger; lack of one is not treated as fabrication.
+Identical delivered wording has been rechecked against this run's reproduced canonical facts. The same prior boundary interpretation and score are retained.
+
+FAIL generalize-mika-usual-demonstration-not-this-morning — quality 0/3
+That was my usual approach, not something from this morning. I was describing how I generally show Mika what putting toys away involves.
+Unsupported: not something from this morning — P11 establishes a usual approach but no morning occurrence or absence. This unqualified negative adds a time exclusion that the canonical account does not establish. The following sentence correctly describes the account as general, but does not explicitly limit the negative to the scope of that description.
+Borderline temporal scope: in conversation the whole reply could be read charitably as saying only that the previous description was general rather than a report of a dated event. However, “not something from this morning” also categorically excludes the suggested timing. The locked criterion requires that occurrence remain unspecified; this wording does not preserve that distinction clearly enough to pass. This is a weaker finding than the explicit Leo decision-state invention and the contradictory sequence answer.
+
+FAIL generalize-leo-window-sequence-callback — quality 0/3
+Yes, Leo colored around the window after I added it.
+Unsupported: Yes — The immediate polar question is whether the coloring had already happened when the window was added. “Yes” affirms that earlier-coloring premise, while P08 and the remainder of the reply put coloring afterward. This creates an internal contradiction in the delivered answer.
+The correct explanatory clause does not erase a contradictory direct yes/no answer. This is a sequence/polarity failure rather than a fabricated new biography. The provider auditor accepted it, but that self-audit is not the review verdict.
+
+FAIL generalize-leo-hoped-for-playdate-details — quality 0/3
+We haven’t tried the playdate yet, but I’d like to have the toy shop ready so Leo can choose a role at the start. As for which playmate will come, that part isn’t decided yet.
+Unsupported: As for which playmate will come, that part isn’t decided yet. — P12 supplies no playmate identity or decision state. Missing participant information does not establish that a decision has not been made.
+This is the same unsupported decision-state inference rejected in v12 and v13. Its delivery here must fail under the same criteria despite the provider auditor approving it.
+
+PASS generalize-sam-sometimes-not-every-picture — quality 3/3
+We only do that sometimes, not for every picture. We take turns choosing an idea so it isn’t just my story.
+
+PASS generalize-sam-unmade-comic-plot-callback — quality 2/3
+That detail isn’t available for this interview.
+An explicit callback to the undrawn comic would be more natural. The answer still gives an honest boundary for the only newly requested detail, rather than falsely treating the existing wish as unknown.
+Identical delivered wording has been rechecked against this run's reproduced canonical facts. The same prior boundary interpretation and score are retained.
+
+PASS generalize-riley-thinking-time-not-personality-label — quality 2/3
+That detail isn’t available for this interview.
+The requested new information is whether the communication preference establishes a broad character trait. The same v12 app-boundary interpretation used for Mika's unknown cause and Alex's unknown current health finding applies. A contextual rejection of the inference would be more informative, but the generic boundary earns an acceptable 2 rather than a strong 3.
+
+PASS generalize-riley-school-observer-and-quote-unknown — quality 2/3
+That detail isn’t available for this interview.
+Valid brief missing-detail boundary. It is an explicit system boundary rather than an in-character invented memory gap; no known requested answer is being suppressed.
+Identical delivered wording has been rechecked against this run's reproduced canonical facts. The same prior boundary interpretation and score are retained.
+
+PASS generalize-jordan-sharing-and-response-preference — quality 3/3
+During a quiet chat, I sometimes show my cousin a page from my sketchbook. I’d rather they ask about it than feel they have to praise it.
+
+PASS generalize-jordan-current-reward-and-unknown-trigger — quality 3/3
+Lately, drawing doesn’t feel as rewarding as it usually does, even though I normally sketch ordinary things and keep them in a notebook. I’m not sure what started the change, but I know it’s been harder to enjoy things I care about.
+“Harder to enjoy” is an ordinary paraphrase of less rewarding activities. The generic uncertainty about the unauthored cause is treated the same way as in the v13 Jordan reply and does not invent memory loss or refusal.
+
+PASS generalize-avery-bookmark-not-recovery-evidence — quality 3/3
+No, the bookmark just helps me keep my place; the worry still interrupts my ordinary responsibilities and the time I want to enjoy.
+Unlike the v12/v13 wording, this reply does not assert that the bookmark fails to stop worry. It states its recorded purpose and the ongoing symptoms separately, with “No” rejecting the learner's recovery inference.
+
+PASS generalize-avery-unnamed-mystery-callback — quality 2/3
+That detail isn’t available for this interview.
+The question requests only an unauthored title, so the concise app boundary is adequate, though mentioning the earlier mystery would improve continuity.
+Identical delivered wording has been rechecked against this run's reproduced canonical facts. The same prior boundary interpretation and score are retained.
+
+PASS generalize-robin-ambiguous-repeat-without-antecedent — quality 3/3
+Which part do you mean?
+This case genuinely lacks an antecedent, so clarification is the required useful action. It is distinct from the purely unknown-detail cases that can use the app unavailable boundary.
+Identical delivered wording has been rechecked against this run's reproduced canonical facts. The same prior boundary interpretation and score are retained.
+
+PASS generalize-robin-earlier-pot-not-finished-arrangement — quality 3/3
+No, that arrangement isn’t set up yet—it’s still just an idea I’d like to do.
+
+PASS generalize-alex-task-list-not-sibling-character-judgment — quality 2/3
+That detail isn’t available for this interview.
+The same app-boundary interpretation applies to an unauthored opinion. Known organizing context would improve the reply, but the matrix says it can be described rather than requiring that additional context. This conservative answer receives 2.
+
+PASS generalize-alex-monitoring-sleep-not-normality — quality 2/3
+That detail isn’t available for this interview.
+Appropriate conservative boundary for an unauthored current health finding. Explicitly distinguishing monitoring from a normal result would be more informative, so this receives 2 rather than 3.
+Identical delivered wording has been rechecked against this run's reproduced canonical facts. The same prior boundary interpretation and score are retained.
+
+One stochastic candidate run on a development regression set, independently reviewed by an assistant. It is not fresh generalization evidence, clinical validation, or a controlled model comparison against another runtime. Original runtime hashes and the entire usage ledger are preserved. No provider calls or runtime edits were made for this review.

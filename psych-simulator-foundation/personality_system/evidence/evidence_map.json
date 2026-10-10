@@ -1,0 +1,88 @@
+{
+  "version": "identity-evidence-0.1.0",
+  "chain": [
+    "behavior",
+    "variable_paths",
+    "rule_id",
+    "mechanism_id",
+    "findings",
+    "source_ids",
+    "source registry original URL"
+  ],
+  "behaviors": [
+    {
+      "behavior": "work / pause / seek_support / rest / reschedule / withdraw / sketch",
+      "variable_paths": [
+        "motive.activation",
+        "motive.values",
+        "schema.relationships.<actor>.supportExpected",
+        "emotion.tension"
+      ],
+      "rule_ids": [
+        "R-GOAL",
+        "R-RELATION",
+        "R-CHOICE",
+        "R-OUTCOME"
+      ]
+    },
+    {
+      "behavior": "interpretation and subjective experience",
+      "variable_paths": [
+        "traits.threatSensitivity",
+        "schema.relationships.<actor>.supportExpected",
+        "body.energy",
+        "memory",
+        "emotion.tension"
+      ],
+      "rule_ids": [
+        "R-APPRAISAL",
+        "R-MEMORY",
+        "R-AFFECT"
+      ]
+    },
+    {
+      "behavior": "subsequent expectations",
+      "variable_paths": [
+        "schema.relationships.<actor>",
+        "schema.learningLedger"
+      ],
+      "rule_ids": [
+        "R-LEARN",
+        "R-TRAIT-HOLD"
+      ]
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "reward effects",
+      "source_ids": [
+        "P20",
+        "P21"
+      ],
+      "resolution": "No generic reward rule."
+    },
+    {
+      "topic": "efficacy and performance",
+      "source_ids": [
+        "P12",
+        "P14"
+      ],
+      "resolution": "Domain and analysis level matter; no universal efficacy success bonus."
+    },
+    {
+      "topic": "trait structure transfer",
+      "source_ids": [
+        "P01",
+        "P04"
+      ],
+      "resolution": "Population- and instrument-specific calibration."
+    }
+  ],
+  "validation_levels": {
+    "VALIDATED": "Matching external empirical validation; none claimed here.",
+    "PARTIALLY VALIDATED": "Some matching empirical tests; none claimed for runtime rules.",
+    "THEORETICALLY MOTIVATED": "Organizing structure supported by theory, without fitted dynamics.",
+    "EXPERIMENTAL": "Executable engineering hypothesis without relevant external validation.",
+    "SPECULATIVE": "Proposed extension not implemented or tested."
+  }
+}

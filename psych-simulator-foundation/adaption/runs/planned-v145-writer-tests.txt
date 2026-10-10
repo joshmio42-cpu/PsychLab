@@ -1,0 +1,25 @@
+✔ Authored provenance limits are not patient ignorance, while authored patient uncertainty stays usable (2.1717ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (46.9739ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (10.0274ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (8.5195ms)
+✔ Leading dates and assumptions reach planning and audit but never the patient writer (8.3683ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (8.9875ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (7.4913ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (8.9184ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (8.2563ms)
+✔ Challenging opening quotes and writes only the authored brief version (12.9094ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (6.6352ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (6.181ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (7.7103ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (9.4901ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (7.4806ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (43.9577ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3395.7677ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3839.6863

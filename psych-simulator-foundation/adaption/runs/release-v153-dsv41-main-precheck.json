@@ -1,0 +1,41 @@
+{
+  "type": "main-comparison-precheck-only",
+  "createdAt": "2026-10-09T11:38:42.875Z",
+  "label": "release-v153-dsv41",
+  "runtime": "interview-0.15.3",
+  "baseline": {
+    "cases": 36,
+    "hardPasses": 24,
+    "qualityTotal": 57,
+    "unsupportedDelivered": 0,
+    "estimatedUsd": 0.04008
+  },
+  "candidate": {
+    "cases": 36,
+    "hardPasses": 23,
+    "qualityTotal": 60,
+    "unsupportedDelivered": 0,
+    "estimatedUsd": 0.04120320000000001
+  },
+  "costRatio": 1.0280239520958088,
+  "regressions": [
+    "reciprocal-smalltalk-question"
+  ],
+  "improvements": [
+    "hobby-unknown-favorite",
+    "repair-question-meaning",
+    "false-cause-leading",
+    "diagnosis-name-request-mystery",
+    "leading-absolute-frequency",
+    "social-injection-boundary",
+    "real-emergency-boundary"
+  ],
+  "proceedToRemainingReleaseTests": false,
+  "reason": "The no-hard-regressions gate failed. No transfer or reserved fresh run was started for this revision. This is not a full release decision and does not authorize activation.",
+  "evidenceHashes": {
+    "baseline": "2f30ed9eae4cdcb916c2c2cc90a9c208c2e4fb5d5ef5e09af696a89af866ce2b",
+    "candidate": "6f2c3dc0961a68113c69b735accba1adbc3ac818b03d3b76210806dc6eddb18d",
+    "baselineReview": "ed95aeb1dc27f988da0e5898cab97f25573f9907daed1d54c1f9005fa8c7d25d",
+    "candidateReview": "8140f2e41f4cd70a51bff7672e53c19ddf45eb93fb502d94906dcd60fff760a5"
+  }
+}

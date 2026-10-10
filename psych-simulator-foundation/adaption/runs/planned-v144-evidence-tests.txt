@@ -1,0 +1,43 @@
+✔ Complete question parts keep missing people out of the writer task and preserve real paraphrasing (7.4593ms)
+✔ Unknown requests can retain canonical context without asking the writer to fill the gap (0.8069ms)
+✔ The compact wire format derives routing only from validated quotes, without redundant model IDs (1.3612ms)
+✔ A wholly unrecorded request without context needs no writer call (0.6548ms)
+✔ Exact ordered spans must cover every question word including multipart suffixes (1.5917ms)
+✔ Omitted introductory framing and connectors are retained verbatim, never discarded or used to fill a missing question (1.262ms)
+✔ Punctuation and Unicode are preserved without case folding or approximate quotation matching (0.3554ms)
+✔ Unsupported IDs, invented quotations and source mismatches fail locally (0.6162ms)
+✔ Unknown sources cannot masquerade as direct evidence and schemas have bounded complexity (0.6476ms)
+✔ Withheld supporting evidence does not become missing case information or leak through the plan (2.1213ms)
+✔ A multipart supported request requires all its evidence after disclosure (0.5282ms)
+✔ Disclosure narrowing under the same fact ID cannot re-expose omitted content (0.3344ms)
+✔ Only disclosed context quotations are projected; omitted context does not erase the missing-detail note (0.333ms)
+✔ Missing-detail context keeps one active anchor without treating deliberately omitted background as undisclosed evidence (0.2307ms)
+✔ Separate unknown requests each retain their own closest context (0.523ms)
+✔ Caregiver statements remain caregiver evidence and no persona is invented by projection (0.4282ms)
+✔ Boundary routes remain boundaries and legacy plans require explicit compatibility (0.9861ms)
+✔ Validation does not pretend exact quotations prove entailment (0.2761ms)
+✔ Validated plans and projections are immutable and do not modify canonical facts (0.1827ms)
+✔ Authored provenance limits are not patient ignorance, while authored patient uncertainty stays usable (7.7199ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (39.1508ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (8.9272ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (9.3404ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (10.7427ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (6.7813ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (7.9504ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (8.1013ms)
+✔ Challenging opening quotes and writes only the authored brief version (10.0414ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (8.3576ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (6.6154ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (7.2356ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (7.3358ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (6.7431ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (39.2905ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3031.4498ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3427.6402

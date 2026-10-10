@@ -1,0 +1,934 @@
+{
+  "registry_version": "identity-evidence-0.1.0",
+  "review_type": "Targeted literature synthesis; not systematic review",
+  "sources": [
+    {
+      "source_id": "P01",
+      "title": "The next Big Five Inventory (BFI-2): Developing and assessing a hierarchical model with 15 facets to enhance bandwidth, fidelity, and predictive power",
+      "authors": [
+        "Christopher J. Soto",
+        "Oliver P. John"
+      ],
+      "year": 2017,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/pspp0000096",
+      "URL": "https://www.colby.edu/wp-content/uploads/2013/08/Soto_John_2017.pdf",
+      "source_type": "measurement validation",
+      "sample_size": "Study 3 Internet n=1000; student n=470",
+      "population": "Adult Internet volunteers; predominantly US; separate student sample",
+      "methodology": "Scale development and independent validation",
+      "major_findings": "Hierarchical trait measurement; Tables 2 and 5 supply domain correlations and moments.",
+      "limitations": "Convenience sampling; summary moments do not identify a complete joint distribution.",
+      "constructs_supported": [
+        "traits",
+        "facets",
+        "covariance"
+      ],
+      "access_level": "selected full-text methods and Tables 2, 5",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P02",
+      "title": "The implications of Big Five standing for the distribution of trait manifestation in behavior: Fifteen experience-sampling studies and a meta-analysis",
+      "authors": [
+        "William Fleeson",
+        "M. Patrick Gallagher"
+      ],
+      "year": 2009,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/a0016786",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791901/",
+      "source_type": "experience-sampling synthesis",
+      "sample_size": "15 studies; more than 20000 behavioral reports",
+      "population": "Study participants across repeated-sampling studies",
+      "methodology": "Repeated state reports and meta-analysis",
+      "major_findings": "Traits relate to distributions of states alongside considerable within-person variation.",
+      "limitations": "Does not identify the probability of a particular simulated action.",
+      "constructs_supported": [
+        "traits",
+        "states"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P03",
+      "title": "Empirical, theoretical, and practical advantages of the HEXACO model of personality structure",
+      "authors": [
+        "Michael C. Ashton",
+        "Kibeom Lee"
+      ],
+      "year": 2007,
+      "journal": "Personality and Social Psychology Review",
+      "DOI": "10.1177/1088868306294907",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/18453460/",
+      "source_type": "theoretical review",
+      "sample_size": null,
+      "population": "Cross-language personality research",
+      "methodology": "Synthesis of six-factor personality evidence",
+      "major_findings": "Alternative six-dimensional structure includes honesty-humility.",
+      "limitations": "Not simply Big Five plus an independent extra score.",
+      "constructs_supported": [
+        "alternative trait structure"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P04",
+      "title": "How universal is the Big Five? Testing the five-factor model of personality variation among forager-farmers in the Bolivian Amazon",
+      "authors": [
+        "Michael Gurven",
+        "Christopher von Rueden",
+        "Maxim Massenkoff",
+        "Hillard Kaplan",
+        "Marino Lero Vie"
+      ],
+      "year": 2013,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/a0030841",
+      "URL": "https://www.apa.org/pubs/journals/releases/psp-104-2-354.pdf",
+      "source_type": "cross-cultural measurement",
+      "sample_size": 632,
+      "population": "Tsimane forager-horticulturalists in Bolivia",
+      "methodology": "Translated inventory and factor-structure analyses",
+      "major_findings": "Canonical factor recovery did not transfer straightforwardly.",
+      "limitations": "Instrument, sampling and administration constrain interpretation.",
+      "constructs_supported": [
+        "culture",
+        "measurement"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P05",
+      "title": "How Replicable Are Links Between Personality Traits and Consequential Life Outcomes? The Life Outcomes of Personality Replication Project",
+      "authors": [
+        "Christopher J. Soto"
+      ],
+      "year": 2019,
+      "journal": "Psychological Science",
+      "DOI": "10.1177/0956797619831612",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/30950321/",
+      "source_type": "preregistered replication",
+      "sample_size": "78 associations; median n=1504",
+      "population": "Replication project samples",
+      "methodology": "Preregistered tests of published associations",
+      "major_findings": "Most associations replicated in the expected direction, with smaller effects overall.",
+      "limitations": "Association does not establish a causal daily rule.",
+      "constructs_supported": [
+        "traits",
+        "external validity"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P06",
+      "title": "Emotion-based dispositions to rash action: Positive and negative urgency",
+      "authors": [
+        "Melissa A. Cyders",
+        "Gregory T. Smith"
+      ],
+      "year": 2008,
+      "journal": "Psychological Bulletin",
+      "DOI": "10.1037/a0013341",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705930/",
+      "source_type": "theoretical review",
+      "sample_size": null,
+      "population": "Studies of urgency and impulsivity",
+      "methodology": "Review and construct differentiation",
+      "major_findings": "Emotion-related urgency differs from sensation seeking and planning/perseverance deficits.",
+      "limitations": "Evidence base and measurement are not a validated simulator.",
+      "constructs_supported": [
+        "urgency",
+        "impulsivity",
+        "novelty"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P07",
+      "title": "A domain-specific risk-attitude scale: Measuring risk perceptions and risk behaviors",
+      "authors": [
+        "Elke U. Weber",
+        "Ann-Renée Blais",
+        "Nancy E. Betz"
+      ],
+      "year": 2002,
+      "journal": "Journal of Behavioral Decision Making",
+      "DOI": "10.1002/bdm.414",
+      "URL": "https://business.columbia.edu/sites/default/files-efs/imce-uploads/CDS/dospert%202002.PDF",
+      "source_type": "measurement study",
+      "sample_size": null,
+      "population": "American undergraduates",
+      "methodology": "Domain-specific self-report validation",
+      "major_findings": "Risk perceptions and behavioral willingness differ by content domain.",
+      "limitations": "No universal risk scalar or calibrated probability for Jordan.",
+      "constructs_supported": [
+        "risk",
+        "perception"
+      ],
+      "access_level": "indexed author-hosted original paper",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P08",
+      "title": "Much ado about grit: A meta-analytic synthesis of the grit literature",
+      "authors": [
+        "Marcus Credé",
+        "Michael C. Tynan",
+        "Peter D. Harms"
+      ],
+      "year": 2017,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/pspp0000102",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/27845531/",
+      "source_type": "meta-analysis",
+      "sample_size": "88 samples; n=66807",
+      "population": "Samples in grit literature",
+      "methodology": "Meta-analysis of construct and outcome associations",
+      "major_findings": "Grit overlaps strongly with conscientiousness; perseverance has stronger utility than consistency of interests.",
+      "limitations": "Avoid duplicating correlated persistence predictors.",
+      "constructs_supported": [
+        "persistence",
+        "overlap"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P09",
+      "title": "Temperament, stress reactivity, and coping: Implications for depression in childhood and adolescence",
+      "authors": [
+        "Bruce E. Compas",
+        "Jennifer Connor-Smith",
+        "Sarah S. Jaser"
+      ],
+      "year": 2004,
+      "journal": "Journal of Clinical Child and Adolescent Psychology",
+      "DOI": "10.1207/S15374424JCCP3301_3",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/15028538/",
+      "source_type": "review",
+      "sample_size": null,
+      "population": "Children and adolescents",
+      "methodology": "Developmental review",
+      "major_findings": "Temperament, reactivity and coping are related but distinct developmental constructs.",
+      "limitations": "Child/adolescent synthesis does not calibrate an adult simulation.",
+      "constructs_supported": [
+        "temperament",
+        "development"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P10",
+      "title": "Self-schemata and processing information about the self",
+      "authors": [
+        "Hazel Markus"
+      ],
+      "year": 1977,
+      "journal": null,
+      "DOI": null,
+      "URL": "https://web.stanford.edu/~hazelm/cgi-bin/wordpress/wp-content/uploads/2011/02/1977_Markus_Self-Schemata-and-Processing-Information-About-the-Self.pdf",
+      "source_type": "experimental research",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Self-relevant information-processing experiments",
+      "major_findings": "Self-schemas relate to processing of self-relevant information.",
+      "limitations": "No general numeric updating law extracted.",
+      "constructs_supported": [
+        "self-schema",
+        "cognition"
+      ],
+      "access_level": "indexed author-hosted original paper",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P11",
+      "title": "Relational schemas and the processing of social information",
+      "authors": [
+        "Mark W. Baldwin"
+      ],
+      "year": 1992,
+      "journal": "Psychological Bulletin",
+      "DOI": null,
+      "URL": "https://www.selfesteemgames.mcgill.ca/research/baldwnpsybull.pdf",
+      "source_type": "theoretical review",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Relational-schema framework",
+      "major_findings": "Self-in-relation, representations of others and interaction scripts organize relational information.",
+      "limitations": "Conceptual framework, not fitted simulation dynamics.",
+      "constructs_supported": [
+        "relational schema"
+      ],
+      "access_level": "indexed author-hosted original paper",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P12",
+      "title": "Cognitive processes mediating behavioral change",
+      "authors": [
+        "Albert Bandura",
+        "Nancy E. Adams",
+        "Janice Beyer"
+      ],
+      "year": 1977,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/0022-3514.35.3.125",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/15093/",
+      "source_type": "experiment",
+      "sample_size": null,
+      "population": "Adults with phobias",
+      "methodology": "Mastery, vicarious and control conditions",
+      "major_findings": "Efficacy expectations relate to domain-specific behavioral change.",
+      "limitations": "Specific task and intervention; not universal success probability.",
+      "constructs_supported": [
+        "self-efficacy"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P13",
+      "title": "The Experiences in Close Relationships—Relationship Structures Questionnaire: A method for assessing attachment orientations across relationships",
+      "authors": [
+        "R. Chris Fraley",
+        "Marie E. Heffernan",
+        "Amanda M. Vicary",
+        "Claudia Chloe Brumbaugh"
+      ],
+      "year": 2011,
+      "journal": "Psychological Assessment",
+      "DOI": "10.1037/a0022898",
+      "URL": "https://web-research-design.net/PDF/FHV%26B2011.pdf",
+      "source_type": "measurement validation",
+      "sample_size": "over 21000",
+      "population": "Internet respondents",
+      "methodology": "Relationship-specific attachment measurement",
+      "major_findings": "Relationship-specific representations add information beyond general measures.",
+      "limitations": "Attachment dimensions are not equivalent to a support probability.",
+      "constructs_supported": [
+        "attachment",
+        "relational schema"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P14",
+      "title": "The changing signs in the relationships among self-efficacy, personal goals, and performance",
+      "authors": [
+        "Jeffrey B. Vancouver",
+        "Charles M. Thompson",
+        "Amy A. Williams"
+      ],
+      "year": 2001,
+      "journal": "Journal of Applied Psychology",
+      "DOI": "10.1037/0021-9010.86.4.605",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/11519645/",
+      "source_type": "experimental research",
+      "sample_size": "Study 2 n=185",
+      "population": "Undergraduate task participants",
+      "methodology": "Repeated task performance and efficacy analyses",
+      "major_findings": "Efficacy-performance relationships vary with design and level of analysis.",
+      "limitations": "Does not imply that efficacy is always harmful.",
+      "constructs_supported": [
+        "efficacy",
+        "goals",
+        "within-person dynamics"
+      ],
+      "access_level": "indexed original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P15",
+      "title": "Neural and computational processes underlying dynamic changes in self-esteem",
+      "authors": [
+        "Geert-Jan Will",
+        "Robb B. Rutledge",
+        "Michael Moutoussis",
+        "Raymond J. Dolan"
+      ],
+      "year": 2017,
+      "journal": "eLife",
+      "DOI": "10.7554/eLife.28098",
+      "URL": "https://elifesciences.org/articles/28098",
+      "source_type": "computational experiment",
+      "sample_size": null,
+      "population": "Laboratory social-feedback participants",
+      "methodology": "Computational modeling of social feedback and self-esteem",
+      "major_findings": "Prediction errors help model task-specific changes in self-evaluation.",
+      "limitations": "Transfer to everyday relationship support is unvalidated.",
+      "constructs_supported": [
+        "social learning",
+        "prediction error"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P16",
+      "title": "The link between self-esteem and social relationships: A meta-analysis of longitudinal studies",
+      "authors": [
+        "Michelle A. Harris",
+        "Ulrich Orth"
+      ],
+      "year": 2020,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/pspp0000265",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/31556680/",
+      "source_type": "longitudinal meta-analysis",
+      "sample_size": "48 samples n=46231; reverse direction 35 samples n=21995",
+      "population": "Longitudinal relationship/self-esteem studies",
+      "methodology": "Prospective meta-analysis",
+      "major_findings": "Reciprocal associations between social relationships and self-esteem.",
+      "limitations": "Pooled prospective coefficients are not per-event learning rates.",
+      "constructs_supported": [
+        "self-esteem",
+        "relationships"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P17",
+      "title": "A Manifesto on Psychology as Idiographic Science: Bringing the Person Back Into Scientific Psychology, This Time Forever",
+      "authors": [
+        "Peter C. M. Molenaar"
+      ],
+      "year": 2004,
+      "journal": "Measurement: Interdisciplinary Research and Perspectives",
+      "DOI": "10.1207/s15366359mea0204_1",
+      "URL": "https://doi.org/10.1207/s15366359mea0204_1",
+      "source_type": "methodological theory",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Analysis of assumptions connecting levels of analysis",
+      "major_findings": "Between-person estimates need not describe within-person dynamics.",
+      "limitations": "Methodological argument does not supply a replacement parameterization.",
+      "constructs_supported": [
+        "identifiability",
+        "within-person dynamics"
+      ],
+      "access_level": "indexed original author paper via university repository",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P18",
+      "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being",
+      "authors": [
+        "Richard M. Ryan",
+        "Edward L. Deci"
+      ],
+      "year": 2000,
+      "journal": "American Psychologist",
+      "DOI": "10.1037/0003-066X.55.1.68",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/11392867/",
+      "source_type": "theoretical review",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Self-determination theory synthesis",
+      "major_findings": "Autonomy, competence and relatedness organize basic psychological needs.",
+      "limitations": "Theory does not estimate the current action coefficients.",
+      "constructs_supported": [
+        "needs",
+        "regulation"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P19",
+      "title": "Intrinsic and extrinsic motivations: Classic definitions and new directions",
+      "authors": [
+        "Richard M. Ryan",
+        "Edward L. Deci"
+      ],
+      "year": 2000,
+      "journal": "Contemporary Educational Psychology",
+      "DOI": "10.1006/ceps.1999.1020",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/10620381/",
+      "source_type": "theoretical review",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Motivation conceptual synthesis",
+      "major_findings": "Extrinsic motivation varies in relative autonomy.",
+      "limitations": "Do not reduce all extrinsic motives to one negative score.",
+      "constructs_supported": [
+        "intrinsic motivation",
+        "extrinsic motivation"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P20",
+      "title": "A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation",
+      "authors": [
+        "Edward L. Deci",
+        "Richard Koestner",
+        "Richard M. Ryan"
+      ],
+      "year": 1999,
+      "journal": "Psychological Bulletin",
+      "DOI": null,
+      "URL": "https://selfdeterminationtheory.org/wp-content/uploads/2014/04/1999_DeciKoestnerRyan_Meta.pdf",
+      "source_type": "meta-analysis",
+      "sample_size": "128 experiments",
+      "population": "Reward experiments",
+      "methodology": "Experimental meta-analysis with reward moderators",
+      "major_findings": "Reward effects vary with form, expectation and contingency.",
+      "limitations": "Interpretation disputed by other syntheses; no generic penalty justified.",
+      "constructs_supported": [
+        "reward",
+        "intrinsic motivation"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P21",
+      "title": "Pervasive negative effects of rewards on intrinsic motivation: The myth continues",
+      "authors": [
+        "Judy Cameron",
+        "Katherine M. Banko",
+        "W. David Pierce"
+      ],
+      "year": 2001,
+      "journal": "The Behavior Analyst",
+      "DOI": "10.1007/BF03392017",
+      "URL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2731358/",
+      "source_type": "meta-analysis",
+      "sample_size": null,
+      "population": "Reward experiments",
+      "methodology": "Alternative grouping and meta-analysis of contingencies",
+      "major_findings": "Broad reward harm is contested; interest and contingencies moderate effects.",
+      "limitations": "Not a claim that every reward improves motivation.",
+      "constructs_supported": [
+        "reward",
+        "disagreement"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P22",
+      "title": "From expectancy-value theory to situated expectancy-value theory: A developmental, social cognitive, and sociocultural perspective on motivation",
+      "authors": [
+        "Jacquelynne S. Eccles",
+        "Allan Wigfield"
+      ],
+      "year": 2020,
+      "journal": "Contemporary Educational Psychology",
+      "DOI": "10.1016/j.cedpsych.2020.101859",
+      "URL": "https://doi.org/10.1016/j.cedpsych.2020.101859",
+      "source_type": "theoretical review",
+      "sample_size": null,
+      "population": "Educational and achievement research",
+      "methodology": "Situated motivation synthesis",
+      "major_findings": "Expectancy, value components and costs depend on context and development.",
+      "limitations": "An educational framework is not a universal numeric action formula.",
+      "constructs_supported": [
+        "expectancy",
+        "value",
+        "cost"
+      ],
+      "access_level": "indexed original-paper abstract/excerpts",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P23",
+      "title": "Refining the theory of basic individual values",
+      "authors": [
+        "Shalom H. Schwartz",
+        "Jan Cieciuch",
+        "Michele Vecchione",
+        "Eldad Davidov",
+        "Ronald Fischer",
+        "Constanze Beierlein",
+        "Alice Ramos",
+        "Markku Verkasalo",
+        "Jan-Erik Lönnqvist",
+        "Kursad Demirutku",
+        "Ozlem Dirilen-Gumus",
+        "Mark Konty"
+      ],
+      "year": 2012,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/a0029393",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/22823292/",
+      "source_type": "theory and measurement",
+      "sample_size": null,
+      "population": "Multinational value research",
+      "methodology": "Refined value measurement",
+      "major_findings": "Nineteen values organize compatible and conflicting motivational concerns.",
+      "limitations": "Circumplex structure is not an exact fixed covariance or personality type.",
+      "constructs_supported": [
+        "values",
+        "conflict"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P24",
+      "title": "Personality traits and personal values: A meta-analysis",
+      "authors": [
+        "Laura Parks-Leduc",
+        "Gilad Feldman",
+        "Anat Bardi"
+      ],
+      "year": 2015,
+      "journal": "Personality and Social Psychology Review",
+      "DOI": "10.1177/1088868314538548",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/24963077/",
+      "source_type": "meta-analysis",
+      "sample_size": "60 studies",
+      "population": "Trait-value studies",
+      "methodology": "Association meta-analysis",
+      "major_findings": "Traits and values have patterned associations but remain distinct.",
+      "limitations": "Separate meta-analyses may share primary studies; no complete joint prior.",
+      "constructs_supported": [
+        "traits",
+        "values",
+        "dependence"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P25",
+      "title": "Motivational basis of personality traits: A meta-analysis of value-personality correlations",
+      "authors": [
+        "Ronald Fischer",
+        "Diana Boer"
+      ],
+      "year": 2015,
+      "journal": "Journal of Personality",
+      "DOI": "10.1111/jopy.12125",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/25142346/",
+      "source_type": "meta-analysis",
+      "sample_size": "n=9935; 14 countries",
+      "population": "Cross-national samples",
+      "methodology": "Multilevel meta-analysis",
+      "major_findings": "Trait-value associations vary with context including threat.",
+      "limitations": "Not an individually deterministic cultural rule.",
+      "constructs_supported": [
+        "values",
+        "context"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P26",
+      "title": "A theory of goal systems",
+      "authors": [
+        "Arie W. Kruglanski",
+        "James Y. Shah",
+        "Ayelet Fishbach",
+        "Ron Friedman",
+        "Woo Young Chun",
+        "David Sleeth-Keppler"
+      ],
+      "year": 2002,
+      "journal": "Advances in Experimental Social Psychology",
+      "DOI": "10.1016/S0065-2601(02)80008-9",
+      "URL": "https://doi.org/10.1016/S0065-2601(02)80008-9",
+      "source_type": "theoretical chapter",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Goal/means network synthesis",
+      "major_findings": "Goals can share means or compete for resources.",
+      "limitations": "No fitted coefficients extracted.",
+      "constructs_supported": [
+        "goals",
+        "conflict",
+        "persistence"
+      ],
+      "access_level": "original publisher preview and university metadata",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P27",
+      "title": "A cognitive-affective system theory of personality: Reconceptualizing situations, dispositions, dynamics, and invariance in personality structure",
+      "authors": [
+        "Walter Mischel",
+        "Yuichi Shoda"
+      ],
+      "year": 1995,
+      "journal": "Psychological Review",
+      "DOI": "10.1037/0033-295X.102.2.246",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/7740090/",
+      "source_type": "theoretical synthesis",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Situation-person organization of cognitive-affective units",
+      "major_findings": "Stable situation-dependent patterns can coexist with behavioral variability.",
+      "limitations": "Organizing framework does not validate this engine.",
+      "constructs_supported": [
+        "architecture",
+        "appraisal"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P28",
+      "title": "Cybernetic Big Five Theory",
+      "authors": [
+        "Colin G. DeYoung"
+      ],
+      "year": 2015,
+      "journal": "Journal of Research in Personality",
+      "DOI": "10.1016/j.jrp.2014.07.004",
+      "URL": "https://doi.org/10.1016/j.jrp.2014.07.004",
+      "source_type": "theoretical synthesis",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Cybernetic account of traits and adaptations",
+      "major_findings": "Traits and characteristic adaptations have distinct explanatory roles.",
+      "limitations": "Whole simulation cannot inherit validation from a theory.",
+      "constructs_supported": [
+        "architecture",
+        "traits",
+        "goals"
+      ],
+      "access_level": "original publisher abstract and indexed author paper",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P29",
+      "title": "Personality stability and change: A meta-analysis of longitudinal studies",
+      "authors": [
+        "Wiebke Bleidorn",
+        "Ted Schwaba",
+        "Anqing Zheng",
+        "Christopher J. Hopwood",
+        "Susana S. Sosa",
+        "Brent W. Roberts",
+        "Daniel A. Briley"
+      ],
+      "year": 2022,
+      "journal": "Psychological Bulletin",
+      "DOI": "10.1037/bul0000365",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/35834197/",
+      "source_type": "longitudinal meta-analysis",
+      "sample_size": "Rank-order: 189 samples n=178503; mean-level: 276 samples n=242542",
+      "population": "Lifespan longitudinal studies",
+      "methodology": "Meta-analysis of rank-order and mean-level change",
+      "major_findings": "Stability and mean-level development vary over the lifespan.",
+      "limitations": "Aggregate age patterns do not determine individual trajectories.",
+      "constructs_supported": [
+        "stability",
+        "development"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P30",
+      "title": "A systematic review of personality trait change through intervention",
+      "authors": [
+        "Brent W. Roberts",
+        "Jing Luo",
+        "Daniel A. Briley",
+        "Philip I. Chow",
+        "Rong Su",
+        "Patrick L. Hill"
+      ],
+      "year": 2017,
+      "journal": "Psychological Bulletin",
+      "DOI": "10.1037/bul0000088",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/28054797/",
+      "source_type": "systematic review and meta-analysis",
+      "sample_size": "207 studies",
+      "population": "Intervention participants",
+      "methodology": "Mixed designs including pre-post and experimental studies",
+      "major_findings": "Trait measures changed during interventions averaging about 24 weeks.",
+      "limitations": "Design heterogeneity; not a daily trait learning rate or proof of this model.",
+      "constructs_supported": [
+        "trait change"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P31",
+      "title": "Individual differences in personality change across the adult life span",
+      "authors": [
+        "Ted Schwaba",
+        "Wiebke Bleidorn"
+      ],
+      "year": 2018,
+      "journal": "Journal of Personality",
+      "DOI": "10.1111/jopy.12327",
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/28509384/",
+      "source_type": "longitudinal study",
+      "sample_size": 9636,
+      "population": "Dutch participants aged 16–84",
+      "methodology": "Five waves across seven years",
+      "major_findings": "Individual change trajectories differ across adulthood.",
+      "limitations": "Specific sample and measurement; no universal slope.",
+      "constructs_supported": [
+        "development",
+        "heterogeneity"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P32",
+      "title": "An attributional theory of achievement motivation and emotion",
+      "authors": [
+        "Bernard Weiner"
+      ],
+      "year": 1985,
+      "journal": "Psychological Review",
+      "DOI": "10.1037/0033-295X.92.4.548",
+      "URL": "https://doi.org/10.1037/0033-295X.92.4.548",
+      "source_type": "theoretical synthesis",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Achievement attribution framework",
+      "major_findings": "Locus, stability and controllability distinguish perceived causes.",
+      "limitations": "Attribution is subjective; no hidden cause may be treated as observed.",
+      "constructs_supported": [
+        "attribution",
+        "expectancy"
+      ],
+      "access_level": "original abstract indexed by ERIC",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P33",
+      "title": "Approach–avoidance motivation in personality: Approach and avoidance temperaments and goals",
+      "authors": [
+        "Andrew J. Elliot",
+        "Todd M. Thrash"
+      ],
+      "year": 2002,
+      "journal": "Journal of Personality and Social Psychology",
+      "DOI": "10.1037/0022-3514.82.5.804",
+      "URL": "https://doi.org/10.1037/0022-3514.82.5.804",
+      "source_type": "multi-study research",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Factor-analytic and goal studies",
+      "major_findings": "Approach and avoidance dispositions connect with goal processes.",
+      "limitations": "Overlapping constructs should not be independent duplicate action bonuses.",
+      "constructs_supported": [
+        "approach",
+        "avoidance",
+        "temperament"
+      ],
+      "access_level": "indexed original paper via university repository",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P34",
+      "title": "Basic psychological need satisfaction, need frustration, and need strength across four cultures",
+      "authors": null,
+      "year": 2015,
+      "journal": "Motivation and Emotion",
+      "DOI": "10.1007/s11031-014-9450-1",
+      "URL": "https://doi.org/10.1007/s11031-014-9450-1",
+      "source_type": "cross-cultural research",
+      "sample_size": null,
+      "population": "Four cultures",
+      "methodology": "Need satisfaction/frustration and well-being research",
+      "major_findings": "Need satisfaction and frustration are distinguishable experiences across studied cultures.",
+      "limitations": "Four cultures do not establish universality or calibrated simulation rates.",
+      "constructs_supported": [
+        "needs",
+        "culture"
+      ],
+      "access_level": "original publisher abstract; full author list not transcribed",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": "Verified lead authors: Beiwen Chen, Maarten Vansteenkiste, Wim Beyers; complete author list not transcribed."
+    },
+    {
+      "source_id": "P35",
+      "title": "The need to belong: Desire for interpersonal attachments as a fundamental human motivation",
+      "authors": [
+        "Roy F. Baumeister",
+        "Mark R. Leary"
+      ],
+      "year": 1995,
+      "journal": "Psychological Bulletin",
+      "DOI": null,
+      "URL": "https://pubmed.ncbi.nlm.nih.gov/7777651/",
+      "source_type": "review",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Synthesis of belongingness evidence",
+      "major_findings": "Stable interpersonal bonds are a broad motivational concern.",
+      "limitations": "No fixed contact preference or action probability follows.",
+      "constructs_supported": [
+        "belonging"
+      ],
+      "access_level": "original publication abstract",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    },
+    {
+      "source_id": "P36",
+      "title": "Permission to Use the IPIP",
+      "authors": null,
+      "year": null,
+      "journal": null,
+      "DOI": null,
+      "URL": "https://ipip.ori.org/newPermission.htm",
+      "source_type": "official instrument resource",
+      "sample_size": null,
+      "population": null,
+      "methodology": "Reuse-permission statement",
+      "major_findings": "IPIP items and scales are public domain.",
+      "limitations": "This permission does not cover BFI-2, NEO or arbitrary derivative validation.",
+      "constructs_supported": [
+        "instrument rights"
+      ],
+      "access_level": "official resource",
+      "reviewed_on": "2026-10-05",
+      "metadata_note": null
+    }
+  ]
+}

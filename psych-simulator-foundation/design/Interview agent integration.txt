@@ -1,0 +1,50 @@
+INTERVIEW AGENT INTEGRATION — 2026-10-05
+
+Scope: add modular agents to the existing authored interview simulator.
+The supplied proposal is preserved beside this file. Its embedded citation markers
+cannot be resolved from the pasted text. It is design input, not verified evidence.
+
+Implemented
+Each selected question passes through planInterviewTurn in prototype/dist/agents.mjs.
+IDENTITY provides authored context with explicit unspecified TRAIT and SCHEMA
+models and references to authored MOTIVE goals. MNEMOSYNE retrieves prior disclosures
+of that topic. CORTEX resolves explicit topic selection. AFFECT exposes authored
+expression guidance. SOCIAL selects the existing answer. EVIDENCE records source
+IDs. AUDITOR checks exact speech, IDs and domains before core.mjs commits the turn
+and trace. Modules do not independently mutate shared session state.
+
+These modules inspect and route authored material; identity and affect do not yet
+change responses. No numerical psychology, artificial memories, inferred traits,
+coping distributions or diagnostic behavior rules have been added.
+
+OBSERVER receives a freshly projected view of speech and administered assessment
+only. ANALYST counts distinct and repeated questions from that view. Neither
+classifies the client or rates learner competence. Hidden trace details remain in
+the reviewer inspector; they are not added to learner debrief exports.
+
+Open Reviewer guide > Inspect interview agents to see the latest trace, observer
+evidence and analyst counts. Reset clears traces. All behavior remains scripted.
+
+Boundaries
+Projection boundaries are enforced for these function calls, but this existing
+reviewer application still downloads the entire case to the browser. This is not
+server isolation or a secure blind learner deployment. Before live use, move case,
+controller and privileged trace storage to a server and enforce role access there.
+The language-renderer input contains only selected authored speech; no LLM is wired.
+Source IDs do not prove scientific support. The separate evaluator prompt, fixed
+assessment scoring and NR ratings remain unchanged.
+
+Deferred from the broader proposal
+World events, developmental replay, physiological dynamics, learned schemas,
+mechanism profiles, symptom trajectories, classification and experimental
+interventions need separately specified evidence and validation. They are not
+implemented or represented as working agents here. EVIDENCE does not browse or
+automatically revise models. AUDITOR enforces authored contracts, not clinical truth.
+
+Validation commands from the foundation directory
+node --test engineering/agents.test.mjs
+node engineering/test.mjs
+The latter regenerates existing fixture reports and validation records.
+
+Original handbook and ZIP are historical pre-agent snapshots. Current agent code
+and this integration note are local additions; the published Site is unchanged.

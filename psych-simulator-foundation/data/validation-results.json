@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-05",
+  "scope": "Deterministic foundation logic and mocked provider contract only. No live AI, clinical validity, learner study or clinician review tested.",
+  "passed": 37,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "GAD-7 boundary 0",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 4",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 5",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 9",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 10",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 14",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 15",
+      "status": "pass"
+    },
+    {
+      "name": "GAD-7 boundary 21",
+      "status": "pass"
+    },
+    {
+      "name": "Case score is 15",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score missing",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score null",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score bool",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score fraction",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score negative",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score overflow",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score text",
+      "status": "pass"
+    },
+    {
+      "name": "Reject invalid score nan",
+      "status": "pass"
+    },
+    {
+      "name": "Source IDs resolve",
+      "status": "pass"
+    },
+    {
+      "name": "Fact IDs unique",
+      "status": "pass"
+    },
+    {
+      "name": "Question repetition preserves case",
+      "status": "pass"
+    },
+    {
+      "name": "Unknown topic does not change state",
+      "status": "pass"
+    },
+    {
+      "name": "No hidden assessment in debrief",
+      "status": "pass"
+    },
+    {
+      "name": "Assessment rationale required",
+      "status": "pass"
+    },
+    {
+      "name": "Functional difficulty not summed",
+      "status": "pass"
+    },
+    {
+      "name": "Cannot finish an empty interview",
+      "status": "pass"
+    },
+    {
+      "name": "Incomplete reasoning rejected",
+      "status": "pass"
+    },
+    {
+      "name": "Strong fixture covers more topics",
+      "status": "pass"
+    },
+    {
+      "name": "Evidence exactly matches disclosed facts",
+      "status": "pass"
+    },
+    {
+      "name": "Report is stable on repeat",
+      "status": "pass"
+    },
+    {
+      "name": "No automated competence rating",
+      "status": "pass"
+    },
+    {
+      "name": "Ended session cannot gain hidden facts",
+      "status": "pass"
+    },
+    {
+      "name": "Provider rejects unknown evidence",
+      "status": "pass"
+    },
+    {
+      "name": "Provider rejects malformed JSON",
+      "status": "pass"
+    },
+    {
+      "name": "Provider rejects unsupported factual reply",
+      "status": "pass"
+    },
+    {
+      "name": "Provider does not call without credentials",
+      "status": "pass"
+    },
+    {
+      "name": "Provider request and response contract using mock",
+      "status": "pass"
+    },
+    {
+      "name": "Provider failures are not disguised as scripted success",
+      "status": "pass"
+    }
+  ]
+}

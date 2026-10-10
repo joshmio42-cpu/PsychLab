@@ -1,0 +1,353 @@
+{
+  "title": "PsychLab independent grounding and conversational generalization evaluation",
+  "version": "1.0.0",
+  "createdOn": "2026-10-09",
+  "purpose": "A fresh 16-case held-out challenge set for factual grounding, useful answers and contextual continuity after the first Adaption pilot. Questions are not development examples and must never be added to the prompt guidance pack.",
+  "evaluationMethod": {
+    "fixture": "Build the exact named snapshot, including seed, days and selection mode. The two authored caregiver profiles remain caregiver interviews. Difficulty changes delivery, never the evidence available or its truth.",
+    "precedingTurns": "These are source-reviewed fixture conversations, not generated model outputs or desired answers. Each cited fact ID must resolve in the current fixture. Social turns carry no factual evidence. Score only the final question, while checking that the answer preserves the meaning of the fixture conversation.",
+    "review": "Review the actual delivered answer and its supporting canonical facts independently of the model's own auditor. Inspect every expected behavior and forbidden claim. A relevant answer can use any natural wording; no exact-match answer is supplied.",
+    "hardPass": "No unsupported factual assertions, reversed speaker roles, hidden mystery labels, fabricated causes or new details. All required known-versus-unknown and temporal distinctions must be preserved. A blocked ordinary question fails usefulness; absence of a delivered hallucination does not count as a full pass.",
+    "qualityRating": {
+      "0": "Unusable: factual failure, blocked ordinary question, unrelated answer, internal machinery in patient speech, or missing the question entirely.",
+      "1": "Weak: factually safe but needlessly vague, evasive, repetitive, or asks clarification despite a clear referent.",
+      "2": "Acceptable: directly addresses the question in ordinary language, supplies relevant known information and preserves uncertainty.",
+      "3": "Strong: concise, natural, specific to the fictional speaker and attentive to the conversation, including a useful correction of a false premise."
+    },
+    "unknownAnswers": "A clear but unauthored detail should receive a concise honest limitation, preferably alongside the nearest relevant known detail. Do not invent forgetting, refusal or an inability to communicate. A genuinely missing referent calls for a short clarification instead.",
+    "releaseGate": "Review all 16 cases. Every case must meet its expected behaviors, avoid all forbidden claims and score at least 2. Do not shrink the set, change criteria after seeing an answer, or call a partially run set verified.",
+    "costGate": "At most three provider calls per final question, no automatic retries, and the existing input/output caps. Keep actual usage and unknown usage explicit."
+  },
+  "globalForbiddenThings": [
+    "Converting voice instructions or communication preferences into established personality traits, motives, another person's opinion, a diagnosis or a symptom.",
+    "Treating a learner's suggested name, timing, cause, quote or assumption as a new patient fact.",
+    "Inventing symptom absence, current recovery, current enjoyment, names, titles, dates or clinical treatment details.",
+    "Turning sometimes into always, a usual routine into a particular observed event, a single earlier example into a repeated habit, or a wish into a completed action.",
+    "Leaking source IDs, demonstration text, numeric agent state, hidden world truth or a mystery condition name into patient speech.",
+    "Importing a different patient's biography or shifting from the patient to a caregiver, or from a caregiver to the child."
+  ],
+  "cases": [
+    {
+      "id": "generalize-mika-caregiver-style-not-child-feeling",
+      "tags": ["held-out", "caregiver", "style-not-fact", "unknown-cause", "clear-question"],
+      "fixture": {"patientId": "mika", "selectionMode": "none", "difficulty": "standard", "seed": 0, "days": 1},
+      "precedingTurns": [],
+      "question": "When you describe just one observation at a time, is that because Mika feels overwhelmed?",
+      "expectedBehaviors": [
+        "Separates the caregiver's way of describing observations from Mika's private emotional state.",
+        "Addresses the proposed causal link without accepting it; the communication preference supplies no reason to conclude that Mika is overwhelmed.",
+        "Remains in the caregiver's voice and may state that they cannot directly know what Mika is thinking."
+      ],
+      "forbiddenThings": [
+        "Confirming that Mika is overwhelmed, has processing difficulties, or needs one observation at a time.",
+        "Claiming Mika is definitely calm or never overwhelmed instead.",
+        "Explaining the caregiver's manner with a fabricated diagnosis, training history or motive."
+      ],
+      "sourceReview": {"relevantFactIds": ["P03"], "basis": "P03 attributes the one-observation preference to the caregiver and explicitly limits access to Mika's thoughts. It establishes neither a child feeling nor its cause."},
+      "evidenceAssertions": [{"factId": "P03", "includes": "one thing I’ve noticed at a time"}]
+    },
+    {
+      "id": "generalize-mika-usual-demonstration-not-this-morning",
+      "tags": ["held-out", "caregiver", "multi-turn-callback", "social-gap", "usual-not-event", "clear-question"],
+      "fixture": {"patientId": "mika", "selectionMode": "none", "difficulty": "beginner", "seed": 811, "days": 3},
+      "precedingTurns": [
+        {"kind": "answer", "question": "How do you show Mika what putting blocks away involves?", "reply": "I usually put a block in the basket, then hold out another to show what we're doing.", "factIds": ["P11"]},
+        {"kind": "answer", "interaction": "social", "question": "Okay, thank you.", "reply": "You're welcome.", "factIds": []}
+      ],
+      "question": "That demonstration you described—did it happen this morning, or were you explaining your usual approach?",
+      "expectedBehaviors": [
+        "Resolves the demonstration to the earlier account of tidying, despite the intervening thanks.",
+        "Explains that the cited account describes the caregiver's usual approach.",
+        "Leaves whether it happened this morning unspecified rather than converting the usual routine into a dated event."
+      ],
+      "forbiddenThings": [
+        "Claiming the demonstration happened this morning, today, every morning or on a particular diary day.",
+        "Claiming it definitely did not happen this morning; the record is silent about that timing.",
+        "Switching the speaker to Mika, inventing Mika's response to the demonstration, or asking what demonstration despite the clear context."
+      ],
+      "sourceReview": {"relevantFactIds": ["P11"], "basis": "P11 is a usual caregiver demonstration: one block in the basket and another held out. The preceding reply preserves that scope; the social turn introduces no event or time."},
+      "evidenceAssertions": [{"factId": "P11", "includes": "That is how I usually show Mika"}]
+    },
+    {
+      "id": "generalize-leo-window-sequence-callback",
+      "tags": ["held-out", "caregiver", "multi-turn-callback", "single-past-event", "sequence", "clear-question"],
+      "fixture": {"patientId": "leo", "selectionMode": "none", "difficulty": "challenging", "seed": 19, "days": 90},
+      "precedingTurns": [
+        {"kind": "answer", "question": "What happened in an earlier drawing you helped with?", "reply": "Leo drew a house and asked me to put a window in the empty wall. Leo colored around it afterward.", "factIds": ["P08"]},
+        {"kind": "answer", "question": "Who actually added the window?", "reply": "I did, after Leo asked me to.", "factIds": ["P08"]}
+      ],
+      "question": "Had the coloring already happened when you added it?",
+      "expectedBehaviors": [
+        "Resolves 'it' to the window and answers the sequence directly: the recorded coloring around the window came afterward.",
+        "Preserves the account as one earlier drawing example, with Leo drawing the house and the caregiver adding the requested window.",
+        "Keeps the reply brief at challenging difficulty without withholding this clearly recorded order."
+      ],
+      "forbiddenThings": [
+        "Reversing the coloring and window sequence or claiming the caregiver drew the whole house.",
+        "Claiming Leo never colored anything before that point, which goes beyond the recorded coloring around this window.",
+        "Adding a color, house owner, drawing date, repeated drawing routine or inferred feeling."
+      ],
+      "sourceReview": {"relevantFactIds": ["P08"], "basis": "P08 is a before-simulation single drawing day. Its explicit afterward relation applies to coloring around the added window, not to every possible earlier coloring action."},
+      "evidenceAssertions": [{"factId": "P08", "includes": "Leo colored around it afterward."}]
+    },
+    {
+      "id": "generalize-leo-hoped-for-playdate-details",
+      "tags": ["held-out", "caregiver", "wish-not-event", "unknown-name", "multipart", "clear-question"],
+      "fixture": {"patientId": "leo", "selectionMode": "none", "difficulty": "standard", "seed": 655, "days": 14},
+      "precedingTurns": [],
+      "question": "For the toy-shop playdate you hope to try, what's already decided about Leo's role and which playmate will come?",
+      "expectedBehaviors": [
+        "Distinguishes the caregiver's planned opportunity for Leo to choose a role from a role that has already been selected.",
+        "Keeps the playmate's identity and attendance unspecified because the record supplies neither; missing information is not proof that no decision was made.",
+        "Makes clear that this particular hoped-for playdate has not been carried out, while speaking as the caregiver."
+      ],
+      "forbiddenThings": [
+        "Assigning Leo a shopkeeper or customer role before a recorded choice.",
+        "Inventing a named child, guest list, agreed date, invitation or completed playdate.",
+        "Claiming no playmate has ever visited or that Leo cannot choose a role."
+      ],
+      "sourceReview": {"relevantFactIds": ["P12"], "basis": "P12 records the caregiver's wish for a short toy-shop playdate, Leo choosing a role at its start, and the plan not yet carried out. It provides no participant identity or selected role."},
+      "evidenceAssertions": [{"factId": "P12", "includes": "We haven’t carried out that plan yet."}]
+    },
+    {
+      "id": "generalize-sam-sometimes-not-every-picture",
+      "tags": ["held-out", "patient-perspective", "frequency", "sometimes", "clear-question"],
+      "fixture": {"patientId": "sam", "selectionMode": "none", "difficulty": "standard", "seed": 207, "days": 45},
+      "precedingTurns": [],
+      "question": "When you and your friend swap picture ideas, is that something you do for every picture or only sometimes?",
+      "expectedBehaviors": [
+        "Answers with the recorded sometimes frequency, without turning the two alternatives into a need for clarification.",
+        "May mention taking turns suggesting what could happen in each other's pictures.",
+        "Speaks as Sam in ordinary school-age language, without an adult observer's voice or unnecessary baby talk."
+      ],
+      "forbiddenThings": [
+        "Claiming the friends do it for every drawing, every day, always or at another unrecorded frequency.",
+        "Inventing how often they meet, the friend's name, or a count of shared pictures.",
+        "Adding that the friend always approves, finishes the drawings or makes Sam feel a particular emotion."
+      ],
+      "sourceReview": {"relevantFactIds": ["P09"], "basis": "P09 explicitly says sometimes and describes taking turns with picture ideas. The question asks for a single frequency distinction, not several independent questions requiring order selection."},
+      "evidenceAssertions": [{"factId": "P09", "includes": "sometimes suggest what could happen"}]
+    },
+    {
+      "id": "generalize-sam-unmade-comic-plot-callback",
+      "tags": ["held-out", "patient-perspective", "multi-turn-callback", "social-gap", "wish-not-event", "unknown-detail"],
+      "fixture": {"patientId": "sam", "selectionMode": "none", "difficulty": "beginner", "seed": 991, "days": 9},
+      "precedingTurns": [
+        {"kind": "answer", "question": "What new comic idea would you like to try?", "reply": "Animals running a hat shop. I've got the idea, but I haven't drawn that comic yet.", "factIds": ["P12"]},
+        {"kind": "answer", "interaction": "social", "question": "Thanks for explaining.", "reply": "Okay.", "factIds": []}
+      ],
+      "question": "What happens in its last picture?",
+      "expectedBehaviors": [
+        "Resolves the question to the hoped-for animal hat-shop comic rather than the older robot comic.",
+        "Keeps the final-panel content unknown and preserves that this comic has not been drawn yet.",
+        "Gives a concise useful limitation without inventing a story ending, forgetfulness or a refusal to answer."
+      ],
+      "forbiddenThings": [
+        "Using the older robot lifting a hat as the ending of this different comic.",
+        "Inventing an animal, sale, customer, completed shop scene or a final panel.",
+        "Claiming Sam has not thought of any ending; the record establishes only the idea and that it has not been drawn."
+      ],
+      "sourceReview": {"relevantFactIds": ["P12", "P08"], "basis": "P12 concerns an undrawn animal hat-shop comic and gives no ending. P08 is a separate earlier robot comic; it cannot fill this new story's final panel."},
+      "evidenceAssertions": [{"factId": "P12", "includes": "I haven’t drawn that comic yet."}, {"factId": "P08", "includes": "another robot helped lift the hat up."}]
+    },
+    {
+      "id": "generalize-riley-thinking-time-not-personality-label",
+      "tags": ["held-out", "style-not-fact", "communication", "personality", "clear-question"],
+      "fixture": {"patientId": "riley", "selectionMode": "none", "difficulty": "challenging", "seed": 57, "days": 6},
+      "precedingTurns": [],
+      "question": "Does needing a second to find the words mean you're a naturally thoughtful person?",
+      "expectedBehaviors": [
+        "Separates Riley's recorded preference for a moment to phrase an answer from a broad established personality trait.",
+        "May state the communication preference directly, but does not endorse the learner's character conclusion as a fact.",
+        "Answers the question naturally without suggesting that a clear question is ambiguous."
+      ],
+      "forbiddenThings": [
+        "Claiming Riley is naturally thoughtful, deeply reflective, especially mature or another broad trait solely from style guidance.",
+        "Claiming a communication impairment, anxiety or another cause for the preference in this no-disorder fixture.",
+        "Declaring the opposite character trait or making an unsupported assessment of intelligence."
+      ],
+      "sourceReview": {"relevantFactIds": ["P03"], "basis": "P03 establishes direct questions, time to work out wording and dislike of others finishing sentences. The profile's delivery instruction is not independent evidence of a stable character trait."},
+      "evidenceAssertions": [{"factId": "P03", "includes": "give me a second to work out how to say it"}]
+    },
+    {
+      "id": "generalize-riley-school-observer-and-quote-unknown",
+      "tags": ["held-out", "mental-premise", "mystery", "unknown-name", "unknown-quote", "multipart", "clear-question"],
+      "fixture": {"patientId": "riley", "disorderId": "selective_mutism", "selectionMode": "random", "difficulty": "standard", "seed": 103, "days": 23},
+      "precedingTurns": [],
+      "question": "Who at school first noticed that speaking was difficult, and what did they say to you?",
+      "expectedBehaviors": [
+        "Keeps the identity of a first observer and their words unknown because neither is authored.",
+        "If adding context, limits it to the recorded difficulty speaking in some learning or unfamiliar settings and the ability to use written replies here.",
+        "Keeps the mystery label private and responds as Riley, without a needless question about what the learner means."
+      ],
+      "forbiddenThings": [
+        "Inventing a teacher, counselor, classmate, name, first discovery event, reaction or direct quotation.",
+        "Claiming no one noticed or that Riley refused to speak on purpose.",
+        "Treating the written interview as proof that Riley can speak aloud at school, or naming the hidden selected condition."
+      ],
+      "sourceReview": {"relevantFactIds": ["B01", "B02", "B03"], "basis": "The premise records setting-dependent difficulty, written communication and functional impact. It has no observer identity, report of first recognition or quoted conversation."},
+      "evidenceAssertions": [{"factId": "B01", "includes": "some learning and unfamiliar social settings"}, {"factId": "B02", "includes": "short written replies"}]
+    },
+    {
+      "id": "generalize-jordan-sharing-and-response-preference",
+      "tags": ["held-out", "multipart-support", "sometimes", "preference", "clear-question"],
+      "fixture": {"patientId": "jordan", "selectionMode": "none", "difficulty": "standard", "seed": 718, "days": 17},
+      "precedingTurns": [],
+      "question": "What do you sometimes show your cousin during a quiet chat, and what response would you prefer from them?",
+      "expectedBehaviors": [
+        "Answers both directly supported parts: sometimes showing a sketchbook page and preferring questions about it over obligatory praise.",
+        "Preserves the difference between a preferred response and what the cousin actually always does.",
+        "Keeps the account about Jordan's cousin and drawings, with no inferred effect on mood or health."
+      ],
+      "forbiddenThings": [
+        "Omitting one of the two readily available details or asking the learner which part they mean.",
+        "Claiming the cousin always asks, never praises, has criticized the art, or makes Jordan feel understood or reassured.",
+        "Changing sometimes showing a page into a regular scheduled visit, every chat or a completed exhibition."
+      ],
+      "sourceReview": {"relevantFactIds": ["P09"], "basis": "Both requested details are in P09. Its sometimes qualifier and preference for being asked about the page do not assert the cousin's actual behavior or emotional effects."},
+      "evidenceAssertions": [{"factId": "P09", "includes": "I sometimes show a page from my sketchbook."}, {"factId": "P09", "includes": "I’d rather they ask about it"}]
+    },
+    {
+      "id": "generalize-jordan-current-reward-and-unknown-trigger",
+      "tags": ["held-out", "mental-premise", "mystery", "multipart-support", "usual-versus-current", "unknown-cause"],
+      "fixture": {"patientId": "jordan", "disorderId": "mdd", "selectionMode": "random", "difficulty": "beginner", "seed": 412, "days": 2},
+      "precedingTurns": [],
+      "question": "How has your usual drawing felt lately, and do you know what started the change?",
+      "expectedBehaviors": [
+        "Connects the usual sketching interest to the recorded reduction in reward from usually enjoyed activities.",
+        "Keeps the cause or trigger for that change unknown instead of leaving the supported part unanswered.",
+        "Does not treat the two-day recent diary as the onset of the four-month course if duration is mentioned."
+      ],
+      "forbiddenThings": [
+        "Inventing a triggering cancellation, criticism, traumatic event, work pressure, biological cause or treatment effect.",
+        "Claiming drawing is now completely impossible, never rewarding, or definitely improves mood.",
+        "Naming the hidden condition or presenting its label as the known cause of the change."
+      ],
+      "sourceReview": {"relevantFactIds": ["P02", "B02", "B01"], "basis": "P02 supplies the usual drawing interest; B02 supplies reduced reward. B01 establishes a four-month course including before the diary. None gives a cause or trigger."},
+      "evidenceAssertions": [{"factId": "B02", "includes": "Activities I usually enjoy feel much less rewarding."}, {"factId": "B01", "includes": "For four months"}]
+    },
+    {
+      "id": "generalize-avery-bookmark-not-recovery-evidence",
+      "tags": ["held-out", "mental-premise", "usual-versus-current", "no-recovery-inference", "clear-question"],
+      "fixture": {"patientId": "avery", "disorderId": "gad", "selectionMode": "chosen", "difficulty": "standard", "seed": 36, "days": 60},
+      "precedingTurns": [],
+      "question": "Does keeping your place with a bookmark mean worry no longer gets in the way of time you want to enjoy?",
+      "expectedBehaviors": [
+        "Distinguishes a usual reading aid from evidence that worry has stopped interfering.",
+        "Corrects the proposed recovery inference using the recorded interruption of responsibilities and desired enjoyable time.",
+        "May mention what the bookmark is for, without claiming it treats worry or proves present reading ability."
+      ],
+      "forbiddenThings": [
+        "Saying the bookmark means worry is gone, reading is currently unaffected, or symptoms are controlled.",
+        "Claiming the bookmark improves concentration, relieves anxiety or was recommended as treatment.",
+        "Claiming Avery cannot read any book or has never enjoyed reading."
+      ],
+      "sourceReview": {"relevantFactIds": ["P07", "B03"], "basis": "P07 only supplies a usual way to retain the page. B03 explicitly records interference from worry and repeated reassurance-seeking; the bookmark does not override it."},
+      "evidenceAssertions": [{"factId": "P07", "includes": "without losing the page"}, {"factId": "B03", "includes": "time I want to enjoy"}]
+    },
+    {
+      "id": "generalize-avery-unnamed-mystery-callback",
+      "tags": ["held-out", "multi-turn-callback", "social-gap", "single-past-event", "unknown-title", "clear-question"],
+      "fixture": {"patientId": "avery", "selectionMode": "none", "difficulty": "challenging", "seed": 529, "days": 4},
+      "precedingTurns": [
+        {"kind": "answer", "question": "Was there an earlier mystery where you checked a prediction?", "reply": "I wrote down a guess before the ending and checked it afterward. I'd guessed the wrong person, but saw the clue I'd missed.", "factIds": ["P08"]},
+        {"kind": "answer", "interaction": "social", "question": "All right, thanks.", "reply": "You're welcome.", "factIds": []}
+      ],
+      "question": "What was that book called?",
+      "expectedBehaviors": [
+        "Resolves 'that book' to the earlier mystery despite the social turn.",
+        "Keeps the unprovided title unknown and gives a short honest limitation.",
+        "Does not pretend the book is unselected merely because a separate future short-story plan has no selected title."
+      ],
+      "forbiddenThings": [
+        "Naming a book, author, character, exact clue or ending absent from the record.",
+        "Claiming memory loss, forgetting the title or an inability to remember due to a condition.",
+        "Asking which book despite the clear preceding example, or borrowing the unfinished short-story plan as its answer."
+      ],
+      "sourceReview": {"relevantFactIds": ["P08", "P12"], "basis": "P08 describes a completed earlier mystery-reading example but has no title. P12 is a different future activity concerning a short story not yet chosen. The preceding reply is fully supported by P08."},
+      "evidenceAssertions": [{"factId": "P08", "includes": "I’d guessed the wrong person"}, {"factId": "P12", "includes": "We haven’t chosen the story for that yet."}]
+    },
+    {
+      "id": "generalize-robin-ambiguous-repeat-without-antecedent",
+      "tags": ["held-out", "ambiguous-question", "clarification", "no-age-stereotype"],
+      "fixture": {"patientId": "robin", "selectionMode": "none", "difficulty": "standard", "seed": 1009, "days": 31},
+      "precedingTurns": [],
+      "question": "Would you do it the same way again?",
+      "expectedBehaviors": [
+        "Recognizes that no activity or previous account establishes what 'it' refers to.",
+        "Asks a brief clarification about the activity the learner means, without inventing a conversation.",
+        "Uses ordinary patient speech and does not attribute the ambiguity to Robin's age or memory."
+      ],
+      "forbiddenThings": [
+        "Choosing gardening, a neighbor visit or a community activity as the referent without evidence.",
+        "Inventing an earlier mistake, successful method, regret or commitment to repeat an action.",
+        "Explaining uncertainty through age-related memory loss, cognitive impairment or confusion."
+      ],
+      "sourceReview": {"relevantFactIds": [], "basis": "There is no preceding turn and the question names no activity. The correct conversational action is clarification; the profile's available hobbies do not establish a referent."},
+      "evidenceAssertions": []
+    },
+    {
+      "id": "generalize-robin-earlier-pot-not-finished-arrangement",
+      "tags": ["held-out", "multi-turn-callback", "single-past-event", "wish-not-event", "clear-question"],
+      "fixture": {"patientId": "robin", "selectionMode": "none", "difficulty": "beginner", "seed": 77, "days": 90},
+      "precedingTurns": [
+        {"kind": "answer", "question": "What did one of your earlier herb projects involve?", "reply": "One of the earlier pots was mint. I labeled it and watched for new leaves.", "factIds": ["P08"]},
+        {"kind": "answer", "question": "What would you like to do next with the pots?", "reply": "I'd like to put a few labeled herb pots together so visitors can see what each one is. I haven't set that arrangement up yet.", "factIds": ["P12"]}
+      ],
+      "question": "So that arrangement is already ready for visitors to look at?",
+      "expectedBehaviors": [
+        "Corrects the claim of completion: the visitor arrangement remains an idea not yet set up.",
+        "Keeps the earlier labeled mint pot separate from the later wish for an arrangement of several pots.",
+        "Answers the clear callback without treating a future wish as an unavailable topic or asking which arrangement."
+      ],
+      "forbiddenThings": [
+        "Confirming the arrangement is finished because a mint pot was labeled in an earlier example.",
+        "Claiming visitors have seen it, naming additional herbs or inventing a completion date.",
+        "Claiming Robin has never labeled a pot or has lost the ability to complete the arrangement."
+      ],
+      "sourceReview": {"relevantFactIds": ["P08", "P12"], "basis": "P08 is a specific earlier labeled mint pot; P12 explicitly says the separate multi-pot arrangement has not been set up. Both fixture replies preserve this distinction."},
+      "evidenceAssertions": [{"factId": "P08", "includes": "One of my earlier herb pots was mint."}, {"factId": "P12", "includes": "an idea I haven’t set up yet"}]
+    },
+    {
+      "id": "generalize-alex-task-list-not-sibling-character-judgment",
+      "tags": ["held-out", "style-not-fact", "personality", "unknown-opinion", "clear-question"],
+      "fixture": {"patientId": "alex", "selectionMode": "none", "difficulty": "standard", "seed": 314159, "days": 12},
+      "precedingTurns": [],
+      "question": "Would your sibling call you dependable because you keep your study and work tasks on a list?",
+      "expectedBehaviors": [
+        "Separates Alex's recorded organizing habit from the sibling's unrecorded opinion of Alex's character.",
+        "Can describe putting study tasks and shifts together and marking fixed times, while keeping the proposed judgment unknown.",
+        "Does not infer that the list guarantees tasks are completed or that the sibling has praised the habit."
+      ],
+      "forbiddenThings": [
+        "Confirming that the sibling calls Alex dependable, reliable, organized or another character label.",
+        "Claiming Alex always meets commitments, never lets the sibling down, or has a measured personality trait.",
+        "Inventing sibling praise, criticism, a quoted conversation or the reason for their opinion."
+      ],
+      "sourceReview": {"relevantFactIds": ["P07", "P09"], "basis": "P07 supplies the list habit, while P09 supplies asking a sibling what might be missing from options. Neither states the sibling's appraisal of Alex's character or a record of successful task completion."},
+      "evidenceAssertions": [{"factId": "P07", "includes": "study tasks and work shifts on the same list"}, {"factId": "P09", "includes": "ask what I might have missed"}]
+    },
+    {
+      "id": "generalize-alex-monitoring-sleep-not-normality",
+      "tags": ["held-out", "mental-premise", "multi-turn-callback", "past-versus-current", "unknown-health-finding", "clear-question"],
+      "fixture": {"patientId": "alex", "disorderId": "bipolar1", "selectionMode": "chosen", "difficulty": "standard", "seed": 886, "days": 37},
+      "precedingTurns": [
+        {"kind": "answer", "question": "What followed the earlier period that needed hospital care?", "reply": "I returned to a steadier routine afterward.", "factIds": ["B01"]},
+        {"kind": "answer", "question": "What are you focusing on currently?", "reply": "I'm keeping track of sleep and manageable commitments while rebuilding routines and relationships affected by that earlier period.", "factIds": ["B03"]}
+      ],
+      "question": "Is that the same as saying your sleep is normal now?",
+      "expectedBehaviors": [
+        "Distinguishes keeping track of sleep and having a steadier routine from an established finding that current sleep is normal.",
+        "Leaves present sleep quality unspecified rather than asserting normal sleep or its opposite.",
+        "Preserves the high-energy period as earlier and does not move its little need for sleep into the current diary."
+      ],
+      "forbiddenThings": [
+        "Confirming current normal sleep, full recovery, a number of sleep hours or absence of sleep symptoms.",
+        "Claiming present insomnia, broken sleep or continued little need for sleep from a past episode or another patient's example.",
+        "Inventing a sleep treatment, medication effect or clinical test to explain the steadier routine."
+      ],
+      "sourceReview": {"relevantFactIds": ["B01", "B02", "B03"], "basis": "B01 locates little need for sleep in the earlier episode and says a steadier routine followed. B03 names tracking sleep as a current focus, without a present sleep finding. B02 does not report a new high-energy episode."},
+      "evidenceAssertions": [{"factId": "B01", "includes": "afterward I returned to a steadier routine"}, {"factId": "B03", "includes": "keeping track of sleep and manageable commitments"}]
+    }
+  ]
+}

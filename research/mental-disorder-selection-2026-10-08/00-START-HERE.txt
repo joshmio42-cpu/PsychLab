@@ -1,0 +1,32 @@
+PSYCHLAB — DISORDER SELECTION RESEARCH
+Research date: 8 October 2026
+Scope: research only; no changes to the running app, agents, routing or API settings.
+
+READ THIS FIRST
+The main report is 01-Research-report.html. Open it in a browser.
+It contains a grouped selection index, research findings and 68 candidate cards:
+65 DSM-5-TR candidates, two separately labeled ICD-11 comparisons, and one
+non-disorder/uncertainty comparator. This is a curated list, not every diagnosis,
+subtype, specifier, induced condition or code in the DSM.
+
+02-Disorder-catalogue.json contains the same research catalogue as structured data.
+03-Age-history-and-future-design.txt explains age, timelines and later integration.
+04-Source-register.json lists 56 references, their URLs, access level and use.
+05-Search-method-and-gaps.txt documents search scope, access limits and open issues.
+06-Selection-list.txt provides a quick plain-text grouped list.
+
+None of these files is imported by PsychLab. No diagnostic selection screen was
+added, and no Featherless requests were made for this research.
+
+Evidence basis: public APA DSM-5/DSM-5-TR resources and updates; NIMH, WHO, CDC,
+NHLBI, NIAAA, NIDCD, VA, AACAP and NICE resources; two secondary MSD clinical
+reference pages. Source IDs resolve in the report and source register.
+
+The publisher's full DSM-5-TR text returned an access error. This research does
+not claim a full-manual review, reproduce diagnostic checklists, or establish
+validated disorder simulation. Public summaries leave some exact criteria,
+exclusions and age gates unresolved; those gaps are explicitly marked.
+
+The proposed stages and authoring tiers are design recommendations, not limits
+on which people can experience a condition. No numerical ages were invented.
+

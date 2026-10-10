@@ -1,0 +1,48 @@
+✔ known live motive embellishments fail independently of a permissive semantic auditor (41.6748ms)
+✔ low energy and withdrawal do not independently establish a motivation deficit (7.0704ms)
+✔ supported hobby reasons can be paraphrased naturally without exact matching (13.2496ms)
+✔ natural synonyms for explicitly authored enjoyment and emotional effects are allowed (0.7503ms)
+✔ new named relatives, friends, title names and surnames cannot be supplied by the question (3.8952ms)
+✔ earlier examples and usual interests cannot become recent diary events (11.4854ms)
+✔ a recent clinical source cannot move an earlier personal example into the recent period (2.2377ms)
+✔ uncompleted wishes remain intentions; negated completion is preserved (3.0998ms)
+✔ negated corrections and ordinary conversational phrasing are not flattened by these guards (6.6884ms)
+✔ all authored personal facts pass unchanged, so guards do not outlaw existing case content (28.4009ms)
+✔ a usual first-step strategy cannot deny current stress or gain invented efficacy (4.7385ms)
+✔ current symptoms need current evidence, while authored efficacy allows plain synonyms (2.9702ms)
+✔ for fun can name a usual hobby without permitting invented enjoyment of an interaction (6.1803ms)
+✔ an event cannot acquire an unauthored next day or next morning sequence (1.3269ms)
+✔ delivery style and preferred questions do not authorize a self-reported personality trait (2.8916ms)
+✔ explicit self-traits allow close synonyms but not negation reversal or other people’s traits (1.5162ms)
+✔ occasional activity cannot become typical or absolute despite usual metadata (1.343ms)
+✔ frequency belongs to the matched activity, including separate claims inside one fact (1.0611ms)
+✔ A negated ownership claim does not turn sometimes into a positive every-time frequency (0.9055ms)
+✔ usual and absolute frequency are allowed when associated evidence actually supports them (0.9092ms)
+✔ preferences and intentions do not become observed routines (0.7821ms)
+✔ a distinctive detail in one past event cannot become a general preference or routine (1.06ms)
+✔ a habit and ongoing symptoms do not establish that the habit fails to help (2.4861ms)
+✔ denying a trait inference does not assert a personality trait or support later assertions (1.976ms)
+✔ negative coping results need the same action and target, not unrelated failure vocabulary (1.8796ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (53.0233ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (10.5451ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (13.4342ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (9.627ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (7.0482ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (12.4592ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (9.8494ms)
+✔ Challenging opening quotes and writes only the authored brief version (9.9406ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (8.2831ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (9.4127ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (9.4137ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (8.504ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (7.0225ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (41.9318ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3314.8366ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3727.9937

@@ -1,0 +1,42 @@
+✔ An added causal connection renders complete evidence instead of editing generated clauses (5.3341ms)
+✔ A source connector somewhere else cannot authorize a new relation between generated claims (0.8317ms)
+✔ Complete authored causal sentences survive case, terminal punctuation, whitespace and unambiguous contractions (0.4426ms)
+✔ Quotation marks preserve speaker scope and cannot license unquoted personal claims (0.5798ms)
+✔ Internal numeric punctuation cannot turn ranges, fractions or thousands into different amounts (0.6605ms)
+✔ Other internal punctuation changes remain conservatively unlicensed (0.4768ms)
+✔ Ambiguous contractions, changed negation, qualifiers and numbers do not acquire an authored license (0.2752ms)
+✔ Noncausal degree, duration and discourse uses of so retain the AI paraphrase (0.2466ms)
+✔ Common causal markers use the same source-based fallback without topic-specific rules (1.358ms)
+✔ One exact authored causal sentence does not license a second invented connection (0.7607ms)
+✔ The selected excerpts preserve caregiver perspective, uncertainty and unfinished plans exactly (0.3949ms)
+✔ Empty or oversized evidence fails without truncation, expansion or silently dropping sources (0.9812ms)
+✔ Unvalidated references and out-of-scope drafts cannot be laundered through source rendering (0.3178ms)
+✔ Only supplied excerpts are rendered; no lookup or automatic expansion to full case facts occurs (0.2844ms)
+✔ Authored provenance limits are not patient ignorance, while authored patient uncertainty stays usable (1.1721ms)
+✔ Simulation coverage remains in the frozen record but cannot become patient evidence (38.9561ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (15.8396ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (10.7199ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (9.7603ms)
+✔ Leading dates and assumptions reach planning and audit but never the patient writer (13.6557ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (8.8943ms)
+✔ An unambiguous callback cannot route to a similar but different older source (8.9121ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (10.1558ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (8.5547ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (8.6075ms)
+✔ Challenging opening quotes and writes only the authored brief version (12.5845ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (7.7791ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (8.572ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (8.6527ms)
+✔ Unverified causal wording uses exact selected excerpts and still receives the independent audit (10.3107ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (11.2447ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (11.184ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (52.7652ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3756.1874ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4270.2059

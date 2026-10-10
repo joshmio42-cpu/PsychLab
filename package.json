@@ -1,0 +1,17 @@
+{
+  "name": "psychlab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fictional psychological interview simulator and retained research materials.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "scripts": {
+    "start": "node --disable-sigusr1 scripts/start.mjs",
+    "demo": "node --disable-sigusr1 scripts/demo.mjs",
+    "test": "node scripts/test.mjs",
+    "test:security": "node scripts/test.mjs --security",
+    "check:privacy": "node scripts/check-privacy.mjs"
+  }
+}

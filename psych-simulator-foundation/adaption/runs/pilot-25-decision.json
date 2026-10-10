@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-09T07:21:06.848Z",
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "packHash": "4467bf983a6b7bbad455d37b769f7fe3fcd26cd1c43168572889666ffd0d5ca2",
+  "activate": false,
+  "gates": {
+    "sameFrozenHistory": true,
+    "noUnsupportedDeliveredClaims": false,
+    "noHardRegressions": false,
+    "atLeastOneImprovedCase": true,
+    "noAverageQualityDecrease": true,
+    "manageableTokenCost": false,
+    "transferChecksPass": false,
+    "examplesActuallyUsed": true
+  },
+  "baseline": {
+    "cases": 36,
+    "hardPasses": 30,
+    "blocked": 3,
+    "unsupportedDelivered": 3,
+    "meanQuality": 2.4166666666666665,
+    "estimatedUsd": 0.032663160000000004
+  },
+  "candidate": {
+    "cases": 36,
+    "hardPasses": 31,
+    "blocked": 4,
+    "unsupportedDelivered": 1,
+    "meanQuality": 2.4444444444444446,
+    "estimatedUsd": 0.03347189999999999
+  },
+  "transfer": {
+    "cases": 8,
+    "hardPasses": 4,
+    "failed": [
+      "transfer-alex-current-hobby-and-symptoms",
+      "transfer-no-disorder-duration-contamination",
+      "transfer-jordan-practical-plans-biography",
+      "transfer-school-age-drawing-perspective"
+    ]
+  },
+  "guidedCalls": 23,
+  "costRatio": null,
+  "improvements": [
+    "hobby-leading-current-enjoyment",
+    "repair-question-meaning",
+    "specific-recorded-example"
+  ],
+  "regressions": [
+    "greeting-first",
+    "greeting-name-check"
+  ],
+  "unsupported": [
+    "diagnosis-prone-conversational-reply"
+  ],
+  "limitation": "Single stochastic sample per question and variant, with independent assistant semantic review; not a statistical improvement estimate or clinical validation. Adaption billing remains separate."
+}

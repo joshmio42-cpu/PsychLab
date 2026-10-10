@@ -1,0 +1,29 @@
+✔ Authored provenance limits are not patient ignorance, while authored patient uncertainty stays usable (1.1001ms)
+✔ Simulation coverage remains in the frozen record but cannot become patient evidence (32.1725ms)
+✔ Planned mixed answers use exactly three calls and keep the unknown request outside patient generation (15.819ms)
+✔ Unknown requested values can get natural known context without turning absence into patient indecision (14.205ms)
+✔ The new plan wire format reaches generation with locally derived source IDs (15.6138ms)
+✔ Leading dates and assumptions reach planning and audit but never the patient writer (12.9953ms)
+✔ The writer gets selected excerpts while the auditor retains qualifiers and the prior referent (8.3704ms)
+✔ Planned writer receives factual memory interpretations only through selected evidence (6.7233ms)
+✔ An unambiguous callback cannot route to a similar but different older source (9.8669ms)
+✔ A wholly unrecorded detail is a local exercise boundary with no patient-writing call (8.7131ms)
+✔ Malformed, incomplete and fabricated plans reject before the writer is called (10.7149ms)
+✔ Challenging disclosure preserves the selected first part and identifies later evidence as withheld (10.3032ms)
+✔ Challenging opening quotes and writes only the authored brief version (10.1283ms)
+✔ A selected multi-source part cannot leak partially when challenging disclosure withholds a required source (7.5501ms)
+✔ Planned caregiver generation preserves interview identity and observed-perspective source (8.3977ms)
+✔ Semantic support remains an independent gate after locally valid source quotations (9.9952ms)
+✔ Unverified causal wording uses exact selected excerpts and still receives the independent audit (11.4373ms)
+✔ Writer cannot cite a disclosed ID excluded from the projected writer evidence (6.8465ms)
+✔ Auditor cannot return a citation for a withheld request excluded from projected evidence (7.9862ms)
+✔ Planning catalog retains complete source statements and prioritizes explicitly requested diary days (48.4453ms)
+✔ All 67 disorder options plus no disorder fit three planned calls with maximum Unicode questions and long history (3497.4019ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3947.251

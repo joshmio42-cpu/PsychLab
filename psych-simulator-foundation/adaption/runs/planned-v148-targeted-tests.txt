@@ -1,0 +1,26 @@
+✔ Missing credentials do not make a network call (1.7986ms)
+✔ Provider contract uses fixed endpoint, server key and usage metadata (1.5439ms)
+✔ Truncation, malformed JSON and HTTP failure reject without fallback (0.6655ms)
+✔ Provider uses nonzero samplers, prompt JSON and explicit supported reasoning controls (1.5777ms)
+✔ Malformed output, HTTP failures and transport failures never trigger automatic retry or model fallback (0.7617ms)
+✔ Prices apply separately to input/output tokens; total-only usage cannot produce dollars (1.5681ms)
+✔ Actual returned model decides price and unknown models never inherit a requested price (0.1807ms)
+✔ Cached savings require reported cache tokens and a published cache rate (0.3637ms)
+✔ Malformed or inconsistent usage is unavailable and zero tokens are a real zero estimate (0.2532ms)
+✔ Metering separates session/process amounts and snapshots cannot mutate the ledger (0.8889ms)
+✔ Known subtotal is marked partial after missing usage, an unknown model, or a connection failure (0.9432ms)
+✔ Failed local response validation can still report paid usage exactly once (0.4062ms)
+✔ Concurrent reservations mark the estimate incomplete until each request settles (0.3878ms)
+✔ Changing a price preserves each request rate; stale or invalid stored prices are visible (0.3046ms)
+✔ No calls is zero, wholly unknown usage is unavailable, and unconfigured provider is unmetered (0.4258ms)
+✔ Replaying a completed turn returns its original cost without charging another request (48.1959ms)
+✔ Real provider adapter preserves cached usage through the metering boundary (1.0535ms)
+✔ Real provider adapter retains billed metadata after each local output rejection without retry (1.0614ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 262.6803

@@ -1,0 +1,34 @@
+{
+  "evidence": "routing-fidelity-rerun.json",
+  "comparedWith": "baseline.json and baseline-review.json",
+  "reviewedOn": "2026-10-08",
+  "reviewMethod": "Independent assistant review of all 13 actual replies, rejected candidates, routing outputs and canonical facts. Provider auditor approval is not treated as proof. This is not clinical validation.",
+  "supplementalSourceHash": {"factual-support.mjs":"248586b00b62973d2eb0a8ba0089a8362fd889bcf25fabafec373260e0e45e37","note":"Observed during this run. The new module was not in the harness source-hash list at run start; the harness now includes it for subsequent runs."},
+  "summary": {
+    "casesReviewed": 13,
+    "releasePassed": 7,
+    "releaseFailed": 6,
+    "deliveredUnsupportedClaimCases": 2,
+    "blockedTurns": 2,
+    "snapshotMutations": 0,
+    "providerCalls": 27,
+    "reportedTokens": 29349,
+    "estimatedUsd": 0.01087770,
+    "scopeLimitation": "The other 23 matrix cases were not rerun against these changed instructions and guards. Do not treat earlier passes as proof of current full-matrix quality."
+  },
+  "reviews": [
+    {"id":"casual-how-are-you","hardPass":false,"requiredBehaviorsPass":false,"qualityRating":0,"releasePass":false,"unsupportedSpans":["I've been okay"],"notes":["CORTEX chose social and supplied no facts. The response invents a recent state despite the frozen MDD course. The social guard and semantic auditor both missed the I've been construction. A greeting combined with a request about recent experience must not become a false I'm okay answer."]},
+    {"id":"communication-directly-asked","hardPass":true,"requiredBehaviorsPass":false,"qualityRating":1,"releasePass":false,"notes":["The initial yes now fits P03, but the answer adds the full earlier mug-drawing anecdote from P08. The learner offered to provide an example; they did not ask the patient for a drawing example. Facts are supported but the conversational action remains misunderstood."]},
+    {"id":"why-with-known-antecedent","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":2,"releasePass":true,"notes":["The local route repair now marks the missing cause unavailable before generation. No security benefit, anxiety or unrecorded motive is invented. The response is an explicit application notice rather than fictional patient amnesia."]},
+    {"id":"single-word-elaboration","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":2,"releasePass":true,"notes":["Develops G01 with B02 sleep, energy, concentration and reduced-reward experience. Two short sentences fit challenging delivery. No new cause, symptom or hostility is added."]},
+    {"id":"leading-family-name","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":2,"releasePass":true,"notes":["Correctly marks the cousin's name unavailable instead of confirming Jamie or pretending the question is ambiguous."]},
+    {"id":"unknown-medication-negative","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":2,"releasePass":true,"notes":["Correctly marks medication data unavailable. No treatment-advice refusal, prescription or negative medication finding is supplied."]},
+    {"id":"false-cause-leading","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":2,"releasePass":true,"notes":["Marks the proposed job-loss cause unavailable and does not replace it with another cause or an unrecorded employment-status denial."]},
+    {"id":"caregiver-private-thoughts","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":3,"releasePass":true,"notes":["Briefly states the caregiver's knowledge limit from P03 and now stops. No unsolicited noise/change symptoms or child private thoughts are appended."]},
+    {"id":"adolescent-autonomy","hardPass":true,"requiredBehaviorsPass":false,"qualityRating":0,"releasePass":false,"notes":["Still returns Which part do you mean? to a clear leading assumption. It should use Riley's stated wish to be heard alongside support from a trusted adult, without adopting hostility."]},
+    {"id":"school-age-one-question","hardPass":true,"requiredBehaviorsPass":false,"qualityRating":0,"releasePass":false,"notes":["Still blocked because the otherwise factual P01/P02 response is accompanied by out_of_scope:true. The mixed ordinary question does not require rejecting the whole answer; the model can answer one known part or request one question at a time."]},
+    {"id":"ordinary-no-disorder-stress","hardPass":false,"requiredBehaviorsPass":false,"qualityRating":0,"releasePass":false,"unsupportedSpans":["Not really.","Keeps things manageable."],"notes":["P11 records a usual short-list approach. It does not establish that current tasks have not been overwhelming, nor that the method is effective. P01 is only a goal. Auditor approval fails to catch both a negative finding and an invented benefit; a relevant actual diary event or explicit uncertainty is needed."]},
+    {"id":"specific-recorded-example","hardPass":true,"requiredBehaviorsPass":false,"qualityRating":0,"releasePass":false,"rejectedUnsupportedSpans":["the next day"],"notes":["CORTEX chose E22 and E24 despite a request for one example. The blocked candidate combines two cancellations and moves sleep/concentration problems to the next day, which neither diary entry supports. The number guard stopped delivery before semantic audit. Selecting one event and preserving chronology would avoid both aggregation and time invention."]},
+    {"id":"leading-absolute-frequency","hardPass":true,"requiredBehaviorsPass":true,"qualityRating":3,"releasePass":true,"notes":["Local repair retrieves B01. Not every single day, but on most days for the past four months is a concise correction retaining the recorded frequency and duration."]}
+  ]
+}

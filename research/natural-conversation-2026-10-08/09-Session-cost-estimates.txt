@@ -1,0 +1,67 @@
+PsychLab session cost estimates
+Checked 8 October 2026 (Asia/Manila)
+
+The interface can show an estimated USD amount for the current interview and a
+separate amount for this server run. These estimates do not query an account,
+deduct credits, enforce a dollar cap, or include subscription fees or taxes.
+
+The interview sidebar shows the estimate, with expandable cost details and model
+pricing links. Saved conversations keep a snapshot of that interview's estimate
+and rate attribution; they do not copy the shared server ledger. Conversation and
+debrief downloads include the estimate. Older saved records explicitly say that
+no estimate was recorded. They are not retrospectively assigned a zero cost.
+
+Stored public Featherless token rates, USD per million tokens:
+Model                                      Input       Output     Cached input
+Qwen/Qwen2.5-72B-Instruct                    0.370       0.400      Not listed
+Qwen/Qwen3-30B-A3B-Instruct-2507             0.125       0.450      Not listed
+Qwen/Qwen3-32B                              0.102       0.493      0.0816
+
+Sources checked:
+https://featherless.ai/models/Qwen/Qwen2.5-72B-Instruct
+https://featherless.ai/models/Qwen/Qwen3-30B-A3B-Instruct-2507
+https://featherless.ai/models/Qwen/Qwen3-32B
+https://featherless.ai/pricing
+
+The pricing page specifies separate input/output rates per million tokens for
+Developer API traffic. Featherless says successful provider requests are billed.
+A provider response rejected locally by PsychLab's JSON or factual checks can
+therefore still have a cost. Its reported usage remains in the estimate.
+
+Calculation and limits
+
+Each request uses the returned model's stored rate, the separately reported input
+tokens, and the separately reported output tokens. Example: 1,000 input and 200
+output tokens on Qwen2.5-72B-Instruct yield an estimated $0.00045. A total token
+count without an input/output split does not support a dollar estimate.
+
+When the provider reports cached input and a published cache rate is stored, that
+rate applies only to the reported cached portion. Missing cache information uses
+the regular input rate and is explicitly labelled as such. No savings are assumed.
+Invalid cache counts and contradictory token totals make that request unpriced.
+
+Unknown models, missing usage, and uncertain connection outcomes remain unknown.
+If some requests can be priced, the displayed amount is a PARTIAL known subtotal;
+it must not be presented as the full cost. If none can be priced, the amount is
+unavailable rather than zero. A new interview with no calls really is zero.
+
+Rates are saved with each request estimate. Updating the rate table does not
+retroactively change an existing ledger. The estimate marks rates older than
+30 days as needing review. The local table cannot detect an unannounced provider
+price change. The provider's billing screen remains authoritative.
+
+Session and server ledgers are separate. Clearing an interview resets only that
+session. The server-run ledger resets when the server restarts. Existing 60-call
+session and 300-call server limits remain; concurrent requests reserve those limits
+before awaiting responses. This feature adds no model requests or automatic retries.
+
+Verification
+
+live/tests/pricing.test.mjs covers split-rate arithmetic, returned-model changes,
+unknown models, cache evidence, invalid/missing/zero usage, separate ledgers, paid
+but locally rejected responses, pending concurrent calls, immutable rate snapshots,
+stale/invalid prices, and unconfigured providers. The existing economy tests cover
+shared quota enforcement and free replay of already completed request IDs.
+Provider adapter regressions verify that cached usage and locally rejected paid
+responses reach the ledger. live/tests/cost-ui.test.mjs exercises displayed states,
+safe session-only archival, old records, and both text-export paths.

@@ -1,0 +1,36 @@
+PSYCHLAB — INDEPENDENT REGRESSION REVIEW
+2026-10-09T10:09:06.305Z
+Evaluation: planned-v14-regression-candidate.json
+Evaluation SHA-256: 6242a909afed59bf24c021f272c0a878db48fb44f9f0c7878db302388e7916ca
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Prompt: interview-0.14.0
+Model: Qwen/Qwen2.5-72B-Instruct
+
+The staging v14 regression gate fails: 6 of 16 pass. Seven ordinary questions were blocked and three delivered boundaries withheld known answers. No unsupported patient claim was delivered; safe containment alone does not satisfy usefulness.
+
+Cases: 16; hard passes: 6; blocked: 7; unsupported delivered: 0.
+Quality: 15/48. Calls: 22; reported tokens: 34343; unreported calls: 0.
+Estimated Featherless usage: US$0.01274744; not verified billing.
+All 16 frozen snapshots reproduced and remained unchanged.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+FAIL generalize-mika-caregiver-style-not-child-feeling [0/3]: The planner found the caregiver preference and private-thought limitation, but inconsistent route metadata rejected the plan. No useful distinction reached the learner.
+FAIL generalize-mika-usual-demonstration-not-this-morning [0/3]: An ordinary question about usual versus specific timing was blocked by the support audit. The draft did not assert that the demonstration happened this morning.
+FAIL generalize-leo-window-sequence-callback [0/3]: P08 records coloring around the window afterward; the planner instead marked the complete request unrecorded while separately selecting P08. Validation blocked an answerable callback.
+FAIL generalize-leo-hoped-for-playdate-details [0/3]: The requested role and attendee are unrecorded, while P12 supplies useful planned context and explicitly says the playdate has not happened. Inconsistent route metadata blocked all of it.
+PASS generalize-sam-sometimes-not-every-picture [3/3]: Both the frequency qualifier and the shared authorship are preserved.
+PASS generalize-sam-unmade-comic-plot-callback [2/3]: A concise app limitation is acceptable for this wholly unauthored requested ending. Restating the comic's recorded unfinished status would improve specificity, so this scores 2.
+FAIL generalize-riley-thinking-time-not-personality-label [0/3]: The plan kept the trait claim unrecorded and included communication context, but inconsistent route metadata blocked the response. The unsupported trait was contained; the ordinary question still fails usefulness.
+PASS generalize-riley-school-observer-and-quote-unknown [2/3]: The requested person and quotation are wholly unauthored. An app unavailable message is acceptable under the established boundary interpretation; richer relevant context was optional.
+PASS generalize-jordan-sharing-and-response-preference [3/3]: A concise natural answer preserves both parts and their different scopes.
+FAIL generalize-jordan-current-reward-and-unknown-trigger [0/3]: This is over-withholding: the cause is unknown but the reduction in reward is recorded. A safe generic boundary is not a useful full answer.
+FAIL generalize-avery-bookmark-not-recovery-evidence [0/3]: The proposed recovery inference has a recorded correction in B03. Treating the whole question as unavailable suppresses a known answer.
+FAIL generalize-avery-unnamed-mystery-callback [0/3]: The title is unrecorded, and the planner correctly selected the earlier mystery as context. Inconsistent top-level route metadata rejected the otherwise useful unknown-detail plan.
+PASS generalize-robin-ambiguous-repeat-without-antecedent [3/3]: A short clarification is appropriate because this question has no antecedent. The local route makes no provider call.
+FAIL generalize-robin-earlier-pot-not-finished-arrangement [0/3]: P12 and the latest conversation identify the arrangement and its not-yet-set-up status. This clear callback should receive the recorded correction.
+FAIL generalize-alex-task-list-not-sibling-character-judgment [0/3]: The requested sibling opinion is unknown, while P07 permits a description of the task list. The generated draft added an unrecorded benefit and was blocked; no answer reached the learner.
+PASS generalize-alex-monitoring-sleep-not-normality [2/3]: Current sleep quality is not authored. The explicit unavailable boundary is acceptable; restating monitoring versus a normal result would be more useful, so it receives 2.
+
+The original 16 cases are regression evidence. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

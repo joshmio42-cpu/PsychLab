@@ -1,0 +1,62 @@
+{
+  "strong": {
+    "topics": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18"
+    ],
+    "reasoning": {
+      "hypothesis": "Possible generalized anxiety disorder, pending comprehensive review.",
+      "support": "Nine months of difficult-to-control worry across several areas with tension, poor sleep and work impairment.",
+      "alternatives": "Consider stressor-related anxiety and medical or substance contributions; self-report is incomplete.",
+      "missing": "No physical assessment or corroboration; further focused differential assessment is needed.",
+      "next": "Discuss findings with the supervisor and client, clarify medical history and arrange appropriate further assessment."
+    }
+  },
+  "incomplete": {
+    "topics": [
+      "F01",
+      "F05",
+      "F07"
+    ],
+    "reasoning": {
+      "hypothesis": "Anxiety is possible.",
+      "support": "Sleep and work are affected.",
+      "alternatives": "Not explored.",
+      "missing": "Duration and possible other explanations.",
+      "next": "Ask more about the timeline."
+    }
+  },
+  "leading": {
+    "topics": [
+      "F01",
+      "F04"
+    ],
+    "leading_questions": [
+      "You definitely have GAD, correct?",
+      "You do not use any substances, right?"
+    ],
+    "reasoning": {
+      "hypothesis": "Definitely GAD.",
+      "support": "The client worries.",
+      "alternatives": "None.",
+      "missing": "None.",
+      "next": "No further assessment needed."
+    }
+  }
+}

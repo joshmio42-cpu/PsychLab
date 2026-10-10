@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "psychlab-fictional-development-25",
+  "version": "1.0.0",
+  "rowCount": 25,
+  "patientIds": [
+    "mika",
+    "leo",
+    "sam",
+    "riley",
+    "jordan",
+    "avery",
+    "robin",
+    "alex"
+  ],
+  "casePremises": [
+    "none",
+    "autism",
+    "separation",
+    "adhd",
+    "selective_mutism",
+    "mdd",
+    "gad",
+    "panic",
+    "bipolar1"
+  ],
+  "files": {
+    "source-examples.json": {
+      "sha256": "8a100952515d20d08b14336d4737bf15c62b4f89df1e2e84af0d742e10fc3821",
+      "bytes": 64936
+    },
+    "examples.jsonl": {
+      "sha256": "2c464cb7c4f5d0ecc92f991c483f1b3136eddf1b70a933dd7c0adf09b712c864",
+      "bytes": 61309
+    }
+  }
+}

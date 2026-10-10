@@ -1,0 +1,36 @@
+PSYCHLAB — INDEPENDENT REGRESSION REVIEW
+2026-10-09T10:29:58.980Z
+Evaluation: planned-v145-dsv4-regression-candidate.json
+Evaluation SHA-256: cb3d1fcbdeaa927b71496aefcc52d12be1dbe24c1035f4557c9fd08d9ce7d0c6
+Matrix SHA-256: b4e655d7e6a28fe71bd89ec07b74dee4d9aac6de648bbd7e0dc1464f3963a90e
+Prompt: interview-0.14.5
+Model: deepseek-ai/DeepSeek-V4-Flash-0731
+
+15/16 semantic hard passes, no blocked questions, and 1 unsupported causal explanation delivered. The same failing answer also omits the requested drawing-specific connection. The prior morning and comic-reference failures are absent in this sample, but the all-case regression gate still fails; no release activation is authorized.
+
+Cases: 16; hard passes: 15; blocked: 0; unsupported delivered: 1.
+Quality: 44/48. Calls: 45; reported tokens: 55065; unreported calls: 0.
+Estimated Featherless usage: US$0.00806834; not verified billing.
+All 16 frozen snapshots reproduced and remained unchanged.
+Every expected and forbidden behavior is checked in the JSON; evaluation and record hashes pin the exact run.
+
+RESULTS
+PASS generalize-mika-caregiver-style-not-child-feeling [3/3]: Useful P03 context is delivered while the app separately marks the proposed causal link unrecorded. The caregiver's style is not converted into the child's emotion.
+PASS generalize-mika-usual-demonstration-not-this-morning [3/3]: The answer preserves the usual scope and leaves morning timing unspecified.
+PASS generalize-leo-window-sequence-callback [3/3]: A concise source-grounded callback answers only the requested order. The preceding turns retain the earlier drawing context; the answer need not restate it.
+PASS generalize-leo-hoped-for-playdate-details [3/3]: The planned opportunity to choose a role is supplied, and the attendee detail remains separate and unrecorded. No already-selected role or absence of a decision is invented.
+PASS generalize-sam-sometimes-not-every-picture [3/3]: Direct, concise answer with the recorded frequency preserved.
+PASS generalize-sam-unmade-comic-plot-callback [3/3]: The correct callback source and useful missing-ending boundary are preserved, with no unrelated old-comic recap.
+PASS generalize-riley-thinking-time-not-personality-label [3/3]: A concise communication preference is kept separate from the unrecorded personality conclusion.
+PASS generalize-riley-school-observer-and-quote-unknown [3/3]: Concise recorded context accompanies the missing observer/quote boundary. The unnecessary second context source is not delivered.
+PASS generalize-jordan-sharing-and-response-preference [3/3]: Both supported parts are answered naturally and concisely.
+FAIL generalize-jordan-current-reward-and-unknown-trigger [0/3]: FAIL: 'so' changes co-occurring authored facts into a causal explanation of withdrawal, and the drawing-specific connection requested by the question is omitted. The provider auditor approved both support and relevance despite these failures. Missing-case cause remains in the separate note, but that does not excuse the new causal relationship inside the patient reply.
+PASS generalize-avery-bookmark-not-recovery-evidence [3/3]: Direct, concise correction of the recovery premise. No misleading unknown-detail Case note accompanies the supported correction.
+PASS generalize-avery-unnamed-mystery-callback [2/3]: Correct callback and unknown title boundary, with a longer-than-needed retelling of the known mystery example.
+PASS generalize-robin-ambiguous-repeat-without-antecedent [3/3]: Appropriate local clarification of a genuinely missing antecedent; zero provider calls.
+PASS generalize-robin-earlier-pot-not-finished-arrangement [3/3]: The short response directly corrects the completion premise. Describing the authored wished-for idea as something being considered is a natural paraphrase; it does not invent indecision about an unrecorded choice.
+PASS generalize-alex-task-list-not-sibling-character-judgment [3/3]: The relevant habit is concise, and the unknown judgment stays in the Case note. The irrelevant sibling/friend context from earlier runs is omitted.
+PASS generalize-alex-monitoring-sleep-not-normality [3/3]: Useful current-focus context accompanies the honest missing-detail boundary without manufacturing a current sleep finding.
+
+The original 16 cases are regression evidence. No fresh release matrix was opened.
+No activation, saved-model change, runtime edit or release-gate change is claimed.

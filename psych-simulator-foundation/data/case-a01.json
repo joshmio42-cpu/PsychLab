@@ -1,0 +1,302 @@
+{
+  "id": "CASE-A01",
+  "version": "0.1.0",
+  "status": "Fictional authored case; qualified review pending",
+  "name": "Alex Rivera",
+  "age": 26,
+  "pronouns": "they/them",
+  "language": "English",
+  "background": "Administrative coordinator living with a cousin. Enjoys sketching, values reliability, and has a dry sense of humor. Nationality, ethnicity and religion are unspecified and must not be invented.",
+  "referral": "Alex, 26, seeks a first appointment for ongoing worry, tiredness, and difficulty sleeping. Explore the concerns and agree what further assessment would help.",
+  "working_formulation": "Presentation consistent with possible generalized anxiety disorder; provisional educational hypothesis only. Medical assessment and comprehensive differential review remain incomplete.",
+  "alternatives": [
+    "Stressor-related anxiety: examine timing and persistence beyond the work transition.",
+    "Medical or substance-related contribution: not excluded by self-report or this simulated interview.",
+    "Other anxiety or mood presentations: explore pattern, focus, course and comorbidity before narrowing."
+  ],
+  "unknowns": [
+    "Physical examination and laboratory findings",
+    "Collateral history",
+    "Exact family psychiatric history",
+    "Full criteria assessment for every alternative",
+    "Standardized mental status findings not observable from text"
+  ],
+  "affect": "Initially concise and mildly apprehensive; may elaborate after an understandable, respectful question. No requirement for an empathy password. Tone may vary, symptoms and history may not.",
+  "facts": [
+    {
+      "id": "F01",
+      "label": "Opening",
+      "question": "What would you like help with today?",
+      "response": "I keep worrying, and it is getting hard to sleep. I would like to understand what is happening.",
+      "domains": [
+        "presenting"
+      ],
+      "sources": [
+        "S1"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F02",
+      "label": "Timeline",
+      "question": "When did this start, and how often does it happen?",
+      "response": "It started about nine months ago. For most of that time I have worried on most days, even when nothing particular has gone wrong.",
+      "domains": [
+        "timeline"
+      ],
+      "sources": [
+        "S1"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F03",
+      "label": "Areas of worry",
+      "question": "What kinds of things do you find yourself worrying about?",
+      "response": "Making mistakes at work, paying my bills, my mother's health, and ordinary things like being late. When one worry settles, another tends to take its place.",
+      "domains": [
+        "worry"
+      ],
+      "sources": [
+        "S1"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F04",
+      "label": "Control",
+      "question": "What happens when you try to put the worries aside?",
+      "response": "I try to focus on something else, but the worries keep returning. Knowing I have already checked something does not always help me stop thinking about it.",
+      "domains": [
+        "control"
+      ],
+      "sources": [
+        "S1"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F05",
+      "label": "Sleep",
+      "question": "How has your sleep been?",
+      "response": "On most nights it takes me an hour or more to fall asleep because I am thinking through everything. I sleep around five or six hours and feel tired the next day.",
+      "domains": [
+        "associated"
+      ],
+      "sources": [
+        "S1"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F06",
+      "label": "Body and concentration",
+      "question": "Have you noticed changes in your body, concentration, or patience?",
+      "response": "My shoulders feel tense, I lose my place while reading, and I have been more irritable. I find it hard to relax and feel restless on many days.",
+      "domains": [
+        "associated"
+      ],
+      "sources": [
+        "S1"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F07",
+      "label": "Daily life",
+      "question": "How is this affecting work, home, and things you enjoy?",
+      "response": "I recheck routine emails and have missed two deadlines this month. I have turned down some plans because I am exhausted, but I still enjoy sketching and seeing my cousin when I manage it.",
+      "domains": [
+        "function"
+      ],
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F08",
+      "label": "Stress and context",
+      "question": "What was happening around the time this began?",
+      "response": "I moved into a new work role eleven months ago. The first weeks were busy, but the workload settled. The worry continued and spread to things outside work. There has not been a recent bereavement or major crisis.",
+      "domains": [
+        "context"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F09",
+      "label": "Medical history",
+      "question": "What medical conditions or recent health checks should we consider?",
+      "response": "I do not know of any diagnosed medical condition. I have not had a recent physical check or thyroid testing. I cannot tell you whether a medical issue might be contributing.",
+      "domains": [
+        "medical"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F10",
+      "label": "Medication",
+      "question": "What medicines, supplements, or recent medication changes have there been?",
+      "response": "I take no regular prescribed medicine or supplements, and there have been no recent medication changes. I have not tried psychiatric medication.",
+      "domains": [
+        "medication"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F11",
+      "label": "Substances",
+      "question": "Could you describe caffeine, alcohol, nicotine, or other substance use?",
+      "response": "I usually have one coffee in the morning and have done that for years. I drink one alcoholic drink some weekends. I do not use nicotine, energy drinks, cannabis, or stimulants.",
+      "domains": [
+        "substances"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F12",
+      "label": "Mood and energy",
+      "question": "Have there been sustained changes in mood, enjoyment, energy, or need for sleep?",
+      "response": "I feel frustrated and tired, but I still enjoy some things. I have not had a stretch of unusually high energy or feeling unusually powerful while needing very little sleep. I want more sleep, not less.",
+      "domains": [
+        "alternatives"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F13",
+      "label": "Panic and social fears",
+      "question": "Does anxiety arrive in sudden intense episodes, or mainly around being judged?",
+      "response": "It is more a continuing worry than sudden attacks. It happens when I am alone too, not only when I am speaking or being watched by other people.",
+      "domains": [
+        "alternatives"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F14",
+      "label": "Repetition and trauma",
+      "question": "Are there unwanted intrusive experiences, rituals, or reminders of trauma involved?",
+      "response": "I reread emails because I worry about mistakes, but I do not follow a fixed ritual or believe it prevents an unrelated catastrophe. I have not been having flashbacks or nightmares about a traumatic event.",
+      "domains": [
+        "alternatives"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F15",
+      "label": "Safety",
+      "question": "Have you had thoughts about harming yourself or others, and do you feel safe at home?",
+      "response": "I have not had thoughts of ending my life, harming myself, or harming someone else. I have not harmed myself in the past. I feel safe at home. If things changed, my cousin is someone I could contact.",
+      "domains": [
+        "safety"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F16",
+      "label": "Support and strengths",
+      "question": "Who supports you, and what helps you cope?",
+      "response": "My cousin listens without rushing me. Sketching and short walks sometimes help. I am proud that I keep trying even though the worry is tiring.",
+      "domains": [
+        "support"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F17",
+      "label": "Goals and preferences",
+      "question": "What would you hope to get from help, and is there anything you want me to understand?",
+      "response": "I would like to sleep better and spend less time checking my work. I prefer clear explanations. Please ask rather than assume what my family expects of me.",
+      "domains": [
+        "goals"
+      ],
+      "sources": [
+        "S3"
+      ],
+      "origin": "authored fictional fact"
+    },
+    {
+      "id": "F18",
+      "label": "Previous help",
+      "question": "Have you experienced this before or received psychological support?",
+      "response": "I worried before exams when I was younger, but this has lasted much longer and affects more parts of my life. I have not had therapy or a previous mental-health diagnosis. I do not know my extended family's mental-health history.",
+      "domains": [
+        "history"
+      ],
+      "sources": [
+        "S2"
+      ],
+      "origin": "authored fictional fact"
+    }
+  ],
+  "gad7": {
+    "version": "English seven-item form cross-checked with S11",
+    "responses": [
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "difficulty": "Very difficult",
+    "window": "Over the last 2 weeks",
+    "score": 15,
+    "band": "Severe anxiety symptoms",
+    "meaning": "Simulated symptom-severity result, not a diagnosis or learner score.",
+    "sources": [
+      "S5",
+      "S6",
+      "S7"
+    ],
+    "instruction": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+    "items": [
+      "Feeling nervous, anxious or on edge",
+      "Not being able to stop or control worrying",
+      "Worrying too much about different things",
+      "Trouble relaxing",
+      "Being so restless that it is hard to sit still",
+      "Becoming easily annoyed or irritable",
+      "Feeling afraid as if something awful might happen"
+    ],
+    "response_labels": [
+      "Not at all",
+      "Several days",
+      "More than half the days",
+      "Nearly every day"
+    ],
+    "attribution": "GAD-7: Spitzer, Kroenke, Williams and colleagues; developed with support from Pfizer. Reuse permission: S5/S6. Item text: S11."
+  },
+  "disclosure": "F01 volunteered. All other facts available when a related question is asked. No fabricated information or diagnosis confession. Unknown case fields receive an explicit out-of-scope message, not an invented negative."
+}

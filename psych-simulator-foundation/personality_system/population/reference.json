@@ -1,0 +1,89 @@
+{
+  "id": "soto-john-2017-study3-internet-domains",
+  "source_ids": [
+    "P01"
+  ],
+  "status": "EXPERIMENTAL",
+  "empirical_component": "Published aggregate means, SDs and correlations; no raw records used.",
+  "source_url": "https://www.colby.edu/wp-content/uploads/2013/08/Soto_John_2017.pdf",
+  "locations": {
+    "correlation": "Table 2, journal page 125 (PDF page 9), left of slash",
+    "moments": "Table 5, journal page 128 (PDF page 12), combined Internet column",
+    "sample": "Study 3 methods, journal page 123"
+  },
+  "sample": {
+    "n": 1000,
+    "recruitment": "personalitylab.org volunteers; selected 500 men and 500 women",
+    "age_range": [
+      18,
+      74
+    ],
+    "age_mean": 28.73,
+    "age_sd": 11.68,
+    "us_residents_percent": 82
+  },
+  "domains": [
+    "extraversion",
+    "agreeableness",
+    "conscientiousness",
+    "negativeEmotionality",
+    "openMindedness"
+  ],
+  "means": [
+    3.23,
+    3.68,
+    3.43,
+    3.07,
+    3.92
+  ],
+  "standard_deviations": [
+    0.8,
+    0.64,
+    0.77,
+    0.87,
+    0.65
+  ],
+  "correlation": [
+    [
+      1,
+      0.14,
+      0.22,
+      -0.34,
+      0.2
+    ],
+    [
+      0.14,
+      1,
+      0.28,
+      -0.29,
+      0.15
+    ],
+    [
+      0.22,
+      0.28,
+      1,
+      -0.3,
+      -0.02
+    ],
+    [
+      -0.34,
+      -0.29,
+      -0.3,
+      1,
+      -0.06
+    ],
+    [
+      0.2,
+      0.15,
+      -0.02,
+      -0.06,
+      1
+    ]
+  ],
+  "bounds": [
+    1,
+    5
+  ],
+  "distribution_assumption": "Unvalidated multivariate Gaussian approximation with whole-vector rejection; post-rejection moments differ from targets.",
+  "excluded": "Facets, schemas, motives, demographic conditioning, diagnoses, within-person dynamics"
+}

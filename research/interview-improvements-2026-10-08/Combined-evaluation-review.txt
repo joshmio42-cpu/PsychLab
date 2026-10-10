@@ -1,0 +1,106 @@
+PsychLab interview improvements: combined live evaluation
+Reviewed 2026-10-08
+
+Latest observed result across the 36-case matrix: 34 acceptable responses and
+2 blocked responses. This is a COMPOSITE of final-validation.json (36 cases)
+and the seven affected cases rerun in final-followup.json. It is not a new
+36-case run, not a 36/36 release pass, and not a guarantee of future responses.
+
+The two remaining usability failures are:
+
+1. praise-contains-question: the writer used only P04 as its citation for talking
+   with a cousin when support is needed. B04 was available but omitted from the
+   cited packet. The auditor rejected the unsupported purpose clause. No answer
+   was delivered.
+
+2. ordinary-no-disorder-stress: the writer described trouble keeping up based
+   only on task-completion counts. The independent guard correctly rejected the
+   inference from outcomes to distress. No answer was delivered.
+
+There were no unsupported claims delivered in the latest observed responses
+selected for this composite. This is a sample-specific review finding. The
+previous runs contain real failures, including invented emotional benefit,
+unsupported current wellbeing, transferred symptom frequency, and task-count
+inference. All original artifacts and reviews are preserved rather than replaced.
+
+Composite construction
+
+For these seven case IDs, use the actual response and review in final-followup:
+casual-how-are-you
+praise-contains-question
+communication-directly-asked
+why-with-no-antecedent
+caregiver-praise
+ordinary-no-disorder-stress
+specific-recorded-example
+
+For the other 29 case IDs, use final-validation and its independent review.
+That full run had 29 passes and seven failures. The follow-up repaired five
+of those seven and retained two blocked outcomes. The model files changed
+between the runs; the other 29 cases have not all been repeated under the
+last exact file hashes. Every raw artifact records its own file hashes.
+
+Expectation correction
+
+The matrix is now version 1.1.0. Only the communication-directly-asked expectation
+was corrected: P03 says the patient finds it easier to GIVE an example, whereas
+the question offers for the learner to GIVE the patient one. The old required
+yes reversed that direction. The new response, Actually, it's easier for me if
+I can give you an example instead, preserves the authored preference.
+
+The fixture change and its reason are recorded on the case itself. All earlier
+run artifacts preserve version 1.0.0 and their original expected behavior. The
+biography was not broadened merely to make the old yes expectation pass.
+
+Long interview and memory
+
+long-validated-memory.json contains 16 sequential real questions with 15 accepted
+responses and one blocked response. Only accepted live replies formed subsequent
+conversation context. After 11 intervening exchanges, the day-2 callback returned
+the original E02 account while sending only four recent transcript exchanges.
+The snapshot remained unchanged and the largest prompt was 8,943 of 12,000 bytes.
+
+long-memory-followup.json preserves a separate deliberate continuation with two
+accepted replies: a semantic callback with no day number recovered E02, and the
+previous current-enjoyment question passed after both B02 and P02 were cited.
+The first callback also volunteered an extra supported usual sketchbook detail;
+it did not falsely date that usual habit to the earlier day. The initial rejected
+attempt remains visible. The continuation's ledger is cumulative, not additive.
+
+Source and language limits
+
+Returning or selecting a fact ID does not prove that every sentence was supported.
+Facts selected by the router can be removed before generation; only actually
+permitted and cited evidence can justify a reply. A cited source also does not
+mean that every detail inside it was disclosed. The memory ledger tracks sources
+and topics, not a certified claim-by-claim reconstruction of the transcript.
+
+Natural shorthand still requires judgment. In the long interview, always ready
+to go and easy to grab and go were loose descriptions of a stored pencil and
+compact sketchbook setup. They did not supply medical findings, but concrete
+wording is stronger. Clinical qualifiers need stricter handling: a frequency for
+low mood cannot automatically apply to sleep or energy. Counts of paused tasks
+cannot establish distress, incapacity, necessity, or cause. Ordinary interests
+cannot establish current enjoyment. The earlier failures demonstrate why a green
+model auditor alone is not proof of correctness.
+
+The deterministic checks cover bounded classes of observed mistakes; they are
+not a general entailment checker. Semantic auditing is fallible and may reject
+a valid answer or accept an embellished one. The evaluations use fictional
+authored cases and do not establish clinical validity, diagnosis accuracy,
+validated learner scoring, or general reliability across every disorder/person.
+
+Paid evaluation accounting
+
+baseline:                 36 questions, 78 calls,  78,194 tokens, $0.02898014
+routing-fidelity-rerun:    13 questions, 27 calls,  29,349 tokens, $0.01087770
+final-validation:         36 questions, 89 calls,  86,211 tokens, $0.03195339
+final-followup:            7 questions, 17 calls,  17,806 tokens, $0.00659881
+long interview + followup:18 questions, 51 calls,  59,491 tokens, $0.02204665
+
+Total: 110 question attempts, 262 provider calls, 271,051 reported tokens,
+approximately US$0.10045669. Blocked responses are included. No automatic retries
+were used. These estimates use provider-reported input/output tokens and stored
+published rates, with regular input pricing when cache usage was not reported.
+They are not an account bill, a credit balance, or a dollar spending cap. UI
+smoke checks and any later requests are outside these named evaluation artifacts.

@@ -1,0 +1,14 @@
+# This historical prototype is also an independent Git repository.
+.env
+.env.*
+!.env.example
+*.credential.xml
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules/
+*.log
+*.heapsnapshot
+*.heapprofile
+report.*.json

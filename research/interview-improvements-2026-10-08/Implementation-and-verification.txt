@@ -1,0 +1,83 @@
+PsychLab — five interview improvements
+Implemented and checked 8 October 2026
+
+1. Stronger factual checks
+The writer still paraphrases frozen source facts into ordinary speech. Independent
+checks now cover selected unsupported names, motives, emotional benefits, current
+health claims from usual habits, task-count interpretations, and added chronology.
+Short contextual repairs distinguish an unknown fact from an unclear question,
+keep a single recent example on one day, and retain caregiver knowledge limits.
+A closed set of non-factual acknowledgments can be checked locally, saving the
+third model call. All substantive answers retain the separate support audit.
+There is no automatic retry or model fallback. Rejected candidates are not shown
+as patient speech, and their incurred provider usage still contributes to cost.
+
+2. Memory over longer interviews
+A compact ledger remembers valid source IDs across the whole interview. It recalls
+relevant old topics and includes a short canonical preview of a recalled diary
+event. The ordinary transcript window remains four exchanges, up to 2,400 bytes.
+Previous generated prose is never evidence for the writer or auditor. Optional
+context is packed to the existing 12,000-byte limit, with omissions in the trace;
+the question, canonical selected facts and candidate are never shortened to fit.
+This adds no summarization requests and never mutates the frozen case.
+
+3. Richer authored patients
+All eight profiles now have 12 personal facts each, including 48 new records.
+Earlier examples, usual routines, relationships, preferences and wishes carry
+explicit provenance and time scope. They are stable across seeds, recent-day
+windows and compatible disorder choices. Children retain the proper perspective.
+Unrecorded medicine histories, favorite-album titles and relative names remain
+unknown rather than being invented merely to fill out a profile.
+
+4. A more useful finished-interview debrief
+The debrief highlights exact learner questions and patient replies that referenced
+new source material, unresolved areas and practical follow-up prompts. It flags
+missing or mismatched checklist evidence links and absent turn references in the
+learner's supporting explanation. A source match is only a lead, not proof that
+every part of a checkpoint was established. Free-text conclusions are not graded
+for diagnostic correctness. Feedback stays hidden until finish and persists in
+History, refreshed sessions and conversation/debrief downloads. No AI calls added.
+
+5. Estimated session cost
+The sidebar shows USD estimates based on reported input/output tokens and versioned
+public model rates. It distinguishes zero calls, estimated, partial and unavailable
+costs. Provider metadata survives paid malformed/truncated replies, and completed
+turn replay adds no charge. Old saved conversations are not assigned a fake zero.
+History retains the session's rate snapshot; exports include its estimate and
+source. Existing call caps remain 60 per interview and 300 per server run. These
+are request limits, not account billing caps. Unreported cache savings are not
+assumed. See ../natural-conversation-2026-10-08/09-Session-cost-estimates.txt.
+
+Verification
+- 203 automated tests passed. Full output: Automated-checks.txt.
+- All 67 authored disorder cases fit the prompt cap with 90-day histories,
+  80-turn source memory and four selected facts. Maximum-length ASCII, Unicode,
+  emoji and escaped questions were checked; no additional provider calls.
+- The complete 36-case live conversation matrix was run twice, with separate
+  targeted follow-ups. Every actual reply was independently reviewed against its
+  evidence, rather than accepting the model's own support verdict as proof.
+- Latest observed composite: 34 acceptable responses, two blocked. These combine
+  the full run and targeted follow-ups under different recorded file hashes;
+  this is not a new 36/36 pass. The two remaining usability failures are a missing
+  supporting citation and an attempted inference of distress from task counts.
+- A 16-question real sequential interview used approximately US$0.01926. Fifteen
+  answers were accepted, one was blocked for a missing hobby citation. A separate
+  two-question continuation recovered an early event without a day number and
+  passed the earlier blocked question with the needed sources. Combined cost:
+  approximately US$0.02205, 51 calls and 59,491 reported tokens.
+- The named live evaluation batches total approximately US$0.10046. This includes
+  failed/blocked attempts. See Combined-evaluation-review.txt for exact accounting.
+- A separate browser check on the final local server delivered a supported live
+  answer, displayed US$0.0011, finished a debrief, reloaded it, verified History,
+  and downloaded the new feedback and cost. No extra calls were used for finish,
+  History or downloads. Screenshots and Browser-verified-debrief.txt are included.
+- The updated server remains at http://127.0.0.1:8771/. Its encrypted saved key was
+  loaded by the existing launcher. The temporary 8773 test server was stopped.
+
+Limits
+The checks cover bounded classes of errors, not universal factual entailment.
+Semantic auditing can miss an embellishment or reject a valid answer. A fact ID
+does not prove every sentence, and a referenced paragraph can contain more than
+the patient actually said. English topic/day retrieval is tested; equivalent
+callbacks in other languages need further work. The evidence here evaluates a
+fictional prototype and does not establish clinical validity or learner competence.

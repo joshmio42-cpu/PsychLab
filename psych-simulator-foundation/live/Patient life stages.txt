@@ -1,0 +1,64 @@
+PATIENT LIFE STAGES — 2026-10-08
+
+The patient selector contains eight fictional profiles. Age appears as a life
+stage, with no generated numerical ages or birthdays:
+Mika: Toddler (caregiver interview; 7 days initially selected)
+Leo: Preschool child (caregiver interview; 14 days initially selected)
+Sam: School-age child (schoolwork, play, caregiver support; 28 days)
+Riley: Adolescent (school projects, peers, trusted-adult support; 28 days)
+Jordan: Young adult (work, friends, cousin support; 28 days)
+Avery: Adult (work and household tasks, friends, sibling support; 28 days)
+Robin: Older adult (community activities, neighbors, friends, gardening; 28 days)
+Alex: Young adult (the existing fixed authored case and assessment).
+
+These are individual authored scenarios, not claims about everyone in that age
+group. No diagnosis, cognitive impairment or measured personality is assigned
+because of age. Alex retains the original authored source data; the profile
+display uses a stage label.
+
+WHAT DAYS CHANGE
+Every generated profile supports 1–90 recent days. Each day adds one recorded
+event, an action and consequence, memory, and experimental internal state updates.
+The profile determines the event wording, available relationships, interpretations,
+and activity outcomes. A school task replaces an employment task for a child.
+The same profile and seed reproduce the same history; a longer run preserves its
+earlier days. The resulting history is frozen before the interview.
+
+Days describe a recent observation window while already in the selected stage.
+They are not elapsed time since birth. Increasing days does not advance a child
+to another stage, simulate developmental milestones, or author earlier medical
+history. The 7/14/28 defaults are interface choices, not scientifically prescribed
+observation periods. All stages share the same 90-day software limit.
+
+HOW THE AGENTS USE THE STAGE
+The local engine uses the selected profile and relevant support relationships.
+The AI receives the life stage, speaker, selected memories and bounded expression
+guidance. Toddler and preschool interviews use a caregiver's observed account;
+private child thoughts remain unknown. School-age speech uses concrete language.
+The auditor is also told which person is speaking. Saved conversations preserve
+the life-stage label and caregiver speaker. Preparing any history uses no API
+calls; the existing three-call checked-answer flow and budgets are unchanged.
+
+LIMITS OF THE IMPLEMENTATION
+The event catalog is small and can repeat. Different stages adapt context and
+speech, not scientifically fitted developmental dynamics. Numerical load, energy,
+tension, motives and learning coefficients remain shared experimental assumptions;
+they are not child norms or validated age-specific predictions. Internal action
+IDs such as work and sketch are legacy categories for task engagement and leisure;
+their recorded outcomes use the selected patient's activities. Reviewer traces
+are model calculations, not direct knowledge of a child's mental state.
+
+AUTHORING REFERENCES
+The following primary resources informed life-stage framing and the choice to use
+play, learning, relationships and caregiver observations. They do not validate the
+simulation equations, selected day defaults or generated dialogue.
+CDC: Positive Parenting Tips
+https://www.cdc.gov/child-development/positive-parenting-tips/
+CDC: Understanding the Early Years
+https://www.cdc.gov/parenting-toddlers/understanding-the-early-years/index.html
+CDC: Developmental Milestones
+https://www.cdc.gov/milestones
+WHO: Adolescent health
+https://www.who.int/health-topics/adolescent-health
+WHO: Ageing and health (diverse experiences; age is not a diagnosis)
+https://www.who.int/news-room/fact-sheets/detail/ageing-and-health/

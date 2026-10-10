@@ -1,0 +1,127 @@
+SEARCH METHOD, COVERAGE AND OPEN GAPS
+Date: 8 October 2026
+Method: targeted narrative research for a proposed educational case selector.
+This is not a systematic review or an exhaustive review of every DSM diagnosis.
+
+Search sequence:
+1. APA DSM-5-TR factsheets, publisher classification/organization, DSM-5 contents,
+   update index and cumulative September 2025 supplement.
+2. NIMH publications on depression, bipolar disorder, schizophrenia, GAD, panic,
+   social anxiety, OCD, PTSD, ADHD, autism, eating disorders, BPD and DMDD.
+3. APA disorder-family pages: personality, dissociation, somatic symptoms, sleep,
+   disruptive/conduct presentations, substance use, grief and related conditions.
+4. CDC tic criteria, AACAP/NHS child anxiety and toileting resources, NIDCD
+   developmental language material and APA learning-disorder resources.
+5. WHO ICD-11 publication and gaming definition; VA DSM/ICD complex-PTSD distinction.
+6. NICE delirium guidance, APA neurocognitive materials and MSD psychosis references.
+7. Targeted checks of age, duration, nomenclature and conflicting public summaries.
+
+Representative queries:
+"DSM-5-TR fact sheets disorders updates 2025 2026"
+"DSM-5-TR table of contents classification"
+"ICD-11 clinical descriptions diagnostic requirements mental behavioural neurodevelopmental"
+"DMDD age 6 18 12 months"
+"Tourette diagnosis motor vocal tics one year before 18"
+"complex PTSD ICD-11 DSM-5 differences"
+"selective mutism separation anxiety children duration"
+"brief psychotic disorder schizophreniform schizoaffective delusional disorder duration"
+"major mild neurocognitive disorder independence delirium"
+"enuresis encopresis diagnosis developmental age five four"
+
+Selection:
+Prefer APA for DSM naming and changes; authoritative national institutes and
+professional bodies for public clinical descriptions; WHO for ICD classification.
+Two MSD publisher summaries supply selected psychosis-duration cross-checks.
+Search results also surfaced unofficial mirrors, forums and older materials;
+these were not used to obtain or reproduce the full DSM manual.
+
+Access levels:
+The 56-item source register distinguishes opened pages/PDFs from search-result
+excerpts. "Opened" means relevant returned text was reviewed, not that every
+word of a long source was exhaustively read. Exact source dates are reported only
+where observed; crawl dates are not publication dates. Undated is intentional.
+No inaccessible page was counted as substantively read.
+
+Access limitations:
+- The full DSM-5-TR publisher book page returned HTTP 403.
+- NINDS functional-neurological-disorder content was inaccessible.
+- The NIA dementia page returned a bot-verification screen.
+APA alternatives support terminology or overview statements; those access failures
+are retained in the source register. No access controls were bypassed.
+The WHO CDDR publication page was consulted; the entire 852-page manual was not read.
+
+Version:
+APA's checked update index listed September 2025 as its latest supplement. That is
+the latest located on that page, not a guarantee that no later change exists anywhere.
+DSM-5-TR was published in 2022; older DSM-5 sources in this pack remain labeled.
+Do not treat public proposals as approved changes. Recheck APA before implementation.
+No billing or ICD-10-CM codes are embedded in this research catalogue.
+
+Specific findings requiring careful interpretation:
+- DMDD: separate onset age from age at diagnosis. APA's 2022 child fact sheet [S47]
+  supports 6–18; older APA condition fact sheet [S33] supplies onset context.
+  NIMH's public age wording [S32] is narrower. Do not silently encode that summary.
+- ARFID: the APA revision [S49] clarifies psychosocial interference can satisfy
+  the relevant impact route. Low weight is not required in every ARFID presentation.
+- BPD: adult-first cases are a project proposal, not a universal diagnostic ban on
+  adolescents [S20]. Avoid absolute gates inferred from general public summaries.
+- Neurodevelopment: a recent stressful event is not evidence that autism or ADHD
+  was newly created. Developmental background and support context matter [S14–S15].
+- Intellectual disability: an APA overview also discusses AAIDD terminology [S41].
+  Do not substitute its organizational age definition for DSM's developmental rule.
+- ICD comparison: CPTSD is not a separate DSM-5-TR diagnosis [S36]; gaming disorder
+  in ICD-11 and DSM Internet Gaming Disorder's further-study status differ [S45–S46].
+- Popular labels are not interchangeable: OCD/OCPD, panic attack/panic disorder,
+  grief/prolonged grief, bipolar mood episodes/brief emotional shifts, and
+  transgender identity/gender dysphoria need distinctions.
+- Public descriptions sometimes simplify complex conditions or use pejorative
+  framing. They are evidence references, not language templates for patient speech.
+
+What this pack does NOT establish:
+Full symptom-count algorithms; all specifiers; complete medical exclusions; age
+gates for every option; comorbidity constraints for every pairing; disorder-specific
+prevalence sampling; validated probabilities of symptoms; real treatment effects;
+clinical accuracy of generated dialogue; or patient/learner diagnostic performance.
+No diagnostic criteria checklists or assessment instruments are reproduced.
+
+Coverage gaps explicitly marked in catalogue:
+Brief psychotic disorder, delusional disorder, schizoaffective disorder and functional
+neurological symptom disorder have naming/overview evidence but incomplete detailed
+case-authoring evidence. Numerous other entries still require their exact duration,
+developmental variants and exclusions to be verified. All 68 entries remain research
+candidates, including the proposed first wave.
+
+Broader DSM-family inventory not expanded into full candidate cards:
+- Communication/motor/developmental: global developmental delay, speech sound,
+  childhood-onset fluency, social (pragmatic) communication, developmental
+  coordination, stereotypic movement and other tic categories [S01].
+- Feeding/eating: pica, rumination and other specified presentations [S01].
+- Sleep-wake: hypersomnolence, narcolepsy, breathing-related sleep conditions,
+  circadian-rhythm disorders, parasomnias and restless legs [S24].
+- Disruptive/impulse control: intermittent explosive disorder, kleptomania and
+  pyromania [S01].
+- Personality: paranoid, schizoid, schizotypal, antisocial, histrionic, narcissistic
+  and dependent categories [S19]. The catalogue has BPD, avoidant and OCPD cards.
+- Somatic-related: factitious presentations need dedicated evidence and portrayal
+  review; do not infer deception from unexplained symptoms [S01; design inference].
+- Sexual dysfunctions and paraphilic disorders are distinct DSM chapters [S55].
+  They require dedicated specialist research and suitable adult clinical case
+  design before individual options; this pack does not specify their criteria.
+- Substance/medication-induced, other-medical-condition, other specified and
+  unspecified categories require etiological/exclusion detail, not a generic label.
+- Medication-induced movement effects and other conditions for clinical attention
+  should not all be presented as standalone mental disorders [S55].
+- Catatonia requires its own clinical-context research; do not automatically
+  equate it with schizophrenia. Further-study conditions must retain their status.
+
+Rights and reuse:
+The pack uses short original paraphrases and links. It is not a substitute copy of
+DSM-5-TR. Before embedding copyrighted criteria, instruments or licensed structured
+interviews into a distributed product, review the applicable permission terms.
+No unauthorized manual copy or full source archive is bundled.
+
+Recommended next research after choosing the first cases:
+For each chosen condition, verify the full applicable criteria and current updates;
+then author multiple distinct fictional profiles, record exclusions and uncertainty,
+obtain qualified case review, and evaluate the dialogue against those authored facts.
+

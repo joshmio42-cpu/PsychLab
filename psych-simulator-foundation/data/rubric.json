@@ -1,0 +1,72 @@
+[
+  {
+    "id": "R1",
+    "name": "Interview coverage",
+    "sources": [
+      "S1",
+      "S2"
+    ],
+    "anchors": [
+      "0: No usable symptom history elicited.",
+      "1: Presenting concerns explored, but timeline or functioning is missing.",
+      "2: Timeline, worry, control, associated symptoms and functioning explored; relevant context/history gaps remain.",
+      "3: Integrates those areas with medical, medication, substance, alternatives, safety and support; follows up on ambiguities."
+    ]
+  },
+  {
+    "id": "R2",
+    "name": "Communication",
+    "sources": [
+      "S3"
+    ],
+    "anchors": [
+      "0: Observed stigmatizing, coercive or persistently dismissive statements.",
+      "1: Mostly leading or compound questions with little opportunity for the client to clarify.",
+      "2: Mostly clear, respectful questions; some reflection or clarification, with missed opportunities.",
+      "3: Clear open-to-focused inquiry, accurate reflections, and checks for understanding; respects client preferences."
+    ]
+  },
+  {
+    "id": "R3",
+    "name": "Reasoning",
+    "sources": [
+      "S2",
+      "S4"
+    ],
+    "anchors": [
+      "0: Conclusion contradicts available evidence or is asserted without evidence.",
+      "1: Names a hypothesis with limited support or ignores plausible alternatives.",
+      "2: Links a provisional hypothesis to elicited facts and considers an alternative.",
+      "3: Weighs supporting and conflicting evidence, considers reasonable alternatives, and states remaining uncertainty."
+    ]
+  },
+  {
+    "id": "R4",
+    "name": "Assessment use",
+    "sources": [
+      "S3",
+      "S6",
+      "S7"
+    ],
+    "anchors": [
+      "0: Treats a questionnaire score as definitive diagnosis or misstates its result.",
+      "1: Obtains a score without explaining purpose, timeframe or limits.",
+      "2: Explains purpose and two-week timeframe, reports score accurately, and notes it is not diagnostic alone.",
+      "3: Also connects the result with interview evidence and explains population and simulated-response limitations."
+    ]
+  },
+  {
+    "id": "R5",
+    "name": "Next steps and uncertainty",
+    "sources": [
+      "S2",
+      "S3"
+    ],
+    "anchors": [
+      "0: Claims certainty or proposes unsupported treatment outside this exercise.",
+      "1: Acknowledges uncertainty but gives no specific information-gathering step.",
+      "2: Names missing information and a suitable supervised follow-up assessment.",
+      "3: Prioritizes remaining questions and medical/context review with the client, including relevant safety follow-up without treating a denial as proof of no risk."
+    ]
+  }
+]

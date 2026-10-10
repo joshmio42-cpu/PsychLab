@@ -1,0 +1,7 @@
+{
+  "origin": "https://psychlab.example.com",
+  "issuer": "https://your-team.cloudflareaccess.com",
+  "audience": "replace-with-your-access-application-audience",
+  "emails": ["learner@example.com", "reviewer@example.com"],
+  "adminEmails": ["reviewer@example.com"]
+}
