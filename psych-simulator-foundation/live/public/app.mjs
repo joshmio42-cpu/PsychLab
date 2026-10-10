@@ -169,6 +169,7 @@ function drawCost(usage){
 }
 function draw(){
   if(session)screen='interview';
+  if(session||screen==='preparing')openSimulator(false);
   $('setup').hidden=screen!=='setup';$('disorderSelection').hidden=screen!=='selection';$('preparationPanel').hidden=screen!=='preparing';$('workspace').hidden=!session;
   if(!session){controls();return;}
   if(session.turns.length)saveConversation();else $('saveStatus').textContent='Conversations save automatically after each response.';
@@ -492,3 +493,19 @@ async function init(){try{status=await api('/api/status');populatePatients();$('
   catch(e){if(e.status!==401&&e.status!==404)throw e;}
   try{session=await api('/api/session');draw();if(session.ended)await loadReport();}catch(e){if(e.status!==401)throw e;}controls();}catch(e){error(e);}}
 init();
+
+function openSimulator(focus=true){
+  document.body.classList.remove('welcome-mode');
+  $('welcome').hidden=true;
+  if(focus){const target=session?$('question'):$('mode');target.focus();target.scrollIntoView({block:'center'});}
+}
+$('enterSimulator').onclick=()=>openSimulator();
+$('aboutButton').onclick=()=>{
+  $('welcome').hidden=false;document.body.classList.add('welcome-mode');
+  $('enterSimulator').textContent=session?'Return to interview →':screen==='setup'?'Start an interview →':'Continue preparation →';
+  $('welcomeTitle').focus();window.scrollTo({top:0});
+};
+
+$('safetyButton').onclick=()=>$('safetyDialog').showModal();
+for(const link of document.querySelectorAll('.safety-link'))link.onclick=()=>$('safetyDialog').showModal();
+$('safetyClose').onclick=()=>$('safetyDialog').close();
